@@ -225,14 +225,16 @@ fun determinePersonality(
 
 // ---- 后端画像三态合并（JVM 可测纯函数）----
 
-// 原 sampleActData 的 mock 数值，仅在后端 none/生成中/结构不符时兜底，保证界面不塌
-internal const val MOCK_PSYCHOLOGICAL_FLEXIBILITY = 0.75f
-internal const val MOCK_EMOTIONAL_OPENNESS = 0.55f
-internal const val MOCK_DISTRESS_TOLERANCE = 0.35f
-internal const val MOCK_COGNITIVE_READINESS = 0.60f
-internal const val MOCK_COGNITIVE_FUSION = 0.58f
-internal const val MOCK_EXPERIENTIAL_AVOIDANCE = 0.35f
-internal const val MOCK_VALUES_ALIGNMENT = 0.72f
+// 兜底数值：仅在后端 none/生成中/结构不符时使用，保证界面不塌。
+// 七个轴统一取 0.7——刻意是一眼能看出的「等长满盘」（真实画像几乎不可能七维齐平），
+// 不再用一组高低错落的具体数字假装是测出来的数据。
+internal const val MOCK_PSYCHOLOGICAL_FLEXIBILITY = 0.7f
+internal const val MOCK_EMOTIONAL_OPENNESS = 0.7f
+internal const val MOCK_DISTRESS_TOLERANCE = 0.7f
+internal const val MOCK_COGNITIVE_READINESS = 0.7f
+internal const val MOCK_COGNITIVE_FUSION = 0.7f
+internal const val MOCK_EXPERIENTIAL_AVOIDANCE = 0.7f
+internal const val MOCK_VALUES_ALIGNMENT = 0.7f
 
 /** 后端人格枚举 → 人格卡；未知/空 key 返回 null（调用方回退本地判定） */
 internal fun personalityFromServerKey(key: String?): PersonalityProfile? = when (key) {
