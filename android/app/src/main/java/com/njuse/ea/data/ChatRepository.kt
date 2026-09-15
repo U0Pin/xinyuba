@@ -25,7 +25,10 @@ data class ChatStreamResult(
     val crisis: Boolean
 )
 
-class ChatRepository {
+/**
+ * @param baseUrl 后端基址。默认生产地址；JVM 测试可传入本地假服务地址（如 `http://127.0.0.1:port/`）。
+ */
+class ChatRepository(private val baseUrl: String = BASE_URL) {
 
     private val gson = Gson()
 
@@ -45,7 +48,7 @@ class ChatRepository {
         .build()
 
     private val retrofit = Retrofit.Builder()
-        .baseUrl(BASE_URL)
+        .baseUrl(baseUrl)
         .client(okHttpClient)
         .addConverterFactory(GsonConverterFactory.create())
         .build()
@@ -79,16 +82,22 @@ class ChatRepository {
      * POST /chat —— SSE 流式。逐 token 通过 [onToken] 回传（运行在 IO 调度器），
      * 流结束后以 [Result] 返回完整文本与风险标志；失败返回 [Result.failure]。
      * 不传 session_id 时后端会自动使用/创建默认会话，因此即便会话解析失败也能聊。
+     *
+     * [onDialogueDone] 在主回复完成的 `dialogue_done` 事件到达时调用（同样在 IO 线程）。
+     * 这是「本轮回答已经说完」的信号，但它**不等于连接结束**：后端之后还要跑决策线与
+     * 沉淀线（画像/摘要，最慢可达数十秒）才发 `final` 并关闭响应。因此上层应据此解除
+     * 发送中的 UI 状态，而本方法仍会读到连接真正结束才返回。
      */
     suspend fun streamChat(
         userId: String,
         message: String,
-        onToken: (delta: String) -> Unit
+        onToken: (delta: String) -> Unit,
+        onDialogueDone: () -> Unit = {}
     ): Result<ChatStreamResult> = withContext(Dispatchers.IO) {
         val payload = gson.toJson(ChatRequest(user_id = userId, message = message))
             .toRequestBody(JSON_MEDIA)
         val request = Request.Builder()
-            .url(BASE_URL + "chat")
+            .url(baseUrl + "chat")
             .post(payload)
             // SSE：声明事件流、禁用响应压缩（gzip 会让代理/客户端攒批）、不缓存，
             // 保证后端每生成一个 token 就能立刻到达、逐字上屏。
@@ -109,6 +118,8 @@ class ChatRepository {
                 val fullText = StringBuilder()
                 var riskState = ""
                 var crisis = false
+                // 「主回复完成」在一次请求里只算一次（重复事件不重复回调）。
+                var dialogueDoneSignaled = false
 
                 while (true) {
                     coroutineContext.ensureActive()
@@ -135,7 +146,14 @@ class ChatRepository {
                                         crisis = obj.get("crisis")?.takeUnless { it.isJsonNull }?.asBoolean ?: false
                                     }
                                 }
-                                else -> { /* dialogue_done 等事件目前无需处理 */ }
+                                // 主回复已完成（后端在决策线/沉淀线开始前就发出，注释见 scheduler.dialogue_done）。
+                                // 上层据此立刻解除「发送中」状态——连接此刻仍然开着，后面的决策/沉淀还要跑，
+                                // 所以这里只回调、**绝不断流**：客户端提前断开会让服务端取消生成器，
+                                // 把正在写的画像/摘要丢掉。
+                                "dialogue_done" -> if (!dialogueDoneSignaled) {
+                                    dialogueDoneSignaled = true
+                                    onDialogueDone()
+                                }
                             }
                             event = ""
                         }

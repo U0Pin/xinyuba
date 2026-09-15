@@ -8,7 +8,7 @@ android {
     compileSdk = 37
 
     defaultConfig {
-        applicationId = "com.njuse.ea"
+        applicationId = "com.example.myapplication"
         minSdk = 24
         targetSdk = 37
         versionCode = 1
@@ -32,6 +32,11 @@ android {
     }
     buildFeatures {
         compose = true
+    }
+    // 纯 JVM 单测里 android.util.Log 等桩方法返回默认值，而非抛 "not mocked"
+    // （ChatRepository 的 SSE 解析路径带日志调用，测试需要直接驱动它）。
+    testOptions {
+        unitTests.isReturnDefaultValues = true
     }
 }
 

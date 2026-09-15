@@ -473,6 +473,7 @@ val bleedMaxYpx = with(density) { (PARALLAX_RY * screenH).dp.toPx() }
                 painter = painterResource(id = R.drawable.ic_send),
                 contentDescription = "发送",
                 modifier = Modifier
+                    .testTag("send")
                     .size(width = s(75f), height = s(68f))
                     .alpha(if (isLoading || syncing) 0.3f else 0.8f)
                     .clickable(

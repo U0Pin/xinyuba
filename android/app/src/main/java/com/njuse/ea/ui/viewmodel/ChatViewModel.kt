@@ -64,6 +64,12 @@ class ChatViewModel(application: Application) : AndroidViewModel(application) {
     /** 本次超时未得到回答的提问，供 refresh 后判定是否需要重发。 */
     private var pendingQuestion: String? = null
 
+    /**
+     * 轮次序号：_isLoading 的归属标记。主回复完成即放开按钮后，上一轮的连接可能还在
+     * 后台排空，只有「哪一轮开启的」才有权把它复位（见 sendMessage 的 finally）。
+     */
+    @Volatile private var activeTurnSeq = 0
+
     private val _scrollEvent = MutableSharedFlow<ScrollTarget>(extraBufferCapacity = 8)
     val scrollEvent: SharedFlow<ScrollTarget> = _scrollEvent.asSharedFlow()
 
@@ -103,114 +109,143 @@ class ChatViewModel(application: Application) : AndroidViewModel(application) {
      */
     private suspend fun syncHistory(showToast: Boolean): Boolean {
         _syncing.value = true
-        val ok = repository.fetchHistory(userId, page = 1, pageSize = 100).fold(
-            onSuccess = { resp ->
-                // items 为扁平消息、新→旧；反转为时间顺序
-                val ordered = resp.items.asReversed().map { it.toChatMessage() }
-                _messages.value = ordered
-                historyStore.replaceAll(ordered)
-                _lastTimedOut.value = false
-                updateLatestReply()
-                Log.d(TAG, "syncHistory success: ${ordered.size} messages")
-                true
-            },
-            onFailure = { e ->
-                Log.e(TAG, "syncHistory failed: ${e.javaClass.simpleName} — ${e.message}", e)
-                if (showToast) {
-                    _toast.tryEmit("喵...同步历史失败了，请检查网络后再试(っ╥﹏╥っ)")
+        return try {
+            repository.fetchHistory(userId, page = 1, pageSize = 100).fold(
+                onSuccess = { resp ->
+                    // items 为扁平消息、新→旧；反转为时间顺序
+                    val ordered = resp.items.asReversed().map { it.toChatMessage() }
+                    _messages.value = ordered
+                    historyStore.replaceAll(ordered)
+                    _lastTimedOut.value = false
+                    updateLatestReply()
+                    Log.d(TAG, "syncHistory success: ${ordered.size} messages")
+                    true
+                },
+                onFailure = { e ->
+                    Log.e(TAG, "syncHistory failed: ${e.javaClass.simpleName} — ${e.message}", e)
+                    if (showToast) {
+                        _toast.tryEmit("喵...同步历史失败了，请检查网络后再试(っ╥﹏╥っ)")
+                    }
+                    false
                 }
-                false
-            }
-        )
-        _syncing.value = false
-        return ok
+            )
+        } finally {
+            // 同步失败/抛异常同样要放开——它与 _isLoading 一起门控发送键，卡住同样是死锁。
+            _syncing.value = false
+        }
     }
 
     fun sendMessage(text: String) {
         if (_isLoading.value) return
         _isLoading.value = true
+        // 本轮序号：UI 的「发送中」与连接的「还在读」从本轮起是两件事——主回复说完就放开
+        // 按钮，而连接可能仍在后台排空（后端还在跑决策线/沉淀线）。只有本轮自己才有权
+        // 复位 _isLoading，否则上一轮的迟到收尾会把新一轮的按钮状态误清掉。
+        val myTurn = ++activeTurnSeq
 
         val userMsg = ChatMessage(ChatMessage.Role.USER, text, System.currentTimeMillis())
 
         viewModelScope.launch {
-            _pendingStatus.value = Pending.Thinking("猫猫思索中")
-            _messages.value = _messages.value + userMsg
-            historyStore.append(userMsg)
-            _scrollEvent.tryEmit(ScrollTarget.Bottom)
+            try {
+                _pendingStatus.value = Pending.Thinking("猫猫思索中")
+                _messages.value = _messages.value + userMsg
+                historyStore.append(userMsg)
+                _scrollEvent.tryEmit(ScrollTarget.Bottom)
 
-            // 真·流式：后端每生成一个 token 就推送，onToken 在 IO 线程回调，
-            // 这里立即把增量贴进气泡（切到 Main 更新 Compose state），不做任何人为延迟。
-            val replyBuilder = StringBuilder()
-            var agentAdded = false
+                // 真·流式：后端每生成一个 token 就推送，onToken 在 IO 线程回调，
+                // 这里立即把增量贴进气泡（切到 Main 更新 Compose state），不做任何人为延迟。
+                val replyBuilder = StringBuilder()
+                // 本轮 agent 气泡的身份（timestamp）。放开按钮后用户可能已经发出下一轮，
+                // 列表末尾不再是本轮消息，所以定位一律按身份，不能用 lastIndex。
+                var agentTs: Long? = null
 
-            fun upsertAgentMessage(): Int {
-                val list = _messages.value.toMutableList()
-                return if (agentAdded) {
-                    val idx = list.lastIndex
-                    list[idx] = list[idx].copy(text = replyBuilder.toString())
-                    _messages.value = list
-                    idx
-                } else {
-                    list.add(ChatMessage(ChatMessage.Role.AGENT, replyBuilder.toString(), System.currentTimeMillis()))
-                    _messages.value = list
-                    agentAdded = true
-                    _pendingStatus.value = null
-                    list.lastIndex
-                }
-            }
+                fun indexOfAgent(): Int = agentTs?.let { ts ->
+                    _messages.value.indexOfLast {
+                        it.role == ChatMessage.Role.AGENT && it.timestamp == ts
+                    }
+                } ?: -1
 
-            val result = repository.streamChat(userId, text) { delta ->
-                replyBuilder.append(delta)
-                val idx = upsertAgentMessage()
-                _latestAgentReply.value = replyBuilder.toString()
-                _scrollEvent.tryEmit(ScrollTarget.ToIndex(idx))
-            }
-
-            result.fold(
-                onSuccess = { r ->
-                    val finalText = r.text.ifBlank { replyBuilder.toString() }
-                    val idx: Int
-                    if (agentAdded) {
-                        val list = _messages.value.toMutableList()
-                        val i = list.lastIndex
-                        list[i] = list[i].copy(text = finalText)
+                fun upsertAgentMessage(): Int {
+                    val list = _messages.value.toMutableList()
+                    val known = indexOfAgent()
+                    return if (known >= 0) {
+                        list[known] = list[known].copy(text = replyBuilder.toString())
                         _messages.value = list
-                        idx = i
+                        known
                     } else {
-                        val msg = ChatMessage(ChatMessage.Role.AGENT, finalText, System.currentTimeMillis())
-                        _messages.value = _messages.value + msg
-                        idx = _messages.value.lastIndex
-                    }
-                    historyStore.append(_messages.value[idx])
-                    _latestAgentReply.value = finalText
-                    _lastTimedOut.value = false
-                    _pendingStatus.value = null
-                    pendingQuestion = null
-                    _scrollEvent.tryEmit(ScrollTarget.ToIndex(idx))
-                },
-                onFailure = { e ->
-                    Log.e(TAG, "sendMessage error: ${e.javaClass.simpleName} — ${e.message}", e)
-                    if (e is SocketTimeoutException) {
-                        _lastTimedOut.value = true
-                    }
-                    val code = when (e) {
-                        is HttpException -> e.code().toString()
-                        is IOException -> "NETWORK"
-                        else -> "UNKNOWN"
-                    }
-                    // 已流出部分回复则保留并落库，不再覆盖为错误占位
-                    if (!agentAdded) {
-                        pendingQuestion = text
-                        _pendingStatus.value = Pending.Error(code)
-                    } else {
-                        _messages.value.lastOrNull { it.role == ChatMessage.Role.AGENT }
-                            ?.let { historyStore.append(it) }
-                        pendingQuestion = null
+                        val ts = System.currentTimeMillis()
+                        list.add(ChatMessage(ChatMessage.Role.AGENT, replyBuilder.toString(), ts))
+                        _messages.value = list
+                        agentTs = ts
                         _pendingStatus.value = null
+                        list.lastIndex
                     }
                 }
-            )
-            _isLoading.value = false
+
+                val result = repository.streamChat(
+                    userId = userId,
+                    message = text,
+                    onToken = { delta ->
+                        replyBuilder.append(delta)
+                        val idx = upsertAgentMessage()
+                        _latestAgentReply.value = replyBuilder.toString()
+                        _scrollEvent.tryEmit(ScrollTarget.ToIndex(idx))
+                    },
+                    // 主回复说完即解除「发送中」——此刻连接仍开着，后端还在跑决策线与
+                    // 沉淀线（画像/摘要，最慢数十秒），但那不该阻塞用户继续说话。
+                    onDialogueDone = {
+                        if (activeTurnSeq == myTurn) _isLoading.value = false
+                    }
+                )
+
+                result.fold(
+                    onSuccess = { r ->
+                        val finalText = r.text.ifBlank { replyBuilder.toString() }
+                        val idx: Int
+                        val known = indexOfAgent()
+                        if (known >= 0) {
+                            val list = _messages.value.toMutableList()
+                            list[known] = list[known].copy(text = finalText)
+                            _messages.value = list
+                            idx = known
+                        } else {
+                            val msg = ChatMessage(ChatMessage.Role.AGENT, finalText, System.currentTimeMillis())
+                            _messages.value = _messages.value + msg
+                            idx = _messages.value.lastIndex
+                        }
+                        _messages.value.getOrNull(idx)?.let { historyStore.append(it) }
+                        _latestAgentReply.value = finalText
+                        _lastTimedOut.value = false
+                        _pendingStatus.value = null
+                        pendingQuestion = null
+                        _scrollEvent.tryEmit(ScrollTarget.ToIndex(idx))
+                    },
+                    onFailure = { e ->
+                        Log.e(TAG, "sendMessage error: ${e.javaClass.simpleName} — ${e.message}", e)
+                        if (e is SocketTimeoutException) {
+                            _lastTimedOut.value = true
+                        }
+                        val code = when (e) {
+                            is HttpException -> e.code().toString()
+                            is IOException -> "NETWORK"
+                            else -> "UNKNOWN"
+                        }
+                        // 已流出部分回复则保留并落库，不再覆盖为错误占位
+                        val known = indexOfAgent()
+                        if (known < 0) {
+                            pendingQuestion = text
+                            _pendingStatus.value = Pending.Error(code)
+                        } else {
+                            _messages.value.getOrNull(known)?.let { historyStore.append(it) }
+                            pendingQuestion = null
+                            _pendingStatus.value = null
+                        }
+                    }
+                )
+            } finally {
+                // 正常结束 / 异常 / 协程取消，任何路径都必须放开，杜绝按钮永久灰掉。
+                if (activeTurnSeq == myTurn) _isLoading.value = false
+            }
         }
     }
 
