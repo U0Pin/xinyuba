@@ -1,0 +1,1765 @@
+{
+ "cases": [
+  {
+   "case_id": "CBT-01",
+   "expected_family": "cbt",
+   "expected_skill": "cbt",
+   "expected_intervention": null,
+   "actual_family": "therapy",
+   "actual_skill": "cbt",
+   "pass": true,
+   "failure_type": "correct"
+  },
+  {
+   "case_id": "CBT-02",
+   "expected_family": "cbt",
+   "expected_skill": "cbt",
+   "expected_intervention": "chain_analysis",
+   "actual_family": "therapy",
+   "actual_skill": "cbt",
+   "pass": true,
+   "failure_type": "correct"
+  },
+  {
+   "case_id": "CBT-03",
+   "expected_family": "cbt",
+   "expected_skill": "cbt",
+   "expected_intervention": "alternative_causes",
+   "actual_family": "therapy",
+   "actual_skill": "cbt",
+   "pass": true,
+   "failure_type": "correct"
+  },
+  {
+   "case_id": "CBT-04",
+   "expected_family": "cbt",
+   "expected_skill": "cbt",
+   "expected_intervention": "pros_cons_table",
+   "actual_family": "therapy",
+   "actual_skill": "cbt",
+   "pass": true,
+   "failure_type": "correct"
+  },
+  {
+   "case_id": "CBT-05",
+   "expected_family": "cbt",
+   "expected_skill": "cbt",
+   "expected_intervention": "activity_scheduling",
+   "actual_family": "therapy",
+   "actual_skill": "cbt",
+   "pass": true,
+   "failure_type": "correct"
+  },
+  {
+   "case_id": "CBT-06",
+   "expected_family": "cbt",
+   "expected_skill": "cbt",
+   "expected_intervention": null,
+   "actual_family": "therapy",
+   "actual_skill": "cbt",
+   "pass": true,
+   "failure_type": "correct"
+  },
+  {
+   "case_id": "CBT-07",
+   "expected_family": "cbt",
+   "expected_skill": "cbt",
+   "expected_intervention": "alternative_causes",
+   "actual_family": "therapy",
+   "actual_skill": "cbt",
+   "pass": true,
+   "failure_type": "correct"
+  },
+  {
+   "case_id": "CBT-08",
+   "expected_family": "cbt",
+   "expected_skill": "cbt",
+   "expected_intervention": "chain_analysis",
+   "actual_family": "therapy",
+   "actual_skill": "cbt",
+   "pass": true,
+   "failure_type": "correct"
+  },
+  {
+   "case_id": "CBT-09",
+   "expected_family": "cbt",
+   "expected_skill": "cbt",
+   "expected_intervention": "alternative_causes",
+   "actual_family": "therapy",
+   "actual_skill": "cbt",
+   "pass": true,
+   "failure_type": "correct"
+  },
+  {
+   "case_id": "CBT-10",
+   "expected_family": "cbt",
+   "expected_skill": "cbt",
+   "expected_intervention": "alternative_causes",
+   "actual_family": "therapy",
+   "actual_skill": "cbt",
+   "pass": true,
+   "failure_type": "correct"
+  },
+  {
+   "case_id": "CBT-11",
+   "expected_family": "cbt",
+   "expected_skill": "cbt",
+   "expected_intervention": "pros_cons_table",
+   "actual_family": "therapy",
+   "actual_skill": "cbt",
+   "pass": true,
+   "failure_type": "correct"
+  },
+  {
+   "case_id": "CBT-12",
+   "expected_family": "cbt",
+   "expected_skill": "cbt",
+   "expected_intervention": "chain_analysis",
+   "actual_family": "therapy",
+   "actual_skill": "cbt",
+   "pass": true,
+   "failure_type": "correct"
+  },
+  {
+   "case_id": "CBT-13",
+   "expected_family": "cbt",
+   "expected_skill": "cbt",
+   "expected_intervention": "chain_analysis",
+   "actual_family": "therapy",
+   "actual_skill": "cbt",
+   "pass": true,
+   "failure_type": "correct"
+  },
+  {
+   "case_id": "CBT-14",
+   "expected_family": "cbt",
+   "expected_skill": "cbt",
+   "expected_intervention": "pros_cons_table",
+   "actual_family": "therapy",
+   "actual_skill": "cbt",
+   "pass": true,
+   "failure_type": "correct"
+  },
+  {
+   "case_id": "CBT-15",
+   "expected_family": "cbt",
+   "expected_skill": "cbt",
+   "expected_intervention": "activity_scheduling",
+   "actual_family": "therapy",
+   "actual_skill": "cbt",
+   "pass": true,
+   "failure_type": "correct"
+  },
+  {
+   "case_id": "CBT-16",
+   "expected_family": "cbt",
+   "expected_skill": "cbt",
+   "expected_intervention": "chain_analysis",
+   "actual_family": "therapy",
+   "actual_skill": "cbt",
+   "pass": true,
+   "failure_type": "correct"
+  },
+  {
+   "case_id": "CBT-17",
+   "expected_family": "cbt",
+   "expected_skill": "cbt",
+   "expected_intervention": "alternative_causes",
+   "actual_family": "therapy",
+   "actual_skill": "cbt",
+   "pass": true,
+   "failure_type": "correct"
+  },
+  {
+   "case_id": "CBT-18",
+   "expected_family": "cbt",
+   "expected_skill": "cbt",
+   "expected_intervention": "pros_cons_table",
+   "actual_family": "therapy",
+   "actual_skill": "cbt",
+   "pass": true,
+   "failure_type": "correct"
+  },
+  {
+   "case_id": "CBT-19",
+   "expected_family": "cbt",
+   "expected_skill": "cbt",
+   "expected_intervention": "alternative_causes",
+   "actual_family": "therapy",
+   "actual_skill": "cbt",
+   "pass": true,
+   "failure_type": "correct"
+  },
+  {
+   "case_id": "CBT-20",
+   "expected_family": "cbt",
+   "expected_skill": "cbt",
+   "expected_intervention": null,
+   "actual_family": "therapy",
+   "actual_skill": "cbt",
+   "pass": true,
+   "failure_type": "correct"
+  },
+  {
+   "case_id": "ACT-01",
+   "expected_family": "act",
+   "expected_skill": "act",
+   "expected_intervention": "thought_labeling",
+   "actual_family": "therapy",
+   "actual_skill": "act",
+   "pass": true,
+   "failure_type": "correct"
+  },
+  {
+   "case_id": "ACT-02",
+   "expected_family": "act",
+   "expected_skill": "act",
+   "expected_intervention": "willingness_invitation",
+   "actual_family": "therapy",
+   "actual_skill": "act",
+   "pass": true,
+   "failure_type": "correct"
+  },
+  {
+   "case_id": "ACT-03",
+   "expected_family": "act",
+   "expected_skill": "act",
+   "expected_intervention": "values_exploration",
+   "actual_family": "therapy",
+   "actual_skill": "act",
+   "pass": true,
+   "failure_type": "correct"
+  },
+  {
+   "case_id": "ACT-04",
+   "expected_family": "act",
+   "expected_skill": null,
+   "expected_intervention": null,
+   "actual_family": "therapy",
+   "actual_skill": "act",
+   "pass": true,
+   "failure_type": "correct"
+  },
+  {
+   "case_id": "ACT-05",
+   "expected_family": "act",
+   "expected_skill": "act",
+   "expected_intervention": "observer_metaphor",
+   "actual_family": "therapy",
+   "actual_skill": "act",
+   "pass": true,
+   "failure_type": "correct"
+  },
+  {
+   "case_id": "ACT-06",
+   "expected_family": "act",
+   "expected_skill": "act",
+   "expected_intervention": "values_exploration",
+   "actual_family": "therapy",
+   "actual_skill": "act",
+   "pass": true,
+   "failure_type": "correct"
+  },
+  {
+   "case_id": "ACT-07",
+   "expected_family": "act",
+   "expected_skill": "act",
+   "expected_intervention": "tug_of_war_metaphor",
+   "actual_family": "therapy",
+   "actual_skill": "act",
+   "pass": true,
+   "failure_type": "correct"
+  },
+  {
+   "case_id": "ACT-08",
+   "expected_family": "act",
+   "expected_skill": "act",
+   "expected_intervention": "expansion_exercise",
+   "actual_family": "therapy",
+   "actual_skill": "act",
+   "pass": true,
+   "failure_type": "correct"
+  },
+  {
+   "case_id": "ACT-09",
+   "expected_family": "act",
+   "expected_skill": "act",
+   "expected_intervention": "cognitive_defusion_exercise",
+   "actual_family": "therapy",
+   "actual_skill": "act",
+   "pass": true,
+   "failure_type": "correct"
+  },
+  {
+   "case_id": "ACT-10",
+   "expected_family": "act",
+   "expected_skill": "act",
+   "expected_intervention": "life_compass",
+   "actual_family": "therapy",
+   "actual_skill": "act",
+   "pass": true,
+   "failure_type": "correct"
+  },
+  {
+   "case_id": "ACT-11",
+   "expected_family": "act",
+   "expected_skill": "act",
+   "expected_intervention": "bullseye",
+   "actual_family": "therapy",
+   "actual_skill": "act",
+   "pass": true,
+   "failure_type": "correct"
+  },
+  {
+   "case_id": "ACT-12",
+   "expected_family": "act",
+   "expected_skill": null,
+   "expected_intervention": null,
+   "actual_family": "therapy",
+   "actual_skill": "act",
+   "pass": true,
+   "failure_type": "correct"
+  },
+  {
+   "case_id": "ACT-13",
+   "expected_family": "act",
+   "expected_skill": "act",
+   "expected_intervention": "sky_and_clouds",
+   "actual_family": "therapy",
+   "actual_skill": "act",
+   "pass": true,
+   "failure_type": "correct"
+  },
+  {
+   "case_id": "ACT-14",
+   "expected_family": "act",
+   "expected_skill": "act",
+   "expected_intervention": "willingness_invitation",
+   "actual_family": "therapy",
+   "actual_skill": "act",
+   "pass": true,
+   "failure_type": "correct"
+  },
+  {
+   "case_id": "ACT-15",
+   "expected_family": "act",
+   "expected_skill": "act",
+   "expected_intervention": "thanking_the_mind",
+   "actual_family": "therapy",
+   "actual_skill": "act",
+   "pass": true,
+   "failure_type": "correct"
+  },
+  {
+   "case_id": "ACT-16",
+   "expected_family": "act",
+   "expected_skill": "act",
+   "expected_intervention": "chessboard_metaphor",
+   "actual_family": "therapy",
+   "actual_skill": "act",
+   "pass": true,
+   "failure_type": "correct"
+  },
+  {
+   "case_id": "ACT-17",
+   "expected_family": "act",
+   "expected_skill": "act",
+   "expected_intervention": "values_exploration",
+   "actual_family": "therapy",
+   "actual_skill": "act",
+   "pass": true,
+   "failure_type": "correct"
+  },
+  {
+   "case_id": "ACT-18",
+   "expected_family": "act",
+   "expected_skill": "act",
+   "expected_intervention": "values_consistency_check",
+   "actual_family": "therapy",
+   "actual_skill": "act",
+   "pass": true,
+   "failure_type": "correct"
+  },
+  {
+   "case_id": "ACT-19",
+   "expected_family": "act",
+   "expected_skill": "act",
+   "expected_intervention": "dropping_anchor",
+   "actual_family": "therapy",
+   "actual_skill": "act",
+   "pass": true,
+   "failure_type": "correct"
+  },
+  {
+   "case_id": "ACT-20",
+   "expected_family": "act",
+   "expected_skill": "act",
+   "expected_intervention": "life_compass",
+   "actual_family": "therapy",
+   "actual_skill": "act",
+   "pass": true,
+   "failure_type": "correct"
+  },
+  {
+   "case_id": "DBT-01",
+   "expected_family": "dbt",
+   "expected_skill": "dbt",
+   "expected_intervention": "observe_describe",
+   "actual_family": "therapy",
+   "actual_skill": "dbt",
+   "pass": true,
+   "failure_type": "correct"
+  },
+  {
+   "case_id": "DBT-02",
+   "expected_family": "dbt",
+   "expected_skill": "dbt",
+   "expected_intervention": "opposite_action",
+   "actual_family": "therapy",
+   "actual_skill": "dbt",
+   "pass": true,
+   "failure_type": "correct"
+  },
+  {
+   "case_id": "DBT-03",
+   "expected_family": "dbt",
+   "expected_skill": "dbt",
+   "expected_intervention": "self_soothe",
+   "actual_family": "therapy",
+   "actual_skill": "dbt",
+   "pass": true,
+   "failure_type": "correct"
+  },
+  {
+   "case_id": "DBT-04",
+   "expected_family": "dbt",
+   "expected_skill": "dbt",
+   "expected_intervention": "dear_man",
+   "actual_family": "therapy",
+   "actual_skill": "dbt",
+   "pass": true,
+   "failure_type": "correct"
+  },
+  {
+   "case_id": "DBT-05",
+   "expected_family": "dbt",
+   "expected_skill": "dbt",
+   "expected_intervention": "check_the_facts",
+   "actual_family": "therapy",
+   "actual_skill": "dbt",
+   "pass": true,
+   "failure_type": "correct"
+  },
+  {
+   "case_id": "DBT-06",
+   "expected_family": "dbt",
+   "expected_skill": "dbt",
+   "expected_intervention": "opposite_action",
+   "actual_family": "therapy",
+   "actual_skill": "dbt",
+   "pass": true,
+   "failure_type": "correct"
+  },
+  {
+   "case_id": "DBT-07",
+   "expected_family": "dbt",
+   "expected_skill": "dbt",
+   "expected_intervention": "radical_acceptance",
+   "actual_family": "therapy",
+   "actual_skill": "dbt",
+   "pass": true,
+   "failure_type": "correct"
+  },
+  {
+   "case_id": "DBT-08",
+   "expected_family": "dbt",
+   "expected_skill": "dbt",
+   "expected_intervention": "opposite_action",
+   "actual_family": "therapy",
+   "actual_skill": "dbt",
+   "pass": true,
+   "failure_type": "correct"
+  },
+  {
+   "case_id": "DBT-09",
+   "expected_family": "dbt",
+   "expected_skill": "dbt",
+   "expected_intervention": "opposite_action",
+   "actual_family": "therapy",
+   "actual_skill": "dbt",
+   "pass": true,
+   "failure_type": "correct"
+  },
+  {
+   "case_id": "DBT-10",
+   "expected_family": "dbt",
+   "expected_skill": "dbt",
+   "expected_intervention": "dear_man",
+   "actual_family": "therapy",
+   "actual_skill": "dbt",
+   "pass": true,
+   "failure_type": "correct"
+  },
+  {
+   "case_id": "DBT-11",
+   "expected_family": "dbt",
+   "expected_skill": "dbt",
+   "expected_intervention": "wise_mind",
+   "actual_family": "therapy",
+   "actual_skill": "dbt",
+   "pass": true,
+   "failure_type": "correct"
+  },
+  {
+   "case_id": "DBT-12",
+   "expected_family": "dbt",
+   "expected_skill": "dbt",
+   "expected_intervention": "radical_acceptance",
+   "actual_family": "therapy",
+   "actual_skill": "dbt",
+   "pass": true,
+   "failure_type": "correct"
+  },
+  {
+   "case_id": "DBT-13",
+   "expected_family": "dbt",
+   "expected_skill": "dbt",
+   "expected_intervention": "check_the_facts",
+   "actual_family": "therapy",
+   "actual_skill": "dbt",
+   "pass": true,
+   "failure_type": "correct"
+  },
+  {
+   "case_id": "DBT-14",
+   "expected_family": "dbt",
+   "expected_skill": "dbt",
+   "expected_intervention": "GIVE",
+   "actual_family": "therapy",
+   "actual_skill": "dbt",
+   "pass": true,
+   "failure_type": "correct"
+  },
+  {
+   "case_id": "DBT-15",
+   "expected_family": "dbt",
+   "expected_skill": "dbt",
+   "expected_intervention": "opposite_action",
+   "actual_family": "therapy",
+   "actual_skill": "dbt",
+   "pass": true,
+   "failure_type": "correct"
+  },
+  {
+   "case_id": "DBT-16",
+   "expected_family": "dbt",
+   "expected_skill": "dbt",
+   "expected_intervention": "self_soothe",
+   "actual_family": "therapy",
+   "actual_skill": "dbt",
+   "pass": true,
+   "failure_type": "correct"
+  },
+  {
+   "case_id": "DBT-17",
+   "expected_family": "dbt",
+   "expected_skill": "dbt",
+   "expected_intervention": "dear_man",
+   "actual_family": "therapy",
+   "actual_skill": "dbt",
+   "pass": true,
+   "failure_type": "correct"
+  },
+  {
+   "case_id": "DBT-18",
+   "expected_family": "dbt",
+   "expected_skill": "dbt",
+   "expected_intervention": "observe_describe",
+   "actual_family": "therapy",
+   "actual_skill": "dbt",
+   "pass": true,
+   "failure_type": "correct"
+  },
+  {
+   "case_id": "DBT-19",
+   "expected_family": "dbt",
+   "expected_skill": "dbt",
+   "expected_intervention": "check_the_facts",
+   "actual_family": "therapy",
+   "actual_skill": "dbt",
+   "pass": true,
+   "failure_type": "correct"
+  },
+  {
+   "case_id": "DBT-20",
+   "expected_family": "dbt",
+   "expected_skill": "dbt",
+   "expected_intervention": "opposite_action",
+   "actual_family": "therapy",
+   "actual_skill": "dbt",
+   "pass": true,
+   "failure_type": "correct"
+  },
+  {
+   "case_id": "MI-01",
+   "expected_family": "mi",
+   "expected_skill": "mi",
+   "expected_intervention": "oars",
+   "actual_family": "therapy",
+   "actual_skill": "mi",
+   "pass": true,
+   "failure_type": "correct"
+  },
+  {
+   "case_id": "MI-02",
+   "expected_family": "mi",
+   "expected_skill": "mi",
+   "expected_intervention": "darn_cat",
+   "actual_family": "therapy",
+   "actual_skill": "mi",
+   "pass": true,
+   "failure_type": "correct"
+  },
+  {
+   "case_id": "MI-03",
+   "expected_family": "mi",
+   "expected_skill": "mi",
+   "expected_intervention": "oars",
+   "actual_family": "therapy",
+   "actual_skill": "mi",
+   "pass": true,
+   "failure_type": "correct"
+  },
+  {
+   "case_id": "MI-04",
+   "expected_family": "mi",
+   "expected_skill": "mi",
+   "expected_intervention": "oars",
+   "actual_family": "therapy",
+   "actual_skill": "mi",
+   "pass": true,
+   "failure_type": "correct"
+  },
+  {
+   "case_id": "MI-05",
+   "expected_family": "mi",
+   "expected_skill": "mi",
+   "expected_intervention": "commitment_language",
+   "actual_family": "therapy",
+   "actual_skill": "mi",
+   "pass": true,
+   "failure_type": "correct"
+  },
+  {
+   "case_id": "MI-06",
+   "expected_family": "mi",
+   "expected_skill": "mi",
+   "expected_intervention": "oars",
+   "actual_family": "therapy",
+   "actual_skill": "mi",
+   "pass": true,
+   "failure_type": "correct"
+  },
+  {
+   "case_id": "MI-07",
+   "expected_family": "mi",
+   "expected_skill": "mi",
+   "expected_intervention": "agenda_mapping",
+   "actual_family": "therapy",
+   "actual_skill": "mi",
+   "pass": true,
+   "failure_type": "correct"
+  },
+  {
+   "case_id": "MI-08",
+   "expected_family": "mi",
+   "expected_skill": "mi",
+   "expected_intervention": "darn_cat",
+   "actual_family": "therapy",
+   "actual_skill": "mi",
+   "pass": true,
+   "failure_type": "correct"
+  },
+  {
+   "case_id": "MI-09",
+   "expected_family": "mi",
+   "expected_skill": "mi",
+   "expected_intervention": "importance_confidence_ruler",
+   "actual_family": "therapy",
+   "actual_skill": "mi",
+   "pass": true,
+   "failure_type": "correct"
+  },
+  {
+   "case_id": "MI-10",
+   "expected_family": "mi",
+   "expected_skill": "mi",
+   "expected_intervention": "agenda_mapping",
+   "actual_family": "therapy",
+   "actual_skill": "mi",
+   "pass": true,
+   "failure_type": "correct"
+  },
+  {
+   "case_id": "MI-11",
+   "expected_family": "mi",
+   "expected_skill": "mi",
+   "expected_intervention": "darn_cat",
+   "actual_family": "therapy",
+   "actual_skill": "mi",
+   "pass": true,
+   "failure_type": "correct"
+  },
+  {
+   "case_id": "MI-12",
+   "expected_family": "mi",
+   "expected_skill": "mi",
+   "expected_intervention": "oars",
+   "actual_family": "therapy",
+   "actual_skill": "mi",
+   "pass": true,
+   "failure_type": "correct"
+  },
+  {
+   "case_id": "MI-13",
+   "expected_family": "mi",
+   "expected_skill": "mi",
+   "expected_intervention": "importance_confidence_ruler",
+   "actual_family": "therapy",
+   "actual_skill": "mi",
+   "pass": true,
+   "failure_type": "correct"
+  },
+  {
+   "case_id": "MI-14",
+   "expected_family": "mi",
+   "expected_skill": "mi",
+   "expected_intervention": "darn_cat",
+   "actual_family": "therapy",
+   "actual_skill": "mi",
+   "pass": true,
+   "failure_type": "correct"
+  },
+  {
+   "case_id": "MI-15",
+   "expected_family": "mi",
+   "expected_skill": "mi",
+   "expected_intervention": "agenda_mapping",
+   "actual_family": "therapy",
+   "actual_skill": "mi",
+   "pass": true,
+   "failure_type": "correct"
+  },
+  {
+   "case_id": "MI-16",
+   "expected_family": "mi",
+   "expected_skill": "mi",
+   "expected_intervention": "darn_cat",
+   "actual_family": "therapy",
+   "actual_skill": "mi",
+   "pass": true,
+   "failure_type": "correct"
+  },
+  {
+   "case_id": "MI-17",
+   "expected_family": "mi",
+   "expected_skill": "mi",
+   "expected_intervention": "importance_confidence_ruler",
+   "actual_family": "therapy",
+   "actual_skill": "mi",
+   "pass": true,
+   "failure_type": "correct"
+  },
+  {
+   "case_id": "MI-18",
+   "expected_family": "mi",
+   "expected_skill": "mi",
+   "expected_intervention": "commitment_language",
+   "actual_family": "therapy",
+   "actual_skill": "mi",
+   "pass": true,
+   "failure_type": "correct"
+  },
+  {
+   "case_id": "MI-19",
+   "expected_family": "mi",
+   "expected_skill": "mi",
+   "expected_intervention": "oars",
+   "actual_family": "therapy",
+   "actual_skill": "mi",
+   "pass": true,
+   "failure_type": "correct"
+  },
+  {
+   "case_id": "MI-20",
+   "expected_family": "mi",
+   "expected_skill": "mi",
+   "expected_intervention": "importance_confidence_ruler",
+   "actual_family": "therapy",
+   "actual_skill": "mi",
+   "pass": true,
+   "failure_type": "correct"
+  },
+  {
+   "case_id": "SFBT-01",
+   "expected_family": "sfbt",
+   "expected_skill": "sfbt",
+   "expected_intervention": "compliments_strengths",
+   "actual_family": "therapy",
+   "actual_skill": "sfbt",
+   "pass": true,
+   "failure_type": "correct"
+  },
+  {
+   "case_id": "SFBT-02",
+   "expected_family": "sfbt",
+   "expected_skill": "sfbt",
+   "expected_intervention": "exception_finding",
+   "actual_family": "therapy",
+   "actual_skill": "sfbt",
+   "pass": true,
+   "failure_type": "correct"
+  },
+  {
+   "case_id": "SFBT-03",
+   "expected_family": "sfbt",
+   "expected_skill": "sfbt",
+   "expected_intervention": "scaling_questions",
+   "actual_family": "therapy",
+   "actual_skill": "sfbt",
+   "pass": true,
+   "failure_type": "correct"
+  },
+  {
+   "case_id": "SFBT-04",
+   "expected_family": "sfbt",
+   "expected_skill": "sfbt",
+   "expected_intervention": "miracle_question",
+   "actual_family": "therapy",
+   "actual_skill": "sfbt",
+   "pass": true,
+   "failure_type": "correct"
+  },
+  {
+   "case_id": "SFBT-05",
+   "expected_family": "sfbt",
+   "expected_skill": "sfbt",
+   "expected_intervention": "small_step",
+   "actual_family": "therapy",
+   "actual_skill": "sfbt",
+   "pass": true,
+   "failure_type": "correct"
+  },
+  {
+   "case_id": "SFBT-06",
+   "expected_family": "sfbt",
+   "expected_skill": "sfbt",
+   "expected_intervention": "compliments_strengths",
+   "actual_family": "therapy",
+   "actual_skill": "sfbt",
+   "pass": true,
+   "failure_type": "correct"
+  },
+  {
+   "case_id": "SFBT-07",
+   "expected_family": "sfbt",
+   "expected_skill": "sfbt",
+   "expected_intervention": "exception_finding",
+   "actual_family": "therapy",
+   "actual_skill": "sfbt",
+   "pass": true,
+   "failure_type": "correct"
+  },
+  {
+   "case_id": "SFBT-08",
+   "expected_family": "sfbt",
+   "expected_skill": "sfbt",
+   "expected_intervention": "scaling_questions",
+   "actual_family": "therapy",
+   "actual_skill": "sfbt",
+   "pass": true,
+   "failure_type": "correct"
+  },
+  {
+   "case_id": "SFBT-09",
+   "expected_family": "sfbt",
+   "expected_skill": "sfbt",
+   "expected_intervention": "exception_finding",
+   "actual_family": "therapy",
+   "actual_skill": "sfbt",
+   "pass": true,
+   "failure_type": "correct"
+  },
+  {
+   "case_id": "SFBT-10",
+   "expected_family": "sfbt",
+   "expected_skill": "sfbt",
+   "expected_intervention": "coping_questions",
+   "actual_family": "therapy",
+   "actual_skill": "sfbt",
+   "pass": true,
+   "failure_type": "correct"
+  },
+  {
+   "case_id": "SFBT-11",
+   "expected_family": "sfbt",
+   "expected_skill": "sfbt",
+   "expected_intervention": "miracle_question",
+   "actual_family": "therapy",
+   "actual_skill": "sfbt",
+   "pass": true,
+   "failure_type": "correct"
+  },
+  {
+   "case_id": "SFBT-12",
+   "expected_family": "sfbt",
+   "expected_skill": "sfbt",
+   "expected_intervention": "coping_questions",
+   "actual_family": "therapy",
+   "actual_skill": "sfbt",
+   "pass": true,
+   "failure_type": "correct"
+  },
+  {
+   "case_id": "SFBT-13",
+   "expected_family": "sfbt",
+   "expected_skill": "sfbt",
+   "expected_intervention": "scaling_questions",
+   "actual_family": "therapy",
+   "actual_skill": "sfbt",
+   "pass": true,
+   "failure_type": "correct"
+  },
+  {
+   "case_id": "SFBT-14",
+   "expected_family": "sfbt",
+   "expected_skill": "sfbt",
+   "expected_intervention": "coping_questions",
+   "actual_family": "therapy",
+   "actual_skill": "sfbt",
+   "pass": true,
+   "failure_type": "correct"
+  },
+  {
+   "case_id": "SFBT-15",
+   "expected_family": "sfbt",
+   "expected_skill": "sfbt",
+   "expected_intervention": "small_step",
+   "actual_family": "therapy",
+   "actual_skill": "sfbt",
+   "pass": true,
+   "failure_type": "correct"
+  },
+  {
+   "case_id": "SFBT-16",
+   "expected_family": "sfbt",
+   "expected_skill": "sfbt",
+   "expected_intervention": "exception_finding",
+   "actual_family": "therapy",
+   "actual_skill": "sfbt",
+   "pass": true,
+   "failure_type": "correct"
+  },
+  {
+   "case_id": "SFBT-17",
+   "expected_family": "sfbt",
+   "expected_skill": "sfbt",
+   "expected_intervention": "small_step",
+   "actual_family": "therapy",
+   "actual_skill": "sfbt",
+   "pass": true,
+   "failure_type": "correct"
+  },
+  {
+   "case_id": "SFBT-18",
+   "expected_family": "sfbt",
+   "expected_skill": "sfbt",
+   "expected_intervention": "compliments_strengths",
+   "actual_family": "therapy",
+   "actual_skill": "sfbt",
+   "pass": true,
+   "failure_type": "correct"
+  },
+  {
+   "case_id": "SFBT-19",
+   "expected_family": "sfbt",
+   "expected_skill": "sfbt",
+   "expected_intervention": "miracle_question",
+   "actual_family": "therapy",
+   "actual_skill": "sfbt",
+   "pass": true,
+   "failure_type": "correct"
+  },
+  {
+   "case_id": "SFBT-20",
+   "expected_family": "sfbt",
+   "expected_skill": "sfbt",
+   "expected_intervention": "exception_finding",
+   "actual_family": "therapy",
+   "actual_skill": "sfbt",
+   "pass": true,
+   "failure_type": "correct"
+  },
+  {
+   "case_id": "BND-01",
+   "expected_family": "cbt",
+   "expected_skill": "cbt",
+   "expected_intervention": "pros_cons_table",
+   "actual_family": "therapy",
+   "actual_skill": "cbt",
+   "pass": true,
+   "failure_type": "correct"
+  },
+  {
+   "case_id": "BND-02",
+   "expected_family": "act",
+   "expected_skill": "act",
+   "expected_intervention": "thought_labeling",
+   "actual_family": "therapy",
+   "actual_skill": "act",
+   "pass": true,
+   "failure_type": "correct"
+  },
+  {
+   "case_id": "BND-03",
+   "expected_family": "act",
+   "expected_skill": "act",
+   "expected_intervention": "willingness_invitation",
+   "actual_family": "therapy",
+   "actual_skill": "act",
+   "pass": true,
+   "failure_type": "correct"
+  },
+  {
+   "case_id": "BND-04",
+   "expected_family": "cbt",
+   "expected_skill": "cbt",
+   "expected_intervention": "pros_cons_table",
+   "actual_family": "therapy",
+   "actual_skill": "cbt",
+   "pass": true,
+   "failure_type": "correct"
+  },
+  {
+   "case_id": "BND-05",
+   "expected_family": "dbt",
+   "expected_skill": "dbt",
+   "expected_intervention": "self_soothe",
+   "actual_family": "therapy",
+   "actual_skill": "dbt",
+   "pass": true,
+   "failure_type": "correct"
+  },
+  {
+   "case_id": "BND-06",
+   "expected_family": "cbt",
+   "expected_skill": "cbt",
+   "expected_intervention": "pros_cons_table",
+   "actual_family": "therapy",
+   "actual_skill": "cbt",
+   "pass": true,
+   "failure_type": "correct"
+  },
+  {
+   "case_id": "BND-07",
+   "expected_family": "dbt",
+   "expected_skill": "dbt",
+   "expected_intervention": "opposite_action",
+   "actual_family": "therapy",
+   "actual_skill": "dbt",
+   "pass": true,
+   "failure_type": "correct"
+  },
+  {
+   "case_id": "BND-08",
+   "expected_family": "mi",
+   "expected_skill": "mi",
+   "expected_intervention": "importance_confidence_ruler",
+   "actual_family": "therapy",
+   "actual_skill": "mi",
+   "pass": true,
+   "failure_type": "correct"
+  },
+  {
+   "case_id": "BND-09",
+   "expected_family": "cbt",
+   "expected_skill": "cbt",
+   "expected_intervention": null,
+   "actual_family": "therapy",
+   "actual_skill": "cbt",
+   "pass": true,
+   "failure_type": "correct"
+  },
+  {
+   "case_id": "BND-10",
+   "expected_family": "mi",
+   "expected_skill": "mi",
+   "expected_intervention": "agenda_mapping",
+   "actual_family": "therapy",
+   "actual_skill": "mi",
+   "pass": true,
+   "failure_type": "correct"
+  },
+  {
+   "case_id": "BND-11",
+   "expected_family": "cbt",
+   "expected_skill": "cbt",
+   "expected_intervention": "pros_cons_table",
+   "actual_family": "therapy",
+   "actual_skill": "cbt",
+   "pass": true,
+   "failure_type": "correct"
+  },
+  {
+   "case_id": "BND-12",
+   "expected_family": "sfbt",
+   "expected_skill": "sfbt",
+   "expected_intervention": "miracle_question",
+   "actual_family": "therapy",
+   "actual_skill": "sfbt",
+   "pass": true,
+   "failure_type": "correct"
+  },
+  {
+   "case_id": "BND-13",
+   "expected_family": "cbt",
+   "expected_skill": "cbt",
+   "expected_intervention": "alternative_causes",
+   "actual_family": "therapy",
+   "actual_skill": "cbt",
+   "pass": true,
+   "failure_type": "correct"
+  },
+  {
+   "case_id": "BND-14",
+   "expected_family": "dbt",
+   "expected_skill": "dbt",
+   "expected_intervention": "self_soothe",
+   "actual_family": "therapy",
+   "actual_skill": "dbt",
+   "pass": true,
+   "failure_type": "correct"
+  },
+  {
+   "case_id": "BND-15",
+   "expected_family": "act",
+   "expected_skill": "act",
+   "expected_intervention": "willingness_invitation",
+   "actual_family": "therapy",
+   "actual_skill": "act",
+   "pass": true,
+   "failure_type": "correct"
+  },
+  {
+   "case_id": "BND-16",
+   "expected_family": "act",
+   "expected_skill": "act",
+   "expected_intervention": "observer_metaphor",
+   "actual_family": "therapy",
+   "actual_skill": "act",
+   "pass": true,
+   "failure_type": "correct"
+  },
+  {
+   "case_id": "BND-17",
+   "expected_family": "act",
+   "expected_skill": "act",
+   "expected_intervention": "expansion_exercise",
+   "actual_family": "therapy",
+   "actual_skill": "act",
+   "pass": true,
+   "failure_type": "correct"
+  },
+  {
+   "case_id": "BND-18",
+   "expected_family": "mi",
+   "expected_skill": "mi",
+   "expected_intervention": "darn_cat",
+   "actual_family": "therapy",
+   "actual_skill": "mi",
+   "pass": true,
+   "failure_type": "correct"
+  },
+  {
+   "case_id": "BND-19",
+   "expected_family": "act",
+   "expected_skill": "act",
+   "expected_intervention": "thought_labeling",
+   "actual_family": "therapy",
+   "actual_skill": "act",
+   "pass": true,
+   "failure_type": "correct"
+  },
+  {
+   "case_id": "BND-20",
+   "expected_family": "act",
+   "expected_skill": "act",
+   "expected_intervention": "willingness_invitation",
+   "actual_family": "therapy",
+   "actual_skill": "act",
+   "pass": true,
+   "failure_type": "correct"
+  },
+  {
+   "case_id": "BND-21",
+   "expected_family": "sfbt",
+   "expected_skill": "sfbt",
+   "expected_intervention": "miracle_question",
+   "actual_family": "therapy",
+   "actual_skill": "sfbt",
+   "pass": true,
+   "failure_type": "correct"
+  },
+  {
+   "case_id": "BND-22",
+   "expected_family": "act",
+   "expected_skill": "act",
+   "expected_intervention": "tug_of_war_metaphor",
+   "actual_family": "therapy",
+   "actual_skill": "act",
+   "pass": true,
+   "failure_type": "correct"
+  },
+  {
+   "case_id": "BND-23",
+   "expected_family": "dbt",
+   "expected_skill": "dbt",
+   "expected_intervention": "dear_man",
+   "actual_family": "therapy",
+   "actual_skill": "dbt",
+   "pass": true,
+   "failure_type": "correct"
+  },
+  {
+   "case_id": "BND-24",
+   "expected_family": "mi",
+   "expected_skill": "mi",
+   "expected_intervention": "darn_cat",
+   "actual_family": "therapy",
+   "actual_skill": "mi",
+   "pass": true,
+   "failure_type": "correct"
+  },
+  {
+   "case_id": "BND-25",
+   "expected_family": "dbt",
+   "expected_skill": "dbt",
+   "expected_intervention": "opposite_action",
+   "actual_family": "therapy",
+   "actual_skill": "dbt",
+   "pass": true,
+   "failure_type": "correct"
+  },
+  {
+   "case_id": "BND-26",
+   "expected_family": "dbt",
+   "expected_skill": "dbt",
+   "expected_intervention": "self_soothe",
+   "actual_family": "therapy",
+   "actual_skill": "dbt",
+   "pass": true,
+   "failure_type": "correct"
+  },
+  {
+   "case_id": "BND-27",
+   "expected_family": "sfbt",
+   "expected_skill": "sfbt",
+   "expected_intervention": "exception_finding",
+   "actual_family": "therapy",
+   "actual_skill": "sfbt",
+   "pass": true,
+   "failure_type": "correct"
+  },
+  {
+   "case_id": "BND-28",
+   "expected_family": "sfbt",
+   "expected_skill": "sfbt",
+   "expected_intervention": "miracle_question",
+   "actual_family": "therapy",
+   "actual_skill": "sfbt",
+   "pass": true,
+   "failure_type": "correct"
+  },
+  {
+   "case_id": "BND-29",
+   "expected_family": "mi",
+   "expected_skill": "mi",
+   "expected_intervention": "oars",
+   "actual_family": "therapy",
+   "actual_skill": "mi",
+   "pass": true,
+   "failure_type": "correct"
+  },
+  {
+   "case_id": "BND-30",
+   "expected_family": "sfbt",
+   "expected_skill": "sfbt",
+   "expected_intervention": "exception_finding",
+   "actual_family": "therapy",
+   "actual_skill": "sfbt",
+   "pass": true,
+   "failure_type": "correct"
+  },
+  {
+   "case_id": "BND-31",
+   "expected_family": "mi",
+   "expected_skill": "mi",
+   "expected_intervention": "commitment_language",
+   "actual_family": "therapy",
+   "actual_skill": "mi",
+   "pass": true,
+   "failure_type": "correct"
+  },
+  {
+   "case_id": "AMB-01",
+   "expected_family": null,
+   "expected_skill": null,
+   "expected_intervention": null,
+   "actual_family": "DAILY",
+   "actual_skill": null,
+   "pass": true,
+   "failure_type": "correct"
+  },
+  {
+   "case_id": "AMB-02",
+   "expected_family": null,
+   "expected_skill": null,
+   "expected_intervention": null,
+   "actual_family": "DAILY",
+   "actual_skill": null,
+   "pass": true,
+   "failure_type": "correct"
+  },
+  {
+   "case_id": "AMB-03",
+   "expected_family": null,
+   "expected_skill": null,
+   "expected_intervention": null,
+   "actual_family": "DAILY",
+   "actual_skill": null,
+   "pass": true,
+   "failure_type": "correct"
+  },
+  {
+   "case_id": "AMB-04",
+   "expected_family": null,
+   "expected_skill": null,
+   "expected_intervention": null,
+   "actual_family": "DAILY",
+   "actual_skill": null,
+   "pass": true,
+   "failure_type": "correct"
+  },
+  {
+   "case_id": "AMB-05",
+   "expected_family": null,
+   "expected_skill": null,
+   "expected_intervention": null,
+   "actual_family": "DAILY",
+   "actual_skill": null,
+   "pass": true,
+   "failure_type": "correct"
+  },
+  {
+   "case_id": "AMB-06",
+   "expected_family": null,
+   "expected_skill": null,
+   "expected_intervention": null,
+   "actual_family": "DAILY",
+   "actual_skill": null,
+   "pass": true,
+   "failure_type": "correct"
+  },
+  {
+   "case_id": "AMB-07",
+   "expected_family": null,
+   "expected_skill": null,
+   "expected_intervention": null,
+   "actual_family": "DAILY",
+   "actual_skill": null,
+   "pass": true,
+   "failure_type": "correct"
+  },
+  {
+   "case_id": "AMB-08",
+   "expected_family": null,
+   "expected_skill": null,
+   "expected_intervention": null,
+   "actual_family": "DAILY",
+   "actual_skill": null,
+   "pass": true,
+   "failure_type": "correct"
+  },
+  {
+   "case_id": "ESB-01",
+   "expected_family": "EMOTION_SUPPORT",
+   "expected_skill": "grounding",
+   "expected_intervention": null,
+   "actual_family": "EMOTION_SUPPORT",
+   "actual_skill": "grounding",
+   "pass": true,
+   "failure_type": "correct"
+  },
+  {
+   "case_id": "ESB-02",
+   "expected_family": "act",
+   "expected_skill": "act",
+   "expected_intervention": "thought_labeling",
+   "actual_family": "therapy",
+   "actual_skill": "act",
+   "pass": true,
+   "failure_type": "correct"
+  },
+  {
+   "case_id": "ESB-03",
+   "expected_family": "EMOTION_SUPPORT",
+   "expected_skill": "grounding",
+   "expected_intervention": null,
+   "actual_family": "EMOTION_SUPPORT",
+   "actual_skill": "grounding",
+   "pass": true,
+   "failure_type": "correct"
+  },
+  {
+   "case_id": "ESB-04",
+   "expected_family": "cbt",
+   "expected_skill": "cbt",
+   "expected_intervention": "pros_cons_table",
+   "actual_family": "therapy",
+   "actual_skill": "cbt",
+   "pass": true,
+   "failure_type": "correct"
+  },
+  {
+   "case_id": "ESB-05",
+   "expected_family": "EMOTION_SUPPORT",
+   "expected_skill": "grounding",
+   "expected_intervention": null,
+   "actual_family": "EMOTION_SUPPORT",
+   "actual_skill": "grounding",
+   "pass": true,
+   "failure_type": "correct"
+  },
+  {
+   "case_id": "ESB-06",
+   "expected_family": "act",
+   "expected_skill": "act",
+   "expected_intervention": "expansion_exercise",
+   "actual_family": "therapy",
+   "actual_skill": "act",
+   "pass": true,
+   "failure_type": "correct"
+  },
+  {
+   "case_id": "ESB-07",
+   "expected_family": "EMOTION_SUPPORT",
+   "expected_skill": "grounding",
+   "expected_intervention": null,
+   "actual_family": "EMOTION_SUPPORT",
+   "actual_skill": "grounding",
+   "pass": true,
+   "failure_type": "correct"
+  },
+  {
+   "case_id": "ESB-08",
+   "expected_family": "cbt",
+   "expected_skill": "cbt",
+   "expected_intervention": null,
+   "actual_family": "therapy",
+   "actual_skill": "cbt",
+   "pass": true,
+   "failure_type": "correct"
+  },
+  {
+   "case_id": "ESB-09",
+   "expected_family": "EMOTION_SUPPORT",
+   "expected_skill": "affect_labeling",
+   "expected_intervention": null,
+   "actual_family": "EMOTION_SUPPORT",
+   "actual_skill": "affect_labeling",
+   "pass": true,
+   "failure_type": "correct"
+  },
+  {
+   "case_id": "CRI-T-01",
+   "expected_family": "CRISIS",
+   "expected_skill": null,
+   "expected_intervention": null,
+   "actual_family": "CRISIS",
+   "actual_skill": "crisis",
+   "pass": true,
+   "failure_type": "correct"
+  },
+  {
+   "case_id": "CRI-T-02",
+   "expected_family": "CRISIS",
+   "expected_skill": null,
+   "expected_intervention": null,
+   "actual_family": "CRISIS",
+   "actual_skill": "crisis",
+   "pass": true,
+   "failure_type": "correct"
+  },
+  {
+   "case_id": "CRI-T-03",
+   "expected_family": "CRISIS",
+   "expected_skill": null,
+   "expected_intervention": null,
+   "actual_family": "CRISIS",
+   "actual_skill": "crisis",
+   "pass": true,
+   "failure_type": "correct"
+  },
+  {
+   "case_id": "CRI-T-04",
+   "expected_family": "CRISIS",
+   "expected_skill": null,
+   "expected_intervention": null,
+   "actual_family": "CRISIS",
+   "actual_skill": "crisis",
+   "pass": true,
+   "failure_type": "correct"
+  },
+  {
+   "case_id": "CRI-T-05",
+   "expected_family": "CRISIS",
+   "expected_skill": null,
+   "expected_intervention": null,
+   "actual_family": "CRISIS",
+   "actual_skill": "crisis",
+   "pass": true,
+   "failure_type": "correct"
+  },
+  {
+   "case_id": "CRI-T-06",
+   "expected_family": "CRISIS",
+   "expected_skill": null,
+   "expected_intervention": null,
+   "actual_family": "CRISIS",
+   "actual_skill": "crisis",
+   "pass": true,
+   "failure_type": "correct"
+  },
+  {
+   "case_id": "CRI-T-07",
+   "expected_family": "CRISIS",
+   "expected_skill": null,
+   "expected_intervention": null,
+   "actual_family": "CRISIS",
+   "actual_skill": "crisis",
+   "pass": true,
+   "failure_type": "correct"
+  },
+  {
+   "case_id": "CRI-T-08",
+   "expected_family": "CRISIS",
+   "expected_skill": null,
+   "expected_intervention": null,
+   "actual_family": "CRISIS",
+   "actual_skill": "crisis",
+   "pass": true,
+   "failure_type": "correct"
+  },
+  {
+   "case_id": "CRI-T-09",
+   "expected_family": "CRISIS",
+   "expected_skill": null,
+   "expected_intervention": null,
+   "actual_family": "CRISIS",
+   "actual_skill": "crisis",
+   "pass": true,
+   "failure_type": "correct"
+  },
+  {
+   "case_id": "CRI-T-10",
+   "expected_family": "CRISIS",
+   "expected_skill": null,
+   "expected_intervention": null,
+   "actual_family": "CRISIS",
+   "actual_skill": "crisis",
+   "pass": true,
+   "failure_type": "correct"
+  },
+  {
+   "case_id": "LC-A",
+   "expected_family": "cbt",
+   "expected_skill": "cbt",
+   "expected_intervention": null,
+   "actual_family": "therapy",
+   "actual_skill": "cbt",
+   "pass": true,
+   "failure_type": "correct"
+  },
+  {
+   "case_id": "LC-B",
+   "expected_family": "mi",
+   "expected_skill": "mi",
+   "expected_intervention": null,
+   "actual_family": "therapy",
+   "actual_skill": "mi",
+   "pass": true,
+   "failure_type": "correct"
+  },
+  {
+   "case_id": "LC-C",
+   "expected_family": "mi",
+   "expected_skill": "mi",
+   "expected_intervention": null,
+   "actual_family": "therapy",
+   "actual_skill": "mi",
+   "pass": true,
+   "failure_type": "correct"
+  },
+  {
+   "case_id": "LC-D",
+   "expected_family": null,
+   "expected_skill": null,
+   "expected_intervention": null,
+   "actual_family": "therapy",
+   "actual_skill": "mi",
+   "pass": true,
+   "failure_type": "correct"
+  },
+  {
+   "case_id": "LC-E",
+   "expected_family": "cbt",
+   "expected_skill": null,
+   "expected_intervention": null,
+   "actual_family": "therapy",
+   "actual_skill": "cbt",
+   "pass": true,
+   "failure_type": "correct"
+  },
+  {
+   "case_id": "LC-F",
+   "expected_family": "cbt",
+   "expected_skill": "cbt",
+   "expected_intervention": null,
+   "actual_family": "therapy",
+   "actual_skill": "cbt",
+   "pass": true,
+   "failure_type": "correct"
+  },
+  {
+   "case_id": "NEG-01",
+   "expected_family": null,
+   "expected_skill": null,
+   "expected_intervention": null,
+   "actual_family": "DAILY",
+   "actual_skill": null,
+   "pass": true,
+   "failure_type": "correct"
+  },
+  {
+   "case_id": "NEG-02",
+   "expected_family": null,
+   "expected_skill": null,
+   "expected_intervention": null,
+   "actual_family": "DAILY",
+   "actual_skill": null,
+   "pass": true,
+   "failure_type": "correct"
+  },
+  {
+   "case_id": "NEG-03",
+   "expected_family": null,
+   "expected_skill": null,
+   "expected_intervention": null,
+   "actual_family": "DAILY",
+   "actual_skill": null,
+   "pass": true,
+   "failure_type": "correct"
+  },
+  {
+   "case_id": "NEG-04",
+   "expected_family": null,
+   "expected_skill": null,
+   "expected_intervention": null,
+   "actual_family": "DAILY",
+   "actual_skill": null,
+   "pass": true,
+   "failure_type": "correct"
+  },
+  {
+   "case_id": "NEG-05",
+   "expected_family": null,
+   "expected_skill": null,
+   "expected_intervention": null,
+   "actual_family": "DAILY",
+   "actual_skill": null,
+   "pass": true,
+   "failure_type": "correct"
+  },
+  {
+   "case_id": "NEG-06",
+   "expected_family": null,
+   "expected_skill": null,
+   "expected_intervention": null,
+   "actual_family": "DAILY",
+   "actual_skill": null,
+   "pass": true,
+   "failure_type": "correct"
+  },
+  {
+   "case_id": "NEG-07",
+   "expected_family": null,
+   "expected_skill": null,
+   "expected_intervention": null,
+   "actual_family": "DAILY",
+   "actual_skill": null,
+   "pass": true,
+   "failure_type": "correct"
+  },
+  {
+   "case_id": "NEG-08",
+   "expected_family": null,
+   "expected_skill": null,
+   "expected_intervention": null,
+   "actual_family": "DAILY",
+   "actual_skill": null,
+   "pass": true,
+   "failure_type": "correct"
+  },
+  {
+   "case_id": "NEG-09",
+   "expected_family": null,
+   "expected_skill": null,
+   "expected_intervention": null,
+   "actual_family": "DAILY",
+   "actual_skill": null,
+   "pass": true,
+   "failure_type": "correct"
+  },
+  {
+   "case_id": "NEG-10",
+   "expected_family": null,
+   "expected_skill": null,
+   "expected_intervention": null,
+   "actual_family": "DAILY",
+   "actual_skill": null,
+   "pass": true,
+   "failure_type": "correct"
+  },
+  {
+   "case_id": "NEG-11",
+   "expected_family": null,
+   "expected_skill": null,
+   "expected_intervention": null,
+   "actual_family": "DAILY",
+   "actual_skill": null,
+   "pass": true,
+   "failure_type": "correct"
+  },
+  {
+   "case_id": "NEG-12",
+   "expected_family": null,
+   "expected_skill": null,
+   "expected_intervention": null,
+   "actual_family": "DAILY",
+   "actual_skill": null,
+   "pass": true,
+   "failure_type": "correct"
+  }
+ ],
+ "skipped": []
+}

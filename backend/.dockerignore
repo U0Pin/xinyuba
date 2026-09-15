@@ -1,0 +1,38 @@
+# 本地开发环境
+.venv/
+venv/
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+.Python
+.pytest_cache/
+
+# 版本控制
+.git/
+.gitignore
+.gitattributes
+
+# 敏感文件：绝不能打进镜像
+.env                # 运维填入真实 API Key 的运行时文件
+.env.production.example   # 生产模板（无密钥）——不随镜像分发
+
+# 测试与文档（镜像不需要）
+tests/
+docs/
+*.md
+Dockerfile
+docker-compose.yml
+.dockerignore
+nginx.conf
+
+# 本地运行时数据（compose 会挂载同名目录，镜像内不需要历史数据）
+data/
+logs/
+
+# 编辑器 / 系统
+.DS_Store
+.idea/
+.vscode/
+.workbuddy/
+.claude/

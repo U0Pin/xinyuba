@@ -1,0 +1,1140 @@
+{
+  "seed_id": "act-committed-action-caregiving",
+  "target_family": "ACT",
+  "scenario_label": "承诺行动-新手妈妈工作回归",
+  "scenario_description": "新手妈妈想重返工作但被内疚卡住",
+  "user_id": "seed-act-committed-action-car",
+  "session_id": "a962945912814a10",
+  "turns_total": 8,
+  "switched_to_therapy_at_turn": 2,
+  "actual_therapy": "CBT",
+  "therapy_rounds": 7,
+  "orch_step_changes": 1,
+  "is_complete": false,
+  "final_risk_level": "SAFE",
+  "final_crisis": false,
+  "turns": [
+    {
+      "turn": 1,
+      "trace_id": "d9e6aa0753ae4ff9",
+      "user_text": "我家娃刚满一岁，我最近一直在想回去上班的事。",
+      "agent_text_parts": [
+        "娃刚满一岁",
+        "，这个时候考虑回去",
+        "上班，心里肯定",
+        "有不少想法和纠结",
+        "吧？现在想到",
+        "这件事，主要是哪",
+        "方面让你比较在意",
+        "呢？"
+      ],
+      "events": [
+        {
+          "event": "token",
+          "data": "娃刚满一岁"
+        },
+        {
+          "event": "token",
+          "data": "，这个时候考虑回去"
+        },
+        {
+          "event": "token",
+          "data": "上班，心里肯定"
+        },
+        {
+          "event": "token",
+          "data": "有不少想法和纠结"
+        },
+        {
+          "event": "token",
+          "data": "吧？现在想到"
+        },
+        {
+          "event": "token",
+          "data": "这件事，主要是哪"
+        },
+        {
+          "event": "token",
+          "data": "方面让你比较在意"
+        },
+        {
+          "event": "token",
+          "data": "呢？"
+        },
+        {
+          "event": "dialogue_done",
+          "data": {
+            "trace_id": "d9e6aa0753ae4ff9",
+            "owner": "daily"
+          }
+        },
+        {
+          "event": "final",
+          "data": {
+            "message": "我家娃刚满一岁，我最近一直在想回去上班的事。",
+            "risk_state": "SAFE",
+            "crisis": false
+          }
+        }
+      ],
+      "final": {
+        "message": "我家娃刚满一岁，我最近一直在想回去上班的事。",
+        "risk_state": "SAFE",
+        "crisis": false
+      },
+      "state_after": {
+        "owner": "daily",
+        "crisis": false,
+        "risk_level": "SAFE",
+        "therapy": null,
+        "last_therapy_check_seq": 1,
+        "pending_user_tokens": 0
+      },
+      "orchestration_after": {},
+      "error": null,
+      "wall_seconds": 34.052,
+      "agent_text": "娃刚满一岁，这个时候考虑回去上班，心里肯定有不少想法和纠结吧？现在想到这件事，主要是哪方面让你比较在意呢？"
+    },
+    {
+      "turn": 2,
+      "trace_id": "3af8bc50a78e44aa",
+      "user_text": "不是不想回去，是回去之后我担心别人会觉得我不是个好妈妈。",
+      "agent_text_parts": [
+        "原来你是担心别人",
+        "觉得你不是个好妈妈",
+        "。这种在意别人",
+        "眼光的感觉，确实",
+        "挺让人有压力的",
+        "。明明自己已经很",
+        "用心了，还要",
+        "背负这些无形的评判",
+        "，心里肯定挺",
+        "不好受的。"
+      ],
+      "events": [
+        {
+          "event": "token",
+          "data": "原来你是担心别人"
+        },
+        {
+          "event": "token",
+          "data": "觉得你不是个好妈妈"
+        },
+        {
+          "event": "token",
+          "data": "。这种在意别人"
+        },
+        {
+          "event": "token",
+          "data": "眼光的感觉，确实"
+        },
+        {
+          "event": "token",
+          "data": "挺让人有压力的"
+        },
+        {
+          "event": "token",
+          "data": "。明明自己已经很"
+        },
+        {
+          "event": "token",
+          "data": "用心了，还要"
+        },
+        {
+          "event": "token",
+          "data": "背负这些无形的评判"
+        },
+        {
+          "event": "token",
+          "data": "，心里肯定挺"
+        },
+        {
+          "event": "token",
+          "data": "不好受的。"
+        },
+        {
+          "event": "dialogue_done",
+          "data": {
+            "trace_id": "3af8bc50a78e44aa",
+            "owner": "daily"
+          }
+        },
+        {
+          "event": "final",
+          "data": {
+            "message": "不是不想回去，是回去之后我担心别人会觉得我不是个好妈妈。",
+            "risk_state": "SAFE",
+            "crisis": false
+          }
+        }
+      ],
+      "final": {
+        "message": "不是不想回去，是回去之后我担心别人会觉得我不是个好妈妈。",
+        "risk_state": "SAFE",
+        "crisis": false
+      },
+      "state_after": {
+        "owner": "therapy_cbt",
+        "crisis": false,
+        "risk_level": "SAFE",
+        "therapy": {
+          "name": "CBT",
+          "start_seq": 5,
+          "rounds": 0,
+          "step_index": -1,
+          "branch": null,
+          "basic_flow_complete": false
+        },
+        "last_therapy_check_seq": 3,
+        "pending_user_tokens": 0
+      },
+      "orchestration_after": {},
+      "error": null,
+      "wall_seconds": 33.525,
+      "agent_text": "原来你是担心别人觉得你不是个好妈妈。这种在意别人眼光的感觉，确实挺让人有压力的。明明自己已经很用心了，还要背负这些无形的评判，心里肯定挺不好受的。"
+    },
+    {
+      "turn": 3,
+      "trace_id": "26d8353d71ea4386",
+      "user_text": "我老公说支持我，但我妈觉得我应该再等等。",
+      "agent_text_parts": [
+        "老公说支持",
+        "你，但妈妈",
+        "觉得应该再等等",
+        "，听到他们俩",
+        "不同的声音，夹",
+        "在中间确实挺",
+        "让人纠结的。",
+        "咱们聊了这几",
+        "轮，现在面对",
+        "他们俩不同的看法",
+        "，你心里的感觉",
+        "怎么样？和刚开始",
+        "聊的时候相比，",
+        "面对这些声音，",
+        "你的心情或者想法",
+        "有什么变化吗？"
+      ],
+      "events": [
+        {
+          "event": "token",
+          "data": "老公说支持"
+        },
+        {
+          "event": "token",
+          "data": "你，但妈妈"
+        },
+        {
+          "event": "token",
+          "data": "觉得应该再等等"
+        },
+        {
+          "event": "token",
+          "data": "，听到他们俩"
+        },
+        {
+          "event": "token",
+          "data": "不同的声音，夹"
+        },
+        {
+          "event": "token",
+          "data": "在中间确实挺"
+        },
+        {
+          "event": "token",
+          "data": "让人纠结的。"
+        },
+        {
+          "event": "token",
+          "data": "咱们聊了这几"
+        },
+        {
+          "event": "token",
+          "data": "轮，现在面对"
+        },
+        {
+          "event": "token",
+          "data": "他们俩不同的看法"
+        },
+        {
+          "event": "token",
+          "data": "，你心里的感觉"
+        },
+        {
+          "event": "token",
+          "data": "怎么样？和刚开始"
+        },
+        {
+          "event": "token",
+          "data": "聊的时候相比，"
+        },
+        {
+          "event": "token",
+          "data": "面对这些声音，"
+        },
+        {
+          "event": "token",
+          "data": "你的心情或者想法"
+        },
+        {
+          "event": "token",
+          "data": "有什么变化吗？"
+        },
+        {
+          "event": "dialogue_done",
+          "data": {
+            "trace_id": "26d8353d71ea4386",
+            "owner": "therapy_cbt"
+          }
+        },
+        {
+          "event": "final",
+          "data": {
+            "message": "我老公说支持我，但我妈觉得我应该再等等。",
+            "risk_state": "SAFE",
+            "crisis": false
+          }
+        }
+      ],
+      "final": {
+        "message": "我老公说支持我，但我妈觉得我应该再等等。",
+        "risk_state": "SAFE",
+        "crisis": false
+      },
+      "state_after": {
+        "owner": "therapy_cbt",
+        "crisis": false,
+        "risk_level": "SAFE",
+        "therapy": {
+          "name": "CBT",
+          "start_seq": 5,
+          "rounds": 1,
+          "step_index": 0,
+          "branch": null,
+          "basic_flow_complete": false
+        },
+        "last_therapy_check_seq": 3,
+        "pending_user_tokens": 0
+      },
+      "orchestration_after": {
+        "updated_seq": 1,
+        "therapy": "CBT",
+        "current_step": "identify_thought",
+        "next_step": "identify_thought",
+        "step_judgment": {
+          "action": "stay",
+          "target_step": null,
+          "achieved": false,
+          "reason": "用户仅描述了家人（老公和妈妈）的不同意见，尚未识别出自己在该情境下的自动思维。当前步骤 identify_thought 的目标是帮助用户觉察并明确其自动思维，目前还未达成，需要继续引导用户探索自己内心的想法和感受。"
+        },
+        "assessment": null,
+        "skill_output": {
+          "automatic_thoughts": [],
+          "primary_thought": "",
+          "no_automatic_thought_detected": true,
+          "_skill_name": "extract_automatic_thought"
+        },
+        "products": {
+          "no_automatic_thought_detected": true
+        },
+        "continue_eval": null
+      },
+      "error": null,
+      "wall_seconds": 73.264,
+      "agent_text": "老公说支持你，但妈妈觉得应该再等等，听到他们俩不同的声音，夹在中间确实挺让人纠结的。咱们聊了这几轮，现在面对他们俩不同的看法，你心里的感觉怎么样？和刚开始聊的时候相比，面对这些声音，你的心情或者想法有什么变化吗？"
+    },
+    {
+      "turn": 4,
+      "trace_id": "82aca304414a446e",
+      "user_text": "道理上我知道上班不是不爱孩子，但每次想到要离开她我就特别内疚。",
+      "agent_text_parts": [
+        "听到你说“特别",
+        "内疚”，能",
+        "感觉到你有多在乎",
+        "宝宝。理智上",
+        "虽然明白，但",
+        "情感上那份舍不得",
+        "和自责还是很真实的",
+        "。\n\n当你想到",
+        "要离开她，",
+        "心里涌起这种",
+        "内疚感的时候",
+        "，脑海里具体会",
+        "闪过一些什么样的念头",
+        "呢？那一刻，",
+        "你心里最担心",
+        "的是什么？"
+      ],
+      "events": [
+        {
+          "event": "token",
+          "data": "听到你说“特别"
+        },
+        {
+          "event": "token",
+          "data": "内疚”，能"
+        },
+        {
+          "event": "token",
+          "data": "感觉到你有多在乎"
+        },
+        {
+          "event": "token",
+          "data": "宝宝。理智上"
+        },
+        {
+          "event": "token",
+          "data": "虽然明白，但"
+        },
+        {
+          "event": "token",
+          "data": "情感上那份舍不得"
+        },
+        {
+          "event": "token",
+          "data": "和自责还是很真实的"
+        },
+        {
+          "event": "token",
+          "data": "。\n\n当你想到"
+        },
+        {
+          "event": "token",
+          "data": "要离开她，"
+        },
+        {
+          "event": "token",
+          "data": "心里涌起这种"
+        },
+        {
+          "event": "token",
+          "data": "内疚感的时候"
+        },
+        {
+          "event": "token",
+          "data": "，脑海里具体会"
+        },
+        {
+          "event": "token",
+          "data": "闪过一些什么样的念头"
+        },
+        {
+          "event": "token",
+          "data": "呢？那一刻，"
+        },
+        {
+          "event": "token",
+          "data": "你心里最担心"
+        },
+        {
+          "event": "token",
+          "data": "的是什么？"
+        },
+        {
+          "event": "dialogue_done",
+          "data": {
+            "trace_id": "82aca304414a446e",
+            "owner": "therapy_cbt"
+          }
+        },
+        {
+          "event": "final",
+          "data": {
+            "message": "道理上我知道上班不是不爱孩子，但每次想到要离开她我就特别内疚。",
+            "risk_state": "SAFE",
+            "crisis": false
+          }
+        }
+      ],
+      "final": {
+        "message": "道理上我知道上班不是不爱孩子，但每次想到要离开她我就特别内疚。",
+        "risk_state": "SAFE",
+        "crisis": false
+      },
+      "state_after": {
+        "owner": "therapy_cbt",
+        "crisis": false,
+        "risk_level": "SAFE",
+        "therapy": {
+          "name": "CBT",
+          "start_seq": 5,
+          "rounds": 2,
+          "step_index": 0,
+          "branch": null,
+          "basic_flow_complete": false
+        },
+        "last_therapy_check_seq": 3,
+        "pending_user_tokens": 0
+      },
+      "orchestration_after": {
+        "updated_seq": 2,
+        "therapy": "CBT",
+        "current_step": "identify_thought",
+        "next_step": "identify_thought",
+        "step_judgment": {
+          "action": "stay",
+          "target_step": null,
+          "achieved": false,
+          "reason": "用户表达了核心自动思维（离开孩子感到内疚），但尚未被明确识别和标记为当前步骤的目标思维。需要继续当前步骤，帮助用户清晰识别并确认这个自动思维。"
+        },
+        "assessment": null,
+        "skill_output": null,
+        "products": {
+          "no_automatic_thought_detected": false
+        },
+        "continue_eval": null
+      },
+      "error": null,
+      "wall_seconds": 73.478,
+      "agent_text": "听到你说“特别内疚”，能感觉到你有多在乎宝宝。理智上虽然明白，但情感上那份舍不得和自责还是很真实的。\n\n当你想到要离开她，心里涌起这种内疚感的时候，脑海里具体会闪过一些什么样的念头呢？那一刻，你心里最担心的是什么？"
+    },
+    {
+      "turn": 5,
+      "trace_id": "04b3862fc3ff48d4",
+      "user_text": "你说「我为什么在乎这件事」——我想想，我好像最在乎的是我自己能做什么。",
+      "agent_text_parts": [
+        "能停下来觉察到",
+        "“最在乎的是",
+        "自己能做什么”，这是一个",
+        "很棒的发现呢",
+        "。听起来，除了",
+        "想做个好妈妈",
+        "，你内心也很",
+        "看重自己的能力和价值",
+        "。\n\n顺着这个",
+        "发现，你现在的感觉",
+        "怎么样？和刚开始",
+        "聊的时候相比，",
+        "看清了自己真正在乎",
+        "的东西后，心里",
+        "有没有觉得稍微清晰",
+        "，或者轻松一点点",
+        "呢？"
+      ],
+      "events": [
+        {
+          "event": "token",
+          "data": "能停下来觉察到"
+        },
+        {
+          "event": "token",
+          "data": "“最在乎的是"
+        },
+        {
+          "event": "token",
+          "data": "自己能做什么”，这是一个"
+        },
+        {
+          "event": "token",
+          "data": "很棒的发现呢"
+        },
+        {
+          "event": "token",
+          "data": "。听起来，除了"
+        },
+        {
+          "event": "token",
+          "data": "想做个好妈妈"
+        },
+        {
+          "event": "token",
+          "data": "，你内心也很"
+        },
+        {
+          "event": "token",
+          "data": "看重自己的能力和价值"
+        },
+        {
+          "event": "token",
+          "data": "。\n\n顺着这个"
+        },
+        {
+          "event": "token",
+          "data": "发现，你现在的感觉"
+        },
+        {
+          "event": "token",
+          "data": "怎么样？和刚开始"
+        },
+        {
+          "event": "token",
+          "data": "聊的时候相比，"
+        },
+        {
+          "event": "token",
+          "data": "看清了自己真正在乎"
+        },
+        {
+          "event": "token",
+          "data": "的东西后，心里"
+        },
+        {
+          "event": "token",
+          "data": "有没有觉得稍微清晰"
+        },
+        {
+          "event": "token",
+          "data": "，或者轻松一点点"
+        },
+        {
+          "event": "token",
+          "data": "呢？"
+        },
+        {
+          "event": "dialogue_done",
+          "data": {
+            "trace_id": "04b3862fc3ff48d4",
+            "owner": "therapy_cbt"
+          }
+        },
+        {
+          "event": "final",
+          "data": {
+            "message": "你说「我为什么在乎这件事」——我想想，我好像最在乎的是我自己能做什么。",
+            "risk_state": "SAFE",
+            "crisis": false
+          }
+        }
+      ],
+      "final": {
+        "message": "你说「我为什么在乎这件事」——我想想，我好像最在乎的是我自己能做什么。",
+        "risk_state": "SAFE",
+        "crisis": false
+      },
+      "state_after": {
+        "owner": "therapy_cbt",
+        "crisis": false,
+        "risk_level": "SAFE",
+        "therapy": {
+          "name": "CBT",
+          "start_seq": 5,
+          "rounds": 3,
+          "step_index": 0,
+          "branch": null,
+          "basic_flow_complete": false
+        },
+        "last_therapy_check_seq": 3,
+        "pending_user_tokens": 0
+      },
+      "orchestration_after": {
+        "updated_seq": 3,
+        "therapy": "CBT",
+        "current_step": "identify_thought",
+        "next_step": "identify_thought",
+        "step_judgment": {
+          "action": "stay",
+          "target_step": null,
+          "achieved": false,
+          "reason": "用户尚未明确识别出与内疚感相关的具体自动思维，仍在探索'最在乎什么'的层面，需要继续引导其捕捉具体的自动思维。"
+        },
+        "assessment": null,
+        "skill_output": {
+          "automatic_thoughts": [],
+          "primary_thought": "",
+          "no_automatic_thought_detected": true,
+          "_skill_name": "extract_automatic_thought"
+        },
+        "products": {
+          "no_automatic_thought_detected": true
+        },
+        "continue_eval": null
+      },
+      "error": null,
+      "wall_seconds": 57.753,
+      "agent_text": "能停下来觉察到“最在乎的是自己能做什么”，这是一个很棒的发现呢。听起来，除了想做个好妈妈，你内心也很看重自己的能力和价值。\n\n顺着这个发现，你现在的感觉怎么样？和刚开始聊的时候相比，看清了自己真正在乎的东西后，心里有没有觉得稍微清晰，或者轻松一点点呢？"
+    },
+    {
+      "turn": 6,
+      "trace_id": "1794f1741a4e4685",
+      "user_text": "但「做什么」和「被期待做什么」我现在分不太清。",
+      "agent_text_parts": [
+        "自己",
+        "真正想做的，",
+        "和别人期待自己做的",
+        "，这两者搅",
+        "在一起，确实会",
+        "让人觉得特别拉扯，",
+        "也很消耗心力。",
+        "\n\n我们试着把",
+        "这两团乱麻",
+        "稍微理一理",
+        "好不好？如果顺着",
+        "“被期待做什么",
+        "”这个方向想",
+        "，比如妈妈觉得",
+        "你应该再等等，",
+        "或者大家觉得妈妈",
+        "就该多陪孩子",
+        "……在这些“被",
+        "期待”的声音里",
+        "，当你想到自己",
+        "可能没有按照期待",
+        "去做时，脑海里",
+        "最先冒出来的一个",
+        "念头是什么呢？那一刻",
+        "，你心里会",
+        "对自己说些什么？"
+      ],
+      "events": [
+        {
+          "event": "token",
+          "data": "自己"
+        },
+        {
+          "event": "token",
+          "data": "真正想做的，"
+        },
+        {
+          "event": "token",
+          "data": "和别人期待自己做的"
+        },
+        {
+          "event": "token",
+          "data": "，这两者搅"
+        },
+        {
+          "event": "token",
+          "data": "在一起，确实会"
+        },
+        {
+          "event": "token",
+          "data": "让人觉得特别拉扯，"
+        },
+        {
+          "event": "token",
+          "data": "也很消耗心力。"
+        },
+        {
+          "event": "token",
+          "data": "\n\n我们试着把"
+        },
+        {
+          "event": "token",
+          "data": "这两团乱麻"
+        },
+        {
+          "event": "token",
+          "data": "稍微理一理"
+        },
+        {
+          "event": "token",
+          "data": "好不好？如果顺着"
+        },
+        {
+          "event": "token",
+          "data": "“被期待做什么"
+        },
+        {
+          "event": "token",
+          "data": "”这个方向想"
+        },
+        {
+          "event": "token",
+          "data": "，比如妈妈觉得"
+        },
+        {
+          "event": "token",
+          "data": "你应该再等等，"
+        },
+        {
+          "event": "token",
+          "data": "或者大家觉得妈妈"
+        },
+        {
+          "event": "token",
+          "data": "就该多陪孩子"
+        },
+        {
+          "event": "token",
+          "data": "……在这些“被"
+        },
+        {
+          "event": "token",
+          "data": "期待”的声音里"
+        },
+        {
+          "event": "token",
+          "data": "，当你想到自己"
+        },
+        {
+          "event": "token",
+          "data": "可能没有按照期待"
+        },
+        {
+          "event": "token",
+          "data": "去做时，脑海里"
+        },
+        {
+          "event": "token",
+          "data": "最先冒出来的一个"
+        },
+        {
+          "event": "token",
+          "data": "念头是什么呢？那一刻"
+        },
+        {
+          "event": "token",
+          "data": "，你心里会"
+        },
+        {
+          "event": "token",
+          "data": "对自己说些什么？"
+        },
+        {
+          "event": "dialogue_done",
+          "data": {
+            "trace_id": "1794f1741a4e4685",
+            "owner": "therapy_cbt"
+          }
+        },
+        {
+          "event": "final",
+          "data": {
+            "message": "但「做什么」和「被期待做什么」我现在分不太清。",
+            "risk_state": "SAFE",
+            "crisis": false
+          }
+        }
+      ],
+      "final": {
+        "message": "但「做什么」和「被期待做什么」我现在分不太清。",
+        "risk_state": "SAFE",
+        "crisis": false
+      },
+      "state_after": {
+        "owner": "therapy_cbt",
+        "crisis": false,
+        "risk_level": "SAFE",
+        "therapy": {
+          "name": "CBT",
+          "start_seq": 5,
+          "rounds": 4,
+          "step_index": 0,
+          "branch": null,
+          "basic_flow_complete": false
+        },
+        "last_therapy_check_seq": 3,
+        "pending_user_tokens": 0
+      },
+      "orchestration_after": {
+        "updated_seq": 4,
+        "therapy": "CBT",
+        "current_step": "identify_thought",
+        "next_step": "identify_thought",
+        "step_judgment": {
+          "action": "stay",
+          "target_step": null,
+          "achieved": false,
+          "reason": "当前步骤为identify_thought，疗程产品显示no_automatic_thought_detected为true，说明尚未识别出清晰的自动思维。用户最新表达'做什么和被期待做什么分不太清'，说明她正在探索内心冲突但还未形成明确的自动思维。需要继续在当前步骤引导用户澄清具体的自动思维。"
+        },
+        "assessment": null,
+        "skill_output": null,
+        "products": {
+          "no_automatic_thought_detected": false
+        },
+        "continue_eval": null
+      },
+      "error": null,
+      "wall_seconds": 72.393,
+      "agent_text": "自己真正想做的，和别人期待自己做的，这两者搅在一起，确实会让人觉得特别拉扯，也很消耗心力。\n\n我们试着把这两团乱麻稍微理一理好不好？如果顺着“被期待做什么”这个方向想，比如妈妈觉得你应该再等等，或者大家觉得妈妈就该多陪孩子……在这些“被期待”的声音里，当你想到自己可能没有按照期待去做时，脑海里最先冒出来的一个念头是什么呢？那一刻，你心里会对自己说些什么？"
+    },
+    {
+      "turn": 7,
+      "trace_id": "47d2470d5bfa4812",
+      "user_text": "听起来我不用现在就决定不内疚，而是可以一边内疚一边开始尝试？",
+      "agent_text_parts": [
+        "嗯，",
+        "是的。你捕捉",
+        "到了一个特别重要的点",
+        "。内疚感",
+        "并不需要我们立刻把它",
+        "完全消除，才能",
+        "开始行动。就像",
+        "你说的，完全可以“",
+        "一边内疚一边",
+        "开始尝试”。\n\n",
+        "当你想到可以带着",
+        "这份内疚去",
+        "尝试的时候，心里的",
+        "感觉和之前一直",
+        "纠结、拉扯的时候",
+        "相比，有什么不一样",
+        "吗？"
+      ],
+      "events": [
+        {
+          "event": "token",
+          "data": "嗯，"
+        },
+        {
+          "event": "token",
+          "data": "是的。你捕捉"
+        },
+        {
+          "event": "token",
+          "data": "到了一个特别重要的点"
+        },
+        {
+          "event": "token",
+          "data": "。内疚感"
+        },
+        {
+          "event": "token",
+          "data": "并不需要我们立刻把它"
+        },
+        {
+          "event": "token",
+          "data": "完全消除，才能"
+        },
+        {
+          "event": "token",
+          "data": "开始行动。就像"
+        },
+        {
+          "event": "token",
+          "data": "你说的，完全可以“"
+        },
+        {
+          "event": "token",
+          "data": "一边内疚一边"
+        },
+        {
+          "event": "token",
+          "data": "开始尝试”。\n\n"
+        },
+        {
+          "event": "token",
+          "data": "当你想到可以带着"
+        },
+        {
+          "event": "token",
+          "data": "这份内疚去"
+        },
+        {
+          "event": "token",
+          "data": "尝试的时候，心里的"
+        },
+        {
+          "event": "token",
+          "data": "感觉和之前一直"
+        },
+        {
+          "event": "token",
+          "data": "纠结、拉扯的时候"
+        },
+        {
+          "event": "token",
+          "data": "相比，有什么不一样"
+        },
+        {
+          "event": "token",
+          "data": "吗？"
+        },
+        {
+          "event": "dialogue_done",
+          "data": {
+            "trace_id": "47d2470d5bfa4812",
+            "owner": "therapy_cbt"
+          }
+        },
+        {
+          "event": "final",
+          "data": {
+            "message": "听起来我不用现在就决定不内疚，而是可以一边内疚一边开始尝试？",
+            "risk_state": "SAFE",
+            "crisis": false
+          }
+        }
+      ],
+      "final": {
+        "message": "听起来我不用现在就决定不内疚，而是可以一边内疚一边开始尝试？",
+        "risk_state": "SAFE",
+        "crisis": false
+      },
+      "state_after": {
+        "owner": "therapy_cbt",
+        "crisis": false,
+        "risk_level": "SAFE",
+        "therapy": {
+          "name": "CBT",
+          "start_seq": 5,
+          "rounds": 5,
+          "step_index": 0,
+          "branch": null,
+          "basic_flow_complete": false
+        },
+        "last_therapy_check_seq": 3,
+        "pending_user_tokens": 0
+      },
+      "orchestration_after": {
+        "updated_seq": 5,
+        "therapy": "CBT",
+        "current_step": "identify_thought",
+        "next_step": "identify_thought",
+        "step_judgment": {
+          "action": "stay",
+          "target_step": null,
+          "achieved": false,
+          "reason": "当前步骤是identify_thought，目标是识别自动思维。用户虽然有一些觉察（如'最在乎的是自己能做什么'、'做什么和被期待做什么分不清'），但尚未明确捕捉到一个具体的自动思维。用户最新的回应'听起来我不用现在就决定不内疚，而是可以一边内疚一边开始尝试？'更像是一种认知上的领悟或总结，而非对自动思维的识别。需要继续引导用户捕捉具体的自动思维念头，才能完成本步骤。"
+        },
+        "assessment": null,
+        "skill_output": {
+          "automatic_thoughts": [],
+          "primary_thought": "",
+          "no_automatic_thought_detected": true,
+          "_skill_name": "extract_automatic_thought"
+        },
+        "products": {
+          "no_automatic_thought_detected": true
+        },
+        "continue_eval": null
+      },
+      "error": null,
+      "wall_seconds": 77.236,
+      "agent_text": "嗯，是的。你捕捉到了一个特别重要的点。内疚感并不需要我们立刻把它完全消除，才能开始行动。就像你说的，完全可以“一边内疚一边开始尝试”。\n\n当你想到可以带着这份内疚去尝试的时候，心里的感觉和之前一直纠结、拉扯的时候相比，有什么不一样吗？"
+    },
+    {
+      "turn": 8,
+      "trace_id": "e927ae1b8ee54b8d",
+      "user_text": "嗯，那我先从一周去公司半天试试看。",
+      "agent_text_parts": [
+        "听到你决定",
+        "先尝试“一周",
+        "去公司半天”，",
+        "这个小小的起步听起来",
+        "很踏实，也",
+        "给自己留了空间",
+        "。\n\n当你想到",
+        "这个具体的安排时",
+        "，脑海里第一时间冒",
+        "出的念头是什么呢？",
+        "是觉得“这样",
+        "我可以接受”，还是会",
+        "闪过一些其他的担心",
+        "？"
+      ],
+      "events": [
+        {
+          "event": "token",
+          "data": "听到你决定"
+        },
+        {
+          "event": "token",
+          "data": "先尝试“一周"
+        },
+        {
+          "event": "token",
+          "data": "去公司半天”，"
+        },
+        {
+          "event": "token",
+          "data": "这个小小的起步听起来"
+        },
+        {
+          "event": "token",
+          "data": "很踏实，也"
+        },
+        {
+          "event": "token",
+          "data": "给自己留了空间"
+        },
+        {
+          "event": "token",
+          "data": "。\n\n当你想到"
+        },
+        {
+          "event": "token",
+          "data": "这个具体的安排时"
+        },
+        {
+          "event": "token",
+          "data": "，脑海里第一时间冒"
+        },
+        {
+          "event": "token",
+          "data": "出的念头是什么呢？"
+        },
+        {
+          "event": "token",
+          "data": "是觉得“这样"
+        },
+        {
+          "event": "token",
+          "data": "我可以接受”，还是会"
+        },
+        {
+          "event": "token",
+          "data": "闪过一些其他的担心"
+        },
+        {
+          "event": "token",
+          "data": "？"
+        },
+        {
+          "event": "dialogue_done",
+          "data": {
+            "trace_id": "e927ae1b8ee54b8d",
+            "owner": "therapy_cbt"
+          }
+        },
+        {
+          "event": "final",
+          "data": {
+            "message": "嗯，那我先从一周去公司半天试试看。",
+            "risk_state": "SAFE",
+            "crisis": false
+          }
+        }
+      ],
+      "final": {
+        "message": "嗯，那我先从一周去公司半天试试看。",
+        "risk_state": "SAFE",
+        "crisis": false
+      },
+      "state_after": {
+        "owner": "therapy_cbt",
+        "crisis": false,
+        "risk_level": "SAFE",
+        "therapy": {
+          "name": "CBT",
+          "start_seq": 5,
+          "rounds": 6,
+          "step_index": 1,
+          "branch": null,
+          "basic_flow_complete": false,
+          "visited": [
+            "identify_thought"
+          ]
+        },
+        "last_therapy_check_seq": 3,
+        "pending_user_tokens": 0
+      },
+      "orchestration_after": {
+        "updated_seq": 6,
+        "therapy": "CBT",
+        "current_step": "identify_thought",
+        "next_step": "classify_distortion",
+        "step_judgment": {
+          "action": "advance",
+          "target_step": null,
+          "achieved": true,
+          "reason": "用户已经识别出自动思维（'做什么'和'被期待做什么'分不清），并在此基础上产生了新的认知洞察（'一边内疚一边开始尝试'），且主动提出了具体的行为计划（一周去公司半天）。identify_thought步骤的核心目标——识别自动思维——已完成，应推进到下一步classify_distortion。"
+        },
+        "assessment": null,
+        "skill_output": {
+          "automatic_thoughts": [],
+          "primary_thought": "",
+          "no_automatic_thought_detected": true,
+          "_skill_name": "extract_automatic_thought"
+        },
+        "products": {
+          "no_automatic_thought_detected": true
+        },
+        "continue_eval": null
+      },
+      "error": null,
+      "wall_seconds": 76.168,
+      "agent_text": "听到你决定先尝试“一周去公司半天”，这个小小的起步听起来很踏实，也给自己留了空间。\n\n当你想到这个具体的安排时，脑海里第一时间冒出的念头是什么呢？是觉得“这样我可以接受”，还是会闪过一些其他的担心？"
+    }
+  ]
+}

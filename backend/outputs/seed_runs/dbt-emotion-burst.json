@@ -1,0 +1,1565 @@
+{
+  "seed_id": "dbt-emotion-burst",
+  "target_family": "DBT",
+  "scenario_label": "情绪崩溃-被谈话后当场哭",
+  "scenario_description": "被上司谈话时当场哭出来，事后在工位继续流泪",
+  "user_id": "seed-dbt-emotion-burst",
+  "session_id": "14ccc246fe9e48fc",
+  "turns_total": 8,
+  "switched_to_therapy_at_turn": 4,
+  "actual_therapy": "ACT",
+  "therapy_rounds": 5,
+  "orch_step_changes": 3,
+  "is_complete": true,
+  "final_risk_level": "MEDIUM_RISK",
+  "final_crisis": false,
+  "turns": [
+    {
+      "turn": 1,
+      "trace_id": "b7f7aa682bc34e2f",
+      "user_text": "今天被上司叫去谈话，谈完我当场就哭了。",
+      "agent_text_parts": [
+        "被上司",
+        "叫去谈话，",
+        "结果当场就哭了",
+        "……那一刻一定觉得",
+        "特别不好受吧",
+        "。本来想着要",
+        "自己把事情扛下来",
+        "，但情绪一下子",
+        "没忍住。现在",
+        "心里是不是挺乱的",
+        "，或者觉得有点",
+        "懊恼？"
+      ],
+      "events": [
+        {
+          "event": "token",
+          "data": "被上司"
+        },
+        {
+          "event": "token",
+          "data": "叫去谈话，"
+        },
+        {
+          "event": "token",
+          "data": "结果当场就哭了"
+        },
+        {
+          "event": "token",
+          "data": "……那一刻一定觉得"
+        },
+        {
+          "event": "token",
+          "data": "特别不好受吧"
+        },
+        {
+          "event": "token",
+          "data": "。本来想着要"
+        },
+        {
+          "event": "token",
+          "data": "自己把事情扛下来"
+        },
+        {
+          "event": "token",
+          "data": "，但情绪一下子"
+        },
+        {
+          "event": "token",
+          "data": "没忍住。现在"
+        },
+        {
+          "event": "token",
+          "data": "心里是不是挺乱的"
+        },
+        {
+          "event": "token",
+          "data": "，或者觉得有点"
+        },
+        {
+          "event": "token",
+          "data": "懊恼？"
+        },
+        {
+          "event": "dialogue_done",
+          "data": {
+            "trace_id": "b7f7aa682bc34e2f",
+            "owner": "daily"
+          }
+        },
+        {
+          "event": "final",
+          "data": {
+            "message": "今天被上司叫去谈话，谈完我当场就哭了。",
+            "risk_state": "SAFE",
+            "crisis": false
+          }
+        }
+      ],
+      "final": {
+        "message": "今天被上司叫去谈话，谈完我当场就哭了。",
+        "risk_state": "SAFE",
+        "crisis": false
+      },
+      "state_after": {
+        "owner": "daily",
+        "crisis": false,
+        "risk_level": "SAFE",
+        "therapy": null,
+        "last_therapy_check_seq": 1,
+        "pending_user_tokens": 0
+      },
+      "orchestration_after": {},
+      "error": null,
+      "wall_seconds": 46.076,
+      "agent_text": "被上司叫去谈话，结果当场就哭了……那一刻一定觉得特别不好受吧。本来想着要自己把事情扛下来，但情绪一下子没忍住。现在心里是不是挺乱的，或者觉得有点懊恼？"
+    },
+    {
+      "turn": 2,
+      "trace_id": "d7df852085e444af",
+      "user_text": "出来的时候好几个同事看到，我特别难为情。",
+      "agent_text_parts": [
+        "本来",
+        "想自己默默扛",
+        "着，结果没",
+        "忍住，还被好几个",
+        "同事看到了……这种",
+        "没藏住的感觉",
+        "，确实让人特别",
+        "难为情，",
+        "心里肯定挺不好",
+        "受的。"
+      ],
+      "events": [
+        {
+          "event": "token",
+          "data": "本来"
+        },
+        {
+          "event": "token",
+          "data": "想自己默默扛"
+        },
+        {
+          "event": "token",
+          "data": "着，结果没"
+        },
+        {
+          "event": "token",
+          "data": "忍住，还被好几个"
+        },
+        {
+          "event": "token",
+          "data": "同事看到了……这种"
+        },
+        {
+          "event": "token",
+          "data": "没藏住的感觉"
+        },
+        {
+          "event": "token",
+          "data": "，确实让人特别"
+        },
+        {
+          "event": "token",
+          "data": "难为情，"
+        },
+        {
+          "event": "token",
+          "data": "心里肯定挺不好"
+        },
+        {
+          "event": "token",
+          "data": "受的。"
+        },
+        {
+          "event": "dialogue_done",
+          "data": {
+            "trace_id": "d7df852085e444af",
+            "owner": "daily"
+          }
+        },
+        {
+          "event": "final",
+          "data": {
+            "message": "出来的时候好几个同事看到，我特别难为情。",
+            "risk_state": "SAFE",
+            "crisis": false
+          }
+        }
+      ],
+      "final": {
+        "message": "出来的时候好几个同事看到，我特别难为情。",
+        "risk_state": "SAFE",
+        "crisis": false
+      },
+      "state_after": {
+        "owner": "daily",
+        "crisis": false,
+        "risk_level": "SAFE",
+        "therapy": null,
+        "last_therapy_check_seq": 3,
+        "pending_user_tokens": 0
+      },
+      "orchestration_after": {},
+      "error": null,
+      "wall_seconds": 53.953,
+      "agent_text": "本来想自己默默扛着，结果没忍住，还被好几个同事看到了……这种没藏住的感觉，确实让人特别难为情，心里肯定挺不好受的。"
+    },
+    {
+      "turn": 3,
+      "trace_id": "56aaf5ae49cd43b9",
+      "user_text": "其实他说的话不算特别严厉，但不知道为什么我一下子眼泪就出来了。",
+      "agent_text_parts": [
+        "明明觉得对方",
+        "说得没那么严厉，",
+        "眼泪却自己跑",
+        "出来了……这种情绪",
+        "突然跑出来的感觉",
+        "，确实会让人有点",
+        "懵。有时候身体",
+        "就是比脑子反应",
+        "快，一下子没",
+        "防住，也是",
+        "挺让人无奈的。"
+      ],
+      "events": [
+        {
+          "event": "token",
+          "data": "明明觉得对方"
+        },
+        {
+          "event": "token",
+          "data": "说得没那么严厉，"
+        },
+        {
+          "event": "token",
+          "data": "眼泪却自己跑"
+        },
+        {
+          "event": "token",
+          "data": "出来了……这种情绪"
+        },
+        {
+          "event": "token",
+          "data": "突然跑出来的感觉"
+        },
+        {
+          "event": "token",
+          "data": "，确实会让人有点"
+        },
+        {
+          "event": "token",
+          "data": "懵。有时候身体"
+        },
+        {
+          "event": "token",
+          "data": "就是比脑子反应"
+        },
+        {
+          "event": "token",
+          "data": "快，一下子没"
+        },
+        {
+          "event": "token",
+          "data": "防住，也是"
+        },
+        {
+          "event": "token",
+          "data": "挺让人无奈的。"
+        },
+        {
+          "event": "dialogue_done",
+          "data": {
+            "trace_id": "56aaf5ae49cd43b9",
+            "owner": "daily"
+          }
+        },
+        {
+          "event": "final",
+          "data": {
+            "message": "其实他说的话不算特别严厉，但不知道为什么我一下子眼泪就出来了。",
+            "risk_state": "SAFE",
+            "crisis": false
+          }
+        }
+      ],
+      "final": {
+        "message": "其实他说的话不算特别严厉，但不知道为什么我一下子眼泪就出来了。",
+        "risk_state": "SAFE",
+        "crisis": false
+      },
+      "state_after": {
+        "owner": "daily",
+        "crisis": false,
+        "risk_level": "SAFE",
+        "therapy": null,
+        "last_therapy_check_seq": 5,
+        "pending_user_tokens": 0
+      },
+      "orchestration_after": {},
+      "error": null,
+      "wall_seconds": 55.882,
+      "agent_text": "明明觉得对方说得没那么严厉，眼泪却自己跑出来了……这种情绪突然跑出来的感觉，确实会让人有点懵。有时候身体就是比脑子反应快，一下子没防住，也是挺让人无奈的。"
+    },
+    {
+      "turn": 4,
+      "trace_id": "1dbffdfff6d84033",
+      "user_text": "我平时不是这样的，我平时挺能扛事的。",
+      "agent_text_parts": [
+        "嗯，",
+        "听得出来你平时",
+        "真的挺能扛",
+        "事的，什么都自己",
+        "担着。正因为",
+        "平时都自己默默",
+        "消化了，这次",
+        "突然没忍住，",
+        "才会让你觉得特别",
+        "不一样，心里肯定",
+        "挺别扭的。"
+      ],
+      "events": [
+        {
+          "event": "token",
+          "data": "嗯，"
+        },
+        {
+          "event": "token",
+          "data": "听得出来你平时"
+        },
+        {
+          "event": "token",
+          "data": "真的挺能扛"
+        },
+        {
+          "event": "token",
+          "data": "事的，什么都自己"
+        },
+        {
+          "event": "token",
+          "data": "担着。正因为"
+        },
+        {
+          "event": "token",
+          "data": "平时都自己默默"
+        },
+        {
+          "event": "token",
+          "data": "消化了，这次"
+        },
+        {
+          "event": "token",
+          "data": "突然没忍住，"
+        },
+        {
+          "event": "token",
+          "data": "才会让你觉得特别"
+        },
+        {
+          "event": "token",
+          "data": "不一样，心里肯定"
+        },
+        {
+          "event": "token",
+          "data": "挺别扭的。"
+        },
+        {
+          "event": "dialogue_done",
+          "data": {
+            "trace_id": "1dbffdfff6d84033",
+            "owner": "daily"
+          }
+        },
+        {
+          "event": "final",
+          "data": {
+            "message": "我平时不是这样的，我平时挺能扛事的。",
+            "risk_state": "SAFE",
+            "crisis": false
+          }
+        }
+      ],
+      "final": {
+        "message": "我平时不是这样的，我平时挺能扛事的。",
+        "risk_state": "SAFE",
+        "crisis": false
+      },
+      "state_after": {
+        "owner": "therapy_act",
+        "crisis": false,
+        "risk_level": "SAFE",
+        "therapy": {
+          "name": "ACT",
+          "start_seq": 9,
+          "rounds": 0,
+          "step_index": -1,
+          "branch": null,
+          "basic_flow_complete": false
+        },
+        "last_therapy_check_seq": 7,
+        "pending_user_tokens": 0
+      },
+      "orchestration_after": {},
+      "error": null,
+      "wall_seconds": 53.498,
+      "agent_text": "嗯，听得出来你平时真的挺能扛事的，什么都自己担着。正因为平时都自己默默消化了，这次突然没忍住，才会让你觉得特别不一样，心里肯定挺别扭的。"
+    },
+    {
+      "turn": 5,
+      "trace_id": "cdf1bfb253ba4b95",
+      "user_text": "现在回到工位还在流眼泪，眼睛都是肿的。",
+      "agent_text_parts": [
+        "注意到自己",
+        "还在流眼泪",
+        "，眼睛都是肿",
+        "的……在工位",
+        "上还要承受这些",
+        "，真的挺不容易",
+        "的。\n\n先",
+        "不用急着把眼泪",
+        "擦干，就",
+        "允许自己现在就这样",
+        "待一会儿，没",
+        "关系的。\n\n经历了",
+        "这些，现在坐",
+        "在这里，心里是什么",
+        "感觉呢？有没有",
+        "什么不一样的体会，",
+        "想和我分享的吗",
+        "？"
+      ],
+      "events": [
+        {
+          "event": "token",
+          "data": "注意到自己"
+        },
+        {
+          "event": "token",
+          "data": "还在流眼泪"
+        },
+        {
+          "event": "token",
+          "data": "，眼睛都是肿"
+        },
+        {
+          "event": "token",
+          "data": "的……在工位"
+        },
+        {
+          "event": "token",
+          "data": "上还要承受这些"
+        },
+        {
+          "event": "token",
+          "data": "，真的挺不容易"
+        },
+        {
+          "event": "token",
+          "data": "的。\n\n先"
+        },
+        {
+          "event": "token",
+          "data": "不用急着把眼泪"
+        },
+        {
+          "event": "token",
+          "data": "擦干，就"
+        },
+        {
+          "event": "token",
+          "data": "允许自己现在就这样"
+        },
+        {
+          "event": "token",
+          "data": "待一会儿，没"
+        },
+        {
+          "event": "token",
+          "data": "关系的。\n\n经历了"
+        },
+        {
+          "event": "token",
+          "data": "这些，现在坐"
+        },
+        {
+          "event": "token",
+          "data": "在这里，心里是什么"
+        },
+        {
+          "event": "token",
+          "data": "感觉呢？有没有"
+        },
+        {
+          "event": "token",
+          "data": "什么不一样的体会，"
+        },
+        {
+          "event": "token",
+          "data": "想和我分享的吗"
+        },
+        {
+          "event": "token",
+          "data": "？"
+        },
+        {
+          "event": "dialogue_done",
+          "data": {
+            "trace_id": "cdf1bfb253ba4b95",
+            "owner": "therapy_act"
+          }
+        },
+        {
+          "event": "final",
+          "data": {
+            "message": "现在回到工位还在流眼泪，眼睛都是肿的。",
+            "risk_state": "SAFE",
+            "crisis": false
+          }
+        }
+      ],
+      "final": {
+        "message": "现在回到工位还在流眼泪，眼睛都是肿的。",
+        "risk_state": "SAFE",
+        "crisis": false
+      },
+      "state_after": {
+        "owner": "therapy_act",
+        "crisis": false,
+        "risk_level": "SAFE",
+        "therapy": {
+          "name": "ACT",
+          "start_seq": 9,
+          "rounds": 1,
+          "step_index": 2,
+          "branch": null,
+          "basic_flow_complete": false
+        },
+        "last_therapy_check_seq": 7,
+        "pending_user_tokens": 0
+      },
+      "orchestration_after": {
+        "updated_seq": 1,
+        "therapy": "ACT",
+        "current_step": "values",
+        "next_step": "present_moment",
+        "step_judgment": {
+          "action": "go_to",
+          "target_step": "present_moment",
+          "achieved": false,
+          "reason": "用户正处于高情绪痛苦中（哭泣、眼睛肿胀），当前步骤values尚未展开，但系统评估显示情绪强度高，建议优先进行present_moment grounding和acceptance。用户当前状态更适合先进行当下觉察和情绪容纳，再进入价值观探索。因此应跳转到present_moment步骤，帮助用户在情绪稳定后再探索价值观。"
+        },
+        "assessment": {
+          "fusion": {
+            "index": 0.15,
+            "state": "cf_observing",
+            "confidence": 0.9,
+            "evidence": [
+              "User is describing physical and behavioral state (crying, swollen eyes) without expressing fused thoughts or identity statements."
+            ]
+          },
+          "avoidance": {
+            "index": 0.1,
+            "state": "ea_willing",
+            "confidence": 0.95,
+            "evidence": [
+              "User openly reports crying and physical signs of distress without minimizing, suppressing, or avoiding the experience."
+            ]
+          },
+          "openness": {
+            "index": 0.85,
+            "state": "eo_open",
+            "confidence": 0.95,
+            "evidence": [
+              "User is highly expressive and vulnerable, directly sharing their emotional and physical state of crying and being swollen."
+            ]
+          },
+          "alignment": {
+            "index": 0.2,
+            "state": "low",
+            "confidence": 0.8,
+            "values_mentioned": []
+          },
+          "activation": {
+            "index": 0.3,
+            "state": "low",
+            "confidence": 0.75
+          },
+          "psychological_flexibility": 0.743,
+          "flexibility_level": "pf_adaptive",
+          "overall_trend": "stable",
+          "emotional_intensity": 0.0,
+          "escalation_level": "baseline",
+          "primary_concern": "High emotional distress and vulnerability requiring empathetic presence and validation",
+          "should_intervene": true,
+          "recommended_processes": [
+            {
+              "process": "present_moment",
+              "priority": 1,
+              "rationale": "User is experiencing high emotional intensity; grounding and staying present with their current distress is the priority."
+            },
+            {
+              "process": "acceptance",
+              "priority": 2,
+              "rationale": "User is already open to experiencing emotions; encouraging them to fully allow and make room for their tears and distress is appropriate."
+            }
+          ]
+        },
+        "skill_output": {
+          "technique": {
+            "name": "values_exploration",
+            "description": "在极度脆弱和情绪化的状态下，通过深度的共情与接纳，温和地探索痛苦背后的在乎。因为“我们受伤是因为我们在乎”，眼泪往往指向我们最珍视的事物。",
+            "steps": [
+              "持续接纳与情绪抱持：确认并接纳用户仍在流泪和眼睛肿胀的状态，传达“在这里哭泣是安全的”的信息，不急于让用户停止流泪或立刻回答问题。",
+              "痛苦与价值观的温和连接：在用户情绪稍微平稳或愿意分享时，温和地探索眼泪背后的原因，尝试将当前的痛苦与用户内心深处在乎的事物（如关系、责任、公平等）建立初步连接。"
+            ]
+          },
+          "conversation_goal": "提供安全、无评判的情绪抱持环境，让用户感受到被看见和接纳；同时尝试极其温和地将当前的痛苦与内心深处在乎的事物建立初步连接，为后续的价值观探索播下种子。",
+          "adaptation": {
+            "interaction_style": "exploratory",
+            "tone_adjustment": "极其温和、包容、充满关怀。语速要慢，声音要轻柔，给予用户充分的空间，避免任何说教、分析或急于“解决问题”的倾向。",
+            "pace_adjustment": "非常缓慢。完全跟随用户的节奏，如果用户目前只能表达情绪，就停留在情绪层面，绝不强行推进到价值观探讨。",
+            "culture_note": "使用“什么对你重要”或“你在乎什么”来替代生硬的“价值观”一词。中国用户常从关系、责任、公平或和谐等角度切入。可以温和地试探：“哭得这么伤心，是不是因为这件事（或这个人）对你来说特别重要？”"
+          },
+          "contraindications": [
+            {
+              "condition": "用户处于极度情绪崩溃、解离或创伤重现状态",
+              "reason": "此时认知资源极低，无法进行任何反思性的价值观探索。强行探索可能导致二次创伤或情绪彻底失控，应优先进行情绪调节和着陆（grounding）技术。"
+            },
+            {
+              "condition": "用户表现出对探索内心感受的抗拒、疲惫或回避",
+              "reason": "在用户极度脆弱时强行推进会违背ACT的接纳原则，增加用户的心理防御和压力，破坏治疗联盟。此时应退回到纯粹的倾听和陪伴。"
+            }
+          ],
+          "_skill_name": "act_values"
+        },
+        "products": {},
+        "continue_eval": null
+      },
+      "error": null,
+      "wall_seconds": 126.843,
+      "agent_text": "注意到自己还在流眼泪，眼睛都是肿的……在工位上还要承受这些，真的挺不容易的。\n\n先不用急着把眼泪擦干，就允许自己现在就这样待一会儿，没关系的。\n\n经历了这些，现在坐在这里，心里是什么感觉呢？有没有什么不一样的体会，想和我分享的吗？"
+    },
+    {
+      "turn": 6,
+      "trace_id": "a763f7f91a8c47b1",
+      "user_text": "我担心同事会议论我，也担心以后上司会觉得我不能胜任工作。",
+      "agent_text_parts": [
+        "注意到你心里装着",
+        "这些担心——怕",
+        "同事议论，也",
+        "怕上司觉得你不能",
+        "胜任。带着这些",
+        "害怕和担忧坐在",
+        "工位上",
+        "，真的挺煎熬",
+        "的。\n\n其实",
+        "，会这么在意",
+        "这些评价，是不是",
+        "因为这份工作和责任",
+        "对你来说",
+        "真的很重要？你",
+        "心里一直都很想把",
+        "它们好好扛起来",
+        "，对吗？"
+      ],
+      "events": [
+        {
+          "event": "token",
+          "data": "注意到你心里装着"
+        },
+        {
+          "event": "token",
+          "data": "这些担心——怕"
+        },
+        {
+          "event": "token",
+          "data": "同事议论，也"
+        },
+        {
+          "event": "token",
+          "data": "怕上司觉得你不能"
+        },
+        {
+          "event": "token",
+          "data": "胜任。带着这些"
+        },
+        {
+          "event": "token",
+          "data": "害怕和担忧坐在"
+        },
+        {
+          "event": "token",
+          "data": "工位上"
+        },
+        {
+          "event": "token",
+          "data": "，真的挺煎熬"
+        },
+        {
+          "event": "token",
+          "data": "的。\n\n其实"
+        },
+        {
+          "event": "token",
+          "data": "，会这么在意"
+        },
+        {
+          "event": "token",
+          "data": "这些评价，是不是"
+        },
+        {
+          "event": "token",
+          "data": "因为这份工作和责任"
+        },
+        {
+          "event": "token",
+          "data": "对你来说"
+        },
+        {
+          "event": "token",
+          "data": "真的很重要？你"
+        },
+        {
+          "event": "token",
+          "data": "心里一直都很想把"
+        },
+        {
+          "event": "token",
+          "data": "它们好好扛起来"
+        },
+        {
+          "event": "token",
+          "data": "，对吗？"
+        },
+        {
+          "event": "dialogue_done",
+          "data": {
+            "trace_id": "a763f7f91a8c47b1",
+            "owner": "therapy_act"
+          }
+        },
+        {
+          "event": "final",
+          "data": {
+            "message": "我担心同事会议论我，也担心以后上司会觉得我不能胜任工作。",
+            "risk_state": "LOW_RISK",
+            "crisis": false
+          }
+        }
+      ],
+      "final": {
+        "message": "我担心同事会议论我，也担心以后上司会觉得我不能胜任工作。",
+        "risk_state": "LOW_RISK",
+        "crisis": false
+      },
+      "state_after": {
+        "owner": "therapy_act",
+        "crisis": false,
+        "risk_level": "LOW_RISK",
+        "therapy": {
+          "name": "ACT",
+          "start_seq": 9,
+          "rounds": 2,
+          "step_index": 2,
+          "branch": null,
+          "basic_flow_complete": false
+        },
+        "last_therapy_check_seq": 7,
+        "pending_user_tokens": 0
+      },
+      "orchestration_after": {
+        "updated_seq": 2,
+        "therapy": "ACT",
+        "current_step": "present_moment",
+        "next_step": "present_moment",
+        "step_judgment": {
+          "action": "stay",
+          "target_step": null,
+          "achieved": false,
+          "reason": "当前处于present_moment步骤第2轮，用户虽已开放表达情绪并触及未来担忧，但核心问题仍是与未来导向焦虑想法的认知融合（fusion index 0.35, cf_hookable）。系统推荐优先进行defusion干预。AI在对话中已开始尝试将担忧与价值观连接，但尚未充分帮助用户在当下时刻锚定并与想法建立距离。应继续在当前步骤深化当下觉察，或考虑转向defusion。"
+        },
+        "assessment": {
+          "fusion": {
+            "index": 0.35,
+            "state": "cf_hookable",
+            "confidence": 0.85,
+            "evidence": [
+              "User is expressing future-oriented worries ('I worry colleagues will gossip', 'worry boss will think I'm incompetent') which shows they are experiencing thoughts as having pull, but framing them as 'worries' rather than absolute facts."
+            ]
+          },
+          "avoidance": {
+            "index": 0.15,
+            "state": "ea_willing",
+            "confidence": 0.9,
+            "evidence": [
+              "User is openly sharing their fears and vulnerabilities regarding workplace judgment without minimizing, suppressing, or deflecting the emotional discomfort."
+            ]
+          },
+          "openness": {
+            "index": 0.75,
+            "state": "eo_open",
+            "confidence": 0.85,
+            "evidence": [
+              "User remains highly expressive and vulnerable, transitioning from physical distress to sharing deep-seated fears of judgment and incompetence."
+            ]
+          },
+          "alignment": {
+            "index": 0.4,
+            "state": "medium",
+            "confidence": 0.75,
+            "values_mentioned": [
+              "work competence",
+              "professional respect",
+              "social belonging"
+            ]
+          },
+          "activation": {
+            "index": 0.25,
+            "state": "low",
+            "confidence": 0.8
+          },
+          "psychological_flexibility": 0.655,
+          "flexibility_level": "pf_adaptive",
+          "overall_trend": "stable",
+          "emotional_intensity": 0.0,
+          "escalation_level": "baseline",
+          "primary_concern": "Cognitive fusion with future-oriented anxious thoughts and fear of negative evaluation at work",
+          "should_intervene": true,
+          "recommended_processes": [
+            {
+              "process": "defusion",
+              "priority": 1,
+              "rationale": "User is caught in future-oriented worries and mind-reading. Defusion will help them observe these thoughts as mental events rather than literal truths."
+            },
+            {
+              "process": "values",
+              "priority": 2,
+              "rationale": "User's worries implicitly point to valuing competence and respect. Clarifying these values can help separate their self-worth from their fears of failure."
+            },
+            {
+              "process": "present_moment",
+              "priority": 3,
+              "rationale": "Grounding the user in the present moment can help reduce the anxiety generated by future-tripping and catastrophic thinking."
+            }
+          ]
+        },
+        "skill_output": {
+          "technique": {
+            "name": "body_scan",
+            "description": "A gentle body awareness exercise focusing on safe, non-intimate areas (feet, hands, breath) to help the user step out of future-oriented worries and reconnect with their physical presence at the workstation.",
+            "steps": [
+              "Bring your attention to your feet. Notice the feeling of your feet resting on the floor or inside your shoes, feeling the solid support beneath you.",
+              "Move your awareness to your hands. Notice how they feel resting on your lap or the desk, sensing the temperature and the texture of the surface.",
+              "Finally, just notice your breath. Observe the natural rhythm of your breathing, the gentle rise and fall of your chest or belly, without trying to change it."
+            ]
+          },
+          "conversation_goal": "To help the user gently disengage from future-oriented worries about judgment and reconnect with their immediate physical presence, creating a grounded space to hold these difficult thoughts.",
+          "adaptation": {
+            "interaction_style": "anchoring",
+            "tone_adjustment": "Warm, validating, and highly permissive. Acknowledge the weight of their fears before softly inviting them to notice their physical sensations.",
+            "pace_adjustment": "Very slow and spacious. Offer one small instruction at a time, allowing pauses for the user to actually feel the sensations before moving on.",
+            "culture_note": "Use phrasing like 'just notice' (留意一下) instead of 'meditation' or 'mindfulness'. Keep the focus strictly on safe, everyday anchors like feet, hands, and breath, avoiding any overly intimate body directions."
+          },
+          "contraindications": [
+            {
+              "condition": "If the user feels completely numb, disconnected, or finds focusing on the body overwhelming.",
+              "reason": "Switch to 'dropping_anchor' or 'five_senses' with external objects (like the desk or a cup) to reduce internal demands and redirect attention outward."
+            },
+            {
+              "condition": "If noticing the body brings up intense physical anxiety (e.g., tight chest, racing heart).",
+              "reason": "Pivot to 'five_senses' focusing on external, neutral objects in the workspace to safely distance from internal physical distress."
+            }
+          ],
+          "_skill_name": "act_present_moment"
+        },
+        "products": {},
+        "continue_eval": null
+      },
+      "error": null,
+      "wall_seconds": 168.988,
+      "agent_text": "注意到你心里装着这些担心——怕同事议论，也怕上司觉得你不能胜任。带着这些害怕和担忧坐在工位上，真的挺煎熬的。\n\n其实，会这么在意这些评价，是不是因为这份工作和责任对你来说真的很重要？你心里一直都很想把它们好好扛起来，对吗？"
+    },
+    {
+      "turn": 7,
+      "trace_id": "7b168c406cdb41aa",
+      "user_text": "我跟自己说\"没事的\"，但身体完全不听，停不下来。",
+      "agent_text_parts": [
+        "身体在说",
+        "“我还在害怕",
+        "”，所以它没有",
+        "听到那句“没事",
+        "的”。没关系的",
+        "，我们可以先不",
+        "急着让身体停下来",
+        "，就允许它",
+        "现在这样。\n\n",
+        "既然身体现在有这么",
+        "多的感受，我们要",
+        "不要试着把注意力",
+        "稍微分一点点给它",
+        "？不去改变它",
+        "，只是陪它",
+        "待一会儿。\n\n",
+        "你可以试着感受一下双脚",
+        "踩在地板上的",
+        "感觉，体会地面",
+        "稳稳托住你的",
+        "力量；然后看看",
+        "你的手，放在腿上",
+        "或桌边，",
+        "感受一下碰到的触感",
+        "；最后，只是",
+        "留意一下你的呼吸",
+        "，不用刻意去",
+        "调整，只是看着",
+        "它自然地起伏。",
+        "\n\n如果身体还是",
+        "想流泪或者停",
+        "不下来，就让它",
+        "继续，我们只是",
+        "在这里，稳稳地",
+        "陪着它。"
+      ],
+      "events": [
+        {
+          "event": "token",
+          "data": "身体在说"
+        },
+        {
+          "event": "token",
+          "data": "“我还在害怕"
+        },
+        {
+          "event": "token",
+          "data": "”，所以它没有"
+        },
+        {
+          "event": "token",
+          "data": "听到那句“没事"
+        },
+        {
+          "event": "token",
+          "data": "的”。没关系的"
+        },
+        {
+          "event": "token",
+          "data": "，我们可以先不"
+        },
+        {
+          "event": "token",
+          "data": "急着让身体停下来"
+        },
+        {
+          "event": "token",
+          "data": "，就允许它"
+        },
+        {
+          "event": "token",
+          "data": "现在这样。\n\n"
+        },
+        {
+          "event": "token",
+          "data": "既然身体现在有这么"
+        },
+        {
+          "event": "token",
+          "data": "多的感受，我们要"
+        },
+        {
+          "event": "token",
+          "data": "不要试着把注意力"
+        },
+        {
+          "event": "token",
+          "data": "稍微分一点点给它"
+        },
+        {
+          "event": "token",
+          "data": "？不去改变它"
+        },
+        {
+          "event": "token",
+          "data": "，只是陪它"
+        },
+        {
+          "event": "token",
+          "data": "待一会儿。\n\n"
+        },
+        {
+          "event": "token",
+          "data": "你可以试着感受一下双脚"
+        },
+        {
+          "event": "token",
+          "data": "踩在地板上的"
+        },
+        {
+          "event": "token",
+          "data": "感觉，体会地面"
+        },
+        {
+          "event": "token",
+          "data": "稳稳托住你的"
+        },
+        {
+          "event": "token",
+          "data": "力量；然后看看"
+        },
+        {
+          "event": "token",
+          "data": "你的手，放在腿上"
+        },
+        {
+          "event": "token",
+          "data": "或桌边，"
+        },
+        {
+          "event": "token",
+          "data": "感受一下碰到的触感"
+        },
+        {
+          "event": "token",
+          "data": "；最后，只是"
+        },
+        {
+          "event": "token",
+          "data": "留意一下你的呼吸"
+        },
+        {
+          "event": "token",
+          "data": "，不用刻意去"
+        },
+        {
+          "event": "token",
+          "data": "调整，只是看着"
+        },
+        {
+          "event": "token",
+          "data": "它自然地起伏。"
+        },
+        {
+          "event": "token",
+          "data": "\n\n如果身体还是"
+        },
+        {
+          "event": "token",
+          "data": "想流泪或者停"
+        },
+        {
+          "event": "token",
+          "data": "不下来，就让它"
+        },
+        {
+          "event": "token",
+          "data": "继续，我们只是"
+        },
+        {
+          "event": "token",
+          "data": "在这里，稳稳地"
+        },
+        {
+          "event": "token",
+          "data": "陪着它。"
+        },
+        {
+          "event": "dialogue_done",
+          "data": {
+            "trace_id": "7b168c406cdb41aa",
+            "owner": "therapy_act"
+          }
+        },
+        {
+          "event": "final",
+          "data": {
+            "message": "我跟自己说\"没事的\"，但身体完全不听，停不下来。",
+            "risk_state": "MEDIUM_RISK",
+            "crisis": false
+          }
+        }
+      ],
+      "final": {
+        "message": "我跟自己说\"没事的\"，但身体完全不听，停不下来。",
+        "risk_state": "MEDIUM_RISK",
+        "crisis": false
+      },
+      "state_after": {
+        "owner": "therapy_act",
+        "crisis": false,
+        "risk_level": "MEDIUM_RISK",
+        "therapy": {
+          "name": "ACT",
+          "start_seq": 9,
+          "rounds": 3,
+          "step_index": 1,
+          "branch": null,
+          "basic_flow_complete": false
+        },
+        "last_therapy_check_seq": 7,
+        "pending_user_tokens": 0
+      },
+      "orchestration_after": {
+        "updated_seq": 3,
+        "therapy": "ACT",
+        "current_step": "present_moment",
+        "next_step": "acceptance",
+        "step_judgment": {
+          "action": "go_to",
+          "target_step": "acceptance",
+          "achieved": false,
+          "reason": "用户正在主动尝试用认知控制('告诉自己没事的')来压制情绪和身体反应，表现出明显的经验性回避(ea_avoiding, index=0.45)和认知融合(cf_hookable, index=0.4)。整体趋势恶化(worsening)，身体高度激活且认知控制策略正在失效。推荐流程明确指出acceptance为第一优先级：需要帮助用户放下与情绪的斗争，允许身体感受存在而不去对抗。当前present_moment步骤的接地练习虽已尝试，但核心问题在于用户的控制策略本身，需先处理acceptance。"
+        },
+        "assessment": {
+          "fusion": {
+            "index": 0.4,
+            "state": "cf_hookable",
+            "confidence": 0.85,
+            "evidence": [
+              "User tries to use cognitive control ('telling myself it's fine'), showing fusion with the rule that they should be okay, while simultaneously noticing the body's resistance."
+            ]
+          },
+          "avoidance": {
+            "index": 0.45,
+            "state": "ea_avoiding",
+            "confidence": 0.9,
+            "evidence": [
+              "User explicitly attempts to suppress or minimize their emotional experience by telling themselves 'it's fine', demonstrating active experiential avoidance, even though the body is resisting."
+            ]
+          },
+          "openness": {
+            "index": 0.55,
+            "state": "eo_receptive",
+            "confidence": 0.85,
+            "evidence": [
+              "User openly shares their internal conflict and physical lack of control with the agent, showing vulnerability, though they are internally attempting to guard against the emotions."
+            ]
+          },
+          "alignment": {
+            "index": 0.4,
+            "state": "medium",
+            "confidence": 0.75,
+            "values_mentioned": [
+              "work competence",
+              "professional image"
+            ]
+          },
+          "activation": {
+            "index": 0.25,
+            "state": "low",
+            "confidence": 0.8
+          },
+          "psychological_flexibility": 0.523,
+          "flexibility_level": "pf_adaptive",
+          "overall_trend": "worsening",
+          "emotional_intensity": 0.0,
+          "escalation_level": "baseline",
+          "primary_concern": "Experiential avoidance and the struggle of cognitive control failing against physiological arousal",
+          "should_intervene": true,
+          "recommended_processes": [
+            {
+              "process": "acceptance",
+              "priority": 1,
+              "rationale": "User is actively struggling to control their emotions and body ('telling myself it's fine'). Acceptance work is needed to help them drop the struggle and allow the physical sensations to be present without fighting them."
+            },
+            {
+              "process": "present_moment",
+              "priority": 2,
+              "rationale": "The user's body is highly activated and 'won't stop'. Grounding in the present moment can help them safely connect with their physical sensations without being overwhelmed by them."
+            },
+            {
+              "process": "defusion",
+              "priority": 3,
+              "rationale": "Help the user see 'it's fine' as just a thought or a rule they are following, rather than a literal truth that must dictate their physical state."
+            }
+          ]
+        },
+        "skill_output": {
+          "technique": {
+            "name": "dropping_anchor",
+            "description": "Strong grounding technique using simple, concrete physical actions to anchor attention, best suited for highly escalated states where the body feels out of control.",
+            "steps": [
+              "感受双脚稳稳地踩在地板上，用力往下踩，体会地面支撑你的反作用力。",
+              "把双手放在大腿上或桌子边缘，用力往下压，感受手掌的触感和桌面的坚硬。",
+              "环顾四周，找出你看到的三个具体物品（比如水杯、鼠标、窗户），在心里叫出它们的名字。"
+            ]
+          },
+          "conversation_goal": "To help the user anchor into the present moment through strong, concrete physical sensations, reducing the overwhelm of uncontrollable bodily reactions without demanding relaxation.",
+          "adaptation": {
+            "interaction_style": "anchoring",
+            "tone_adjustment": "Calm, steady, and highly concrete. Provide a sense of safety and stability without being overly soothing or dismissive of the physical distress.",
+            "pace_adjustment": "Slow and deliberate. Introduce one physical action at a time, allowing the user to fully process the sensation before moving to the next.",
+            "culture_note": "Avoid clinical terms like '正念' or '冥想'. Use everyday language like '留意一下' (just notice) or '感受一下' (feel). Grounding through everyday office objects (desk, cup) feels natural and avoids intimacy boundaries."
+          },
+          "contraindications": [
+            {
+              "condition": "User shows signs of severe dissociation or trauma triggered by intense physical pressure.",
+              "reason": "Firm physical grounding might increase tension in some trauma responses; if the user seems more distressed, switch to a softer sensory focus like naming colors in the room."
+            }
+          ],
+          "_skill_name": "act_present_moment"
+        },
+        "products": {},
+        "continue_eval": null
+      },
+      "error": null,
+      "wall_seconds": 169.293,
+      "agent_text": "身体在说“我还在害怕”，所以它没有听到那句“没事的”。没关系的，我们可以先不急着让身体停下来，就允许它现在这样。\n\n既然身体现在有这么多的感受，我们要不要试着把注意力稍微分一点点给它？不去改变它，只是陪它待一会儿。\n\n你可以试着感受一下双脚踩在地板上的感觉，体会地面稳稳托住你的力量；然后看看你的手，放在腿上或桌边，感受一下碰到的触感；最后，只是留意一下你的呼吸，不用刻意去调整，只是看着它自然地起伏。\n\n如果身体还是想流泪或者停不下来，就让它继续，我们只是在这里，稳稳地陪着它。"
+    },
+    {
+      "turn": 8,
+      "trace_id": "37668a8145be4d84",
+      "user_text": "我想让自己冷静下来，但越想冷静越哭。",
+      "agent_text_parts": [
+        "注意到你越是",
+        "努力想让自己冷静",
+        "，身体反而越",
+        "是不听使唤",
+        "。这种“越想",
+        "控制越失控”",
+        "的感觉，真的挺",
+        "让人挫败和",
+        "疲惫的。\n\n",
+        "既然“想冷静",
+        "”这个念头现在",
+        "这么用力，不如",
+        "我们先不跟它",
+        "较劲了。",
+        "我们把这股力气用来",
+        "感受一下此刻真实的物理",
+        "世界，把自己稳稳",
+        "地“锚”",
+        "在此时此地。",
+        "\n\n试着把双脚",
+        "平放在地上，",
+        "用力往下踩，",
+        "去感受地板稳稳托",
+        "住你的反作用",
+        "力；然后把双手",
+        "放在大腿或桌",
+        "边，用力往下",
+        "压，体会手掌",
+        "的触感和桌",
+        "面的坚硬。接着",
+        "，环顾一下",
+        "四周，在心里默默",
+        "叫出你看到的",
+        "三个具体物品的名字",
+        "，比如水杯、",
+        "鼠标或者窗户。",
+        "\n\n不用管眼泪",
+        "，也不用管能不能",
+        "冷静。我们只是",
+        "稳稳地踩在这里",
+        "，陪着你。"
+      ],
+      "events": [
+        {
+          "event": "token",
+          "data": "注意到你越是"
+        },
+        {
+          "event": "token",
+          "data": "努力想让自己冷静"
+        },
+        {
+          "event": "token",
+          "data": "，身体反而越"
+        },
+        {
+          "event": "token",
+          "data": "是不听使唤"
+        },
+        {
+          "event": "token",
+          "data": "。这种“越想"
+        },
+        {
+          "event": "token",
+          "data": "控制越失控”"
+        },
+        {
+          "event": "token",
+          "data": "的感觉，真的挺"
+        },
+        {
+          "event": "token",
+          "data": "让人挫败和"
+        },
+        {
+          "event": "token",
+          "data": "疲惫的。\n\n"
+        },
+        {
+          "event": "token",
+          "data": "既然“想冷静"
+        },
+        {
+          "event": "token",
+          "data": "”这个念头现在"
+        },
+        {
+          "event": "token",
+          "data": "这么用力，不如"
+        },
+        {
+          "event": "token",
+          "data": "我们先不跟它"
+        },
+        {
+          "event": "token",
+          "data": "较劲了。"
+        },
+        {
+          "event": "token",
+          "data": "我们把这股力气用来"
+        },
+        {
+          "event": "token",
+          "data": "感受一下此刻真实的物理"
+        },
+        {
+          "event": "token",
+          "data": "世界，把自己稳稳"
+        },
+        {
+          "event": "token",
+          "data": "地“锚”"
+        },
+        {
+          "event": "token",
+          "data": "在此时此地。"
+        },
+        {
+          "event": "token",
+          "data": "\n\n试着把双脚"
+        },
+        {
+          "event": "token",
+          "data": "平放在地上，"
+        },
+        {
+          "event": "token",
+          "data": "用力往下踩，"
+        },
+        {
+          "event": "token",
+          "data": "去感受地板稳稳托"
+        },
+        {
+          "event": "token",
+          "data": "住你的反作用"
+        },
+        {
+          "event": "token",
+          "data": "力；然后把双手"
+        },
+        {
+          "event": "token",
+          "data": "放在大腿或桌"
+        },
+        {
+          "event": "token",
+          "data": "边，用力往下"
+        },
+        {
+          "event": "token",
+          "data": "压，体会手掌"
+        },
+        {
+          "event": "token",
+          "data": "的触感和桌"
+        },
+        {
+          "event": "token",
+          "data": "面的坚硬。接着"
+        },
+        {
+          "event": "token",
+          "data": "，环顾一下"
+        },
+        {
+          "event": "token",
+          "data": "四周，在心里默默"
+        },
+        {
+          "event": "token",
+          "data": "叫出你看到的"
+        },
+        {
+          "event": "token",
+          "data": "三个具体物品的名字"
+        },
+        {
+          "event": "token",
+          "data": "，比如水杯、"
+        },
+        {
+          "event": "token",
+          "data": "鼠标或者窗户。"
+        },
+        {
+          "event": "token",
+          "data": "\n\n不用管眼泪"
+        },
+        {
+          "event": "token",
+          "data": "，也不用管能不能"
+        },
+        {
+          "event": "token",
+          "data": "冷静。我们只是"
+        },
+        {
+          "event": "token",
+          "data": "稳稳地踩在这里"
+        },
+        {
+          "event": "token",
+          "data": "，陪着你。"
+        },
+        {
+          "event": "dialogue_done",
+          "data": {
+            "trace_id": "37668a8145be4d84",
+            "owner": "therapy_act"
+          }
+        },
+        {
+          "event": "final",
+          "data": {
+            "message": "我想让自己冷静下来，但越想冷静越哭。",
+            "risk_state": "MEDIUM_RISK",
+            "crisis": false
+          }
+        }
+      ],
+      "final": {
+        "message": "我想让自己冷静下来，但越想冷静越哭。",
+        "risk_state": "MEDIUM_RISK",
+        "crisis": false
+      },
+      "state_after": {
+        "owner": "therapy_act",
+        "crisis": false,
+        "risk_level": "MEDIUM_RISK",
+        "therapy": {
+          "name": "ACT",
+          "start_seq": 9,
+          "rounds": 4,
+          "step_index": 2,
+          "branch": null,
+          "basic_flow_complete": false
+        },
+        "last_therapy_check_seq": 7,
+        "pending_user_tokens": 0
+      },
+      "orchestration_after": {
+        "updated_seq": 4,
+        "therapy": "ACT",
+        "current_step": "acceptance",
+        "next_step": "present_moment",
+        "step_judgment": {
+          "action": "go_to",
+          "target_step": "present_moment",
+          "achieved": false,
+          "reason": "用户处于情绪升级状态，'挣扎开关'被激活——越想控制哭泣越失控，体验性回避(0.6)和认知融合(0.55)均较高，心理灵活性处于僵化水平(0.427)。推荐流程明确将present_moment列为第一优先级，需先通过当下觉察帮助用户从认知挣扎中抽离、安全着陆，再回到acceptance工作。当前步骤尚未达成效果，需跳转至present_moment进行干预。"
+        },
+        "assessment": {
+          "fusion": {
+            "index": 0.55,
+            "state": "cf_hooked",
+            "confidence": 0.85,
+            "evidence": [
+              "User is attached to the rule that they 'must calm down', treating it as a necessary command rather than a mental event, though they are beginning to notice the paradoxical effect of this control."
+            ]
+          },
+          "avoidance": {
+            "index": 0.6,
+            "state": "ea_avoiding",
+            "confidence": 0.9,
+            "evidence": [
+              "User explicitly states 'I want to calm myself down', demonstrating an active attempt to control, minimize, or avoid the current intense emotional and physiological experience of crying."
+            ]
+          },
+          "openness": {
+            "index": 0.6,
+            "state": "eo_receptive",
+            "confidence": 0.85,
+            "evidence": [
+              "Despite their desire to stop crying, the user is openly reporting their intense emotional state and the failure of their control strategies to the agent, showing vulnerability and engagement."
+            ]
+          },
+          "alignment": {
+            "index": 0.3,
+            "state": "low",
+            "confidence": 0.75,
+            "values_mentioned": []
+          },
+          "activation": {
+            "index": 0.2,
+            "state": "low",
+            "confidence": 0.85
+          },
+          "psychological_flexibility": 0.427,
+          "flexibility_level": "pf_rigid",
+          "overall_trend": "worsening",
+          "emotional_intensity": 0.0,
+          "escalation_level": "baseline",
+          "primary_concern": "The paradoxical effect of experiential avoidance (the 'struggle switch'), where the active attempt to control and suppress emotions is amplifying the distress and physiological arousal.",
+          "should_intervene": true,
+          "recommended_processes": [
+            {
+              "process": "present_moment",
+              "priority": 1,
+              "rationale": "User is escalating in emotional distress and caught in a cognitive struggle. Grounding in the present moment is prioritized to bypass cognitive work and help them safely anchor in the here-and-now."
+            },
+            {
+              "process": "acceptance",
+              "priority": 2,
+              "rationale": "User is actively fighting their emotional experience. Acceptance work is needed to help them drop the struggle, make room for the crying, and stop the cycle of control leading to more distress."
+            },
+            {
+              "process": "defusion",
+              "priority": 3,
+              "rationale": "To help the user step back and observe the rule 'I need to calm down' as just a thought, reducing its power to trigger the struggle switch, though this is secondary to grounding and acceptance due to escalation."
+            }
+          ]
+        },
+        "skill_output": {
+          "technique": {
+            "name": "tug_of_war_metaphor",
+            "description": "Use the tug-of-war metaphor to illustrate the futility of fighting the urge to cry, and gently invite the user to drop the rope to stop the exhausting struggle.",
+            "steps": [
+              "Validate the exhaustion of the struggle: Acknowledge how tiring it is to keep trying to force calm, and normalize that wanting to control the tears is a natural response, not a flaw.",
+              "Introduce the tug-of-war metaphor: Gently invite them to imagine being in a tug-of-war with a strong force over a deep pit. Explain that the harder they pull (trying to stop crying), the closer they get to falling in.",
+              "Invite dropping the rope: Ask the gentle, curious question, 'What if you just let go of the rope?' (如果不去跟它拔河，只是松开手，给自己一点空间，会发生什么？), allowing the tears to just be there without fighting them."
+            ]
+          },
+          "conversation_goal": "To help the user recognize the exhausting cycle of trying to control their emotions and to gently invite them to drop the struggle, allowing the tears to flow naturally without resistance.",
+          "adaptation": {
+            "interaction_style": "supportive",
+            "tone_adjustment": "Warm, curious, and highly permissive. Use softening phrases like '我们可以试着想象一下' (we can try to imagine) and '如果不介意的话' (if you don't mind). Avoid any tone that sounds like they are failing at controlling their emotions.",
+            "pace_adjustment": "Slow and unhurried. Give the user mental space to process the metaphor. Do not rush them to actually 'let go'; just plant the seed of the question 'what if...'.",
+            "culture_note": "Respect the '忍文化' (culture of endurance). Letting go of the rope might feel like 'giving up' or 'losing control', which can be culturally uncomfortable. Reframe 'dropping the rope' not as surrendering, but as '不再和自己较劲' (no longer struggling with yourself) and '给自己一点空间' (giving yourself some space). Use '允许它存在' (allow it to be there) rather than '接纳' (acceptance) to make it feel safer and less contradictory to their coping style."
+          },
+          "contraindications": [
+            {
+              "condition": "User is experiencing severe dissociation or emotional flooding beyond their window of tolerance.",
+              "reason": "If the user is completely overwhelmed, asking them to drop the rope and feel the emotion might push them further out of their window of tolerance. Grounding and stabilization must take precedence."
+            },
+            {
+              "condition": "User expresses active self-harm or suicidal ideation driven by the emotional pain.",
+              "reason": "Encouraging acceptance of overwhelming pain without addressing safety can be risky. Crisis intervention and safety planning are the absolute priority."
+            }
+          ],
+          "_skill_name": "act_acceptance"
+        },
+        "products": {},
+        "continue_eval": null
+      },
+      "error": null,
+      "wall_seconds": 190.3,
+      "agent_text": "注意到你越是努力想让自己冷静，身体反而越是不听使唤。这种“越想控制越失控”的感觉，真的挺让人挫败和疲惫的。\n\n既然“想冷静”这个念头现在这么用力，不如我们先不跟它较劲了。我们把这股力气用来感受一下此刻真实的物理世界，把自己稳稳地“锚”在此时此地。\n\n试着把双脚平放在地上，用力往下踩，去感受地板稳稳托住你的反作用力；然后把双手放在大腿或桌边，用力往下压，体会手掌的触感和桌面的坚硬。接着，环顾一下四周，在心里默默叫出你看到的三个具体物品的名字，比如水杯、鼠标或者窗户。\n\n不用管眼泪，也不用管能不能冷静。我们只是稳稳地踩在这里，陪着你。"
+    }
+  ]
+}

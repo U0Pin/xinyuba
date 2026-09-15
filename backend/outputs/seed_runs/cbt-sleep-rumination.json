@@ -1,0 +1,1277 @@
+{
+  "seed_id": "cbt-sleep-rumination",
+  "target_family": "CBT",
+  "scenario_label": "睡眠反刍-汇报表情",
+  "scenario_description": "睡前反复想白天汇报时领导没表情，难以入睡",
+  "user_id": "seed-cbt-sleep-rumination",
+  "session_id": "a654626e9e89497a",
+  "turns_total": 8,
+  "switched_to_therapy_at_turn": 3,
+  "actual_therapy": "CBT",
+  "therapy_rounds": 6,
+  "orch_step_changes": 1,
+  "is_complete": false,
+  "final_risk_level": "SAFE",
+  "final_crisis": false,
+  "turns": [
+    {
+      "turn": 1,
+      "trace_id": "306096041ec6461c",
+      "user_text": "我最近睡眠很差，每晚躺下至少要一两个小时才能睡着。",
+      "agent_text_parts": [
+        "躺下一两个小时",
+        "都睡不着，确实",
+        "挺让人心烦和",
+        "疲惫的。晚上",
+        "躺在那儿的时候",
+        "，脑子里是不是还在",
+        "想些事情，",
+        "很难让自己停下来？"
+      ],
+      "events": [
+        {
+          "event": "token",
+          "data": "躺下一两个小时"
+        },
+        {
+          "event": "token",
+          "data": "都睡不着，确实"
+        },
+        {
+          "event": "token",
+          "data": "挺让人心烦和"
+        },
+        {
+          "event": "token",
+          "data": "疲惫的。晚上"
+        },
+        {
+          "event": "token",
+          "data": "躺在那儿的时候"
+        },
+        {
+          "event": "token",
+          "data": "，脑子里是不是还在"
+        },
+        {
+          "event": "token",
+          "data": "想些事情，"
+        },
+        {
+          "event": "token",
+          "data": "很难让自己停下来？"
+        },
+        {
+          "event": "dialogue_done",
+          "data": {
+            "trace_id": "306096041ec6461c",
+            "owner": "daily"
+          }
+        },
+        {
+          "event": "final",
+          "data": {
+            "message": "我最近睡眠很差，每晚躺下至少要一两个小时才能睡着。",
+            "risk_state": "LOW_RISK",
+            "crisis": false
+          }
+        }
+      ],
+      "final": {
+        "message": "我最近睡眠很差，每晚躺下至少要一两个小时才能睡着。",
+        "risk_state": "LOW_RISK",
+        "crisis": false
+      },
+      "state_after": {
+        "owner": "daily",
+        "crisis": false,
+        "risk_level": "LOW_RISK",
+        "therapy": null,
+        "last_therapy_check_seq": 1,
+        "pending_user_tokens": 0
+      },
+      "orchestration_after": {},
+      "error": null,
+      "wall_seconds": 28.224,
+      "agent_text": "躺下一两个小时都睡不着，确实挺让人心烦和疲惫的。晚上躺在那儿的时候，脑子里是不是还在想些事情，很难让自己停下来？"
+    },
+    {
+      "turn": 2,
+      "trace_id": "dade30b172e345ec",
+      "user_text": "主要是脑子停不下来，白天发生的事一直在脑子里过。",
+      "agent_text_parts": [
+        "白天发生的事在",
+        "脑子里一直过，",
+        "想停都停",
+        "不下来，这种感觉确实",
+        "挺折磨人的。",
+        "明明身体已经想",
+        "休息了，脑子",
+        "却还在“加班",
+        "”，难怪你躺",
+        "那么久都睡不着",
+        "。"
+      ],
+      "events": [
+        {
+          "event": "token",
+          "data": "白天发生的事在"
+        },
+        {
+          "event": "token",
+          "data": "脑子里一直过，"
+        },
+        {
+          "event": "token",
+          "data": "想停都停"
+        },
+        {
+          "event": "token",
+          "data": "不下来，这种感觉确实"
+        },
+        {
+          "event": "token",
+          "data": "挺折磨人的。"
+        },
+        {
+          "event": "token",
+          "data": "明明身体已经想"
+        },
+        {
+          "event": "token",
+          "data": "休息了，脑子"
+        },
+        {
+          "event": "token",
+          "data": "却还在“加班"
+        },
+        {
+          "event": "token",
+          "data": "”，难怪你躺"
+        },
+        {
+          "event": "token",
+          "data": "那么久都睡不着"
+        },
+        {
+          "event": "token",
+          "data": "。"
+        },
+        {
+          "event": "dialogue_done",
+          "data": {
+            "trace_id": "dade30b172e345ec",
+            "owner": "daily"
+          }
+        },
+        {
+          "event": "final",
+          "data": {
+            "message": "主要是脑子停不下来，白天发生的事一直在脑子里过。",
+            "risk_state": "SAFE",
+            "crisis": false
+          }
+        }
+      ],
+      "final": {
+        "message": "主要是脑子停不下来，白天发生的事一直在脑子里过。",
+        "risk_state": "SAFE",
+        "crisis": false
+      },
+      "state_after": {
+        "owner": "daily",
+        "crisis": false,
+        "risk_level": "SAFE",
+        "therapy": null,
+        "last_therapy_check_seq": 3,
+        "pending_user_tokens": 0
+      },
+      "orchestration_after": {},
+      "error": null,
+      "wall_seconds": 43.522,
+      "agent_text": "白天发生的事在脑子里一直过，想停都停不下来，这种感觉确实挺折磨人的。明明身体已经想休息了，脑子却还在“加班”，难怪你躺那么久都睡不着。"
+    },
+    {
+      "turn": 3,
+      "trace_id": "1c7def950f2448ca",
+      "user_text": "今天下午跟领导汇报，他当时没表情，我现在还在反复想\"是不是讲得不好\"。",
+      "agent_text_parts": [
+        "领导当时没表情",
+        "，确实很容易让人",
+        "心里没底。",
+        "难怪你脑子一直",
+        "停不下来，还在",
+        "反复想“是不是",
+        "讲得不好”。",
+        "这种摸不透对方",
+        "想法的感觉，真的",
+        "挺让人煎熬的",
+        "。"
+      ],
+      "events": [
+        {
+          "event": "token",
+          "data": "领导当时没表情"
+        },
+        {
+          "event": "token",
+          "data": "，确实很容易让人"
+        },
+        {
+          "event": "token",
+          "data": "心里没底。"
+        },
+        {
+          "event": "token",
+          "data": "难怪你脑子一直"
+        },
+        {
+          "event": "token",
+          "data": "停不下来，还在"
+        },
+        {
+          "event": "token",
+          "data": "反复想“是不是"
+        },
+        {
+          "event": "token",
+          "data": "讲得不好”。"
+        },
+        {
+          "event": "token",
+          "data": "这种摸不透对方"
+        },
+        {
+          "event": "token",
+          "data": "想法的感觉，真的"
+        },
+        {
+          "event": "token",
+          "data": "挺让人煎熬的"
+        },
+        {
+          "event": "token",
+          "data": "。"
+        },
+        {
+          "event": "dialogue_done",
+          "data": {
+            "trace_id": "1c7def950f2448ca",
+            "owner": "daily"
+          }
+        },
+        {
+          "event": "final",
+          "data": {
+            "message": "今天下午跟领导汇报，他当时没表情，我现在还在反复想\"是不是讲得不好\"。",
+            "risk_state": "SAFE",
+            "crisis": false
+          }
+        }
+      ],
+      "final": {
+        "message": "今天下午跟领导汇报，他当时没表情，我现在还在反复想\"是不是讲得不好\"。",
+        "risk_state": "SAFE",
+        "crisis": false
+      },
+      "state_after": {
+        "owner": "therapy_cbt",
+        "crisis": false,
+        "risk_level": "SAFE",
+        "therapy": {
+          "name": "CBT",
+          "start_seq": 7,
+          "rounds": 0,
+          "step_index": -1,
+          "branch": null,
+          "basic_flow_complete": false
+        },
+        "last_therapy_check_seq": 5,
+        "pending_user_tokens": 0
+      },
+      "orchestration_after": {},
+      "error": null,
+      "wall_seconds": 37.072,
+      "agent_text": "领导当时没表情，确实很容易让人心里没底。难怪你脑子一直停不下来，还在反复想“是不是讲得不好”。这种摸不透对方想法的感觉，真的挺让人煎熬的。"
+    },
+    {
+      "turn": 4,
+      "trace_id": "1b98c42062664e86",
+      "user_text": "其实汇报的内容我准备了很久，但那个\"没表情\"一直卡在我脑子里。",
+      "agent_text_parts": [
+        "明明准备了那么",
+        "久，",
+        "注意力却还是被那个",
+        "“没表情”",
+        "牵绊着，",
+        "一直卡在脑子里，",
+        "这种感觉确实挺让人",
+        "无奈的。\n\n我们",
+        "刚才一起顺着",
+        "这个想法梳理了一下",
+        "，现在回过头来看看",
+        "，经过咱们这几",
+        "轮的聊聊，你",
+        "感觉那个“卡",
+        "住”的状态有",
+        "稍微松动一点点吗",
+        "？或者心情上",
+        "有什么不一样的体会吗",
+        "？"
+      ],
+      "events": [
+        {
+          "event": "token",
+          "data": "明明准备了那么"
+        },
+        {
+          "event": "token",
+          "data": "久，"
+        },
+        {
+          "event": "token",
+          "data": "注意力却还是被那个"
+        },
+        {
+          "event": "token",
+          "data": "“没表情”"
+        },
+        {
+          "event": "token",
+          "data": "牵绊着，"
+        },
+        {
+          "event": "token",
+          "data": "一直卡在脑子里，"
+        },
+        {
+          "event": "token",
+          "data": "这种感觉确实挺让人"
+        },
+        {
+          "event": "token",
+          "data": "无奈的。\n\n我们"
+        },
+        {
+          "event": "token",
+          "data": "刚才一起顺着"
+        },
+        {
+          "event": "token",
+          "data": "这个想法梳理了一下"
+        },
+        {
+          "event": "token",
+          "data": "，现在回过头来看看"
+        },
+        {
+          "event": "token",
+          "data": "，经过咱们这几"
+        },
+        {
+          "event": "token",
+          "data": "轮的聊聊，你"
+        },
+        {
+          "event": "token",
+          "data": "感觉那个“卡"
+        },
+        {
+          "event": "token",
+          "data": "住”的状态有"
+        },
+        {
+          "event": "token",
+          "data": "稍微松动一点点吗"
+        },
+        {
+          "event": "token",
+          "data": "？或者心情上"
+        },
+        {
+          "event": "token",
+          "data": "有什么不一样的体会吗"
+        },
+        {
+          "event": "token",
+          "data": "？"
+        },
+        {
+          "event": "dialogue_done",
+          "data": {
+            "trace_id": "1b98c42062664e86",
+            "owner": "therapy_cbt"
+          }
+        },
+        {
+          "event": "final",
+          "data": {
+            "message": "其实汇报的内容我准备了很久，但那个\"没表情\"一直卡在我脑子里。",
+            "risk_state": "LOW_RISK",
+            "crisis": false
+          }
+        }
+      ],
+      "final": {
+        "message": "其实汇报的内容我准备了很久，但那个\"没表情\"一直卡在我脑子里。",
+        "risk_state": "LOW_RISK",
+        "crisis": false
+      },
+      "state_after": {
+        "owner": "therapy_cbt",
+        "crisis": false,
+        "risk_level": "LOW_RISK",
+        "therapy": {
+          "name": "CBT",
+          "start_seq": 7,
+          "rounds": 1,
+          "step_index": 0,
+          "branch": null,
+          "basic_flow_complete": false
+        },
+        "last_therapy_check_seq": 5,
+        "pending_user_tokens": 0
+      },
+      "orchestration_after": {
+        "updated_seq": 1,
+        "therapy": "CBT",
+        "current_step": "identify_thought",
+        "next_step": "identify_thought",
+        "step_judgment": {
+          "action": "stay",
+          "target_step": null,
+          "achieved": false,
+          "reason": "用户已经识别出自动思维（'没表情'一直卡在脑子里），但尚未完全明确和确认核心自动思维的具体内容。需要进一步帮助用户澄清这个思维的具体形式，例如确认这是一个关于他人评价的担忧（如'他觉得我讲得不好'）还是其他含义，以确保思维被准确识别后再进入下一步。"
+        },
+        "assessment": null,
+        "skill_output": {
+          "automatic_thoughts": [
+            {
+              "thought": "他没表情，说明他对我的汇报不满意，觉得我讲得很差。",
+              "confidence": 0.85,
+              "span": "但那个'没表情'一直卡在我脑子里",
+              "target": "others"
+            },
+            {
+              "thought": "我准备了那么久，他却毫无反应，我的努力全白费了，我表现得很失败。",
+              "confidence": 0.8,
+              "span": "其实汇报的内容我准备了很久，但那个'没表情'一直卡在我脑子里",
+              "target": "self"
+            }
+          ],
+          "primary_thought": "他没表情，说明他对我的汇报不满意，觉得我讲得很差。",
+          "no_automatic_thought_detected": false,
+          "_skill_name": "extract_automatic_thought"
+        },
+        "products": {
+          "automatic_thoughts": [
+            {
+              "thought": "他没表情，说明他对我的汇报不满意，觉得我讲得很差。",
+              "confidence": 0.85,
+              "span": "但那个'没表情'一直卡在我脑子里",
+              "target": "others"
+            },
+            {
+              "thought": "我准备了那么久，他却毫无反应，我的努力全白费了，我表现得很失败。",
+              "confidence": 0.8,
+              "span": "其实汇报的内容我准备了很久，但那个'没表情'一直卡在我脑子里",
+              "target": "self"
+            }
+          ],
+          "primary_thought": "他没表情，说明他对我的汇报不满意，觉得我讲得很差。",
+          "no_automatic_thought_detected": false
+        },
+        "continue_eval": null
+      },
+      "error": null,
+      "wall_seconds": 66.485,
+      "agent_text": "明明准备了那么久，注意力却还是被那个“没表情”牵绊着，一直卡在脑子里，这种感觉确实挺让人无奈的。\n\n我们刚才一起顺着这个想法梳理了一下，现在回过头来看看，经过咱们这几轮的聊聊，你感觉那个“卡住”的状态有稍微松动一点点吗？或者心情上有什么不一样的体会吗？"
+    },
+    {
+      "turn": 5,
+      "trace_id": "0d74594970f546a4",
+      "user_text": "我跟自己说\"想也想不出结果\"，但没用，脑子就是不停。",
+      "agent_text_parts": [
+        "越告诉自己别去想",
+        "，脑子反而转",
+        "得越快，这种感觉",
+        "确实挺折磨人的",
+        "。其实很多时候，",
+        "我们越是用力去",
+        "推开一个想法，",
+        "它反而抓得",
+        "越紧，这",
+        "真的很正常。",
+        "\n\n既然强行让它",
+        "停下来有点困难，",
+        "不如我们试着稍微",
+        "靠近它一点点，",
+        "看看它到底在",
+        "说些什么？当",
+        "那个“没表情",
+        "”一直卡在脑子里",
+        "的时候，你脑海里",
+        "不停盘旋的具体念头",
+        "是什么呢？比如，",
+        "会不会是担心他",
+        "对你这次汇报不满意",
+        "，还是其他的什么",
+        "担忧？"
+      ],
+      "events": [
+        {
+          "event": "token",
+          "data": "越告诉自己别去想"
+        },
+        {
+          "event": "token",
+          "data": "，脑子反而转"
+        },
+        {
+          "event": "token",
+          "data": "得越快，这种感觉"
+        },
+        {
+          "event": "token",
+          "data": "确实挺折磨人的"
+        },
+        {
+          "event": "token",
+          "data": "。其实很多时候，"
+        },
+        {
+          "event": "token",
+          "data": "我们越是用力去"
+        },
+        {
+          "event": "token",
+          "data": "推开一个想法，"
+        },
+        {
+          "event": "token",
+          "data": "它反而抓得"
+        },
+        {
+          "event": "token",
+          "data": "越紧，这"
+        },
+        {
+          "event": "token",
+          "data": "真的很正常。"
+        },
+        {
+          "event": "token",
+          "data": "\n\n既然强行让它"
+        },
+        {
+          "event": "token",
+          "data": "停下来有点困难，"
+        },
+        {
+          "event": "token",
+          "data": "不如我们试着稍微"
+        },
+        {
+          "event": "token",
+          "data": "靠近它一点点，"
+        },
+        {
+          "event": "token",
+          "data": "看看它到底在"
+        },
+        {
+          "event": "token",
+          "data": "说些什么？当"
+        },
+        {
+          "event": "token",
+          "data": "那个“没表情"
+        },
+        {
+          "event": "token",
+          "data": "”一直卡在脑子里"
+        },
+        {
+          "event": "token",
+          "data": "的时候，你脑海里"
+        },
+        {
+          "event": "token",
+          "data": "不停盘旋的具体念头"
+        },
+        {
+          "event": "token",
+          "data": "是什么呢？比如，"
+        },
+        {
+          "event": "token",
+          "data": "会不会是担心他"
+        },
+        {
+          "event": "token",
+          "data": "对你这次汇报不满意"
+        },
+        {
+          "event": "token",
+          "data": "，还是其他的什么"
+        },
+        {
+          "event": "token",
+          "data": "担忧？"
+        },
+        {
+          "event": "dialogue_done",
+          "data": {
+            "trace_id": "0d74594970f546a4",
+            "owner": "therapy_cbt"
+          }
+        },
+        {
+          "event": "final",
+          "data": {
+            "message": "我跟自己说\"想也想不出结果\"，但没用，脑子就是不停。",
+            "risk_state": "SAFE",
+            "crisis": false
+          }
+        }
+      ],
+      "final": {
+        "message": "我跟自己说\"想也想不出结果\"，但没用，脑子就是不停。",
+        "risk_state": "SAFE",
+        "crisis": false
+      },
+      "state_after": {
+        "owner": "therapy_cbt",
+        "crisis": false,
+        "risk_level": "SAFE",
+        "therapy": {
+          "name": "CBT",
+          "start_seq": 7,
+          "rounds": 2,
+          "step_index": 0,
+          "branch": null,
+          "basic_flow_complete": false
+        },
+        "last_therapy_check_seq": 5,
+        "pending_user_tokens": 0
+      },
+      "orchestration_after": {
+        "updated_seq": 2,
+        "therapy": "CBT",
+        "current_step": "identify_thought",
+        "next_step": "identify_thought",
+        "step_judgment": {
+          "action": "stay",
+          "target_step": null,
+          "achieved": false,
+          "reason": "用户仍处于自动思维的识别阶段，虽然已识别出主要自动思维，但当前对话显示用户仍在反刍思维中（'脑子就是不停'），尚未充分探索和澄清所有自动思维的内容和影响。需要继续停留在identify_thought步骤，帮助用户更完整地识别和理解这些思维模式。"
+        },
+        "assessment": null,
+        "skill_output": {
+          "automatic_thoughts": [
+            {
+              "thought": "想也想不出结果，再怎么想也没用",
+              "confidence": 0.9,
+              "span": "想也想不出结果",
+              "target": "situation"
+            },
+            {
+              "thought": "我控制不了自己的脑子，停不下来",
+              "confidence": 0.85,
+              "span": "但没用，脑子就是不停",
+              "target": "self"
+            }
+          ],
+          "primary_thought": "我控制不了自己的脑子，停不下来",
+          "no_automatic_thought_detected": false,
+          "_skill_name": "extract_automatic_thought"
+        },
+        "products": {
+          "automatic_thoughts": [
+            {
+              "thought": "他没表情，说明他对我的汇报不满意，觉得我讲得很差。",
+              "confidence": 0.85,
+              "span": "但那个'没表情'一直卡在我脑子里",
+              "target": "others"
+            },
+            {
+              "thought": "我准备了那么久，他却毫无反应，我的努力全白费了，我表现得很失败。",
+              "confidence": 0.8,
+              "span": "其实汇报的内容我准备了很久，但那个'没表情'一直卡在我脑子里",
+              "target": "self"
+            },
+            {
+              "thought": "想也想不出结果，再怎么想也没用",
+              "confidence": 0.9,
+              "span": "想也想不出结果",
+              "target": "situation"
+            },
+            {
+              "thought": "我控制不了自己的脑子，停不下来",
+              "confidence": 0.85,
+              "span": "但没用，脑子就是不停",
+              "target": "self"
+            }
+          ],
+          "primary_thought": "我控制不了自己的脑子，停不下来",
+          "no_automatic_thought_detected": false
+        },
+        "continue_eval": null
+      },
+      "error": null,
+      "wall_seconds": 57.206,
+      "agent_text": "越告诉自己别去想，脑子反而转得越快，这种感觉确实挺折磨人的。其实很多时候，我们越是用力去推开一个想法，它反而抓得越紧，这真的很正常。\n\n既然强行让它停下来有点困难，不如我们试着稍微靠近它一点点，看看它到底在说些什么？当那个“没表情”一直卡在脑子里的时候，你脑海里不停盘旋的具体念头是什么呢？比如，会不会是担心他对你这次汇报不满意，还是其他的什么担忧？"
+    },
+    {
+      "turn": 6,
+      "trace_id": "ce06537a0f3d46ff",
+      "user_text": "我同事都睡了，就我一个人在黑暗里瞪着天花板。",
+      "agent_text_parts": [],
+      "events": [
+        {
+          "event": "error",
+          "data": {
+            "error": "dialogue failed"
+          }
+        },
+        {
+          "event": "dialogue_done",
+          "data": {
+            "trace_id": "ce06537a0f3d46ff",
+            "owner": "therapy_cbt"
+          }
+        },
+        {
+          "event": "final",
+          "data": {
+            "message": "我同事都睡了，就我一个人在黑暗里瞪着天花板。",
+            "risk_state": "SAFE",
+            "crisis": false
+          }
+        }
+      ],
+      "final": {
+        "message": "我同事都睡了，就我一个人在黑暗里瞪着天花板。",
+        "risk_state": "SAFE",
+        "crisis": false
+      },
+      "state_after": {
+        "owner": "therapy_cbt",
+        "crisis": false,
+        "risk_level": "SAFE",
+        "therapy": {
+          "name": "CBT",
+          "start_seq": 7,
+          "rounds": 3,
+          "step_index": 0,
+          "branch": null,
+          "basic_flow_complete": false
+        },
+        "last_therapy_check_seq": 5,
+        "pending_user_tokens": 0
+      },
+      "orchestration_after": {
+        "updated_seq": 3,
+        "therapy": "CBT",
+        "current_step": "identify_thought",
+        "next_step": "identify_thought",
+        "step_judgment": {
+          "action": "stay",
+          "target_step": null,
+          "achieved": false,
+          "reason": "用户尚未明确回答AI引导的具体自动思维内容，而是描述了当前情境（同事睡了，自己独自在黑暗中瞪着天花板）。AI需要继续引导用户识别和表达具体的自动思维，当前步骤identify_thought尚未完成。"
+        },
+        "assessment": null,
+        "skill_output": null,
+        "products": {
+          "automatic_thoughts": [
+            {
+              "thought": "他没表情，说明他对我的汇报不满意，觉得我讲得很差。",
+              "confidence": 0.85,
+              "span": "但那个'没表情'一直卡在我脑子里",
+              "target": "others"
+            },
+            {
+              "thought": "我准备了那么久，他却毫无反应，我的努力全白费了，我表现得很失败。",
+              "confidence": 0.8,
+              "span": "其实汇报的内容我准备了很久，但那个'没表情'一直卡在我脑子里",
+              "target": "self"
+            },
+            {
+              "thought": "想也想不出结果，再怎么想也没用",
+              "confidence": 0.9,
+              "span": "想也想不出结果",
+              "target": "situation"
+            },
+            {
+              "thought": "我控制不了自己的脑子，停不下来",
+              "confidence": 0.85,
+              "span": "但没用，脑子就是不停",
+              "target": "self"
+            }
+          ],
+          "primary_thought": "我控制不了自己的脑子，停不下来",
+          "no_automatic_thought_detected": false
+        },
+        "continue_eval": null
+      },
+      "error": null,
+      "wall_seconds": 203.837,
+      "agent_text": ""
+    },
+    {
+      "turn": 7,
+      "trace_id": "6ba263cdfdfc4e5e",
+      "user_text": "我担心今天又只睡四五个小时，明天还要开会。",
+      "agent_text_parts": [
+        "深夜里同事们都",
+        "睡了，只有自己一个人",
+        "瞪着天花板，",
+        "还要担心明天开会",
+        "的事，这种感觉一定",
+        "很孤独，也很",
+        "煎熬。\n\n你",
+        "刚才提到的“担心",
+        "只睡四五个小时",
+        "”，其实就是你脑海里",
+        "一直盘旋、让你",
+        "紧绷的那个具体念头",
+        "吧。带着",
+        "这个担心，咱们",
+        "刚刚聊了这几",
+        "轮，你现在的",
+        "感受有稍微",
+        "松快一点点吗",
+        "，还是依然觉得",
+        "挺疲惫和焦虑",
+        "的呢？"
+      ],
+      "events": [
+        {
+          "event": "token",
+          "data": "深夜里同事们都"
+        },
+        {
+          "event": "token",
+          "data": "睡了，只有自己一个人"
+        },
+        {
+          "event": "token",
+          "data": "瞪着天花板，"
+        },
+        {
+          "event": "token",
+          "data": "还要担心明天开会"
+        },
+        {
+          "event": "token",
+          "data": "的事，这种感觉一定"
+        },
+        {
+          "event": "token",
+          "data": "很孤独，也很"
+        },
+        {
+          "event": "token",
+          "data": "煎熬。\n\n你"
+        },
+        {
+          "event": "token",
+          "data": "刚才提到的“担心"
+        },
+        {
+          "event": "token",
+          "data": "只睡四五个小时"
+        },
+        {
+          "event": "token",
+          "data": "”，其实就是你脑海里"
+        },
+        {
+          "event": "token",
+          "data": "一直盘旋、让你"
+        },
+        {
+          "event": "token",
+          "data": "紧绷的那个具体念头"
+        },
+        {
+          "event": "token",
+          "data": "吧。带着"
+        },
+        {
+          "event": "token",
+          "data": "这个担心，咱们"
+        },
+        {
+          "event": "token",
+          "data": "刚刚聊了这几"
+        },
+        {
+          "event": "token",
+          "data": "轮，你现在的"
+        },
+        {
+          "event": "token",
+          "data": "感受有稍微"
+        },
+        {
+          "event": "token",
+          "data": "松快一点点吗"
+        },
+        {
+          "event": "token",
+          "data": "，还是依然觉得"
+        },
+        {
+          "event": "token",
+          "data": "挺疲惫和焦虑"
+        },
+        {
+          "event": "token",
+          "data": "的呢？"
+        },
+        {
+          "event": "dialogue_done",
+          "data": {
+            "trace_id": "6ba263cdfdfc4e5e",
+            "owner": "therapy_cbt"
+          }
+        },
+        {
+          "event": "final",
+          "data": {
+            "message": "我担心今天又只睡四五个小时，明天还要开会。",
+            "risk_state": "LOW_RISK",
+            "crisis": false
+          }
+        }
+      ],
+      "final": {
+        "message": "我担心今天又只睡四五个小时，明天还要开会。",
+        "risk_state": "LOW_RISK",
+        "crisis": false
+      },
+      "state_after": {
+        "owner": "therapy_cbt",
+        "crisis": false,
+        "risk_level": "LOW_RISK",
+        "therapy": {
+          "name": "CBT",
+          "start_seq": 7,
+          "rounds": 4,
+          "step_index": 0,
+          "branch": null,
+          "basic_flow_complete": false
+        },
+        "last_therapy_check_seq": 5,
+        "pending_user_tokens": 0
+      },
+      "orchestration_after": {
+        "updated_seq": 4,
+        "therapy": "CBT",
+        "current_step": "identify_thought",
+        "next_step": "identify_thought",
+        "step_judgment": {
+          "action": "stay",
+          "target_step": null,
+          "achieved": false,
+          "reason": "用户仍在表达自动思维（担心睡眠不足影响明天开会），尚未完成对核心自动思维的识别与澄清。虽然已识别出多个自动思维，但当前对话显示用户仍在倾诉新的担忧内容，需继续完成identify_thought步骤的总结确认。"
+        },
+        "assessment": null,
+        "skill_output": null,
+        "products": {
+          "automatic_thoughts": [
+            {
+              "thought": "他没表情，说明他对我的汇报不满意，觉得我讲得很差。",
+              "confidence": 0.85,
+              "span": "但那个'没表情'一直卡在我脑子里",
+              "target": "others"
+            },
+            {
+              "thought": "我准备了那么久，他却毫无反应，我的努力全白费了，我表现得很失败。",
+              "confidence": 0.8,
+              "span": "其实汇报的内容我准备了很久，但那个'没表情'一直卡在我脑子里",
+              "target": "self"
+            },
+            {
+              "thought": "想也想不出结果，再怎么想也没用",
+              "confidence": 0.9,
+              "span": "想也想不出结果",
+              "target": "situation"
+            },
+            {
+              "thought": "我控制不了自己的脑子，停不下来",
+              "confidence": 0.85,
+              "span": "但没用，脑子就是不停",
+              "target": "self"
+            }
+          ],
+          "primary_thought": "我控制不了自己的脑子，停不下来",
+          "no_automatic_thought_detected": false
+        },
+        "continue_eval": null
+      },
+      "error": null,
+      "wall_seconds": 61.271,
+      "agent_text": "深夜里同事们都睡了，只有自己一个人瞪着天花板，还要担心明天开会的事，这种感觉一定很孤独，也很煎熬。\n\n你刚才提到的“担心只睡四五个小时”，其实就是你脑海里一直盘旋、让你紧绷的那个具体念头吧。带着这个担心，咱们刚刚聊了这几轮，你现在的感受有稍微松快一点点吗，还是依然觉得挺疲惫和焦虑的呢？"
+    },
+    {
+      "turn": 8,
+      "trace_id": "e5f94b361e494218",
+      "user_text": "我知道我应该\"放松\"，但我不知道具体怎么做才能让脑子停下来。",
+      "agent_text_parts": [
+        "听得出来",
+        "你挺着急的",
+        "，明明很想让",
+        "脑子停下来，却",
+        "找不到开关，这种",
+        "无力感确实挺",
+        "折磨人的。其实",
+        "，当担忧涌",
+        "上来的时候，大脑",
+        "就像一辆刹不住",
+        "的车，强行要求自己",
+        "“放松”真的",
+        "太难为你了。",
+        "\n\n咱们先不",
+        "逼自己非得立刻",
+        "让脑子停下来，",
+        "好吗？虽然那些",
+        "担心还在，但",
+        "咱们一起聊了",
+        "这几轮，把",
+        "心里的憋屈和",
+        "焦虑都倒出来",
+        "之后，你感觉",
+        "心里那种紧绷和",
+        "煎熬的劲儿，",
+        "有稍微松快",
+        "哪怕一点点吗？"
+      ],
+      "events": [
+        {
+          "event": "token",
+          "data": "听得出来"
+        },
+        {
+          "event": "token",
+          "data": "你挺着急的"
+        },
+        {
+          "event": "token",
+          "data": "，明明很想让"
+        },
+        {
+          "event": "token",
+          "data": "脑子停下来，却"
+        },
+        {
+          "event": "token",
+          "data": "找不到开关，这种"
+        },
+        {
+          "event": "token",
+          "data": "无力感确实挺"
+        },
+        {
+          "event": "token",
+          "data": "折磨人的。其实"
+        },
+        {
+          "event": "token",
+          "data": "，当担忧涌"
+        },
+        {
+          "event": "token",
+          "data": "上来的时候，大脑"
+        },
+        {
+          "event": "token",
+          "data": "就像一辆刹不住"
+        },
+        {
+          "event": "token",
+          "data": "的车，强行要求自己"
+        },
+        {
+          "event": "token",
+          "data": "“放松”真的"
+        },
+        {
+          "event": "token",
+          "data": "太难为你了。"
+        },
+        {
+          "event": "token",
+          "data": "\n\n咱们先不"
+        },
+        {
+          "event": "token",
+          "data": "逼自己非得立刻"
+        },
+        {
+          "event": "token",
+          "data": "让脑子停下来，"
+        },
+        {
+          "event": "token",
+          "data": "好吗？虽然那些"
+        },
+        {
+          "event": "token",
+          "data": "担心还在，但"
+        },
+        {
+          "event": "token",
+          "data": "咱们一起聊了"
+        },
+        {
+          "event": "token",
+          "data": "这几轮，把"
+        },
+        {
+          "event": "token",
+          "data": "心里的憋屈和"
+        },
+        {
+          "event": "token",
+          "data": "焦虑都倒出来"
+        },
+        {
+          "event": "token",
+          "data": "之后，你感觉"
+        },
+        {
+          "event": "token",
+          "data": "心里那种紧绷和"
+        },
+        {
+          "event": "token",
+          "data": "煎熬的劲儿，"
+        },
+        {
+          "event": "token",
+          "data": "有稍微松快"
+        },
+        {
+          "event": "token",
+          "data": "哪怕一点点吗？"
+        },
+        {
+          "event": "dialogue_done",
+          "data": {
+            "trace_id": "e5f94b361e494218",
+            "owner": "therapy_cbt"
+          }
+        },
+        {
+          "event": "final",
+          "data": {
+            "message": "我知道我应该\"放松\"，但我不知道具体怎么做才能让脑子停下来。",
+            "risk_state": "SAFE",
+            "crisis": false
+          }
+        }
+      ],
+      "final": {
+        "message": "我知道我应该\"放松\"，但我不知道具体怎么做才能让脑子停下来。",
+        "risk_state": "SAFE",
+        "crisis": false
+      },
+      "state_after": {
+        "owner": "therapy_cbt",
+        "crisis": false,
+        "risk_level": "SAFE",
+        "therapy": {
+          "name": "CBT",
+          "start_seq": 7,
+          "rounds": 5,
+          "step_index": 0,
+          "branch": null,
+          "basic_flow_complete": false
+        },
+        "last_therapy_check_seq": 5,
+        "pending_user_tokens": 0
+      },
+      "orchestration_after": {
+        "updated_seq": 5,
+        "therapy": "CBT",
+        "current_step": "identify_thought",
+        "next_step": "identify_thought",
+        "step_judgment": {
+          "action": "stay",
+          "target_step": null,
+          "achieved": false,
+          "reason": "当前仍处于 identify_thought 步骤。用户虽然表达了部分自动思维（担心睡眠不足影响明天开会），但仍在表达'不知道具体怎么做才能让脑子停下来'，说明尚未完全识别和澄清核心自动思维的内容与情绪关联。需要继续帮助用户具体化其脑中的念头，完成自动思维的识别。"
+        },
+        "assessment": null,
+        "skill_output": {
+          "automatic_thoughts": [
+            {
+              "thought": "我应该放松但我做不到",
+              "confidence": 0.85,
+              "span": "我知道我应该\"放松\"",
+              "target": "self"
+            },
+            {
+              "thought": "我没办法让脑子停下来，我控制不了我的思绪",
+              "confidence": 0.95,
+              "span": "但我不知道具体怎么做才能让脑子停下来",
+              "target": "self"
+            }
+          ],
+          "primary_thought": "我没办法让脑子停下来，我控制不了我的思绪",
+          "no_automatic_thought_detected": false,
+          "_skill_name": "extract_automatic_thought"
+        },
+        "products": {
+          "automatic_thoughts": [
+            {
+              "thought": "他没表情，说明他对我的汇报不满意，觉得我讲得很差。",
+              "confidence": 0.85,
+              "span": "但那个'没表情'一直卡在我脑子里",
+              "target": "others"
+            },
+            {
+              "thought": "我准备了那么久，他却毫无反应，我的努力全白费了，我表现得很失败。",
+              "confidence": 0.8,
+              "span": "其实汇报的内容我准备了很久，但那个'没表情'一直卡在我脑子里",
+              "target": "self"
+            },
+            {
+              "thought": "想也想不出结果，再怎么想也没用",
+              "confidence": 0.9,
+              "span": "想也想不出结果",
+              "target": "situation"
+            },
+            {
+              "thought": "我控制不了自己的脑子，停不下来",
+              "confidence": 0.85,
+              "span": "但没用，脑子就是不停",
+              "target": "self"
+            },
+            {
+              "thought": "我应该放松但我做不到",
+              "confidence": 0.85,
+              "span": "我知道我应该\"放松\"",
+              "target": "self"
+            },
+            {
+              "thought": "我没办法让脑子停下来，我控制不了我的思绪",
+              "confidence": 0.95,
+              "span": "但我不知道具体怎么做才能让脑子停下来",
+              "target": "self"
+            }
+          ],
+          "primary_thought": "我没办法让脑子停下来，我控制不了我的思绪",
+          "no_automatic_thought_detected": false
+        },
+        "continue_eval": null
+      },
+      "error": null,
+      "wall_seconds": 90.004,
+      "agent_text": "听得出来你挺着急的，明明很想让脑子停下来，却找不到开关，这种无力感确实挺折磨人的。其实，当担忧涌上来的时候，大脑就像一辆刹不住的车，强行要求自己“放松”真的太难为你了。\n\n咱们先不逼自己非得立刻让脑子停下来，好吗？虽然那些担心还在，但咱们一起聊了这几轮，把心里的憋屈和焦虑都倒出来之后，你感觉心里那种紧绷和煎熬的劲儿，有稍微松快哪怕一点点吗？"
+    }
+  ]
+}

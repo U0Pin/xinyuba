@@ -1,0 +1,13 @@
+<!-- Figma 心语吧 Icons/Calender (153:82)，日历图标，设计画板 85×93，描边 #C5C5C5 宽 8 -->
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="85dp"
+    android:height="93dp"
+    android:viewportWidth="85"
+    android:viewportHeight="93">
+    <path
+        android:strokeColor="#FFC5C5C5"
+        android:strokeWidth="8"
+        android:strokeLineCap="round"
+        android:strokeLineJoin="round"
+        android:pathData="M59.6111,4V21M25.3889,4V21M4,38H81M12.5556,12.5H72.4444C77.1695,12.5 81,16.3056 81,21V80.5C81,85.1944 77.1695,89 72.4444,89H12.5556C7.83045,89 4,85.1944 4,80.5V21C4,16.3056 7.83045,12.5 12.5556,12.5Z" />
+</vector>

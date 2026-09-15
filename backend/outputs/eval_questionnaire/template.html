@@ -1,0 +1,406 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<title>心理 Agent 对话体验评测</title>
+<style>
+  :root {
+    --primary: #4a90e2;
+    --bg: #fafafa;
+    --card: #fff;
+    --border: #e0e0e0;
+    --text: #222;
+    --muted: #888;
+    --warn: #e74c3c;
+    --highlight: #fff8e1;
+  }
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  body { font-family: -apple-system, "PingFang SC", "Microsoft YaHei", sans-serif; background: var(--bg); color: var(--text); line-height: 1.6; }
+  .container { max-width: 860px; margin: 0 auto; padding: 24px; }
+  h1 { font-size: 22px; margin-bottom: 12px; }
+  h2 { font-size: 18px; margin: 24px 0 12px; color: var(--primary); }
+  h3 { font-size: 15px; margin: 16px 0 8px; }
+  .card { background: var(--card); border: 1px solid var(--border); border-radius: 8px; padding: 20px; margin-bottom: 16px; }
+  .muted { color: var(--muted); font-size: 13px; }
+  .turn { border-left: 3px solid var(--border); padding: 8px 12px; margin: 8px 0; }
+  .turn.user { border-left-color: var(--primary); background: #f0f7ff; }
+  .turn.agent { border-left-color: #2ecc71; background: #f0fff4; }
+  .turn .role { font-weight: 600; font-size: 13px; margin-bottom: 4px; }
+  .turn.user .role { color: var(--primary); }
+  .turn.agent .role { color: #2ecc71; }
+  .decision { background: var(--highlight); border: 1px solid #ffe082; border-radius: 6px; padding: 8px 12px; margin: 4px 0; font-size: 13px; }
+  .decision .label { font-weight: 600; color: #f57c00; }
+  .question { margin: 12px 0; }
+  .question .q-text { font-size: 14px; margin-bottom: 6px; }
+  .scale { display: flex; gap: 4px; margin: 6px 0; flex-wrap: wrap; }
+  .scale label { display: inline-flex; align-items: center; padding: 6px 10px; border: 1px solid var(--border); border-radius: 4px; cursor: pointer; font-size: 13px; min-width: 36px; justify-content: center; }
+  .scale input { display: none; }
+  .scale input:checked + span { font-weight: 600; color: var(--primary); }
+  .scale label:has(input:checked) { background: #e3f2fd; border-color: var(--primary); }
+  textarea { width: 100%; min-height: 60px; padding: 8px; border: 1px solid var(--border); border-radius: 4px; font-family: inherit; font-size: 14px; }
+  .progress { display: flex; justify-content: space-between; align-items: center; margin-bottom: 16px; font-size: 13px; color: var(--muted); }
+  .progress-bar { flex: 1; height: 4px; background: var(--border); margin: 0 12px; border-radius: 2px; overflow: hidden; }
+  .progress-bar div { height: 100%; background: var(--primary); transition: width 0.3s; }
+  button { background: var(--primary); color: #fff; border: none; padding: 10px 24px; border-radius: 4px; cursor: pointer; font-size: 14px; }
+  button:disabled { background: #ccc; cursor: not-allowed; }
+  button.secondary { background: #fff; color: var(--primary); border: 1px solid var(--primary); }
+  .hidden { display: none; }
+  .checkbox-list label { display: block; margin: 8px 0; font-size: 14px; }
+  .help { font-size: 12px; color: var(--muted); margin-top: 4px; }
+  .warn-text { background: #ffebee; border: 1px solid #ef9a9a; padding: 12px; border-radius: 4px; color: var(--warn); font-size: 14px; margin: 12px 0; }
+  .case-meta { background: #f5f5f5; padding: 8px 12px; border-radius: 4px; font-size: 13px; margin-bottom: 12px; }
+  .case-meta span { margin-right: 16px; }
+  .reveal-item { background: #fff; border: 1px solid var(--border); border-radius: 6px; padding: 12px; margin: 12px 0; }
+  .reveal-item h3 { margin: 0 0 8px 0; color: var(--primary); font-size: 15px; }
+  .reveal-row { display: flex; gap: 8px; flex-wrap: wrap; margin-bottom: 8px; }
+  .tag { display: inline-block; padding: 2px 8px; border-radius: 10px; font-size: 12px; }
+  .tag.target { background: #e3f2fd; color: #1976d2; }
+  .tag.actual { background: #f3e5f5; color: #7b1fa2; }
+  .tag.quality { background: #fff3e0; color: #e65100; }
+</style>
+</head>
+<body>
+<div class="container">
+
+<!-- ========== 阶段 1：知情同意 ========== -->
+<section id="stage-consent" class="card">
+  <h1>心理 Agent 对话体验评测</h1>
+  <p class="muted">预计耗时 45–60 分钟</p>
+
+  <h2>阶段 1：知情同意</h2>
+
+  <h3>知情同意</h3>
+  <ol style="padding-left: 24px; font-size: 14px;">
+    <li>本研究是观察 <b>10 段 AI 对话录像</b>（不是真人对您的咨询）。</li>
+    <li>对话内容可能涉及心理话题，可能引起<b>情绪反应</b>（虽然不是为您服务）。</li>
+    <li>您可以<b>随时退出</b>，无需说明理由，已付激励不退。</li>
+    <li>数据匿名化、脱敏后用于研究。</li>
+    <li>如有不适，可联系：<b>心理援助热线 400-161-9995</b> 或当地 24h 危机干预热线。</li>
+  </ol>
+
+  <p style="margin-top: 16px;">
+    <label><input type="checkbox" id="consent"> 我已阅读并同意参与本研究</label>
+  </p>
+
+  <p class="muted" style="margin-top: 8px;">勾选同意后即可直接进入主试。</p>
+
+  <button id="btn-to-stage2" disabled style="margin-top: 16px;">进入主试</button>
+</section>
+
+<!-- ========== 阶段 2：5 段主样本评分 ========== -->
+<section id="stage-samples" class="hidden">
+  <h1>主试</h1>
+  <div class="progress">
+    <span id="progress-text">1 / 5</span>
+    <div class="progress-bar"><div id="progress-fill" style="width: 20%;"></div></div>
+    <span>已读 <span id="samples-read">0</span> / 5</span>
+  </div>
+
+  <div id="sample-container"></div>
+
+  <div style="text-align: right; margin-top: 16px;">
+    <button id="btn-prev" class="secondary">上一段</button>
+    <button id="btn-next">下一段</button>
+    <button id="btn-submit" class="hidden">提交并导出结果</button>
+  </div>
+</section>
+
+<!-- ========== 阶段 3：结果导出 + 揭晓 ========== -->
+<section id="stage-result" class="hidden card">
+  <h2>评测完成 — 揭晓答案</h2>
+  <p>以下是您刚才评测的每段对话对应的<strong>疗法设计意图 (target)</strong> 与<strong>实际触发 (actual)</strong>。</p>
+
+  <div id="reveal-list" style="margin: 16px 0;"></div>
+
+  <h3 style="margin-top: 24px;">下载评分</h3>
+  <p>请点击下方按钮下载您的评分结果（JSON 文件），发送给研究负责人。</p>
+  <button id="btn-download" style="margin-top: 16px;">下载评分结果 (JSON)</button>
+  <pre id="result-preview" style="background: #f5f5f5; padding: 12px; border-radius: 4px; margin-top: 16px; font-size: 12px; max-height: 300px; overflow: auto;"></pre>
+</section>
+
+</div>
+
+<script>
+// ═══════════════════════════════════════════════════════════════════════════
+// 数据注入（由 build_*.py 在生成时嵌入）
+// ═══════════════════════════════════════════════════════════════════════════
+const SAMPLES = __SAMPLES_PLACEHOLDER__;  // [{ case_id, target, actual, quality, decision_events: [...] }]
+const PROFESSIONAL_ONLY = false;            // 普通用户组 false；专业组 true
+
+const QUESTIONS = {
+  empathy: [
+    { id: 'q1', text: '你作为来访者，会不会觉得被理解？', scale: 7 },
+    { id: 'q2', text: 'AI 的回应让你感到被接纳、没有被评判吗？', scale: 7 },
+    { id: 'q3', text: '请用一句话描述你此刻的感受', type: 'text' },
+  ],
+  fluency: [
+    { id: 'q4', text: '这段对话的推进自然吗？有没有跳跃或重复？', scale: 7 },
+    { id: 'q5', text: '如果 AI 建议你做某件事，你愿意照做吗？', type: 'yn_reason', scale: 7 },
+    { id: 'q6', text: '如果让你打分（0–10），你愿意把这个 AI 推荐给朋友吗？', scale: 10 },
+  ],
+};
+if (PROFESSIONAL_ONLY) {
+  QUESTIONS.professional = [
+    { id: 'q10', text: '这个案例应该选哪个疗法？理由是？', type: 'text' },
+    { id: 'q11', text: 'AI 选得对吗？如有偏差，请描述', type: 'text' },
+    { id: 'q12', text: '步骤推进顺序是否符合该疗法的标准流程？', scale: 7 },
+    { id: 'q13', text: '所用技能用得是否恰当？', scale: 7 },
+    { id: 'q14', text: '何时应该结束干预？AI 的继续/终止判断是否合适？', scale: 7 },
+  ];
+}
+
+// ═══════════════════════════════════════════════════════════════════════════
+// 状态
+// ═══════════════════════════════════════════════════════════════════════════
+const state = {
+  consent: false,
+  currentIndex: 0,
+  selectedSamples: [],
+  responses: {},  // { sample_index: { q_id: value } }
+  subjectId: 'subject-' + Math.random().toString(36).slice(2, 10),
+  startedAt: new Date().toISOString(),
+};
+
+// ═══════════════════════════════════════════════════════════════════════════
+// 知情同意：勾选同意即进入主试（无预筛选）
+// ═══════════════════════════════════════════════════════════════════════════
+document.getElementById('consent').addEventListener('change', (e) => {
+  state.consent = e.target.checked;
+  document.getElementById('btn-to-stage2').disabled = !state.consent;
+});
+
+document.getElementById('btn-to-stage2').addEventListener('click', () => {
+  document.getElementById('stage-consent').classList.add('hidden');
+  document.getElementById('stage-samples').classList.remove('hidden');
+  pickSamples();
+  renderSample();
+});
+
+// ═══════════════════════════════════════════════════════════════════════════
+// 样本随机抽样（无放回抽 5 段）
+// ═══════════════════════════════════════════════════════════════════════════
+function pickSamples() {
+  const n = Math.min(5, SAMPLES.length);
+  const shuffled = [...SAMPLES].sort(() => Math.random() - 0.5);
+  state.selectedSamples = shuffled.slice(0, n);
+  state.responses = {};
+}
+
+// ═══════════════════════════════════════════════════════════════════════════
+// 渲染当前样本
+// ═══════════════════════════════════════════════════════════════════════════
+function renderSample() {
+  const idx = state.currentIndex;
+  const sample = state.selectedSamples[idx];
+  if (!sample) return;
+
+  // 进度
+  document.getElementById('progress-text').textContent = `${idx + 1} / ${state.selectedSamples.length}`;
+  document.getElementById('progress-fill').style.width = `${((idx + 1) / state.selectedSamples.length) * 100}%`;
+  document.getElementById('samples-read').textContent = idx;
+  document.getElementById('btn-prev').disabled = idx === 0;
+  document.getElementById('btn-next').classList.toggle('hidden', idx === state.selectedSamples.length - 1);
+  document.getElementById('btn-submit').classList.toggle('hidden', idx !== state.selectedSamples.length - 1);
+
+  // 当前样本
+  const container = document.getElementById('sample-container');
+  container.innerHTML = `
+    <div class="card">
+      <div class="case-meta">
+        <!-- 评测过程中隐藏疗法名称（spec 修订 §2.4）：
+             target / actual / quality 仅在 showResult 后揭晓
+             受测者只能看到案例顺序与场景描述,不知是哪个疗法 -->
+        <span class="muted" style="float: right;">案例 ${idx + 1} / ${state.selectedSamples.length}</span>
+      </div>
+      <h2>对话案例 ${idx + 1}</h2>
+      <div class="muted" style="margin-bottom: 12px;">${escapeHtml(sample.scenario_description || sample.scenario_label || '')}</div>
+
+      <h3>对话记录</h3>
+      <div id="turns-container"></div>
+
+      <h3 style="margin-top: 24px;">评分</h3>
+      <div id="questions-container"></div>
+    </div>
+  `;
+
+  // 渲染对话轮次
+  const turnsContainer = document.getElementById('turns-container');
+  sample.decision_events.forEach((ev) => {
+    const turnDiv = document.createElement('div');
+    turnDiv.className = 'turn user';
+    turnDiv.innerHTML = `
+      <div class="role">👤 用户 · 第 ${ev.turn} 轮</div>
+      <div>${escapeHtml(ev.user_text || '')}</div>
+    `;
+    turnsContainer.appendChild(turnDiv);
+
+    if (ev.agent_text) {
+      const agentDiv = document.createElement('div');
+      agentDiv.className = 'turn agent';
+      agentDiv.innerHTML = `
+        <div class="role">🤖 AI · 第 ${ev.turn} 轮</div>
+        <div>${escapeHtml(ev.agent_text)}</div>
+      `;
+      turnsContainer.appendChild(agentDiv);
+    }
+
+  });
+
+  // 评分题
+  const qContainer = document.getElementById('questions-container');
+  renderSection(qContainer, 'A. 共情与温暖度', QUESTIONS.empathy);
+  renderSection(qContainer, 'B. 流畅与可执行性', QUESTIONS.fluency);
+  if (PROFESSIONAL_ONLY && QUESTIONS.professional) {
+    renderSection(qContainer, 'C. 专业合理性', QUESTIONS.professional);
+  }
+}
+
+function renderSection(container, title, questions) {
+  const sectionDiv = document.createElement('div');
+  sectionDiv.innerHTML = `<h3>${title}</h3>`;
+  questions.forEach(q => {
+    const qDiv = document.createElement('div');
+    qDiv.className = 'question';
+    qDiv.innerHTML = `<div class="q-text">${q.text}</div>`;
+
+    if (q.type === 'text') {
+      qDiv.innerHTML += `<textarea data-q="${q.id}" placeholder="请输入..."></textarea>`;
+    } else if (q.type === 'tri') {
+      qDiv.innerHTML += `
+        <div class="scale">
+          <label><input type="radio" name="${q.id}_tri" value="too_much"><span>太多</span></label>
+          <label><input type="radio" name="${q.id}_tri" value="just_right"><span>刚好</span></label>
+          <label><input type="radio" name="${q.id}_tri" value="too_little"><span>太少</span></label>
+        </div>
+      `;
+    } else if (q.type === 'yn_reason') {
+      qDiv.innerHTML += `
+        <div class="scale">
+          ${[1,2,3,4,5,6,7].map(n => `<label><input type="radio" name="${q.id}" value="${n}"><span>${n}</span></label>`).join('')}
+        </div>
+        <textarea data-q="${q.id}_reason" placeholder="为什么？（可选）"></textarea>
+      `;
+    } else {
+      // scale
+      qDiv.innerHTML += `
+        <div class="scale">
+          ${Array.from({length: q.scale}, (_, i) => i + 1).map(n => `<label><input type="radio" name="${q.id}" value="${n}"><span>${n}</span></label>`).join('')}
+        </div>
+      `;
+    }
+    sectionDiv.appendChild(qDiv);
+  });
+  container.appendChild(sectionDiv);
+}
+
+// 收集当前样本的响应
+function collectCurrentResponses() {
+  const idx = state.currentIndex;
+  state.responses[idx] = state.responses[idx] || {};
+  const sample = state.selectedSamples[idx];
+
+  const allQuestions = [
+    ...QUESTIONS.empathy, ...QUESTIONS.fluency,
+    ...(PROFESSIONAL_ONLY && QUESTIONS.professional ? QUESTIONS.professional : []),
+  ];
+
+  allQuestions.forEach(q => {
+    if (q.type === 'text') {
+      const ta = document.querySelector(`textarea[data-q="${q.id}"]`);
+      if (ta) state.responses[idx][q.id] = ta.value;
+    } else if (q.type === 'tri') {
+      const checked = document.querySelector(`input[name="${q.id}_tri"]:checked`);
+      if (checked) state.responses[idx][q.id] = checked.value;
+    } else if (q.type === 'yn_reason') {
+      const checked = document.querySelector(`input[name="${q.id}"]:checked`);
+      const reason = document.querySelector(`textarea[data-q="${q.id}_reason"]`);
+      state.responses[idx][q.id] = checked ? parseInt(checked.value) : null;
+      state.responses[idx][q.id + '_reason'] = reason ? reason.value : null;
+    } else {
+      const checked = document.querySelector(`input[name="${q.id}"]:checked`);
+      if (checked) state.responses[idx][q.id] = parseInt(checked.value);
+    }
+  });
+}
+
+// ═══════════════════════════════════════════════════════════════════════════
+// 导航
+// ═══════════════════════════════════════════════════════════════════════════
+document.getElementById('btn-prev').addEventListener('click', () => {
+  collectCurrentResponses();
+  if (state.currentIndex > 0) {
+    state.currentIndex--;
+    renderSample();
+    window.scrollTo(0, 0);
+  }
+});
+
+document.getElementById('btn-next').addEventListener('click', () => {
+  collectCurrentResponses();
+  if (state.currentIndex < state.selectedSamples.length - 1) {
+    state.currentIndex++;
+    renderSample();
+    window.scrollTo(0, 0);
+  }
+});
+
+document.getElementById('btn-submit').addEventListener('click', () => {
+  collectCurrentResponses();
+  showResult();
+});
+
+function showResult() {
+  document.getElementById('stage-samples').classList.add('hidden');
+  document.getElementById('stage-result').classList.remove('hidden');
+  window.scrollTo(0, 0);
+
+  // 揭晓视图（spec 修订 §2.4）：评测完成后展示每个样本的 target / actual / quality
+  const revealContainer = document.getElementById('reveal-list');
+  revealContainer.innerHTML = state.selectedSamples.map((s, i) => `
+    <div class="reveal-item">
+      <h3>案例 ${i + 1}：${escapeHtml(s.case_id)}</h3>
+      <div class="reveal-row">
+        <span class="tag target">设计意图 (target)：${escapeHtml(s.target || '（未指定）')}</span>
+        <span class="tag actual">实际触发 (actual)：${escapeHtml(s.actual || '（未触发）')}</span>
+        <span class="tag quality">${escapeHtml(s.quality)}</span>
+      </div>
+      <p class="muted">${escapeHtml(s.scenario_label || '')} ${escapeHtml(s.scenario_description || '')}</p>
+    </div>
+  `).join('');
+
+  const result = {
+    subject_id: state.subjectId,
+    started_at: state.startedAt,
+    submitted_at: new Date().toISOString(),
+    consent: state.consent,
+    selected_samples: state.selectedSamples.map(s => ({
+      case_id: s.case_id, target: s.target, actual: s.actual, quality: s.quality,
+    })),
+    responses: state.responses,
+  };
+  const json = JSON.stringify(result, null, 2);
+  document.getElementById('result-preview').textContent = json;
+
+  document.getElementById('btn-download').onclick = () => {
+    const blob = new Blob([json], { type: 'application/json' });
+    const url = URL.createObjectURL(blob);
+    const a = document.createElement('a');
+    a.href = url;
+    a.download = `eval_${state.subjectId}_${Date.now()}.json`;
+    a.click();
+    URL.revokeObjectURL(url);
+  };
+}
+
+// ═══════════════════════════════════════════════════════════════════════════
+// 工具
+// ═══════════════════════════════════════════════════════════════════════════
+function escapeHtml(s) {
+  if (s == null) return '';
+  return String(s).replace(/[&<>"']/g, c => ({
+    '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;'
+  }[c]));
+}
+</script>
+</body>
+</html>

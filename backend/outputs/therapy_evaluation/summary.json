@@ -1,0 +1,40 @@
+{
+ "metrics": {
+  "family_accuracy": 1.0,
+  "skill_accuracy": 1.0,
+  "boundary_accuracy": 1.0,
+  "over_intervention_rate": 0.0,
+  "under_intervention_rate": 0.0,
+  "crisis_override_accuracy": 1.0,
+  "therapy_continuity": 1.0,
+  "theory_mixing_rate": 0.0,
+  "fidelity_rate": 1.0,
+  "lifecycle_error_rate": 0.0,
+  "family_comparisons": 168,
+  "skill_comparisons": 149,
+  "boundary_comparisons": 52,
+  "fidelity_breakdown": {
+   "cbt": {
+    "n": 279,
+    "ok": 279
+   },
+   "act": {
+    "n": 240,
+    "ok": 240
+   },
+   "dbt": {
+    "n": 182,
+    "ok": 182
+   },
+   "mi": {
+    "n": 196,
+    "ok": 196
+   },
+   "sfbt": {
+    "n": 200,
+    "ok": 200
+   }
+  }
+ },
+ "skipped_count": 0
+}

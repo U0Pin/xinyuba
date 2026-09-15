@@ -1,0 +1,23 @@
+# 默认启用行尾自动转换（尊重各平台习惯），逐类显式声明见下。
+* text=auto
+
+# 二进制资源：不做行尾转换、不做文本 diff
+*.webp   binary
+*.png    binary
+*.jpg    binary
+*.jpeg   binary
+*.gif    binary
+*.ico    binary
+*.psd    binary
+*.ttf    binary
+*.otf    binary
+*.jar    binary
+*.apk    binary
+*.aab    binary
+*.keystore binary
+*.jks    binary
+
+# 脚本行尾固定，避免跨平台执行失败
+gradlew   text eol=lf
+*.sh      text eol=lf
+*.bat     text eol=crlf

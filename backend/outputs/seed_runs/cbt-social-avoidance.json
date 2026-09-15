@@ -1,0 +1,1961 @@
+{
+  "seed_id": "cbt-social-avoidance",
+  "target_family": "CBT",
+  "scenario_label": "社交回避-同事嘲笑",
+  "scenario_description": "办公室同事无意嘲笑过用户发言后，用户回避公共场合",
+  "user_id": "seed-cbt-social-avoidance",
+  "session_id": "eae05dec1d924d3b",
+  "turns_total": 8,
+  "switched_to_therapy_at_turn": 2,
+  "actual_therapy": "ACT",
+  "therapy_rounds": 7,
+  "orch_step_changes": 2,
+  "is_complete": true,
+  "final_risk_level": "MEDIUM_RISK",
+  "final_crisis": false,
+  "turns": [
+    {
+      "turn": 1,
+      "trace_id": "68327fff48b04027",
+      "user_text": "上周部门会议我提了个方案，有个同事笑了一下，那种笑让我感觉很不舒服。",
+      "agent_text_parts": [
+        "那种",
+        "笑确实挺让人",
+        "心里不是滋味的",
+        "。在大家面前",
+        "提方案，",
+        "遇到那种反应，",
+        "觉得很不舒服太",
+        "正常了。那个",
+        "笑当时让你心里",
+        "忍不住开始多想了",
+        "吗？"
+      ],
+      "events": [
+        {
+          "event": "token",
+          "data": "那种"
+        },
+        {
+          "event": "token",
+          "data": "笑确实挺让人"
+        },
+        {
+          "event": "token",
+          "data": "心里不是滋味的"
+        },
+        {
+          "event": "token",
+          "data": "。在大家面前"
+        },
+        {
+          "event": "token",
+          "data": "提方案，"
+        },
+        {
+          "event": "token",
+          "data": "遇到那种反应，"
+        },
+        {
+          "event": "token",
+          "data": "觉得很不舒服太"
+        },
+        {
+          "event": "token",
+          "data": "正常了。那个"
+        },
+        {
+          "event": "token",
+          "data": "笑当时让你心里"
+        },
+        {
+          "event": "token",
+          "data": "忍不住开始多想了"
+        },
+        {
+          "event": "token",
+          "data": "吗？"
+        },
+        {
+          "event": "dialogue_done",
+          "data": {
+            "trace_id": "68327fff48b04027",
+            "owner": "daily"
+          }
+        },
+        {
+          "event": "final",
+          "data": {
+            "message": "上周部门会议我提了个方案，有个同事笑了一下，那种笑让我感觉很不舒服。",
+            "risk_state": "SAFE",
+            "crisis": false
+          }
+        }
+      ],
+      "final": {
+        "message": "上周部门会议我提了个方案，有个同事笑了一下，那种笑让我感觉很不舒服。",
+        "risk_state": "SAFE",
+        "crisis": false
+      },
+      "state_after": {
+        "owner": "daily",
+        "crisis": false,
+        "risk_level": "SAFE",
+        "therapy": null,
+        "last_therapy_check_seq": 1,
+        "pending_user_tokens": 0
+      },
+      "orchestration_after": {},
+      "error": null,
+      "wall_seconds": 46.747,
+      "agent_text": "那种笑确实挺让人心里不是滋味的。在大家面前提方案，遇到那种反应，觉得很不舒服太正常了。那个笑当时让你心里忍不住开始多想了吗？"
+    },
+    {
+      "turn": 2,
+      "trace_id": "2f297b0be8c94f69",
+      "user_text": "其实他可能不是故意的，但那个画面一直在我脑子里。",
+      "agent_text_parts": [
+        "理智",
+        "上知道他可能不是",
+        "故意的，但那个",
+        "画面就是一直在",
+        "脑子里挥之不去",
+        "，这种感觉确实挺",
+        "折磨人的。脑子里",
+        "一直反复回放，",
+        "一定让你觉得挺",
+        "累的吧。"
+      ],
+      "events": [
+        {
+          "event": "token",
+          "data": "理智"
+        },
+        {
+          "event": "token",
+          "data": "上知道他可能不是"
+        },
+        {
+          "event": "token",
+          "data": "故意的，但那个"
+        },
+        {
+          "event": "token",
+          "data": "画面就是一直在"
+        },
+        {
+          "event": "token",
+          "data": "脑子里挥之不去"
+        },
+        {
+          "event": "token",
+          "data": "，这种感觉确实挺"
+        },
+        {
+          "event": "token",
+          "data": "折磨人的。脑子里"
+        },
+        {
+          "event": "token",
+          "data": "一直反复回放，"
+        },
+        {
+          "event": "token",
+          "data": "一定让你觉得挺"
+        },
+        {
+          "event": "token",
+          "data": "累的吧。"
+        },
+        {
+          "event": "dialogue_done",
+          "data": {
+            "trace_id": "2f297b0be8c94f69",
+            "owner": "daily"
+          }
+        },
+        {
+          "event": "final",
+          "data": {
+            "message": "其实他可能不是故意的，但那个画面一直在我脑子里。",
+            "risk_state": "SAFE",
+            "crisis": false
+          }
+        }
+      ],
+      "final": {
+        "message": "其实他可能不是故意的，但那个画面一直在我脑子里。",
+        "risk_state": "SAFE",
+        "crisis": false
+      },
+      "state_after": {
+        "owner": "therapy_act",
+        "crisis": false,
+        "risk_level": "SAFE",
+        "therapy": {
+          "name": "ACT",
+          "start_seq": 5,
+          "rounds": 0,
+          "step_index": -1,
+          "branch": null,
+          "basic_flow_complete": false
+        },
+        "last_therapy_check_seq": 3,
+        "pending_user_tokens": 0
+      },
+      "orchestration_after": {},
+      "error": null,
+      "wall_seconds": 42.105,
+      "agent_text": "理智上知道他可能不是故意的，但那个画面就是一直在脑子里挥之不去，这种感觉确实挺折磨人的。脑子里一直反复回放，一定让你觉得挺累的吧。"
+    },
+    {
+      "turn": 3,
+      "trace_id": "546ede0e5f6b4a65",
+      "user_text": "从那之后我就不太想去咖啡间了，午饭也开始打包回工位吃。",
+      "agent_text_parts": [
+        "嗯，",
+        "不去咖啡间，",
+        "打包回工位吃",
+        "……这似乎是你",
+        "为了让自己感觉安全",
+        "一点，而选择",
+        "的一种方式。聊了",
+        "这几轮，我想",
+        "轻轻问问你，",
+        "现在回过头来看看这些",
+        "，你心里的感觉",
+        "是什么样的呢？这种",
+        "选择，是让你",
+        "觉得松了一口气，还是",
+        "其实心里也有些别的",
+        "滋味？"
+      ],
+      "events": [
+        {
+          "event": "token",
+          "data": "嗯，"
+        },
+        {
+          "event": "token",
+          "data": "不去咖啡间，"
+        },
+        {
+          "event": "token",
+          "data": "打包回工位吃"
+        },
+        {
+          "event": "token",
+          "data": "……这似乎是你"
+        },
+        {
+          "event": "token",
+          "data": "为了让自己感觉安全"
+        },
+        {
+          "event": "token",
+          "data": "一点，而选择"
+        },
+        {
+          "event": "token",
+          "data": "的一种方式。聊了"
+        },
+        {
+          "event": "token",
+          "data": "这几轮，我想"
+        },
+        {
+          "event": "token",
+          "data": "轻轻问问你，"
+        },
+        {
+          "event": "token",
+          "data": "现在回过头来看看这些"
+        },
+        {
+          "event": "token",
+          "data": "，你心里的感觉"
+        },
+        {
+          "event": "token",
+          "data": "是什么样的呢？这种"
+        },
+        {
+          "event": "token",
+          "data": "选择，是让你"
+        },
+        {
+          "event": "token",
+          "data": "觉得松了一口气，还是"
+        },
+        {
+          "event": "token",
+          "data": "其实心里也有些别的"
+        },
+        {
+          "event": "token",
+          "data": "滋味？"
+        },
+        {
+          "event": "dialogue_done",
+          "data": {
+            "trace_id": "546ede0e5f6b4a65",
+            "owner": "therapy_act"
+          }
+        },
+        {
+          "event": "final",
+          "data": {
+            "message": "从那之后我就不太想去咖啡间了，午饭也开始打包回工位吃。",
+            "risk_state": "SAFE",
+            "crisis": false
+          }
+        }
+      ],
+      "final": {
+        "message": "从那之后我就不太想去咖啡间了，午饭也开始打包回工位吃。",
+        "risk_state": "SAFE",
+        "crisis": false
+      },
+      "state_after": {
+        "owner": "therapy_act",
+        "crisis": false,
+        "risk_level": "SAFE",
+        "therapy": {
+          "name": "ACT",
+          "start_seq": 5,
+          "rounds": 1,
+          "step_index": 1,
+          "branch": null,
+          "basic_flow_complete": false
+        },
+        "last_therapy_check_seq": 3,
+        "pending_user_tokens": 0
+      },
+      "orchestration_after": {
+        "updated_seq": 1,
+        "therapy": "ACT",
+        "current_step": "values",
+        "next_step": "acceptance",
+        "step_judgment": {
+          "action": "go_to",
+          "target_step": "acceptance",
+          "achieved": false,
+          "reason": "当前处于values步骤，但最新状态评估显示avoidance指数高达0.75（ea_rigid_control），openness仅为0.35（eo_guarded），alignment仅0.15。用户正在通过回避行为（避开咖啡间）来应对不适，尚未具备探索价值观的心理空间。系统推荐优先进行acceptance工作（priority 1），帮助用户为不适感腾出空间，之后才能有效开展values澄清。当前步骤values尚未达成效果，需先回到acceptance处理高回避问题。"
+        },
+        "assessment": {
+          "fusion": {
+            "index": 0.35,
+            "state": "cf_hookable",
+            "confidence": 0.4,
+            "evidence": [
+              "User describes avoiding the breakroom, implying underlying thoughts or feelings driving the behavior, though no explicit fused thoughts are directly stated."
+            ]
+          },
+          "avoidance": {
+            "index": 0.75,
+            "state": "ea_rigid_control",
+            "confidence": 0.9,
+            "evidence": [
+              "Actively avoiding the breakroom ('不太想去咖啡间了')",
+              "Changing daily routine to avoid the space entirely ('打包回工位吃')"
+            ]
+          },
+          "openness": {
+            "index": 0.35,
+            "state": "eo_guarded",
+            "confidence": 0.6,
+            "evidence": [
+              "User is sharing behavioral changes but not explicitly naming, exploring, or expressing the underlying emotions."
+            ]
+          },
+          "alignment": {
+            "index": 0.15,
+            "state": "low",
+            "confidence": 0.8,
+            "values_mentioned": []
+          },
+          "activation": {
+            "index": 0.2,
+            "state": "low",
+            "confidence": 0.8
+          },
+          "psychological_flexibility": 0.395,
+          "flexibility_level": "pf_rigid",
+          "overall_trend": "stable",
+          "emotional_intensity": 0.0,
+          "escalation_level": "baseline",
+          "primary_concern": "avoidance",
+          "should_intervene": true,
+          "recommended_processes": [
+            {
+              "process": "acceptance",
+              "priority": 1,
+              "rationale": "High avoidance requires acceptance work to help the user make room for the discomfort associated with the breakroom before attempting cognitive work."
+            },
+            {
+              "process": "values",
+              "priority": 2,
+              "rationale": "Low values alignment indicates the need to clarify what truly matters to the user to motivate values-consistent actions rather than avoidance-based behaviors."
+            },
+            {
+              "process": "defusion",
+              "priority": 3,
+              "rationale": "Once acceptance is established, defusion can help the user observe the underlying thoughts driving the avoidance without being controlled by them."
+            }
+          ]
+        },
+        "skill_output": {
+          "technique": {
+            "name": "values_exploration",
+            "description": "通过开放式探索，帮助用户从回避行为（不去咖啡间）中识别出他们真正在乎的事物。将痛苦和退缩转化为价值观的线索。",
+            "steps": [
+              "1. 确认并接纳用户的回避行为及其带来的短期安全感，不作评判。",
+              "2. 温和地引导用户想象：如果环境完全安全，他们理想中希望如何度过午餐时间或希望拥有怎样的职场氛围。",
+              "3. 探索这种理想状态背后的核心诉求（如：轻松的人际关系、被接纳的感觉），将其与‘关系’或‘和谐’等价值观方向建立连接。"
+            ]
+          },
+          "conversation_goal": "引导用户从‘逃避不适’的视角，转向探索‘内心真正渴望的职场人际状态或自我感受’，初步触及‘关系’或‘和谐’等价值观方向。",
+          "adaptation": {
+            "interaction_style": "exploratory",
+            "tone_adjustment": "极其温和、抱持、非评判。考虑到焦虑型依恋，语气要充满安全感，允许他们按照自己的节奏慢慢来。",
+            "pace_adjustment": "缓慢且谨慎。不急于得出价值观的结论，允许用户在感受中停留，一步步剥开防御。",
+            "culture_note": "避免使用‘价值观’这个抽象词汇。使用‘你心里其实挺看重什么样的同事关系？’或‘你希望自己在公司里是一种怎样的状态？’。将痛点与价值观连接：‘避开大家让你觉得安全，但也可能让你觉得有些孤单，是不是因为其实你内心挺看重和同事们轻松自然的连接的？’"
+          },
+          "contraindications": [
+            {
+              "condition": "用户表现出强烈的社交恐惧或创伤闪回",
+              "reason": "此时直接探索价值观可能会引发过度焦虑，需优先进行情绪安抚和接地技术，确保心理安全。"
+            },
+            {
+              "condition": "用户表现出明显的防御或不愿谈论感受",
+              "reason": "强行推进价值观探索会破坏信任。应退回到纯粹的倾听和共情，等待用户准备好。"
+            }
+          ],
+          "_skill_name": "act_values"
+        },
+        "products": {},
+        "continue_eval": null
+      },
+      "error": null,
+      "wall_seconds": 148.646,
+      "agent_text": "嗯，不去咖啡间，打包回工位吃……这似乎是你为了让自己感觉安全一点，而选择的一种方式。聊了这几轮，我想轻轻问问你，现在回过头来看看这些，你心里的感觉是什么样的呢？这种选择，是让你觉得松了一口气，还是其实心里也有些别的滋味？"
+    },
+    {
+      "turn": 4,
+      "trace_id": "af0141a2ef214e1e",
+      "user_text": "我知道大家都没怎么在意，但每次想到那个笑声我就不想出门。",
+      "agent_text_parts": [
+        "那个笑声",
+        "确实留在了心里，",
+        "让你觉得躲回",
+        "工位能让自己暂时",
+        "松一口气。避开",
+        "让自己不舒服的场景，",
+        "是我们本能想要保护自己的",
+        "方式。\n\n如果",
+        "那个笑声",
+        "没有困扰你，",
+        "或者在一个让你觉得",
+        "完全放松、安全",
+        "的地方，你心里",
+        "其实希望午饭时间",
+        "是怎么样的呢？",
+        "是希望能和大家轻松地",
+        "聊聊天，还是",
+        "享受那种自然、",
+        "自在的氛围？"
+      ],
+      "events": [
+        {
+          "event": "token",
+          "data": "那个笑声"
+        },
+        {
+          "event": "token",
+          "data": "确实留在了心里，"
+        },
+        {
+          "event": "token",
+          "data": "让你觉得躲回"
+        },
+        {
+          "event": "token",
+          "data": "工位能让自己暂时"
+        },
+        {
+          "event": "token",
+          "data": "松一口气。避开"
+        },
+        {
+          "event": "token",
+          "data": "让自己不舒服的场景，"
+        },
+        {
+          "event": "token",
+          "data": "是我们本能想要保护自己的"
+        },
+        {
+          "event": "token",
+          "data": "方式。\n\n如果"
+        },
+        {
+          "event": "token",
+          "data": "那个笑声"
+        },
+        {
+          "event": "token",
+          "data": "没有困扰你，"
+        },
+        {
+          "event": "token",
+          "data": "或者在一个让你觉得"
+        },
+        {
+          "event": "token",
+          "data": "完全放松、安全"
+        },
+        {
+          "event": "token",
+          "data": "的地方，你心里"
+        },
+        {
+          "event": "token",
+          "data": "其实希望午饭时间"
+        },
+        {
+          "event": "token",
+          "data": "是怎么样的呢？"
+        },
+        {
+          "event": "token",
+          "data": "是希望能和大家轻松地"
+        },
+        {
+          "event": "token",
+          "data": "聊聊天，还是"
+        },
+        {
+          "event": "token",
+          "data": "享受那种自然、"
+        },
+        {
+          "event": "token",
+          "data": "自在的氛围？"
+        },
+        {
+          "event": "dialogue_done",
+          "data": {
+            "trace_id": "af0141a2ef214e1e",
+            "owner": "therapy_act"
+          }
+        },
+        {
+          "event": "final",
+          "data": {
+            "message": "我知道大家都没怎么在意，但每次想到那个笑声我就不想出门。",
+            "risk_state": "LOW_RISK",
+            "crisis": false
+          }
+        }
+      ],
+      "final": {
+        "message": "我知道大家都没怎么在意，但每次想到那个笑声我就不想出门。",
+        "risk_state": "LOW_RISK",
+        "crisis": false
+      },
+      "state_after": {
+        "owner": "therapy_act",
+        "crisis": false,
+        "risk_level": "LOW_RISK",
+        "therapy": {
+          "name": "ACT",
+          "start_seq": 5,
+          "rounds": 2,
+          "step_index": 1,
+          "branch": null,
+          "basic_flow_complete": false
+        },
+        "last_therapy_check_seq": 3,
+        "pending_user_tokens": 0
+      },
+      "orchestration_after": {
+        "updated_seq": 2,
+        "therapy": "ACT",
+        "current_step": "acceptance",
+        "next_step": "acceptance",
+        "step_judgment": {
+          "action": "stay",
+          "target_step": null,
+          "achieved": false,
+          "reason": "用户仍处于高经验性回避状态（avoidance index 0.8），明确表示因'那个笑声'而不想出门，回避行为持续。虽然用户展现了一定的探索意愿（openness 0.45），并分享了具体的触发点和内在冲突，但接纳尚未真正达成——用户仍在用回避策略应对不适感。当前步骤acceptance需要继续推进，帮助用户为与笑声相关的不适感腾出空间，而非继续逃避。"
+        },
+        "assessment": {
+          "fusion": {
+            "index": 0.55,
+            "state": "cf_hooked",
+            "confidence": 0.85,
+            "evidence": [
+              "每次想到那个笑声我就不想出门",
+              "想法（关于笑声的记忆或意义）直接触发回避行为，用户将其体验为必须逃避的现实威胁，缺乏解离观察"
+            ]
+          },
+          "avoidance": {
+            "index": 0.8,
+            "state": "ea_rigid_control",
+            "confidence": 0.9,
+            "evidence": [
+              "明确表示不想出门",
+              "延续了之前不去茶水间和打包回工位的回避模式，通过改变行为来避免体验与笑声相关的不适感"
+            ]
+          },
+          "openness": {
+            "index": 0.45,
+            "state": "eo_receptive",
+            "confidence": 0.75,
+            "evidence": [
+              "用户分享了具体的触发点（那个笑声）以及理智与情感的冲突（我知道大家都没怎么在意，但...）",
+              "比单纯陈述行为更深入地触及了内在体验，展现出一定的探索意愿"
+            ]
+          },
+          "alignment": {
+            "index": 0.15,
+            "state": "low",
+            "confidence": 0.9,
+            "values_mentioned": []
+          },
+          "activation": {
+            "index": 0.15,
+            "state": "low",
+            "confidence": 0.9
+          },
+          "psychological_flexibility": 0.328,
+          "flexibility_level": "pf_rigid",
+          "overall_trend": "stable",
+          "emotional_intensity": 0.0,
+          "escalation_level": "baseline",
+          "primary_concern": "avoidance",
+          "should_intervene": true,
+          "recommended_processes": [
+            {
+              "process": "acceptance",
+              "priority": 1,
+              "rationale": "高经验性回避与高认知融合并存，需要优先进行接纳工作，帮助用户为与‘那个笑声’相关的不适感腾出空间，而不是继续逃避。"
+            },
+            {
+              "process": "defusion",
+              "priority": 2,
+              "rationale": "用户与‘那个笑声’的想法高度融合，在建立接纳后，需要通过解离帮助用户将其看作一个心理事件，而非必须服从的指令。"
+            },
+            {
+              "process": "values",
+              "priority": 3,
+              "rationale": "价值观一致性依然很低，需要澄清用户在社交或工作中真正看重的东西，以对抗回避行为并激发内在动力。"
+            }
+          ]
+        },
+        "skill_output": {
+          "technique": {
+            "name": "tug_of_war_metaphor",
+            "description": "使用拔河隐喻，帮助用户看到他们为了对抗那个笑声带来的不适感而付出的巨大努力（如回避出门），并温柔地邀请他们思考如果‘放下绳子’（允许感觉存在，不再对抗）会怎样。",
+            "steps": [
+              "共情并描述当前的‘拔河’状态：指出用户为了对抗那个笑声的记忆，一直在用力拉扯（比如打包回工位、不想出门），这消耗了很多精力，也限制了自己的生活。",
+              "引入拔河隐喻：想象你和那个不舒服的感觉在进行一场拔河比赛，脚下是一个深渊。你拼命想把感觉拉过来、消灭它，但它也在把你往深渊边缘拉，让你无法前行。",
+              "发出‘放下绳子’的邀请：温柔地提问，‘如果不去争输赢，只是单纯地放下绳子，会发生什么？’那个感觉（怪物）还在那里，但你不再和它拔河了，你的双手就自由了，可以去你想去的地方。"
+            ]
+          },
+          "conversation_goal": "帮助用户意识到回避行为（不出门）是与不适感‘拔河’的消耗，并邀请他们尝试‘放下绳子’，即允许那个感觉存在，从而把精力重新投入到自己真正想做的事情上。",
+          "adaptation": {
+            "interaction_style": "supportive",
+            "tone_adjustment": "极其温和、不带评判。避免让用户觉得他们之前的回避策略是‘错’的，而是肯定他们‘一直在很努力地保护自己’，现在只是邀请他们看看有没有其他选择。",
+            "pace_adjustment": "缓慢且留有停顿。在提出‘放下绳子’的假设后，留出心理空间让用户去体会那种从‘对抗’到‘允许’的身体和心理变化。",
+            "culture_note": "结合‘忍文化’，理解用户一直在‘忍’着不出门来避免不适。将‘放下绳子’框架为‘给自己一点空间’和‘允许它存在’，而不是强迫他们立刻变得勇敢。强调这不是放弃抵抗，而是不再和自己较劲。"
+          },
+          "contraindications": [
+            {
+              "condition": "用户处于极度焦虑或情绪崩溃边缘",
+              "reason": "此时引入隐喻可能会显得不够落地或被认为是在轻视他们的痛苦，需要先进行情绪安抚和接地（grounding）练习。"
+            },
+            {
+              "condition": "用户将‘放下绳子’误解为‘放弃自我保护’或‘必须立刻强迫自己出门’",
+              "reason": "需要明确澄清，放下绳子只是停止内耗和对抗，那个不舒服的感觉依然存在，但不代表必须立刻采取暴露行动，而是先在心里给它腾出空间。"
+            }
+          ],
+          "_skill_name": "act_acceptance"
+        },
+        "products": {},
+        "continue_eval": null
+      },
+      "error": null,
+      "wall_seconds": 155.566,
+      "agent_text": "那个笑声确实留在了心里，让你觉得躲回工位能让自己暂时松一口气。避开让自己不舒服的场景，是我们本能想要保护自己的方式。\n\n如果那个笑声没有困扰你，或者在一个让你觉得完全放松、安全的地方，你心里其实希望午饭时间是怎么样的呢？是希望能和大家轻松地聊聊天，还是享受那种自然、自在的氛围？"
+    },
+    {
+      "turn": 5,
+      "trace_id": "db36c94f1b8e4a68",
+      "user_text": "今天本来要去的，走到一半又回来了。",
+      "agent_text_parts": [
+        "走到一半又",
+        "折返回来，",
+        "那一刻心里一定挺",
+        "不好受的，可能",
+        "也有些疲惫和挫",
+        "败吧。你",
+        "其实已经试着迈",
+        "出了一步，但",
+        "那个笑声带来的不舒服",
+        "感，还是把你",
+        "拉了回来。\n\n",
+        "这就像是你和",
+        "那个不舒服的感觉在进行",
+        "一场拔河。你",
+        "拼命想把它甩",
+        "掉、想赢",
+        "过它，所以",
+        "选择退回到觉得",
+        "安全的地方；但它",
+        "也在",
+        "用力把你往回",
+        "拽，让你停在",
+        "原地，真的消耗",
+        "了你很多力气。",
+        "\n\n如果咱们先",
+        "不跟它争",
+        "输赢，只是",
+        "试着在心里慢慢松开",
+        "手，放下那",
+        "根绳子，你觉得",
+        "会怎样呢？",
+        "那个感觉可能依然",
+        "在那里，但你不再",
+        "和它较劲",
+        "了，你的双手",
+        "就空出来了。",
+        "不用急着立刻做什么",
+        "，只是轻轻感受一下",
+        "，如果双手",
+        "自由了，不再",
+        "紧紧攥着",
+        "绳子，",
+        "会是一种什么样的状态",
+        "？"
+      ],
+      "events": [
+        {
+          "event": "token",
+          "data": "走到一半又"
+        },
+        {
+          "event": "token",
+          "data": "折返回来，"
+        },
+        {
+          "event": "token",
+          "data": "那一刻心里一定挺"
+        },
+        {
+          "event": "token",
+          "data": "不好受的，可能"
+        },
+        {
+          "event": "token",
+          "data": "也有些疲惫和挫"
+        },
+        {
+          "event": "token",
+          "data": "败吧。你"
+        },
+        {
+          "event": "token",
+          "data": "其实已经试着迈"
+        },
+        {
+          "event": "token",
+          "data": "出了一步，但"
+        },
+        {
+          "event": "token",
+          "data": "那个笑声带来的不舒服"
+        },
+        {
+          "event": "token",
+          "data": "感，还是把你"
+        },
+        {
+          "event": "token",
+          "data": "拉了回来。\n\n"
+        },
+        {
+          "event": "token",
+          "data": "这就像是你和"
+        },
+        {
+          "event": "token",
+          "data": "那个不舒服的感觉在进行"
+        },
+        {
+          "event": "token",
+          "data": "一场拔河。你"
+        },
+        {
+          "event": "token",
+          "data": "拼命想把它甩"
+        },
+        {
+          "event": "token",
+          "data": "掉、想赢"
+        },
+        {
+          "event": "token",
+          "data": "过它，所以"
+        },
+        {
+          "event": "token",
+          "data": "选择退回到觉得"
+        },
+        {
+          "event": "token",
+          "data": "安全的地方；但它"
+        },
+        {
+          "event": "token",
+          "data": "也在"
+        },
+        {
+          "event": "token",
+          "data": "用力把你往回"
+        },
+        {
+          "event": "token",
+          "data": "拽，让你停在"
+        },
+        {
+          "event": "token",
+          "data": "原地，真的消耗"
+        },
+        {
+          "event": "token",
+          "data": "了你很多力气。"
+        },
+        {
+          "event": "token",
+          "data": "\n\n如果咱们先"
+        },
+        {
+          "event": "token",
+          "data": "不跟它争"
+        },
+        {
+          "event": "token",
+          "data": "输赢，只是"
+        },
+        {
+          "event": "token",
+          "data": "试着在心里慢慢松开"
+        },
+        {
+          "event": "token",
+          "data": "手，放下那"
+        },
+        {
+          "event": "token",
+          "data": "根绳子，你觉得"
+        },
+        {
+          "event": "token",
+          "data": "会怎样呢？"
+        },
+        {
+          "event": "token",
+          "data": "那个感觉可能依然"
+        },
+        {
+          "event": "token",
+          "data": "在那里，但你不再"
+        },
+        {
+          "event": "token",
+          "data": "和它较劲"
+        },
+        {
+          "event": "token",
+          "data": "了，你的双手"
+        },
+        {
+          "event": "token",
+          "data": "就空出来了。"
+        },
+        {
+          "event": "token",
+          "data": "不用急着立刻做什么"
+        },
+        {
+          "event": "token",
+          "data": "，只是轻轻感受一下"
+        },
+        {
+          "event": "token",
+          "data": "，如果双手"
+        },
+        {
+          "event": "token",
+          "data": "自由了，不再"
+        },
+        {
+          "event": "token",
+          "data": "紧紧攥着"
+        },
+        {
+          "event": "token",
+          "data": "绳子，"
+        },
+        {
+          "event": "token",
+          "data": "会是一种什么样的状态"
+        },
+        {
+          "event": "token",
+          "data": "？"
+        },
+        {
+          "event": "dialogue_done",
+          "data": {
+            "trace_id": "db36c94f1b8e4a68",
+            "owner": "therapy_act"
+          }
+        },
+        {
+          "event": "final",
+          "data": {
+            "message": "今天本来要去的，走到一半又回来了。",
+            "risk_state": "SAFE",
+            "crisis": false
+          }
+        }
+      ],
+      "final": {
+        "message": "今天本来要去的，走到一半又回来了。",
+        "risk_state": "SAFE",
+        "crisis": false
+      },
+      "state_after": {
+        "owner": "therapy_act",
+        "crisis": false,
+        "risk_level": "SAFE",
+        "therapy": {
+          "name": "ACT",
+          "start_seq": 5,
+          "rounds": 3,
+          "step_index": 1,
+          "branch": null,
+          "basic_flow_complete": false
+        },
+        "last_therapy_check_seq": 3,
+        "pending_user_tokens": 0
+      },
+      "orchestration_after": {
+        "updated_seq": 3,
+        "therapy": "ACT",
+        "current_step": "acceptance",
+        "next_step": "acceptance",
+        "step_judgment": {
+          "action": "stay",
+          "target_step": null,
+          "achieved": false,
+          "reason": "当前仍处于acceptance步骤第3轮。用户虽然展现了尝试行为（走到一半），但最终仍选择回避（退回来），avoidance指数0.6，fusion指数0.6，心理灵活性仅0.42（pf_rigid）。AI刚刚引入了'拔河'隐喻和'松手'的接纳引导，用户尚未对此作出回应。需要继续在当前步骤中探索用户对'松手/放下绳子'的体验，帮助其为不适感腾出空间，巩固接纳工作后再推进。"
+        },
+        "assessment": {
+          "fusion": {
+            "index": 0.6,
+            "state": "cf_hooked",
+            "confidence": 0.85,
+            "evidence": [
+              "'今天本来要去的，走到一半又回来了' 表明内心的想法和恐惧（对笑声的联想）依然具有强大的行为控制力，最终战胜了前往咖啡间的意图"
+            ]
+          },
+          "avoidance": {
+            "index": 0.6,
+            "state": "ea_avoiding",
+            "confidence": 0.85,
+            "evidence": [
+              "'走到一半又回来了' 表明虽然有了尝试的意图，但最终仍未能承受不适感，选择了退回安全区，显示出活跃的经验性回避，但比前一次的完全僵化控制（0.8）略有松动"
+            ]
+          },
+          "openness": {
+            "index": 0.6,
+            "state": "eo_receptive",
+            "confidence": 0.8,
+            "evidence": [
+              "用户坦诚地分享了自己尝试但最终退缩的经历，没有掩饰自己的脆弱、失败或挫败感，展现出对内在真实体验的开放和诚实"
+            ]
+          },
+          "alignment": {
+            "index": 0.25,
+            "state": "low",
+            "confidence": 0.75,
+            "values_mentioned": []
+          },
+          "activation": {
+            "index": 0.35,
+            "state": "medium",
+            "confidence": 0.8
+          },
+          "psychological_flexibility": 0.42,
+          "flexibility_level": "pf_rigid",
+          "overall_trend": "improving",
+          "emotional_intensity": 0.0,
+          "escalation_level": "baseline",
+          "primary_concern": "avoidance",
+          "should_intervene": true,
+          "recommended_processes": [
+            {
+              "process": "acceptance",
+              "priority": 1,
+              "rationale": "用户尝试后退回，极易产生挫败感和自我评判。需要优先进行接纳工作，为'走到一半又回来'的不适感和失落感腾出空间，而不是继续逃避或自我批评。"
+            },
+            {
+              "process": "committed_action",
+              "priority": 2,
+              "rationale": "必须肯定'走到一半'的尝试，将其视为打破回避的重要一步。鼓励将目标拆解为更小的、可管理的步骤，将关注点从'是否到达'转移到'是否采取了朝向价值的微小行动'上。"
+            },
+            {
+              "process": "defusion",
+              "priority": 3,
+              "rationale": "在建立接纳的基础上，帮助用户解离关于'我又失败了'或'那个笑声'的想法，将其看作大脑产生的心理事件，而非必须服从的指令或自我定义。"
+            }
+          ]
+        },
+        "skill_output": {
+          "technique": {
+            "name": "willingness_invitation",
+            "description": "Gently invite the user to notice the discomfort that pulled them back, validate their effort in trying, and invite them to make room for the feeling without judgment, shifting from avoiding to allowing it to be there.",
+            "steps": [
+              "Validate the courage it took to try and the natural instinct to retreat when the discomfort became too much, ensuring they do not feel judged or ashamed for turning back.",
+              "Gently invite them to notice the specific feeling that made them turn around, and ask what it would be like to just give that feeling a little space and allow it to be there without needing to push it away or fix it."
+            ]
+          },
+          "conversation_goal": "To help the user shift from self-criticism about turning back to a stance of curious observation, allowing the difficult emotion to exist without fighting it, thereby reducing the exhaustion of experiential avoidance.",
+          "adaptation": {
+            "interaction_style": "supportive",
+            "tone_adjustment": "Highly compassionate, non-judgmental, and inviting. Use 'what if' phrasing to avoid sounding prescriptive. Ensure the user feels their coping mechanism is understood as a valid protective instinct, not a failure.",
+            "pace_adjustment": "Slow and spacious. The user has just experienced a setback and might feel defeated. Do not rush them to try again; focus entirely on being with the current emotional state and reducing the internal pressure.",
+            "culture_note": "Respect the culture of endurance by not framing their retreat as a lack of toughness. Instead of using the direct translation of acceptance, frame it as 'allowing it to be there' (允许它存在) or 'giving yourself some space' (给自己一点空间). This reduces the pressure of having to conquer the emotion and honors their protective strategies."
+          },
+          "contraindications": [
+            {
+              "condition": "High self-criticism or shame about turning back",
+              "reason": "If the user is heavily judging themselves for retreating, directly inviting them to sit with the emotion might feel like being forced to sit with their perceived failure. Must first deeply validate and normalize the retreat."
+            },
+            {
+              "condition": "Emotional flooding or dissociation",
+              "reason": "If the user is completely overwhelmed by the memory of the laugh, asking them to allow it might increase distress. Grounding techniques should be used first to regulate the nervous system before attempting acceptance work."
+            }
+          ],
+          "_skill_name": "act_acceptance"
+        },
+        "products": {},
+        "continue_eval": null
+      },
+      "error": null,
+      "wall_seconds": 158.361,
+      "agent_text": "走到一半又折返回来，那一刻心里一定挺不好受的，可能也有些疲惫和挫败吧。你其实已经试着迈出了一步，但那个笑声带来的不舒服感，还是把你拉了回来。\n\n这就像是你和那个不舒服的感觉在进行一场拔河。你拼命想把它甩掉、想赢过它，所以选择退回到觉得安全的地方；但它也在用力把你往回拽，让你停在原地，真的消耗了你很多力气。\n\n如果咱们先不跟它争输赢，只是试着在心里慢慢松开手，放下那根绳子，你觉得会怎样呢？那个感觉可能依然在那里，但你不再和它较劲了，你的双手就空出来了。不用急着立刻做什么，只是轻轻感受一下，如果双手自由了，不再紧紧攥着绳子，会是一种什么样的状态？"
+    },
+    {
+      "turn": 6,
+      "trace_id": "307dafe3e369459e",
+      "user_text": "我跟自己说\"别想那么多\"，但没什么用，那个画面还是会冒出来。",
+      "agent_text_parts": [
+        "嗯",
+        "，拼命告诉自己“",
+        "别想那么多”，",
+        "那个画面却还是固执",
+        "地冒出来，",
+        "这确实挺让人",
+        "无奈的。我们越是",
+        "想用力把它推开",
+        "，它好像反而",
+        "越清晰。\n\n",
+        "既然赶走它这么",
+        "费劲，如果咱们",
+        "试着不去跟它",
+        "较劲，只是",
+        "给这个画面和",
+        "它带来的不舒服腾",
+        "出一点点空间呢",
+        "？就像看着水",
+        "面上飘过的一片",
+        "落叶，只是允许",
+        "它在那儿待",
+        "一会儿，不去急着",
+        "修复或赶走它",
+        "。如果不去用力",
+        "推开，只是让它",
+        "在那儿，你",
+        "感觉会怎么样？"
+      ],
+      "events": [
+        {
+          "event": "token",
+          "data": "嗯"
+        },
+        {
+          "event": "token",
+          "data": "，拼命告诉自己“"
+        },
+        {
+          "event": "token",
+          "data": "别想那么多”，"
+        },
+        {
+          "event": "token",
+          "data": "那个画面却还是固执"
+        },
+        {
+          "event": "token",
+          "data": "地冒出来，"
+        },
+        {
+          "event": "token",
+          "data": "这确实挺让人"
+        },
+        {
+          "event": "token",
+          "data": "无奈的。我们越是"
+        },
+        {
+          "event": "token",
+          "data": "想用力把它推开"
+        },
+        {
+          "event": "token",
+          "data": "，它好像反而"
+        },
+        {
+          "event": "token",
+          "data": "越清晰。\n\n"
+        },
+        {
+          "event": "token",
+          "data": "既然赶走它这么"
+        },
+        {
+          "event": "token",
+          "data": "费劲，如果咱们"
+        },
+        {
+          "event": "token",
+          "data": "试着不去跟它"
+        },
+        {
+          "event": "token",
+          "data": "较劲，只是"
+        },
+        {
+          "event": "token",
+          "data": "给这个画面和"
+        },
+        {
+          "event": "token",
+          "data": "它带来的不舒服腾"
+        },
+        {
+          "event": "token",
+          "data": "出一点点空间呢"
+        },
+        {
+          "event": "token",
+          "data": "？就像看着水"
+        },
+        {
+          "event": "token",
+          "data": "面上飘过的一片"
+        },
+        {
+          "event": "token",
+          "data": "落叶，只是允许"
+        },
+        {
+          "event": "token",
+          "data": "它在那儿待"
+        },
+        {
+          "event": "token",
+          "data": "一会儿，不去急着"
+        },
+        {
+          "event": "token",
+          "data": "修复或赶走它"
+        },
+        {
+          "event": "token",
+          "data": "。如果不去用力"
+        },
+        {
+          "event": "token",
+          "data": "推开，只是让它"
+        },
+        {
+          "event": "token",
+          "data": "在那儿，你"
+        },
+        {
+          "event": "token",
+          "data": "感觉会怎么样？"
+        },
+        {
+          "event": "dialogue_done",
+          "data": {
+            "trace_id": "307dafe3e369459e",
+            "owner": "therapy_act"
+          }
+        },
+        {
+          "event": "final",
+          "data": {
+            "message": "我跟自己说\"别想那么多\"，但没什么用，那个画面还是会冒出来。",
+            "risk_state": "SAFE",
+            "crisis": false
+          }
+        }
+      ],
+      "final": {
+        "message": "我跟自己说\"别想那么多\"，但没什么用，那个画面还是会冒出来。",
+        "risk_state": "SAFE",
+        "crisis": false
+      },
+      "state_after": {
+        "owner": "therapy_act",
+        "crisis": false,
+        "risk_level": "SAFE",
+        "therapy": {
+          "name": "ACT",
+          "start_seq": 5,
+          "rounds": 4,
+          "step_index": 1,
+          "branch": null,
+          "basic_flow_complete": false
+        },
+        "last_therapy_check_seq": 3,
+        "pending_user_tokens": 0
+      },
+      "orchestration_after": {
+        "updated_seq": 4,
+        "therapy": "ACT",
+        "current_step": "acceptance",
+        "next_step": "acceptance",
+        "step_judgment": {
+          "action": "stay",
+          "target_step": null,
+          "achieved": false,
+          "reason": "用户仍处于ea_avoiding状态(0.62)，尝试通过'别想那么多'压抑想法但失败，回避动机依然活跃。虽然用户开始注意到想法'冒出来'的过程(融合度降至0.42)，但尚未真正放弃控制策略、为不适感腾出空间。推荐流程仍优先进行acceptance工作，需继续帮助用户体验'不较劲'的状态，而非急于推进到下一步。"
+        },
+        "assessment": {
+          "fusion": {
+            "index": 0.42,
+            "state": "cf_hookable",
+            "confidence": 0.85,
+            "evidence": [
+              "用户将想法描述为'那个画面'并注意到它'冒出来'，显示出将想法视为心理事件的初步解离能力（从0.6降至0.42），但依然试图控制它，说明仍有一定程度的'被钩住'"
+            ]
+          },
+          "avoidance": {
+            "index": 0.62,
+            "state": "ea_avoiding",
+            "confidence": 0.85,
+            "evidence": [
+              "'我跟自己说别想那么多' 是典型的思想压抑和经验性回避策略。尽管用户意识到'没什么用'，但试图通过控制来消除不适感的动机依然活跃，维持在'ea_avoiding'状态"
+            ]
+          },
+          "openness": {
+            "index": 0.6,
+            "state": "eo_receptive",
+            "confidence": 0.85,
+            "evidence": [
+              "用户坦诚地分享了自己尝试控制想法但失败的内在体验，没有掩饰自己的挫败感，保持了对内在真实体验的开放和诚实"
+            ]
+          },
+          "alignment": {
+            "index": 0.25,
+            "state": "low",
+            "confidence": 0.75,
+            "values_mentioned": []
+          },
+          "activation": {
+            "index": 0.35,
+            "state": "medium",
+            "confidence": 0.8
+          },
+          "psychological_flexibility": 0.478,
+          "flexibility_level": "pf_rigid",
+          "overall_trend": "improving",
+          "emotional_intensity": 0.0,
+          "escalation_level": "baseline",
+          "primary_concern": "fusion",
+          "should_intervene": true,
+          "recommended_processes": [
+            {
+              "process": "acceptance",
+              "priority": 1,
+              "rationale": "用户正在经历典型的思想压抑（'别想那么多'）及其带来的挫败感。根据高回避+中高融合的路由规则，需优先进行接纳工作，帮助用户放弃对想法的控制，为'画面'的出现腾出空间，而不是继续无效的心理对抗。"
+            },
+            {
+              "process": "defusion",
+              "priority": 2,
+              "rationale": "用户已经自发地将想法识别为'那个画面'并注意到它'冒出来'的过程。这为解离提供了绝佳的切入点，可顺势帮助用户进一步将想法看作是大脑产生的心理事件，而非必须消除的威胁。"
+            },
+            {
+              "process": "present_moment",
+              "priority": 3,
+              "rationale": "当侵入性画面出现时，帮助用户将注意力锚定在当下的身体感觉或周围环境上，减少对内在想法的过度关注，打破'想法-压抑-反弹'的循环。"
+            }
+          ]
+        },
+        "skill_output": {
+          "technique": {
+            "name": "willingness_invitation",
+            "description": "Gently invite the user to notice the futility of thought suppression and explore the possibility of simply allowing the intrusive image to be present without fighting it.",
+            "steps": [
+              "Validate the exhaustion and frustration of trying so hard to push the image away, acknowledging that the 'don't think about it' strategy is incredibly draining and often backfires.",
+              "Offer a gentle, invitational shift: ask what it might feel like to just put down the heavy task of controlling their thoughts for a moment, and simply let the image sit there in the background, allowing it to exist without needing to make it go away."
+            ]
+          },
+          "conversation_goal": "To help the user transition from exhausting experiential avoidance (thought suppression) to a stance of gentle willingness, reducing the secondary struggle and freeing up psychological energy.",
+          "adaptation": {
+            "interaction_style": "supportive",
+            "tone_adjustment": "Highly compassionate, soft, and invitational. Avoid any tone that sounds prescriptive like 'you should just let it go.' Use invitational phrases like 'Would you be open to...' or 'What if...'",
+            "pace_adjustment": "Very slow and unhurried. Allow conceptual pauses so the user doesn't feel rushed into 'fixing' their avoidance or achieving immediate relief.",
+            "culture_note": "Respect the 'culture of endurance' (忍文化). Frame the shift not as 'giving up' but as 'giving yourself a break' (给自己松绑) or 'making a little room for it' (给它留点空间). Use '允许它存在' (allow it to be there) rather than '接纳' (acceptance) to reduce resistance and validate their coping efforts."
+          },
+          "contraindications": [
+            {
+              "condition": "If the image is related to acute trauma or severe dissociation.",
+              "reason": "Inviting acceptance of traumatic intrusions without prior stabilization and grounding can lead to re-traumatization or overwhelming emotional flooding."
+            },
+            {
+              "condition": "If the user expresses feeling invalidated, misunderstood, or pressured by the invitation.",
+              "reason": "Pushing for acceptance can feel dismissive of their pain. The agent must immediately step back, validate the difficulty, and drop the technique to focus purely on empathetic listening."
+            }
+          ],
+          "_skill_name": "act_acceptance"
+        },
+        "products": {},
+        "continue_eval": null
+      },
+      "error": null,
+      "wall_seconds": 458.072,
+      "agent_text": "嗯，拼命告诉自己“别想那么多”，那个画面却还是固执地冒出来，这确实挺让人无奈的。我们越是想用力把它推开，它好像反而越清晰。\n\n既然赶走它这么费劲，如果咱们试着不去跟它较劲，只是给这个画面和它带来的不舒服腾出一点点空间呢？就像看着水面上飘过的一片落叶，只是允许它在那儿待一会儿，不去急着修复或赶走它。如果不去用力推开，只是让它在那儿，你感觉会怎么样？"
+    },
+    {
+      "turn": 7,
+      "trace_id": "6b76946a33df4aab",
+      "user_text": "其实我以前挺喜欢去咖啡间跟大家聊天的，现在反而觉得躲在工位更安全。",
+      "agent_text_parts": [
+        "听到你说以前挺",
+        "喜欢去咖啡间",
+        "跟大家聊天，现在",
+        "却觉得躲在工位",
+        "才安全，这",
+        "中间一定有很多无奈",
+        "和疲惫吧。",
+        "为了让自己觉得安全",
+        "，你不仅要放弃",
+        "喜欢的活动，还要",
+        "拼命告诉自己“别",
+        "想那么多”，这",
+        "真的太消耗力气了",
+        "。\n\n既然这么",
+        "用力去推开它",
+        "还是没用，咱们",
+        "能不能试着先放下",
+        "那个“必须把它",
+        "赶走”的沉重",
+        "任务？如果不去",
+        "用力控制，只是",
+        "允许那个画面在",
+        "背景里待着",
+        "，不赶它",
+        "，也不跟它",
+        "较劲。你觉得",
+        "，如果暂时把",
+        "控制它的力气放",
+        "下来，只是让它",
+        "在那儿，心里",
+        "会是一种什么样的感觉",
+        "呢？"
+      ],
+      "events": [
+        {
+          "event": "token",
+          "data": "听到你说以前挺"
+        },
+        {
+          "event": "token",
+          "data": "喜欢去咖啡间"
+        },
+        {
+          "event": "token",
+          "data": "跟大家聊天，现在"
+        },
+        {
+          "event": "token",
+          "data": "却觉得躲在工位"
+        },
+        {
+          "event": "token",
+          "data": "才安全，这"
+        },
+        {
+          "event": "token",
+          "data": "中间一定有很多无奈"
+        },
+        {
+          "event": "token",
+          "data": "和疲惫吧。"
+        },
+        {
+          "event": "token",
+          "data": "为了让自己觉得安全"
+        },
+        {
+          "event": "token",
+          "data": "，你不仅要放弃"
+        },
+        {
+          "event": "token",
+          "data": "喜欢的活动，还要"
+        },
+        {
+          "event": "token",
+          "data": "拼命告诉自己“别"
+        },
+        {
+          "event": "token",
+          "data": "想那么多”，这"
+        },
+        {
+          "event": "token",
+          "data": "真的太消耗力气了"
+        },
+        {
+          "event": "token",
+          "data": "。\n\n既然这么"
+        },
+        {
+          "event": "token",
+          "data": "用力去推开它"
+        },
+        {
+          "event": "token",
+          "data": "还是没用，咱们"
+        },
+        {
+          "event": "token",
+          "data": "能不能试着先放下"
+        },
+        {
+          "event": "token",
+          "data": "那个“必须把它"
+        },
+        {
+          "event": "token",
+          "data": "赶走”的沉重"
+        },
+        {
+          "event": "token",
+          "data": "任务？如果不去"
+        },
+        {
+          "event": "token",
+          "data": "用力控制，只是"
+        },
+        {
+          "event": "token",
+          "data": "允许那个画面在"
+        },
+        {
+          "event": "token",
+          "data": "背景里待着"
+        },
+        {
+          "event": "token",
+          "data": "，不赶它"
+        },
+        {
+          "event": "token",
+          "data": "，也不跟它"
+        },
+        {
+          "event": "token",
+          "data": "较劲。你觉得"
+        },
+        {
+          "event": "token",
+          "data": "，如果暂时把"
+        },
+        {
+          "event": "token",
+          "data": "控制它的力气放"
+        },
+        {
+          "event": "token",
+          "data": "下来，只是让它"
+        },
+        {
+          "event": "token",
+          "data": "在那儿，心里"
+        },
+        {
+          "event": "token",
+          "data": "会是一种什么样的感觉"
+        },
+        {
+          "event": "token",
+          "data": "呢？"
+        },
+        {
+          "event": "dialogue_done",
+          "data": {
+            "trace_id": "6b76946a33df4aab",
+            "owner": "therapy_act"
+          }
+        },
+        {
+          "event": "final",
+          "data": {
+            "message": "其实我以前挺喜欢去咖啡间跟大家聊天的，现在反而觉得躲在工位更安全。",
+            "risk_state": "LOW_RISK",
+            "crisis": false
+          }
+        }
+      ],
+      "final": {
+        "message": "其实我以前挺喜欢去咖啡间跟大家聊天的，现在反而觉得躲在工位更安全。",
+        "risk_state": "LOW_RISK",
+        "crisis": false
+      },
+      "state_after": {
+        "owner": "therapy_act",
+        "crisis": false,
+        "risk_level": "LOW_RISK",
+        "therapy": {
+          "name": "ACT",
+          "start_seq": 5,
+          "rounds": 5,
+          "step_index": 1,
+          "branch": null,
+          "basic_flow_complete": false
+        },
+        "last_therapy_check_seq": 3,
+        "pending_user_tokens": 0
+      },
+      "orchestration_after": {
+        "updated_seq": 5,
+        "therapy": "ACT",
+        "current_step": "acceptance",
+        "next_step": "acceptance",
+        "step_judgment": {
+          "action": "stay",
+          "target_step": null,
+          "achieved": false,
+          "reason": "用户仍处于经验性回避状态（ea_avoiding，index 0.63），明确表示'躲在工位更安全'，对'工位=安全'存在认知融合（cf_hookable，index 0.4）。虽然用户展现了对内在体验的开放性（eo_receptive，index 0.65），但接纳步骤的核心目标——为不适感腾出空间、减少回避行为——尚未达成。AI最后一轮仍在引导用户放下控制、允许不适感存在，需要继续在当前步骤深化接纳工作，帮助用户真正为焦虑感腾出空间而非继续回避。"
+        },
+        "assessment": {
+          "fusion": {
+            "index": 0.4,
+            "state": "cf_hookable",
+            "confidence": 0.8,
+            "evidence": [
+              "用户对比了'以前喜欢聊天'和'现在觉得躲在工位更安全'，显示出对行为模式变化的觉察，但依然将'工位=安全'体验为绝对事实，处于被想法钩住的状态"
+            ]
+          },
+          "avoidance": {
+            "index": 0.63,
+            "state": "ea_avoiding",
+            "confidence": 0.85,
+            "evidence": [
+              "用户明确承认'躲在工位更安全'，这是典型的行为回避策略，通过改变物理位置来逃避咖啡间可能带来的不适感"
+            ]
+          },
+          "openness": {
+            "index": 0.65,
+            "state": "eo_receptive",
+            "confidence": 0.85,
+            "evidence": [
+              "用户坦诚地分享了自己从'喜欢聊天'到'躲避'的转变，没有掩饰自己的退缩和脆弱，保持了对内在真实体验的开放和诚实"
+            ]
+          },
+          "alignment": {
+            "index": 0.45,
+            "state": "medium",
+            "confidence": 0.8,
+            "values_mentioned": [
+              "社交连接",
+              "归属感"
+            ]
+          },
+          "activation": {
+            "index": 0.25,
+            "state": "low",
+            "confidence": 0.85
+          },
+          "psychological_flexibility": 0.502,
+          "flexibility_level": "pf_adaptive",
+          "overall_trend": "improving",
+          "emotional_intensity": 0.0,
+          "escalation_level": "baseline",
+          "primary_concern": "avoidance",
+          "should_intervene": true,
+          "recommended_processes": [
+            {
+              "process": "values",
+              "priority": 1,
+              "rationale": "用户提到了'以前挺喜欢去咖啡间跟大家聊天'，这表明'社交连接'和'归属感'是其内在看重的价值观。此时应优先进行价值观澄清，帮助用户意识到当前的回避行为与这些核心价值观之间的冲突，从而激发改变的内在动机。"
+            },
+            {
+              "process": "acceptance",
+              "priority": 2,
+              "rationale": "用户目前通过'躲在工位'来规避不适感，经验性回避依然较高。需要帮助用户接纳在咖啡间可能出现的焦虑或不安全感，而不是将其视为必须消除的威胁，从而减少回避行为。"
+            },
+            {
+              "process": "defusion",
+              "priority": 3,
+              "rationale": "用户对'工位=安全'有一定的融合。可以通过解离技术，帮助用户看到'躲在工位更安全'只是一个想法，而不是必须服从的绝对事实，从而为采取价值观一致的行动腾出空间。"
+            }
+          ]
+        },
+        "skill_output": {
+          "technique": {
+            "name": "willingness_invitation",
+            "description": "Gently invite the user to notice the underlying feeling of needing safety or the anxiety about the coffee room, and explore what it might be like to allow that feeling to exist without immediately retreating to the 'safe' desk.",
+            "steps": [
+              "Validate the instinct to seek safety and acknowledge how exhausting it is to give up a previously enjoyed activity.",
+              "Gently invite them to notice the specific feeling of 'unsafety' or anxiety that arises when thinking about the coffee room, asking what it would feel like to just let that feeling be there for a moment, without needing to immediately retreat to the desk."
+            ]
+          },
+          "conversation_goal": "Help the user recognize that the urge to hide at the desk is driven by an uncomfortable emotion, and gently invite them to allow that emotion to be present ('允许它存在') rather than immediately acting on the avoidance behavior.",
+          "adaptation": {
+            "interaction_style": "supportive",
+            "tone_adjustment": "Warm, empathetic, and non-judgmental. Avoid sounding like we are criticizing their coping mechanism (hiding at the desk). Use gentle, invitational language ('如果...', '会不会...').",
+            "pace_adjustment": "Slow and spacious. Give them time to process the shift from behavioral avoidance to emotional awareness.",
+            "culture_note": "Frame the invitation as '给自己一点空间' (giving yourself some space) rather than forcing '接纳' (acceptance). Acknowledge that seeking safety ('觉得安全') is a very natural and understandable human instinct, honoring their protective mechanism while gently suggesting they don't always have to act on it."
+          },
+          "contraindications": [
+            {
+              "condition": "If the user expresses severe panic or trauma triggers related to the coffee room.",
+              "reason": "Pushing for acceptance in the face of acute trauma responses can be re-traumatizing; grounding and safety planning take precedence."
+            },
+            {
+              "condition": "If the user feels invalidated or pressured by the invitation.",
+              "reason": "ACT emphasizes willingness, not coercion. If they resist, pivot back to pure validation or cognitive defusion."
+            }
+          ],
+          "_skill_name": "act_acceptance"
+        },
+        "products": {},
+        "continue_eval": null
+      },
+      "error": null,
+      "wall_seconds": 175.307,
+      "agent_text": "听到你说以前挺喜欢去咖啡间跟大家聊天，现在却觉得躲在工位才安全，这中间一定有很多无奈和疲惫吧。为了让自己觉得安全，你不仅要放弃喜欢的活动，还要拼命告诉自己“别想那么多”，这真的太消耗力气了。\n\n既然这么用力去推开它还是没用，咱们能不能试着先放下那个“必须把它赶走”的沉重任务？如果不去用力控制，只是允许那个画面在背景里待着，不赶它，也不跟它较劲。你觉得，如果暂时把控制它的力气放下来，只是让它在那儿，心里会是一种什么样的感觉呢？"
+    },
+    {
+      "turn": 8,
+      "trace_id": "726f8d60a1f04936",
+      "user_text": "我想改回去，但我不知道怎么处理脑子里那个反复出现的画面。",
+      "agent_text_parts": [
+        "听到你说",
+        "“想改回去",
+        "”，我能感觉到去",
+        "咖啡间和大家聊天",
+        "对你来说真的很重要",
+        "。为了让自己觉得",
+        "安全，放弃以前",
+        "喜欢的时光，真的",
+        "挺让人疲惫的",
+        "。\n\n你提到",
+        "不知道怎么“处理”",
+        "那个反复出现的画面",
+        "。其实，也许",
+        "我们不需要非得去",
+        "“处理”掉",
+        "它。那个画面",
+        "带来的不安，就像",
+        "是一个不请自",
+        "来的客人。如果我们",
+        "暂时不急着把它",
+        "赶走，也不去",
+        "想办法“处理”",
+        "它，只是允许",
+        "它在那儿待",
+        "一会儿。\n\n如果",
+        "让这种不安的感觉",
+        "就在那儿，",
+        "不去推开它，",
+        "你觉得心里会是一种",
+        "什么样的状态呢？"
+      ],
+      "events": [
+        {
+          "event": "token",
+          "data": "听到你说"
+        },
+        {
+          "event": "token",
+          "data": "“想改回去"
+        },
+        {
+          "event": "token",
+          "data": "”，我能感觉到去"
+        },
+        {
+          "event": "token",
+          "data": "咖啡间和大家聊天"
+        },
+        {
+          "event": "token",
+          "data": "对你来说真的很重要"
+        },
+        {
+          "event": "token",
+          "data": "。为了让自己觉得"
+        },
+        {
+          "event": "token",
+          "data": "安全，放弃以前"
+        },
+        {
+          "event": "token",
+          "data": "喜欢的时光，真的"
+        },
+        {
+          "event": "token",
+          "data": "挺让人疲惫的"
+        },
+        {
+          "event": "token",
+          "data": "。\n\n你提到"
+        },
+        {
+          "event": "token",
+          "data": "不知道怎么“处理”"
+        },
+        {
+          "event": "token",
+          "data": "那个反复出现的画面"
+        },
+        {
+          "event": "token",
+          "data": "。其实，也许"
+        },
+        {
+          "event": "token",
+          "data": "我们不需要非得去"
+        },
+        {
+          "event": "token",
+          "data": "“处理”掉"
+        },
+        {
+          "event": "token",
+          "data": "它。那个画面"
+        },
+        {
+          "event": "token",
+          "data": "带来的不安，就像"
+        },
+        {
+          "event": "token",
+          "data": "是一个不请自"
+        },
+        {
+          "event": "token",
+          "data": "来的客人。如果我们"
+        },
+        {
+          "event": "token",
+          "data": "暂时不急着把它"
+        },
+        {
+          "event": "token",
+          "data": "赶走，也不去"
+        },
+        {
+          "event": "token",
+          "data": "想办法“处理”"
+        },
+        {
+          "event": "token",
+          "data": "它，只是允许"
+        },
+        {
+          "event": "token",
+          "data": "它在那儿待"
+        },
+        {
+          "event": "token",
+          "data": "一会儿。\n\n如果"
+        },
+        {
+          "event": "token",
+          "data": "让这种不安的感觉"
+        },
+        {
+          "event": "token",
+          "data": "就在那儿，"
+        },
+        {
+          "event": "token",
+          "data": "不去推开它，"
+        },
+        {
+          "event": "token",
+          "data": "你觉得心里会是一种"
+        },
+        {
+          "event": "token",
+          "data": "什么样的状态呢？"
+        },
+        {
+          "event": "dialogue_done",
+          "data": {
+            "trace_id": "726f8d60a1f04936",
+            "owner": "therapy_act"
+          }
+        },
+        {
+          "event": "final",
+          "data": {
+            "message": "我想改回去，但我不知道怎么处理脑子里那个反复出现的画面。",
+            "risk_state": "MEDIUM_RISK",
+            "crisis": false
+          }
+        }
+      ],
+      "final": {
+        "message": "我想改回去，但我不知道怎么处理脑子里那个反复出现的画面。",
+        "risk_state": "MEDIUM_RISK",
+        "crisis": false
+      },
+      "state_after": {
+        "owner": "therapy_act",
+        "crisis": false,
+        "risk_level": "MEDIUM_RISK",
+        "therapy": {
+          "name": "ACT",
+          "start_seq": 5,
+          "rounds": 6,
+          "step_index": 0,
+          "branch": null,
+          "basic_flow_complete": false
+        },
+        "last_therapy_check_seq": 3,
+        "pending_user_tokens": 0
+      },
+      "orchestration_after": {
+        "updated_seq": 6,
+        "therapy": "ACT",
+        "current_step": "acceptance",
+        "next_step": "defusion",
+        "step_judgment": {
+          "action": "go_to",
+          "target_step": "defusion",
+          "achieved": false,
+          "reason": "用户将脑中画面视为需要'处理'的问题，存在明显的控制议程和认知融合（fusion=0.42, cf_hookable）。状态评估明确建议优先进行解离（defusion），帮助用户看到画面只是脑中事件而非需要消除的实体问题。当前acceptance步骤尚未达成效果，因为用户仍在寻找'处理'方法，需先通过defusion松动融合，才能为真正的接纳腾出空间。"
+        },
+        "assessment": {
+          "fusion": {
+            "index": 0.42,
+            "state": "cf_hookable",
+            "confidence": 0.85,
+            "evidence": [
+              "用户提到'脑子里那个反复出现的画面'，显示出对想法的觉察，但'不知道怎么处理'表明仍将其视为需要解决或消除的实体问题，处于被想法钩住但能觉察的状态"
+            ]
+          },
+          "avoidance": {
+            "index": 0.35,
+            "state": "ea_hesitant",
+            "confidence": 0.85,
+            "evidence": [
+              "用户表达'我想改回去'，显示出减少回避、面对不适的意愿，但'不知道怎么处理'仍带有试图控制或消除不适感的残余倾向"
+            ]
+          },
+          "openness": {
+            "index": 0.68,
+            "state": "eo_receptive",
+            "confidence": 0.9,
+            "evidence": [
+              "用户坦诚地表达了自己想要改变的意愿以及面对内心画面时的无助感，没有掩饰脆弱，保持了较高的情感开放度"
+            ]
+          },
+          "alignment": {
+            "index": 0.6,
+            "state": "medium",
+            "confidence": 0.9,
+            "values_mentioned": [
+              "社交连接",
+              "归属感",
+              "回归正常社交"
+            ]
+          },
+          "activation": {
+            "index": 0.45,
+            "state": "medium",
+            "confidence": 0.85
+          },
+          "psychological_flexibility": 0.607,
+          "flexibility_level": "pf_adaptive",
+          "overall_trend": "improving",
+          "emotional_intensity": 0.0,
+          "escalation_level": "baseline",
+          "primary_concern": "fusion",
+          "should_intervene": true,
+          "recommended_processes": [
+            {
+              "process": "defusion",
+              "priority": 1,
+              "rationale": "用户将画面视为需要'处理'的问题，存在控制议程。需要通过解离帮助用户看到画面只是脑子里的事件，不需要被消除或处理，从而为行动腾出空间。"
+            },
+            {
+              "process": "acceptance",
+              "priority": 2,
+              "rationale": "用户试图寻找'处理'画面的方法，需要引导其接纳画面的存在，放弃与不适感抗争的控制策略，允许其作为背景存在。"
+            },
+            {
+              "process": "committed_action",
+              "priority": 3,
+              "rationale": "用户已经表达了'改回去'的强烈意愿，此时可引导其探讨在带着这个画面的情况下，如何迈出一小步价值观一致的行动。"
+            }
+          ]
+        },
+        "skill_output": {
+          "technique": {
+            "name": "willingness_invitation",
+            "description": "温和地邀请用户注意到脑海中的画面和伴随的感受，不试图去'处理'或消除它，而是为它腾出一点空间，允许它存在。",
+            "steps": [
+              "认可用户想要改变和回到咖啡间的意愿，共情其试图'处理'画面的疲惫感。",
+              "邀请用户尝试放下'必须处理掉它'的任务，探索如果不与画面较劲，只是允许它作为背景存在，内心会有怎样的体验。"
+            ]
+          },
+          "conversation_goal": "帮助用户从'试图处理/消除画面'的控制模式，转向'允许画面存在'的接纳模式，减少在回避和控制上消耗的心理能量，为采取有价值的行动（去咖啡间）腾出空间。",
+          "adaptation": {
+            "interaction_style": "supportive",
+            "tone_adjustment": "温和、包容、不评判。避免让用户觉得他们试图控制的想法是错的，而是像探索一个新可能性一样，用'邀请'而非'要求'的语气。",
+            "pace_adjustment": "缓慢、循序渐进。考虑到用户处于犹豫（hesitant）状态，需要给予充分的时间去体会'不处理'的感觉，不急于推进。",
+            "culture_note": "尊重中文语境下的'忍文化'，避免直接使用生硬的'接纳'一词，而是转化为'给自己一点空间'、'允许它在那儿待一会儿'、'不跟它较劲'，降低用户的心理防御。"
+          },
+          "contraindications": [
+            {
+              "condition": "用户处于极度痛苦、恐慌或创伤闪回中",
+              "reason": "此时进行接纳练习可能会让用户感到被情绪淹没，需要先进行情绪调节和着陆技术（grounding）以确保安全感。"
+            }
+          ],
+          "_skill_name": "act_acceptance"
+        },
+        "products": {},
+        "continue_eval": null
+      },
+      "error": null,
+      "wall_seconds": 128.723,
+      "agent_text": "听到你说“想改回去”，我能感觉到去咖啡间和大家聊天对你来说真的很重要。为了让自己觉得安全，放弃以前喜欢的时光，真的挺让人疲惫的。\n\n你提到不知道怎么“处理”那个反复出现的画面。其实，也许我们不需要非得去“处理”掉它。那个画面带来的不安，就像是一个不请自来的客人。如果我们暂时不急着把它赶走，也不去想办法“处理”它，只是允许它在那儿待一会儿。\n\n如果让这种不安的感觉就在那儿，不去推开它，你觉得心里会是一种什么样的状态呢？"
+    }
+  ]
+}

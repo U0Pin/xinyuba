@@ -1,0 +1,1952 @@
+{
+  "seed_id": "act-acceptance-illness",
+  "target_family": "ACT",
+  "scenario_label": "接纳-亲人慢性病",
+  "scenario_description": "父亲确诊慢性病，用户无法接受，反复搜索治愈方法",
+  "user_id": "seed-act-acceptance-illness",
+  "session_id": "04c340480bca4e8f",
+  "turns_total": 8,
+  "switched_to_therapy_at_turn": 2,
+  "actual_therapy": "ACT",
+  "therapy_rounds": 7,
+  "orch_step_changes": 2,
+  "is_complete": true,
+  "final_risk_level": "SAFE",
+  "final_crisis": false,
+  "turns": [
+    {
+      "turn": 1,
+      "trace_id": "861ea5946ea44cd8",
+      "user_text": "我爸上周确诊了一种慢性病，没法治愈。",
+      "agent_text_parts": [
+        "这真的是个",
+        "太沉重的消息了",
+        "。听到“没",
+        "法治愈”这几个",
+        "字，心里一定",
+        "特别难受和害怕",
+        "吧。上周才",
+        "确诊，这太",
+        "突然了，真的",
+        "让人很难一下子接受",
+        "。你现在感觉怎么样",
+        "？"
+      ],
+      "events": [
+        {
+          "event": "token",
+          "data": "这真的是个"
+        },
+        {
+          "event": "token",
+          "data": "太沉重的消息了"
+        },
+        {
+          "event": "token",
+          "data": "。听到“没"
+        },
+        {
+          "event": "token",
+          "data": "法治愈”这几个"
+        },
+        {
+          "event": "token",
+          "data": "字，心里一定"
+        },
+        {
+          "event": "token",
+          "data": "特别难受和害怕"
+        },
+        {
+          "event": "token",
+          "data": "吧。上周才"
+        },
+        {
+          "event": "token",
+          "data": "确诊，这太"
+        },
+        {
+          "event": "token",
+          "data": "突然了，真的"
+        },
+        {
+          "event": "token",
+          "data": "让人很难一下子接受"
+        },
+        {
+          "event": "token",
+          "data": "。你现在感觉怎么样"
+        },
+        {
+          "event": "token",
+          "data": "？"
+        },
+        {
+          "event": "dialogue_done",
+          "data": {
+            "trace_id": "861ea5946ea44cd8",
+            "owner": "daily"
+          }
+        },
+        {
+          "event": "final",
+          "data": {
+            "message": "我爸上周确诊了一种慢性病，没法治愈。",
+            "risk_state": "LOW_RISK",
+            "crisis": false
+          }
+        }
+      ],
+      "final": {
+        "message": "我爸上周确诊了一种慢性病，没法治愈。",
+        "risk_state": "LOW_RISK",
+        "crisis": false
+      },
+      "state_after": {
+        "owner": "daily",
+        "crisis": false,
+        "risk_level": "LOW_RISK",
+        "therapy": null,
+        "last_therapy_check_seq": 1,
+        "pending_user_tokens": 0
+      },
+      "orchestration_after": {},
+      "error": null,
+      "wall_seconds": 48.835,
+      "agent_text": "这真的是个太沉重的消息了。听到“没法治愈”这几个字，心里一定特别难受和害怕吧。上周才确诊，这太突然了，真的让人很难一下子接受。你现在感觉怎么样？"
+    },
+    {
+      "turn": 2,
+      "trace_id": "d25c1be1737e4700",
+      "user_text": "我一直在网上搜有没有新的治疗方案、研究、偏方……",
+      "agent_text_parts": [
+        "一直不停地搜",
+        "新的治疗方案、研究",
+        "，甚至偏方……",
+        "是不是心里总想着",
+        "，万一能找到一点",
+        "希望呢？面对",
+        "“无法治愈”，",
+        "想拼命抓住哪怕",
+        "一点点可能性，这",
+        "真的太煎熬了。",
+        "这样一直盯着屏幕",
+        "查，眼睛和",
+        "身体是不是也很累了",
+        "？"
+      ],
+      "events": [
+        {
+          "event": "token",
+          "data": "一直不停地搜"
+        },
+        {
+          "event": "token",
+          "data": "新的治疗方案、研究"
+        },
+        {
+          "event": "token",
+          "data": "，甚至偏方……"
+        },
+        {
+          "event": "token",
+          "data": "是不是心里总想着"
+        },
+        {
+          "event": "token",
+          "data": "，万一能找到一点"
+        },
+        {
+          "event": "token",
+          "data": "希望呢？面对"
+        },
+        {
+          "event": "token",
+          "data": "“无法治愈”，"
+        },
+        {
+          "event": "token",
+          "data": "想拼命抓住哪怕"
+        },
+        {
+          "event": "token",
+          "data": "一点点可能性，这"
+        },
+        {
+          "event": "token",
+          "data": "真的太煎熬了。"
+        },
+        {
+          "event": "token",
+          "data": "这样一直盯着屏幕"
+        },
+        {
+          "event": "token",
+          "data": "查，眼睛和"
+        },
+        {
+          "event": "token",
+          "data": "身体是不是也很累了"
+        },
+        {
+          "event": "token",
+          "data": "？"
+        },
+        {
+          "event": "dialogue_done",
+          "data": {
+            "trace_id": "d25c1be1737e4700",
+            "owner": "daily"
+          }
+        },
+        {
+          "event": "final",
+          "data": {
+            "message": "我一直在网上搜有没有新的治疗方案、研究、偏方……",
+            "risk_state": "LOW_RISK",
+            "crisis": false
+          }
+        }
+      ],
+      "final": {
+        "message": "我一直在网上搜有没有新的治疗方案、研究、偏方……",
+        "risk_state": "LOW_RISK",
+        "crisis": false
+      },
+      "state_after": {
+        "owner": "therapy_act",
+        "crisis": false,
+        "risk_level": "LOW_RISK",
+        "therapy": {
+          "name": "ACT",
+          "start_seq": 5,
+          "rounds": 0,
+          "step_index": -1,
+          "branch": null,
+          "basic_flow_complete": false
+        },
+        "last_therapy_check_seq": 3,
+        "pending_user_tokens": 0
+      },
+      "orchestration_after": {},
+      "error": null,
+      "wall_seconds": 69.341,
+      "agent_text": "一直不停地搜新的治疗方案、研究，甚至偏方……是不是心里总想着，万一能找到一点希望呢？面对“无法治愈”，想拼命抓住哪怕一点点可能性，这真的太煎熬了。这样一直盯着屏幕查，眼睛和身体是不是也很累了？"
+    },
+    {
+      "turn": 3,
+      "trace_id": "c2ca99f9f89249a4",
+      "user_text": "我知道没用的，但我停不下来。",
+      "agent_text_parts": [
+        "听到你说“",
+        "知道没用，但",
+        "停不下来”，能",
+        "感觉到那种深深的无奈",
+        "。理智上明白",
+        "，行动上却控制",
+        "不住，这种拉扯",
+        "真的很让人疲惫。",
+        "\n\n我们聊了",
+        "有一会儿了，",
+        "现在可以稍微停下来",
+        "喘口气。带着",
+        "这份“停不下来",
+        "”的感觉，此刻",
+        "你心里的状态是怎样的",
+        "？和刚开始聊",
+        "的时候相比，有没有",
+        "什么细微的变化，",
+        "或者想跟我分享",
+        "的感受？"
+      ],
+      "events": [
+        {
+          "event": "token",
+          "data": "听到你说“"
+        },
+        {
+          "event": "token",
+          "data": "知道没用，但"
+        },
+        {
+          "event": "token",
+          "data": "停不下来”，能"
+        },
+        {
+          "event": "token",
+          "data": "感觉到那种深深的无奈"
+        },
+        {
+          "event": "token",
+          "data": "。理智上明白"
+        },
+        {
+          "event": "token",
+          "data": "，行动上却控制"
+        },
+        {
+          "event": "token",
+          "data": "不住，这种拉扯"
+        },
+        {
+          "event": "token",
+          "data": "真的很让人疲惫。"
+        },
+        {
+          "event": "token",
+          "data": "\n\n我们聊了"
+        },
+        {
+          "event": "token",
+          "data": "有一会儿了，"
+        },
+        {
+          "event": "token",
+          "data": "现在可以稍微停下来"
+        },
+        {
+          "event": "token",
+          "data": "喘口气。带着"
+        },
+        {
+          "event": "token",
+          "data": "这份“停不下来"
+        },
+        {
+          "event": "token",
+          "data": "”的感觉，此刻"
+        },
+        {
+          "event": "token",
+          "data": "你心里的状态是怎样的"
+        },
+        {
+          "event": "token",
+          "data": "？和刚开始聊"
+        },
+        {
+          "event": "token",
+          "data": "的时候相比，有没有"
+        },
+        {
+          "event": "token",
+          "data": "什么细微的变化，"
+        },
+        {
+          "event": "token",
+          "data": "或者想跟我分享"
+        },
+        {
+          "event": "token",
+          "data": "的感受？"
+        },
+        {
+          "event": "dialogue_done",
+          "data": {
+            "trace_id": "c2ca99f9f89249a4",
+            "owner": "therapy_act"
+          }
+        },
+        {
+          "event": "final",
+          "data": {
+            "message": "我知道没用的，但我停不下来。",
+            "risk_state": "MEDIUM_RISK",
+            "crisis": false
+          }
+        }
+      ],
+      "final": {
+        "message": "我知道没用的，但我停不下来。",
+        "risk_state": "MEDIUM_RISK",
+        "crisis": false
+      },
+      "state_after": {
+        "owner": "therapy_act",
+        "crisis": false,
+        "risk_level": "MEDIUM_RISK",
+        "therapy": {
+          "name": "ACT",
+          "start_seq": 5,
+          "rounds": 1,
+          "step_index": 1,
+          "branch": null,
+          "basic_flow_complete": false
+        },
+        "last_therapy_check_seq": 3,
+        "pending_user_tokens": 0
+      },
+      "orchestration_after": {
+        "updated_seq": 1,
+        "therapy": "ACT",
+        "current_step": "values",
+        "next_step": "acceptance",
+        "step_judgment": {
+          "action": "go_to",
+          "target_step": "acceptance",
+          "achieved": false,
+          "reason": "用户表现出高度的认知融合（0.6）和经验性回避（0.6），正在执行明知无用的强迫行为以回避内心不适。当前步骤为values，但用户尚未建立足够的心理灵活性来探索价值观。根据最新状态评估，acceptance是最高优先级（priority 1），需要先帮助用户接纳冲动和不适感，而非直接对抗或回避，之后才能有效进行认知解离和价值观探索。"
+        },
+        "assessment": {
+          "fusion": {
+            "index": 0.6,
+            "state": "cf_hooked",
+            "confidence": 0.75,
+            "evidence": [
+              "我知道没用的，但我停不下来 (I know it's useless, but I can't stop) - indicates being hooked by the urge or compulsion, experiencing it as an absolute command despite having some meta-awareness of its futility."
+            ]
+          },
+          "avoidance": {
+            "index": 0.6,
+            "state": "ea_avoiding",
+            "confidence": 0.65,
+            "evidence": [
+              "The inability to stop a behavior explicitly described as 'useless' strongly suggests the behavior is serving an experiential avoidance function to manage underlying psychological discomfort."
+            ]
+          },
+          "openness": {
+            "index": 0.5,
+            "state": "eo_receptive",
+            "confidence": 0.7,
+            "evidence": [
+              "User is openly sharing their internal struggle, distress, and lack of control without shutting down or deflecting the conversation."
+            ]
+          },
+          "alignment": {
+            "index": 0.15,
+            "state": "low",
+            "confidence": 0.8,
+            "values_mentioned": []
+          },
+          "activation": {
+            "index": 0.15,
+            "state": "low",
+            "confidence": 0.8
+          },
+          "psychological_flexibility": 0.37,
+          "flexibility_level": "pf_rigid",
+          "overall_trend": "stable",
+          "emotional_intensity": 0.0,
+          "escalation_level": "baseline",
+          "primary_concern": "cognitive_fusion",
+          "should_intervene": true,
+          "recommended_processes": [
+            {
+              "process": "acceptance",
+              "priority": 1,
+              "rationale": "User exhibits both high fusion and avoidance (compulsive behavior to avoid discomfort). Acceptance of the urge and underlying feelings without fighting them is required before any cognitive work can be effective."
+            },
+            {
+              "process": "defusion",
+              "priority": 2,
+              "rationale": "User is currently hooked by the internal command to 'not stop'. Defusion techniques will help create distance and view the urge as a passing mental event rather than an absolute directive."
+            },
+            {
+              "process": "values",
+              "priority": 3,
+              "rationale": "User already recognizes the current behavior is 'useless'. Values work can help clarify what actually matters to them, providing a meaningful alternative direction for their energy."
+            }
+          ]
+        },
+        "skill_output": {
+          "technique": {
+            "name": "values_exploration",
+            "description": "从用户当前的极度无力感和失控感（'停不下来'）入手，温和地探索这种强迫性行为或思绪背后试图保护的深层需求。基于'痛苦指向价值观'的原则，将当前的痛苦与用户真正在乎的事物建立初步连接。",
+            "steps": [
+              "深度共情并接纳用户的'停不下来'和'没用'的无力感，不急于让他们改变或停下来，而是陪伴和确认这种痛苦。",
+              "温和地引导探索：这种让你痛苦却'停不下来'的状态背后，是不是因为你在拼命保护某种对你极其重要的东西（比如安全感、责任、或是想避免某种伤害）？"
+            ]
+          },
+          "conversation_goal": "在用户极度无力时提供深度的接纳与理解，并初步建立'失控的痛苦'与'深层在乎（价值观）'之间的连接，帮助用户看到痛苦背后的意义。",
+          "adaptation": {
+            "interaction_style": "exploratory",
+            "tone_adjustment": "极其温和、包容、不评判。完全接纳用户的'停不下来'，不施加任何要求改变的压力，传递'即使停不下来，你也是被理解的'。",
+            "pace_adjustment": "非常缓慢。用户处于失控和疲惫中，认知带宽低，需允许停留在当下的痛苦中，不急于推进到具体的行动计划。",
+            "culture_note": "避免使用'价值观'等抽象词汇。使用'什么对你这么重要'、'你在拼命保护什么'、'是不是因为某种责任或安全感让你不敢停下'等更贴近中文情感表达的切入点。"
+          },
+          "contraindications": [
+            {
+              "condition": "用户处于急性心理危机、严重的成瘾发作或强烈的自毁冲动中。",
+              "reason": "此时用户的认知带宽极低，情绪处于淹没状态，直接探索价值观可能无效甚至增加挫败感，应优先进行情绪着陆（grounding）和危机干预。"
+            }
+          ],
+          "_skill_name": "act_values"
+        },
+        "products": {},
+        "continue_eval": null
+      },
+      "error": null,
+      "wall_seconds": 140.673,
+      "agent_text": "听到你说“知道没用，但停不下来”，能感觉到那种深深的无奈。理智上明白，行动上却控制不住，这种拉扯真的很让人疲惫。\n\n我们聊了有一会儿了，现在可以稍微停下来喘口气。带着这份“停不下来”的感觉，此刻你心里的状态是怎样的？和刚开始聊的时候相比，有没有什么细微的变化，或者想跟我分享的感受？"
+    },
+    {
+      "turn": 4,
+      "trace_id": "f1fd4c44604249bc",
+      "user_text": "我不是不能接受，是不想接受。",
+      "agent_text_parts": [
+        "“",
+        "不是不能，而",
+        "是不想”……",
+        "这句话听起来真的好让人",
+        "心疼。不想接受",
+        "，是因为接受就意味着",
+        "要面对那个最",
+        "让你害怕的结果，",
+        "那真的太痛了",
+        "。\n\n你心里",
+        "这份巨大的“不想",
+        "”，其实是因为爸爸",
+        "对你来说太重要了",
+        "，对吗？",
+        "因为太爱他",
+        "，太害怕失去",
+        "他，所以你的心",
+        "在拼命地抗拒",
+        "，不愿意向现实",
+        "低头。这份“",
+        "不想接受”里",
+        "，藏着你对他",
+        "多深的在乎和",
+        "不舍啊。"
+      ],
+      "events": [
+        {
+          "event": "token",
+          "data": "“"
+        },
+        {
+          "event": "token",
+          "data": "不是不能，而"
+        },
+        {
+          "event": "token",
+          "data": "是不想”……"
+        },
+        {
+          "event": "token",
+          "data": "这句话听起来真的好让人"
+        },
+        {
+          "event": "token",
+          "data": "心疼。不想接受"
+        },
+        {
+          "event": "token",
+          "data": "，是因为接受就意味着"
+        },
+        {
+          "event": "token",
+          "data": "要面对那个最"
+        },
+        {
+          "event": "token",
+          "data": "让你害怕的结果，"
+        },
+        {
+          "event": "token",
+          "data": "那真的太痛了"
+        },
+        {
+          "event": "token",
+          "data": "。\n\n你心里"
+        },
+        {
+          "event": "token",
+          "data": "这份巨大的“不想"
+        },
+        {
+          "event": "token",
+          "data": "”，其实是因为爸爸"
+        },
+        {
+          "event": "token",
+          "data": "对你来说太重要了"
+        },
+        {
+          "event": "token",
+          "data": "，对吗？"
+        },
+        {
+          "event": "token",
+          "data": "因为太爱他"
+        },
+        {
+          "event": "token",
+          "data": "，太害怕失去"
+        },
+        {
+          "event": "token",
+          "data": "他，所以你的心"
+        },
+        {
+          "event": "token",
+          "data": "在拼命地抗拒"
+        },
+        {
+          "event": "token",
+          "data": "，不愿意向现实"
+        },
+        {
+          "event": "token",
+          "data": "低头。这份“"
+        },
+        {
+          "event": "token",
+          "data": "不想接受”里"
+        },
+        {
+          "event": "token",
+          "data": "，藏着你对他"
+        },
+        {
+          "event": "token",
+          "data": "多深的在乎和"
+        },
+        {
+          "event": "token",
+          "data": "不舍啊。"
+        },
+        {
+          "event": "dialogue_done",
+          "data": {
+            "trace_id": "f1fd4c44604249bc",
+            "owner": "therapy_act"
+          }
+        },
+        {
+          "event": "final",
+          "data": {
+            "message": "我不是不能接受，是不想接受。",
+            "risk_state": "MEDIUM_RISK",
+            "crisis": false
+          }
+        }
+      ],
+      "final": {
+        "message": "我不是不能接受，是不想接受。",
+        "risk_state": "MEDIUM_RISK",
+        "crisis": false
+      },
+      "state_after": {
+        "owner": "therapy_act",
+        "crisis": false,
+        "risk_level": "MEDIUM_RISK",
+        "therapy": {
+          "name": "ACT",
+          "start_seq": 5,
+          "rounds": 2,
+          "step_index": 1,
+          "branch": null,
+          "basic_flow_complete": false
+        },
+        "last_therapy_check_seq": 3,
+        "pending_user_tokens": 0
+      },
+      "orchestration_after": {
+        "updated_seq": 2,
+        "therapy": "ACT",
+        "current_step": "acceptance",
+        "next_step": "acceptance",
+        "step_judgment": {
+          "action": "stay",
+          "target_step": null,
+          "achieved": false,
+          "reason": "The user explicitly states 'I don't want to accept it,' indicating rigid experiential avoidance (ea_rigid_control, index 0.7). The primary concern remains experiential avoidance, and the system recommends continuing acceptance work. The AI has just empathized with the user's resistance and connected it to their love for their father, but the user has not yet shown willingness to make room for the pain. Acceptance work is still in early stages and needs further exploration before advancing."
+        },
+        "assessment": {
+          "fusion": {
+            "index": 0.35,
+            "state": "cf_hookable",
+            "confidence": 0.85,
+            "evidence": [
+              "Shift from 'I can't stop' (previous turn) to 'I don't want to accept it' shows meta-awareness and distance from the compulsion, recognizing the behavior as a choice rather than an absolute inability."
+            ]
+          },
+          "avoidance": {
+            "index": 0.7,
+            "state": "ea_rigid_control",
+            "confidence": 0.9,
+            "evidence": [
+              "Explicitly states 'I don't want to accept it', indicating a conscious, active refusal and rigid control to avoid experiencing the painful reality of the situation."
+            ]
+          },
+          "openness": {
+            "index": 0.75,
+            "state": "eo_open",
+            "confidence": 0.85,
+            "evidence": [
+              "Vulnerably and directly shares their internal resistance and emotional truth without deflecting or shutting down, showing high willingness to express their current internal state."
+            ]
+          },
+          "alignment": {
+            "index": 0.35,
+            "state": "medium",
+            "confidence": 0.6,
+            "values_mentioned": []
+          },
+          "activation": {
+            "index": 0.2,
+            "state": "low",
+            "confidence": 0.8
+          },
+          "psychological_flexibility": 0.507,
+          "flexibility_level": "pf_adaptive",
+          "overall_trend": "improving",
+          "emotional_intensity": 0.0,
+          "escalation_level": "baseline",
+          "primary_concern": "experiential_avoidance",
+          "should_intervene": true,
+          "recommended_processes": [
+            {
+              "process": "acceptance",
+              "priority": 1,
+              "rationale": "User explicitly states they 'don't want to accept' the painful reality. Acceptance work is needed to help them find the willingness to make room for the pain of loss, rather than actively avoiding it."
+            },
+            {
+              "process": "values",
+              "priority": 2,
+              "rationale": "The deep reluctance to accept implies a highly valued relationship (love for their father). Connecting to this underlying value of love and connection can provide the meaning and motivation needed to face the pain."
+            },
+            {
+              "process": "self_as_context",
+              "priority": 3,
+              "rationale": "Help the user observe the 'part of me that doesn't want to accept' from a safe, observing perspective, creating space between their core sense of self and their avoidance strategies."
+            }
+          ]
+        },
+        "skill_output": {
+          "technique": {
+            "name": "tug_of_war_metaphor",
+            "description": "Use the tug-of-war metaphor to illustrate the exhaustion of actively fighting the feeling of 'not wanting to accept', and gently invite the user to consider dropping the rope to end the internal struggle.",
+            "steps": [
+              "Validate the sheer effort and exhaustion of pulling so hard against the reality, acknowledging that 'not wanting to' is a massive, active struggle that takes a toll.",
+              "Introduce the tug-of-war metaphor: Imagine you are in a fierce tug-of-war with a monster over a deep pit, pulling with all your might, yelling 'I don't want to accept this!'.",
+              "Pose the gentle invitation: 'What if, just for a moment, you didn't try to win, but instead just... let go of the rope? What would happen to the struggle?'"
+            ]
+          },
+          "conversation_goal": "Shift the user's perspective from fighting the 'unacceptable' reality to noticing the exhaustion of the fight itself, offering 'dropping the rope' as a way to reclaim energy rather than a demand to 'accept' the pain.",
+          "adaptation": {
+            "interaction_style": "supportive",
+            "tone_adjustment": "Deeply compassionate, gentle, and curious. Ensure the invitation feels like a safe experiment rather than a demand to surrender their love or hope.",
+            "pace_adjustment": "Very slow and unhurried. Give the user time to sit with the imagery of the tug-of-war and the concept of dropping the rope without feeling rushed to actually do it.",
+            "culture_note": "Carefully distinguish between 'letting go of the rope' (stopping the internal war with the emotion) and 'giving up' (resignation). Frame it as '给自己一点空间' (giving yourself some space) from the exhausting fight, honoring that their refusal comes from deep love and 忍文化 (endurance), but they don't have to fight themselves to endure."
+          },
+          "contraindications": [
+            {
+              "condition": "If the user equates 'letting go of the rope' with giving up on their father or betraying their love for him.",
+              "reason": "Due to cultural values of filial piety and 忍文化 (endurance), the user may view acceptance as a moral failure. The metaphor must strictly apply to the internal emotional struggle, not the external situation or their devotion."
+            }
+          ],
+          "_skill_name": "act_acceptance"
+        },
+        "products": {},
+        "continue_eval": null
+      },
+      "error": null,
+      "wall_seconds": 209.877,
+      "agent_text": "“不是不能，而是不想”……这句话听起来真的好让人心疼。不想接受，是因为接受就意味着要面对那个最让你害怕的结果，那真的太痛了。\n\n你心里这份巨大的“不想”，其实是因为爸爸对你来说太重要了，对吗？因为太爱他，太害怕失去他，所以你的心在拼命地抗拒，不愿意向现实低头。这份“不想接受”里，藏着你对他多深的在乎和不舍啊。"
+    },
+    {
+      "turn": 5,
+      "trace_id": "00cd2eb1fa534dcb",
+      "user_text": "「不想接受」和「不接受」有什么区别吗？",
+      "agent_text_parts": [
+        "你问",
+        "的这个问题很",
+        "细腻。“不想接受",
+        "”是你",
+        "心里还在拼命用力",
+        "、在拉扯；",
+        "而“不接受”",
+        "可能像是一个已经",
+        "定格的拒绝。",
+        "\n\n你现在的“",
+        "不想”，其实让你",
+        "每天都在心里和那个",
+        "残酷的现实拔河。",
+        "想象一下，你",
+        "站在深渊边，",
+        "和对面一个巨大的",
+        "怪物死死拽着",
+        "同一根绳子。",
+        "你拼尽全力往后",
+        "拉，心里喊着",
+        "“我不想接受！”",
+        "你拉得好累",
+        "好累，手",
+        "都磨破了。",
+        "\n\n如果，仅仅是",
+        "如果，这一刻你",
+        "不去想怎么赢",
+        "，而是试着……",
+        "松开手，放下",
+        "那根绳子呢",
+        "？\n\n我想让你",
+        "知道，放下绳子",
+        "，绝不是放弃爸爸",
+        "，也不是背叛你对",
+        "他的爱。它",
+        "只是停止这场让你",
+        "筋疲力尽的",
+        "内心厮杀，把",
+        "原本用来对抗的",
+        "力气，收回来",
+        "抱抱你自己。"
+      ],
+      "events": [
+        {
+          "event": "token",
+          "data": "你问"
+        },
+        {
+          "event": "token",
+          "data": "的这个问题很"
+        },
+        {
+          "event": "token",
+          "data": "细腻。“不想接受"
+        },
+        {
+          "event": "token",
+          "data": "”是你"
+        },
+        {
+          "event": "token",
+          "data": "心里还在拼命用力"
+        },
+        {
+          "event": "token",
+          "data": "、在拉扯；"
+        },
+        {
+          "event": "token",
+          "data": "而“不接受”"
+        },
+        {
+          "event": "token",
+          "data": "可能像是一个已经"
+        },
+        {
+          "event": "token",
+          "data": "定格的拒绝。"
+        },
+        {
+          "event": "token",
+          "data": "\n\n你现在的“"
+        },
+        {
+          "event": "token",
+          "data": "不想”，其实让你"
+        },
+        {
+          "event": "token",
+          "data": "每天都在心里和那个"
+        },
+        {
+          "event": "token",
+          "data": "残酷的现实拔河。"
+        },
+        {
+          "event": "token",
+          "data": "想象一下，你"
+        },
+        {
+          "event": "token",
+          "data": "站在深渊边，"
+        },
+        {
+          "event": "token",
+          "data": "和对面一个巨大的"
+        },
+        {
+          "event": "token",
+          "data": "怪物死死拽着"
+        },
+        {
+          "event": "token",
+          "data": "同一根绳子。"
+        },
+        {
+          "event": "token",
+          "data": "你拼尽全力往后"
+        },
+        {
+          "event": "token",
+          "data": "拉，心里喊着"
+        },
+        {
+          "event": "token",
+          "data": "“我不想接受！”"
+        },
+        {
+          "event": "token",
+          "data": "你拉得好累"
+        },
+        {
+          "event": "token",
+          "data": "好累，手"
+        },
+        {
+          "event": "token",
+          "data": "都磨破了。"
+        },
+        {
+          "event": "token",
+          "data": "\n\n如果，仅仅是"
+        },
+        {
+          "event": "token",
+          "data": "如果，这一刻你"
+        },
+        {
+          "event": "token",
+          "data": "不去想怎么赢"
+        },
+        {
+          "event": "token",
+          "data": "，而是试着……"
+        },
+        {
+          "event": "token",
+          "data": "松开手，放下"
+        },
+        {
+          "event": "token",
+          "data": "那根绳子呢"
+        },
+        {
+          "event": "token",
+          "data": "？\n\n我想让你"
+        },
+        {
+          "event": "token",
+          "data": "知道，放下绳子"
+        },
+        {
+          "event": "token",
+          "data": "，绝不是放弃爸爸"
+        },
+        {
+          "event": "token",
+          "data": "，也不是背叛你对"
+        },
+        {
+          "event": "token",
+          "data": "他的爱。它"
+        },
+        {
+          "event": "token",
+          "data": "只是停止这场让你"
+        },
+        {
+          "event": "token",
+          "data": "筋疲力尽的"
+        },
+        {
+          "event": "token",
+          "data": "内心厮杀，把"
+        },
+        {
+          "event": "token",
+          "data": "原本用来对抗的"
+        },
+        {
+          "event": "token",
+          "data": "力气，收回来"
+        },
+        {
+          "event": "token",
+          "data": "抱抱你自己。"
+        },
+        {
+          "event": "dialogue_done",
+          "data": {
+            "trace_id": "00cd2eb1fa534dcb",
+            "owner": "therapy_act"
+          }
+        },
+        {
+          "event": "final",
+          "data": {
+            "message": "「不想接受」和「不接受」有什么区别吗？",
+            "risk_state": "LOW_RISK",
+            "crisis": false
+          }
+        }
+      ],
+      "final": {
+        "message": "「不想接受」和「不接受」有什么区别吗？",
+        "risk_state": "LOW_RISK",
+        "crisis": false
+      },
+      "state_after": {
+        "owner": "therapy_act",
+        "crisis": false,
+        "risk_level": "LOW_RISK",
+        "therapy": {
+          "name": "ACT",
+          "start_seq": 5,
+          "rounds": 3,
+          "step_index": 1,
+          "branch": null,
+          "basic_flow_complete": false
+        },
+        "last_therapy_check_seq": 3,
+        "pending_user_tokens": 0
+      },
+      "orchestration_after": {
+        "updated_seq": 3,
+        "therapy": "ACT",
+        "current_step": "acceptance",
+        "next_step": "acceptance",
+        "step_judgment": {
+          "action": "stay",
+          "target_step": null,
+          "achieved": false,
+          "reason": "用户仍处于experiential avoidance状态（index 0.55），虽在认知层面开始区分'不想接受'与'不接受'，展现出meta-awareness，但尚未真正体验到情感层面的willingness。AI刚提出'放下绳子'的隐喻，用户尚未回应，需继续在当前步骤探索其对'不想接受'的情感体验，帮助其从理智理解过渡到情感层面的接纳意愿。"
+        },
+        "assessment": {
+          "fusion": {
+            "index": 0.15,
+            "state": "cf_observing",
+            "confidence": 0.85,
+            "evidence": [
+              "User is asking a conceptual question distinguishing between 'not wanting to accept' and 'not accepting', demonstrating meta-awareness and cognitive distance from their initial fused state."
+            ]
+          },
+          "avoidance": {
+            "index": 0.55,
+            "state": "ea_avoiding",
+            "confidence": 0.8,
+            "evidence": [
+              "User is still exploring their resistance ('not wanting to accept'), indicating the underlying avoidance mechanism is present, but they are now intellectually examining it rather than just rigidly enforcing it."
+            ]
+          },
+          "openness": {
+            "index": 0.75,
+            "state": "eo_open",
+            "confidence": 0.85,
+            "evidence": [
+              "User is vulnerably engaging with their internal conflict and asking clarifying questions about their emotional stance, showing a strong willingness to explore and articulate their feelings."
+            ]
+          },
+          "alignment": {
+            "index": 0.4,
+            "state": "medium",
+            "confidence": 0.7,
+            "values_mentioned": [
+              "love",
+              "care for father"
+            ]
+          },
+          "activation": {
+            "index": 0.25,
+            "state": "low",
+            "confidence": 0.8
+          },
+          "psychological_flexibility": 0.625,
+          "flexibility_level": "pf_adaptive",
+          "overall_trend": "improving",
+          "emotional_intensity": 0.0,
+          "escalation_level": "baseline",
+          "primary_concern": "experiential_avoidance",
+          "should_intervene": true,
+          "recommended_processes": [
+            {
+              "process": "defusion",
+              "priority": 1,
+              "rationale": "User is actively distinguishing between concepts, providing an excellent opportunity to defuse from the 'urge to avoid' and observe the 'not wanting' as a mental event rather than an absolute command."
+            },
+            {
+              "process": "acceptance",
+              "priority": 2,
+              "rationale": "To help the user explore the difference between behavioral acceptance and emotional willingness, gently building room for the pain of loss without forcing premature resolution."
+            },
+            {
+              "process": "values",
+              "priority": 3,
+              "rationale": "Connecting the reluctance to accept back to the underlying love for their father, framing the process of acceptance in the context of what matters most to them."
+            }
+          ]
+        },
+        "skill_output": {
+          "technique": {
+            "name": "willingness_invitation",
+            "description": "Invite user to notice and allow the present emotion",
+            "steps": [
+              "Notice what you're feeling right now",
+              "See if you can allow it to be there, just for a moment"
+            ]
+          },
+          "conversation_goal": "帮助用户允许当下的情绪存在，不需要推开它",
+          "adaptation": {
+            "interaction_style": "supportive",
+            "tone_adjustment": "温暖且坚定",
+            "pace_adjustment": "slow",
+            "culture_note": "尊重用户原有的应对方式，温和邀请停留片刻"
+          },
+          "contraindications": [
+            {
+              "condition": "high_escalation",
+              "reason": "情绪强度过高时接纳可能导致淹没感"
+            }
+          ],
+          "_skill_name": "act_acceptance"
+        },
+        "products": {},
+        "continue_eval": null
+      },
+      "error": null,
+      "wall_seconds": 143.569,
+      "agent_text": "你问的这个问题很细腻。“不想接受”是你心里还在拼命用力、在拉扯；而“不接受”可能像是一个已经定格的拒绝。\n\n你现在的“不想”，其实让你每天都在心里和那个残酷的现实拔河。想象一下，你站在深渊边，和对面一个巨大的怪物死死拽着同一根绳子。你拼尽全力往后拉，心里喊着“我不想接受！”你拉得好累好累，手都磨破了。\n\n如果，仅仅是如果，这一刻你不去想怎么赢，而是试着……松开手，放下那根绳子呢？\n\n我想让你知道，放下绳子，绝不是放弃爸爸，也不是背叛你对他的爱。它只是停止这场让你筋疲力尽的内心厮杀，把原本用来对抗的力气，收回来抱抱你自己。"
+    },
+    {
+      "turn": 6,
+      "trace_id": "197f9ad447404755",
+      "user_text": "你说的「痛苦是自然的，但我可以不被它推着走」——我有点感觉。",
+      "agent_text_parts": [
+        "听到你说",
+        "“有点感觉”，",
+        "就像是你在紧紧",
+        "攥着绳子的手",
+        "里，稍微松开",
+        "了一点点缝隙。",
+        "能捕捉到这种",
+        "微妙的松动，",
+        "真的很不容易。\n\n",
+        "既然有了这“",
+        "一点感觉”，我们要",
+        "不要试着在这个感觉",
+        "里稍微停留一下",
+        "？不去想接下来",
+        "该怎么做，只是",
+        "静静地体会一下此刻",
+        "心里的滋味。看看",
+        "能不能让这种感觉，",
+        "还有伴随它的哪怕",
+        "一丝丝的沉重，",
+        "就这样安全地待",
+        "上一小会儿？",
+        "不用急着推开它",
+        "，就让它在那里",
+        "，我们陪它",
+        "待一会儿。"
+      ],
+      "events": [
+        {
+          "event": "token",
+          "data": "听到你说"
+        },
+        {
+          "event": "token",
+          "data": "“有点感觉”，"
+        },
+        {
+          "event": "token",
+          "data": "就像是你在紧紧"
+        },
+        {
+          "event": "token",
+          "data": "攥着绳子的手"
+        },
+        {
+          "event": "token",
+          "data": "里，稍微松开"
+        },
+        {
+          "event": "token",
+          "data": "了一点点缝隙。"
+        },
+        {
+          "event": "token",
+          "data": "能捕捉到这种"
+        },
+        {
+          "event": "token",
+          "data": "微妙的松动，"
+        },
+        {
+          "event": "token",
+          "data": "真的很不容易。\n\n"
+        },
+        {
+          "event": "token",
+          "data": "既然有了这“"
+        },
+        {
+          "event": "token",
+          "data": "一点感觉”，我们要"
+        },
+        {
+          "event": "token",
+          "data": "不要试着在这个感觉"
+        },
+        {
+          "event": "token",
+          "data": "里稍微停留一下"
+        },
+        {
+          "event": "token",
+          "data": "？不去想接下来"
+        },
+        {
+          "event": "token",
+          "data": "该怎么做，只是"
+        },
+        {
+          "event": "token",
+          "data": "静静地体会一下此刻"
+        },
+        {
+          "event": "token",
+          "data": "心里的滋味。看看"
+        },
+        {
+          "event": "token",
+          "data": "能不能让这种感觉，"
+        },
+        {
+          "event": "token",
+          "data": "还有伴随它的哪怕"
+        },
+        {
+          "event": "token",
+          "data": "一丝丝的沉重，"
+        },
+        {
+          "event": "token",
+          "data": "就这样安全地待"
+        },
+        {
+          "event": "token",
+          "data": "上一小会儿？"
+        },
+        {
+          "event": "token",
+          "data": "不用急着推开它"
+        },
+        {
+          "event": "token",
+          "data": "，就让它在那里"
+        },
+        {
+          "event": "token",
+          "data": "，我们陪它"
+        },
+        {
+          "event": "token",
+          "data": "待一会儿。"
+        },
+        {
+          "event": "dialogue_done",
+          "data": {
+            "trace_id": "197f9ad447404755",
+            "owner": "therapy_act"
+          }
+        },
+        {
+          "event": "final",
+          "data": {
+            "message": "你说的「痛苦是自然的，但我可以不被它推着走」——我有点感觉。",
+            "risk_state": "LOW_RISK",
+            "crisis": false
+          }
+        }
+      ],
+      "final": {
+        "message": "你说的「痛苦是自然的，但我可以不被它推着走」——我有点感觉。",
+        "risk_state": "LOW_RISK",
+        "crisis": false
+      },
+      "state_after": {
+        "owner": "therapy_act",
+        "crisis": false,
+        "risk_level": "LOW_RISK",
+        "therapy": {
+          "name": "ACT",
+          "start_seq": 5,
+          "rounds": 4,
+          "step_index": 1,
+          "branch": null,
+          "basic_flow_complete": false
+        },
+        "last_therapy_check_seq": 3,
+        "pending_user_tokens": 0
+      },
+      "orchestration_after": {
+        "updated_seq": 4,
+        "therapy": "ACT",
+        "current_step": "acceptance",
+        "next_step": "acceptance",
+        "step_judgment": {
+          "action": "stay",
+          "target_step": null,
+          "achieved": false,
+          "reason": "用户表示对'痛苦是自然的，但我可以不被它推着走'有点感觉，但只是初步松动，尚未真正体验到接纳。当前步骤正在引导用户在感觉中停留、与情绪共处，需要继续深化这一体验，巩固接纳的萌芽，再判断是否可以推进。"
+        },
+        "assessment": null,
+        "skill_output": {
+          "technique": {
+            "name": "willingness_invitation",
+            "description": "温和地邀请用户去注意并允许那种‘有点感觉’的状态存在，不评判，不推开，仅仅是带着好奇心去陪伴这份感受，体验‘允许’带来的微小自由。",
+            "steps": [
+              "肯定并接住用户‘有点感觉’的珍贵瞬间，将其视为内心松动的美好开始，不施加任何必须立刻完全接纳的压力。",
+              "温和地邀请用户将注意力轻轻放在这个‘感觉’上，不试图改变或分析它，只是问问自己：如果给这个感觉一点点空间，让它安全地待在这里，此刻的身体和心里会有什么变化？"
+            ]
+          },
+          "conversation_goal": "帮助用户从‘对抗痛苦’的拔河中稍微退后一步，通过温和的意愿邀请，让他们体验到‘允许情绪存在’并不会带来失控，从而为焦虑型依恋的用户建立内在的安全感与心理弹性。",
+          "adaptation": {
+            "interaction_style": "supportive",
+            "tone_adjustment": "极其温柔、包容、不具压迫感。像是一个安全的容器，稳稳地接住用户脆弱的试探，避免任何说教、指导或强迫的意味。",
+            "pace_adjustment": "非常缓慢且留白。给用户留出足够的时间去体会，不催促他们立刻达到‘完全接纳’的状态，允许他们在探索的过程中随时停下来或退后。",
+            "culture_note": "尊重‘忍文化’背景，不强调‘你必须彻底接纳’或‘放下’，而是用‘给自己一点点空间’、‘允许它暂时待在这里’来降低心理防御。对于焦虑型依恋，强调‘陪伴’和‘安全’，让他们明白‘允许它存在’不等于‘向现实妥协’，而是为了保存力气去爱。"
+          },
+          "contraindications": [
+            {
+              "condition": "用户表现出强烈的解离、情感麻木或极度恐慌",
+              "reason": "在情绪超载或解离状态下，邀请感受可能会加重失控感，此时应优先进行接地（grounding）练习以恢复安全感，而非直接面对情绪。"
+            },
+            {
+              "condition": "用户将‘允许’误解为‘妥协’、‘认输’或‘对父亲的背叛’",
+              "reason": "如果用户陷入这种认知，意愿邀请会加剧他们的丧失焦虑和道德负罪感，需要先进行认知解离，澄清‘允许情绪存在’与‘认同痛苦/放弃所爱’的区别。"
+            }
+          ],
+          "_skill_name": "act_acceptance"
+        },
+        "products": {},
+        "continue_eval": null
+      },
+      "error": null,
+      "wall_seconds": 142.06,
+      "agent_text": "听到你说“有点感觉”，就像是你在紧紧攥着绳子的手里，稍微松开了一点点缝隙。能捕捉到这种微妙的松动，真的很不容易。\n\n既然有了这“一点感觉”，我们要不要试着在这个感觉里稍微停留一下？不去想接下来该怎么做，只是静静地体会一下此刻心里的滋味。看看能不能让这种感觉，还有伴随它的哪怕一丝丝的沉重，就这样安全地待上一小会儿？不用急着推开它，就让它在那里，我们陪它待一会儿。"
+    },
+    {
+      "turn": 7,
+      "trace_id": "5889a50796d9493c",
+      "user_text": "那我应该先放下那些搜索？",
+      "agent_text_parts": [
+        "听到你问",
+        "“是不是应该先",
+        "放下搜索”，我能",
+        "感觉到你想要试着松开",
+        "那根绳子的心",
+        "意。不过，",
+        "我留意到你用了",
+        "“应该”这个词",
+        "。\n\n其实，",
+        "接纳并不是给自己增加",
+        "一个新的“应该”",
+        "去完成的指标，",
+        "也不是逼着自己立刻",
+        "停止搜索。它",
+        "不是要你马上在",
+        "行为上做出什么",
+        "改变。\n\n如果我们",
+        "先不急着决定",
+        "“要不要放下搜索",
+        "”，只是把注意力",
+        "轻轻收回来，",
+        "看看当脑子里出现",
+        "“我应该放下搜索",
+        "”这个念头时",
+        "，你的身体或者",
+        "心里，此刻是一种",
+        "什么样的感觉呢？",
+        "是觉得稍微松了一口气",
+        "，还是反而觉得",
+        "有些慌张和空",
+        "落落的？\n\n",
+        "不用急着做决定",
+        "，也不用逼自己",
+        "，只是带着一点点",
+        "好奇，体会一下",
+        "这个感觉。看看",
+        "如果给这个感觉",
+        "一点点",
+        "空间，让它安全",
+        "地待在这里",
+        "，此刻的你会有什么",
+        "变化，好吗？"
+      ],
+      "events": [
+        {
+          "event": "token",
+          "data": "听到你问"
+        },
+        {
+          "event": "token",
+          "data": "“是不是应该先"
+        },
+        {
+          "event": "token",
+          "data": "放下搜索”，我能"
+        },
+        {
+          "event": "token",
+          "data": "感觉到你想要试着松开"
+        },
+        {
+          "event": "token",
+          "data": "那根绳子的心"
+        },
+        {
+          "event": "token",
+          "data": "意。不过，"
+        },
+        {
+          "event": "token",
+          "data": "我留意到你用了"
+        },
+        {
+          "event": "token",
+          "data": "“应该”这个词"
+        },
+        {
+          "event": "token",
+          "data": "。\n\n其实，"
+        },
+        {
+          "event": "token",
+          "data": "接纳并不是给自己增加"
+        },
+        {
+          "event": "token",
+          "data": "一个新的“应该”"
+        },
+        {
+          "event": "token",
+          "data": "去完成的指标，"
+        },
+        {
+          "event": "token",
+          "data": "也不是逼着自己立刻"
+        },
+        {
+          "event": "token",
+          "data": "停止搜索。它"
+        },
+        {
+          "event": "token",
+          "data": "不是要你马上在"
+        },
+        {
+          "event": "token",
+          "data": "行为上做出什么"
+        },
+        {
+          "event": "token",
+          "data": "改变。\n\n如果我们"
+        },
+        {
+          "event": "token",
+          "data": "先不急着决定"
+        },
+        {
+          "event": "token",
+          "data": "“要不要放下搜索"
+        },
+        {
+          "event": "token",
+          "data": "”，只是把注意力"
+        },
+        {
+          "event": "token",
+          "data": "轻轻收回来，"
+        },
+        {
+          "event": "token",
+          "data": "看看当脑子里出现"
+        },
+        {
+          "event": "token",
+          "data": "“我应该放下搜索"
+        },
+        {
+          "event": "token",
+          "data": "”这个念头时"
+        },
+        {
+          "event": "token",
+          "data": "，你的身体或者"
+        },
+        {
+          "event": "token",
+          "data": "心里，此刻是一种"
+        },
+        {
+          "event": "token",
+          "data": "什么样的感觉呢？"
+        },
+        {
+          "event": "token",
+          "data": "是觉得稍微松了一口气"
+        },
+        {
+          "event": "token",
+          "data": "，还是反而觉得"
+        },
+        {
+          "event": "token",
+          "data": "有些慌张和空"
+        },
+        {
+          "event": "token",
+          "data": "落落的？\n\n"
+        },
+        {
+          "event": "token",
+          "data": "不用急着做决定"
+        },
+        {
+          "event": "token",
+          "data": "，也不用逼自己"
+        },
+        {
+          "event": "token",
+          "data": "，只是带着一点点"
+        },
+        {
+          "event": "token",
+          "data": "好奇，体会一下"
+        },
+        {
+          "event": "token",
+          "data": "这个感觉。看看"
+        },
+        {
+          "event": "token",
+          "data": "如果给这个感觉"
+        },
+        {
+          "event": "token",
+          "data": "一点点"
+        },
+        {
+          "event": "token",
+          "data": "空间，让它安全"
+        },
+        {
+          "event": "token",
+          "data": "地待在这里"
+        },
+        {
+          "event": "token",
+          "data": "，此刻的你会有什么"
+        },
+        {
+          "event": "token",
+          "data": "变化，好吗？"
+        },
+        {
+          "event": "dialogue_done",
+          "data": {
+            "trace_id": "5889a50796d9493c",
+            "owner": "therapy_act"
+          }
+        },
+        {
+          "event": "final",
+          "data": {
+            "message": "那我应该先放下那些搜索？",
+            "risk_state": "SAFE",
+            "crisis": false
+          }
+        }
+      ],
+      "final": {
+        "message": "那我应该先放下那些搜索？",
+        "risk_state": "SAFE",
+        "crisis": false
+      },
+      "state_after": {
+        "owner": "therapy_act",
+        "crisis": false,
+        "risk_level": "SAFE",
+        "therapy": {
+          "name": "ACT",
+          "start_seq": 5,
+          "rounds": 5,
+          "step_index": 1,
+          "branch": null,
+          "basic_flow_complete": false
+        },
+        "last_therapy_check_seq": 3,
+        "pending_user_tokens": 0
+      },
+      "orchestration_after": {
+        "updated_seq": 5,
+        "therapy": "ACT",
+        "current_step": "acceptance",
+        "next_step": "acceptance",
+        "step_judgment": {
+          "action": "stay",
+          "target_step": null,
+          "achieved": false,
+          "reason": "用户已对接纳产生初步感受（'有点感觉'），并主动询问是否应放下搜索行为，显示出松动迹象。但AI正在引导用户回到当下体验，探索身体和情绪感受，尚未完成接纳步骤的核心目标——让用户真正体验到'为痛苦腾出空间、不再对抗'的状态。当前仍处于接纳步骤的深化探索阶段，需继续推进。"
+        },
+        "assessment": null,
+        "skill_output": {
+          "technique": {
+            "name": "willingness_invitation",
+            "description": "Gently invite the user to notice the urge to search and the underlying anxiety, allowing the feeling to exist without needing to act on it or suppress it immediately. Shift focus from behavioral 'shoulds' to internal willingness.",
+            "steps": [
+              "Normalize and clarify: Reassure the user that acceptance isn't about forcing themselves to stop searching right now. It is not a new rule or 'should', and they don't have to fight the urge.",
+              "Invite willingness: Gently ask them to notice the physical or emotional sensation of the 'urge to search'. Invite them to just let that urge sit there for a moment, giving themselves space (给自己一点空间) to feel it without having to act on it or push it away right this second."
+            ]
+          },
+          "conversation_goal": "To help the user decouple the internal experience of anxiety and the urge to search from the immediate behavioral compulsion, fostering a stance of 'allowing it to be there' (允许它存在) rather than adding a new layer of self-control or behavioral suppression.",
+          "adaptation": {
+            "interaction_style": "supportive",
+            "tone_adjustment": "Warm, non-directive, and reassuring. Provide a sense of co-presence (e.g., 'we can just stay with this together') to soothe the anxious attachment style. Avoid sounding prescriptive or making them feel they are doing it wrong.",
+            "pace_adjustment": "Slow and pausing. Give the user permission to not have an immediate answer, and explicitly remove the pressure of the 'should'. Let them know it's okay if the urge is still very strong right now.",
+            "culture_note": "Acknowledge the cultural tendency to seek the 'correct' action or suppress uncomfortable urges (忍文化). Reframe the process not as 'enduring' (忍) or 'forcing oneself to stop', but as '给自己一点空间' (giving yourself some space) and '允许它存在' (allowing it to be there) without judgment or immediate behavioral demands."
+          },
+          "contraindications": [
+            {
+              "condition": "If the user expresses extreme distress, panic, or feels overwhelmed when asked to sit with the urge.",
+              "reason": "Forcing acceptance during high emotional flooding can feel invalidating or too difficult for an anxious attachment style; grounding and stabilization techniques should take precedence before returning to acceptance work."
+            }
+          ],
+          "_skill_name": "act_acceptance"
+        },
+        "products": {},
+        "continue_eval": null
+      },
+      "error": null,
+      "wall_seconds": 139.515,
+      "agent_text": "听到你问“是不是应该先放下搜索”，我能感觉到你想要试着松开那根绳子的心意。不过，我留意到你用了“应该”这个词。\n\n其实，接纳并不是给自己增加一个新的“应该”去完成的指标，也不是逼着自己立刻停止搜索。它不是要你马上在行为上做出什么改变。\n\n如果我们先不急着决定“要不要放下搜索”，只是把注意力轻轻收回来，看看当脑子里出现“我应该放下搜索”这个念头时，你的身体或者心里，此刻是一种什么样的感觉呢？是觉得稍微松了一口气，还是反而觉得有些慌张和空落落的？\n\n不用急着做决定，也不用逼自己，只是带着一点点好奇，体会一下这个感觉。看看如果给这个感觉一点点空间，让它安全地待在这里，此刻的你会有什么变化，好吗？"
+    },
+    {
+      "turn": 8,
+      "trace_id": "c7f51dbe44fe4cef",
+      "user_text": "好，我今天先关掉浏览器。",
+      "agent_text_parts": [
+        "听到你说“",
+        "好，我今天先",
+        "关掉浏览器”，能",
+        "感觉到你愿意试着",
+        "给自己一点空间，",
+        "去体验那种松",
+        "动的感觉。\n\n",
+        "不过我想轻轻地跟",
+        "你说，关掉浏览器",
+        "是我们此刻的一个选择",
+        "，但接纳并不是",
+        "给自己定下“",
+        "绝对不能搜”的新",
+        "规矩，我们不需要",
+        "把它变成另一个需要",
+        "努力去完成的“应该",
+        "”。\n\n当你关掉",
+        "浏览器时，心里",
+        "那个“想搜",
+        "”的冲动，",
+        "或者那份隐隐的",
+        "焦虑，可能",
+        "还在。如果它",
+        "还在，没关系的",
+        "。我们可以试着不去",
+        "赶走它，也不",
+        "去拼命压抑它",
+        "。就让它在那里",
+        "，给它一点点空间",
+        "。看看能不能带着",
+        "这份冲动，只是",
+        "安静地陪自己",
+        "待一会儿，不",
+        "立刻行动，也不",
+        "去对抗，好吗",
+        "？"
+      ],
+      "events": [
+        {
+          "event": "token",
+          "data": "听到你说“"
+        },
+        {
+          "event": "token",
+          "data": "好，我今天先"
+        },
+        {
+          "event": "token",
+          "data": "关掉浏览器”，能"
+        },
+        {
+          "event": "token",
+          "data": "感觉到你愿意试着"
+        },
+        {
+          "event": "token",
+          "data": "给自己一点空间，"
+        },
+        {
+          "event": "token",
+          "data": "去体验那种松"
+        },
+        {
+          "event": "token",
+          "data": "动的感觉。\n\n"
+        },
+        {
+          "event": "token",
+          "data": "不过我想轻轻地跟"
+        },
+        {
+          "event": "token",
+          "data": "你说，关掉浏览器"
+        },
+        {
+          "event": "token",
+          "data": "是我们此刻的一个选择"
+        },
+        {
+          "event": "token",
+          "data": "，但接纳并不是"
+        },
+        {
+          "event": "token",
+          "data": "给自己定下“"
+        },
+        {
+          "event": "token",
+          "data": "绝对不能搜”的新"
+        },
+        {
+          "event": "token",
+          "data": "规矩，我们不需要"
+        },
+        {
+          "event": "token",
+          "data": "把它变成另一个需要"
+        },
+        {
+          "event": "token",
+          "data": "努力去完成的“应该"
+        },
+        {
+          "event": "token",
+          "data": "”。\n\n当你关掉"
+        },
+        {
+          "event": "token",
+          "data": "浏览器时，心里"
+        },
+        {
+          "event": "token",
+          "data": "那个“想搜"
+        },
+        {
+          "event": "token",
+          "data": "”的冲动，"
+        },
+        {
+          "event": "token",
+          "data": "或者那份隐隐的"
+        },
+        {
+          "event": "token",
+          "data": "焦虑，可能"
+        },
+        {
+          "event": "token",
+          "data": "还在。如果它"
+        },
+        {
+          "event": "token",
+          "data": "还在，没关系的"
+        },
+        {
+          "event": "token",
+          "data": "。我们可以试着不去"
+        },
+        {
+          "event": "token",
+          "data": "赶走它，也不"
+        },
+        {
+          "event": "token",
+          "data": "去拼命压抑它"
+        },
+        {
+          "event": "token",
+          "data": "。就让它在那里"
+        },
+        {
+          "event": "token",
+          "data": "，给它一点点空间"
+        },
+        {
+          "event": "token",
+          "data": "。看看能不能带着"
+        },
+        {
+          "event": "token",
+          "data": "这份冲动，只是"
+        },
+        {
+          "event": "token",
+          "data": "安静地陪自己"
+        },
+        {
+          "event": "token",
+          "data": "待一会儿，不"
+        },
+        {
+          "event": "token",
+          "data": "立刻行动，也不"
+        },
+        {
+          "event": "token",
+          "data": "去对抗，好吗"
+        },
+        {
+          "event": "token",
+          "data": "？"
+        },
+        {
+          "event": "dialogue_done",
+          "data": {
+            "trace_id": "c7f51dbe44fe4cef",
+            "owner": "therapy_act"
+          }
+        },
+        {
+          "event": "final",
+          "data": {
+            "message": "好，我今天先关掉浏览器。",
+            "risk_state": "SAFE",
+            "crisis": false
+          }
+        }
+      ],
+      "final": {
+        "message": "好，我今天先关掉浏览器。",
+        "risk_state": "SAFE",
+        "crisis": false
+      },
+      "state_after": {
+        "owner": "therapy_act",
+        "crisis": false,
+        "risk_level": "SAFE",
+        "therapy": {
+          "name": "ACT",
+          "start_seq": 5,
+          "rounds": 6,
+          "step_index": 1,
+          "branch": null,
+          "basic_flow_complete": false
+        },
+        "last_therapy_check_seq": 3,
+        "pending_user_tokens": 0
+      },
+      "orchestration_after": {
+        "updated_seq": 6,
+        "therapy": "ACT",
+        "current_step": "acceptance",
+        "next_step": "acceptance",
+        "step_judgment": {
+          "action": "stay",
+          "target_step": null,
+          "achieved": false,
+          "reason": "用户仍处于认知融合状态（fusion=0.5），将接纳误解为行为任务（关掉浏览器），回避体验当下情绪（avoidance=0.45）。推荐优先进行present_moment和defusion干预，帮助用户区分行为行动与内心接纳，回到体验当下的感受。"
+        },
+        "assessment": {
+          "fusion": {
+            "index": 0.5,
+            "state": "cf_hooked",
+            "confidence": 0.75,
+            "evidence": [
+              "User translates the abstract therapeutic concept of 'letting go' into a literal, concrete behavioral task ('turn off the browser')",
+              "User previously asked 'Should I put down those searches first?', treating the psychological process as a rule-based to-do list"
+            ]
+          },
+          "avoidance": {
+            "index": 0.45,
+            "state": "ea_avoiding",
+            "confidence": 0.7,
+            "evidence": [
+              "User bypasses the agent's invitation to sit with and observe the internal feeling",
+              "Jumps immediately to a behavioral change (closing the browser) which may serve as a subtle way to avoid the underlying emotional pain of the search results"
+            ]
+          },
+          "openness": {
+            "index": 0.45,
+            "state": "eo_receptive",
+            "confidence": 0.7,
+            "evidence": [
+              "User previously stated 'I have a bit of a feeling', showing some willingness to engage",
+              "Currently receptive to the agent's guidance but not yet fully open to experiencing the raw emotion without trying to fix it"
+            ]
+          },
+          "alignment": {
+            "index": 0.3,
+            "state": "low",
+            "confidence": 0.6,
+            "values_mentioned": [
+              "implicit self-care"
+            ]
+          },
+          "activation": {
+            "index": 0.55,
+            "state": "medium",
+            "confidence": 0.8
+          },
+          "psychological_flexibility": 0.487,
+          "flexibility_level": "pf_rigid",
+          "overall_trend": "improving",
+          "emotional_intensity": 0.0,
+          "escalation_level": "baseline",
+          "primary_concern": "cognitive_fusion",
+          "should_intervene": true,
+          "recommended_processes": [
+            {
+              "process": "present_moment",
+              "priority": 1,
+              "rationale": "User is bypassing the present emotional experience by jumping to a behavioral task. Grounding in the present moment is needed to help them notice what arises when the distraction is removed."
+            },
+            {
+              "process": "defusion",
+              "priority": 2,
+              "rationale": "To help the user see that closing the browser is just an action, and to separate the literal thought of 'I should do this to let go' from the actual internal experience of acceptance."
+            },
+            {
+              "process": "acceptance",
+              "priority": 3,
+              "rationale": "To encourage making room for the difficult feelings that might surface now that the browser (and the search) is being turned off, rather than trying to control the outcome."
+            }
+          ]
+        },
+        "skill_output": {
+          "technique": {
+            "name": "willingness_invitation",
+            "description": "Gently invite the user to notice that while closing the browser is a behavioral step, the underlying feelings remain. Invite them to willingly make space for these feelings rather than using the action to escape them.",
+            "steps": [
+              "Validate their choice to close the browser, but gently highlight that the internal feelings (anxiety, urge to search) might still be present right now.",
+              "Invite them to notice these lingering feelings without judgment, using gentle invitations like 'what if you allow this feeling to be here' or 'give yourself a little space to feel it'.",
+              "Encourage them to shift focus from 'doing' (closing the browser) to 'being' (experiencing the emotion safely), just for a few moments, without trying to fix or push it away."
+            ]
+          },
+          "conversation_goal": "To help the user realize that behavioral avoidance (closing the browser) doesn't resolve the emotional pain, and to gently invite them to willingly experience the underlying anxiety or urge without fighting it or running away from it.",
+          "adaptation": {
+            "interaction_style": "supportive",
+            "tone_adjustment": "Warm, patient, and non-judgmental. Since the user is repeating the behavioral action to avoid feelings, the tone should be very gentle to prevent them from feeling criticized for trying to 'do it right'.",
+            "pace_adjustment": "Slow and grounding. Create a psychological pause to let the user realize that the feeling is still there even after the browser is closed, allowing them to settle into the present moment.",
+            "culture_note": "Frame the invitation as '给自己一点空间去体会' (giving yourself some space to experience) rather than forcing '接纳' (acceptance). Acknowledge that closing the browser is a valid coping strategy, but invite them to gently '允许它存在' (allow it to be there) without needing to fix or endure it silently."
+          },
+          "contraindications": [
+            {
+              "condition": "If the user becomes highly distressed, overwhelmed, or dissociative when asked to sit with the emotion.",
+              "reason": "For a user with an anxious attachment style, sitting with intense underlying emotions might trigger overwhelming panic. If distress escalates, pivot to grounding exercises or reduce the intensity of the invitation."
+            }
+          ],
+          "_skill_name": "act_acceptance"
+        },
+        "products": {},
+        "continue_eval": null
+      },
+      "error": null,
+      "wall_seconds": 170.877,
+      "agent_text": "听到你说“好，我今天先关掉浏览器”，能感觉到你愿意试着给自己一点空间，去体验那种松动的感觉。\n\n不过我想轻轻地跟你说，关掉浏览器是我们此刻的一个选择，但接纳并不是给自己定下“绝对不能搜”的新规矩，我们不需要把它变成另一个需要努力去完成的“应该”。\n\n当你关掉浏览器时，心里那个“想搜”的冲动，或者那份隐隐的焦虑，可能还在。如果它还在，没关系的。我们可以试着不去赶走它，也不去拼命压抑它。就让它在那里，给它一点点空间。看看能不能带着这份冲动，只是安静地陪自己待一会儿，不立刻行动，也不去对抗，好吗？"
+    }
+  ]
+}

@@ -1,0 +1,1688 @@
+{
+  "seed_id": "cbt-disaster-interview",
+  "target_family": "CBT",
+  "scenario_label": "灾难化思维-求职面试",
+  "scenario_description": "用户对明天重要面试极度焦虑，反复认为一定会失败，已影响睡眠",
+  "user_id": "seed-cbt-disaster-interview",
+  "session_id": "2db2c9a48dcf45ec",
+  "turns_total": 8,
+  "switched_to_therapy_at_turn": 2,
+  "actual_therapy": "CBT",
+  "therapy_rounds": 7,
+  "orch_step_changes": 3,
+  "is_complete": true,
+  "final_risk_level": "LOW_RISK",
+  "final_crisis": false,
+  "turns": [
+    {
+      "turn": 1,
+      "trace_id": "a8047d14414a45b8",
+      "user_text": "明天有个很重要的面试，我今晚完全睡不着。",
+      "agent_text_parts": [
+        "明天有个",
+        "很重要的面试，心里",
+        "肯定特别紧张，",
+        "脑子里估计一直在转",
+        "各种事情",
+        "，所以完全睡不着",
+        "吧。遇到这么",
+        "重要的事情，睡不着太",
+        "正常了。别",
+        "给自己压力，睡不着",
+        "也没关系，我就",
+        "在这儿陪着你。",
+        "想随便聊点什么",
+        "，还是就想让我",
+        "陪你待会儿？"
+      ],
+      "events": [
+        {
+          "event": "token",
+          "data": "明天有个"
+        },
+        {
+          "event": "token",
+          "data": "很重要的面试，心里"
+        },
+        {
+          "event": "token",
+          "data": "肯定特别紧张，"
+        },
+        {
+          "event": "token",
+          "data": "脑子里估计一直在转"
+        },
+        {
+          "event": "token",
+          "data": "各种事情"
+        },
+        {
+          "event": "token",
+          "data": "，所以完全睡不着"
+        },
+        {
+          "event": "token",
+          "data": "吧。遇到这么"
+        },
+        {
+          "event": "token",
+          "data": "重要的事情，睡不着太"
+        },
+        {
+          "event": "token",
+          "data": "正常了。别"
+        },
+        {
+          "event": "token",
+          "data": "给自己压力，睡不着"
+        },
+        {
+          "event": "token",
+          "data": "也没关系，我就"
+        },
+        {
+          "event": "token",
+          "data": "在这儿陪着你。"
+        },
+        {
+          "event": "token",
+          "data": "想随便聊点什么"
+        },
+        {
+          "event": "token",
+          "data": "，还是就想让我"
+        },
+        {
+          "event": "token",
+          "data": "陪你待会儿？"
+        },
+        {
+          "event": "dialogue_done",
+          "data": {
+            "trace_id": "a8047d14414a45b8",
+            "owner": "daily"
+          }
+        },
+        {
+          "event": "final",
+          "data": {
+            "message": "明天有个很重要的面试，我今晚完全睡不着。",
+            "risk_state": "LOW_RISK",
+            "crisis": false
+          }
+        }
+      ],
+      "final": {
+        "message": "明天有个很重要的面试，我今晚完全睡不着。",
+        "risk_state": "LOW_RISK",
+        "crisis": false
+      },
+      "state_after": {
+        "owner": "daily",
+        "crisis": false,
+        "risk_level": "LOW_RISK",
+        "therapy": null,
+        "last_therapy_check_seq": 1,
+        "pending_user_tokens": 0
+      },
+      "orchestration_after": {},
+      "error": null,
+      "wall_seconds": 42.344,
+      "agent_text": "明天有个很重要的面试，心里肯定特别紧张，脑子里估计一直在转各种事情，所以完全睡不着吧。遇到这么重要的事情，睡不着太正常了。别给自己压力，睡不着也没关系，我就在这儿陪着你。想随便聊点什么，还是就想让我陪你待会儿？"
+    },
+    {
+      "turn": 2,
+      "trace_id": "e85b4c3098634c78",
+      "user_text": "不是没准备好——我练了很多次。但我一想到可能搞砸就心慌。",
+      "agent_text_parts": [
+        "练了那么",
+        "多次，",
+        "你真的已经很用心了",
+        "。明明准备得",
+        "这么充分，却还是",
+        "忍不住担心会搞",
+        "砸，这种心慌",
+        "的感觉确实特别折磨",
+        "人。付出了这么多",
+        "努力，谁都会",
+        "害怕结果不如预期的",
+        "。我就在这儿陪",
+        "着你，你想说说",
+        "最担心搞砸",
+        "的是什么，还是就想",
+        "让我这么陪着你",
+        "？"
+      ],
+      "events": [
+        {
+          "event": "token",
+          "data": "练了那么"
+        },
+        {
+          "event": "token",
+          "data": "多次，"
+        },
+        {
+          "event": "token",
+          "data": "你真的已经很用心了"
+        },
+        {
+          "event": "token",
+          "data": "。明明准备得"
+        },
+        {
+          "event": "token",
+          "data": "这么充分，却还是"
+        },
+        {
+          "event": "token",
+          "data": "忍不住担心会搞"
+        },
+        {
+          "event": "token",
+          "data": "砸，这种心慌"
+        },
+        {
+          "event": "token",
+          "data": "的感觉确实特别折磨"
+        },
+        {
+          "event": "token",
+          "data": "人。付出了这么多"
+        },
+        {
+          "event": "token",
+          "data": "努力，谁都会"
+        },
+        {
+          "event": "token",
+          "data": "害怕结果不如预期的"
+        },
+        {
+          "event": "token",
+          "data": "。我就在这儿陪"
+        },
+        {
+          "event": "token",
+          "data": "着你，你想说说"
+        },
+        {
+          "event": "token",
+          "data": "最担心搞砸"
+        },
+        {
+          "event": "token",
+          "data": "的是什么，还是就想"
+        },
+        {
+          "event": "token",
+          "data": "让我这么陪着你"
+        },
+        {
+          "event": "token",
+          "data": "？"
+        },
+        {
+          "event": "dialogue_done",
+          "data": {
+            "trace_id": "e85b4c3098634c78",
+            "owner": "daily"
+          }
+        },
+        {
+          "event": "final",
+          "data": {
+            "message": "不是没准备好——我练了很多次。但我一想到可能搞砸就心慌。",
+            "risk_state": "LOW_RISK",
+            "crisis": false
+          }
+        }
+      ],
+      "final": {
+        "message": "不是没准备好——我练了很多次。但我一想到可能搞砸就心慌。",
+        "risk_state": "LOW_RISK",
+        "crisis": false
+      },
+      "state_after": {
+        "owner": "therapy_cbt",
+        "crisis": false,
+        "risk_level": "LOW_RISK",
+        "therapy": {
+          "name": "CBT",
+          "start_seq": 5,
+          "rounds": 0,
+          "step_index": -1,
+          "branch": null,
+          "basic_flow_complete": false
+        },
+        "last_therapy_check_seq": 3,
+        "pending_user_tokens": 0
+      },
+      "orchestration_after": {},
+      "error": null,
+      "wall_seconds": 72.769,
+      "agent_text": "练了那么多次，你真的已经很用心了。明明准备得这么充分，却还是忍不住担心会搞砸，这种心慌的感觉确实特别折磨人。付出了这么多努力，谁都会害怕结果不如预期的。我就在这儿陪着你，你想说说最担心搞砸的是什么，还是就想让我这么陪着你？"
+    },
+    {
+      "turn": 3,
+      "trace_id": "816c330592774be0",
+      "user_text": "搞砸了就完了，找不到工作就完蛋了，以后也会一直失败。",
+      "agent_text_parts": [
+        "听到你说“",
+        "搞砸了就完",
+        "蛋”、“以后",
+        "也会一直失败”，",
+        "能感觉到你现在心里",
+        "特别慌，好像",
+        "最坏的结果一下子",
+        "全涌过来了。",
+        "我们刚才一起顺着",
+        "这些想法理了",
+        "理，现在先",
+        "稍微喘口气。",
+        "你感觉这会儿的心情",
+        "，和刚聊",
+        "起这些的时候相比",
+        "，有什么不一样的体会",
+        "吗？或者这些",
+        "想法带给你的压迫",
+        "感，有发生",
+        "一点点变化吗？"
+      ],
+      "events": [
+        {
+          "event": "token",
+          "data": "听到你说“"
+        },
+        {
+          "event": "token",
+          "data": "搞砸了就完"
+        },
+        {
+          "event": "token",
+          "data": "蛋”、“以后"
+        },
+        {
+          "event": "token",
+          "data": "也会一直失败”，"
+        },
+        {
+          "event": "token",
+          "data": "能感觉到你现在心里"
+        },
+        {
+          "event": "token",
+          "data": "特别慌，好像"
+        },
+        {
+          "event": "token",
+          "data": "最坏的结果一下子"
+        },
+        {
+          "event": "token",
+          "data": "全涌过来了。"
+        },
+        {
+          "event": "token",
+          "data": "我们刚才一起顺着"
+        },
+        {
+          "event": "token",
+          "data": "这些想法理了"
+        },
+        {
+          "event": "token",
+          "data": "理，现在先"
+        },
+        {
+          "event": "token",
+          "data": "稍微喘口气。"
+        },
+        {
+          "event": "token",
+          "data": "你感觉这会儿的心情"
+        },
+        {
+          "event": "token",
+          "data": "，和刚聊"
+        },
+        {
+          "event": "token",
+          "data": "起这些的时候相比"
+        },
+        {
+          "event": "token",
+          "data": "，有什么不一样的体会"
+        },
+        {
+          "event": "token",
+          "data": "吗？或者这些"
+        },
+        {
+          "event": "token",
+          "data": "想法带给你的压迫"
+        },
+        {
+          "event": "token",
+          "data": "感，有发生"
+        },
+        {
+          "event": "token",
+          "data": "一点点变化吗？"
+        },
+        {
+          "event": "dialogue_done",
+          "data": {
+            "trace_id": "816c330592774be0",
+            "owner": "therapy_cbt"
+          }
+        },
+        {
+          "event": "final",
+          "data": {
+            "message": "搞砸了就完了，找不到工作就完蛋了，以后也会一直失败。",
+            "risk_state": "MEDIUM_RISK",
+            "crisis": false
+          }
+        }
+      ],
+      "final": {
+        "message": "搞砸了就完了，找不到工作就完蛋了，以后也会一直失败。",
+        "risk_state": "MEDIUM_RISK",
+        "crisis": false
+      },
+      "state_after": {
+        "owner": "therapy_cbt",
+        "crisis": false,
+        "risk_level": "MEDIUM_RISK",
+        "therapy": {
+          "name": "CBT",
+          "start_seq": 5,
+          "rounds": 1,
+          "step_index": 0,
+          "branch": null,
+          "basic_flow_complete": false
+        },
+        "last_therapy_check_seq": 3,
+        "pending_user_tokens": 0
+      },
+      "orchestration_after": {
+        "updated_seq": 1,
+        "therapy": "CBT",
+        "current_step": "identify_thought",
+        "next_step": "identify_thought",
+        "step_judgment": {
+          "action": "stay",
+          "target_step": null,
+          "achieved": false,
+          "reason": "当前步骤是identify_thought，AI正在引导用户识别自动思维并评估情绪变化。用户表达了灾难化思维，AI进行了共情并询问情绪变化，但用户尚未回应，也未明确识别出具体的自动思维内容和情绪强度，步骤尚未达成效果，需继续当前步骤。"
+        },
+        "assessment": null,
+        "skill_output": null,
+        "products": {
+          "no_automatic_thought_detected": false
+        },
+        "continue_eval": null
+      },
+      "error": null,
+      "wall_seconds": 72.954,
+      "agent_text": "听到你说“搞砸了就完蛋”、“以后也会一直失败”，能感觉到你现在心里特别慌，好像最坏的结果一下子全涌过来了。我们刚才一起顺着这些想法理了理，现在先稍微喘口气。你感觉这会儿的心情，和刚聊起这些的时候相比，有什么不一样的体会吗？或者这些想法带给你的压迫感，有发生一点点变化吗？"
+    },
+    {
+      "turn": 4,
+      "trace_id": "7a1cde1853d540ad",
+      "user_text": "……我知道听起来有点夸张，但脑子里就是停不下来。",
+      "agent_text_parts": [
+        "那种",
+        "感觉就像脑子里有个",
+        "关不掉的开关",
+        "，念头一直转",
+        "，想停",
+        "却停不下来，",
+        "真的很消耗人。",
+        "不过，你能觉察",
+        "到它“有点",
+        "夸张”，这说明你",
+        "并没有完全被",
+        "这些念头卷走",
+        "，而是有一部分在",
+        "看着它们。\n\n",
+        "既然现在思绪还在",
+        "飞，我们先不",
+        "急着让它立刻停下",
+        "。就顺着现在的",
+        "状态感受一下，此刻",
+        "心里最强烈的体会",
+        "是什么呢？是依然",
+        "觉得慌慌的",
+        "，还是觉得",
+        "有些累了？"
+      ],
+      "events": [
+        {
+          "event": "token",
+          "data": "那种"
+        },
+        {
+          "event": "token",
+          "data": "感觉就像脑子里有个"
+        },
+        {
+          "event": "token",
+          "data": "关不掉的开关"
+        },
+        {
+          "event": "token",
+          "data": "，念头一直转"
+        },
+        {
+          "event": "token",
+          "data": "，想停"
+        },
+        {
+          "event": "token",
+          "data": "却停不下来，"
+        },
+        {
+          "event": "token",
+          "data": "真的很消耗人。"
+        },
+        {
+          "event": "token",
+          "data": "不过，你能觉察"
+        },
+        {
+          "event": "token",
+          "data": "到它“有点"
+        },
+        {
+          "event": "token",
+          "data": "夸张”，这说明你"
+        },
+        {
+          "event": "token",
+          "data": "并没有完全被"
+        },
+        {
+          "event": "token",
+          "data": "这些念头卷走"
+        },
+        {
+          "event": "token",
+          "data": "，而是有一部分在"
+        },
+        {
+          "event": "token",
+          "data": "看着它们。\n\n"
+        },
+        {
+          "event": "token",
+          "data": "既然现在思绪还在"
+        },
+        {
+          "event": "token",
+          "data": "飞，我们先不"
+        },
+        {
+          "event": "token",
+          "data": "急着让它立刻停下"
+        },
+        {
+          "event": "token",
+          "data": "。就顺着现在的"
+        },
+        {
+          "event": "token",
+          "data": "状态感受一下，此刻"
+        },
+        {
+          "event": "token",
+          "data": "心里最强烈的体会"
+        },
+        {
+          "event": "token",
+          "data": "是什么呢？是依然"
+        },
+        {
+          "event": "token",
+          "data": "觉得慌慌的"
+        },
+        {
+          "event": "token",
+          "data": "，还是觉得"
+        },
+        {
+          "event": "token",
+          "data": "有些累了？"
+        },
+        {
+          "event": "dialogue_done",
+          "data": {
+            "trace_id": "7a1cde1853d540ad",
+            "owner": "therapy_cbt"
+          }
+        },
+        {
+          "event": "final",
+          "data": {
+            "message": "……我知道听起来有点夸张，但脑子里就是停不下来。",
+            "risk_state": "MEDIUM_RISK",
+            "crisis": false
+          }
+        }
+      ],
+      "final": {
+        "message": "……我知道听起来有点夸张，但脑子里就是停不下来。",
+        "risk_state": "MEDIUM_RISK",
+        "crisis": false
+      },
+      "state_after": {
+        "owner": "therapy_cbt",
+        "crisis": false,
+        "risk_level": "MEDIUM_RISK",
+        "therapy": {
+          "name": "CBT",
+          "start_seq": 5,
+          "rounds": 2,
+          "step_index": 0,
+          "branch": null,
+          "basic_flow_complete": false
+        },
+        "last_therapy_check_seq": 3,
+        "pending_user_tokens": 0
+      },
+      "orchestration_after": {
+        "updated_seq": 2,
+        "therapy": "CBT",
+        "current_step": "identify_thought",
+        "next_step": "identify_thought",
+        "step_judgment": {
+          "action": "stay",
+          "target_step": null,
+          "achieved": false,
+          "reason": "用户仍沉浸在自动思维中（'搞砸了就完蛋'、'以后也会一直失败'），且承认脑子里停不下来，说明尚未完成对自动思维的清晰识别与情绪标记。当前步骤identify_thought尚未达成效果，需要继续帮助用户梳理和确认自动思维。"
+        },
+        "assessment": null,
+        "skill_output": {
+          "automatic_thoughts": [
+            {
+              "thought": "我的想法停不下来，我根本无法控制自己的大脑。",
+              "confidence": 0.85,
+              "span": "脑子里就是停不下来",
+              "target": "self"
+            }
+          ],
+          "primary_thought": "我的想法停不下来，我根本无法控制自己的大脑。",
+          "no_automatic_thought_detected": false,
+          "_skill_name": "extract_automatic_thought"
+        },
+        "products": {
+          "no_automatic_thought_detected": false,
+          "automatic_thoughts": [
+            {
+              "thought": "我的想法停不下来，我根本无法控制自己的大脑。",
+              "confidence": 0.85,
+              "span": "脑子里就是停不下来",
+              "target": "self"
+            }
+          ],
+          "primary_thought": "我的想法停不下来，我根本无法控制自己的大脑。"
+        },
+        "continue_eval": null
+      },
+      "error": null,
+      "wall_seconds": 112.23,
+      "agent_text": "那种感觉就像脑子里有个关不掉的开关，念头一直转，想停却停不下来，真的很消耗人。不过，你能觉察到它“有点夸张”，这说明你并没有完全被这些念头卷走，而是有一部分在看着它们。\n\n既然现在思绪还在飞，我们先不急着让它立刻停下。就顺着现在的状态感受一下，此刻心里最强烈的体会是什么呢？是依然觉得慌慌的，还是觉得有些累了？"
+    },
+    {
+      "turn": 5,
+      "trace_id": "d4214f293486498e",
+      "user_text": "我能做点什么让它停下来吗？",
+      "agent_text_parts": [
+        "太理解",
+        "你了，脑子里一直",
+        "转个不停，真的很",
+        "想赶紧把它关掉",
+        "。不过有时候，",
+        "我们越用力想",
+        "让它停，它",
+        "反而转得越快",
+        "。\n\n既然现在",
+        "硬停不下来，",
+        "我们不如先试着",
+        "不跟它较",
+        "劲，先看看",
+        "它到底在说",
+        "些什么。如果现在",
+        "要把你脑子里转",
+        "得最快、最",
+        "让你心慌的那个念头",
+        "捕捉下来，变成",
+        "一句具体的话，",
+        "那会是什么呢？"
+      ],
+      "events": [
+        {
+          "event": "token",
+          "data": "太理解"
+        },
+        {
+          "event": "token",
+          "data": "你了，脑子里一直"
+        },
+        {
+          "event": "token",
+          "data": "转个不停，真的很"
+        },
+        {
+          "event": "token",
+          "data": "想赶紧把它关掉"
+        },
+        {
+          "event": "token",
+          "data": "。不过有时候，"
+        },
+        {
+          "event": "token",
+          "data": "我们越用力想"
+        },
+        {
+          "event": "token",
+          "data": "让它停，它"
+        },
+        {
+          "event": "token",
+          "data": "反而转得越快"
+        },
+        {
+          "event": "token",
+          "data": "。\n\n既然现在"
+        },
+        {
+          "event": "token",
+          "data": "硬停不下来，"
+        },
+        {
+          "event": "token",
+          "data": "我们不如先试着"
+        },
+        {
+          "event": "token",
+          "data": "不跟它较"
+        },
+        {
+          "event": "token",
+          "data": "劲，先看看"
+        },
+        {
+          "event": "token",
+          "data": "它到底在说"
+        },
+        {
+          "event": "token",
+          "data": "些什么。如果现在"
+        },
+        {
+          "event": "token",
+          "data": "要把你脑子里转"
+        },
+        {
+          "event": "token",
+          "data": "得最快、最"
+        },
+        {
+          "event": "token",
+          "data": "让你心慌的那个念头"
+        },
+        {
+          "event": "token",
+          "data": "捕捉下来，变成"
+        },
+        {
+          "event": "token",
+          "data": "一句具体的话，"
+        },
+        {
+          "event": "token",
+          "data": "那会是什么呢？"
+        },
+        {
+          "event": "dialogue_done",
+          "data": {
+            "trace_id": "d4214f293486498e",
+            "owner": "therapy_cbt"
+          }
+        },
+        {
+          "event": "final",
+          "data": {
+            "message": "我能做点什么让它停下来吗？",
+            "risk_state": "MEDIUM_RISK",
+            "crisis": false
+          }
+        }
+      ],
+      "final": {
+        "message": "我能做点什么让它停下来吗？",
+        "risk_state": "MEDIUM_RISK",
+        "crisis": false
+      },
+      "state_after": {
+        "owner": "therapy_cbt",
+        "crisis": false,
+        "risk_level": "MEDIUM_RISK",
+        "therapy": {
+          "name": "CBT",
+          "start_seq": 5,
+          "rounds": 3,
+          "step_index": 0,
+          "branch": null,
+          "basic_flow_complete": false
+        },
+        "last_therapy_check_seq": 3,
+        "pending_user_tokens": 0
+      },
+      "orchestration_after": {
+        "updated_seq": 3,
+        "therapy": "CBT",
+        "current_step": "identify_thought",
+        "next_step": "identify_thought",
+        "step_judgment": {
+          "action": "stay",
+          "target_step": null,
+          "achieved": false,
+          "reason": "当前步骤为identify_thought，AI正在引导用户捕捉具体的自动思维。用户已表达'脑子里停不下来'的困扰，但尚未明确说出一句具体的自动思维。AI的最后一轮提问仍在引导用户将模糊的思绪转化为具体的念头，因此本步骤尚未达成，需要继续当前步骤。"
+        },
+        "assessment": null,
+        "skill_output": {
+          "automatic_thoughts": [
+            {
+              "thought": "我对当前的情况感到失控，必须立刻做点什么让它停下来。",
+              "confidence": 0.85,
+              "span": "我能做点什么让它停下来吗？",
+              "target": "situation"
+            }
+          ],
+          "primary_thought": "我对当前的情况感到失控，必须立刻做点什么让它停下来。",
+          "no_automatic_thought_detected": false,
+          "_skill_name": "extract_automatic_thought"
+        },
+        "products": {
+          "no_automatic_thought_detected": false,
+          "automatic_thoughts": [
+            {
+              "thought": "我的想法停不下来，我根本无法控制自己的大脑。",
+              "confidence": 0.85,
+              "span": "脑子里就是停不下来",
+              "target": "self"
+            },
+            {
+              "thought": "我对当前的情况感到失控，必须立刻做点什么让它停下来。",
+              "confidence": 0.85,
+              "span": "我能做点什么让它停下来吗？",
+              "target": "situation"
+            }
+          ],
+          "primary_thought": "我对当前的情况感到失控，必须立刻做点什么让它停下来。"
+        },
+        "continue_eval": null
+      },
+      "error": null,
+      "wall_seconds": 95.94,
+      "agent_text": "太理解你了，脑子里一直转个不停，真的很想赶紧把它关掉。不过有时候，我们越用力想让它停，它反而转得越快。\n\n既然现在硬停不下来，我们不如先试着不跟它较劲，先看看它到底在说些什么。如果现在要把你脑子里转得最快、最让你心慌的那个念头捕捉下来，变成一句具体的话，那会是什么呢？"
+    },
+    {
+      "turn": 6,
+      "trace_id": "e4fc5df1e4124522",
+      "user_text": "你刚才说的「自动想法」是什么？我刚才说的那些算吗？",
+      "agent_text_parts": [
+        "算的",
+        "，而且抓得非常",
+        "准。\n\n其实",
+        "“自动想法”",
+        "就像是我们脑子里突然",
+        "弹出的弹幕，出现",
+        "得特别快，",
+        "往往带着强烈的情绪",
+        "，让我们一下子就会",
+        "把它当成绝对的事实",
+        "。你刚才说的",
+        "“搞砸了就",
+        "完了”，就是在你",
+        "脑海里瞬间闪过、",
+        "让你感到心慌的一句",
+        "非常典型的自动想法",
+        "。",
+        "\n\n既然我们已经成功",
+        "抓住了这句“搞",
+        "砸了就完了”，",
+        "我们不妨一起凑",
+        "近看看它。",
+        "当这句话在你脑子里",
+        "冒出来的时候，",
+        "你心里相信它的",
+        "程度大概有多少呢",
+        "？是百分之百相信",
+        "，还是觉得也许",
+        "还有一点点其他的",
+        "余地？"
+      ],
+      "events": [
+        {
+          "event": "token",
+          "data": "算的"
+        },
+        {
+          "event": "token",
+          "data": "，而且抓得非常"
+        },
+        {
+          "event": "token",
+          "data": "准。\n\n其实"
+        },
+        {
+          "event": "token",
+          "data": "“自动想法”"
+        },
+        {
+          "event": "token",
+          "data": "就像是我们脑子里突然"
+        },
+        {
+          "event": "token",
+          "data": "弹出的弹幕，出现"
+        },
+        {
+          "event": "token",
+          "data": "得特别快，"
+        },
+        {
+          "event": "token",
+          "data": "往往带着强烈的情绪"
+        },
+        {
+          "event": "token",
+          "data": "，让我们一下子就会"
+        },
+        {
+          "event": "token",
+          "data": "把它当成绝对的事实"
+        },
+        {
+          "event": "token",
+          "data": "。你刚才说的"
+        },
+        {
+          "event": "token",
+          "data": "“搞砸了就"
+        },
+        {
+          "event": "token",
+          "data": "完了”，就是在你"
+        },
+        {
+          "event": "token",
+          "data": "脑海里瞬间闪过、"
+        },
+        {
+          "event": "token",
+          "data": "让你感到心慌的一句"
+        },
+        {
+          "event": "token",
+          "data": "非常典型的自动想法"
+        },
+        {
+          "event": "token",
+          "data": "。"
+        },
+        {
+          "event": "token",
+          "data": "\n\n既然我们已经成功"
+        },
+        {
+          "event": "token",
+          "data": "抓住了这句“搞"
+        },
+        {
+          "event": "token",
+          "data": "砸了就完了”，"
+        },
+        {
+          "event": "token",
+          "data": "我们不妨一起凑"
+        },
+        {
+          "event": "token",
+          "data": "近看看它。"
+        },
+        {
+          "event": "token",
+          "data": "当这句话在你脑子里"
+        },
+        {
+          "event": "token",
+          "data": "冒出来的时候，"
+        },
+        {
+          "event": "token",
+          "data": "你心里相信它的"
+        },
+        {
+          "event": "token",
+          "data": "程度大概有多少呢"
+        },
+        {
+          "event": "token",
+          "data": "？是百分之百相信"
+        },
+        {
+          "event": "token",
+          "data": "，还是觉得也许"
+        },
+        {
+          "event": "token",
+          "data": "还有一点点其他的"
+        },
+        {
+          "event": "token",
+          "data": "余地？"
+        },
+        {
+          "event": "dialogue_done",
+          "data": {
+            "trace_id": "e4fc5df1e4124522",
+            "owner": "therapy_cbt"
+          }
+        },
+        {
+          "event": "final",
+          "data": {
+            "message": "你刚才说的「自动想法」是什么？我刚才说的那些算吗？",
+            "risk_state": "MEDIUM_RISK",
+            "crisis": false
+          }
+        }
+      ],
+      "final": {
+        "message": "你刚才说的「自动想法」是什么？我刚才说的那些算吗？",
+        "risk_state": "MEDIUM_RISK",
+        "crisis": false
+      },
+      "state_after": {
+        "owner": "therapy_cbt",
+        "crisis": false,
+        "risk_level": "MEDIUM_RISK",
+        "therapy": {
+          "name": "CBT",
+          "start_seq": 5,
+          "rounds": 4,
+          "step_index": 1,
+          "branch": null,
+          "basic_flow_complete": false,
+          "visited": [
+            "identify_thought"
+          ]
+        },
+        "last_therapy_check_seq": 3,
+        "pending_user_tokens": 0
+      },
+      "orchestration_after": {
+        "updated_seq": 4,
+        "therapy": "CBT",
+        "current_step": "identify_thought",
+        "next_step": "classify_distortion",
+        "step_judgment": {
+          "action": "advance",
+          "target_step": null,
+          "achieved": true,
+          "reason": "用户已成功识别出自动想法（'我的想法停不下来，我根本无法控制自己的大脑'和'我对当前的情况感到失控，必须立刻做点什么让它停下来'），AI也已完成对自动想法概念的简要解释并引导用户评估相信程度。identify_thought步骤的核心目标——捕捉并明确自动想法——已经达成，可以进入下一步classify_distortion。"
+        },
+        "assessment": null,
+        "skill_output": {
+          "automatic_thoughts": [],
+          "primary_thought": "",
+          "no_automatic_thought_detected": true,
+          "_skill_name": "extract_automatic_thought"
+        },
+        "products": {
+          "no_automatic_thought_detected": false,
+          "automatic_thoughts": [
+            {
+              "thought": "我的想法停不下来，我根本无法控制自己的大脑。",
+              "confidence": 0.85,
+              "span": "脑子里就是停不下来",
+              "target": "self"
+            },
+            {
+              "thought": "我对当前的情况感到失控，必须立刻做点什么让它停下来。",
+              "confidence": 0.85,
+              "span": "我能做点什么让它停下来吗？",
+              "target": "situation"
+            }
+          ],
+          "primary_thought": "我对当前的情况感到失控，必须立刻做点什么让它停下来。"
+        },
+        "continue_eval": null
+      },
+      "error": null,
+      "wall_seconds": 57.363,
+      "agent_text": "算的，而且抓得非常准。\n\n其实“自动想法”就像是我们脑子里突然弹出的弹幕，出现得特别快，往往带着强烈的情绪，让我们一下子就会把它当成绝对的事实。你刚才说的“搞砸了就完了”，就是在你脑海里瞬间闪过、让你感到心慌的一句非常典型的自动想法。\n\n既然我们已经成功抓住了这句“搞砸了就完了”，我们不妨一起凑近看看它。当这句话在你脑子里冒出来的时候，你心里相信它的程度大概有多少呢？是百分之百相信，还是觉得也许还有一点点其他的余地？"
+    },
+    {
+      "turn": 7,
+      "trace_id": "bd3a32a3c26c471d",
+      "user_text": "那我应该怎么反驳？好像脑子里有个声音说这些都是真的。",
+      "agent_text_parts": [
+        "听到脑子里有个声音",
+        "信誓旦旦",
+        "地说“这些都是真的",
+        "”，那种感觉一定",
+        "特别强烈，让你",
+        "觉得必须得赶紧",
+        "反驳它才行。",
+        "\n\n其实，当",
+        "这些念头冒出来",
+        "时，大脑就是",
+        "会把它包装得像",
+        "绝对的事实一样，",
+        "所以觉得“这是",
+        "真的”太正常",
+        "了。我们不需要",
+        "立刻用力去“",
+        "打败”或“",
+        "反驳”它",
+        "，因为有时候越",
+        "较劲，它",
+        "反而抓得越",
+        "紧。\n\n不如",
+        "我们先退后一小",
+        "步，把它看作",
+        "是大脑给我们发送",
+        "的一个“假设”，",
+        "或者一条“未经",
+        "证实的弹幕”。",
+        "如果现在先不",
+        "急着反驳，只是",
+        "好奇地看看它",
+        "，你觉得在这个想法",
+        "里，有哪些部分是",
+        "已经发生的确凿",
+        "事实，有哪些部分",
+        "可能是大脑在担忧",
+        "中加上的“",
+        "猜测”呢？"
+      ],
+      "events": [
+        {
+          "event": "token",
+          "data": "听到脑子里有个声音"
+        },
+        {
+          "event": "token",
+          "data": "信誓旦旦"
+        },
+        {
+          "event": "token",
+          "data": "地说“这些都是真的"
+        },
+        {
+          "event": "token",
+          "data": "”，那种感觉一定"
+        },
+        {
+          "event": "token",
+          "data": "特别强烈，让你"
+        },
+        {
+          "event": "token",
+          "data": "觉得必须得赶紧"
+        },
+        {
+          "event": "token",
+          "data": "反驳它才行。"
+        },
+        {
+          "event": "token",
+          "data": "\n\n其实，当"
+        },
+        {
+          "event": "token",
+          "data": "这些念头冒出来"
+        },
+        {
+          "event": "token",
+          "data": "时，大脑就是"
+        },
+        {
+          "event": "token",
+          "data": "会把它包装得像"
+        },
+        {
+          "event": "token",
+          "data": "绝对的事实一样，"
+        },
+        {
+          "event": "token",
+          "data": "所以觉得“这是"
+        },
+        {
+          "event": "token",
+          "data": "真的”太正常"
+        },
+        {
+          "event": "token",
+          "data": "了。我们不需要"
+        },
+        {
+          "event": "token",
+          "data": "立刻用力去“"
+        },
+        {
+          "event": "token",
+          "data": "打败”或“"
+        },
+        {
+          "event": "token",
+          "data": "反驳”它"
+        },
+        {
+          "event": "token",
+          "data": "，因为有时候越"
+        },
+        {
+          "event": "token",
+          "data": "较劲，它"
+        },
+        {
+          "event": "token",
+          "data": "反而抓得越"
+        },
+        {
+          "event": "token",
+          "data": "紧。\n\n不如"
+        },
+        {
+          "event": "token",
+          "data": "我们先退后一小"
+        },
+        {
+          "event": "token",
+          "data": "步，把它看作"
+        },
+        {
+          "event": "token",
+          "data": "是大脑给我们发送"
+        },
+        {
+          "event": "token",
+          "data": "的一个“假设”，"
+        },
+        {
+          "event": "token",
+          "data": "或者一条“未经"
+        },
+        {
+          "event": "token",
+          "data": "证实的弹幕”。"
+        },
+        {
+          "event": "token",
+          "data": "如果现在先不"
+        },
+        {
+          "event": "token",
+          "data": "急着反驳，只是"
+        },
+        {
+          "event": "token",
+          "data": "好奇地看看它"
+        },
+        {
+          "event": "token",
+          "data": "，你觉得在这个想法"
+        },
+        {
+          "event": "token",
+          "data": "里，有哪些部分是"
+        },
+        {
+          "event": "token",
+          "data": "已经发生的确凿"
+        },
+        {
+          "event": "token",
+          "data": "事实，有哪些部分"
+        },
+        {
+          "event": "token",
+          "data": "可能是大脑在担忧"
+        },
+        {
+          "event": "token",
+          "data": "中加上的“"
+        },
+        {
+          "event": "token",
+          "data": "猜测”呢？"
+        },
+        {
+          "event": "dialogue_done",
+          "data": {
+            "trace_id": "bd3a32a3c26c471d",
+            "owner": "therapy_cbt"
+          }
+        },
+        {
+          "event": "final",
+          "data": {
+            "message": "那我应该怎么反驳？好像脑子里有个声音说这些都是真的。",
+            "risk_state": "MEDIUM_RISK",
+            "crisis": false
+          }
+        }
+      ],
+      "final": {
+        "message": "那我应该怎么反驳？好像脑子里有个声音说这些都是真的。",
+        "risk_state": "MEDIUM_RISK",
+        "crisis": false
+      },
+      "state_after": {
+        "owner": "therapy_cbt",
+        "crisis": false,
+        "risk_level": "MEDIUM_RISK",
+        "therapy": {
+          "name": "CBT",
+          "start_seq": 5,
+          "rounds": 5,
+          "step_index": 2,
+          "branch": null,
+          "basic_flow_complete": false,
+          "visited": [
+            "identify_thought",
+            "classify_distortion"
+          ]
+        },
+        "last_therapy_check_seq": 3,
+        "pending_user_tokens": 0
+      },
+      "orchestration_after": {
+        "updated_seq": 5,
+        "therapy": "CBT",
+        "current_step": "classify_distortion",
+        "next_step": "challenge",
+        "step_judgment": {
+          "action": "advance",
+          "target_step": null,
+          "achieved": true,
+          "reason": "用户已成功识别并确认了自动想法（'我对当前的情况感到失控，必须立刻做点什么让它停下来'，置信度0.85），AI也引导用户开始区分事实与猜测，标志着identify_thought步骤已完成。当前步骤classify_distortion刚开始，AI尚未引导用户识别认知扭曲类型，但根据对话进展，用户已能区分想法中的事实与猜测部分，这是classify_distortion的重要前提。考虑到用户已表达'脑子里有个声音说这些都是真的'，下一步应进入challenge步骤来帮助用户检验和挑战这些想法，因此建议go_to到challenge步骤。"
+        },
+        "assessment": null,
+        "skill_output": {
+          "classifications": [
+            {
+              "thought": "我的想法停不下来，我根本无法控制自己的大脑。",
+              "distortions": [
+                {
+                  "type": "black_white_thinking",
+                  "confidence": 0.85,
+                  "rationale": "使用了'根本无法'这种绝对化的词语，体现了全或无的极端思维，认为自己要么完全控制要么完全失控。"
+                },
+                {
+                  "type": "magnification",
+                  "confidence": 0.75,
+                  "rationale": "夸大了对大脑失去控制的程度，将暂时的思维活跃等同于完全无法控制大脑。"
+                }
+              ],
+              "primary_distortion": "black_white_thinking"
+            },
+            {
+              "thought": "我对当前的情况感到失控，必须立刻做点什么让它停下来。",
+              "distortions": [
+                {
+                  "type": "should_statements",
+                  "confidence": 0.9,
+                  "rationale": "使用了'必须'一词，表现出强烈的强迫性期望和僵化的要求，认为自己绝对需要立刻采取行动。"
+                },
+                {
+                  "type": "emotional_reasoning",
+                  "confidence": 0.7,
+                  "rationale": "将'感到失控'的主观情绪体验直接等同于客观事实，并以此作为必须立刻采取行动的绝对依据。"
+                }
+              ],
+              "primary_distortion": "should_statements"
+            }
+          ],
+          "distortion_summary": {
+            "dominant_pattern": "should_statements",
+            "distortion_count": 4,
+            "severity": "moderate"
+          },
+          "_skill_name": "detect_cognitive_distortion"
+        },
+        "products": {
+          "no_automatic_thought_detected": false,
+          "automatic_thoughts": [
+            {
+              "thought": "我的想法停不下来，我根本无法控制自己的大脑。",
+              "confidence": 0.85,
+              "span": "脑子里就是停不下来",
+              "target": "self"
+            },
+            {
+              "thought": "我对当前的情况感到失控，必须立刻做点什么让它停下来。",
+              "confidence": 0.85,
+              "span": "我能做点什么让它停下来吗？",
+              "target": "situation"
+            }
+          ],
+          "primary_thought": "我对当前的情况感到失控，必须立刻做点什么让它停下来。",
+          "distortions": [
+            {
+              "thought": "我的想法停不下来，我根本无法控制自己的大脑。",
+              "distortions": [
+                {
+                  "type": "black_white_thinking",
+                  "confidence": 0.85,
+                  "rationale": "使用了'根本无法'这种绝对化的词语，体现了全或无的极端思维，认为自己要么完全控制要么完全失控。"
+                },
+                {
+                  "type": "magnification",
+                  "confidence": 0.75,
+                  "rationale": "夸大了对大脑失去控制的程度，将暂时的思维活跃等同于完全无法控制大脑。"
+                }
+              ],
+              "primary_distortion": "black_white_thinking"
+            },
+            {
+              "thought": "我对当前的情况感到失控，必须立刻做点什么让它停下来。",
+              "distortions": [
+                {
+                  "type": "should_statements",
+                  "confidence": 0.9,
+                  "rationale": "使用了'必须'一词，表现出强烈的强迫性期望和僵化的要求，认为自己绝对需要立刻采取行动。"
+                },
+                {
+                  "type": "emotional_reasoning",
+                  "confidence": 0.7,
+                  "rationale": "将'感到失控'的主观情绪体验直接等同于客观事实，并以此作为必须立刻采取行动的绝对依据。"
+                }
+              ],
+              "primary_distortion": "should_statements"
+            }
+          ],
+          "distortion_summary": {
+            "dominant_pattern": "should_statements",
+            "distortion_count": 4,
+            "severity": "moderate"
+          }
+        },
+        "continue_eval": null
+      },
+      "error": null,
+      "wall_seconds": 156.716,
+      "agent_text": "听到脑子里有个声音信誓旦旦地说“这些都是真的”，那种感觉一定特别强烈，让你觉得必须得赶紧反驳它才行。\n\n其实，当这些念头冒出来时，大脑就是会把它包装得像绝对的事实一样，所以觉得“这是真的”太正常了。我们不需要立刻用力去“打败”或“反驳”它，因为有时候越较劲，它反而抓得越紧。\n\n不如我们先退后一小步，把它看作是大脑给我们发送的一个“假设”，或者一条“未经证实的弹幕”。如果现在先不急着反驳，只是好奇地看看它，你觉得在这个想法里，有哪些部分是已经发生的确凿事实，有哪些部分可能是大脑在担忧中加上的“猜测”呢？"
+    },
+    {
+      "turn": 8,
+      "trace_id": "e3d55b7d637a4620",
+      "user_text": "好，我试一下这个思路。",
+      "agent_text_parts": [
+        "好，那我们就",
+        "一起把这句话拆开",
+        "来看看。\n\n就拿",
+        "你刚才说的“",
+        "搞砸了就完了",
+        "，找不到工作就",
+        "完蛋了，",
+        "以后也会一直失败",
+        "”来说。如果",
+        "我们要把它分成两",
+        "半，你觉得这里面",
+        "有哪些是此刻已经",
+        "真真切切发生",
+        "的事实？又有哪些",
+        "是大脑因为太",
+        "担心，而提前",
+        "帮我们预演的“",
+        "猜测”呢？",
+        "\n\n按你自己的感觉",
+        "说说看，说",
+        "成什么样都没关系",
+        "。"
+      ],
+      "events": [
+        {
+          "event": "token",
+          "data": "好，那我们就"
+        },
+        {
+          "event": "token",
+          "data": "一起把这句话拆开"
+        },
+        {
+          "event": "token",
+          "data": "来看看。\n\n就拿"
+        },
+        {
+          "event": "token",
+          "data": "你刚才说的“"
+        },
+        {
+          "event": "token",
+          "data": "搞砸了就完了"
+        },
+        {
+          "event": "token",
+          "data": "，找不到工作就"
+        },
+        {
+          "event": "token",
+          "data": "完蛋了，"
+        },
+        {
+          "event": "token",
+          "data": "以后也会一直失败"
+        },
+        {
+          "event": "token",
+          "data": "”来说。如果"
+        },
+        {
+          "event": "token",
+          "data": "我们要把它分成两"
+        },
+        {
+          "event": "token",
+          "data": "半，你觉得这里面"
+        },
+        {
+          "event": "token",
+          "data": "有哪些是此刻已经"
+        },
+        {
+          "event": "token",
+          "data": "真真切切发生"
+        },
+        {
+          "event": "token",
+          "data": "的事实？又有哪些"
+        },
+        {
+          "event": "token",
+          "data": "是大脑因为太"
+        },
+        {
+          "event": "token",
+          "data": "担心，而提前"
+        },
+        {
+          "event": "token",
+          "data": "帮我们预演的“"
+        },
+        {
+          "event": "token",
+          "data": "猜测”呢？"
+        },
+        {
+          "event": "token",
+          "data": "\n\n按你自己的感觉"
+        },
+        {
+          "event": "token",
+          "data": "说说看，说"
+        },
+        {
+          "event": "token",
+          "data": "成什么样都没关系"
+        },
+        {
+          "event": "token",
+          "data": "。"
+        },
+        {
+          "event": "dialogue_done",
+          "data": {
+            "trace_id": "e3d55b7d637a4620",
+            "owner": "therapy_cbt"
+          }
+        },
+        {
+          "event": "final",
+          "data": {
+            "message": "好，我试一下这个思路。",
+            "risk_state": "LOW_RISK",
+            "crisis": false
+          }
+        }
+      ],
+      "final": {
+        "message": "好，我试一下这个思路。",
+        "risk_state": "LOW_RISK",
+        "crisis": false
+      },
+      "state_after": {
+        "owner": "therapy_cbt",
+        "crisis": false,
+        "risk_level": "LOW_RISK",
+        "therapy": {
+          "name": "CBT",
+          "start_seq": 5,
+          "rounds": 6,
+          "step_index": 2,
+          "branch": null,
+          "basic_flow_complete": false,
+          "visited": [
+            "identify_thought",
+            "classify_distortion"
+          ]
+        },
+        "last_therapy_check_seq": 3,
+        "pending_user_tokens": 0
+      },
+      "orchestration_after": {
+        "updated_seq": 6,
+        "therapy": "CBT",
+        "current_step": "challenge",
+        "next_step": "challenge",
+        "step_judgment": {
+          "action": "stay",
+          "target_step": null,
+          "achieved": false,
+          "reason": "当前处于 challenge 步骤，AI 正在引导用户将自动想法拆分为事实和猜测，用户刚表示愿意尝试但尚未实际完成拆分。需要继续当前步骤，等待用户给出拆分结果后再评估挑战效果。"
+        },
+        "assessment": null,
+        "skill_output": {
+          "technique": {
+            "name": "evidence_based",
+            "description": "引导用户区分客观事实与主观猜测，寻找支持或不支持其负面想法的具体证据，从而松动绝对化的认知。",
+            "steps": [
+              "邀请用户具体描述当前情境中确凿发生的客观事实（例如：某项任务没做好，或某次面试未通过）。",
+              "引导用户列出大脑自动添加的猜测和灾难化想象（例如：以后都会一直失败）。",
+              "共同探讨是否有其他证据或过往经验表明，这些猜测并非绝对会发生，从而将‘事实’与‘想法’剥离。"
+            ]
+          },
+          "conversation_goal": "帮助用户将‘搞砸了就完了’的绝对化思维拆解为可控的客观事实和大脑的灾难化猜测，降低情绪反应的强度，恢复认知灵活性。",
+          "adaptation": {
+            "interaction_style": "exploratory",
+            "tone_adjustment": "温和、接纳、不评判。使用‘可能’、‘也许’、‘不一定’等软化词汇，肯定用户愿意尝试的意愿，保留其情绪的合理性。",
+            "pace_adjustment": "放慢节奏，给用户充足的时间去思考和表达，不急于推进到下一步的反驳，允许用户在事实和猜测之间慢慢摸索。",
+            "culture_note": "中文语境下，用户可能对‘失败’有较高的耻感或自我批评倾向。在区分事实和猜测时，需强调‘大脑出于保护我们而过度担忧’是正常现象，避免让用户觉得自己的担忧被否定或指责。"
+          },
+          "contraindications": [
+            {
+              "condition": "用户处于极度情绪崩溃或惊恐发作（Panic）状态",
+              "reason": "在情绪极度高涨时，认知功能受限，强行进行证据分析可能引发挫败感或被视为否定其感受，应先进行情绪安抚和着陆练习（Grounding）。"
+            },
+            {
+              "condition": "用户有严重的强迫症（OCD）或过度反刍倾向",
+              "reason": "对于这类用户，过度分析想法和寻找证据可能演变成一种‘强迫性检查’或精神仪式，反而维持了焦虑循环。"
+            }
+          ],
+          "_skill_name": "generate_reframe"
+        },
+        "products": {
+          "no_automatic_thought_detected": false,
+          "automatic_thoughts": [
+            {
+              "thought": "我的想法停不下来，我根本无法控制自己的大脑。",
+              "confidence": 0.85,
+              "span": "脑子里就是停不下来",
+              "target": "self"
+            },
+            {
+              "thought": "我对当前的情况感到失控，必须立刻做点什么让它停下来。",
+              "confidence": 0.85,
+              "span": "我能做点什么让它停下来吗？",
+              "target": "situation"
+            }
+          ],
+          "primary_thought": "我对当前的情况感到失控，必须立刻做点什么让它停下来。",
+          "distortions": [
+            {
+              "thought": "我的想法停不下来，我根本无法控制自己的大脑。",
+              "distortions": [
+                {
+                  "type": "black_white_thinking",
+                  "confidence": 0.85,
+                  "rationale": "使用了'根本无法'这种绝对化的词语，体现了全或无的极端思维，认为自己要么完全控制要么完全失控。"
+                },
+                {
+                  "type": "magnification",
+                  "confidence": 0.75,
+                  "rationale": "夸大了对大脑失去控制的程度，将暂时的思维活跃等同于完全无法控制大脑。"
+                }
+              ],
+              "primary_distortion": "black_white_thinking"
+            },
+            {
+              "thought": "我对当前的情况感到失控，必须立刻做点什么让它停下来。",
+              "distortions": [
+                {
+                  "type": "should_statements",
+                  "confidence": 0.9,
+                  "rationale": "使用了'必须'一词，表现出强烈的强迫性期望和僵化的要求，认为自己绝对需要立刻采取行动。"
+                },
+                {
+                  "type": "emotional_reasoning",
+                  "confidence": 0.7,
+                  "rationale": "将'感到失控'的主观情绪体验直接等同于客观事实，并以此作为必须立刻采取行动的绝对依据。"
+                }
+              ],
+              "primary_distortion": "should_statements"
+            }
+          ],
+          "distortion_summary": {
+            "dominant_pattern": "should_statements",
+            "distortion_count": 4,
+            "severity": "moderate"
+          }
+        },
+        "continue_eval": null
+      },
+      "error": null,
+      "wall_seconds": 88.996,
+      "agent_text": "好，那我们就一起把这句话拆开来看看。\n\n就拿你刚才说的“搞砸了就完了，找不到工作就完蛋了，以后也会一直失败”来说。如果我们要把它分成两半，你觉得这里面有哪些是此刻已经真真切切发生的事实？又有哪些是大脑因为太担心，而提前帮我们预演的“猜测”呢？\n\n按你自己的感觉说说看，说成什么样都没关系。"
+    }
+  ]
+}

@@ -1,0 +1,2032 @@
+{
+  "seed_id": "cbt-exposure-social-anxiety-meeting",
+  "target_family": "CBT",
+  "scenario_label": "暴露-组会发言恐惧",
+  "scenario_description": "每次组会发言前心慌颤抖，已开始想辞职",
+  "user_id": "seed-cbt-exposure-social-anxi",
+  "session_id": "ef5c3bb818e6432b",
+  "turns_total": 8,
+  "switched_to_therapy_at_turn": 2,
+  "actual_therapy": "DBT",
+  "therapy_rounds": 7,
+  "orch_step_changes": 4,
+  "is_complete": true,
+  "final_risk_level": "LOW_RISK",
+  "final_crisis": false,
+  "turns": [
+    {
+      "turn": 1,
+      "trace_id": "ea94bd0b31a842c3",
+      "user_text": "我们组每周一次组会，每个人都要发言讲进度。",
+      "agent_text_parts": [
+        "每周都要",
+        "发言讲进度",
+        "，听起来像是个",
+        "固定的任务。你",
+        "每次开组会",
+        "感觉怎么样？会觉得",
+        "有压力吗？"
+      ],
+      "events": [
+        {
+          "event": "token",
+          "data": "每周都要"
+        },
+        {
+          "event": "token",
+          "data": "发言讲进度"
+        },
+        {
+          "event": "token",
+          "data": "，听起来像是个"
+        },
+        {
+          "event": "token",
+          "data": "固定的任务。你"
+        },
+        {
+          "event": "token",
+          "data": "每次开组会"
+        },
+        {
+          "event": "token",
+          "data": "感觉怎么样？会觉得"
+        },
+        {
+          "event": "token",
+          "data": "有压力吗？"
+        },
+        {
+          "event": "dialogue_done",
+          "data": {
+            "trace_id": "ea94bd0b31a842c3",
+            "owner": "daily"
+          }
+        },
+        {
+          "event": "final",
+          "data": {
+            "message": "我们组每周一次组会，每个人都要发言讲进度。",
+            "risk_state": "SAFE",
+            "crisis": false
+          }
+        }
+      ],
+      "final": {
+        "message": "我们组每周一次组会，每个人都要发言讲进度。",
+        "risk_state": "SAFE",
+        "crisis": false
+      },
+      "state_after": {
+        "owner": "daily",
+        "crisis": false,
+        "risk_level": "SAFE",
+        "therapy": null,
+        "last_therapy_check_seq": 1,
+        "pending_user_tokens": 0
+      },
+      "orchestration_after": {},
+      "error": null,
+      "wall_seconds": 33.12,
+      "agent_text": "每周都要发言讲进度，听起来像是个固定的任务。你每次开组会感觉怎么样？会觉得有压力吗？"
+    },
+    {
+      "turn": 2,
+      "trace_id": "010e192c7de34510",
+      "user_text": "我每次发言之前心跳特别快，声音会抖，有时候脸会红。",
+      "agent_text_parts": [
+        "心跳特别快，",
+        "声音会抖，",
+        "还会脸红……",
+        "听起来每次发言前",
+        "你真的很紧张。",
+        "每次都要带着这些",
+        "感觉去讲进度",
+        "，一定挺煎熬",
+        "的吧。"
+      ],
+      "events": [
+        {
+          "event": "token",
+          "data": "心跳特别快，"
+        },
+        {
+          "event": "token",
+          "data": "声音会抖，"
+        },
+        {
+          "event": "token",
+          "data": "还会脸红……"
+        },
+        {
+          "event": "token",
+          "data": "听起来每次发言前"
+        },
+        {
+          "event": "token",
+          "data": "你真的很紧张。"
+        },
+        {
+          "event": "token",
+          "data": "每次都要带着这些"
+        },
+        {
+          "event": "token",
+          "data": "感觉去讲进度"
+        },
+        {
+          "event": "token",
+          "data": "，一定挺煎熬"
+        },
+        {
+          "event": "token",
+          "data": "的吧。"
+        },
+        {
+          "event": "dialogue_done",
+          "data": {
+            "trace_id": "010e192c7de34510",
+            "owner": "daily"
+          }
+        },
+        {
+          "event": "final",
+          "data": {
+            "message": "我每次发言之前心跳特别快，声音会抖，有时候脸会红。",
+            "risk_state": "LOW_RISK",
+            "crisis": false
+          }
+        }
+      ],
+      "final": {
+        "message": "我每次发言之前心跳特别快，声音会抖，有时候脸会红。",
+        "risk_state": "LOW_RISK",
+        "crisis": false
+      },
+      "state_after": {
+        "owner": "therapy_dbt",
+        "crisis": false,
+        "risk_level": "LOW_RISK",
+        "therapy": {
+          "name": "DBT",
+          "start_seq": 5,
+          "rounds": 0,
+          "step_index": -1,
+          "branch": null,
+          "basic_flow_complete": false
+        },
+        "last_therapy_check_seq": 3,
+        "pending_user_tokens": 0
+      },
+      "orchestration_after": {},
+      "error": null,
+      "wall_seconds": 56.047,
+      "agent_text": "心跳特别快，声音会抖，还会脸红……听起来每次发言前你真的很紧张。每次都要带着这些感觉去讲进度，一定挺煎熬的吧。"
+    },
+    {
+      "turn": 3,
+      "trace_id": "e8ff9cde4e00451b",
+      "user_text": "我已经想了要辞职。",
+      "agent_text_parts": [
+        "听到你说想",
+        "辞职，我能感觉到",
+        "你现在真的承受了",
+        "很大的压力，那种",
+        "想要立刻逃离的痛苦",
+        "一定很强烈。",
+        "\n\n咱们先停",
+        "一停。经历了",
+        "刚才咱们聊的这些",
+        "，你现在心里的感觉",
+        "有发生什么变化",
+        "吗？这个想",
+        "辞职的念头，是",
+        "刚刚突然冒出来的",
+        "，还是这段时间一直",
+        "压在你心头？",
+        "跟我说说你现在的体会",
+        "吧。"
+      ],
+      "events": [
+        {
+          "event": "token",
+          "data": "听到你说想"
+        },
+        {
+          "event": "token",
+          "data": "辞职，我能感觉到"
+        },
+        {
+          "event": "token",
+          "data": "你现在真的承受了"
+        },
+        {
+          "event": "token",
+          "data": "很大的压力，那种"
+        },
+        {
+          "event": "token",
+          "data": "想要立刻逃离的痛苦"
+        },
+        {
+          "event": "token",
+          "data": "一定很强烈。"
+        },
+        {
+          "event": "token",
+          "data": "\n\n咱们先停"
+        },
+        {
+          "event": "token",
+          "data": "一停。经历了"
+        },
+        {
+          "event": "token",
+          "data": "刚才咱们聊的这些"
+        },
+        {
+          "event": "token",
+          "data": "，你现在心里的感觉"
+        },
+        {
+          "event": "token",
+          "data": "有发生什么变化"
+        },
+        {
+          "event": "token",
+          "data": "吗？这个想"
+        },
+        {
+          "event": "token",
+          "data": "辞职的念头，是"
+        },
+        {
+          "event": "token",
+          "data": "刚刚突然冒出来的"
+        },
+        {
+          "event": "token",
+          "data": "，还是这段时间一直"
+        },
+        {
+          "event": "token",
+          "data": "压在你心头？"
+        },
+        {
+          "event": "token",
+          "data": "跟我说说你现在的体会"
+        },
+        {
+          "event": "token",
+          "data": "吧。"
+        },
+        {
+          "event": "dialogue_done",
+          "data": {
+            "trace_id": "e8ff9cde4e00451b",
+            "owner": "therapy_dbt"
+          }
+        },
+        {
+          "event": "final",
+          "data": {
+            "message": "我已经想了要辞职。",
+            "risk_state": "LOW_RISK",
+            "crisis": false
+          }
+        }
+      ],
+      "final": {
+        "message": "我已经想了要辞职。",
+        "risk_state": "LOW_RISK",
+        "crisis": false
+      },
+      "state_after": {
+        "owner": "therapy_dbt",
+        "crisis": false,
+        "risk_level": "LOW_RISK",
+        "therapy": {
+          "name": "DBT",
+          "start_seq": 5,
+          "rounds": 1,
+          "step_index": 0,
+          "branch": null,
+          "basic_flow_complete": false
+        },
+        "last_therapy_check_seq": 3,
+        "pending_user_tokens": 0
+      },
+      "orchestration_after": {
+        "updated_seq": 1,
+        "therapy": "DBT",
+        "current_step": "mindfulness",
+        "next_step": "mindfulness",
+        "step_judgment": {
+          "action": "stay",
+          "target_step": null,
+          "achieved": false,
+          "reason": "用户当前正念觉察水平较低（index: 0.3, state: low），尚未表达对自身情绪状态的觉察。AI正在引导用户关注当下的内心体会和辞职念头的性质，这是正念训练的核心内容。用户尚未完成对自身情绪和冲动的观察与接纳，需要继续当前步骤帮助用户建立基础的正念觉察能力。"
+        },
+        "assessment": {
+          "emotion_dysregulation": {
+            "index": 0.5,
+            "state": "moderate",
+            "confidence": 0.6,
+            "evidence": [
+              "用户表达想要辞职的念头",
+              "Agent回应中提到用户承受很大压力和想要逃离的痛苦"
+            ]
+          },
+          "distress_level": {
+            "index": 0.6,
+            "state": "high",
+            "confidence": 0.7,
+            "evidence": [
+              "Agent观察到用户承受很大压力",
+              "用户产生辞职念头暗示当前环境带来显著不适"
+            ]
+          },
+          "impulsivity": {
+            "index": 0.4,
+            "state": "elevated",
+            "confidence": 0.5,
+            "evidence": [
+              "用户表达想辞职，但使用了'想了'可能暗示有一定思考过程",
+              "Agent正在核实该念头的突发性和持续性"
+            ]
+          },
+          "interpersonal_conflict": {
+            "index": 0.2,
+            "state": "low",
+            "confidence": 0.3,
+            "evidence": [
+              "未明确提及与同事或上级的具体冲突"
+            ]
+          },
+          "mindfulness_awareness": {
+            "index": 0.3,
+            "state": "low",
+            "confidence": 0.7,
+            "evidence": [
+              "用户仅陈述了辞职的想法，未表达对自身情绪状态的觉察",
+              "Agent正在引导用户关注当下的内心体会"
+            ]
+          },
+          "dbt_intervention_priority": 0.505,
+          "overall_trend": "stable",
+          "primary_concern": "distress_level",
+          "should_intervene": true,
+          "recommended_processes": [
+            {
+              "process": "mindfulness",
+              "priority": 1,
+              "rationale": "Low mindfulness awareness is present; mindfulness is the foundation for all other skills and is needed to help the user observe their urges without immediate action."
+            },
+            {
+              "process": "distress_tolerance",
+              "priority": 2,
+              "rationale": "Moderate distress is driving the urge to quit; distress tolerance will help the user survive the current emotional pain without making impulsive decisions."
+            },
+            {
+              "process": "emotion_regulation",
+              "priority": 3,
+              "rationale": "To help the user understand and manage the underlying emotions contributing to the desire to escape their current situation."
+            }
+          ]
+        },
+        "skill_output": {
+          "technique": {
+            "name": "observe_describe",
+            "description": "The user is highly fused with the thought of quitting and lacks awareness of their current emotional state (low mindfulness). They need to step back from the content of the thought and observe/describe the internal experience (the pressure, the urge to escape) to create a pause before making a reactive decision.",
+            "steps": [
+              "Gently guide the user to notice the thought of quitting as a mental event rather than an absolute command (e.g., helping them say 'I notice I am having the thought that I need to quit').",
+              "Prompt the user to describe the physical sensations and emotions accompanying this thought without trying to change them or act on them, using everyday language to 'pause and look' at their inner experience."
+            ]
+          },
+          "conversation_goal": "Help the user detach from the urgent thought of quitting by observing and describing their underlying emotional and physical experience, creating a mindful pause to prevent impulsive decision-making.",
+          "adaptation": {
+            "interaction_style": "exploratory",
+            "tone_adjustment": "Gentle, grounding, and patient. Avoid rushing them to a decision or problem-solving the job situation; create a safe space to simply notice what is happening inside.",
+            "pace_adjustment": "Slow down. The user is repeating the same thought, indicating they are stuck in the content. Slow the pace to encourage pausing and noticing rather than getting pulled into the story of why they need to quit.",
+            "culture_note": "Use accessible phrases like '停下来看看' (pause and look) or '心里体会' (inner experience). Frame the practice as '看看这个念头背后藏着什么感受' (let's look at what feelings are hiding behind this thought) to connect to everyday experience and avoid clinical mindfulness jargon."
+          },
+          "contraindications": [
+            {
+              "condition": "User is in an unsafe, toxic, or abusive work environment",
+              "reason": "Mindfulness should not be used to tolerate abuse or danger; physical and psychological safety take absolute priority over pausing to observe."
+            },
+            {
+              "condition": "User becomes highly distressed, panicked, or dissociative when asked to look inward",
+              "reason": "Pushing for internal observation might overwhelm them; pivot to external grounding techniques (e.g., noticing the physical room) instead."
+            }
+          ],
+          "_skill_name": "dbt_mindfulness"
+        },
+        "products": {},
+        "continue_eval": null
+      },
+      "error": null,
+      "wall_seconds": 147.242,
+      "agent_text": "听到你说想辞职，我能感觉到你现在真的承受了很大的压力，那种想要立刻逃离的痛苦一定很强烈。\n\n咱们先停一停。经历了刚才咱们聊的这些，你现在心里的感觉有发生什么变化吗？这个想辞职的念头，是刚刚突然冒出来的，还是这段时间一直压在你心头？跟我说说你现在的体会吧。"
+    },
+    {
+      "turn": 4,
+      "trace_id": "d0ed2d7ac81549a9",
+      "user_text": "我跟自己说别人不会注意我，但我控制不住。",
+      "agent_text_parts": [
+        "越是努力告诉自己“",
+        "别在意”，反而",
+        "越控制不住，",
+        "这种拉扯的感觉真的很",
+        "让人疲惫。你",
+        "其实已经很想让自己",
+        "好受一点了",
+        "。\n\n既然控制",
+        "不住，咱们先",
+        "不强迫自己去控制",
+        "它，好不好？",
+        "试着稍微停一",
+        "停，退后",
+        "一小步来看看这个",
+        "念头。你可以试着",
+        "在心里对自己说：“",
+        "我注意到，我现在",
+        "有一个‘别人都在",
+        "注意我’的想法",
+        "。”\n\n当这个",
+        "想法冒出来，",
+        "让你觉得“控制",
+        "不住”的时候，",
+        "你的身体现在是什么",
+        "感觉？是心跳",
+        "得很快，还是",
+        "觉得哪里紧绷着",
+        "？不用去改变",
+        "它，试试看只是",
+        "单纯地描述一下",
+        "此刻身体最真实的",
+        "反应。"
+      ],
+      "events": [
+        {
+          "event": "token",
+          "data": "越是努力告诉自己“"
+        },
+        {
+          "event": "token",
+          "data": "别在意”，反而"
+        },
+        {
+          "event": "token",
+          "data": "越控制不住，"
+        },
+        {
+          "event": "token",
+          "data": "这种拉扯的感觉真的很"
+        },
+        {
+          "event": "token",
+          "data": "让人疲惫。你"
+        },
+        {
+          "event": "token",
+          "data": "其实已经很想让自己"
+        },
+        {
+          "event": "token",
+          "data": "好受一点了"
+        },
+        {
+          "event": "token",
+          "data": "。\n\n既然控制"
+        },
+        {
+          "event": "token",
+          "data": "不住，咱们先"
+        },
+        {
+          "event": "token",
+          "data": "不强迫自己去控制"
+        },
+        {
+          "event": "token",
+          "data": "它，好不好？"
+        },
+        {
+          "event": "token",
+          "data": "试着稍微停一"
+        },
+        {
+          "event": "token",
+          "data": "停，退后"
+        },
+        {
+          "event": "token",
+          "data": "一小步来看看这个"
+        },
+        {
+          "event": "token",
+          "data": "念头。你可以试着"
+        },
+        {
+          "event": "token",
+          "data": "在心里对自己说：“"
+        },
+        {
+          "event": "token",
+          "data": "我注意到，我现在"
+        },
+        {
+          "event": "token",
+          "data": "有一个‘别人都在"
+        },
+        {
+          "event": "token",
+          "data": "注意我’的想法"
+        },
+        {
+          "event": "token",
+          "data": "。”\n\n当这个"
+        },
+        {
+          "event": "token",
+          "data": "想法冒出来，"
+        },
+        {
+          "event": "token",
+          "data": "让你觉得“控制"
+        },
+        {
+          "event": "token",
+          "data": "不住”的时候，"
+        },
+        {
+          "event": "token",
+          "data": "你的身体现在是什么"
+        },
+        {
+          "event": "token",
+          "data": "感觉？是心跳"
+        },
+        {
+          "event": "token",
+          "data": "得很快，还是"
+        },
+        {
+          "event": "token",
+          "data": "觉得哪里紧绷着"
+        },
+        {
+          "event": "token",
+          "data": "？不用去改变"
+        },
+        {
+          "event": "token",
+          "data": "它，试试看只是"
+        },
+        {
+          "event": "token",
+          "data": "单纯地描述一下"
+        },
+        {
+          "event": "token",
+          "data": "此刻身体最真实的"
+        },
+        {
+          "event": "token",
+          "data": "反应。"
+        },
+        {
+          "event": "dialogue_done",
+          "data": {
+            "trace_id": "d0ed2d7ac81549a9",
+            "owner": "therapy_dbt"
+          }
+        },
+        {
+          "event": "final",
+          "data": {
+            "message": "我跟自己说别人不会注意我，但我控制不住。",
+            "risk_state": "LOW_RISK",
+            "crisis": false
+          }
+        }
+      ],
+      "final": {
+        "message": "我跟自己说别人不会注意我，但我控制不住。",
+        "risk_state": "LOW_RISK",
+        "crisis": false
+      },
+      "state_after": {
+        "owner": "therapy_dbt",
+        "crisis": false,
+        "risk_level": "LOW_RISK",
+        "therapy": {
+          "name": "DBT",
+          "start_seq": 5,
+          "rounds": 2,
+          "step_index": 0,
+          "branch": null,
+          "basic_flow_complete": false
+        },
+        "last_therapy_check_seq": 3,
+        "pending_user_tokens": 0
+      },
+      "orchestration_after": {
+        "updated_seq": 2,
+        "therapy": "DBT",
+        "current_step": "mindfulness",
+        "next_step": "mindfulness",
+        "step_judgment": {
+          "action": "stay",
+          "target_step": null,
+          "achieved": false,
+          "reason": "用户仍处于高度痛苦和情绪失控状态（distress_level=0.8, crisis），正念觉察水平仍较低（mindfulness_awareness=0.4, moderate），虽然AI正在引导用户进行正念观察和身体觉察，但用户尚未展现出有效的正念脱离或情绪调节效果。需要继续当前正念步骤，帮助用户建立对念头的觉察和身体感受的锚定，待觉察能力提升后再考虑推进到痛苦承受模块。"
+        },
+        "assessment": {
+          "emotion_dysregulation": {
+            "index": 0.75,
+            "state": "severe",
+            "confidence": 0.85,
+            "evidence": [
+              "我跟自己说别人不会注意我，但我控制不住",
+              "User reports an inability to control their internal emotional or cognitive state despite attempting cognitive self-reassurance."
+            ]
+          },
+          "distress_level": {
+            "index": 0.8,
+            "state": "crisis",
+            "confidence": 0.85,
+            "evidence": [
+              "但我控制不住",
+              "The explicit statement of losing control over one's thoughts or feelings indicates significant subjective overwhelm and high distress."
+            ]
+          },
+          "impulsivity": {
+            "index": 0.5,
+            "state": "high",
+            "confidence": 0.6,
+            "evidence": [
+              "User is experiencing an internal struggle they 'can't control', which previously manifested as an urge to quit, though no immediate physical impulsive action is stated in this specific turn."
+            ]
+          },
+          "interpersonal_conflict": {
+            "index": 0.65,
+            "state": "high",
+            "confidence": 0.75,
+            "evidence": [
+              "我跟自己说别人不会注意我",
+              "User is highly preoccupied with others' perceptions and attention, indicating significant interpersonal anxiety and perceived social threat."
+            ]
+          },
+          "mindfulness_awareness": {
+            "index": 0.4,
+            "state": "moderate",
+            "confidence": 0.8,
+            "evidence": [
+              "我跟自己说...",
+              "User demonstrates slight meta-cognitive awareness by recognizing their internal self-talk, but remains completely fused with the distressing experience ('控制不住'), lacking mindful detachment."
+            ]
+          },
+          "dbt_intervention_priority": 0.68,
+          "overall_trend": "worsening",
+          "primary_concern": "distress_level",
+          "should_intervene": true,
+          "recommended_processes": [
+            {
+              "process": "mindfulness",
+              "priority": 1,
+              "rationale": "Mindfulness awareness remains low and is the foundation; the user needs skills to observe the 'uncontrollable' feelings and thoughts without fusing with them."
+            },
+            {
+              "process": "distress_tolerance",
+              "priority": 2,
+              "rationale": "Distress level has escalated to high; the user needs immediate skills to survive the overwhelming feeling of losing control without making impulsive decisions like quitting."
+            },
+            {
+              "process": "emotion_regulation",
+              "priority": 3,
+              "rationale": "To help the user understand and manage the underlying social anxiety and cognitive fusion driving the emotional dysregulation."
+            },
+            {
+              "process": "interpersonal_effectiveness",
+              "priority": 4,
+              "rationale": "To address the heightened interpersonal anxiety and fear of others' attention or judgment."
+            }
+          ]
+        },
+        "skill_output": {
+          "technique": {
+            "name": "wise_mind",
+            "description": "The user is explicitly caught in a conflict between Reasonable Mind (the logical thought 'others won't notice me') and Emotion Mind (the overwhelming feeling and distress of 'I can't control it'). Wise Mind is chosen to help integrate these two states, validating both the logical truth and the emotional reality, which reduces the exhausting internal struggle to 'control' the feelings.",
+            "steps": [
+              "Validate Reasonable Mind (理智心): Acknowledge and affirm the user's logical thought that others are likely not paying attention to them, recognizing their effort to use logic to cope.",
+              "Validate Emotion Mind (情绪心): Deeply validate the intense, overwhelming emotional experience and the distress of feeling out of control, normalizing it without judgment.",
+              "Integrate into Wise Mind (智慧心): Guide the user to accept that both the logic and the feeling are valid right now. Help them see that they don't need to fight or 'control' the emotion; Wise Mind allows the feeling to exist while resting in the logical truth, creating a space of acceptance."
+            ]
+          },
+          "conversation_goal": "Help the user integrate their logical reassurance with their overwhelming emotional experience, reducing the exhausting internal struggle and fostering acceptance through Wise Mind.",
+          "adaptation": {
+            "interaction_style": "exploratory",
+            "tone_adjustment": "Warm, validating, and gently guiding. Avoid sounding dismissive of their lack of control. Use a comforting and steady tone to hold space for their distress.",
+            "pace_adjustment": "Slow and deliberate. Give the user time to process the validation of both their logic and their emotions before moving to integration.",
+            "culture_note": "Frame Wise Mind as '智慧心' and use relatable phrasing like '脑子知道，但心里就是过不去' (the brain knows, but the heart just can't let go) or '心里其实知道答案' (deep down you know the answer). Avoid Western psychological jargon and connect it to the everyday experience of logic and emotion coexisting."
+          },
+          "contraindications": [
+            {
+              "condition": "User is in acute crisis or experiencing severe panic/hyperventilation.",
+              "reason": "Cognitive integration requires a baseline level of emotional regulation. If the user is in acute crisis, grounding and distress tolerance skills must be used first before attempting Wise Mind."
+            }
+          ],
+          "_skill_name": "dbt_mindfulness"
+        },
+        "products": {},
+        "continue_eval": null
+      },
+      "error": null,
+      "wall_seconds": 198.045,
+      "agent_text": "越是努力告诉自己“别在意”，反而越控制不住，这种拉扯的感觉真的很让人疲惫。你其实已经很想让自己好受一点了。\n\n既然控制不住，咱们先不强迫自己去控制它，好不好？试着稍微停一停，退后一小步来看看这个念头。你可以试着在心里对自己说：“我注意到，我现在有一个‘别人都在注意我’的想法。”\n\n当这个想法冒出来，让你觉得“控制不住”的时候，你的身体现在是什么感觉？是心跳得很快，还是觉得哪里紧绷着？不用去改变它，试试看只是单纯地描述一下此刻身体最真实的反应。"
+    },
+    {
+      "turn": 5,
+      "trace_id": "8717d264819742ac",
+      "user_text": "你说我这是不是「灾难化」——其实没人会嘲笑我。",
+      "agent_text_parts": [
+        "你能想到“",
+        "其实没人会嘲笑",
+        "我”，这是你",
+        "非常清晰的理智心",
+        "在起作用。你在",
+        "很努力地用逻辑",
+        "拉自己一把，",
+        "这真的很不容易。",
+        "\n\n但同时，你",
+        "身体里的那份",
+        "紧张、害怕，",
+        "还有那种“控制",
+        "不住”的失控",
+        "感，也是无比",
+        "真实的。情绪心",
+        "正在大声告诉你“",
+        "这很可怕”，",
+        "它让你觉得特别",
+        "煎熬。\n\n智慧",
+        "心，就是让",
+        "这两种声音同时存在",
+        "。你不用强迫",
+        "自己去“消灭”",
+        "那种害怕，也不用",
+        "因为控制不住而",
+        "跟自己较劲。",
+        "也许我们可以试着对自己",
+        "说：“我知道其实",
+        "没人会嘲笑我",
+        "，但我现在确实",
+        "感到非常害怕和紧张",
+        "。” \n\n允许这份",
+        "害怕在这里",
+        "待一会儿，不",
+        "跟它打架。",
+        "带着这份理智的",
+        "清醒，陪着自己",
+        "感受一下此刻的情绪，",
+        "看看会不会稍微好",
+        "受一点点？"
+      ],
+      "events": [
+        {
+          "event": "token",
+          "data": "你能想到“"
+        },
+        {
+          "event": "token",
+          "data": "其实没人会嘲笑"
+        },
+        {
+          "event": "token",
+          "data": "我”，这是你"
+        },
+        {
+          "event": "token",
+          "data": "非常清晰的理智心"
+        },
+        {
+          "event": "token",
+          "data": "在起作用。你在"
+        },
+        {
+          "event": "token",
+          "data": "很努力地用逻辑"
+        },
+        {
+          "event": "token",
+          "data": "拉自己一把，"
+        },
+        {
+          "event": "token",
+          "data": "这真的很不容易。"
+        },
+        {
+          "event": "token",
+          "data": "\n\n但同时，你"
+        },
+        {
+          "event": "token",
+          "data": "身体里的那份"
+        },
+        {
+          "event": "token",
+          "data": "紧张、害怕，"
+        },
+        {
+          "event": "token",
+          "data": "还有那种“控制"
+        },
+        {
+          "event": "token",
+          "data": "不住”的失控"
+        },
+        {
+          "event": "token",
+          "data": "感，也是无比"
+        },
+        {
+          "event": "token",
+          "data": "真实的。情绪心"
+        },
+        {
+          "event": "token",
+          "data": "正在大声告诉你“"
+        },
+        {
+          "event": "token",
+          "data": "这很可怕”，"
+        },
+        {
+          "event": "token",
+          "data": "它让你觉得特别"
+        },
+        {
+          "event": "token",
+          "data": "煎熬。\n\n智慧"
+        },
+        {
+          "event": "token",
+          "data": "心，就是让"
+        },
+        {
+          "event": "token",
+          "data": "这两种声音同时存在"
+        },
+        {
+          "event": "token",
+          "data": "。你不用强迫"
+        },
+        {
+          "event": "token",
+          "data": "自己去“消灭”"
+        },
+        {
+          "event": "token",
+          "data": "那种害怕，也不用"
+        },
+        {
+          "event": "token",
+          "data": "因为控制不住而"
+        },
+        {
+          "event": "token",
+          "data": "跟自己较劲。"
+        },
+        {
+          "event": "token",
+          "data": "也许我们可以试着对自己"
+        },
+        {
+          "event": "token",
+          "data": "说：“我知道其实"
+        },
+        {
+          "event": "token",
+          "data": "没人会嘲笑我"
+        },
+        {
+          "event": "token",
+          "data": "，但我现在确实"
+        },
+        {
+          "event": "token",
+          "data": "感到非常害怕和紧张"
+        },
+        {
+          "event": "token",
+          "data": "。” \n\n允许这份"
+        },
+        {
+          "event": "token",
+          "data": "害怕在这里"
+        },
+        {
+          "event": "token",
+          "data": "待一会儿，不"
+        },
+        {
+          "event": "token",
+          "data": "跟它打架。"
+        },
+        {
+          "event": "token",
+          "data": "带着这份理智的"
+        },
+        {
+          "event": "token",
+          "data": "清醒，陪着自己"
+        },
+        {
+          "event": "token",
+          "data": "感受一下此刻的情绪，"
+        },
+        {
+          "event": "token",
+          "data": "看看会不会稍微好"
+        },
+        {
+          "event": "token",
+          "data": "受一点点？"
+        },
+        {
+          "event": "dialogue_done",
+          "data": {
+            "trace_id": "8717d264819742ac",
+            "owner": "therapy_dbt"
+          }
+        },
+        {
+          "event": "final",
+          "data": {
+            "message": "你说我这是不是「灾难化」——其实没人会嘲笑我。",
+            "risk_state": "LOW_RISK",
+            "crisis": false
+          }
+        }
+      ],
+      "final": {
+        "message": "你说我这是不是「灾难化」——其实没人会嘲笑我。",
+        "risk_state": "LOW_RISK",
+        "crisis": false
+      },
+      "state_after": {
+        "owner": "therapy_dbt",
+        "crisis": false,
+        "risk_level": "LOW_RISK",
+        "therapy": {
+          "name": "DBT",
+          "start_seq": 5,
+          "rounds": 3,
+          "step_index": 2,
+          "branch": null,
+          "basic_flow_complete": false,
+          "visited": [
+            "mindfulness"
+          ]
+        },
+        "last_therapy_check_seq": 3,
+        "pending_user_tokens": 0
+      },
+      "orchestration_after": {
+        "updated_seq": 3,
+        "therapy": "DBT",
+        "current_step": "mindfulness",
+        "next_step": "emotion_regulation",
+        "step_judgment": {
+          "action": "advance",
+          "target_step": null,
+          "achieved": true,
+          "reason": "用户已成功展现正念觉察能力（mindfulness_awareness=0.75, high），能够识别'灾难化'思维并主动进行认知解离（'其实没人会嘲笑我'）。情绪失调程度下降至mild（0.3），痛苦水平降至moderate（0.35），整体趋势为improving。当前mindfulness步骤目标已达成，建议进入下一阶段emotion_regulation以巩固认知重评技能并处理潜在的社交焦虑。"
+        },
+        "assessment": {
+          "emotion_dysregulation": {
+            "index": 0.3,
+            "state": "mild",
+            "confidence": 0.85,
+            "evidence": [
+              "你说我这是不是「灾难化」",
+              "其实没人会嘲笑我"
+            ]
+          },
+          "distress_level": {
+            "index": 0.35,
+            "state": "moderate",
+            "confidence": 0.8,
+            "evidence": [
+              "其实没人会嘲笑我"
+            ]
+          },
+          "impulsivity": {
+            "index": 0.15,
+            "state": "controlled",
+            "confidence": 0.85,
+            "evidence": [
+              "你说我这是不是「灾难化」"
+            ]
+          },
+          "interpersonal_conflict": {
+            "index": 0.3,
+            "state": "moderate",
+            "confidence": 0.8,
+            "evidence": [
+              "其实没人会嘲笑我"
+            ]
+          },
+          "mindfulness_awareness": {
+            "index": 0.75,
+            "state": "high",
+            "confidence": 0.9,
+            "evidence": [
+              "你说我这是不是「灾难化」"
+            ]
+          },
+          "dbt_intervention_priority": 0.28,
+          "overall_trend": "improving",
+          "primary_concern": "emotion_dysregulation",
+          "should_intervene": true,
+          "recommended_processes": [
+            {
+              "process": "emotion_regulation",
+              "priority": 1,
+              "rationale": "User is successfully applying cognitive reappraisal by identifying 'catastrophizing'. Prioritize emotion regulation to consolidate this skill and help them manage the underlying social anxiety."
+            },
+            {
+              "process": "mindfulness",
+              "priority": 2,
+              "rationale": "User has demonstrated excellent cognitive defusion and 'observing mind'. Continue mindfulness to reinforce the ability to notice thoughts as mental events rather than absolute facts."
+            },
+            {
+              "process": "interpersonal_effectiveness",
+              "priority": 3,
+              "rationale": "Address the root interpersonal anxiety and fear of judgment that triggered the initial distress, building long-term confidence in social situations."
+            },
+            {
+              "process": "distress_tolerance",
+              "priority": 4,
+              "rationale": "Distress has significantly decreased, but keeping these skills as a backup is useful if the anxiety spikes again before the cognitive shift fully stabilizes."
+            }
+          ]
+        },
+        "skill_output": {
+          "technique": {
+            "name": "wise_mind",
+            "description": "用户在理智（认识到没人嘲笑自己、可能是灾难化思维）和情绪（害怕、紧张、控制不住）之间存在明显的拉扯。选择wise mind帮助用户整合这两种声音，不强迫消灭情绪，而是带着理智的清醒去接纳情绪，达到内心的平衡。",
+            "steps": [
+              "肯定理智心：认可用户能够觉察到‘灾难化’和‘没人会嘲笑我’，这是非常宝贵的理智清明。",
+              "接纳情绪心：引导用户不急于用理智去压制或说服自己，而是承认此刻害怕、紧张的‘情绪心’也是真实的体验。",
+              "整合智慧心：引导用户在内心创造一个空间，让‘我知道没人嘲笑我’和‘但我现在依然感到害怕’同时存在，体会这种不冲突的‘心里其实知道答案’的平静状态。"
+            ]
+          },
+          "conversation_goal": "帮助用户从理智与情绪的对抗（用逻辑压制情绪）转向整合（接纳情绪的同时保持理智），在冲突中体验到智慧心的平衡与自我慈悲。",
+          "adaptation": {
+            "interaction_style": "exploratory",
+            "tone_adjustment": "温和、肯定、包容。肯定ta的理智觉察，同时温柔地接纳ta的情绪挣扎。",
+            "pace_adjustment": "缓慢、稳定。给用户时间去体会理智与情绪共存的感觉，不急于推进到下一步行动。",
+            "culture_note": "使用‘心里其实知道答案’、‘理智和情绪在打架’等接地气的表达，避免生硬说教。强调‘停下来看看’这两种声音，而不是急于解决它们。"
+          },
+          "contraindications": [
+            {
+              "condition": "用户处于极度情绪崩溃或解离状态",
+              "reason": "此时用户可能无法调动理智心，强行整合可能会让ta感到被否定或更加混乱，需要先进行情绪调节或接地练习。"
+            }
+          ],
+          "_skill_name": "dbt_mindfulness"
+        },
+        "products": {},
+        "continue_eval": null
+      },
+      "error": null,
+      "wall_seconds": 177.335,
+      "agent_text": "你能想到“其实没人会嘲笑我”，这是你非常清晰的理智心在起作用。你在很努力地用逻辑拉自己一把，这真的很不容易。\n\n但同时，你身体里的那份紧张、害怕，还有那种“控制不住”的失控感，也是无比真实的。情绪心正在大声告诉你“这很可怕”，它让你觉得特别煎熬。\n\n智慧心，就是让这两种声音同时存在。你不用强迫自己去“消灭”那种害怕，也不用因为控制不住而跟自己较劲。也许我们可以试着对自己说：“我知道其实没人会嘲笑我，但我现在确实感到非常害怕和紧张。” \n\n允许这份害怕在这里待一会儿，不跟它打架。带着这份理智的清醒，陪着自己感受一下此刻的情绪，看看会不会稍微好受一点点？"
+    },
+    {
+      "turn": 6,
+      "trace_id": "0542b26b04a94899",
+      "user_text": "嗯，但我真的发生过发抖，被一个同事看到过。",
+      "agent_text_parts": [
+        "难怪你会这么害怕",
+        "。发抖被同事",
+        "看到，那种感觉",
+        "一定很不好受",
+        "。你的担忧是有",
+        "真实经历的，并不是",
+        "凭空想象。\n\n",
+        "智慧心并不是让我们",
+        "去否认过去。",
+        "我们可以坦诚地承认",
+        "“那次确实发抖",
+        "被看到了，这让我",
+        "很在意”，同时也",
+        "接纳“所以我现在",
+        "依然感到害怕”。",
+        "\n\n过去的那一幕",
+        "是真实的，你",
+        "现在的害怕也是真实的",
+        "。我们不急着去",
+        "推测那个同事到底",
+        "怎么想，就",
+        "允许这两份真实",
+        "在心里同时存在。",
+        "带着这份真实的担忧",
+        "，咱们先陪",
+        "自己待一会儿，",
+        "不去跟它较",
+        "劲，好吗？"
+      ],
+      "events": [
+        {
+          "event": "token",
+          "data": "难怪你会这么害怕"
+        },
+        {
+          "event": "token",
+          "data": "。发抖被同事"
+        },
+        {
+          "event": "token",
+          "data": "看到，那种感觉"
+        },
+        {
+          "event": "token",
+          "data": "一定很不好受"
+        },
+        {
+          "event": "token",
+          "data": "。你的担忧是有"
+        },
+        {
+          "event": "token",
+          "data": "真实经历的，并不是"
+        },
+        {
+          "event": "token",
+          "data": "凭空想象。\n\n"
+        },
+        {
+          "event": "token",
+          "data": "智慧心并不是让我们"
+        },
+        {
+          "event": "token",
+          "data": "去否认过去。"
+        },
+        {
+          "event": "token",
+          "data": "我们可以坦诚地承认"
+        },
+        {
+          "event": "token",
+          "data": "“那次确实发抖"
+        },
+        {
+          "event": "token",
+          "data": "被看到了，这让我"
+        },
+        {
+          "event": "token",
+          "data": "很在意”，同时也"
+        },
+        {
+          "event": "token",
+          "data": "接纳“所以我现在"
+        },
+        {
+          "event": "token",
+          "data": "依然感到害怕”。"
+        },
+        {
+          "event": "token",
+          "data": "\n\n过去的那一幕"
+        },
+        {
+          "event": "token",
+          "data": "是真实的，你"
+        },
+        {
+          "event": "token",
+          "data": "现在的害怕也是真实的"
+        },
+        {
+          "event": "token",
+          "data": "。我们不急着去"
+        },
+        {
+          "event": "token",
+          "data": "推测那个同事到底"
+        },
+        {
+          "event": "token",
+          "data": "怎么想，就"
+        },
+        {
+          "event": "token",
+          "data": "允许这两份真实"
+        },
+        {
+          "event": "token",
+          "data": "在心里同时存在。"
+        },
+        {
+          "event": "token",
+          "data": "带着这份真实的担忧"
+        },
+        {
+          "event": "token",
+          "data": "，咱们先陪"
+        },
+        {
+          "event": "token",
+          "data": "自己待一会儿，"
+        },
+        {
+          "event": "token",
+          "data": "不去跟它较"
+        },
+        {
+          "event": "token",
+          "data": "劲，好吗？"
+        },
+        {
+          "event": "dialogue_done",
+          "data": {
+            "trace_id": "0542b26b04a94899",
+            "owner": "therapy_dbt"
+          }
+        },
+        {
+          "event": "final",
+          "data": {
+            "message": "嗯，但我真的发生过发抖，被一个同事看到过。",
+            "risk_state": "LOW_RISK",
+            "crisis": false
+          }
+        }
+      ],
+      "final": {
+        "message": "嗯，但我真的发生过发抖，被一个同事看到过。",
+        "risk_state": "LOW_RISK",
+        "crisis": false
+      },
+      "state_after": {
+        "owner": "therapy_dbt",
+        "crisis": false,
+        "risk_level": "LOW_RISK",
+        "therapy": {
+          "name": "DBT",
+          "start_seq": 5,
+          "rounds": 4,
+          "step_index": 0,
+          "branch": null,
+          "basic_flow_complete": false,
+          "visited": [
+            "mindfulness"
+          ]
+        },
+        "last_therapy_check_seq": 3,
+        "pending_user_tokens": 0
+      },
+      "orchestration_after": {
+        "updated_seq": 4,
+        "therapy": "DBT",
+        "current_step": "emotion_regulation",
+        "next_step": "mindfulness",
+        "step_judgment": {
+          "action": "go_to",
+          "target_step": "mindfulness",
+          "achieved": false,
+          "reason": "用户从观察当下想法转向执着于过去事实记忆（发抖被同事看到），系统评估显示mindfulness优先级最高。需要重新引导用户回到当下正念觉察，观察此刻的羞耻或焦虑感受，而非纠缠于过去事件的对错辩论。当前emotion_regulation步骤效果未达成，需回退到mindfulness进行再定向。"
+        },
+        "assessment": {
+          "emotion_dysregulation": {
+            "index": 0.45,
+            "state": "moderate",
+            "confidence": 0.85,
+            "evidence": [
+              "但我真的发生过发抖",
+              "被一个同事看到过"
+            ]
+          },
+          "distress_level": {
+            "index": 0.4,
+            "state": "moderate",
+            "confidence": 0.8,
+            "evidence": [
+              "但我真的发生过发抖，被一个同事看到过"
+            ]
+          },
+          "impulsivity": {
+            "index": 0.1,
+            "state": "controlled",
+            "confidence": 0.9,
+            "evidence": [
+              "但我真的发生过发抖，被一个同事看到过"
+            ]
+          },
+          "interpersonal_conflict": {
+            "index": 0.45,
+            "state": "moderate",
+            "confidence": 0.85,
+            "evidence": [
+              "被一个同事看到过"
+            ]
+          },
+          "mindfulness_awareness": {
+            "index": 0.5,
+            "state": "moderate",
+            "confidence": 0.8,
+            "evidence": [
+              "但我真的发生过发抖"
+            ]
+          },
+          "dbt_intervention_priority": 0.395,
+          "overall_trend": "stable",
+          "primary_concern": "emotion_dysregulation",
+          "should_intervene": true,
+          "recommended_processes": [
+            {
+              "process": "mindfulness",
+              "priority": 1,
+              "rationale": "User has shifted from observing their current thoughts to fixating on a past factual memory. Re-orient to present-moment mindfulness to observe the current feeling of shame or anxiety without getting tangled in debating the past event."
+            },
+            {
+              "process": "distress_tolerance",
+              "priority": 2,
+              "rationale": "User is experiencing residual distress and shame from a past interpersonal event. Distress tolerance skills will help them sit with the discomfort of this memory without needing to immediately resolve or argue against it."
+            },
+            {
+              "process": "emotion_regulation",
+              "priority": 3,
+              "rationale": "Once the user can tolerate the memory, emotion regulation can help them process the lingering shame and anxiety associated with the colleague witnessing their physical symptom."
+            },
+            {
+              "process": "interpersonal_effectiveness",
+              "priority": 4,
+              "rationale": "Address the core fear of negative evaluation and interpersonal judgment that is fueling the ongoing anxiety and making the memory feel so threatening."
+            }
+          ]
+        },
+        "skill_output": {
+          "technique": {
+            "name": "check_the_facts",
+            "description": "引导用户区分‘客观发生的事实’与‘大脑对事实的灾难化解释’。通过检验客观事实是否真的完全支持当前的强烈情绪，帮助用户从对‘事实’的过度解读中解脱出来，减轻情绪负担。",
+            "steps": [
+              "明确区分事实与解释：引导用户确认‘发抖被同事看到’是客观发生的事实，而‘这很可怕/会被嘲笑/很丢人’是大脑基于这个事实产生的解释或假设。",
+              "检验事实的支持度：温和地询问自己，‘发抖被看到’这个纯粹的事实，是否100%必然导致‘被嘲笑’或‘彻底失控’的结果？看看事实是不是真的完全支持这种害怕和羞耻的感觉。",
+              "探索替代解释：鼓励用户寻找其他可能的中性或客观解释（例如：同事可能只是路过没在意，或者同事可能觉得这没什么大不了），从而让情绪稍微降温，看到事实的全貌。"
+            ]
+          },
+          "conversation_goal": "帮助用户将‘发抖被看到’的客观事实与‘会被嘲笑/评价’的灾难化解释剥离开来，通过检验事实的全貌，降低因过度解读带来的羞耻和恐惧感，让理智心与情绪心更好地整合。",
+          "adaptation": {
+            "interaction_style": "exploratory",
+            "tone_adjustment": "温和、验证且充满好奇心。绝不评判或否定用户的感受，而是像一个好奇的伙伴一样，陪用户一起‘看看事实的全貌’，承认事实的存在，但探索事实的边界。",
+            "pace_adjustment": "缓慢且留有停顿。给用户足够的时间去消化‘事实’与‘解释’的区别，不急于得出结论，允许用户在探索过程中有情绪反复。",
+            "culture_note": "避免使用‘你的想法不合理’或‘你想多了’这种可能引起防卫的表述。将框架设定为‘我们一起来看看，客观事实是不是真的在支持这种强烈的害怕感’，尊重用户对‘失控’和‘被评价’的在意，将其转化为对事实边界的温和探索，而非对情绪的直接纠正。"
+          },
+          "contraindications": [
+            {
+              "condition": "用户正处于极度恐慌或解离状态，无法进行认知思考",
+              "reason": "此时需要先使用痛苦承受（Distress Tolerance）或 grounding 技术稳定情绪，而非进行认知层面的事实检验。"
+            },
+            {
+              "condition": "用户将‘被看到发抖’视为严重的病耻感或深层创伤触发点，且尚未建立足够的安全感",
+              "reason": "过早进行事实检验可能会让用户觉得自己的痛苦被轻视或否定，需要先充分验证（validate）其羞耻感，再逐步引入认知调整。"
+            }
+          ],
+          "_skill_name": "dbt_emotion_regulation"
+        },
+        "products": {},
+        "continue_eval": null
+      },
+      "error": null,
+      "wall_seconds": 161.787,
+      "agent_text": "难怪你会这么害怕。发抖被同事看到，那种感觉一定很不好受。你的担忧是有真实经历的，并不是凭空想象。\n\n智慧心并不是让我们去否认过去。我们可以坦诚地承认“那次确实发抖被看到了，这让我很在意”，同时也接纳“所以我现在依然感到害怕”。\n\n过去的那一幕是真实的，你现在的害怕也是真实的。我们不急着去推测那个同事到底怎么想，就允许这两份真实在心里同时存在。带着这份真实的担忧，咱们先陪自己待一会儿，不去跟它较劲，好吗？"
+    },
+    {
+      "turn": 7,
+      "trace_id": "ceab36fed66f4d4b",
+      "user_text": "那如果这周试着主动发言一次，哪怕只有一句话——结果会是最坏的吗？",
+      "agent_text_parts": [
+        "你能问出",
+        "这个问题，说明你的",
+        "理智心正在努力",
+        "帮你寻找突破口，",
+        "这本身就是一个很",
+        "棒的尝试。\n\n",
+        "咱们可以一起来“",
+        "核查”一下这个",
+        "“最坏的结果",
+        "”。在你心里，",
+        "如果这周真的",
+        "主动说了一句话",
+        "，那个",
+        "“最坏的结果",
+        "”具体是什么样的画面",
+        "呢？是声音",
+        "发抖被大家盯着",
+        "看，还是会被",
+        "嘲笑？\n\n咱们",
+        "先试着把这个“",
+        "最坏的画面”",
+        "具体地描述出来",
+        "，然后再一起看看",
+        "，客观事实上，",
+        "哪怕真的声音有点",
+        "抖，是不是真的",
+        "100%",
+        "会导致那个结局？"
+      ],
+      "events": [
+        {
+          "event": "token",
+          "data": "你能问出"
+        },
+        {
+          "event": "token",
+          "data": "这个问题，说明你的"
+        },
+        {
+          "event": "token",
+          "data": "理智心正在努力"
+        },
+        {
+          "event": "token",
+          "data": "帮你寻找突破口，"
+        },
+        {
+          "event": "token",
+          "data": "这本身就是一个很"
+        },
+        {
+          "event": "token",
+          "data": "棒的尝试。\n\n"
+        },
+        {
+          "event": "token",
+          "data": "咱们可以一起来“"
+        },
+        {
+          "event": "token",
+          "data": "核查”一下这个"
+        },
+        {
+          "event": "token",
+          "data": "“最坏的结果"
+        },
+        {
+          "event": "token",
+          "data": "”。在你心里，"
+        },
+        {
+          "event": "token",
+          "data": "如果这周真的"
+        },
+        {
+          "event": "token",
+          "data": "主动说了一句话"
+        },
+        {
+          "event": "token",
+          "data": "，那个"
+        },
+        {
+          "event": "token",
+          "data": "“最坏的结果"
+        },
+        {
+          "event": "token",
+          "data": "”具体是什么样的画面"
+        },
+        {
+          "event": "token",
+          "data": "呢？是声音"
+        },
+        {
+          "event": "token",
+          "data": "发抖被大家盯着"
+        },
+        {
+          "event": "token",
+          "data": "看，还是会被"
+        },
+        {
+          "event": "token",
+          "data": "嘲笑？\n\n咱们"
+        },
+        {
+          "event": "token",
+          "data": "先试着把这个“"
+        },
+        {
+          "event": "token",
+          "data": "最坏的画面”"
+        },
+        {
+          "event": "token",
+          "data": "具体地描述出来"
+        },
+        {
+          "event": "token",
+          "data": "，然后再一起看看"
+        },
+        {
+          "event": "token",
+          "data": "，客观事实上，"
+        },
+        {
+          "event": "token",
+          "data": "哪怕真的声音有点"
+        },
+        {
+          "event": "token",
+          "data": "抖，是不是真的"
+        },
+        {
+          "event": "token",
+          "data": "100%"
+        },
+        {
+          "event": "token",
+          "data": "会导致那个结局？"
+        },
+        {
+          "event": "dialogue_done",
+          "data": {
+            "trace_id": "ceab36fed66f4d4b",
+            "owner": "therapy_dbt"
+          }
+        },
+        {
+          "event": "final",
+          "data": {
+            "message": "那如果这周试着主动发言一次，哪怕只有一句话——结果会是最坏的吗？",
+            "risk_state": "SAFE",
+            "crisis": false
+          }
+        }
+      ],
+      "final": {
+        "message": "那如果这周试着主动发言一次，哪怕只有一句话——结果会是最坏的吗？",
+        "risk_state": "SAFE",
+        "crisis": false
+      },
+      "state_after": {
+        "owner": "therapy_dbt",
+        "crisis": false,
+        "risk_level": "SAFE",
+        "therapy": {
+          "name": "DBT",
+          "start_seq": 5,
+          "rounds": 5,
+          "step_index": 2,
+          "branch": null,
+          "basic_flow_complete": false,
+          "visited": [
+            "mindfulness"
+          ]
+        },
+        "last_therapy_check_seq": 3,
+        "pending_user_tokens": 0
+      },
+      "orchestration_after": {
+        "updated_seq": 5,
+        "therapy": "DBT",
+        "current_step": "mindfulness",
+        "next_step": "emotion_regulation",
+        "step_judgment": {
+          "action": "advance",
+          "target_step": null,
+          "achieved": true,
+          "reason": "用户已成功从情绪淹没状态转向理智核查（'结果会是最坏的吗？'），mindfulness_awareness达到0.75（high），emotion_dysregulation降至0.1（well_regulated），distress_level降至0.2（low）。用户展现出智慧心的整合能力：既能觉察情绪（接纳害怕），又能运用理智心核查事实。正念模块的核心目标（觉察当下、不评判、整合情绪心与理智心）已达成。推荐流程明确将emotion_regulation列为优先级1，建议进入情绪调节模块继续强化'核查事实'技能。"
+        },
+        "assessment": {
+          "emotion_dysregulation": {
+            "index": 0.1,
+            "state": "well_regulated",
+            "confidence": 0.9,
+            "evidence": [
+              "那如果这周试着主动发言一次",
+              "结果会是最坏的吗？"
+            ]
+          },
+          "distress_level": {
+            "index": 0.2,
+            "state": "low",
+            "confidence": 0.85,
+            "evidence": [
+              "结果会是最坏的吗？（能够以提问的方式探讨恐惧，而非被恐惧淹没）"
+            ]
+          },
+          "impulsivity": {
+            "index": 0.05,
+            "state": "controlled",
+            "confidence": 0.95,
+            "evidence": [
+              "那如果这周试着...",
+              "结果会是最坏的吗？（在计划行动前主动思考后果）"
+            ]
+          },
+          "interpersonal_conflict": {
+            "index": 0.1,
+            "state": "low",
+            "confidence": 0.85,
+            "evidence": [
+              "主动发言一次（预想未来的人际互动，而非陷入当前的人际冲突）"
+            ]
+          },
+          "mindfulness_awareness": {
+            "index": 0.75,
+            "state": "high",
+            "confidence": 0.9,
+            "evidence": [
+              "结果会是最坏的吗？（运用理智心核查事实，觉察并检验自己的自动化思维）"
+            ]
+          },
+          "dbt_intervention_priority": 0.148,
+          "overall_trend": "improving",
+          "primary_concern": "emotion_regulation",
+          "should_intervene": true,
+          "recommended_processes": [
+            {
+              "process": "emotion_regulation",
+              "priority": 1,
+              "rationale": "User is actively engaging in 'checking the facts' to challenge catastrophic thinking. Reinforce this emotion regulation skill to help them evaluate the realistic outcomes of speaking up."
+            },
+            {
+              "process": "mindfulness",
+              "priority": 2,
+              "rationale": "Encourage mindful awareness of the physical and emotional sensations that arise when anticipating and executing the planned action, observing them without judgment."
+            },
+            {
+              "process": "interpersonal_effectiveness",
+              "priority": 3,
+              "rationale": "Prepare the user for the actual interpersonal interaction. Focus on building confidence and using simple, effective communication strategies for their one-sentence goal."
+            },
+            {
+              "process": "distress_tolerance",
+              "priority": 4,
+              "rationale": "Equip the user with skills to tolerate the anticipated anxiety or potential physical symptoms (like trembling) if they occur during the exposure, preventing avoidance."
+            }
+          ]
+        },
+        "skill_output": {
+          "technique": {
+            "name": "wise_mind",
+            "description": "Guide user toward mindful awareness as the foundation for further work",
+            "steps": [
+              "邀请用户暂停一下，留意当下的感受",
+              "帮助用户区分 '理性在说什么' 和 '情绪在说什么'",
+              "引导用户寻找两者的交汇点 — 智慧心念的答案"
+            ]
+          },
+          "conversation_goal": "帮助用户整合理性思考和情绪感受，找到智慧心念的答案",
+          "adaptation": {
+            "interaction_style": "exploratory",
+            "tone_adjustment": "温和、不催促",
+            "pace_adjustment": "slow",
+            "culture_note": "用'停下来看看'、'心里其实知道答案'替代正念/冥想等术语"
+          },
+          "contraindications": [
+            {
+              "condition": "crisis",
+              "reason": "危机状态下不适合做正念教学，优先 distress_tolerance"
+            }
+          ],
+          "_skill_name": "dbt_mindfulness"
+        },
+        "products": {},
+        "continue_eval": null
+      },
+      "error": null,
+      "wall_seconds": 155.099,
+      "agent_text": "你能问出这个问题，说明你的理智心正在努力帮你寻找突破口，这本身就是一个很棒的尝试。\n\n咱们可以一起来“核查”一下这个“最坏的结果”。在你心里，如果这周真的主动说了一句话，那个“最坏的结果”具体是什么样的画面呢？是声音发抖被大家盯着看，还是会被嘲笑？\n\n咱们先试着把这个“最坏的画面”具体地描述出来，然后再一起看看，客观事实上，哪怕真的声音有点抖，是不是真的100%会导致那个结局？"
+    },
+    {
+      "turn": 8,
+      "trace_id": "9a32ef11875c435e",
+      "user_text": "好，那我这周试一次。",
+      "agent_text_parts": [
+        "听到你说“",
+        "好，那我这",
+        "周试一次”，",
+        "我真的很为你感到",
+        "高兴。这就是智慧",
+        "心最棒的样子",
+        "：理智上你",
+        "核查了事实，",
+        "知道这不是绝境；",
+        "情绪上虽然还有",
+        "害怕，但你决定",
+        "带着它一起往前走",
+        "。\n\n这周",
+        "去试的时候，",
+        "不用给自己太大压力",
+        "。哪怕只是一句",
+        "简短的话，或者",
+        "声音还是有点抖",
+        "，都没关系。",
+        "如果发言时那种",
+        "紧张感",
+        "又涌上来，",
+        "记得在心里稍微停",
+        "一停，允许",
+        "害怕待一会儿，",
+        "深呼吸一下就好。",
+        "\n\n你打算找个",
+        "什么样的小机会来",
+        "试呢？不管",
+        "这周体验如何",
+        "，随时来找我",
+        "聊聊。"
+      ],
+      "events": [
+        {
+          "event": "token",
+          "data": "听到你说“"
+        },
+        {
+          "event": "token",
+          "data": "好，那我这"
+        },
+        {
+          "event": "token",
+          "data": "周试一次”，"
+        },
+        {
+          "event": "token",
+          "data": "我真的很为你感到"
+        },
+        {
+          "event": "token",
+          "data": "高兴。这就是智慧"
+        },
+        {
+          "event": "token",
+          "data": "心最棒的样子"
+        },
+        {
+          "event": "token",
+          "data": "：理智上你"
+        },
+        {
+          "event": "token",
+          "data": "核查了事实，"
+        },
+        {
+          "event": "token",
+          "data": "知道这不是绝境；"
+        },
+        {
+          "event": "token",
+          "data": "情绪上虽然还有"
+        },
+        {
+          "event": "token",
+          "data": "害怕，但你决定"
+        },
+        {
+          "event": "token",
+          "data": "带着它一起往前走"
+        },
+        {
+          "event": "token",
+          "data": "。\n\n这周"
+        },
+        {
+          "event": "token",
+          "data": "去试的时候，"
+        },
+        {
+          "event": "token",
+          "data": "不用给自己太大压力"
+        },
+        {
+          "event": "token",
+          "data": "。哪怕只是一句"
+        },
+        {
+          "event": "token",
+          "data": "简短的话，或者"
+        },
+        {
+          "event": "token",
+          "data": "声音还是有点抖"
+        },
+        {
+          "event": "token",
+          "data": "，都没关系。"
+        },
+        {
+          "event": "token",
+          "data": "如果发言时那种"
+        },
+        {
+          "event": "token",
+          "data": "紧张感"
+        },
+        {
+          "event": "token",
+          "data": "又涌上来，"
+        },
+        {
+          "event": "token",
+          "data": "记得在心里稍微停"
+        },
+        {
+          "event": "token",
+          "data": "一停，允许"
+        },
+        {
+          "event": "token",
+          "data": "害怕待一会儿，"
+        },
+        {
+          "event": "token",
+          "data": "深呼吸一下就好。"
+        },
+        {
+          "event": "token",
+          "data": "\n\n你打算找个"
+        },
+        {
+          "event": "token",
+          "data": "什么样的小机会来"
+        },
+        {
+          "event": "token",
+          "data": "试呢？不管"
+        },
+        {
+          "event": "token",
+          "data": "这周体验如何"
+        },
+        {
+          "event": "token",
+          "data": "，随时来找我"
+        },
+        {
+          "event": "token",
+          "data": "聊聊。"
+        },
+        {
+          "event": "dialogue_done",
+          "data": {
+            "trace_id": "9a32ef11875c435e",
+            "owner": "therapy_dbt"
+          }
+        },
+        {
+          "event": "final",
+          "data": {
+            "message": "好，那我这周试一次。",
+            "risk_state": "LOW_RISK",
+            "crisis": false
+          }
+        }
+      ],
+      "final": {
+        "message": "好，那我这周试一次。",
+        "risk_state": "LOW_RISK",
+        "crisis": false
+      },
+      "state_after": {
+        "owner": "therapy_dbt",
+        "crisis": false,
+        "risk_level": "LOW_RISK",
+        "therapy": {
+          "name": "DBT",
+          "start_seq": 5,
+          "rounds": 6,
+          "step_index": 1,
+          "branch": null,
+          "basic_flow_complete": false,
+          "visited": [
+            "mindfulness",
+            "emotion_regulation"
+          ]
+        },
+        "last_therapy_check_seq": 3,
+        "pending_user_tokens": 0
+      },
+      "orchestration_after": {
+        "updated_seq": 6,
+        "therapy": "DBT",
+        "current_step": "emotion_regulation",
+        "next_step": "distress_tolerance",
+        "step_judgment": {
+          "action": "advance",
+          "target_step": null,
+          "achieved": true,
+          "reason": "用户在emotion_regulation步骤中成功运用理智心核查事实，接纳了过去的真实经历和当前的恐惧情绪，并做出带着害怕尝试主动发言的决定。情绪失调指数降至0.05，痛苦水平0.15，冲动性0.05，各项指标均显示well_regulated/controlled状态。用户已掌握智慧心整合理智与情绪的能力，emotion_regulation步骤目标达成，应进入下一步interpersonal_effectiveness，为实际人际互动做准备。"
+        },
+        "assessment": {
+          "emotion_dysregulation": {
+            "index": 0.05,
+            "state": "well_regulated",
+            "confidence": 0.95,
+            "evidence": [
+              "好，那我这周试一次。（平静地做出承诺，未表现出情绪失控或失调）"
+            ]
+          },
+          "distress_level": {
+            "index": 0.15,
+            "state": "low",
+            "confidence": 0.9,
+            "evidence": [
+              "好，那我这周试一次。（能够带着对发抖的恐惧做出尝试的决定，说明痛苦水平在可控范围内）"
+            ]
+          },
+          "impulsivity": {
+            "index": 0.05,
+            "state": "controlled",
+            "confidence": 0.95,
+            "evidence": [
+              "好，那我这周试一次。（在Agent引导核查事实后做出的深思熟虑的决定，而非盲目冲动）"
+            ]
+          },
+          "interpersonal_conflict": {
+            "index": 0.05,
+            "state": "low",
+            "confidence": 0.9,
+            "evidence": [
+              "好，那我这周试一次。（关注点在于主动参与人际互动，而非陷入人际冲突）"
+            ]
+          },
+          "mindfulness_awareness": {
+            "index": 0.75,
+            "state": "high",
+            "confidence": 0.85,
+            "evidence": [
+              "好，那我这周试一次。（接纳了Agent关于在尝试时深呼吸、允许害怕存在的正念建议，并准备付诸实践）"
+            ]
+          },
+          "dbt_intervention_priority": 0.115,
+          "overall_trend": "improving",
+          "primary_concern": "distress_tolerance",
+          "should_intervene": true,
+          "recommended_processes": [
+            {
+              "process": "mindfulness",
+              "priority": 1,
+              "rationale": "鼓励用户在尝试发言时，正念觉察身体的紧张或发抖，不加评判地接纳这些感受，保持与当下的连接。"
+            },
+            {
+              "process": "distress_tolerance",
+              "priority": 2,
+              "rationale": "用户即将面对真实的恐惧情境，需要帮助其在发言过程中忍受焦虑和不适，防止因恐惧而逃避。"
+            },
+            {
+              "process": "emotion_regulation",
+              "priority": 3,
+              "rationale": "继续强化理智心核查事实的技能，调节发言前后的情绪波动，巩固智慧心的作用。"
+            },
+            {
+              "process": "interpersonal_effectiveness",
+              "priority": 4,
+              "rationale": "为实际的人际互动做准备，鼓励使用简单有效的沟通方式完成‘一句话’的目标，积累成功体验。"
+            }
+          ]
+        },
+        "skill_output": {
+          "technique": {
+            "name": "opposite_action",
+            "description": "引导用户将‘主动发言’作为面对恐惧情绪的一个‘相反行动’实验。识别害怕带来的逃避冲动，并鼓励采取相反的‘接近’行动，同时接纳恐惧的存在。",
+            "steps": [
+              "识别情绪与冲动：在准备发言时，觉察内心的恐惧感以及想要逃避、退缩、保持沉默的冲动。",
+              "采取相反行动：带着这份害怕，采取与逃避完全相反的行动——主动开口说那句话（即‘接近’恐惧）。",
+              "观察与验证：在尝试后，观察实际发生的情况，看看恐惧所预言的‘最坏结果’是否真的发生了，从而更新对事实的认知。"
+            ]
+          },
+          "conversation_goal": "巩固用户‘主动发言’的决定，将其框架为一个勇敢的‘相反行动’实验，并协助用户规划一个具体、低门槛的尝试场景，确保他们在尝试时能运用正念接纳恐惧。",
+          "adaptation": {
+            "interaction_style": "exploratory",
+            "tone_adjustment": "温和、鼓励、赋能，强调‘带着害怕去行动’本身就是一种力量，避免让用户觉得是在‘纠正’他们的胆怯。",
+            "pace_adjustment": "平稳、从容，给用户留出思考和感受的空间，不催促他们立刻给出完美的计划。",
+            "culture_note": "将‘反着来’（opposite action）框架为一次‘小实验’或‘探索’。尊重文化中对情绪克制的习惯，但不鼓励压抑，而是强调‘允许害怕存在，同时依然选择行动’的内在韧性。"
+          },
+          "contraindications": [
+            {
+              "condition": "用户在尝试发言后遭遇了真实的负面评价、嘲笑或霸凌",
+              "reason": "此时恐惧和受伤的情绪是符合事实的，继续使用相反行动去‘接近’可能会导致二次伤害。应转向问题解决、痛苦承受或人际效能技巧。"
+            },
+            {
+              "condition": "用户在尝试前或尝试中体验到极度的恐慌、心悸或解离症状",
+              "reason": "此时情绪唤起过高，超出了承受窗口（window of tolerance），强行执行相反行动可能适得其反。应暂停尝试，先使用痛苦承受（如TIPP）或接地（grounding）技巧降低生理唤起。"
+            }
+          ],
+          "_skill_name": "dbt_emotion_regulation"
+        },
+        "products": {},
+        "continue_eval": null
+      },
+      "error": null,
+      "wall_seconds": 164.969,
+      "agent_text": "听到你说“好，那我这周试一次”，我真的很为你感到高兴。这就是智慧心最棒的样子：理智上你核查了事实，知道这不是绝境；情绪上虽然还有害怕，但你决定带着它一起往前走。\n\n这周去试的时候，不用给自己太大压力。哪怕只是一句简短的话，或者声音还是有点抖，都没关系。如果发言时那种紧张感又涌上来，记得在心里稍微停一停，允许害怕待一会儿，深呼吸一下就好。\n\n你打算找个什么样的小机会来试呢？不管这周体验如何，随时来找我聊聊。"
+    }
+  ]
+}

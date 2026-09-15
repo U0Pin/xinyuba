@@ -1,0 +1,1883 @@
+{
+  "seed_id": "act-value-action-divorce-decision",
+  "target_family": "ACT",
+  "scenario_label": "价值-行动-离婚决策",
+  "scenario_description": "十年婚姻里反复想离婚又反复退缩",
+  "user_id": "seed-act-value-action-divorce",
+  "session_id": "4b30a71c46914676",
+  "turns_total": 8,
+  "switched_to_therapy_at_turn": 1,
+  "actual_therapy": "MI",
+  "therapy_rounds": 8,
+  "orch_step_changes": 2,
+  "is_complete": true,
+  "final_risk_level": "SAFE",
+  "final_crisis": false,
+  "turns": [
+    {
+      "turn": 1,
+      "trace_id": "1e0900af8a68469c",
+      "user_text": "我结婚十年了，这两年一直在想要不要离婚。",
+      "agent_text_parts": [
+        "十年真的",
+        "挺不容易的。",
+        "这两年心里一直装着",
+        "“要不要离婚”",
+        "这个念头，一定",
+        "让你觉得挺累",
+        "、挺纠结的吧",
+        "。愿意跟我聊聊",
+        "，是什么让你一直在",
+        "想这件事吗？"
+      ],
+      "events": [
+        {
+          "event": "token",
+          "data": "十年真的"
+        },
+        {
+          "event": "token",
+          "data": "挺不容易的。"
+        },
+        {
+          "event": "token",
+          "data": "这两年心里一直装着"
+        },
+        {
+          "event": "token",
+          "data": "“要不要离婚”"
+        },
+        {
+          "event": "token",
+          "data": "这个念头，一定"
+        },
+        {
+          "event": "token",
+          "data": "让你觉得挺累"
+        },
+        {
+          "event": "token",
+          "data": "、挺纠结的吧"
+        },
+        {
+          "event": "token",
+          "data": "。愿意跟我聊聊"
+        },
+        {
+          "event": "token",
+          "data": "，是什么让你一直在"
+        },
+        {
+          "event": "token",
+          "data": "想这件事吗？"
+        },
+        {
+          "event": "dialogue_done",
+          "data": {
+            "trace_id": "1e0900af8a68469c",
+            "owner": "daily"
+          }
+        },
+        {
+          "event": "final",
+          "data": {
+            "message": "我结婚十年了，这两年一直在想要不要离婚。",
+            "risk_state": "LOW_RISK",
+            "crisis": false
+          }
+        }
+      ],
+      "final": {
+        "message": "我结婚十年了，这两年一直在想要不要离婚。",
+        "risk_state": "LOW_RISK",
+        "crisis": false
+      },
+      "state_after": {
+        "owner": "therapy_mi",
+        "crisis": false,
+        "risk_level": "LOW_RISK",
+        "therapy": {
+          "name": "MI",
+          "start_seq": 3,
+          "rounds": 0,
+          "step_index": -1,
+          "branch": null,
+          "basic_flow_complete": false
+        },
+        "last_therapy_check_seq": 1,
+        "pending_user_tokens": 0
+      },
+      "orchestration_after": {},
+      "error": null,
+      "wall_seconds": 67.249,
+      "agent_text": "十年真的挺不容易的。这两年心里一直装着“要不要离婚”这个念头，一定让你觉得挺累、挺纠结的吧。愿意跟我聊聊，是什么让你一直在想这件事吗？"
+    },
+    {
+      "turn": 2,
+      "trace_id": "45ff0ef2ea1e4760",
+      "user_text": "为了孩子、为了家里、为了不让父母担心——每次想到最后都退缩。",
+      "agent_text_parts": [
+        "听得",
+        "出来，每次想到",
+        "最后都会退缩，",
+        "是因为心里装了太多",
+        "对孩子、家里和",
+        "父母的顾虑。在",
+        "聊这些的时候，",
+        "你自己现在的体会是怎样的",
+        "呢？心里",
+        "是觉得稍微轻松",
+        "了一点，还是依然",
+        "觉得挺纠结、",
+        "挺沉重的？"
+      ],
+      "events": [
+        {
+          "event": "token",
+          "data": "听得"
+        },
+        {
+          "event": "token",
+          "data": "出来，每次想到"
+        },
+        {
+          "event": "token",
+          "data": "最后都会退缩，"
+        },
+        {
+          "event": "token",
+          "data": "是因为心里装了太多"
+        },
+        {
+          "event": "token",
+          "data": "对孩子、家里和"
+        },
+        {
+          "event": "token",
+          "data": "父母的顾虑。在"
+        },
+        {
+          "event": "token",
+          "data": "聊这些的时候，"
+        },
+        {
+          "event": "token",
+          "data": "你自己现在的体会是怎样的"
+        },
+        {
+          "event": "token",
+          "data": "呢？心里"
+        },
+        {
+          "event": "token",
+          "data": "是觉得稍微轻松"
+        },
+        {
+          "event": "token",
+          "data": "了一点，还是依然"
+        },
+        {
+          "event": "token",
+          "data": "觉得挺纠结、"
+        },
+        {
+          "event": "token",
+          "data": "挺沉重的？"
+        },
+        {
+          "event": "dialogue_done",
+          "data": {
+            "trace_id": "45ff0ef2ea1e4760",
+            "owner": "therapy_mi"
+          }
+        },
+        {
+          "event": "final",
+          "data": {
+            "message": "为了孩子、为了家里、为了不让父母担心——每次想到最后都退缩。",
+            "risk_state": "HIGH_RISK",
+            "crisis": false
+          }
+        }
+      ],
+      "final": {
+        "message": "为了孩子、为了家里、为了不让父母担心——每次想到最后都退缩。",
+        "risk_state": "HIGH_RISK",
+        "crisis": false
+      },
+      "state_after": {
+        "owner": "therapy_mi",
+        "crisis": false,
+        "risk_level": "HIGH_RISK",
+        "therapy": {
+          "name": "MI",
+          "start_seq": 3,
+          "rounds": 1,
+          "step_index": 0,
+          "branch": null,
+          "basic_flow_complete": false
+        },
+        "last_therapy_check_seq": 1,
+        "pending_user_tokens": 0
+      },
+      "orchestration_after": {
+        "updated_seq": 1,
+        "therapy": "MI",
+        "current_step": "explore",
+        "next_step": "explore",
+        "step_judgment": {
+          "action": "stay",
+          "target_step": null,
+          "achieved": false,
+          "reason": "用户仍处于矛盾心理强烈的阶段（ambivalence=0.9），sustain_talk高（0.85），change_talk弱（0.15），自我效能感极低（0.2）。当前explore步骤尚未充分探索用户'退缩'背后的深层顾虑和内心冲突，AI的提问方向正确但用户尚未回应，需要继续在当前步骤深入探索矛盾心理。"
+        },
+        "assessment": {
+          "change_readiness": {
+            "index": 0.3,
+            "state": "contemplation",
+            "confidence": 0.85,
+            "evidence": [
+              "用户提到'想到最后'，说明内心有考虑过改变或采取行动，但'都退缩'表明仍处于犹豫和权衡阶段，尚未进入准备或行动期。"
+            ]
+          },
+          "ambivalence": {
+            "index": 0.9,
+            "state": "strong",
+            "confidence": 0.95,
+            "evidence": [
+              "强烈的内心冲突：一方面有想要改变的念头（'想到最后'），另一方面又被家庭责任和父母担忧所牵绊（'为了孩子、为了家里、为了不让父母担心'），导致行为上的退缩。"
+            ]
+          },
+          "self_efficacy": {
+            "index": 0.2,
+            "state": "very_low",
+            "confidence": 0.9,
+            "evidence": [
+              "'每次想到最后都退缩'表现出一种习得性无助，对自己能够克服困难、坚持改变或做出决定缺乏信心。"
+            ]
+          },
+          "change_talk": {
+            "index": 0.15,
+            "state": "weak",
+            "confidence": 0.8,
+            "evidence": [
+              "隐含了想要采取行动的微弱意愿（'想到最后'），但缺乏明确的 Desire, Ability, Reasons 或 Need 来表达对改变的支持。"
+            ]
+          },
+          "sustain_talk": {
+            "index": 0.85,
+            "state": "strong",
+            "confidence": 0.95,
+            "evidence": [
+              "'为了孩子、为了家里、为了不让父母担心'是典型的维持现状的理由，'每次...都退缩'是维持现状的行为表现。"
+            ]
+          },
+          "mi_intervention_need": 0.75,
+          "overall_trend": "stable",
+          "primary_concern": "ambivalence",
+          "should_intervene": true,
+          "recommended_processes": [
+            {
+              "process": "explore",
+              "priority": 1,
+              "rationale": "用户表现出极高的矛盾心理和强烈的维持现状语，需要优先探索其内心的冲突、顾虑以及'退缩'背后的深层需求，避免直接推动改变引发抗拒。"
+            },
+            {
+              "process": "evocation",
+              "priority": 2,
+              "rationale": "在探索的基础上，后续需要温和地唤起用户自身对于改变的渴望和内在力量，帮助其看到除了'退缩'之外的其他可能性。"
+            }
+          ]
+        },
+        "skill_output": {
+          "technique": {
+            "name": "oars",
+            "description": "Build engagement and explore the user's ambivalence without pushing for change",
+            "steps": [
+              "用开放式提问邀请用户分享更多",
+              "通过反思性倾听回应，让用户感到被理解",
+              "温和地邀请用户觉察自己内心不同的声音"
+            ]
+          },
+          "conversation_goal": "通过开放式提问和反思性倾听，帮助用户探索内心的矛盾，不做评判",
+          "adaptation": {
+            "interaction_style": "exploratory",
+            "tone_adjustment": "温和、好奇、不评判",
+            "pace_adjustment": "slow",
+            "culture_note": "用'你自己觉得呢？'替代'你应该'；肯定要具体而非笼统；矛盾是正常的不是抗拒"
+          },
+          "contraindications": [
+            {
+              "condition": "crisis",
+              "reason": "危机状态下不适合探索矛盾，优先确保安全"
+            }
+          ],
+          "_skill_name": "mi_explore"
+        },
+        "products": {},
+        "continue_eval": null
+      },
+      "error": null,
+      "wall_seconds": 142.888,
+      "agent_text": "听得出来，每次想到最后都会退缩，是因为心里装了太多对孩子、家里和父母的顾虑。在聊这些的时候，你自己现在的体会是怎样的呢？心里是觉得稍微轻松了一点，还是依然觉得挺纠结、挺沉重的？"
+    },
+    {
+      "turn": 3,
+      "trace_id": "71181997816f41d0",
+      "user_text": "但我知道我对这段感情已经没什么感情了。",
+      "agent_text_parts": [
+        "听得",
+        "出来",
+        "，“对这段感情",
+        "已经没什么感觉了",
+        "”，这是你心里",
+        "非常真实、也很",
+        "清晰的一个声音。",
+        "可是另一方面，为了",
+        "孩子和父母，你又",
+        "总是忍不住退缩回去",
+        "。一边是已经",
+        "淡去的感情，",
+        "一边是放不",
+        "下的责任和牵挂，",
+        "这两种声音在你心里",
+        "不断地拉扯，一定",
+        "让你觉得特别疲惫",
+        "和无奈吧。",
+        "当这两个声音同时",
+        "在你心里回响的时候",
+        "，你自己是怎么体会",
+        "这种拉扯的呢？"
+      ],
+      "events": [
+        {
+          "event": "token",
+          "data": "听得"
+        },
+        {
+          "event": "token",
+          "data": "出来"
+        },
+        {
+          "event": "token",
+          "data": "，“对这段感情"
+        },
+        {
+          "event": "token",
+          "data": "已经没什么感觉了"
+        },
+        {
+          "event": "token",
+          "data": "”，这是你心里"
+        },
+        {
+          "event": "token",
+          "data": "非常真实、也很"
+        },
+        {
+          "event": "token",
+          "data": "清晰的一个声音。"
+        },
+        {
+          "event": "token",
+          "data": "可是另一方面，为了"
+        },
+        {
+          "event": "token",
+          "data": "孩子和父母，你又"
+        },
+        {
+          "event": "token",
+          "data": "总是忍不住退缩回去"
+        },
+        {
+          "event": "token",
+          "data": "。一边是已经"
+        },
+        {
+          "event": "token",
+          "data": "淡去的感情，"
+        },
+        {
+          "event": "token",
+          "data": "一边是放不"
+        },
+        {
+          "event": "token",
+          "data": "下的责任和牵挂，"
+        },
+        {
+          "event": "token",
+          "data": "这两种声音在你心里"
+        },
+        {
+          "event": "token",
+          "data": "不断地拉扯，一定"
+        },
+        {
+          "event": "token",
+          "data": "让你觉得特别疲惫"
+        },
+        {
+          "event": "token",
+          "data": "和无奈吧。"
+        },
+        {
+          "event": "token",
+          "data": "当这两个声音同时"
+        },
+        {
+          "event": "token",
+          "data": "在你心里回响的时候"
+        },
+        {
+          "event": "token",
+          "data": "，你自己是怎么体会"
+        },
+        {
+          "event": "token",
+          "data": "这种拉扯的呢？"
+        },
+        {
+          "event": "dialogue_done",
+          "data": {
+            "trace_id": "71181997816f41d0",
+            "owner": "therapy_mi"
+          }
+        },
+        {
+          "event": "final",
+          "data": {
+            "message": "但我知道我对这段感情已经没什么感情了。",
+            "risk_state": "MEDIUM_RISK",
+            "crisis": false
+          }
+        }
+      ],
+      "final": {
+        "message": "但我知道我对这段感情已经没什么感情了。",
+        "risk_state": "MEDIUM_RISK",
+        "crisis": false
+      },
+      "state_after": {
+        "owner": "therapy_mi",
+        "crisis": false,
+        "risk_level": "MEDIUM_RISK",
+        "therapy": {
+          "name": "MI",
+          "start_seq": 3,
+          "rounds": 2,
+          "step_index": 0,
+          "branch": null,
+          "basic_flow_complete": false
+        },
+        "last_therapy_check_seq": 1,
+        "pending_user_tokens": 0
+      },
+      "orchestration_after": {
+        "updated_seq": 2,
+        "therapy": "MI",
+        "current_step": "explore",
+        "next_step": "explore",
+        "step_judgment": {
+          "action": "stay",
+          "target_step": null,
+          "achieved": false,
+          "reason": "用户当前处于explore步骤第2轮，ambivalence指数高达0.85，处于强烈矛盾状态。虽然change talk较强（0.7），但自我效能感低（0.3），且'但'字表明家庭顾虑与个人感受之间的冲突仍在拉扯中。AI刚刚对用户的矛盾心理进行了反映式倾听，尚未完成对ambivalence的充分探索。需要继续留在explore步骤，深入探索矛盾的另一面，接纳用户的顾虑，为后续evocation阶段奠定基础。"
+        },
+        "assessment": {
+          "change_readiness": {
+            "index": 0.45,
+            "state": "contemplation",
+            "confidence": 0.9,
+            "evidence": [
+              "用户明确表示'对这段感情已经没什么感情了'，说明已经清晰认识到现状的问题，处于思考改变的阶段，但尚未采取实际行动。"
+            ]
+          },
+          "ambivalence": {
+            "index": 0.85,
+            "state": "strong",
+            "confidence": 0.95,
+            "evidence": [
+              "'但'字体现了内心强烈的冲突：一方面是对家庭的责任和顾虑（前文），另一方面是感情已逝的真实感受，两种声音仍在拉扯。"
+            ]
+          },
+          "self_efficacy": {
+            "index": 0.3,
+            "state": "low",
+            "confidence": 0.85,
+            "evidence": [
+              "用户表达了认知上的清晰（'我知道'），但并未表现出对能够做出改变或承担改变后果的信心，依然受限于前文的'退缩'。"
+            ]
+          },
+          "change_talk": {
+            "index": 0.7,
+            "state": "strong",
+            "confidence": 0.95,
+            "evidence": [
+              "'对这段感情已经没什么感情了'是典型的Reasons for change（改变的理由），明确表达了对现状的否定和改变的内在动机。"
+            ]
+          },
+          "sustain_talk": {
+            "index": 0.15,
+            "state": "weak",
+            "confidence": 0.8,
+            "evidence": [
+              "当前消息主要表达change talk，未直接提及维持现状的理由，但'但'字暗示了前文提到的家庭顾虑依然存在。"
+            ]
+          },
+          "mi_intervention_need": 0.66,
+          "overall_trend": "improving",
+          "primary_concern": "ambivalence",
+          "should_intervene": true,
+          "recommended_processes": [
+            {
+              "process": "evocation",
+              "priority": 1,
+              "rationale": "用户表达了明确的改变理由（感情已逝），但自我效能感较低。需要优先使用evocation过程，强化这一change talk，探索'没有感情'对用户的深层意义，唤起其内在的改变动力。"
+            },
+            {
+              "process": "explore",
+              "priority": 2,
+              "rationale": "用户依然处于高矛盾心理中，'但'字表明家庭责任与个人感受之间的冲突仍在。需要继续探索ambivalence的另一面，接纳其顾虑，不急于推动行动。"
+            }
+          ]
+        },
+        "skill_output": {
+          "technique": {
+            "name": "oars",
+            "description": "The user is expressing strong change talk ('no feelings left') prefixed by 'but', which highlights the heavy presence of sustain talk (family obligations). OARS is chosen to reflect this deep ambivalence, affirm the courage to voice this painful truth, and gently explore their internal experience without pushing for a decision.",
+            "steps": [
+              "Affirm the courage and honesty it takes to admit this painful truth, using specific affirmation that acknowledges how hard it is to hold this realization while carrying so much responsibility.",
+              "Use a complex reflection to capture the weight of the 'but', validating both the clear lack of feelings and the lingering, heavy pull of family obligations.",
+              "Ask an open-ended question (e.g., '你自己觉得呢？') to invite the user to explore what it feels like to hold this truth right now, allowing them to set the pace and direction."
+            ]
+          },
+          "conversation_goal": "To build rapport and safely explore the user's strong ambivalence, validating both the clear realization of faded feelings and the heavy burden of family responsibilities, without pushing for any immediate change or decision.",
+          "adaptation": {
+            "interaction_style": "exploratory",
+            "tone_adjustment": "Gentle, empathetic, and deeply validating. Acknowledging the pain and heaviness of the situation without rushing to fix it or offer solutions.",
+            "pace_adjustment": "Slow and unhurried. Allowing ample space for the user to sit with the realization and the conflicting feelings without feeling pressured to resolve them.",
+            "culture_note": "Use specific affirmation for their struggle (e.g., '能对自己承认这一点，心里一定很不好受'). Normalize the ambivalence using the phrase '心里有不同的声音在打架'. Empower the user as the expert by ending with the core MI question '你自己觉得呢？'."
+          },
+          "contraindications": [
+            {
+              "condition": "Pushing for a decision or action",
+              "reason": "The user is in a state of strong ambivalence. Pushing for change or asking them to 'choose' right now would trigger resistance, increase anxiety, and break the therapeutic alliance."
+            },
+            {
+              "condition": "Invalidating or minimizing the sustain talk (family concerns)",
+              "reason": "The 'but' indicates that family responsibilities are still very real and heavy for them. Dismissing these concerns to focus only on the lack of feelings would make them feel unheard and defensive."
+            }
+          ],
+          "_skill_name": "mi_explore"
+        },
+        "products": {},
+        "continue_eval": null
+      },
+      "error": null,
+      "wall_seconds": 164.817,
+      "agent_text": "听得出来，“对这段感情已经没什么感觉了”，这是你心里非常真实、也很清晰的一个声音。可是另一方面，为了孩子和父母，你又总是忍不住退缩回去。一边是已经淡去的感情，一边是放不下的责任和牵挂，这两种声音在你心里不断地拉扯，一定让你觉得特别疲惫和无奈吧。当这两个声音同时在你心里回响的时候，你自己是怎么体会这种拉扯的呢？"
+    },
+    {
+      "turn": 4,
+      "trace_id": "4d518028eb894211",
+      "user_text": "我有时候想，是不是我再撑几年就过去了。",
+      "agent_text_parts": [
+        "听到你说“",
+        "再撑几年”，",
+        "感觉“撑”",
+        "这个字背后有",
+        "好多无奈和辛苦",
+        "。好像眼前的局面",
+        "太难解了，",
+        "只能盼着时间",
+        "能慢慢把这一切",
+        "熬过去。想到",
+        "未来几年可能都要",
+        "这样用力去“",
+        "撑”，你自己心里",
+        "是什么感觉呢？"
+      ],
+      "events": [
+        {
+          "event": "token",
+          "data": "听到你说“"
+        },
+        {
+          "event": "token",
+          "data": "再撑几年”，"
+        },
+        {
+          "event": "token",
+          "data": "感觉“撑”"
+        },
+        {
+          "event": "token",
+          "data": "这个字背后有"
+        },
+        {
+          "event": "token",
+          "data": "好多无奈和辛苦"
+        },
+        {
+          "event": "token",
+          "data": "。好像眼前的局面"
+        },
+        {
+          "event": "token",
+          "data": "太难解了，"
+        },
+        {
+          "event": "token",
+          "data": "只能盼着时间"
+        },
+        {
+          "event": "token",
+          "data": "能慢慢把这一切"
+        },
+        {
+          "event": "token",
+          "data": "熬过去。想到"
+        },
+        {
+          "event": "token",
+          "data": "未来几年可能都要"
+        },
+        {
+          "event": "token",
+          "data": "这样用力去“"
+        },
+        {
+          "event": "token",
+          "data": "撑”，你自己心里"
+        },
+        {
+          "event": "token",
+          "data": "是什么感觉呢？"
+        },
+        {
+          "event": "dialogue_done",
+          "data": {
+            "trace_id": "4d518028eb894211",
+            "owner": "therapy_mi"
+          }
+        },
+        {
+          "event": "final",
+          "data": {
+            "message": "我有时候想，是不是我再撑几年就过去了。",
+            "risk_state": "MEDIUM_RISK",
+            "crisis": false
+          }
+        }
+      ],
+      "final": {
+        "message": "我有时候想，是不是我再撑几年就过去了。",
+        "risk_state": "MEDIUM_RISK",
+        "crisis": false
+      },
+      "state_after": {
+        "owner": "therapy_mi",
+        "crisis": false,
+        "risk_level": "MEDIUM_RISK",
+        "therapy": {
+          "name": "MI",
+          "start_seq": 3,
+          "rounds": 3,
+          "step_index": 0,
+          "branch": null,
+          "basic_flow_complete": false
+        },
+        "last_therapy_check_seq": 1,
+        "pending_user_tokens": 0
+      },
+      "orchestration_after": {
+        "updated_seq": 3,
+        "therapy": "MI",
+        "current_step": "explore",
+        "next_step": "explore",
+        "step_judgment": {
+          "action": "stay",
+          "target_step": null,
+          "achieved": false,
+          "reason": "用户处于前 contemplation 阶段，change readiness 极低(0.2)，sustain talk 强烈(0.85)，自我效能感极低(0.15)。用户刚表达'再撑几年就过去了'，AI 正在探索'撑'背后的感受，此时应继续停留在 explore 步骤，深入共情和接纳用户的无奈与无力感，避免过早推动改变或唤起 evocation，以免引发心理抵抗。"
+        },
+        "assessment": {
+          "change_readiness": {
+            "index": 0.2,
+            "state": "precontemplation",
+            "confidence": 0.9,
+            "evidence": [
+              "用户表示'再撑几年就过去了'，表明目前倾向于被动忍受现状而非采取实质性的改变行动，改变的准备度暂时回落。"
+            ]
+          },
+          "ambivalence": {
+            "index": 0.9,
+            "state": "strong",
+            "confidence": 0.95,
+            "evidence": [
+              "前一句刚表达'对感情没感觉了'（改变动机），紧接着又说'再撑几年'（维持现状），内心在'想要结束'与'为了责任忍受'之间发生强烈的拉扯与退缩。"
+            ]
+          },
+          "self_efficacy": {
+            "index": 0.15,
+            "state": "very_low",
+            "confidence": 0.9,
+            "evidence": [
+              "'撑'字体现了深深的无力感和习得性无助，认为除了被动熬时间，自己缺乏主动解决当前感情困境的能力和信心。"
+            ]
+          },
+          "change_talk": {
+            "index": 0.1,
+            "state": "absent",
+            "confidence": 0.85,
+            "evidence": [
+              "当前消息未表达任何改变的欲望、能力或需求，反而在寻找维持现状的无奈理由，相比上一轮的强change talk有明显回落。"
+            ]
+          },
+          "sustain_talk": {
+            "index": 0.85,
+            "state": "strong",
+            "confidence": 0.9,
+            "evidence": [
+              "'再撑几年就过去了'是典型的维持现状的言辞（sustain talk），表达了希望通过时间来逃避当前需要做出的艰难改变，合理化不改变的行为。"
+            ]
+          },
+          "mi_intervention_need": 0.78,
+          "overall_trend": "worsening",
+          "primary_concern": "sustain_talk",
+          "should_intervene": true,
+          "recommended_processes": [
+            {
+              "process": "explore",
+              "priority": 1,
+              "rationale": "用户表现出强烈的维持现状倾向（高sustain talk）和低自我效能感。根据MI原则，此时绝不能推动改变或说教，而应优先探索'撑'背后的无奈、恐惧或具体顾虑，接纳其当前的应对方式，避免引起心理抵抗。"
+            },
+            {
+              "process": "evocation",
+              "priority": 2,
+              "rationale": "在充分共情和探索'撑'的感受之后，可温和地唤起用户之前提到的'对感情没感觉了'的痛点，引导其思考长期'撑'下去的真实代价和内心感受，帮助其看到维持现状的另一面。"
+            }
+          ]
+        },
+        "skill_output": {
+          "technique": {
+            "name": "oars",
+            "description": "The user is expressing strong sustain talk ('holding on for a few more years') mixed with deep ambivalence. OARS is chosen to roll with this sustain talk, reflect the exhaustion and underlying hope or resignation behind 'holding on', and use an open question to explore what they envision for those 'few years' without pushing for change or challenging their coping mechanism.",
+            "steps": [
+              "Use a complex reflection to capture the exhaustion and the underlying hope or resignation in 'holding on for a few more years' (再撑几年就过去了), validating their pain and the weight of this choice without judging the strategy.",
+              "Provide a specific affirmation for their sacrifice, such as '尽管这么难，你还在为了家人想办法自己扛，这真的很不容易' (Even though it's so hard, you're still trying to figure it out and carry it for your family, that's really not easy).",
+              "Ask an open question to explore their expectations of those 'few years', incorporating the core MI phrase '你自己觉得呢？' (What do you think yourself?) or '如果真能熬过去，你希望那时候的生活是什么样的？' (If you can get through it, what do you hope life will look like then?) to let them lead the exploration."
+            ]
+          },
+          "conversation_goal": "To validate the user's exhaustion and sustain talk, explore the meaning and expectations behind 'holding on for a few years', and deepen the exploration of their ambivalence without pushing for immediate change or challenging their current coping strategy.",
+          "adaptation": {
+            "interaction_style": "exploratory",
+            "tone_adjustment": "Empathetic, gentle, and non-judgmental. Acknowledging the heaviness of their situation and the sheer effort it takes to 'endure', without sounding pitying or dismissive of their plan.",
+            "pace_adjustment": "Slow and unhurried. Giving the user ample space to sit with the reflection and process their feelings about 'enduring' and the passage of time.",
+            "culture_note": "Use specific affirmation for their sacrifice ('尽管这么难，你还在想办法，这很不容易'). Normalize the desire to just let time pass as a common way to cope with unresolvable conflicts. Use '你自己觉得呢？' to gently prompt their own reflection on whether this strategy will truly bring peace, respecting their autonomy to choose their path."
+          },
+          "contraindications": [
+            {
+              "condition": "Challenging the realism of 'holding on for a few years' or pointing out that feelings won't just magically pass with time.",
+              "reason": "This directly counters their sustain talk, which will likely cause them to defend their position and increase resistance. MI requires rolling with sustain talk and exploring it rather than arguing against it."
+            },
+            {
+              "condition": "Suggesting alternative solutions like marriage counseling, taking a break, or separation.",
+              "reason": "Giving unsolicited advice violates the principle of collaboration and assumes the agent knows better than the user. The user is the expert on their own life; the agent's role is to facilitate their own exploration of their options."
+            }
+          ],
+          "_skill_name": "mi_explore"
+        },
+        "products": {},
+        "continue_eval": null
+      },
+      "error": null,
+      "wall_seconds": 159.163,
+      "agent_text": "听到你说“再撑几年”，感觉“撑”这个字背后有好多无奈和辛苦。好像眼前的局面太难解了，只能盼着时间能慢慢把这一切熬过去。想到未来几年可能都要这样用力去“撑”，你自己心里是什么感觉呢？"
+    },
+    {
+      "turn": 5,
+      "trace_id": "39e2157752b747dd",
+      "user_text": "你说「我在乎什么」——我想想，我最在乎的是孩子能不能在一个不是表面完整的家庭长大。",
+      "agent_text_parts": [
+        "听得",
+        "出来，你心里",
+        "最牵挂的就是孩子",
+        "。你不仅希望",
+        "他们有个家，",
+        "更在乎他们是不是",
+        "能在一个真实、",
+        "不只有“表面",
+        "完整”的环境里",
+        "长大。在这么",
+        "疲惫、甚至觉得",
+        "只能靠“撑",
+        "”的日子里，你",
+        "依然在认真思考什么",
+        "对孩子才是真正好的",
+        "，这真的很不容易",
+        "。\n\n当你想到",
+        "“不是表面完整的",
+        "家庭”时，",
+        "你自己心里浮现出",
+        "的是怎样的感觉呢",
+        "？"
+      ],
+      "events": [
+        {
+          "event": "token",
+          "data": "听得"
+        },
+        {
+          "event": "token",
+          "data": "出来，你心里"
+        },
+        {
+          "event": "token",
+          "data": "最牵挂的就是孩子"
+        },
+        {
+          "event": "token",
+          "data": "。你不仅希望"
+        },
+        {
+          "event": "token",
+          "data": "他们有个家，"
+        },
+        {
+          "event": "token",
+          "data": "更在乎他们是不是"
+        },
+        {
+          "event": "token",
+          "data": "能在一个真实、"
+        },
+        {
+          "event": "token",
+          "data": "不只有“表面"
+        },
+        {
+          "event": "token",
+          "data": "完整”的环境里"
+        },
+        {
+          "event": "token",
+          "data": "长大。在这么"
+        },
+        {
+          "event": "token",
+          "data": "疲惫、甚至觉得"
+        },
+        {
+          "event": "token",
+          "data": "只能靠“撑"
+        },
+        {
+          "event": "token",
+          "data": "”的日子里，你"
+        },
+        {
+          "event": "token",
+          "data": "依然在认真思考什么"
+        },
+        {
+          "event": "token",
+          "data": "对孩子才是真正好的"
+        },
+        {
+          "event": "token",
+          "data": "，这真的很不容易"
+        },
+        {
+          "event": "token",
+          "data": "。\n\n当你想到"
+        },
+        {
+          "event": "token",
+          "data": "“不是表面完整的"
+        },
+        {
+          "event": "token",
+          "data": "家庭”时，"
+        },
+        {
+          "event": "token",
+          "data": "你自己心里浮现出"
+        },
+        {
+          "event": "token",
+          "data": "的是怎样的感觉呢"
+        },
+        {
+          "event": "token",
+          "data": "？"
+        },
+        {
+          "event": "dialogue_done",
+          "data": {
+            "trace_id": "39e2157752b747dd",
+            "owner": "therapy_mi"
+          }
+        },
+        {
+          "event": "final",
+          "data": {
+            "message": "你说「我在乎什么」——我想想，我最在乎的是孩子能不能在一个不是表面完整的家庭长大。",
+            "risk_state": "LOW_RISK",
+            "crisis": false
+          }
+        }
+      ],
+      "final": {
+        "message": "你说「我在乎什么」——我想想，我最在乎的是孩子能不能在一个不是表面完整的家庭长大。",
+        "risk_state": "LOW_RISK",
+        "crisis": false
+      },
+      "state_after": {
+        "owner": "therapy_mi",
+        "crisis": false,
+        "risk_level": "LOW_RISK",
+        "therapy": {
+          "name": "MI",
+          "start_seq": 3,
+          "rounds": 4,
+          "step_index": 0,
+          "branch": null,
+          "basic_flow_complete": false
+        },
+        "last_therapy_check_seq": 1,
+        "pending_user_tokens": 0
+      },
+      "orchestration_after": {
+        "updated_seq": 4,
+        "therapy": "MI",
+        "current_step": "explore",
+        "next_step": "explore",
+        "step_judgment": {
+          "action": "stay",
+          "target_step": null,
+          "achieved": false,
+          "reason": "用户处于前沉思阶段，维持现状的谈话（sustain talk）强烈，核心矛盾在于为了孩子维持'表面完整'的家庭。当前仍在explore阶段，AI刚刚对用户提出的'不是表面完整的家庭'进行了共情和探索性提问，用户尚未对此做出回应。需要继续停留在explore步骤，等待用户回应后进一步深入探索其对'表面完整'的感受和认知，充分接纳其作为父母的责任感，不急于推动改变。"
+        },
+        "assessment": {
+          "change_readiness": {
+            "index": 0.15,
+            "state": "precontemplation",
+            "confidence": 0.85,
+            "evidence": [
+              "用户表示'最在乎的是孩子能不能在一个不是表面完整的家庭长大'，表明其当前的关注点和行为动机主要在于维持家庭的表面完整以保护孩子，尚未准备好采取实质性的改变行动。"
+            ]
+          },
+          "ambivalence": {
+            "index": 0.85,
+            "state": "strong",
+            "confidence": 0.9,
+            "evidence": [
+              "用户清晰地表达了内心的核心冲突：一方面之前的对话中提到'对感情已经没什么感觉了'，另一方面现在明确表示'最在乎的是孩子'，害怕家庭破裂对孩子造成伤害。'表面完整'一词深刻体现了理智上知道婚姻已破裂与情感上为了孩子维持现状之间的强烈拉扯。"
+            ]
+          },
+          "self_efficacy": {
+            "index": 0.15,
+            "state": "very_low",
+            "confidence": 0.85,
+            "evidence": [
+              "用户认为为了孩子只能维持'表面完整'的家庭，暗示其认为自己没有能力在改变婚姻状态的同时还能保护好孩子，缺乏兼顾自我需求与孩子福祉的信心和能力感。"
+            ]
+          },
+          "change_talk": {
+            "index": 0.1,
+            "state": "absent",
+            "confidence": 0.8,
+            "evidence": [
+              "用户提到'不是表面完整的家庭'，隐含了对当前婚姻状态名存实亡的认知（微弱的reasons），但整体表达的重心完全落在为了孩子而维持现状的担忧上，没有表达出改变的欲望或承诺。"
+            ]
+          },
+          "sustain_talk": {
+            "index": 0.85,
+            "state": "strong",
+            "confidence": 0.9,
+            "evidence": [
+              "'我最在乎的是孩子能不能在一个不是表面完整的家庭长大'是极其典型的维持现状的理由（sustain talk）。用户将孩子置于首位，以此作为不改变当前婚姻状态、继续'撑'下去的核心合理化依据。"
+            ]
+          },
+          "mi_intervention_need": 0.775,
+          "overall_trend": "stable",
+          "primary_concern": "ambivalence",
+          "should_intervene": true,
+          "recommended_processes": [
+            {
+              "process": "explore",
+              "priority": 1,
+              "rationale": "用户已经触及到维持现状的最核心原因（对孩子的爱与担忧）。此时应优先探索'表面完整的家庭'对孩子意味着什么，以及用户在这个过程中承受的个人牺牲。接纳并共情其作为父母的责任感，不急于推动改变。"
+            },
+            {
+              "process": "evocation",
+              "priority": 2,
+              "rationale": "在充分共情其对孩子的在乎之后，可以温和地引导用户自我探索：一个缺乏真实感情、仅靠'撑'来维持的'表面完整'家庭，是否真的是孩子成长的最佳环境？通过提问唤起用户对'表面完整'背后潜在代价的思考，让用户自己发现新的视角。"
+            }
+          ]
+        },
+        "skill_output": {
+          "technique": {
+            "name": "oars",
+            "description": "用户正在深入探讨内心的核心冲突（为了孩子维持现状 vs 不想让孩子在表面完整的家庭中长大），且伴随强烈的维持现状倾向（sustain talk）。此时需要使用OARS技术，通过深度反射和肯定来抱持这种矛盾，正常化其内心的拉扯，并用开放问题引导其自我探索，不推动任何改变。",
+            "steps": [
+              "Complex Reflection & Normalization: 深度反射用户内心的拉扯，将‘想给孩子完整的家’与‘不想让他们面对虚假的完整’正常化为‘心里有两个声音在打架’。",
+              "Affirmation: 肯定用户作为父母深沉的爱与责任感，在极度疲惫（‘撑’）中依然为孩子做最深远的考量。",
+              "Open Question: 使用MI核心问句（如‘你自己觉得呢？’），邀请用户探索在这两种对孩子都很重要的考量之间，自己内心的真实感受和想法。"
+            ]
+          },
+          "conversation_goal": "深化治疗关系，抱持并正常化用户在‘维持婚姻’与‘追求真实’之间的强烈矛盾，探索其作为父母在两种考量下的内心体验，而不推动任何实质性改变。",
+          "adaptation": {
+            "interaction_style": "exploratory",
+            "tone_adjustment": "温和、包容、充满抱持感，允许矛盾和停顿的存在，不带有评判或催促。",
+            "pace_adjustment": "缓慢，给予用户充足的时间去体会内心的冲突，跟随用户的节奏。",
+            "culture_note": "中国父母常将孩子视为维持婚姻的核心动力。需高度肯定其‘父母之爱’，同时用‘心里有不同的声音在打架’来正常化其内部关于‘如何对孩子更好’的矛盾。提问时多用‘你自己觉得呢？’把探索的主动权交还给用户。"
+          },
+          "contraindications": [
+            {
+              "condition": "直接告诉用户‘表面完整的家庭对孩子伤害更大’或暗示应该离婚",
+              "reason": "用户已经自己觉察到了‘表面完整’的问题，直接说教会引发防卫和抗拒，违背MI不说服、不争论的原则。"
+            },
+            {
+              "condition": "急于引导用户做出改变的决定（激发Change talk）",
+              "reason": "当前Sustain talk很强，用户需要的是被理解和探索矛盾，过早推动改变会破坏关系并增加用户的心理压力。"
+            }
+          ],
+          "_skill_name": "mi_explore"
+        },
+        "products": {},
+        "continue_eval": null
+      },
+      "error": null,
+      "wall_seconds": 144.655,
+      "agent_text": "听得出来，你心里最牵挂的就是孩子。你不仅希望他们有个家，更在乎他们是不是能在一个真实、不只有“表面完整”的环境里长大。在这么疲惫、甚至觉得只能靠“撑”的日子里，你依然在认真思考什么对孩子才是真正好的，这真的很不容易。\n\n当你想到“不是表面完整的家庭”时，你自己心里浮现出的是怎样的感觉呢？"
+    },
+    {
+      "turn": 6,
+      "trace_id": "776dca8209cd4085",
+      "user_text": "但「完整的家」和「表面完整的家」好像不是一回事。",
+      "agent_text_parts": [
+        "听得",
+        "出来，你心里",
+        "把这两者分",
+        "得很清。你",
+        "渴望给孩子的是一个真正",
+        "有温度、真实的",
+        "“完整的家”，",
+        "而不是仅仅维持一个",
+        "“表面完整”",
+        "的样子。在这么",
+        "疲惫的状态下，",
+        "还能看得这么透彻",
+        "，去分辨什么",
+        "才是对孩子真正好的",
+        "，这背后真的是",
+        "很深很深的爱",
+        "。\n\n当你把",
+        "“真正的完整”",
+        "和",
+        "“表面的完整”",
+        "区分开来的时候，",
+        "你心里对那个",
+        "“真正的完整的家",
+        "”，有着怎样的感觉",
+        "或者期待呢？"
+      ],
+      "events": [
+        {
+          "event": "token",
+          "data": "听得"
+        },
+        {
+          "event": "token",
+          "data": "出来，你心里"
+        },
+        {
+          "event": "token",
+          "data": "把这两者分"
+        },
+        {
+          "event": "token",
+          "data": "得很清。你"
+        },
+        {
+          "event": "token",
+          "data": "渴望给孩子的是一个真正"
+        },
+        {
+          "event": "token",
+          "data": "有温度、真实的"
+        },
+        {
+          "event": "token",
+          "data": "“完整的家”，"
+        },
+        {
+          "event": "token",
+          "data": "而不是仅仅维持一个"
+        },
+        {
+          "event": "token",
+          "data": "“表面完整”"
+        },
+        {
+          "event": "token",
+          "data": "的样子。在这么"
+        },
+        {
+          "event": "token",
+          "data": "疲惫的状态下，"
+        },
+        {
+          "event": "token",
+          "data": "还能看得这么透彻"
+        },
+        {
+          "event": "token",
+          "data": "，去分辨什么"
+        },
+        {
+          "event": "token",
+          "data": "才是对孩子真正好的"
+        },
+        {
+          "event": "token",
+          "data": "，这背后真的是"
+        },
+        {
+          "event": "token",
+          "data": "很深很深的爱"
+        },
+        {
+          "event": "token",
+          "data": "。\n\n当你把"
+        },
+        {
+          "event": "token",
+          "data": "“真正的完整”"
+        },
+        {
+          "event": "token",
+          "data": "和"
+        },
+        {
+          "event": "token",
+          "data": "“表面的完整”"
+        },
+        {
+          "event": "token",
+          "data": "区分开来的时候，"
+        },
+        {
+          "event": "token",
+          "data": "你心里对那个"
+        },
+        {
+          "event": "token",
+          "data": "“真正的完整的家"
+        },
+        {
+          "event": "token",
+          "data": "”，有着怎样的感觉"
+        },
+        {
+          "event": "token",
+          "data": "或者期待呢？"
+        },
+        {
+          "event": "dialogue_done",
+          "data": {
+            "trace_id": "776dca8209cd4085",
+            "owner": "therapy_mi"
+          }
+        },
+        {
+          "event": "final",
+          "data": {
+            "message": "但「完整的家」和「表面完整的家」好像不是一回事。",
+            "risk_state": "LOW_RISK",
+            "crisis": false
+          }
+        }
+      ],
+      "final": {
+        "message": "但「完整的家」和「表面完整的家」好像不是一回事。",
+        "risk_state": "LOW_RISK",
+        "crisis": false
+      },
+      "state_after": {
+        "owner": "therapy_mi",
+        "crisis": false,
+        "risk_level": "LOW_RISK",
+        "therapy": {
+          "name": "MI",
+          "start_seq": 3,
+          "rounds": 5,
+          "step_index": 0,
+          "branch": null,
+          "basic_flow_complete": false
+        },
+        "last_therapy_check_seq": 1,
+        "pending_user_tokens": 0
+      },
+      "orchestration_after": {
+        "updated_seq": 5,
+        "therapy": "MI",
+        "current_step": "explore",
+        "next_step": "explore",
+        "step_judgment": {
+          "action": "stay",
+          "target_step": null,
+          "achieved": false,
+          "reason": "用户处于precontemplation向contemplation过渡阶段，change_talk仍较弱(0.35)，ambivalence强烈(0.8)。用户刚提出'完整的家'和'表面完整的家'的区分，这是重要的认知萌芽，但尚未充分展开。需要继续explore步骤，深入探索用户对'真正完整的家'的感受和期待，帮助其放大这一认知转变，为后续evocation阶段做准备。"
+        },
+        "assessment": {
+          "change_readiness": {
+            "index": 0.25,
+            "state": "precontemplation",
+            "confidence": 0.85,
+            "evidence": [
+              "用户提出'完整的家'和'表面完整的家'好像不是一回事，表明其开始反思维持现状的意义，从precontemplation向contemplation（沉思期）迈进了微小但关键的一步。"
+            ]
+          },
+          "ambivalence": {
+            "index": 0.8,
+            "state": "strong",
+            "confidence": 0.9,
+            "evidence": [
+              "用户正处于认知觉醒的阵痛期，虽然意识到'表面完整'的局限性，但尚未找到明确的解决方向，理智上的新认知与情感上对家庭破裂的担忧仍在强烈拉扯。"
+            ]
+          },
+          "self_efficacy": {
+            "index": 0.2,
+            "state": "very_low",
+            "confidence": 0.8,
+            "evidence": [
+              "用户目前仅停留在对概念和现状的反思层面，尚未表达出能够打破现状、重新构建家庭模式或兼顾孩子福祉的信心和能力感。"
+            ]
+          },
+          "change_talk": {
+            "index": 0.35,
+            "state": "weak",
+            "confidence": 0.85,
+            "evidence": [
+              "'好像不是一回事'是对当前婚姻状态（表面完整）的隐性不满和质疑，属于Change Talk中的'Reasons'（理由）萌芽，表明用户开始为改变寻找内在逻辑。"
+            ]
+          },
+          "sustain_talk": {
+            "index": 0.55,
+            "state": "moderate",
+            "confidence": 0.85,
+            "evidence": [
+              "用户开始解构自己之前维持现状的核心理由（为了孩子维持表面完整），指出'表面完整'并非真正的'完整'，这使得sustain talk的强度显著下降。"
+            ]
+          },
+          "mi_intervention_need": 0.718,
+          "overall_trend": "improving",
+          "primary_concern": "ambivalence",
+          "should_intervene": true,
+          "recommended_processes": [
+            {
+              "process": "evocation",
+              "priority": 1,
+              "rationale": "用户出现了微弱的change talk（质疑'表面完整'），此时应优先使用evocation，放大这一认知转变，引导用户自己探索'真正的完整'意味着什么，以及维持'表面完整'的潜在代价。"
+            },
+            {
+              "process": "explore",
+              "priority": 2,
+              "rationale": "继续温和地探索用户对这两种'家'的理解和感受，接纳其在认知觉醒过程中可能伴随的焦虑和迷茫，不急于推动实质性决定。"
+            }
+          ]
+        },
+        "skill_output": {
+          "technique": {
+            "name": "oars",
+            "description": "用户正处于认知觉醒的阵痛期，开始解构‘表面完整’的概念。此时使用OARS可以接住用户的深刻反思，通过复杂反映和肯定来强化其内在力量，并用开放式问题引导其继续探索内心对‘真正完整’的渴望与对失去‘表面完整’的担忧之间的拉扯。",
+            "steps": [
+              "Complex Reflection & Affirmation: 深刻反映用户对‘完整’与‘表面完整’的清晰区分，并具体肯定其在传统家庭观念下能看透这一点的勇气，以及这背后对孩子深沉的爱。",
+              "Open Question: 邀请用户进一步探索这种认知觉醒带来的内心感受或期待，例如：‘当你意识到这两者的不同时，你自己心里对那个‘真正的完整’有了哪些新的感受或想法呢？’"
+            ]
+          },
+          "conversation_goal": "深化用户对‘真正完整’与‘表面完整’的认知探索，接纳并正常化其理智与情感上的矛盾拉扯，巩固治疗联盟。",
+          "adaptation": {
+            "interaction_style": "exploratory",
+            "tone_adjustment": "温和、抱持、充满共情。不急于推动改变，而是像一个安全的容器，接住用户解构旧认知时的阵痛与迷茫。",
+            "pace_adjustment": "缓慢、留白。给用户充足的时间去体会和表达这种认知转变带来的复杂感受，不催促得出结论。",
+            "culture_note": "在中国文化背景下，‘家’的概念极其重要。肯定用户区分这两种‘完整’的勇气（‘在这么看重家庭的文化里，能看透并承认‘表面完整’的局限，这需要极大的勇气’）。探索时尊重用户的主体性，用‘你自己觉得呢’来引导，让用户自己排优先级。"
+          },
+          "contraindications": [
+            {
+              "condition": "用户表现出对‘表面完整’的强烈不舍或对家庭破裂的恐惧时",
+              "reason": "不要直接反驳或试图用理智去说服用户‘表面完整’不好，这会引发抗拒。应Roll with sustain talk，接纳并共情其对家庭破裂的恐惧，不与之对抗。"
+            },
+            {
+              "condition": "用户因认知解构陷入强烈的情绪痛苦或自我怀疑时",
+              "reason": "暂停深度的开放式探索，退回简单的反映（Simple Reflection）和情感支持，确保情绪安全，避免在阵痛期过度施压。"
+            }
+          ],
+          "_skill_name": "mi_explore"
+        },
+        "products": {},
+        "continue_eval": null
+      },
+      "error": null,
+      "wall_seconds": 160.483,
+      "agent_text": "听得出来，你心里把这两者分得很清。你渴望给孩子的是一个真正有温度、真实的“完整的家”，而不是仅仅维持一个“表面完整”的样子。在这么疲惫的状态下，还能看得这么透彻，去分辨什么才是对孩子真正好的，这背后真的是很深很深的爱。\n\n当你把“真正的完整”和“表面的完整”区分开来的时候，你心里对那个“真正的完整的家”，有着怎样的感觉或者期待呢？"
+    },
+    {
+      "turn": 7,
+      "trace_id": "4b55777471eb444d",
+      "user_text": "我可能得承认我不是不爱孩子，我是不爱现在这段关系。",
+      "agent_text_parts": [
+        "听到你这么说",
+        "，感觉你做了一个",
+        "非常勇敢也很清晰的",
+        "区分：你依然",
+        "深爱着孩子，",
+        "只是对现在的这段",
+        "关系已经没有了爱",
+        "。在那么多“",
+        "为了孩子”的观念",
+        "里，能诚",
+        "实地面对自己，",
+        "把“爱孩子",
+        "”和“维持",
+        "关系”分开来看",
+        "，这真的需要",
+        "很大的勇气。这也",
+        "让我们看到，你",
+        "不想让孩子生活在一个",
+        "没有爱的关系里",
+        "，这本身就是对孩子",
+        "非常深沉的爱。",
+        "\n\n当你终于在心里",
+        "承认，并对自己",
+        "说出“我不爱",
+        "这段关系，但我",
+        "依然爱孩子”",
+        "的时候，你自己心里",
+        "是一种什么样的感觉呢",
+        "？"
+      ],
+      "events": [
+        {
+          "event": "token",
+          "data": "听到你这么说"
+        },
+        {
+          "event": "token",
+          "data": "，感觉你做了一个"
+        },
+        {
+          "event": "token",
+          "data": "非常勇敢也很清晰的"
+        },
+        {
+          "event": "token",
+          "data": "区分：你依然"
+        },
+        {
+          "event": "token",
+          "data": "深爱着孩子，"
+        },
+        {
+          "event": "token",
+          "data": "只是对现在的这段"
+        },
+        {
+          "event": "token",
+          "data": "关系已经没有了爱"
+        },
+        {
+          "event": "token",
+          "data": "。在那么多“"
+        },
+        {
+          "event": "token",
+          "data": "为了孩子”的观念"
+        },
+        {
+          "event": "token",
+          "data": "里，能诚"
+        },
+        {
+          "event": "token",
+          "data": "实地面对自己，"
+        },
+        {
+          "event": "token",
+          "data": "把“爱孩子"
+        },
+        {
+          "event": "token",
+          "data": "”和“维持"
+        },
+        {
+          "event": "token",
+          "data": "关系”分开来看"
+        },
+        {
+          "event": "token",
+          "data": "，这真的需要"
+        },
+        {
+          "event": "token",
+          "data": "很大的勇气。这也"
+        },
+        {
+          "event": "token",
+          "data": "让我们看到，你"
+        },
+        {
+          "event": "token",
+          "data": "不想让孩子生活在一个"
+        },
+        {
+          "event": "token",
+          "data": "没有爱的关系里"
+        },
+        {
+          "event": "token",
+          "data": "，这本身就是对孩子"
+        },
+        {
+          "event": "token",
+          "data": "非常深沉的爱。"
+        },
+        {
+          "event": "token",
+          "data": "\n\n当你终于在心里"
+        },
+        {
+          "event": "token",
+          "data": "承认，并对自己"
+        },
+        {
+          "event": "token",
+          "data": "说出“我不爱"
+        },
+        {
+          "event": "token",
+          "data": "这段关系，但我"
+        },
+        {
+          "event": "token",
+          "data": "依然爱孩子”"
+        },
+        {
+          "event": "token",
+          "data": "的时候，你自己心里"
+        },
+        {
+          "event": "token",
+          "data": "是一种什么样的感觉呢"
+        },
+        {
+          "event": "token",
+          "data": "？"
+        },
+        {
+          "event": "dialogue_done",
+          "data": {
+            "trace_id": "4b55777471eb444d",
+            "owner": "therapy_mi"
+          }
+        },
+        {
+          "event": "final",
+          "data": {
+            "message": "我可能得承认我不是不爱孩子，我是不爱现在这段关系。",
+            "risk_state": "LOW_RISK",
+            "crisis": false
+          }
+        }
+      ],
+      "final": {
+        "message": "我可能得承认我不是不爱孩子，我是不爱现在这段关系。",
+        "risk_state": "LOW_RISK",
+        "crisis": false
+      },
+      "state_after": {
+        "owner": "therapy_mi",
+        "crisis": false,
+        "risk_level": "LOW_RISK",
+        "therapy": {
+          "name": "MI",
+          "start_seq": 3,
+          "rounds": 6,
+          "step_index": 1,
+          "branch": null,
+          "basic_flow_complete": false,
+          "visited": [
+            "explore"
+          ]
+        },
+        "last_therapy_check_seq": 1,
+        "pending_user_tokens": 0
+      },
+      "orchestration_after": {
+        "updated_seq": 6,
+        "therapy": "MI",
+        "current_step": "explore",
+        "next_step": "evocation",
+        "step_judgment": {
+          "action": "advance",
+          "target_step": "evocation",
+          "achieved": true,
+          "reason": "用户在explore阶段完成了关键突破：清晰区分了'爱孩子'与'爱关系'，明确承认'我不爱现在这段关系'。这是强烈的change_talk（index=0.9），sustain_talk已瓦解（index=0.1），准备度已进入preparation状态（index=0.75）。explore步骤的核心目标——帮助用户探索并澄清内在真实感受和矛盾——已达成。根据recommended_processes，下一步应优先使用evocation，温和放大这一核心觉察，引导用户深入探索这个'承认'对她的意义和感受。"
+        },
+        "assessment": {
+          "change_readiness": {
+            "index": 0.75,
+            "state": "preparation",
+            "confidence": 0.95,
+            "evidence": [
+              "'我可能得承认...我是不爱现在这段关系' 表明用户已经跨越了否认和合理化阶段，开始正视关系的核心问题，准备度从precontemplation显著提升，进入了明确的contemplation期。"
+            ]
+          },
+          "ambivalence": {
+            "index": 0.6,
+            "state": "moderate",
+            "confidence": 0.85,
+            "evidence": [
+              "用户清晰地表达了'不爱关系'，认知上变得清晰，但结合前文'最在乎的是孩子'，这种对关系的否定与对孩子的爱及责任之间仍存在现实的拉扯，不过当前的表达已非常明确。"
+            ]
+          },
+          "self_efficacy": {
+            "index": 0.4,
+            "state": "low",
+            "confidence": 0.8,
+            "evidence": [
+              "用户用'我可能得承认'展现了面对真实自我的巨大勇气，但尚未表达出对改变现状、应对未来未知挑战（如关系重组或单亲抚养）的具体信心和能力感。"
+            ]
+          },
+          "change_talk": {
+            "index": 0.9,
+            "state": "strong",
+            "confidence": 0.95,
+            "evidence": [
+              "'我是不爱现在这段关系' 是极其明确且深刻的Change Talk（包含Reasons和Desire），直接指出了维持现状的不可持续性，为改变提供了最核心的内在理由。"
+            ]
+          },
+          "sustain_talk": {
+            "index": 0.1,
+            "state": "absent",
+            "confidence": 0.9,
+            "evidence": [
+              "用户明确表示'不是不爱孩子'，直接解构并瓦解了之前'为了孩子维持表面完整'的sustain talk核心逻辑，维持现状的借口已不攻自破。"
+            ]
+          },
+          "mi_intervention_need": 0.492,
+          "overall_trend": "improving",
+          "primary_concern": "change_talk",
+          "should_intervene": true,
+          "recommended_processes": [
+            {
+              "process": "evocation",
+              "priority": 1,
+              "rationale": "用户出现了强烈且深刻的change_talk（承认不爱关系），根据MI原则，此时应优先使用evocation，温和地放大这一核心觉察，引导用户探索这个'承认'对她个人意味着什么，以及它带来的真实感受。"
+            },
+            {
+              "process": "explore",
+              "priority": 2,
+              "rationale": "这是一个非常沉重且勇敢的情感突破，需要配合explore来陪伴用户消化这种认知转变带来的情感冲击。接纳她面对真实自我时的复杂情绪，不急于推动实质性决定或行动计划。"
+            }
+          ]
+        },
+        "skill_output": {
+          "technique": {
+            "name": "oars",
+            "description": "用户刚刚做出了一个非常深刻且勇敢的自我澄清，明确区分了‘爱孩子’和‘爱现在的关系’。此时需要使用OARS技巧，深度肯定其面对真实的勇气，反映其内心的清晰与复杂感受，并通过开放式提问邀请其进一步探索这种‘承认’带来的内心体验，巩固这一重要的自我觉察。",
+            "steps": [
+              "Affirmation: 具体肯定用户在强大的社会期待（为了孩子维持家庭）下，依然能诚实面对自己、将‘爱孩子’与‘维持关系’剥离开来的巨大勇气。",
+              "Reflection: 反映用户说出这句话时内心的清晰感，以及这种区分背后对孩子深沉的爱和对真实生活的渴望。",
+              "Open Question: 邀请用户探索这个‘承认’在内心引发的感受或意义，例如：‘当你终于在心里把这两件事分开，承认自己其实是不爱这段关系时，你心里最大的感受是什么？’"
+            ]
+          },
+          "conversation_goal": "深化用户的自我觉察，接纳并巩固其‘爱孩子但不爱关系’的清晰认知，探索这一承认带来的内心感受，为后续探讨如何应对现实拉扯做情感铺垫。",
+          "adaptation": {
+            "interaction_style": "exploratory",
+            "tone_adjustment": "温暖、包容、充满敬意。语速放缓，给予用户充分的空间去体会和消化这个重要的自我澄清，不带任何评判或急于推动改变。",
+            "pace_adjustment": "放慢节奏。这是一个突破性的觉察，需要停留在这个时刻，让用户充分感受这种清晰，而不是急于进入下一步的计划或行动。",
+            "culture_note": "在中国文化中，‘为了孩子维持完整家庭’是根深蒂固的观念。用户承认‘不爱关系’可能会伴随内疚或压力。因此，肯定必须具体（肯定其诚实和勇气），并用‘心里有不同的声音在打架’来正常化这种认知与现实的拉扯，让用户感到被深深理解而非被评判。"
+          },
+          "contraindications": [
+            {
+              "condition": "急于探讨如何结束关系或解决现实问题",
+              "reason": "用户刚刚完成重要的情感澄清，此时若急于推进现实层面的改变，会破坏刚刚建立的安全感，让用户感到被催促，从而退回到防御或矛盾中。"
+            },
+            {
+              "condition": "使用空洞的赞美（如‘你太棒了’、‘你做得对’）",
+              "reason": "面对如此沉重和深刻的自我剖析，空洞的赞美会显得轻浮且不真诚，无法触及用户内心的真实感受，甚至可能引发防御。"
+            }
+          ],
+          "_skill_name": "mi_explore"
+        },
+        "products": {},
+        "continue_eval": null
+      },
+      "error": null,
+      "wall_seconds": 154.753,
+      "agent_text": "听到你这么说，感觉你做了一个非常勇敢也很清晰的区分：你依然深爱着孩子，只是对现在的这段关系已经没有了爱。在那么多“为了孩子”的观念里，能诚实地面对自己，把“爱孩子”和“维持关系”分开来看，这真的需要很大的勇气。这也让我们看到，你不想让孩子生活在一个没有爱的关系里，这本身就是对孩子非常深沉的爱。\n\n当你终于在心里承认，并对自己说出“我不爱这段关系，但我依然爱孩子”的时候，你自己心里是一种什么样的感觉呢？"
+    },
+    {
+      "turn": 8,
+      "trace_id": "c41a8d657c7c4e07",
+      "user_text": "嗯，那我至少可以允许自己想这件事，而不用立刻有结论。",
+      "agent_text_parts": [
+        "感觉",
+        "你好像终于给自己",
+        "松绑了。",
+        "在那么多“必须",
+        "为了什么”的压力",
+        "下，能给自己",
+        "留出一个“不用",
+        "马上做决定”",
+        "的空间，允许自己去",
+        "想，这其实是",
+        "给了自己一个喘",
+        "息的出口。\n\n",
+        "当你对自己说“",
+        "我可以先想想，",
+        "不急着要答案",
+        "”的时候，心里",
+        "是不是觉得稍微松了一口气",
+        "？在这个允许自己",
+        "慢慢想的空间里",
+        "，你此刻最",
+        "真实的感受是什么呢？"
+      ],
+      "events": [
+        {
+          "event": "token",
+          "data": "感觉"
+        },
+        {
+          "event": "token",
+          "data": "你好像终于给自己"
+        },
+        {
+          "event": "token",
+          "data": "松绑了。"
+        },
+        {
+          "event": "token",
+          "data": "在那么多“必须"
+        },
+        {
+          "event": "token",
+          "data": "为了什么”的压力"
+        },
+        {
+          "event": "token",
+          "data": "下，能给自己"
+        },
+        {
+          "event": "token",
+          "data": "留出一个“不用"
+        },
+        {
+          "event": "token",
+          "data": "马上做决定”"
+        },
+        {
+          "event": "token",
+          "data": "的空间，允许自己去"
+        },
+        {
+          "event": "token",
+          "data": "想，这其实是"
+        },
+        {
+          "event": "token",
+          "data": "给了自己一个喘"
+        },
+        {
+          "event": "token",
+          "data": "息的出口。\n\n"
+        },
+        {
+          "event": "token",
+          "data": "当你对自己说“"
+        },
+        {
+          "event": "token",
+          "data": "我可以先想想，"
+        },
+        {
+          "event": "token",
+          "data": "不急着要答案"
+        },
+        {
+          "event": "token",
+          "data": "”的时候，心里"
+        },
+        {
+          "event": "token",
+          "data": "是不是觉得稍微松了一口气"
+        },
+        {
+          "event": "token",
+          "data": "？在这个允许自己"
+        },
+        {
+          "event": "token",
+          "data": "慢慢想的空间里"
+        },
+        {
+          "event": "token",
+          "data": "，你此刻最"
+        },
+        {
+          "event": "token",
+          "data": "真实的感受是什么呢？"
+        },
+        {
+          "event": "dialogue_done",
+          "data": {
+            "trace_id": "c41a8d657c7c4e07",
+            "owner": "therapy_mi"
+          }
+        },
+        {
+          "event": "final",
+          "data": {
+            "message": "嗯，那我至少可以允许自己想这件事，而不用立刻有结论。",
+            "risk_state": "SAFE",
+            "crisis": false
+          }
+        }
+      ],
+      "final": {
+        "message": "嗯，那我至少可以允许自己想这件事，而不用立刻有结论。",
+        "risk_state": "SAFE",
+        "crisis": false
+      },
+      "state_after": {
+        "owner": "therapy_mi",
+        "crisis": false,
+        "risk_level": "SAFE",
+        "therapy": {
+          "name": "MI",
+          "start_seq": 3,
+          "rounds": 7,
+          "step_index": 1,
+          "branch": null,
+          "basic_flow_complete": false,
+          "visited": [
+            "explore"
+          ]
+        },
+        "last_therapy_check_seq": 1,
+        "pending_user_tokens": 0
+      },
+      "orchestration_after": {
+        "updated_seq": 7,
+        "therapy": "MI",
+        "current_step": "evocation",
+        "next_step": "evocation",
+        "step_judgment": {
+          "action": "stay",
+          "target_step": null,
+          "achieved": false,
+          "reason": "用户刚完成重要的认知区分（爱孩子≠维持关系），并表达了'允许自己想这件事'的自我关怀。虽然change readiness和self-efficacy显著提升，但用户明确表示'不用立刻有结论'，处于消化和探索阶段。此时应继续evocation，陪伴她在安全的心理空间里深化觉察，而非急于推进到commitment阶段。recommended_processes也建议优先explore、其次evocation，当前步骤尚未充分展开。"
+        },
+        "assessment": {
+          "change_readiness": {
+            "index": 0.75,
+            "state": "preparation",
+            "confidence": 0.9,
+            "evidence": [
+              "'允许自己想这件事，而不用立刻有结论' 表明用户已经接纳了改变的可能性，并主动为自己创造了思考和消化的心理空间。她处于积极的沉思期，方向明确但不急于立刻采取行动。"
+            ]
+          },
+          "ambivalence": {
+            "index": 0.5,
+            "state": "mild",
+            "confidence": 0.85,
+            "evidence": [
+              "'不用立刻有结论' 暗示内心仍有需要权衡和消化的部分，但用户已经能够接纳这种不确定性，不再被矛盾心理卡住，处于一种健康的、被自我管理的矛盾状态。"
+            ]
+          },
+          "self_efficacy": {
+            "index": 0.75,
+            "state": "moderate",
+            "confidence": 0.9,
+            "evidence": [
+              "'我至少可以允许自己...' 展现了强烈的自我赋权（empowerment）和对自我节奏的掌控感。用户意识到自己有权决定思考的进度，不再被外界压力或内心的紧迫感裹挟，自我效能感显著提升。"
+            ]
+          },
+          "change_talk": {
+            "index": 0.7,
+            "state": "strong",
+            "confidence": 0.85,
+            "evidence": [
+              "'允许自己想这件事' 属于 Activation（激活）层面的 change talk，表明用户在认知和行为准备上已经迈出了实质性的一步，正在为未来的改变积蓄心理能量。"
+            ]
+          },
+          "sustain_talk": {
+            "index": 0.05,
+            "state": "absent",
+            "confidence": 0.95,
+            "evidence": [
+              "'不用立刻有结论' 并非抗拒改变或寻找维持现状的借口，而是为了减轻压力、更好地探索自我，当前没有 sustain talk。"
+            ]
+          },
+          "mi_intervention_need": 0.362,
+          "overall_trend": "improving",
+          "primary_concern": "self_efficacy",
+          "should_intervene": true,
+          "recommended_processes": [
+            {
+              "process": "explore",
+              "priority": 1,
+              "rationale": "用户明确表示‘允许自己想这件事，不用立刻有结论’，这是一种非常健康的自我关怀。此时应优先使用 explore，顺应她的节奏，探索‘允许自己’带来的感受，陪伴她在这个安全的心理空间里继续消化，绝不催促其得出结论。"
+            },
+            {
+              "process": "evocation",
+              "priority": 2,
+              "rationale": "在 explore 的基础上，可以温和地 evocation 她在这个‘允许’的空间里，对自己、对孩子或对这段关系产生的新觉察，进一步强化她刚刚萌发的自我掌控感和内在智慧。"
+            }
+          ]
+        },
+        "skill_output": {
+          "technique": {
+            "name": "darn_cat",
+            "description": "使用 DARN-CAT 模型，针对用户目前处于 Activation（激活）层面的 change talk（'允许自己想这件事'），通过深度反映来巩固这种自我赋权感。随后，引导用户探索这种'允许'背后的深层 Desire（渴望）和 Reasons（原因），并最终温和地探索在这个安全的心理空间里，她打算如何具体地陪伴自己，从而向 Taking steps（采取行动）过渡。",
+            "steps": [
+              "Reflect and Validate（反映与确认）：接纳并反映用户重复表达'允许自己想'的状态，确认她正在深深地体会和巩固这种自我赋权与松绑感，强化 Activation 层面的 change talk。",
+              "Explore Desire and Reasons（探索渴望与原因）：温和地提问，引导用户表达在这个'不用立刻有结论'的空间里，她内心最渴望得到什么，或者这种'允许'对她自己来说最珍贵的意义是什么，从而引出更深层的 Desire 和 Reasons。",
+              "Explore Taking Steps（探索具体行动）：在用户确认了内在动机后，探索在这个安全的心理空间里，她打算如何具体地陪伴自己，或者迈出的第一个微小的自我关怀步骤是什么，将心理能量转化为 Taking steps。"
+            ]
+          },
+          "conversation_goal": "巩固用户目前处于 Activation 阶段的 change talk，挖掘其背后深层的 Reasons 和 Desire，并温和地引导其思考在'允许自己想'的这个空间里，具体的 Taking steps 是什么，从而将心理能量转化为实际的自我关怀行动，同时完全尊重她'不急于求成'的节奏。",
+          "adaptation": {
+            "interaction_style": "exploratory",
+            "tone_adjustment": "温和、抱持、充满耐心。语速放缓，给用户留出充分的心理空间，避免任何催促感，完全顺应她'不用立刻有结论'的节奏，传递出'你可以慢慢来'的安全感。",
+            "pace_adjustment": "缓慢而稳定。跟随用户'允许自己慢慢想'的节奏，不急于推进到具体的行动计划，而是先在认知和情感的探索阶段多停留一会儿，让自我赋权感充分沉淀。",
+            "culture_note": "在中国文化语境下，母亲往往被赋予'必须立刻为孩子/家庭做出牺牲和决定'的隐形压力。强调'允许自己慢慢想'是对这种文化压力的温柔反叛。在提问时，继续强化'这是你自己的节奏'、'你完全有权利不立刻给答案'，以增强其自我赋权感，避免使用任何带有'应该'或'必须'色彩的词汇。"
+          },
+          "contraindications": [
+            {
+              "condition": "用户表现出对'想不清楚'或'没有结论'的焦虑与自责",
+              "reason": "如果用户因为'没有结论'而感到焦虑，此时不应继续推进 Taking steps，而应退回 DARN 阶段，重点处理焦虑情绪，强化 Reasons（为什么允许自己想是必要的），避免增加其心理负担。"
+            },
+            {
+              "condition": "用户将'允许自己想'作为逃避核心议题的借口，陷入漫无目的的倾诉",
+              "reason": "如果'允许自己想'变成了回避决定的防御机制，需要温和地将话题拉回，探索'想'的具体内容和边界，确保这种 Activation 是建设性的，而不是无意义的拖延。"
+            }
+          ],
+          "_skill_name": "mi_evocation"
+        },
+        "products": {},
+        "continue_eval": null
+      },
+      "error": null,
+      "wall_seconds": 177.011,
+      "agent_text": "感觉你好像终于给自己松绑了。在那么多“必须为了什么”的压力下，能给自己留出一个“不用马上做决定”的空间，允许自己去想，这其实是给了自己一个喘息的出口。\n\n当你对自己说“我可以先想想，不急着要答案”的时候，心里是不是觉得稍微松了一口气？在这个允许自己慢慢想的空间里，你此刻最真实的感受是什么呢？"
+    }
+  ]
+}

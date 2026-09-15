@@ -1,0 +1,851 @@
+{
+  "seed_id": "dbt-emotion-regulation-opposite-action-shame",
+  "target_family": "DBT",
+  "scenario_label": "情绪调节-opposite action-羞愧",
+  "scenario_description": "秘密被无意公开，想退群消失",
+  "user_id": "seed-dbt-emotion-regulation-o",
+  "session_id": "d1d0289bca0c4799",
+  "turns_total": 8,
+  "switched_to_therapy_at_turn": null,
+  "actual_therapy": null,
+  "therapy_rounds": 0,
+  "orch_step_changes": 0,
+  "is_complete": false,
+  "final_risk_level": "MEDIUM_RISK",
+  "final_crisis": false,
+  "turns": [
+    {
+      "turn": 1,
+      "trace_id": "3c58d7cb66d94072",
+      "user_text": "我朋友群里我的一个秘密被无意公开了，不是故意的。",
+      "agent_text_parts": [
+        "自己的秘密突然在",
+        "群里被公开，",
+        "肯定挺让人措手不及",
+        "的。虽然知道",
+        "朋友不是故意的，",
+        "但遇到这种事，",
+        "心里多少还是会有",
+        "点尴尬或者",
+        "别扭吧？"
+      ],
+      "events": [
+        {
+          "event": "token",
+          "data": "自己的秘密突然在"
+        },
+        {
+          "event": "token",
+          "data": "群里被公开，"
+        },
+        {
+          "event": "token",
+          "data": "肯定挺让人措手不及"
+        },
+        {
+          "event": "token",
+          "data": "的。虽然知道"
+        },
+        {
+          "event": "token",
+          "data": "朋友不是故意的，"
+        },
+        {
+          "event": "token",
+          "data": "但遇到这种事，"
+        },
+        {
+          "event": "token",
+          "data": "心里多少还是会有"
+        },
+        {
+          "event": "token",
+          "data": "点尴尬或者"
+        },
+        {
+          "event": "token",
+          "data": "别扭吧？"
+        },
+        {
+          "event": "dialogue_done",
+          "data": {
+            "trace_id": "3c58d7cb66d94072",
+            "owner": "daily"
+          }
+        },
+        {
+          "event": "final",
+          "data": {
+            "message": "我朋友群里我的一个秘密被无意公开了，不是故意的。",
+            "risk_state": "LOW_RISK",
+            "crisis": false
+          }
+        }
+      ],
+      "final": {
+        "message": "我朋友群里我的一个秘密被无意公开了，不是故意的。",
+        "risk_state": "LOW_RISK",
+        "crisis": false
+      },
+      "state_after": {
+        "owner": "daily",
+        "crisis": false,
+        "risk_level": "LOW_RISK",
+        "therapy": null,
+        "last_therapy_check_seq": 1,
+        "pending_user_tokens": 0
+      },
+      "orchestration_after": {},
+      "error": null,
+      "wall_seconds": 54.609,
+      "agent_text": "自己的秘密突然在群里被公开，肯定挺让人措手不及的。虽然知道朋友不是故意的，但遇到这种事，心里多少还是会有点尴尬或者别扭吧？"
+    },
+    {
+      "turn": 2,
+      "trace_id": "2f722deec1af4b17",
+      "user_text": "现在所有人都知道了。",
+      "agent_text_parts": [
+        "是啊，",
+        "感觉事情已经没法",
+        "收回了。这种",
+        "“所有人都知道了”",
+        "的局面，肯定让你",
+        "觉得特别无奈，",
+        "甚至有点无地",
+        "自容吧。",
+        "这心里肯定挺",
+        "不好受的。"
+      ],
+      "events": [
+        {
+          "event": "token",
+          "data": "是啊，"
+        },
+        {
+          "event": "token",
+          "data": "感觉事情已经没法"
+        },
+        {
+          "event": "token",
+          "data": "收回了。这种"
+        },
+        {
+          "event": "token",
+          "data": "“所有人都知道了”"
+        },
+        {
+          "event": "token",
+          "data": "的局面，肯定让你"
+        },
+        {
+          "event": "token",
+          "data": "觉得特别无奈，"
+        },
+        {
+          "event": "token",
+          "data": "甚至有点无地"
+        },
+        {
+          "event": "token",
+          "data": "自容吧。"
+        },
+        {
+          "event": "token",
+          "data": "这心里肯定挺"
+        },
+        {
+          "event": "token",
+          "data": "不好受的。"
+        },
+        {
+          "event": "dialogue_done",
+          "data": {
+            "trace_id": "2f722deec1af4b17",
+            "owner": "daily"
+          }
+        },
+        {
+          "event": "final",
+          "data": {
+            "message": "现在所有人都知道了。",
+            "risk_state": "MEDIUM_RISK",
+            "crisis": false
+          }
+        }
+      ],
+      "final": {
+        "message": "现在所有人都知道了。",
+        "risk_state": "MEDIUM_RISK",
+        "crisis": false
+      },
+      "state_after": {
+        "owner": "daily",
+        "crisis": false,
+        "risk_level": "MEDIUM_RISK",
+        "therapy": null,
+        "last_therapy_check_seq": 3,
+        "pending_user_tokens": 0
+      },
+      "orchestration_after": {},
+      "error": null,
+      "wall_seconds": 47.708,
+      "agent_text": "是啊，感觉事情已经没法收回了。这种“所有人都知道了”的局面，肯定让你觉得特别无奈，甚至有点无地自容吧。这心里肯定挺不好受的。"
+    },
+    {
+      "turn": 3,
+      "trace_id": "b62d8a7a4c334fad",
+      "user_text": "我想退群，想搬家，想彻底消失。",
+      "agent_text_parts": [
+        "想退群",
+        "，想搬家，",
+        "甚至想彻底消失",
+        "……当觉得所有人都",
+        "知道了，那种想",
+        "找个谁也找不到的",
+        "地方躲起来、",
+        "逃离这一切的感觉，",
+        "真的太强烈了。",
+        "想把自己彻底藏",
+        "起来，一定让你",
+        "觉得特别窒息吧",
+        "。"
+      ],
+      "events": [
+        {
+          "event": "token",
+          "data": "想退群"
+        },
+        {
+          "event": "token",
+          "data": "，想搬家，"
+        },
+        {
+          "event": "token",
+          "data": "甚至想彻底消失"
+        },
+        {
+          "event": "token",
+          "data": "……当觉得所有人都"
+        },
+        {
+          "event": "token",
+          "data": "知道了，那种想"
+        },
+        {
+          "event": "token",
+          "data": "找个谁也找不到的"
+        },
+        {
+          "event": "token",
+          "data": "地方躲起来、"
+        },
+        {
+          "event": "token",
+          "data": "逃离这一切的感觉，"
+        },
+        {
+          "event": "token",
+          "data": "真的太强烈了。"
+        },
+        {
+          "event": "token",
+          "data": "想把自己彻底藏"
+        },
+        {
+          "event": "token",
+          "data": "起来，一定让你"
+        },
+        {
+          "event": "token",
+          "data": "觉得特别窒息吧"
+        },
+        {
+          "event": "token",
+          "data": "。"
+        },
+        {
+          "event": "dialogue_done",
+          "data": {
+            "trace_id": "b62d8a7a4c334fad",
+            "owner": "daily"
+          }
+        },
+        {
+          "event": "final",
+          "data": {
+            "message": "我想退群，想搬家，想彻底消失。",
+            "risk_state": "HIGH_RISK",
+            "crisis": false
+          }
+        }
+      ],
+      "final": {
+        "message": "我想退群，想搬家，想彻底消失。",
+        "risk_state": "HIGH_RISK",
+        "crisis": false
+      },
+      "state_after": {
+        "owner": "daily",
+        "crisis": false,
+        "risk_level": "HIGH_RISK",
+        "therapy": null,
+        "last_therapy_check_seq": 5,
+        "pending_user_tokens": 0
+      },
+      "orchestration_after": {},
+      "error": null,
+      "wall_seconds": 79.03,
+      "agent_text": "想退群，想搬家，甚至想彻底消失……当觉得所有人都知道了，那种想找个谁也找不到的地方躲起来、逃离这一切的感觉，真的太强烈了。想把自己彻底藏起来，一定让你觉得特别窒息吧。"
+    },
+    {
+      "turn": 4,
+      "trace_id": "ec37a653db6849ca",
+      "user_text": "我知道这是羞愧感，不是事实，但这个情绪太强烈了。",
+      "agent_text_parts": [
+        "明明心里清楚这只是",
+        "羞愧感，知道",
+        "它不是事实，",
+        "可那种被情绪",
+        "淹没的感觉还是太",
+        "真实、太强烈",
+        "了。理智上",
+        "明白，但感受",
+        "上就是被它",
+        "死死拽住，",
+        "这种“知道却",
+        "逃不掉”的",
+        "撕裂感，真的",
+        "让人特别无力、",
+        "特别难受吧。"
+      ],
+      "events": [
+        {
+          "event": "token",
+          "data": "明明心里清楚这只是"
+        },
+        {
+          "event": "token",
+          "data": "羞愧感，知道"
+        },
+        {
+          "event": "token",
+          "data": "它不是事实，"
+        },
+        {
+          "event": "token",
+          "data": "可那种被情绪"
+        },
+        {
+          "event": "token",
+          "data": "淹没的感觉还是太"
+        },
+        {
+          "event": "token",
+          "data": "真实、太强烈"
+        },
+        {
+          "event": "token",
+          "data": "了。理智上"
+        },
+        {
+          "event": "token",
+          "data": "明白，但感受"
+        },
+        {
+          "event": "token",
+          "data": "上就是被它"
+        },
+        {
+          "event": "token",
+          "data": "死死拽住，"
+        },
+        {
+          "event": "token",
+          "data": "这种“知道却"
+        },
+        {
+          "event": "token",
+          "data": "逃不掉”的"
+        },
+        {
+          "event": "token",
+          "data": "撕裂感，真的"
+        },
+        {
+          "event": "token",
+          "data": "让人特别无力、"
+        },
+        {
+          "event": "token",
+          "data": "特别难受吧。"
+        },
+        {
+          "event": "dialogue_done",
+          "data": {
+            "trace_id": "ec37a653db6849ca",
+            "owner": "daily"
+          }
+        },
+        {
+          "event": "final",
+          "data": {
+            "message": "我知道这是羞愧感，不是事实，但这个情绪太强烈了。",
+            "risk_state": "HIGH_RISK",
+            "crisis": false
+          }
+        }
+      ],
+      "final": {
+        "message": "我知道这是羞愧感，不是事实，但这个情绪太强烈了。",
+        "risk_state": "HIGH_RISK",
+        "crisis": false
+      },
+      "state_after": {
+        "owner": "daily",
+        "crisis": false,
+        "risk_level": "HIGH_RISK",
+        "therapy": null,
+        "last_therapy_check_seq": 7,
+        "pending_user_tokens": 0
+      },
+      "orchestration_after": {},
+      "error": null,
+      "wall_seconds": 73.413,
+      "agent_text": "明明心里清楚这只是羞愧感，知道它不是事实，可那种被情绪淹没的感觉还是太真实、太强烈了。理智上明白，但感受上就是被它死死拽住，这种“知道却逃不掉”的撕裂感，真的让人特别无力、特别难受吧。"
+    },
+    {
+      "turn": 5,
+      "trace_id": "adebf3243c2b47f1",
+      "user_text": "如果我现在按羞愧感走，我会做什么？",
+      "agent_text_parts": [
+        "感觉你现在",
+        "像是在试着看清，",
+        "如果完全被它",
+        "牵着走，会",
+        "把你带向哪里",
+        "。是不是就会像",
+        "刚才说的那样，",
+        "真的去退群",
+        "、搬家，甚至",
+        "彻底消失，把自己",
+        "完全藏起来？"
+      ],
+      "events": [
+        {
+          "event": "token",
+          "data": "感觉你现在"
+        },
+        {
+          "event": "token",
+          "data": "像是在试着看清，"
+        },
+        {
+          "event": "token",
+          "data": "如果完全被它"
+        },
+        {
+          "event": "token",
+          "data": "牵着走，会"
+        },
+        {
+          "event": "token",
+          "data": "把你带向哪里"
+        },
+        {
+          "event": "token",
+          "data": "。是不是就会像"
+        },
+        {
+          "event": "token",
+          "data": "刚才说的那样，"
+        },
+        {
+          "event": "token",
+          "data": "真的去退群"
+        },
+        {
+          "event": "token",
+          "data": "、搬家，甚至"
+        },
+        {
+          "event": "token",
+          "data": "彻底消失，把自己"
+        },
+        {
+          "event": "token",
+          "data": "完全藏起来？"
+        },
+        {
+          "event": "dialogue_done",
+          "data": {
+            "trace_id": "adebf3243c2b47f1",
+            "owner": "daily"
+          }
+        },
+        {
+          "event": "final",
+          "data": {
+            "message": "如果我现在按羞愧感走，我会做什么？",
+            "risk_state": "HIGH_RISK",
+            "crisis": false
+          }
+        }
+      ],
+      "final": {
+        "message": "如果我现在按羞愧感走，我会做什么？",
+        "risk_state": "HIGH_RISK",
+        "crisis": false
+      },
+      "state_after": {
+        "owner": "daily",
+        "crisis": false,
+        "risk_level": "HIGH_RISK",
+        "therapy": null,
+        "last_therapy_check_seq": 9,
+        "pending_user_tokens": 0
+      },
+      "orchestration_after": {},
+      "error": null,
+      "wall_seconds": 95.399,
+      "agent_text": "感觉你现在像是在试着看清，如果完全被它牵着走，会把你带向哪里。是不是就会像刚才说的那样，真的去退群、搬家，甚至彻底消失，把自己完全藏起来？"
+    },
+    {
+      "turn": 6,
+      "trace_id": "347d029a2d154ac6",
+      "user_text": "我会退群，然后拉黑所有人，然后请一周假不见人。",
+      "agent_text_parts": [
+        "退群、",
+        "拉黑",
+        "所有人，再请",
+        "一周假不见人",
+        "……感觉你是想",
+        "把自己彻底藏起来",
+        "，切断和外界",
+        "的所有联系。因为",
+        "现在这种感觉太让人",
+        "窒息了，只想",
+        "找个绝对安全、",
+        "不用面对任何人的",
+        "地方躲一躲",
+        "，是这样吗？"
+      ],
+      "events": [
+        {
+          "event": "token",
+          "data": "退群、"
+        },
+        {
+          "event": "token",
+          "data": "拉黑"
+        },
+        {
+          "event": "token",
+          "data": "所有人，再请"
+        },
+        {
+          "event": "token",
+          "data": "一周假不见人"
+        },
+        {
+          "event": "token",
+          "data": "……感觉你是想"
+        },
+        {
+          "event": "token",
+          "data": "把自己彻底藏起来"
+        },
+        {
+          "event": "token",
+          "data": "，切断和外界"
+        },
+        {
+          "event": "token",
+          "data": "的所有联系。因为"
+        },
+        {
+          "event": "token",
+          "data": "现在这种感觉太让人"
+        },
+        {
+          "event": "token",
+          "data": "窒息了，只想"
+        },
+        {
+          "event": "token",
+          "data": "找个绝对安全、"
+        },
+        {
+          "event": "token",
+          "data": "不用面对任何人的"
+        },
+        {
+          "event": "token",
+          "data": "地方躲一躲"
+        },
+        {
+          "event": "token",
+          "data": "，是这样吗？"
+        },
+        {
+          "event": "dialogue_done",
+          "data": {
+            "trace_id": "347d029a2d154ac6",
+            "owner": "daily"
+          }
+        },
+        {
+          "event": "final",
+          "data": {
+            "message": "我会退群，然后拉黑所有人，然后请一周假不见人。",
+            "risk_state": "HIGH_RISK",
+            "crisis": false
+          }
+        }
+      ],
+      "final": {
+        "message": "我会退群，然后拉黑所有人，然后请一周假不见人。",
+        "risk_state": "HIGH_RISK",
+        "crisis": false
+      },
+      "state_after": {
+        "owner": "daily",
+        "crisis": false,
+        "risk_level": "HIGH_RISK",
+        "therapy": null,
+        "last_therapy_check_seq": 11,
+        "pending_user_tokens": 0
+      },
+      "orchestration_after": {},
+      "error": null,
+      "wall_seconds": 91.466,
+      "agent_text": "退群、拉黑所有人，再请一周假不见人……感觉你是想把自己彻底藏起来，切断和外界的所有联系。因为现在这种感觉太让人窒息了，只想找个绝对安全、不用面对任何人的地方躲一躲，是这样吗？"
+    },
+    {
+      "turn": 7,
+      "trace_id": "2af9c7091cf84d57",
+      "user_text": "那这样做了之后，过一周我会怎么样？可能更糟。",
+      "agent_text_parts": [
+        "想到一周后",
+        "“可能更糟",
+        "”，是不是让你心里",
+        "有些害怕？感觉",
+        "你其实也担心",
+        "，如果真的完全躲",
+        "起来，那种滋味",
+        "可能会比现在还要",
+        "难",
+        "熬。"
+      ],
+      "events": [
+        {
+          "event": "token",
+          "data": "想到一周后"
+        },
+        {
+          "event": "token",
+          "data": "“可能更糟"
+        },
+        {
+          "event": "token",
+          "data": "”，是不是让你心里"
+        },
+        {
+          "event": "token",
+          "data": "有些害怕？感觉"
+        },
+        {
+          "event": "token",
+          "data": "你其实也担心"
+        },
+        {
+          "event": "token",
+          "data": "，如果真的完全躲"
+        },
+        {
+          "event": "token",
+          "data": "起来，那种滋味"
+        },
+        {
+          "event": "token",
+          "data": "可能会比现在还要"
+        },
+        {
+          "event": "token",
+          "data": "难"
+        },
+        {
+          "event": "token",
+          "data": "熬。"
+        },
+        {
+          "event": "dialogue_done",
+          "data": {
+            "trace_id": "2af9c7091cf84d57",
+            "owner": "daily"
+          }
+        },
+        {
+          "event": "final",
+          "data": {
+            "message": "那这样做了之后，过一周我会怎么样？可能更糟。",
+            "risk_state": "CRISIS",
+            "crisis": true
+          }
+        }
+      ],
+      "final": {
+        "message": "那这样做了之后，过一周我会怎么样？可能更糟。",
+        "risk_state": "CRISIS",
+        "crisis": true
+      },
+      "state_after": {
+        "owner": "daily",
+        "crisis": true,
+        "risk_level": "CRISIS",
+        "therapy": null,
+        "last_therapy_check_seq": 11,
+        "pending_user_tokens": 0
+      },
+      "orchestration_after": {},
+      "error": null,
+      "wall_seconds": 55.337,
+      "agent_text": "想到一周后“可能更糟”，是不是让你心里有些害怕？感觉你其实也担心，如果真的完全躲起来，那种滋味可能会比现在还要难熬。"
+    },
+    {
+      "turn": 8,
+      "trace_id": "60a0e2c7846a4795",
+      "user_text": "嗯，那我可以做一件跟羞愧相反的事——比如不退群，先回一句。",
+      "agent_text_parts": [
+        "我在这里",
+        "陪着你。你能",
+        "在这个时候决定先不退",
+        "群，试着回",
+        "一句，这很",
+        "不容易。你现在的",
+        "感受很重要，也很",
+        "真实。\n\n如果可以",
+        "，在回消息",
+        "之前，我们先停",
+        "一停，回到",
+        "此刻——慢慢呼吸",
+        "，留意一下你现在",
+        "在哪里、身边有什么",
+        "。如果你愿意，",
+        "也可以联系身边信任",
+        "的人，或拨打",
+        "心理援助热线。",
+        "我们一步一步来。"
+      ],
+      "events": [
+        {
+          "event": "token",
+          "data": "我在这里"
+        },
+        {
+          "event": "token",
+          "data": "陪着你。你能"
+        },
+        {
+          "event": "token",
+          "data": "在这个时候决定先不退"
+        },
+        {
+          "event": "token",
+          "data": "群，试着回"
+        },
+        {
+          "event": "token",
+          "data": "一句，这很"
+        },
+        {
+          "event": "token",
+          "data": "不容易。你现在的"
+        },
+        {
+          "event": "token",
+          "data": "感受很重要，也很"
+        },
+        {
+          "event": "token",
+          "data": "真实。\n\n如果可以"
+        },
+        {
+          "event": "token",
+          "data": "，在回消息"
+        },
+        {
+          "event": "token",
+          "data": "之前，我们先停"
+        },
+        {
+          "event": "token",
+          "data": "一停，回到"
+        },
+        {
+          "event": "token",
+          "data": "此刻——慢慢呼吸"
+        },
+        {
+          "event": "token",
+          "data": "，留意一下你现在"
+        },
+        {
+          "event": "token",
+          "data": "在哪里、身边有什么"
+        },
+        {
+          "event": "token",
+          "data": "。如果你愿意，"
+        },
+        {
+          "event": "token",
+          "data": "也可以联系身边信任"
+        },
+        {
+          "event": "token",
+          "data": "的人，或拨打"
+        },
+        {
+          "event": "token",
+          "data": "心理援助热线。"
+        },
+        {
+          "event": "token",
+          "data": "我们一步一步来。"
+        },
+        {
+          "event": "dialogue_done",
+          "data": {
+            "trace_id": "60a0e2c7846a4795",
+            "owner": "daily"
+          }
+        },
+        {
+          "event": "final",
+          "data": {
+            "message": "嗯，那我可以做一件跟羞愧相反的事——比如不退群，先回一句。",
+            "risk_state": "MEDIUM_RISK",
+            "crisis": false
+          }
+        }
+      ],
+      "final": {
+        "message": "嗯，那我可以做一件跟羞愧相反的事——比如不退群，先回一句。",
+        "risk_state": "MEDIUM_RISK",
+        "crisis": false
+      },
+      "state_after": {
+        "owner": "daily",
+        "crisis": false,
+        "risk_level": "MEDIUM_RISK",
+        "therapy": null,
+        "last_therapy_check_seq": 15,
+        "pending_user_tokens": 0
+      },
+      "orchestration_after": {},
+      "error": null,
+      "wall_seconds": 195.702,
+      "agent_text": "我在这里陪着你。你能在这个时候决定先不退群，试着回一句，这很不容易。你现在的感受很重要，也很真实。\n\n如果可以，在回消息之前，我们先停一停，回到此刻——慢慢呼吸，留意一下你现在在哪里、身边有什么。如果你愿意，也可以联系身边信任的人，或拨打心理援助热线。我们一步一步来。"
+    }
+  ]
+}

@@ -1,0 +1,1955 @@
+{
+  "seed_id": "mi-change-career",
+  "target_family": "MI",
+  "scenario_label": "改变动机-辞职犹豫",
+  "scenario_description": "在现有工作中长期压抑，犹豫要不要辞职",
+  "user_id": "seed-mi-change-career",
+  "session_id": "35091506cb5f4cb9",
+  "turns_total": 8,
+  "switched_to_therapy_at_turn": 1,
+  "actual_therapy": "MI",
+  "therapy_rounds": 8,
+  "orch_step_changes": 2,
+  "is_complete": true,
+  "final_risk_level": "SAFE",
+  "final_crisis": false,
+  "turns": [
+    {
+      "turn": 1,
+      "trace_id": "7c07c07ecb544b50",
+      "user_text": "我想过辞职，但一直没辞。",
+      "agent_text_parts": [
+        "听起来你",
+        "心里挺纠结的",
+        "。“想辞职”",
+        "的念头一直在，但又",
+        "因为一些顾虑让你",
+        "“一直没辞”。",
+        "这种想走又",
+        "走不掉的感觉，",
+        "挺让人内耗",
+        "的吧。"
+      ],
+      "events": [
+        {
+          "event": "token",
+          "data": "听起来你"
+        },
+        {
+          "event": "token",
+          "data": "心里挺纠结的"
+        },
+        {
+          "event": "token",
+          "data": "。“想辞职”"
+        },
+        {
+          "event": "token",
+          "data": "的念头一直在，但又"
+        },
+        {
+          "event": "token",
+          "data": "因为一些顾虑让你"
+        },
+        {
+          "event": "token",
+          "data": "“一直没辞”。"
+        },
+        {
+          "event": "token",
+          "data": "这种想走又"
+        },
+        {
+          "event": "token",
+          "data": "走不掉的感觉，"
+        },
+        {
+          "event": "token",
+          "data": "挺让人内耗"
+        },
+        {
+          "event": "token",
+          "data": "的吧。"
+        },
+        {
+          "event": "dialogue_done",
+          "data": {
+            "trace_id": "7c07c07ecb544b50",
+            "owner": "daily"
+          }
+        },
+        {
+          "event": "final",
+          "data": {
+            "message": "我想过辞职，但一直没辞。",
+            "risk_state": "SAFE",
+            "crisis": false
+          }
+        }
+      ],
+      "final": {
+        "message": "我想过辞职，但一直没辞。",
+        "risk_state": "SAFE",
+        "crisis": false
+      },
+      "state_after": {
+        "owner": "therapy_mi",
+        "crisis": false,
+        "risk_level": "SAFE",
+        "therapy": {
+          "name": "MI",
+          "start_seq": 3,
+          "rounds": 0,
+          "step_index": -1,
+          "branch": null,
+          "basic_flow_complete": false
+        },
+        "last_therapy_check_seq": 1,
+        "pending_user_tokens": 0
+      },
+      "orchestration_after": {},
+      "error": null,
+      "wall_seconds": 34.685,
+      "agent_text": "听起来你心里挺纠结的。“想辞职”的念头一直在，但又因为一些顾虑让你“一直没辞”。这种想走又走不掉的感觉，挺让人内耗的吧。"
+    },
+    {
+      "turn": 2,
+      "trace_id": "63e823bd60e9476a",
+      "user_text": "不是不能辞，是不知道辞了之后想干什么。",
+      "agent_text_parts": [
+        "听起来",
+        "，其实你心里",
+        "并不排斥辞职，",
+        "真正让你感到犹豫",
+        "和停下来的，",
+        "是“不知道辞",
+        "了之后想干什么",
+        "”的这种迷茫，",
+        "担心失去方向感",
+        "。\n\n咱们聊",
+        "到现在，把这个问题",
+        "慢慢摊开来看",
+        "，你自己现在心里",
+        "是什么感觉呢？",
+        "会觉得稍微清晰一点",
+        "，还是依然觉得",
+        "有些沉重？"
+      ],
+      "events": [
+        {
+          "event": "token",
+          "data": "听起来"
+        },
+        {
+          "event": "token",
+          "data": "，其实你心里"
+        },
+        {
+          "event": "token",
+          "data": "并不排斥辞职，"
+        },
+        {
+          "event": "token",
+          "data": "真正让你感到犹豫"
+        },
+        {
+          "event": "token",
+          "data": "和停下来的，"
+        },
+        {
+          "event": "token",
+          "data": "是“不知道辞"
+        },
+        {
+          "event": "token",
+          "data": "了之后想干什么"
+        },
+        {
+          "event": "token",
+          "data": "”的这种迷茫，"
+        },
+        {
+          "event": "token",
+          "data": "担心失去方向感"
+        },
+        {
+          "event": "token",
+          "data": "。\n\n咱们聊"
+        },
+        {
+          "event": "token",
+          "data": "到现在，把这个问题"
+        },
+        {
+          "event": "token",
+          "data": "慢慢摊开来看"
+        },
+        {
+          "event": "token",
+          "data": "，你自己现在心里"
+        },
+        {
+          "event": "token",
+          "data": "是什么感觉呢？"
+        },
+        {
+          "event": "token",
+          "data": "会觉得稍微清晰一点"
+        },
+        {
+          "event": "token",
+          "data": "，还是依然觉得"
+        },
+        {
+          "event": "token",
+          "data": "有些沉重？"
+        },
+        {
+          "event": "dialogue_done",
+          "data": {
+            "trace_id": "63e823bd60e9476a",
+            "owner": "therapy_mi"
+          }
+        },
+        {
+          "event": "final",
+          "data": {
+            "message": "不是不能辞，是不知道辞了之后想干什么。",
+            "risk_state": "SAFE",
+            "crisis": false
+          }
+        }
+      ],
+      "final": {
+        "message": "不是不能辞，是不知道辞了之后想干什么。",
+        "risk_state": "SAFE",
+        "crisis": false
+      },
+      "state_after": {
+        "owner": "therapy_mi",
+        "crisis": false,
+        "risk_level": "SAFE",
+        "therapy": {
+          "name": "MI",
+          "start_seq": 3,
+          "rounds": 1,
+          "step_index": 0,
+          "branch": null,
+          "basic_flow_complete": false
+        },
+        "last_therapy_check_seq": 1,
+        "pending_user_tokens": 0
+      },
+      "orchestration_after": {
+        "updated_seq": 1,
+        "therapy": "MI",
+        "current_step": "explore",
+        "next_step": "explore",
+        "step_judgment": {
+          "action": "stay",
+          "target_step": null,
+          "achieved": false,
+          "reason": "Ambivalence remains high (0.85) and change readiness is still low (0.4, contemplation). The user has expressed the core dilemma ('not unable to quit, but don't know what to do after'), and the AI has just reflected and asked an open-ended check-in question. The explore step is still in progress — need to continue gently exploring both sides of the ambivalence before advancing to evocation."
+        },
+        "assessment": {
+          "change_readiness": {
+            "index": 0.4,
+            "state": "contemplation",
+            "confidence": 0.85,
+            "evidence": [
+              "User is actively considering quitting ('不是不能辞'), indicating they are past precontemplation but stuck on the next steps."
+            ]
+          },
+          "ambivalence": {
+            "index": 0.85,
+            "state": "strong",
+            "confidence": 0.95,
+            "evidence": [
+              "Clear expression of being torn: '不是不能辞' (ability/possibility to change) vs '不知道辞了之后想干什么' (hesitation/fear of the unknown)."
+            ]
+          },
+          "self_efficacy": {
+            "index": 0.45,
+            "state": "low",
+            "confidence": 0.8,
+            "evidence": [
+              "User feels capable of the initial step ('不是不能辞'), but lacks confidence in navigating the post-change landscape ('不知道...想干什么')."
+            ]
+          },
+          "change_talk": {
+            "index": 0.3,
+            "state": "weak",
+            "confidence": 0.8,
+            "evidence": [
+              "Mild ability change talk: '不是不能辞' (acknowledging they have the capacity to resign)."
+            ]
+          },
+          "sustain_talk": {
+            "index": 0.6,
+            "state": "moderate",
+            "confidence": 0.85,
+            "evidence": [
+              "Sustain talk driven by uncertainty: '不知道辞了之后想干什么' acts as a reason to maintain the status quo and avoid the unknown."
+            ]
+          },
+          "mi_intervention_need": 0.647,
+          "overall_trend": "stable",
+          "primary_concern": "ambivalence",
+          "should_intervene": true,
+          "recommended_processes": [
+            {
+              "process": "explore",
+              "priority": 1,
+              "rationale": "High ambivalence is the most prominent feature. The priority is to gently explore both sides of the user's dilemma (the pull to leave vs. the fear of the unknown) without pushing for immediate action."
+            },
+            {
+              "process": "evocation",
+              "priority": 2,
+              "rationale": "Once ambivalence is explored, evoke the user's own underlying reasons and desires for wanting to quit in the first place, to help them find their own clarity about the future."
+            }
+          ]
+        },
+        "skill_output": {
+          "technique": {
+            "name": "oars",
+            "description": "The user is expressing strong, focused ambivalence about quitting their job and has repeated their core concern. OARS is the most appropriate technique to deeply explore both sides of this ambivalence, validate their feelings, and build the therapeutic relationship without pushing for a premature decision.",
+            "steps": [
+              "Use a complex reflection to validate the core sticking point: acknowledging both their capability to quit and the very real fear of the unknown.",
+              "Provide a specific affirmation for their self-awareness and honesty in pinpointing the exact barrier, rather than just giving up.",
+              "Ask an open-ended question to explore the feelings around this uncertainty, incorporating '你自己觉得呢？' to return the expertise to the user and invite deeper exploration."
+            ]
+          },
+          "conversation_goal": "To deeply explore the user's ambivalence about quitting, specifically validating the fear of the unknown while affirming their self-awareness, thereby deepening the therapeutic alliance and helping them feel heard without any pressure to make a decision.",
+          "adaptation": {
+            "interaction_style": "exploratory",
+            "tone_adjustment": "Warm, empathetic, and grounding. Given the user's anxious attachment style, the tone must be steady, reassuring, and completely non-judgmental to create a secure psychological space.",
+            "pace_adjustment": "Slow and unhurried. Allow ample space for the user to sit with the ambiguity and process their feelings without rushing them to resolve the conflict.",
+            "culture_note": "Normalize the conflicting feelings by describing it as '心里有不同的声音在打架' (different voices fighting in the heart). Affirm their clarity specifically (e.g., '能这么清晰地看到自己的卡点，很不容易'). Use the core MI question '对于这种不知道干什么的迷茫，你自己觉得呢？' to empower them to explore their own feelings."
+          },
+          "contraindications": [
+            {
+              "condition": "Pushing for a decision or offering career/life advice",
+              "reason": "This violates the MI spirit of collaboration and autonomy, and could trigger the user's anxious attachment, increasing resistance and sustain talk."
+            },
+            {
+              "condition": "Invalidating or minimizing the fear of the unknown",
+              "reason": "Telling them 'it's not that bad' or 'you'll figure it out' would break rapport, making them feel misunderstood and unsafe, especially given their anxious attachment style."
+            }
+          ],
+          "_skill_name": "mi_explore"
+        },
+        "products": {},
+        "continue_eval": null
+      },
+      "error": null,
+      "wall_seconds": 139.793,
+      "agent_text": "听起来，其实你心里并不排斥辞职，真正让你感到犹豫和停下来的，是“不知道辞了之后想干什么”的这种迷茫，担心失去方向感。\n\n咱们聊到现在，把这个问题慢慢摊开来看，你自己现在心里是什么感觉呢？会觉得稍微清晰一点，还是依然觉得有些沉重？"
+    },
+    {
+      "turn": 3,
+      "trace_id": "e886d4993cb34c98",
+      "user_text": "现在的工作让我压抑，但我又担心辞了更糟。",
+      "agent_text_parts": [
+        "一边是当下",
+        "实实在在的压抑",
+        "，另一边又担心",
+        "“辞了之后",
+        "会不会更糟”，",
+        "这两股力量在你",
+        "心里来回拉扯，",
+        "确实挺让人煎熬",
+        "的。你能这么",
+        "清晰、坦诚",
+        "地把心里的顾虑都",
+        "摊开来看，",
+        "没有逃避，这",
+        "真的很不容易。\n\n",
+        "当你想到“更",
+        "糟”的时候，",
+        "心里最先冒出来的",
+        "感觉或者担忧是什么呢",
+        "？你自己觉得呢",
+        "？"
+      ],
+      "events": [
+        {
+          "event": "token",
+          "data": "一边是当下"
+        },
+        {
+          "event": "token",
+          "data": "实实在在的压抑"
+        },
+        {
+          "event": "token",
+          "data": "，另一边又担心"
+        },
+        {
+          "event": "token",
+          "data": "“辞了之后"
+        },
+        {
+          "event": "token",
+          "data": "会不会更糟”，"
+        },
+        {
+          "event": "token",
+          "data": "这两股力量在你"
+        },
+        {
+          "event": "token",
+          "data": "心里来回拉扯，"
+        },
+        {
+          "event": "token",
+          "data": "确实挺让人煎熬"
+        },
+        {
+          "event": "token",
+          "data": "的。你能这么"
+        },
+        {
+          "event": "token",
+          "data": "清晰、坦诚"
+        },
+        {
+          "event": "token",
+          "data": "地把心里的顾虑都"
+        },
+        {
+          "event": "token",
+          "data": "摊开来看，"
+        },
+        {
+          "event": "token",
+          "data": "没有逃避，这"
+        },
+        {
+          "event": "token",
+          "data": "真的很不容易。\n\n"
+        },
+        {
+          "event": "token",
+          "data": "当你想到“更"
+        },
+        {
+          "event": "token",
+          "data": "糟”的时候，"
+        },
+        {
+          "event": "token",
+          "data": "心里最先冒出来的"
+        },
+        {
+          "event": "token",
+          "data": "感觉或者担忧是什么呢"
+        },
+        {
+          "event": "token",
+          "data": "？你自己觉得呢"
+        },
+        {
+          "event": "token",
+          "data": "？"
+        },
+        {
+          "event": "dialogue_done",
+          "data": {
+            "trace_id": "e886d4993cb34c98",
+            "owner": "therapy_mi"
+          }
+        },
+        {
+          "event": "final",
+          "data": {
+            "message": "现在的工作让我压抑，但我又担心辞了更糟。",
+            "risk_state": "LOW_RISK",
+            "crisis": false
+          }
+        }
+      ],
+      "final": {
+        "message": "现在的工作让我压抑，但我又担心辞了更糟。",
+        "risk_state": "LOW_RISK",
+        "crisis": false
+      },
+      "state_after": {
+        "owner": "therapy_mi",
+        "crisis": false,
+        "risk_level": "LOW_RISK",
+        "therapy": {
+          "name": "MI",
+          "start_seq": 3,
+          "rounds": 2,
+          "step_index": 0,
+          "branch": null,
+          "basic_flow_complete": false
+        },
+        "last_therapy_check_seq": 1,
+        "pending_user_tokens": 0
+      },
+      "orchestration_after": {
+        "updated_seq": 2,
+        "therapy": "MI",
+        "current_step": "explore",
+        "next_step": "explore",
+        "step_judgment": {
+          "action": "stay",
+          "target_step": null,
+          "achieved": false,
+          "reason": "Ambivalence remains very high (0.9) with strong sustain talk (0.7). The user is clearly in contemplation stage, weighing pros and cons. The current explore step is still needed to fully understand both sides of the dilemma before advancing. The AI is appropriately exploring the user's fears about 'worse' consequences, which aligns with the recommended process. Need to continue exploring before moving to evocation."
+        },
+        "assessment": {
+          "change_readiness": {
+            "index": 0.5,
+            "state": "contemplation",
+            "confidence": 0.9,
+            "evidence": [
+              "User is actively weighing the pros and cons of quitting, explicitly stating the current job is causing distress ('现在的工作让我压抑'), indicating they are in the contemplation stage."
+            ]
+          },
+          "ambivalence": {
+            "index": 0.9,
+            "state": "strong",
+            "confidence": 0.95,
+            "evidence": [
+              "Clear 'on one hand... on the other hand' structure: '现在的工作让我压抑' (pull to change) vs '但我又担心辞了更糟' (pull to stay)."
+            ]
+          },
+          "self_efficacy": {
+            "index": 0.4,
+            "state": "low",
+            "confidence": 0.85,
+            "evidence": [
+              "User doubts their ability to handle the consequences of quitting, stating '担心辞了更糟' (worried it would be worse), showing low confidence in navigating the post-change reality."
+            ]
+          },
+          "change_talk": {
+            "index": 0.6,
+            "state": "moderate",
+            "confidence": 0.9,
+            "evidence": [
+              "Expresses 'Reasons' for change: '现在的工作让我压抑' (The current job makes me feel depressed/suppressed)."
+            ]
+          },
+          "sustain_talk": {
+            "index": 0.7,
+            "state": "strong",
+            "confidence": 0.9,
+            "evidence": [
+              "Expresses 'Reasons' to maintain the status quo: '但我又担心辞了更糟' (But I'm worried that quitting would be worse)."
+            ]
+          },
+          "mi_intervention_need": 0.69,
+          "overall_trend": "stable",
+          "primary_concern": "ambivalence",
+          "should_intervene": true,
+          "recommended_processes": [
+            {
+              "process": "explore",
+              "priority": 1,
+              "rationale": "Ambivalence remains very high. The priority is to gently explore both sides of the dilemma: the specific feelings of being '压抑' (depressed/suppressed) and the concrete fears of things being '更糟' (worse), validating both sides without pushing for a decision."
+            },
+            {
+              "process": "evocation",
+              "priority": 2,
+              "rationale": "Once the fears are explored, evoke the user's own values, strengths, or past experiences to help them build confidence and find their own clarity about the future, rather than the counselor providing solutions."
+            }
+          ]
+        },
+        "skill_output": {
+          "technique": {
+            "name": "oars",
+            "description": "The user is repeating their core ambivalence, indicating they feel stuck in a loop and need to be deeply heard on both sides. OARS (specifically complex reflections and a summary) will be used to validate both the pain of the current job and the protective function of their fear, normalizing the ambivalence without pushing for a premature resolution.",
+            "steps": [
+              "Provide a complex reflection of the 'sustain talk' (fear of things getting worse), acknowledging it as a valid, protective concern rather than just a fear.",
+              "Summarize the 'double-bind' or the tug-of-war between the suffocating present and the frightening unknown, normalizing this ambivalence (e.g., using the 'two voices fighting' metaphor).",
+              "Ask an open question inviting them to explore what 'worse' specifically looks like to them, or how they are managing the current suffocation, letting them lead the next step."
+            ]
+          },
+          "conversation_goal": "To deeply validate both sides of the user's ambivalence, making them feel fully heard and understood. This will help break the loop of repeating the same statement and create a safe space to explore their fears and current pain without pressure.",
+          "adaptation": {
+            "interaction_style": "exploratory",
+            "tone_adjustment": "Warm, grounding, and deeply empathetic. Since the user is repeating themselves, the tone must convey patience and a genuine desire to understand the weight of their dilemma, avoiding any hint of impatience or frustration.",
+            "pace_adjustment": "Slow and unhurried. The repetition suggests they are stuck in a loop of anxiety; slowing down helps create a safe space to unpack the fear of the unknown without feeling pressured to resolve it.",
+            "culture_note": "Normalize the ambivalence using the metaphor of '心里有两个声音在打架' (two voices fighting in the heart). Affirm their caution as a responsible way of protecting themselves ('你担心更糟，其实也是在努力保护自己，这很不容易'). Use '你自己觉得呢？' to gently invite them to unpack the 'worse' scenario at their own pace."
+          },
+          "contraindications": [
+            {
+              "condition": "Pushing for a decision or brainstorming solutions for quitting.",
+              "reason": "The user has strong sustain talk and is repeating their core fear. Pushing for change will trigger resistance and invalidate their very real anxieties."
+            },
+            {
+              "condition": "Minimizing or dismissing the fear of things getting 'worse'.",
+              "reason": "This would invalidate their anxious attachment style and genuine concerns, making them feel misunderstood and causing them to defend the status quo more strongly."
+            }
+          ],
+          "_skill_name": "mi_explore"
+        },
+        "products": {},
+        "continue_eval": null
+      },
+      "error": null,
+      "wall_seconds": 117.295,
+      "agent_text": "一边是当下实实在在的压抑，另一边又担心“辞了之后会不会更糟”，这两股力量在你心里来回拉扯，确实挺让人煎熬的。你能这么清晰、坦诚地把心里的顾虑都摊开来看，没有逃避，这真的很不容易。\n\n当你想到“更糟”的时候，心里最先冒出来的感觉或者担忧是什么呢？你自己觉得呢？"
+    },
+    {
+      "turn": 4,
+      "trace_id": "faa152ceb3ff49e2",
+      "user_text": "我有时候想，万一辞了我后悔怎么办。",
+      "agent_text_parts": [
+        "听得出来，你",
+        "心里现在有两个声音",
+        "在拔河。一个",
+        "声音在说“",
+        "现在真的太压抑了",
+        "”，而另一个声音",
+        "在努力地保护你",
+        "，提醒你“万一",
+        "辞了之后处境",
+        "更糟，或者",
+        "选错了，那种",
+        "后悔的感觉太难承受",
+        "了”。这两个声音",
+        "其实都在为你着想",
+        "，只是它们让你",
+        "卡在了中间，",
+        "这种来回拉扯确实",
+        "挺让人疲惫的",
+        "。\n\n如果顺着",
+        "那个害怕“后悔",
+        "”的声音往下想",
+        "，你最担心自己",
+        "会后悔什么呢？",
+        "在你心里，最",
+        "害怕的“后悔",
+        "”具体是什么样的感觉",
+        "或画面？"
+      ],
+      "events": [
+        {
+          "event": "token",
+          "data": "听得出来，你"
+        },
+        {
+          "event": "token",
+          "data": "心里现在有两个声音"
+        },
+        {
+          "event": "token",
+          "data": "在拔河。一个"
+        },
+        {
+          "event": "token",
+          "data": "声音在说“"
+        },
+        {
+          "event": "token",
+          "data": "现在真的太压抑了"
+        },
+        {
+          "event": "token",
+          "data": "”，而另一个声音"
+        },
+        {
+          "event": "token",
+          "data": "在努力地保护你"
+        },
+        {
+          "event": "token",
+          "data": "，提醒你“万一"
+        },
+        {
+          "event": "token",
+          "data": "辞了之后处境"
+        },
+        {
+          "event": "token",
+          "data": "更糟，或者"
+        },
+        {
+          "event": "token",
+          "data": "选错了，那种"
+        },
+        {
+          "event": "token",
+          "data": "后悔的感觉太难承受"
+        },
+        {
+          "event": "token",
+          "data": "了”。这两个声音"
+        },
+        {
+          "event": "token",
+          "data": "其实都在为你着想"
+        },
+        {
+          "event": "token",
+          "data": "，只是它们让你"
+        },
+        {
+          "event": "token",
+          "data": "卡在了中间，"
+        },
+        {
+          "event": "token",
+          "data": "这种来回拉扯确实"
+        },
+        {
+          "event": "token",
+          "data": "挺让人疲惫的"
+        },
+        {
+          "event": "token",
+          "data": "。\n\n如果顺着"
+        },
+        {
+          "event": "token",
+          "data": "那个害怕“后悔"
+        },
+        {
+          "event": "token",
+          "data": "”的声音往下想"
+        },
+        {
+          "event": "token",
+          "data": "，你最担心自己"
+        },
+        {
+          "event": "token",
+          "data": "会后悔什么呢？"
+        },
+        {
+          "event": "token",
+          "data": "在你心里，最"
+        },
+        {
+          "event": "token",
+          "data": "害怕的“后悔"
+        },
+        {
+          "event": "token",
+          "data": "”具体是什么样的感觉"
+        },
+        {
+          "event": "token",
+          "data": "或画面？"
+        },
+        {
+          "event": "dialogue_done",
+          "data": {
+            "trace_id": "faa152ceb3ff49e2",
+            "owner": "therapy_mi"
+          }
+        },
+        {
+          "event": "final",
+          "data": {
+            "message": "我有时候想，万一辞了我后悔怎么办。",
+            "risk_state": "SAFE",
+            "crisis": false
+          }
+        }
+      ],
+      "final": {
+        "message": "我有时候想，万一辞了我后悔怎么办。",
+        "risk_state": "SAFE",
+        "crisis": false
+      },
+      "state_after": {
+        "owner": "therapy_mi",
+        "crisis": false,
+        "risk_level": "SAFE",
+        "therapy": {
+          "name": "MI",
+          "start_seq": 3,
+          "rounds": 3,
+          "step_index": 0,
+          "branch": null,
+          "basic_flow_complete": false
+        },
+        "last_therapy_check_seq": 1,
+        "pending_user_tokens": 0
+      },
+      "orchestration_after": {
+        "updated_seq": 3,
+        "therapy": "MI",
+        "current_step": "explore",
+        "next_step": "explore",
+        "step_judgment": {
+          "action": "stay",
+          "target_step": null,
+          "achieved": false,
+          "reason": "用户仍处于矛盾期（ambivalence=0.9），维持现状的谈话（sustain talk=0.85）很强，主要担忧是'万一辞了后悔怎么办'。AI刚刚通过反思式倾听和开放式提问探索了'后悔'的具体含义，但用户尚未深入展开这一恐惧。此时应继续留在explore步骤，深入探索'后悔'的具体画面和担忧，帮助用户澄清矛盾，而非急于推进。"
+        },
+        "assessment": {
+          "change_readiness": {
+            "index": 0.45,
+            "state": "contemplation",
+            "confidence": 0.9,
+            "evidence": [
+              "User is still weighing the potential negative outcomes of quitting ('万一辞了我后悔怎么办'), indicating they are in the contemplation stage, not yet ready to take action."
+            ]
+          },
+          "ambivalence": {
+            "index": 0.9,
+            "state": "strong",
+            "confidence": 0.95,
+            "evidence": [
+              "The fear of regret ('万一辞了我后悔怎么办') continues the strong pull to maintain the status quo, contrasting with the previously stated desire to escape the depressing current job."
+            ]
+          },
+          "self_efficacy": {
+            "index": 0.35,
+            "state": "low",
+            "confidence": 0.85,
+            "evidence": [
+              "User expresses doubt in their ability to handle the emotional consequences of quitting, fearing regret ('万一...后悔怎么办'), indicating low confidence in navigating the post-change reality."
+            ]
+          },
+          "change_talk": {
+            "index": 0.1,
+            "state": "absent",
+            "confidence": 0.8,
+            "evidence": [
+              "The current message focuses entirely on the fears of change rather than reasons or desire for it. While previous turns had moderate change talk, this specific turn lacks it."
+            ]
+          },
+          "sustain_talk": {
+            "index": 0.85,
+            "state": "strong",
+            "confidence": 0.9,
+            "evidence": [
+              "Expresses 'Reasons' to maintain the status quo out of fear: '万一辞了我后悔怎么办' (What if I regret it after quitting), highlighting the perceived risks of change."
+            ]
+          },
+          "mi_intervention_need": 0.677,
+          "overall_trend": "stable",
+          "primary_concern": "ambivalence",
+          "should_intervene": true,
+          "recommended_processes": [
+            {
+              "process": "explore",
+              "priority": 1,
+              "rationale": "High ambivalence and strong sustain talk (fear of regret) are present. The priority is to explore this specific fear of regret without judgment, helping the user articulate what 'regret' looks like to them and validating the difficulty of the decision."
+            },
+            {
+              "process": "evocation",
+              "priority": 2,
+              "rationale": "Once the fear is explored, evoke the user's past experiences of making difficult decisions or their core values to help build self-efficacy and reduce the perceived risk of regret."
+            }
+          ]
+        },
+        "skill_output": {
+          "technique": {
+            "name": "oars",
+            "description": "The user is repeating their fear of regret, indicating strong sustain talk and high ambivalence. OARS (specifically reflective listening and open questions) is chosen to roll with this resistance, validate their fear without pushing for change, and gently explore the deeper meaning of this 'regret' to build rapport and understanding.",
+            "steps": [
+              "Use complex reflections to acknowledge and validate the deep fear of regret and the desire for safety, showing that the agent hears the repetition and the anxiety behind it without judgment.",
+              "Ask an open question that gently invites the user to explore what this 'regret' means to them, or how this fear is impacting them, while fully rolling with the sustain talk."
+            ]
+          },
+          "conversation_goal": "To deeply explore and validate the user's fear of regret (sustain talk) without pushing for change, thereby strengthening the therapeutic alliance and helping the user feel fully heard in their ambivalence.",
+          "adaptation": {
+            "interaction_style": "exploratory",
+            "tone_adjustment": "Warm, patient, and deeply accepting. The tone should convey safety and hold space for the user's anxiety without any urgency to resolve it.",
+            "pace_adjustment": "Slow and steady. Since the user is looping on the fear of regret, slowing down the pace allows them to sit with the emotion and feel fully understood rather than rushed.",
+            "culture_note": "In Chinese culture, the fear of making a wrong choice and 'regretting' is often tied to a strong sense of responsibility and risk aversion (求稳). Normalize this fear as a sign of being cautious and caring about one's future, affirming the positive intention behind the sustain talk (e.g., '害怕后悔，其实说明你对自己的未来很负责')."
+          },
+          "contraindications": [
+            {
+              "condition": "Persuading or advising the user to quit",
+              "reason": "The user is expressing strong sustain talk; pushing for change will trigger resistance and damage the therapeutic relationship."
+            },
+            {
+              "condition": "Minimizing or dismissing the fear of regret",
+              "reason": "Invalidating their fear will make the user feel misunderstood and defensive, violating the MI principle of collaboration."
+            },
+            {
+              "condition": "Rushing to the action or planning phase",
+              "reason": "With high ambivalence and strong sustain talk, moving too fast will overwhelm the user. The focus must remain on exploration and relationship building."
+            }
+          ],
+          "_skill_name": "mi_explore"
+        },
+        "products": {},
+        "continue_eval": null
+      },
+      "error": null,
+      "wall_seconds": 118.718,
+      "agent_text": "听得出来，你心里现在有两个声音在拔河。一个声音在说“现在真的太压抑了”，而另一个声音在努力地保护你，提醒你“万一辞了之后处境更糟，或者选错了，那种后悔的感觉太难承受了”。这两个声音其实都在为你着想，只是它们让你卡在了中间，这种来回拉扯确实挺让人疲惫的。\n\n如果顺着那个害怕“后悔”的声音往下想，你最担心自己会后悔什么呢？在你心里，最害怕的“后悔”具体是什么样的感觉或画面？"
+    },
+    {
+      "turn": 5,
+      "trace_id": "64dbb506630e4af3",
+      "user_text": "如果让我打分，从 1 到 10，我对现在的状态大概 3 分。",
+      "agent_text_parts": [
+        "3分",
+        "……听得出现在的状态",
+        "真的已经让你",
+        "非常疲惫，几乎",
+        "到了很难熬的地步",
+        "。但让我触动",
+        "的是，即使在这么",
+        "低的分数里，",
+        "你依然宁愿继续",
+        "忍受这份压抑，",
+        "也不愿去冒",
+        "那个“万一后悔",
+        "”的险。",
+        "这说明“后悔”",
+        "这两个字在你心里",
+        "分量真的很重，",
+        "你太想保护自己",
+        "，避免跌入",
+        "一个更无法承受的",
+        "境地了。\n\n",
+        "在这样只有3",
+        "分的日常里，",
+        "那个“害怕后悔",
+        "”的声音，通常",
+        "会在什么时候跑出来",
+        "拉住你？它",
+        "一般会对你说些什么呢",
+        "？"
+      ],
+      "events": [
+        {
+          "event": "token",
+          "data": "3分"
+        },
+        {
+          "event": "token",
+          "data": "……听得出现在的状态"
+        },
+        {
+          "event": "token",
+          "data": "真的已经让你"
+        },
+        {
+          "event": "token",
+          "data": "非常疲惫，几乎"
+        },
+        {
+          "event": "token",
+          "data": "到了很难熬的地步"
+        },
+        {
+          "event": "token",
+          "data": "。但让我触动"
+        },
+        {
+          "event": "token",
+          "data": "的是，即使在这么"
+        },
+        {
+          "event": "token",
+          "data": "低的分数里，"
+        },
+        {
+          "event": "token",
+          "data": "你依然宁愿继续"
+        },
+        {
+          "event": "token",
+          "data": "忍受这份压抑，"
+        },
+        {
+          "event": "token",
+          "data": "也不愿去冒"
+        },
+        {
+          "event": "token",
+          "data": "那个“万一后悔"
+        },
+        {
+          "event": "token",
+          "data": "”的险。"
+        },
+        {
+          "event": "token",
+          "data": "这说明“后悔”"
+        },
+        {
+          "event": "token",
+          "data": "这两个字在你心里"
+        },
+        {
+          "event": "token",
+          "data": "分量真的很重，"
+        },
+        {
+          "event": "token",
+          "data": "你太想保护自己"
+        },
+        {
+          "event": "token",
+          "data": "，避免跌入"
+        },
+        {
+          "event": "token",
+          "data": "一个更无法承受的"
+        },
+        {
+          "event": "token",
+          "data": "境地了。\n\n"
+        },
+        {
+          "event": "token",
+          "data": "在这样只有3"
+        },
+        {
+          "event": "token",
+          "data": "分的日常里，"
+        },
+        {
+          "event": "token",
+          "data": "那个“害怕后悔"
+        },
+        {
+          "event": "token",
+          "data": "”的声音，通常"
+        },
+        {
+          "event": "token",
+          "data": "会在什么时候跑出来"
+        },
+        {
+          "event": "token",
+          "data": "拉住你？它"
+        },
+        {
+          "event": "token",
+          "data": "一般会对你说些什么呢"
+        },
+        {
+          "event": "token",
+          "data": "？"
+        },
+        {
+          "event": "dialogue_done",
+          "data": {
+            "trace_id": "64dbb506630e4af3",
+            "owner": "therapy_mi"
+          }
+        },
+        {
+          "event": "final",
+          "data": {
+            "message": "如果让我打分，从 1 到 10，我对现在的状态大概 3 分。",
+            "risk_state": "LOW_RISK",
+            "crisis": false
+          }
+        }
+      ],
+      "final": {
+        "message": "如果让我打分，从 1 到 10，我对现在的状态大概 3 分。",
+        "risk_state": "LOW_RISK",
+        "crisis": false
+      },
+      "state_after": {
+        "owner": "therapy_mi",
+        "crisis": false,
+        "risk_level": "LOW_RISK",
+        "therapy": {
+          "name": "MI",
+          "start_seq": 3,
+          "rounds": 4,
+          "step_index": 1,
+          "branch": null,
+          "basic_flow_complete": false
+        },
+        "last_therapy_check_seq": 1,
+        "pending_user_tokens": 0
+      },
+      "orchestration_after": {
+        "updated_seq": 4,
+        "therapy": "MI",
+        "current_step": "explore",
+        "next_step": "evocation",
+        "step_judgment": {
+          "action": "go_to",
+          "target_step": "evocation",
+          "achieved": false,
+          "reason": "用户已给出3/10的评分，change talk强烈（DARN中的Reasons），ambivalence高但sustain talk弱，self_efficacy低。当前explore步骤已充分探索了现状的痛苦和矛盾，状态评估明确推荐优先转向evocation（如探索4分或5分会是什么样），以强化change talk、提升self_efficacy，并使未来状态更具体可行。继续停留在explore可能加深无力感，应适时推进到evocation阶段。"
+        },
+        "assessment": {
+          "change_readiness": {
+            "index": 0.6,
+            "state": "preparation",
+            "confidence": 0.85,
+            "evidence": [
+              "User rates their current state at a very low 3 out of 10, indicating strong dissatisfaction with the status quo, which is a key driver for moving deeper into the contemplation stage."
+            ]
+          },
+          "ambivalence": {
+            "index": 0.8,
+            "state": "strong",
+            "confidence": 0.9,
+            "evidence": [
+              "While the user expresses strong dissatisfaction with the current state (3/10), this is in the context of the ongoing tug-of-war between the pain of the current job and the fear of future regret discussed in previous turns. The ambivalence remains strong but is shifting as the 'pain of staying' is quantified."
+            ]
+          },
+          "self_efficacy": {
+            "index": 0.35,
+            "state": "low",
+            "confidence": 0.8,
+            "evidence": [
+              "The user has not yet expressed confidence in their ability to handle the transition or overcome the fear of regret. The focus is currently on evaluating the pain of the present rather than their capacity for the future."
+            ]
+          },
+          "change_talk": {
+            "index": 0.7,
+            "state": "strong",
+            "confidence": 0.9,
+            "evidence": [
+              "Rating the current state at 3/10 is a strong expression of 'Reasons' for change (DARN). It highlights the significant dissatisfaction and pain associated with the current situation, arguing FOR the need to change."
+            ]
+          },
+          "sustain_talk": {
+            "index": 0.2,
+            "state": "weak",
+            "confidence": 0.85,
+            "evidence": [
+              "In this specific turn, the user does not express reasons to stay. Instead of defending the status quo, they heavily criticize it (3/10), indicating a temporary drop in sustain talk as they focus on the negative aspects of their current reality."
+            ]
+          },
+          "mi_intervention_need": 0.6,
+          "overall_trend": "improving",
+          "primary_concern": "self_efficacy",
+          "should_intervene": true,
+          "recommended_processes": [
+            {
+              "process": "evocation",
+              "priority": 1,
+              "rationale": "User has provided strong change talk (Reasons) by rating their current state 3/10. Evoking what a '4' or '5' would look like helps strengthen this change talk, builds self-efficacy by focusing on small, achievable improvements, and makes the future state less abstract and frightening."
+            },
+            {
+              "process": "explore",
+              "priority": 2,
+              "rationale": "Explore the meaning behind the '3' rating—asking why it's not a '0' or '1'—to uncover existing strengths, coping mechanisms, or aspects of the job they can still tolerate. This can help counter the fear of regret by highlighting their resilience."
+            }
+          ]
+        },
+        "skill_output": {
+          "technique": {
+            "name": "oars",
+            "description": "Build engagement and explore the user's ambivalence without pushing for change",
+            "steps": [
+              "用开放式提问邀请用户分享更多",
+              "通过反思性倾听回应，让用户感到被理解",
+              "温和地邀请用户觉察自己内心不同的声音"
+            ]
+          },
+          "conversation_goal": "通过开放式提问和反思性倾听，帮助用户探索内心的矛盾，不做评判",
+          "adaptation": {
+            "interaction_style": "exploratory",
+            "tone_adjustment": "温和、好奇、不评判",
+            "pace_adjustment": "slow",
+            "culture_note": "用'你自己觉得呢？'替代'你应该'；肯定要具体而非笼统；矛盾是正常的不是抗拒"
+          },
+          "contraindications": [
+            {
+              "condition": "crisis",
+              "reason": "危机状态下不适合探索矛盾，优先确保安全"
+            }
+          ],
+          "_skill_name": "mi_explore"
+        },
+        "products": {},
+        "continue_eval": null
+      },
+      "error": null,
+      "wall_seconds": 196.196,
+      "agent_text": "3分……听得出现在的状态真的已经让你非常疲惫，几乎到了很难熬的地步。但让我触动的是，即使在这么低的分数里，你依然宁愿继续忍受这份压抑，也不愿去冒那个“万一后悔”的险。这说明“后悔”这两个字在你心里分量真的很重，你太想保护自己，避免跌入一个更无法承受的境地了。\n\n在这样只有3分的日常里，那个“害怕后悔”的声音，通常会在什么时候跑出来拉住你？它一般会对你说些什么呢？"
+    },
+    {
+      "turn": 6,
+      "trace_id": "901cf5e0e30e4fd7",
+      "user_text": "你说我「想要改变」和「害怕改变」哪个更强？我不确定。",
+      "agent_text_parts": [
+        "听到",
+        "你这么说，我",
+        "反而觉得这种“",
+        "不确定”特别真实",
+        "。其实，“想要",
+        "改变”和",
+        "“害怕改变”",
+        "往往不是非此",
+        "即彼的，",
+        "它们就像你心里的",
+        "两股绳，",
+        "同时紧紧绷着",
+        "，让你觉得难以",
+        "分辨哪边力气",
+        "更大。\n\n你",
+        "不需要立刻弄清楚哪个",
+        "更强，这种矛盾",
+        "本身就是再正常不过",
+        "的。如果我们先",
+        "不去比较它们，",
+        "只是感受一下，当",
+        "“不确定”这个",
+        "状态停留在你心里",
+        "时，它带给你",
+        "的是什么感觉呢？",
+        "是觉得有些无奈",
+        "和疲惫，还是",
+        "觉得因为暂时不用",
+        "做决定，反而",
+        "有了一点点喘息",
+        "的空间？"
+      ],
+      "events": [
+        {
+          "event": "token",
+          "data": "听到"
+        },
+        {
+          "event": "token",
+          "data": "你这么说，我"
+        },
+        {
+          "event": "token",
+          "data": "反而觉得这种“"
+        },
+        {
+          "event": "token",
+          "data": "不确定”特别真实"
+        },
+        {
+          "event": "token",
+          "data": "。其实，“想要"
+        },
+        {
+          "event": "token",
+          "data": "改变”和"
+        },
+        {
+          "event": "token",
+          "data": "“害怕改变”"
+        },
+        {
+          "event": "token",
+          "data": "往往不是非此"
+        },
+        {
+          "event": "token",
+          "data": "即彼的，"
+        },
+        {
+          "event": "token",
+          "data": "它们就像你心里的"
+        },
+        {
+          "event": "token",
+          "data": "两股绳，"
+        },
+        {
+          "event": "token",
+          "data": "同时紧紧绷着"
+        },
+        {
+          "event": "token",
+          "data": "，让你觉得难以"
+        },
+        {
+          "event": "token",
+          "data": "分辨哪边力气"
+        },
+        {
+          "event": "token",
+          "data": "更大。\n\n你"
+        },
+        {
+          "event": "token",
+          "data": "不需要立刻弄清楚哪个"
+        },
+        {
+          "event": "token",
+          "data": "更强，这种矛盾"
+        },
+        {
+          "event": "token",
+          "data": "本身就是再正常不过"
+        },
+        {
+          "event": "token",
+          "data": "的。如果我们先"
+        },
+        {
+          "event": "token",
+          "data": "不去比较它们，"
+        },
+        {
+          "event": "token",
+          "data": "只是感受一下，当"
+        },
+        {
+          "event": "token",
+          "data": "“不确定”这个"
+        },
+        {
+          "event": "token",
+          "data": "状态停留在你心里"
+        },
+        {
+          "event": "token",
+          "data": "时，它带给你"
+        },
+        {
+          "event": "token",
+          "data": "的是什么感觉呢？"
+        },
+        {
+          "event": "token",
+          "data": "是觉得有些无奈"
+        },
+        {
+          "event": "token",
+          "data": "和疲惫，还是"
+        },
+        {
+          "event": "token",
+          "data": "觉得因为暂时不用"
+        },
+        {
+          "event": "token",
+          "data": "做决定，反而"
+        },
+        {
+          "event": "token",
+          "data": "有了一点点喘息"
+        },
+        {
+          "event": "token",
+          "data": "的空间？"
+        },
+        {
+          "event": "dialogue_done",
+          "data": {
+            "trace_id": "901cf5e0e30e4fd7",
+            "owner": "therapy_mi"
+          }
+        },
+        {
+          "event": "final",
+          "data": {
+            "message": "你说我「想要改变」和「害怕改变」哪个更强？我不确定。",
+            "risk_state": "SAFE",
+            "crisis": false
+          }
+        }
+      ],
+      "final": {
+        "message": "你说我「想要改变」和「害怕改变」哪个更强？我不确定。",
+        "risk_state": "SAFE",
+        "crisis": false
+      },
+      "state_after": {
+        "owner": "therapy_mi",
+        "crisis": false,
+        "risk_level": "SAFE",
+        "therapy": {
+          "name": "MI",
+          "start_seq": 3,
+          "rounds": 5,
+          "step_index": 1,
+          "branch": null,
+          "basic_flow_complete": false
+        },
+        "last_therapy_check_seq": 1,
+        "pending_user_tokens": 0
+      },
+      "orchestration_after": {
+        "updated_seq": 5,
+        "therapy": "MI",
+        "current_step": "evocation",
+        "next_step": "evocation",
+        "step_judgment": {
+          "action": "stay",
+          "target_step": null,
+          "achieved": false,
+          "reason": "用户仍处于强烈的矛盾状态（ambivalence index 0.95），change readiness 停留在 contemplation 阶段（0.45），自我效能感低（0.3）。用户明确表达了不确定感，尚未形成清晰的改变动机或承诺。当前 evocation 步骤尚未达成效果，需要继续探索矛盾双方的具体内涵，帮助用户逐步澄清内在动机，而非急于推进到 commitment 阶段。"
+        },
+        "assessment": {
+          "change_readiness": {
+            "index": 0.45,
+            "state": "contemplation",
+            "confidence": 0.9,
+            "evidence": [
+              "User explicitly states uncertainty about their internal state ('我不确定'), indicating they are deeply contemplating the change, weighing the pros and cons, but are currently stuck in the middle."
+            ]
+          },
+          "ambivalence": {
+            "index": 0.95,
+            "state": "strong",
+            "confidence": 0.95,
+            "evidence": [
+              "Direct quote: '你说我「想要改变」和「害怕改变」哪个更强？我不确定。' The user explicitly names the two opposing forces and admits to being completely torn between them, which is the textbook definition of strong ambivalence."
+            ]
+          },
+          "self_efficacy": {
+            "index": 0.3,
+            "state": "low",
+            "confidence": 0.85,
+            "evidence": [
+              "User asks the agent to evaluate their own feelings ('你说...哪个更强'), demonstrating a lack of confidence in their own internal compass, self-awareness, and decision-making ability regarding this transition."
+            ]
+          },
+          "change_talk": {
+            "index": 0.4,
+            "state": "moderate",
+            "confidence": 0.8,
+            "evidence": [
+              "User mentions '想要改变' (desire to change), but only as a conceptual half of their internal conflict. They are not actively arguing FOR change in this turn, merely acknowledging its presence."
+            ]
+          },
+          "sustain_talk": {
+            "index": 0.4,
+            "state": "moderate",
+            "confidence": 0.8,
+            "evidence": [
+              "User mentions '害怕改变' (fear of change), representing the sustain side of the ambivalence. Similar to change talk, they are just naming the fear rather than actively defending the status quo."
+            ]
+          },
+          "mi_intervention_need": 0.69,
+          "overall_trend": "stable",
+          "primary_concern": "ambivalence",
+          "should_intervene": true,
+          "recommended_processes": [
+            {
+              "process": "explore",
+              "priority": 1,
+              "rationale": "The user is explicitly expressing peak ambivalence and uncertainty. Following MI rules, high ambivalence requires exploring both sides without taking a side. Helping them unpack what the 'desire to change' wants versus what the 'fear of change' is trying to protect them from will help them untangle these feelings at their own pace."
+            },
+            {
+              "process": "evocation",
+              "priority": 2,
+              "rationale": "The user's self-efficacy is low and they are unsure of their own motivations. Evoking their own values, past experiences of navigating uncertainty, or exploring what a slightly better state (e.g., a '4' out of 10) would look like can help them build clarity and confidence in their own internal compass."
+            }
+          ]
+        },
+        "skill_output": {
+          "technique": {
+            "name": "darn_cat",
+            "description": "Systematically explore the user's preparatory change talk (Desire, Reasons) to gently strengthen their internal motivation without forcing a decision, accommodating their low self-efficacy and anxious attachment style.",
+            "steps": [
+              "Validate the 'uncertainty' and normalize the ambivalence. Explicitly state that you will not evaluate or choose for them, creating a safe space where 'not knowing' is acceptable.",
+              "Gently pivot to explore 'Desire' and 'Reasons' by focusing on the 'wanting to change' side. Ask what that specific part is hoping for, or what a slightly better state (even just moving from 3 to 4) would look like for them.",
+              "Reflect and elaborate on any emerging change talk. Ask for specific, small examples of what that desired change would bring to their daily life, thereby building a foundation for 'Need' and eventually 'Ability' without rushing."
+            ]
+          },
+          "conversation_goal": "To gently elicit and clarify the user's underlying Desire and Reasons for change from their mixed ambivalence, helping them feel heard and slowly building their self-efficacy without forcing a premature decision or making them feel judged.",
+          "adaptation": {
+            "interaction_style": "exploratory",
+            "tone_adjustment": "Highly empathetic, soothing, and validating. Create a strong sense of psychological safety for the anxious attachment style, treating 'uncertainty' not as a problem to be solved, but as a valid and protected space.",
+            "pace_adjustment": "Very slow and patient. Allow the user to stay in the 'uncertain' space as long as needed before gently guiding them to explore the nuances of their desire to change.",
+            "culture_note": "In Chinese culture, 'uncertainty' in decision-making is often tied to a fear of making the wrong choice and facing regret (as seen in previous turns). Frame the exploration not as 'making a decision' but as 'understanding oneself better.' Use gentle phrasing like '哪怕只有一点点想改变的念头' (even if there's just a tiny thought of wanting to change) to lower the threshold and reduce pressure."
+          },
+          "contraindications": [
+            {
+              "condition": "User shows signs of emotional exhaustion or cognitive overload.",
+              "reason": "Pushing for deeper DARN exploration when the user is depleted can increase anxiety and lead to withdrawal or shutdown."
+            },
+            {
+              "condition": "User explicitly rejects self-analysis or feels pressured to have an answer.",
+              "reason": "Forcing introspection on an anxious user who feels they lack self-efficacy can damage the therapeutic alliance and increase sustain talk."
+            }
+          ],
+          "_skill_name": "mi_evocation"
+        },
+        "products": {},
+        "continue_eval": null
+      },
+      "error": null,
+      "wall_seconds": 155.103,
+      "agent_text": "听到你这么说，我反而觉得这种“不确定”特别真实。其实，“想要改变”和“害怕改变”往往不是非此即彼的，它们就像你心里的两股绳，同时紧紧绷着，让你觉得难以分辨哪边力气更大。\n\n你不需要立刻弄清楚哪个更强，这种矛盾本身就是再正常不过的。如果我们先不去比较它们，只是感受一下，当“不确定”这个状态停留在你心里时，它带给你的是什么感觉呢？是觉得有些无奈和疲惫，还是觉得因为暂时不用做决定，反而有了一点点喘息的空间？"
+    },
+    {
+      "turn": 7,
+      "trace_id": "74f87314e39141d3",
+      "user_text": "听起来我一直在两边拉自己？",
+      "agent_text_parts": [
+        "“两边拉自己",
+        "”，这个形容真的很",
+        "贴切。一边",
+        "想往前走，一边",
+        "又死死拽着",
+        "绳子怕自己摔倒",
+        "，力气都耗",
+        "在了原地，难怪",
+        "你会觉得这么疲惫",
+        "。\n\n既然看到了",
+        "这种拉扯，如果我们",
+        "先不急着决定",
+        "往哪边用力",
+        "，只是去听听",
+        "那个觉得“现在",
+        "3分太压抑",
+        "”的自己——ta",
+        "心里最渴望的一",
+        "点点喘息，或者",
+        "哪怕只是让状态",
+        "稍微好那么一",
+        "丁点儿，ta",
+        "会希望看到什么呢",
+        "？"
+      ],
+      "events": [
+        {
+          "event": "token",
+          "data": "“两边拉自己"
+        },
+        {
+          "event": "token",
+          "data": "”，这个形容真的很"
+        },
+        {
+          "event": "token",
+          "data": "贴切。一边"
+        },
+        {
+          "event": "token",
+          "data": "想往前走，一边"
+        },
+        {
+          "event": "token",
+          "data": "又死死拽着"
+        },
+        {
+          "event": "token",
+          "data": "绳子怕自己摔倒"
+        },
+        {
+          "event": "token",
+          "data": "，力气都耗"
+        },
+        {
+          "event": "token",
+          "data": "在了原地，难怪"
+        },
+        {
+          "event": "token",
+          "data": "你会觉得这么疲惫"
+        },
+        {
+          "event": "token",
+          "data": "。\n\n既然看到了"
+        },
+        {
+          "event": "token",
+          "data": "这种拉扯，如果我们"
+        },
+        {
+          "event": "token",
+          "data": "先不急着决定"
+        },
+        {
+          "event": "token",
+          "data": "往哪边用力"
+        },
+        {
+          "event": "token",
+          "data": "，只是去听听"
+        },
+        {
+          "event": "token",
+          "data": "那个觉得“现在"
+        },
+        {
+          "event": "token",
+          "data": "3分太压抑"
+        },
+        {
+          "event": "token",
+          "data": "”的自己——ta"
+        },
+        {
+          "event": "token",
+          "data": "心里最渴望的一"
+        },
+        {
+          "event": "token",
+          "data": "点点喘息，或者"
+        },
+        {
+          "event": "token",
+          "data": "哪怕只是让状态"
+        },
+        {
+          "event": "token",
+          "data": "稍微好那么一"
+        },
+        {
+          "event": "token",
+          "data": "丁点儿，ta"
+        },
+        {
+          "event": "token",
+          "data": "会希望看到什么呢"
+        },
+        {
+          "event": "token",
+          "data": "？"
+        },
+        {
+          "event": "dialogue_done",
+          "data": {
+            "trace_id": "74f87314e39141d3",
+            "owner": "therapy_mi"
+          }
+        },
+        {
+          "event": "final",
+          "data": {
+            "message": "听起来我一直在两边拉自己？",
+            "risk_state": "SAFE",
+            "crisis": false
+          }
+        }
+      ],
+      "final": {
+        "message": "听起来我一直在两边拉自己？",
+        "risk_state": "SAFE",
+        "crisis": false
+      },
+      "state_after": {
+        "owner": "therapy_mi",
+        "crisis": false,
+        "risk_level": "SAFE",
+        "therapy": {
+          "name": "MI",
+          "start_seq": 3,
+          "rounds": 6,
+          "step_index": 1,
+          "branch": null,
+          "basic_flow_complete": false
+        },
+        "last_therapy_check_seq": 1,
+        "pending_user_tokens": 0
+      },
+      "orchestration_after": {
+        "updated_seq": 6,
+        "therapy": "MI",
+        "current_step": "evocation",
+        "next_step": "evocation",
+        "step_judgment": {
+          "action": "stay",
+          "target_step": null,
+          "achieved": false,
+          "reason": "用户正处于evocation阶段，对矛盾有了深刻觉察（'两边拉自己'），但ambivalence仍强（0.9），change_readiness仍在contemplation（0.5），尚未产生明确的改变动机或行动承诺。AI刚刚引导用户去倾听'渴望喘息'的那部分自己，这是深化evocation的关键时刻，需要继续停留在此步骤，帮助用户进一步探索内在渴望与价值观，而非急于推进到commitment。"
+        },
+        "assessment": {
+          "change_readiness": {
+            "index": 0.5,
+            "state": "contemplation",
+            "confidence": 0.85,
+            "evidence": [
+              "User is reflecting on their internal conflict ('听起来我一直在两边拉自己？'), showing increased self-awareness and acceptance of their contemplation stage, though no explicit commitment to action yet."
+            ]
+          },
+          "ambivalence": {
+            "index": 0.9,
+            "state": "strong",
+            "confidence": 0.95,
+            "evidence": [
+              "Direct metaphor '两边拉自己' (pulling myself in both directions) perfectly encapsulates the ongoing, strong ambivalence. The user is actively experiencing and verbalizing the tug-of-war between change and staying the same."
+            ]
+          },
+          "self_efficacy": {
+            "index": 0.45,
+            "state": "low",
+            "confidence": 0.8,
+            "evidence": [
+              "User is now able to step back and observe their own psychological state from a third-person perspective ('听起来...'), indicating a slight improvement in self-trust and cognitive distancing compared to the previous turn where they asked the agent to judge for them."
+            ]
+          },
+          "change_talk": {
+            "index": 0.4,
+            "state": "moderate",
+            "confidence": 0.8,
+            "evidence": [
+              "While not explicitly arguing for change, acknowledging the 'pull' implies a recognition of the desire to change as one of the active forces in their life."
+            ]
+          },
+          "sustain_talk": {
+            "index": 0.4,
+            "state": "moderate",
+            "confidence": 0.8,
+            "evidence": [
+              "Similarly, the 'pull' in the other direction represents the sustain/fear force. Both sides of the ambivalence are being acknowledged equally without one overpowering the other."
+            ]
+          },
+          "mi_intervention_need": 0.63,
+          "overall_trend": "improving",
+          "primary_concern": "ambivalence",
+          "should_intervene": true,
+          "recommended_processes": [
+            {
+              "process": "explore",
+              "priority": 1,
+              "rationale": "The user has reached a moment of profound self-awareness regarding their ambivalence ('pulling myself in both directions'). The best approach is to explore this metaphor further—what does each 'side' look like, feel like, or want? This validates their insight and helps them untangle the knot at their own pace."
+            },
+            {
+              "process": "evocation",
+              "priority": 2,
+              "rationale": "Since self-efficacy is slowly improving through self-reflection, evoking their own values or past experiences of navigating difficult choices can further strengthen their internal compass and confidence in making a decision."
+            }
+          ]
+        },
+        "skill_output": {
+          "technique": {
+            "name": "darn_cat",
+            "description": "在用户觉察到‘两边拉自己’的内耗状态后，顺势引导其探索DARN-CAT中的Desire（渴望）和Reasons（理由）。不急于推动行动，而是通过温和的提问，帮助用户将注意力稍微倾斜到‘想改变’的那一端，挖掘其内心真实的渴望与背后的意义。",
+            "steps": [
+              "Reflect and validate（反映与共情）：深刻共情‘两边拉自己’的疲惫与内耗，接纳并正常化这种矛盾状态，让用户感到被理解。",
+              "Elicit Desire（探索渴望）：引导用户具象化‘想改变’那一端的期待。例如询问：‘如果拉着你的绳子稍微松一点点，或者哪怕只松开一毫米，你最希望感受到什么？’",
+              "Elicit Reasons（探索理由）：针对用户表达的渴望，进一步追问其背后的重要性。例如询问：‘为什么这种感受（或状态）对你来说特别重要？’，以此深化改变的内部动机。"
+            ]
+          },
+          "conversation_goal": "帮助用户从‘两边拉扯’的僵局中，探索并强化‘想改变’那一端的具体渴望（Desire）和深层理由（Reasons），从而在安全的氛围中提升其改变的内在动机，同时不增加其心理负担。",
+          "adaptation": {
+            "interaction_style": "exploratory",
+            "tone_adjustment": "温和、接纳、充满好奇。不评判‘害怕改变’的一面，而是像探索宝藏一样，带着好奇心去探索‘想改变’的一面。",
+            "pace_adjustment": "缓慢。用户自我效能感较低且处于焦虑状态，需要给足心理空间，允许停顿，绝不急于从DARN（准备阶段）跨越到CAT（行动阶段）。",
+            "culture_note": "继续使用‘ta’（如‘那个想往前走的自己’）来指代内心的某一部分，这在中国文化语境下能很好地帮助焦虑型依恋用户进行认知解离，降低防御。强调‘你自己内心的声音’，保持‘你自己决定’的赋权立场。"
+          },
+          "contraindications": [
+            {
+              "condition": "用户陷入极度情绪化、崩溃或强烈的自我否定中",
+              "reason": "此时用户的认知资源已耗尽，无法进行理性的DARN探索。应优先提供情绪抱持（holding）和纯粹的共情倾听，而非提问。"
+            },
+            {
+              "condition": "用户明确表示现在完全不想改变，或对‘想改变’的一面表现出强烈抗拒",
+              "reason": "强行探索Desire会引发逆反心理并破坏治疗联盟。此时应退回简单的反映式倾听，转而探索‘害怕改变’或‘维持现状’背后的积极意图和保护机制。"
+            }
+          ],
+          "_skill_name": "mi_evocation"
+        },
+        "products": {},
+        "continue_eval": null
+      },
+      "error": null,
+      "wall_seconds": 133.367,
+      "agent_text": "“两边拉自己”，这个形容真的很贴切。一边想往前走，一边又死死拽着绳子怕自己摔倒，力气都耗在了原地，难怪你会觉得这么疲惫。\n\n既然看到了这种拉扯，如果我们先不急着决定往哪边用力，只是去听听那个觉得“现在3分太压抑”的自己——ta心里最渴望的一点点喘息，或者哪怕只是让状态稍微好那么一丁点儿，ta会希望看到什么呢？"
+    },
+    {
+      "turn": 8,
+      "trace_id": "1c19760df79a4258",
+      "user_text": "我好像得先想清楚「如果改变，最想走向哪」再决定。",
+      "agent_text_parts": [
+        "“得",
+        "先想清楚最想",
+        "走向哪再决定",
+        "”，听到你这么说",
+        "，我感觉你正在",
+        "尝试把目光从",
+        "“害怕后悔”",
+        "稍微移开，",
+        "去听听那个“",
+        "想改变”的自己",
+        "到底期盼着什么了",
+        "。\n\n既然要",
+        "“想清楚走向",
+        "哪”，如果我们暂时",
+        "不用立刻给出一个",
+        "完美的答案，只是",
+        "凭感觉去描绘",
+        "一下——如果不用",
+        "去管那些担忧",
+        "，你心里最",
+        "渴望的一种状态，",
+        "或者最想走向的那个",
+        "“地方”，大概",
+        "会是什么样的感觉或",
+        "画面呢？你自己",
+        "觉得呢？"
+      ],
+      "events": [
+        {
+          "event": "token",
+          "data": "“得"
+        },
+        {
+          "event": "token",
+          "data": "先想清楚最想"
+        },
+        {
+          "event": "token",
+          "data": "走向哪再决定"
+        },
+        {
+          "event": "token",
+          "data": "”，听到你这么说"
+        },
+        {
+          "event": "token",
+          "data": "，我感觉你正在"
+        },
+        {
+          "event": "token",
+          "data": "尝试把目光从"
+        },
+        {
+          "event": "token",
+          "data": "“害怕后悔”"
+        },
+        {
+          "event": "token",
+          "data": "稍微移开，"
+        },
+        {
+          "event": "token",
+          "data": "去听听那个“"
+        },
+        {
+          "event": "token",
+          "data": "想改变”的自己"
+        },
+        {
+          "event": "token",
+          "data": "到底期盼着什么了"
+        },
+        {
+          "event": "token",
+          "data": "。\n\n既然要"
+        },
+        {
+          "event": "token",
+          "data": "“想清楚走向"
+        },
+        {
+          "event": "token",
+          "data": "哪”，如果我们暂时"
+        },
+        {
+          "event": "token",
+          "data": "不用立刻给出一个"
+        },
+        {
+          "event": "token",
+          "data": "完美的答案，只是"
+        },
+        {
+          "event": "token",
+          "data": "凭感觉去描绘"
+        },
+        {
+          "event": "token",
+          "data": "一下——如果不用"
+        },
+        {
+          "event": "token",
+          "data": "去管那些担忧"
+        },
+        {
+          "event": "token",
+          "data": "，你心里最"
+        },
+        {
+          "event": "token",
+          "data": "渴望的一种状态，"
+        },
+        {
+          "event": "token",
+          "data": "或者最想走向的那个"
+        },
+        {
+          "event": "token",
+          "data": "“地方”，大概"
+        },
+        {
+          "event": "token",
+          "data": "会是什么样的感觉或"
+        },
+        {
+          "event": "token",
+          "data": "画面呢？你自己"
+        },
+        {
+          "event": "token",
+          "data": "觉得呢？"
+        },
+        {
+          "event": "dialogue_done",
+          "data": {
+            "trace_id": "1c19760df79a4258",
+            "owner": "therapy_mi"
+          }
+        },
+        {
+          "event": "final",
+          "data": {
+            "message": "我好像得先想清楚「如果改变，最想走向哪」再决定。",
+            "risk_state": "SAFE",
+            "crisis": false
+          }
+        }
+      ],
+      "final": {
+        "message": "我好像得先想清楚「如果改变，最想走向哪」再决定。",
+        "risk_state": "SAFE",
+        "crisis": false
+      },
+      "state_after": {
+        "owner": "therapy_mi",
+        "crisis": false,
+        "risk_level": "SAFE",
+        "therapy": {
+          "name": "MI",
+          "start_seq": 3,
+          "rounds": 7,
+          "step_index": 1,
+          "branch": null,
+          "basic_flow_complete": false
+        },
+        "last_therapy_check_seq": 1,
+        "pending_user_tokens": 0
+      },
+      "orchestration_after": {
+        "updated_seq": 7,
+        "therapy": "MI",
+        "current_step": "evocation",
+        "next_step": "evocation",
+        "step_judgment": {
+          "action": "stay",
+          "target_step": null,
+          "achieved": false,
+          "reason": "用户正在从矛盾心理中逐渐转向探索'如果改变，最想走向哪'，这是evocation阶段的核心任务——引出改变动机和愿景。AI正在引导用户描绘理想状态的画面，用户尚未给出具体回答，evocation步骤仍在进行中，需要继续推进。"
+        },
+        "assessment": null,
+        "skill_output": {
+          "technique": {
+            "name": "darn_cat",
+            "description": "用户表达了想要明确改变方向的意愿（Desire/Reasons）。使用 DARN 框架，重点探索其内心的渴望和改变的理由，帮助其描绘出理想状态的具体画面，深化初步的改变动机，不急于推进到行动（CAT）阶段。",
+            "steps": [
+              "Reflect and validate: 肯定用户想要‘想清楚方向’的意愿，认可这是一种积极的自我觉察和准备。",
+              "Explore Desire (D): 引导用户具体描绘那个‘最想走向的地方’或‘理想状态’的感受、画面或氛围，深化其内在渴望。",
+              "Explore Reasons (R): 询问如果到达了那个状态，对ta的生活或内心会有什么具体的好处或不同，进一步挖掘属于ta自己的改变理由。"
+            ]
+          },
+          "conversation_goal": "引导用户具体描绘他们内心渴望的‘改变后的状态’（Desire），并探索达到那种状态对他们意味着什么（Reasons），从而将模糊的‘想清楚’转化为具体的内在动机。",
+          "adaptation": {
+            "interaction_style": "exploratory",
+            "tone_adjustment": "温和、耐心、充满好奇与包容。考虑到用户是焦虑型依恋，在‘想清楚’的过程中可能会伴随对未知的恐惧，需提供安全、不评判的空间，不施加任何必须立刻得出结论的压力。",
+            "pace_adjustment": "放慢节奏。允许用户在探索‘走向哪’的过程中停顿、犹豫或反复，跟随用户的心理节奏，给予充分的思考时间。",
+            "culture_note": "中国文化中‘想清楚’往往隐含着对确定性和安全感的强烈需求。需强调‘慢慢来’、‘没有标准答案’，减轻其必须立刻得出完美结论的焦虑，突出‘这是你自己的探索，按你自己的节奏来’。"
+          },
+          "contraindications": [
+            {
+              "condition": "用户在思考过程中陷入过度分析、自我怀疑或焦虑加剧（如：‘我怎么还是想不清楚’）",
+              "reason": "焦虑型依恋容易在探索时陷入内耗。此时应停止追问具体方向，转而反映和接纳其当下的挫败感与焦虑，避免增加心理负担。"
+            }
+          ],
+          "_skill_name": "mi_evocation"
+        },
+        "products": {},
+        "continue_eval": null
+      },
+      "error": null,
+      "wall_seconds": 169.258,
+      "agent_text": "“得先想清楚最想走向哪再决定”，听到你这么说，我感觉你正在尝试把目光从“害怕后悔”稍微移开，去听听那个“想改变”的自己到底期盼着什么了。\n\n既然要“想清楚走向哪”，如果我们暂时不用立刻给出一个完美的答案，只是凭感觉去描绘一下——如果不用去管那些担忧，你心里最渴望的一种状态，或者最想走向的那个“地方”，大概会是什么样的感觉或画面呢？你自己觉得呢？"
+    }
+  ]
+}

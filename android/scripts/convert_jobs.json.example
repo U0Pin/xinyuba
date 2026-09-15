@@ -1,0 +1,22 @@
+{
+  "default_dst": "app/src/main/res/drawable",
+  "default_digit": 5,
+  "default_quality": null,
+  "jobs": [
+    {
+      "name": "cat_idle",
+      "src": "C:/designer/export/Agent/agent_idle"
+    },
+    {
+      "name": "cat_think",
+      "src": "C:/designer/export/Agent/agent_think",
+      "dst": "app/src/main/res/drawable",
+      "digit": 5,
+      "quality": null
+    },
+    {
+      "name": "misc_icons",
+      "src": "C:/designer/export/icons"
+    }
+  ]
+}

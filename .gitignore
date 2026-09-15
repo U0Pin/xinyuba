@@ -1,0 +1,77 @@
+# ===== OS =====
+.DS_Store
+Thumbs.db
+
+# ===== Android / Gradle =====
+.gradle/
+build/
+captures/
+.externalNativeBuild/
+.cxx/
+.kotlin/
+local.properties
+*.apk
+*.aab
+*.keystore
+*.jks
+google-services.json
+# Android 动画素材转换脚本的机器相关配置（模板见 android/scripts/convert_jobs.json.example）
+android/scripts/convert_jobs.json
+
+# ===== Python =====
+__pycache__/
+*.py[codz]
+*.so
+.venv/
+venv/
+env/
+.pytest_cache/
+.ruff_cache/
+.mypy_cache/
+.coverage
+.coverage.*
+htmlcov/
+coverage.xml
+*.egg-info/
+dist/
+
+# 后端运行时数据（脚本运行时会重新生成）
+# 注意：必须限定在 backend/ 下——不加前导斜杠的 `data/` 会连带忽略
+# android 源码里的 com/njuse/ea/data/ 包（曾经踩过）。
+/backend/data/
+/backend/logs/
+
+# ===== 机密 =====
+.env
+.env.local
+.env.*.local
+.envrc
+*.pem
+*.key
+
+# ===== IDE / 编辑器 =====
+.idea/
+.vscode/
+*.iml
+
+# ===== 日志 =====
+*.log
+hs_err_pid*.log
+replay_pid*.log
+
+# ===== 个人 AI 工具痕迹 =====
+.claude/
+.opencode/node_modules/
+opencode.json
+.workbuddy/
+
+# ===== 设计源文件（体积大且非构建必需）=====
+*.psd
+*.ai
+*.sketch
+
+# ===== iOS（ios/ 目录建立后启用）=====
+# Pods/
+# *.xcworkspace
+# DerivedData/
+# *.xcuserstate

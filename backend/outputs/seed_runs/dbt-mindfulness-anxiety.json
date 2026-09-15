@@ -1,0 +1,2047 @@
+{
+  "seed_id": "dbt-mindfulness-anxiety",
+  "target_family": "DBT",
+  "scenario_label": "正念-焦虑发作",
+  "scenario_description": "焦虑发作时无法「接地」，思绪飞转",
+  "user_id": "seed-dbt-mindfulness-anxiety",
+  "session_id": "2656fa6b428249b1",
+  "turns_total": 8,
+  "switched_to_therapy_at_turn": 1,
+  "actual_therapy": "DBT",
+  "therapy_rounds": 8,
+  "orch_step_changes": 2,
+  "is_complete": true,
+  "final_risk_level": "SAFE",
+  "final_crisis": false,
+  "turns": [
+    {
+      "turn": 1,
+      "trace_id": "ed357e3d0e8d4998",
+      "user_text": "我刚又焦虑发作了。",
+      "agent_text_parts": [
+        "抱抱你。现在",
+        "感觉好点了吗",
+        "？刚焦虑发作",
+        "完是不是特别",
+        "耗力气，脑子里",
+        "还在一直转个不停",
+        "？"
+      ],
+      "events": [
+        {
+          "event": "token",
+          "data": "抱抱你。现在"
+        },
+        {
+          "event": "token",
+          "data": "感觉好点了吗"
+        },
+        {
+          "event": "token",
+          "data": "？刚焦虑发作"
+        },
+        {
+          "event": "token",
+          "data": "完是不是特别"
+        },
+        {
+          "event": "token",
+          "data": "耗力气，脑子里"
+        },
+        {
+          "event": "token",
+          "data": "还在一直转个不停"
+        },
+        {
+          "event": "token",
+          "data": "？"
+        },
+        {
+          "event": "dialogue_done",
+          "data": {
+            "trace_id": "ed357e3d0e8d4998",
+            "owner": "daily"
+          }
+        },
+        {
+          "event": "final",
+          "data": {
+            "message": "我刚又焦虑发作了。",
+            "risk_state": "LOW_RISK",
+            "crisis": false
+          }
+        }
+      ],
+      "final": {
+        "message": "我刚又焦虑发作了。",
+        "risk_state": "LOW_RISK",
+        "crisis": false
+      },
+      "state_after": {
+        "owner": "therapy_dbt",
+        "crisis": false,
+        "risk_level": "LOW_RISK",
+        "therapy": {
+          "name": "DBT",
+          "start_seq": 3,
+          "rounds": 0,
+          "step_index": -1,
+          "branch": null,
+          "basic_flow_complete": false
+        },
+        "last_therapy_check_seq": 1,
+        "pending_user_tokens": 0
+      },
+      "orchestration_after": {},
+      "error": null,
+      "wall_seconds": 45.25,
+      "agent_text": "抱抱你。现在感觉好点了吗？刚焦虑发作完是不是特别耗力气，脑子里还在一直转个不停？"
+    },
+    {
+      "turn": 2,
+      "trace_id": "10ca609f6b044ab6",
+      "user_text": "心跳很快，脑子像停不下来一样。",
+      "agent_text_parts": [
+        "心跳",
+        "很快，脑子像",
+        "停不下来一样，",
+        "这种感觉一定让你觉得很",
+        "累、很焦",
+        "躁吧。\n\n",
+        "既然脑子现在转",
+        "得这么快，我们先",
+        "不急着去理清",
+        "它。你之前",
+        "有正念觉察",
+        "的经验，现在能不能",
+        "试着把注意力稍微",
+        "停一停，",
+        "感受一下脚底踩",
+        "在地面上的感觉，",
+        "或者只是观察一下",
+        "自己此刻的呼吸",
+        "？\n\n我们先陪",
+        "自己度过这一刻，",
+        "试试看能不能让身体",
+        "稍微平稳一点点。"
+      ],
+      "events": [
+        {
+          "event": "token",
+          "data": "心跳"
+        },
+        {
+          "event": "token",
+          "data": "很快，脑子像"
+        },
+        {
+          "event": "token",
+          "data": "停不下来一样，"
+        },
+        {
+          "event": "token",
+          "data": "这种感觉一定让你觉得很"
+        },
+        {
+          "event": "token",
+          "data": "累、很焦"
+        },
+        {
+          "event": "token",
+          "data": "躁吧。\n\n"
+        },
+        {
+          "event": "token",
+          "data": "既然脑子现在转"
+        },
+        {
+          "event": "token",
+          "data": "得这么快，我们先"
+        },
+        {
+          "event": "token",
+          "data": "不急着去理清"
+        },
+        {
+          "event": "token",
+          "data": "它。你之前"
+        },
+        {
+          "event": "token",
+          "data": "有正念觉察"
+        },
+        {
+          "event": "token",
+          "data": "的经验，现在能不能"
+        },
+        {
+          "event": "token",
+          "data": "试着把注意力稍微"
+        },
+        {
+          "event": "token",
+          "data": "停一停，"
+        },
+        {
+          "event": "token",
+          "data": "感受一下脚底踩"
+        },
+        {
+          "event": "token",
+          "data": "在地面上的感觉，"
+        },
+        {
+          "event": "token",
+          "data": "或者只是观察一下"
+        },
+        {
+          "event": "token",
+          "data": "自己此刻的呼吸"
+        },
+        {
+          "event": "token",
+          "data": "？\n\n我们先陪"
+        },
+        {
+          "event": "token",
+          "data": "自己度过这一刻，"
+        },
+        {
+          "event": "token",
+          "data": "试试看能不能让身体"
+        },
+        {
+          "event": "token",
+          "data": "稍微平稳一点点。"
+        },
+        {
+          "event": "dialogue_done",
+          "data": {
+            "trace_id": "10ca609f6b044ab6",
+            "owner": "therapy_dbt"
+          }
+        },
+        {
+          "event": "final",
+          "data": {
+            "message": "心跳很快，脑子像停不下来一样。",
+            "risk_state": "LOW_RISK",
+            "crisis": false
+          }
+        }
+      ],
+      "final": {
+        "message": "心跳很快，脑子像停不下来一样。",
+        "risk_state": "LOW_RISK",
+        "crisis": false
+      },
+      "state_after": {
+        "owner": "therapy_dbt",
+        "crisis": false,
+        "risk_level": "LOW_RISK",
+        "therapy": {
+          "name": "DBT",
+          "start_seq": 3,
+          "rounds": 1,
+          "step_index": 0,
+          "branch": null,
+          "basic_flow_complete": false
+        },
+        "last_therapy_check_seq": 1,
+        "pending_user_tokens": 0
+      },
+      "orchestration_after": {
+        "updated_seq": 1,
+        "therapy": "DBT",
+        "current_step": "mindfulness",
+        "next_step": "mindfulness",
+        "step_judgment": {
+          "action": "stay",
+          "target_step": null,
+          "achieved": false,
+          "reason": "用户仍处于高生理唤醒状态（心跳快、思维奔逸），正念觉察水平仅为moderate（0.4），AI刚刚引导用户进行接地练习（感受脚底、观察呼吸），但尚未获得用户对正念练习的反馈或实际效果。当前步骤mindfulness尚未达成效果，需要继续等待用户回应并评估接地练习是否帮助其回到当下。"
+        },
+        "assessment": {
+          "emotion_dysregulation": {
+            "index": 0.75,
+            "state": "severe",
+            "confidence": 0.85,
+            "evidence": [
+              "User reports '心跳很快，脑子像停不下来一样' (heart beating fast, brain can't stop), indicating high physiological arousal and racing thoughts characteristic of emotional dysregulation."
+            ]
+          },
+          "distress_level": {
+            "index": 0.8,
+            "state": "crisis",
+            "confidence": 0.9,
+            "evidence": [
+              "Physical symptom of rapid heartbeat and cognitive symptom of racing thoughts suggest significant subjective distress and feeling overwhelmed by internal experiences."
+            ]
+          },
+          "impulsivity": {
+            "index": 0.2,
+            "state": "controlled",
+            "confidence": 0.7,
+            "evidence": [
+              "User is describing internal states rather than expressing urges to act out impulsively, though high arousal could potentially increase risk if unmanaged."
+            ]
+          },
+          "interpersonal_conflict": {
+            "index": 0.0,
+            "state": "low",
+            "confidence": 0.95,
+            "evidence": [
+              "No mention of interpersonal issues, arguments, or other people in the user's message."
+            ]
+          },
+          "mindfulness_awareness": {
+            "index": 0.4,
+            "state": "moderate",
+            "confidence": 0.75,
+            "evidence": [
+              "User demonstrates some observing capacity by identifying physical ('心跳很快') and cognitive ('脑子...停不下来') states, but appears swept away by them rather than observing non-judgmentally."
+            ]
+          },
+          "dbt_intervention_priority": 0.537,
+          "overall_trend": "stable",
+          "primary_concern": "distress_level",
+          "should_intervene": true,
+          "recommended_processes": [
+            {
+              "process": "mindfulness",
+              "priority": 1,
+              "rationale": "User has low-to-moderate mindfulness awareness and is swept away by racing thoughts. Mindfulness (e.g., grounding) is the foundation and needed first to anchor the user in the present moment."
+            },
+            {
+              "process": "distress_tolerance",
+              "priority": 2,
+              "rationale": "User is experiencing high distress with acute physiological arousal (rapid heartbeat). Distress tolerance skills (like TIPP) are needed to manage the immediate physical overwhelm."
+            },
+            {
+              "process": "emotion_regulation",
+              "priority": 3,
+              "rationale": "Once distress is tolerated and mindfulness is established, emotion regulation will help the user understand and modulate the underlying emotional drivers of the anxiety."
+            }
+          ]
+        },
+        "skill_output": {
+          "technique": {
+            "name": "observe_describe",
+            "description": "用户正处于高生理唤醒和思维奔逸状态，且被这些感受完全淹没。通过观察和描述（observe and describe），帮助用户将注意力从‘被念头带走’转移到‘观察念头和身体反应’上，创造心理距离，缓解失控感。",
+            "steps": [
+              "引导用户用‘我注意到...’的句式来命名当前的体验，例如在心里默念‘我注意到我的心跳很快’、‘我注意到我的脑子里有很多念头在跑’，不加评判地承认它们的存在。",
+              "帮助用户将‘自我’与‘症状/念头’剥离开来，体会‘我正在经历这些感觉’而不是‘我就是这些感觉’，从而在刺激和反应之间创造一个微小的停顿空间。"
+            ]
+          },
+          "conversation_goal": "帮助用户从被焦虑和 racing thoughts 淹没的状态中稍微抽离，通过语言描述内部体验来建立心理距离，缓解‘脑子停不下来’的失控感。",
+          "adaptation": {
+            "interaction_style": "exploratory",
+            "tone_adjustment": "温和、稳定、包容。避免说教或要求用户立刻平静下来，而是接纳他们此刻的‘停不下来’，传递出‘即使停不下来也没关系，我们可以先看看它’的态度。",
+            "pace_adjustment": "放慢节奏。因为用户处于高唤醒状态，语言要简短、清晰，留出足够的空白让用户喘息，不要一次性给出太多指令。",
+            "culture_note": "使用‘停下来看看自己’的概念，将描述念头比喻为‘看着脑子里的弹幕’或‘坐在路边看车开过’，让中文语境下的用户更容易理解这种抽离感，避免使用生涩的心理学或冥想术语。"
+          },
+          "contraindications": [
+            {
+              "condition": "用户出现严重的惊恐发作（Panic Attack）或解离（Dissociation）症状",
+              "reason": "在极度恐慌或解离时，过度关注内部感受可能会加重焦虑或导致更严重的解离。此时应优先使用 TIPP 技能（如改变体温）或强烈的物理着陆技术来降低生理唤醒，而不是进行认知层面的观察和描述。"
+            }
+          ],
+          "_skill_name": "dbt_mindfulness"
+        },
+        "products": {},
+        "continue_eval": null
+      },
+      "error": null,
+      "wall_seconds": 153.191,
+      "agent_text": "心跳很快，脑子像停不下来一样，这种感觉一定让你觉得很累、很焦躁吧。\n\n既然脑子现在转得这么快，我们先不急着去理清它。你之前有正念觉察的经验，现在能不能试着把注意力稍微停一停，感受一下脚底踩在地面上的感觉，或者只是观察一下自己此刻的呼吸？\n\n我们先陪自己度过这一刻，试试看能不能让身体稍微平稳一点点。"
+    },
+    {
+      "turn": 3,
+      "trace_id": "9604a218ab844d9d",
+      "user_text": "以前学的「看脚下」那种方法，今天完全做不了。",
+      "agent_text_parts": [
+        "没关系的，今天",
+        "感觉“完全做",
+        "不了”，那我们就",
+        "先不勉强去",
+        "“看脚下”。",
+        "\n\n脑子转得",
+        "那么快，连",
+        "熟悉的方法都用不上",
+        "，这感觉一定",
+        "挺让人着急的",
+        "。不如我们退",
+        "一步，不去试图",
+        "控制它，只是",
+        "看着它。\n\n",
+        "你能试着在心里对自己",
+        "说一句：“我注意到",
+        "，我现在脑子里有很多",
+        "念头在跑”，",
+        "或者“我注意到",
+        "，我现在感觉很乱",
+        "，静不下来”",
+        "吗？\n\n不用",
+        "去改变它，",
+        "也不用管它有没有",
+        "用，只是",
+        "承认这些感觉此刻",
+        "就在那里。我们",
+        "陪自己先度过",
+        "这一刻。"
+      ],
+      "events": [
+        {
+          "event": "token",
+          "data": "没关系的，今天"
+        },
+        {
+          "event": "token",
+          "data": "感觉“完全做"
+        },
+        {
+          "event": "token",
+          "data": "不了”，那我们就"
+        },
+        {
+          "event": "token",
+          "data": "先不勉强去"
+        },
+        {
+          "event": "token",
+          "data": "“看脚下”。"
+        },
+        {
+          "event": "token",
+          "data": "\n\n脑子转得"
+        },
+        {
+          "event": "token",
+          "data": "那么快，连"
+        },
+        {
+          "event": "token",
+          "data": "熟悉的方法都用不上"
+        },
+        {
+          "event": "token",
+          "data": "，这感觉一定"
+        },
+        {
+          "event": "token",
+          "data": "挺让人着急的"
+        },
+        {
+          "event": "token",
+          "data": "。不如我们退"
+        },
+        {
+          "event": "token",
+          "data": "一步，不去试图"
+        },
+        {
+          "event": "token",
+          "data": "控制它，只是"
+        },
+        {
+          "event": "token",
+          "data": "看着它。\n\n"
+        },
+        {
+          "event": "token",
+          "data": "你能试着在心里对自己"
+        },
+        {
+          "event": "token",
+          "data": "说一句：“我注意到"
+        },
+        {
+          "event": "token",
+          "data": "，我现在脑子里有很多"
+        },
+        {
+          "event": "token",
+          "data": "念头在跑”，"
+        },
+        {
+          "event": "token",
+          "data": "或者“我注意到"
+        },
+        {
+          "event": "token",
+          "data": "，我现在感觉很乱"
+        },
+        {
+          "event": "token",
+          "data": "，静不下来”"
+        },
+        {
+          "event": "token",
+          "data": "吗？\n\n不用"
+        },
+        {
+          "event": "token",
+          "data": "去改变它，"
+        },
+        {
+          "event": "token",
+          "data": "也不用管它有没有"
+        },
+        {
+          "event": "token",
+          "data": "用，只是"
+        },
+        {
+          "event": "token",
+          "data": "承认这些感觉此刻"
+        },
+        {
+          "event": "token",
+          "data": "就在那里。我们"
+        },
+        {
+          "event": "token",
+          "data": "陪自己先度过"
+        },
+        {
+          "event": "token",
+          "data": "这一刻。"
+        },
+        {
+          "event": "dialogue_done",
+          "data": {
+            "trace_id": "9604a218ab844d9d",
+            "owner": "therapy_dbt"
+          }
+        },
+        {
+          "event": "final",
+          "data": {
+            "message": "以前学的「看脚下」那种方法，今天完全做不了。",
+            "risk_state": "LOW_RISK",
+            "crisis": false
+          }
+        }
+      ],
+      "final": {
+        "message": "以前学的「看脚下」那种方法，今天完全做不了。",
+        "risk_state": "LOW_RISK",
+        "crisis": false
+      },
+      "state_after": {
+        "owner": "therapy_dbt",
+        "crisis": false,
+        "risk_level": "LOW_RISK",
+        "therapy": {
+          "name": "DBT",
+          "start_seq": 3,
+          "rounds": 2,
+          "step_index": 1,
+          "branch": null,
+          "basic_flow_complete": false
+        },
+        "last_therapy_check_seq": 1,
+        "pending_user_tokens": 0
+      },
+      "orchestration_after": {
+        "updated_seq": 2,
+        "therapy": "DBT",
+        "current_step": "mindfulness",
+        "next_step": "distress_tolerance",
+        "step_judgment": {
+          "action": "go_to",
+          "target_step": "distress_tolerance",
+          "achieved": false,
+          "reason": "用户情绪失调严重（0.75）、痛苦水平处于危机状态（0.8），且正念觉察能力极低（0.2），标准的正念着陆技术（'看脚下'）因生理唤醒过高而完全失效。评估系统明确建议优先进行 distress_tolerance 干预（如 TIPP 技能），先降低生理基线，之后才能有效进行正念练习。因此需要跳转到 distress_tolerance 步骤。"
+        },
+        "assessment": {
+          "emotion_dysregulation": {
+            "index": 0.75,
+            "state": "severe",
+            "confidence": 0.85,
+            "evidence": [
+              "User reports '今天完全做不了' (completely unable to do it today) regarding grounding techniques, indicating that high physiological arousal and racing thoughts are still overwhelming their ability to self-regulate."
+            ]
+          },
+          "distress_level": {
+            "index": 0.8,
+            "state": "crisis",
+            "confidence": 0.9,
+            "evidence": [
+              "User is still experiencing the previously reported high distress and now expresses frustration or helplessness that their usual coping mechanism ('看脚下') is completely ineffective today, maintaining a high subjective distress level."
+            ]
+          },
+          "impulsivity": {
+            "index": 0.1,
+            "state": "controlled",
+            "confidence": 0.85,
+            "evidence": [
+              "User is communicating their inability to perform a skill rather than expressing any urges to act out impulsively, escape, or harm themselves."
+            ]
+          },
+          "interpersonal_conflict": {
+            "index": 0.0,
+            "state": "low",
+            "confidence": 0.95,
+            "evidence": [
+              "No interpersonal issues, arguments, or other people are mentioned in the user's message."
+            ]
+          },
+          "mindfulness_awareness": {
+            "index": 0.2,
+            "state": "low",
+            "confidence": 0.85,
+            "evidence": [
+              "User attempted to use a mindfulness/grounding technique ('看脚下') but reported it was 'completely impossible' today, indicating they are currently swept away by their internal experience and unable to maintain mindful awareness."
+            ]
+          },
+          "dbt_intervention_priority": 0.562,
+          "overall_trend": "stable",
+          "primary_concern": "distress_level",
+          "should_intervene": true,
+          "recommended_processes": [
+            {
+              "process": "distress_tolerance",
+              "priority": 1,
+              "rationale": "User's high physiological arousal is preventing the use of mindfulness skills. Distress tolerance skills (like TIPP or temperature changes) are needed first to lower the physiological baseline before cognitive mindfulness can be effective."
+            },
+            {
+              "process": "emotion_regulation",
+              "priority": 2,
+              "rationale": "Once physiological distress is reduced, emotion regulation can help the user process the underlying anxiety and understand the current emotional state."
+            },
+            {
+              "process": "mindfulness",
+              "priority": 3,
+              "rationale": "Mindfulness remains a goal, but since standard grounding failed due to high arousal, it is deprioritized until distress tolerance lowers the physiological baseline."
+            }
+          ]
+        },
+        "skill_output": {
+          "technique": {
+            "name": "observe_describe",
+            "description": "User is swept away by racing thoughts and high physiological arousal, making focused grounding techniques impossible. Observe and describe is chosen to help them step back and simply label the current overwhelming state without trying to change it or 'do it right'.",
+            "steps": [
+              "Validate the frustration of not being able to use the 'look at feet' technique, and explicitly give permission to drop the expectation of doing mindfulness 'correctly'.",
+              "Guide the user to use the 'Describe' skill in its simplest form: just naming the current experience out loud or in their mind (e.g., 'My heart is beating fast', 'My mind is racing'), treating the chaos itself as the object of observation."
+            ]
+          },
+          "conversation_goal": "To relieve the pressure of 'failing' at mindfulness by shifting the focus to simply naming the current overwhelming physical and mental state, creating a tiny moment of distance from the racing thoughts.",
+          "adaptation": {
+            "interaction_style": "exploratory",
+            "tone_adjustment": "Highly permissive, gentle, and reassuring. Remove any sense of 'homework' or 'doing it right'.",
+            "pace_adjustment": "Very slow and minimal. Keep instructions extremely short and simple to avoid adding to cognitive overload.",
+            "culture_note": "Frame the practice as '只是给现在的乱贴个标签' (just labeling the current mess) or '承认现在的状态' (acknowledging the current state). Avoid terms like '正念练习' which imply a performance they feel they are failing at. Emphasize that noticing '做不到' (inability to do it) is itself a valid observation."
+          },
+          "contraindications": [
+            {
+              "condition": "Pushing the user to try 'looking at feet' again or forcing structured deep breathing.",
+              "reason": "The user's physiological arousal and cognitive overload are too high; forcing focused attention will increase frustration and feelings of failure, worsening emotional dysregulation."
+            }
+          ],
+          "_skill_name": "dbt_mindfulness"
+        },
+        "products": {},
+        "continue_eval": null
+      },
+      "error": null,
+      "wall_seconds": 130.628,
+      "agent_text": "没关系的，今天感觉“完全做不了”，那我们就先不勉强去“看脚下”。\n\n脑子转得那么快，连熟悉的方法都用不上，这感觉一定挺让人着急的。不如我们退一步，不去试图控制它，只是看着它。\n\n你能试着在心里对自己说一句：“我注意到，我现在脑子里有很多念头在跑”，或者“我注意到，我现在感觉很乱，静不下来”吗？\n\n不用去改变它，也不用管它有没有用，只是承认这些感觉此刻就在那里。我们陪自己先度过这一刻。"
+    },
+    {
+      "turn": 4,
+      "trace_id": "1e080d949b11441e",
+      "user_text": "我感觉我的脑子抓住了什么就一直转。",
+      "agent_text_parts": [
+        "脑子抓住什么",
+        "就一直转，这种",
+        "停不下来的感觉",
+        "确实很消耗人",
+        "。\n\n既然它",
+        "现在转得这么",
+        "厉害，我们就不",
+        "去强行让它停下来",
+        "，也不用去分析",
+        "它到底抓住了什么",
+        "。试着就在心里",
+        "给它贴个简单的",
+        "标签，比如对自己",
+        "说：“我注意到",
+        "，我的",
+        "脑子现在又在死死",
+        "抓住一个念头不",
+        "放了”。\n\n不用",
+        "去改变它，",
+        "只是看着它转",
+        "。我们就先陪",
+        "自己待在这个“",
+        "看着它转”",
+        "的状态里，先",
+        "度过这一刻，好吗",
+        "？"
+      ],
+      "events": [
+        {
+          "event": "token",
+          "data": "脑子抓住什么"
+        },
+        {
+          "event": "token",
+          "data": "就一直转，这种"
+        },
+        {
+          "event": "token",
+          "data": "停不下来的感觉"
+        },
+        {
+          "event": "token",
+          "data": "确实很消耗人"
+        },
+        {
+          "event": "token",
+          "data": "。\n\n既然它"
+        },
+        {
+          "event": "token",
+          "data": "现在转得这么"
+        },
+        {
+          "event": "token",
+          "data": "厉害，我们就不"
+        },
+        {
+          "event": "token",
+          "data": "去强行让它停下来"
+        },
+        {
+          "event": "token",
+          "data": "，也不用去分析"
+        },
+        {
+          "event": "token",
+          "data": "它到底抓住了什么"
+        },
+        {
+          "event": "token",
+          "data": "。试着就在心里"
+        },
+        {
+          "event": "token",
+          "data": "给它贴个简单的"
+        },
+        {
+          "event": "token",
+          "data": "标签，比如对自己"
+        },
+        {
+          "event": "token",
+          "data": "说：“我注意到"
+        },
+        {
+          "event": "token",
+          "data": "，我的"
+        },
+        {
+          "event": "token",
+          "data": "脑子现在又在死死"
+        },
+        {
+          "event": "token",
+          "data": "抓住一个念头不"
+        },
+        {
+          "event": "token",
+          "data": "放了”。\n\n不用"
+        },
+        {
+          "event": "token",
+          "data": "去改变它，"
+        },
+        {
+          "event": "token",
+          "data": "只是看着它转"
+        },
+        {
+          "event": "token",
+          "data": "。我们就先陪"
+        },
+        {
+          "event": "token",
+          "data": "自己待在这个“"
+        },
+        {
+          "event": "token",
+          "data": "看着它转”"
+        },
+        {
+          "event": "token",
+          "data": "的状态里，先"
+        },
+        {
+          "event": "token",
+          "data": "度过这一刻，好吗"
+        },
+        {
+          "event": "token",
+          "data": "？"
+        },
+        {
+          "event": "dialogue_done",
+          "data": {
+            "trace_id": "1e080d949b11441e",
+            "owner": "therapy_dbt"
+          }
+        },
+        {
+          "event": "final",
+          "data": {
+            "message": "我感觉我的脑子抓住了什么就一直转。",
+            "risk_state": "LOW_RISK",
+            "crisis": false
+          }
+        }
+      ],
+      "final": {
+        "message": "我感觉我的脑子抓住了什么就一直转。",
+        "risk_state": "LOW_RISK",
+        "crisis": false
+      },
+      "state_after": {
+        "owner": "therapy_dbt",
+        "crisis": false,
+        "risk_level": "LOW_RISK",
+        "therapy": {
+          "name": "DBT",
+          "start_seq": 3,
+          "rounds": 3,
+          "step_index": 1,
+          "branch": null,
+          "basic_flow_complete": false
+        },
+        "last_therapy_check_seq": 1,
+        "pending_user_tokens": 0
+      },
+      "orchestration_after": {
+        "updated_seq": 3,
+        "therapy": "DBT",
+        "current_step": "distress_tolerance",
+        "next_step": "distress_tolerance",
+        "step_judgment": {
+          "action": "stay",
+          "target_step": null,
+          "achieved": false,
+          "reason": "用户的情绪失调指数仍为0.7（severe），痛苦水平仍为0.7（high），脑子'一直转'的状态仍在持续。虽然正念觉察有所提升（0.45），用户开始能够观察和描述自己的思维过程，但当前的distress_tolerance步骤尚未达成效果——用户仍未有效缓解当下的痛苦和生理唤醒。需要继续在当前步骤中巩固痛苦耐受技能，帮助用户在不适中稳定下来。"
+        },
+        "assessment": {
+          "emotion_dysregulation": {
+            "index": 0.7,
+            "state": "severe",
+            "confidence": 0.85,
+            "evidence": [
+              "User reports '我的脑子抓住了什么就一直转', indicating persistent cognitive and physiological arousal, showing continued difficulty in regulating racing thoughts."
+            ]
+          },
+          "distress_level": {
+            "index": 0.7,
+            "state": "high",
+            "confidence": 0.85,
+            "evidence": [
+              "The persistent spinning thoughts ('一直转') continue to cause subjective distress and a feeling of being stuck, though the user is now able to articulate the experience."
+            ]
+          },
+          "impulsivity": {
+            "index": 0.1,
+            "state": "controlled",
+            "confidence": 0.9,
+            "evidence": [
+              "User is describing their internal cognitive state without expressing any urges to act out impulsively, escape, or harm themselves."
+            ]
+          },
+          "interpersonal_conflict": {
+            "index": 0.0,
+            "state": "low",
+            "confidence": 0.95,
+            "evidence": [
+              "No interpersonal issues, arguments, or other people are mentioned in the current or recent messages."
+            ]
+          },
+          "mindfulness_awareness": {
+            "index": 0.45,
+            "state": "moderate",
+            "confidence": 0.8,
+            "evidence": [
+              "User is now able to observe and describe their cognitive process ('我感觉我的脑子抓住了什么就一直转'), showing an improvement from the previous turn where they felt completely unable to use mindfulness skills."
+            ]
+          },
+          "dbt_intervention_priority": 0.475,
+          "overall_trend": "improving",
+          "primary_concern": "distress_level",
+          "should_intervene": true,
+          "recommended_processes": [
+            {
+              "process": "distress_tolerance",
+              "priority": 1,
+              "rationale": "User's mind is still 'spinning' causing significant distress. Distress tolerance skills are needed to manage the immediate discomfort and physiological arousal before higher-level processing can occur."
+            },
+            {
+              "process": "emotion_regulation",
+              "priority": 2,
+              "rationale": "Once the immediate distress is managed, emotion regulation can help the user process the underlying emotions fueling the racing thoughts."
+            },
+            {
+              "process": "mindfulness",
+              "priority": 3,
+              "rationale": "The user has begun to observe and describe their thoughts ('我感觉我的脑子...'). Reinforcing this 'observing mind' will help them create distance from the spinning thoughts and build on their current progress."
+            }
+          ]
+        },
+        "skill_output": {
+          "technique": {
+            "name": "radical_acceptance",
+            "description": "帮助用户接受‘大脑目前停不下来’的客观现实，停止与‘必须让脑子静下来’的对抗。事情已经这样了，不再强求改变现状，从而减少因对抗而产生的额外痛苦与消耗。",
+            "steps": [
+              "承认现状：引导用户在心里对自己说‘事情已经这样了，我的脑子现在就是一直在转’。承认这个事实，而不是试图强行让它停下或因为做不到‘看脚下’而自责。",
+              "停止对抗：帮助用户意识到‘不想让它转’的挣扎本身在消耗自己。允许它继续转，不再和这个状态较劲，把能量从‘对抗’中撤回来，只是让它在背景里转。"
+            ]
+          },
+          "conversation_goal": "引导用户从‘试图控制大脑/对抗反刍’的挣扎中退出来，接受‘脑子正在转’的当前现实，通过不再对抗来降低内心的冲突和消耗。",
+          "adaptation": {
+            "interaction_style": "supportive",
+            "tone_adjustment": "温和、坚定且充满共情，不评判用户的反刍，像一个稳定的容器接住用户的无力感，传递出‘停不下来也没关系’的安全感。",
+            "pace_adjustment": "缓慢、平稳。给用户留出感受‘不抵抗’的空间，不催促他们立刻好起来或马上找到解决办法。",
+            "culture_note": "使用‘事情已经这样了’来框定接受，强调‘不再对抗’（不强求自己必须静下来），避免使用抽象的哲学词汇。可以结合通俗的表达如‘随它去吧’，但核心必须落在DBT的‘停止与现实较劲’上，明确区分这不是放弃，而是停止无效的内耗。"
+          },
+          "contraindications": [
+            {
+              "condition": "用户出现自伤/自杀冲动或极度解离",
+              "reason": "此时需要优先进行危机干预和强烈的感官着陆（如 self_soothe），单纯的 radical acceptance 可能无法应对急性危机，甚至可能让用户感到被忽视。"
+            }
+          ],
+          "_skill_name": "dbt_distress_tolerance"
+        },
+        "products": {},
+        "continue_eval": null
+      },
+      "error": null,
+      "wall_seconds": 120.996,
+      "agent_text": "脑子抓住什么就一直转，这种停不下来的感觉确实很消耗人。\n\n既然它现在转得这么厉害，我们就不去强行让它停下来，也不用去分析它到底抓住了什么。试着就在心里给它贴个简单的标签，比如对自己说：“我注意到，我的脑子现在又在死死抓住一个念头不放了”。\n\n不用去改变它，只是看着它转。我们就先陪自己待在这个“看着它转”的状态里，先度过这一刻，好吗？"
+    },
+    {
+      "turn": 5,
+      "trace_id": "4c9c35f1b34c4536",
+      "user_text": "你说「命名它」？命名什么？",
+      "agent_text_parts": [
+        "其实“命名",
+        "”不是让你去",
+        "弄清楚它到底在",
+        "转什么具体的事",
+        "，而是单纯地",
+        "承认“我的脑子",
+        "现在就是停不下来",
+        "”这个事实。",
+        "\n\n就像看着一台",
+        "正在高速运转的",
+        "机器，我们不去",
+        "管它具体在",
+        "转什么，只是",
+        "对自己说一句：“好吧",
+        "，它现在",
+        "确实停不下来。”",
+        "\n\n我们不去跟",
+        "它较",
+        "劲，也不强",
+        "求它马上安静",
+        "。就让它在那",
+        "儿转，把",
+        "力气从“想",
+        "让它停下”的",
+        "挣扎里撤回来",
+        "。先陪自己",
+        "度过这一刻，就",
+        "允许它这么转",
+        "一会儿，好吗？"
+      ],
+      "events": [
+        {
+          "event": "token",
+          "data": "其实“命名"
+        },
+        {
+          "event": "token",
+          "data": "”不是让你去"
+        },
+        {
+          "event": "token",
+          "data": "弄清楚它到底在"
+        },
+        {
+          "event": "token",
+          "data": "转什么具体的事"
+        },
+        {
+          "event": "token",
+          "data": "，而是单纯地"
+        },
+        {
+          "event": "token",
+          "data": "承认“我的脑子"
+        },
+        {
+          "event": "token",
+          "data": "现在就是停不下来"
+        },
+        {
+          "event": "token",
+          "data": "”这个事实。"
+        },
+        {
+          "event": "token",
+          "data": "\n\n就像看着一台"
+        },
+        {
+          "event": "token",
+          "data": "正在高速运转的"
+        },
+        {
+          "event": "token",
+          "data": "机器，我们不去"
+        },
+        {
+          "event": "token",
+          "data": "管它具体在"
+        },
+        {
+          "event": "token",
+          "data": "转什么，只是"
+        },
+        {
+          "event": "token",
+          "data": "对自己说一句：“好吧"
+        },
+        {
+          "event": "token",
+          "data": "，它现在"
+        },
+        {
+          "event": "token",
+          "data": "确实停不下来。”"
+        },
+        {
+          "event": "token",
+          "data": "\n\n我们不去跟"
+        },
+        {
+          "event": "token",
+          "data": "它较"
+        },
+        {
+          "event": "token",
+          "data": "劲，也不强"
+        },
+        {
+          "event": "token",
+          "data": "求它马上安静"
+        },
+        {
+          "event": "token",
+          "data": "。就让它在那"
+        },
+        {
+          "event": "token",
+          "data": "儿转，把"
+        },
+        {
+          "event": "token",
+          "data": "力气从“想"
+        },
+        {
+          "event": "token",
+          "data": "让它停下”的"
+        },
+        {
+          "event": "token",
+          "data": "挣扎里撤回来"
+        },
+        {
+          "event": "token",
+          "data": "。先陪自己"
+        },
+        {
+          "event": "token",
+          "data": "度过这一刻，就"
+        },
+        {
+          "event": "token",
+          "data": "允许它这么转"
+        },
+        {
+          "event": "token",
+          "data": "一会儿，好吗？"
+        },
+        {
+          "event": "dialogue_done",
+          "data": {
+            "trace_id": "4c9c35f1b34c4536",
+            "owner": "therapy_dbt"
+          }
+        },
+        {
+          "event": "final",
+          "data": {
+            "message": "你说「命名它」？命名什么？",
+            "risk_state": "SAFE",
+            "crisis": false
+          }
+        }
+      ],
+      "final": {
+        "message": "你说「命名它」？命名什么？",
+        "risk_state": "SAFE",
+        "crisis": false
+      },
+      "state_after": {
+        "owner": "therapy_dbt",
+        "crisis": false,
+        "risk_level": "SAFE",
+        "therapy": {
+          "name": "DBT",
+          "start_seq": 3,
+          "rounds": 4,
+          "step_index": 1,
+          "branch": null,
+          "basic_flow_complete": false
+        },
+        "last_therapy_check_seq": 1,
+        "pending_user_tokens": 0
+      },
+      "orchestration_after": {
+        "updated_seq": 4,
+        "therapy": "DBT",
+        "current_step": "distress_tolerance",
+        "next_step": "distress_tolerance",
+        "step_judgment": {
+          "action": "stay",
+          "target_step": null,
+          "achieved": false,
+          "reason": "用户在询问'命名什么'，说明对正念技能的理解还不够清晰。虽然用户已经开始从情绪崩溃转向认知处理，但distress_level仍为high(0.6)，且mindfulness_awareness仅为moderate(0.55)。AI刚刚解释了'命名'的含义，需要继续在当前步骤巩固用户对正念观察技能的理解和应用，帮助用户真正掌握'观察而不评判'的能力。"
+        },
+        "assessment": {
+          "emotion_dysregulation": {
+            "index": 0.55,
+            "state": "moderate",
+            "confidence": 0.8,
+            "evidence": [
+              "User is asking a clarifying question ('命名什么？'), indicating a slight shift from intense emotional overwhelm to cognitive processing, though the underlying racing thoughts remain."
+            ]
+          },
+          "distress_level": {
+            "index": 0.6,
+            "state": "high",
+            "confidence": 0.8,
+            "evidence": [
+              "User is engaging with the agent to understand the technique, showing a reduction from pure overwhelm, but the persistent context of a racing mind indicates ongoing moderate distress."
+            ]
+          },
+          "impulsivity": {
+            "index": 0.1,
+            "state": "controlled",
+            "confidence": 0.9,
+            "evidence": [
+              "User is asking a thoughtful, clarifying question about the DBT skill, showing no urges to act out, escape, or self-harm."
+            ]
+          },
+          "interpersonal_conflict": {
+            "index": 0.0,
+            "state": "low",
+            "confidence": 0.95,
+            "evidence": [
+              "No interpersonal issues, arguments, or mentions of other people are present in the current message or recent context."
+            ]
+          },
+          "mindfulness_awareness": {
+            "index": 0.55,
+            "state": "moderate",
+            "confidence": 0.85,
+            "evidence": [
+              "User is actively trying to understand and apply the 'labeling/naming' mindfulness skill ('你说「命名它」？命名什么？'), indicating an attempt to engage in observing their thoughts, though they need clarification on the target."
+            ]
+          },
+          "dbt_intervention_priority": 0.392,
+          "overall_trend": "improving",
+          "primary_concern": "mindfulness_awareness",
+          "should_intervene": true,
+          "recommended_processes": [
+            {
+              "process": "mindfulness",
+              "priority": 1,
+              "rationale": "User is asking for clarification on how to apply the 'naming/labeling' skill. Clarifying this will directly address their confusion and help them build the foundational mindfulness skill needed to observe their racing thoughts."
+            },
+            {
+              "process": "distress_tolerance",
+              "priority": 2,
+              "rationale": "The underlying racing thoughts and physiological arousal are still present. Once the mindfulness skill is clarified, distress tolerance can help them sit with the discomfort of the spinning mind."
+            },
+            {
+              "process": "emotion_regulation",
+              "priority": 3,
+              "rationale": "To eventually process the emotions driving the racing thoughts once mindfulness and distress tolerance are established."
+            }
+          ]
+        },
+        "skill_output": {
+          "technique": {
+            "name": "radical_acceptance",
+            "description": "帮助用户接纳“脑子现在停不下来”这个当下的事实，停止与这个状态的较劲。在DBT中，这意味着承认“事情已经这样了”，不再对抗，从而节省心理能量度过危机。",
+            "steps": [
+              "澄清“命名”的含义：向用户解释“命名”不是去分析或命名具体的念头内容，而是单纯地承认并指出当下的整体状态（例如对自己说：“我现在脑子就是停不下来”这个事实）。",
+              "引导停止对抗：帮助用户理解接纳就是“不再对抗”，把试图强行让大脑停止的力气撤回来，允许这个状态暂时存在，先陪自己度过这一刻。"
+            ]
+          },
+          "conversation_goal": "帮助用户清晰理解“命名”在彻底接纳中的具体操作含义，引导他们停止与“脑子一直转”这一现状的抗争，通过接纳当下的事实来减少内耗，平稳度过当前的痛苦时刻。",
+          "adaptation": {
+            "interaction_style": "supportive",
+            "tone_adjustment": "温和、清晰、耐心。用通俗易懂的日常语言解释DBT概念，避免生硬的心理学说教，让用户感到被抱持和引导。",
+            "pace_adjustment": "缓慢、循序渐进。给用户足够的时间消化“命名”和“接纳”的概念，通过简单的确认来确保他们理解，不急于推进。",
+            "culture_note": "将DBT的“Radical Acceptance”本土化为“事情已经这样了，我们先不跟它较劲”。强调“接纳”不等于“认输”或“赞同”，而是“不再对抗”以保存体力，避免单独使用“接纳”一词引起误解。"
+          },
+          "contraindications": [
+            {
+              "condition": "用户表现出极度的生理唤起或恐慌，无法集中注意力进行认知层面的对话",
+              "reason": "在高度生理唤起下，认知解释无效。应立即放弃当前技巧，切换到self_soothe（自我安抚）等生理调节技巧，先通过五感途径降低唤起水平。"
+            }
+          ],
+          "_skill_name": "dbt_distress_tolerance"
+        },
+        "products": {},
+        "continue_eval": null
+      },
+      "error": null,
+      "wall_seconds": 139.454,
+      "agent_text": "其实“命名”不是让你去弄清楚它到底在转什么具体的事，而是单纯地承认“我的脑子现在就是停不下来”这个事实。\n\n就像看着一台正在高速运转的机器，我们不去管它具体在转什么，只是对自己说一句：“好吧，它现在确实停不下来。”\n\n我们不去跟它较劲，也不强求它马上安静。就让它在那儿转，把力气从“想让它停下”的挣扎里撤回来。先陪自己度过这一刻，就允许它这么转一会儿，好吗？"
+    },
+    {
+      "turn": 6,
+      "trace_id": "95a11f9775014cdf",
+      "user_text": "我试试……「我现在心跳很快」「我脑子里有声音说我会出事」……",
+      "agent_text_parts": [
+        "对，就是这样。",
+        "你注意到了“心跳",
+        "很快”，也听到了",
+        "那个说“我会",
+        "出事”的声音。",
+        "\n\n现在，我们就",
+        "让这两件事先",
+        "在那儿待着",
+        "。心跳快就",
+        "让它快，那个",
+        "声音响就让它",
+        "响。我们不去",
+        "反驳那个声音，",
+        "也不急着去证明",
+        "它不对。\n\n",
+        "就像退后一步",
+        "看着它们一样，",
+        "把试图赶走它们的",
+        "力气收回来。",
+        "我们就先陪自己",
+        "在这个状态里待",
+        "一会儿，允许它们",
+        "存在，先度过",
+        "这一刻，好吗？"
+      ],
+      "events": [
+        {
+          "event": "token",
+          "data": "对，就是这样。"
+        },
+        {
+          "event": "token",
+          "data": "你注意到了“心跳"
+        },
+        {
+          "event": "token",
+          "data": "很快”，也听到了"
+        },
+        {
+          "event": "token",
+          "data": "那个说“我会"
+        },
+        {
+          "event": "token",
+          "data": "出事”的声音。"
+        },
+        {
+          "event": "token",
+          "data": "\n\n现在，我们就"
+        },
+        {
+          "event": "token",
+          "data": "让这两件事先"
+        },
+        {
+          "event": "token",
+          "data": "在那儿待着"
+        },
+        {
+          "event": "token",
+          "data": "。心跳快就"
+        },
+        {
+          "event": "token",
+          "data": "让它快，那个"
+        },
+        {
+          "event": "token",
+          "data": "声音响就让它"
+        },
+        {
+          "event": "token",
+          "data": "响。我们不去"
+        },
+        {
+          "event": "token",
+          "data": "反驳那个声音，"
+        },
+        {
+          "event": "token",
+          "data": "也不急着去证明"
+        },
+        {
+          "event": "token",
+          "data": "它不对。\n\n"
+        },
+        {
+          "event": "token",
+          "data": "就像退后一步"
+        },
+        {
+          "event": "token",
+          "data": "看着它们一样，"
+        },
+        {
+          "event": "token",
+          "data": "把试图赶走它们的"
+        },
+        {
+          "event": "token",
+          "data": "力气收回来。"
+        },
+        {
+          "event": "token",
+          "data": "我们就先陪自己"
+        },
+        {
+          "event": "token",
+          "data": "在这个状态里待"
+        },
+        {
+          "event": "token",
+          "data": "一会儿，允许它们"
+        },
+        {
+          "event": "token",
+          "data": "存在，先度过"
+        },
+        {
+          "event": "token",
+          "data": "这一刻，好吗？"
+        },
+        {
+          "event": "dialogue_done",
+          "data": {
+            "trace_id": "95a11f9775014cdf",
+            "owner": "therapy_dbt"
+          }
+        },
+        {
+          "event": "final",
+          "data": {
+            "message": "我试试……「我现在心跳很快」「我脑子里有声音说我会出事」……",
+            "risk_state": "MEDIUM_RISK",
+            "crisis": false
+          }
+        }
+      ],
+      "final": {
+        "message": "我试试……「我现在心跳很快」「我脑子里有声音说我会出事」……",
+        "risk_state": "MEDIUM_RISK",
+        "crisis": false
+      },
+      "state_after": {
+        "owner": "therapy_dbt",
+        "crisis": false,
+        "risk_level": "MEDIUM_RISK",
+        "therapy": {
+          "name": "DBT",
+          "start_seq": 3,
+          "rounds": 5,
+          "step_index": 1,
+          "branch": null,
+          "basic_flow_complete": false
+        },
+        "last_therapy_check_seq": 1,
+        "pending_user_tokens": 0
+      },
+      "orchestration_after": {
+        "updated_seq": 5,
+        "therapy": "DBT",
+        "current_step": "distress_tolerance",
+        "next_step": "distress_tolerance",
+        "step_judgment": {
+          "action": "stay",
+          "target_step": null,
+          "achieved": false,
+          "reason": "用户成功运用了正念命名技能（识别心跳快、灾难化思维），正念觉察度高(0.8)，但痛苦水平仍较高(0.55)，存在明显的生理唤起和灾难化认知。当前仍处于distress_tolerance阶段，需要继续陪伴用户耐受这些不适感受，巩固'允许存在、不去对抗'的练习，待痛苦水平进一步下降后再推进。"
+        },
+        "assessment": {
+          "emotion_dysregulation": {
+            "index": 0.3,
+            "state": "mild",
+            "confidence": 0.85,
+            "evidence": [
+              "User is actively attempting to apply a coping skill ('我试试') rather than being overwhelmed, though the content indicates underlying anxiety."
+            ]
+          },
+          "distress_level": {
+            "index": 0.55,
+            "state": "high",
+            "confidence": 0.9,
+            "evidence": [
+              "User reports physiological arousal ('心跳很快') and catastrophic thoughts ('脑子里有声音说我会出事'), indicating ongoing moderate distress despite engaging in coping."
+            ]
+          },
+          "impulsivity": {
+            "index": 0.0,
+            "state": "controlled",
+            "confidence": 0.95,
+            "evidence": [
+              "User is thoughtfully engaging in a mindfulness exercise ('我试试……') with no indication of urges to act out or escape."
+            ]
+          },
+          "interpersonal_conflict": {
+            "index": 0.0,
+            "state": "low",
+            "confidence": 0.95,
+            "evidence": [
+              "No mention of other people or relationship issues in the current message."
+            ]
+          },
+          "mindfulness_awareness": {
+            "index": 0.8,
+            "state": "high",
+            "confidence": 0.95,
+            "evidence": [
+              "User successfully applies the 'naming/labeling' skill taught by the agent, explicitly observing and labeling internal experiences ('我现在心跳很快', '我脑子里有声音说我会出事')."
+            ]
+          },
+          "dbt_intervention_priority": 0.253,
+          "overall_trend": "improving",
+          "primary_concern": "distress_level",
+          "should_intervene": true,
+          "recommended_processes": [
+            {
+              "process": "distress_tolerance",
+              "priority": 1,
+              "rationale": "User is experiencing moderate distress (racing heart, catastrophic thoughts) and needs support to tolerate sitting with these uncomfortable physical and cognitive sensations without trying to fight them."
+            },
+            {
+              "process": "mindfulness",
+              "priority": 2,
+              "rationale": "User successfully initiated the naming skill; continuing to reinforce this present-moment awareness will help them maintain distance from the distressing thoughts."
+            },
+            {
+              "process": "emotion_regulation",
+              "priority": 3,
+              "rationale": "To address the underlying anxiety driving the catastrophic thoughts once distress is tolerated and mindfulness is maintained."
+            }
+          ]
+        },
+        "skill_output": {
+          "technique": {
+            "name": "self_soothe",
+            "description": "Guide the user to comfort and calm their nervous system through the five senses to survive the acute physiological distress and catastrophic thoughts.",
+            "steps": [
+              "Validate their effort in noticing their physical and mental state without fighting it.",
+              "Introduce a specific, culturally familiar sensory grounding exercise (e.g., holding a warm cup of tea, feeling a soft blanket) to shift focus from internal distress to external physical comfort.",
+              "Encourage them to fully immerse in the chosen sensory experience for a few moments to help their nervous system settle and reduce acute arousal."
+            ]
+          },
+          "conversation_goal": "Help the user transition from internal observation to external sensory grounding to calm their acute physiological arousal and mitigate catastrophic thinking.",
+          "adaptation": {
+            "interaction_style": "supportive",
+            "tone_adjustment": "Gentle, grounding, and reassuring. Speak slowly and calmly to model a regulated nervous system.",
+            "pace_adjustment": "Slow and steady. Allow space for the user to actually engage with the sensory experience without rushing.",
+            "culture_note": "Use culturally familiar and comforting sensory experiences, such as drinking warm tea (taste/touch), holding a warm mug, or listening to gentle nature sounds. Frame the sensory focus as '给自己一点温暖的照顾' (giving yourself some warm care) rather than just clinical grounding."
+          },
+          "contraindications": [
+            {
+              "condition": "User is in immediate physical danger or experiencing a medical emergency.",
+              "reason": "Self-soothing is a psychological distress tolerance tool and cannot replace emergency medical or psychiatric intervention if the catastrophic thoughts are based on a real, immediate physical threat."
+            }
+          ],
+          "_skill_name": "dbt_distress_tolerance"
+        },
+        "products": {},
+        "continue_eval": null
+      },
+      "error": null,
+      "wall_seconds": 166.11,
+      "agent_text": "对，就是这样。你注意到了“心跳很快”，也听到了那个说“我会出事”的声音。\n\n现在，我们就让这两件事先在那儿待着。心跳快就让它快，那个声音响就让它响。我们不去反驳那个声音，也不急着去证明它不对。\n\n就像退后一步看着它们一样，把试图赶走它们的力气收回来。我们就先陪自己在这个状态里待一会儿，允许它们存在，先度过这一刻，好吗？"
+    },
+    {
+      "turn": 7,
+      "trace_id": "b4f078adadf64163",
+      "user_text": "好像没那么猛了？还是只是分散了一点点？",
+      "agent_text_parts": [
+        "不管是真的",
+        "缓解了，还是",
+        "稍微分散了一点，",
+        "能让你觉得“没那么",
+        "猛了”，这就是",
+        "身体在慢慢平",
+        "复的信号。你",
+        "刚才没有去和",
+        "那些念头较劲",
+        "，这份“允许",
+        "它存在”的",
+        "尝试，真的帮",
+        "到了你。\n\n",
+        "既然现在最猛",
+        "的那阵浪头",
+        "稍微过去了一点，",
+        "我们要不要试着给",
+        "身体一点更直接的",
+        "安慰？比如，",
+        "去倒一杯温热",
+        "的水，用双手",
+        "捧着，感受一下温度",
+        "传到手心里的感觉",
+        "；或者找一条",
+        "柔软的毯子、",
+        "一件厚实的外套",
+        "，把自己轻轻裹",
+        "起来。\n\n不用",
+        "去想别的，就",
+        "只是把注意力放在",
+        "手心的温度，",
+        "或者织物柔软的触感",
+        "上，让自己在这个",
+        "舒服的感觉里多",
+        "待一会儿。让",
+        "身体慢慢知道，",
+        "此刻它是安全的、",
+        "被照顾着的。",
+        "去试试看，好吗",
+        "？"
+      ],
+      "events": [
+        {
+          "event": "token",
+          "data": "不管是真的"
+        },
+        {
+          "event": "token",
+          "data": "缓解了，还是"
+        },
+        {
+          "event": "token",
+          "data": "稍微分散了一点，"
+        },
+        {
+          "event": "token",
+          "data": "能让你觉得“没那么"
+        },
+        {
+          "event": "token",
+          "data": "猛了”，这就是"
+        },
+        {
+          "event": "token",
+          "data": "身体在慢慢平"
+        },
+        {
+          "event": "token",
+          "data": "复的信号。你"
+        },
+        {
+          "event": "token",
+          "data": "刚才没有去和"
+        },
+        {
+          "event": "token",
+          "data": "那些念头较劲"
+        },
+        {
+          "event": "token",
+          "data": "，这份“允许"
+        },
+        {
+          "event": "token",
+          "data": "它存在”的"
+        },
+        {
+          "event": "token",
+          "data": "尝试，真的帮"
+        },
+        {
+          "event": "token",
+          "data": "到了你。\n\n"
+        },
+        {
+          "event": "token",
+          "data": "既然现在最猛"
+        },
+        {
+          "event": "token",
+          "data": "的那阵浪头"
+        },
+        {
+          "event": "token",
+          "data": "稍微过去了一点，"
+        },
+        {
+          "event": "token",
+          "data": "我们要不要试着给"
+        },
+        {
+          "event": "token",
+          "data": "身体一点更直接的"
+        },
+        {
+          "event": "token",
+          "data": "安慰？比如，"
+        },
+        {
+          "event": "token",
+          "data": "去倒一杯温热"
+        },
+        {
+          "event": "token",
+          "data": "的水，用双手"
+        },
+        {
+          "event": "token",
+          "data": "捧着，感受一下温度"
+        },
+        {
+          "event": "token",
+          "data": "传到手心里的感觉"
+        },
+        {
+          "event": "token",
+          "data": "；或者找一条"
+        },
+        {
+          "event": "token",
+          "data": "柔软的毯子、"
+        },
+        {
+          "event": "token",
+          "data": "一件厚实的外套"
+        },
+        {
+          "event": "token",
+          "data": "，把自己轻轻裹"
+        },
+        {
+          "event": "token",
+          "data": "起来。\n\n不用"
+        },
+        {
+          "event": "token",
+          "data": "去想别的，就"
+        },
+        {
+          "event": "token",
+          "data": "只是把注意力放在"
+        },
+        {
+          "event": "token",
+          "data": "手心的温度，"
+        },
+        {
+          "event": "token",
+          "data": "或者织物柔软的触感"
+        },
+        {
+          "event": "token",
+          "data": "上，让自己在这个"
+        },
+        {
+          "event": "token",
+          "data": "舒服的感觉里多"
+        },
+        {
+          "event": "token",
+          "data": "待一会儿。让"
+        },
+        {
+          "event": "token",
+          "data": "身体慢慢知道，"
+        },
+        {
+          "event": "token",
+          "data": "此刻它是安全的、"
+        },
+        {
+          "event": "token",
+          "data": "被照顾着的。"
+        },
+        {
+          "event": "token",
+          "data": "去试试看，好吗"
+        },
+        {
+          "event": "token",
+          "data": "？"
+        },
+        {
+          "event": "dialogue_done",
+          "data": {
+            "trace_id": "b4f078adadf64163",
+            "owner": "therapy_dbt"
+          }
+        },
+        {
+          "event": "final",
+          "data": {
+            "message": "好像没那么猛了？还是只是分散了一点点？",
+            "risk_state": "MEDIUM_RISK",
+            "crisis": false
+          }
+        }
+      ],
+      "final": {
+        "message": "好像没那么猛了？还是只是分散了一点点？",
+        "risk_state": "MEDIUM_RISK",
+        "crisis": false
+      },
+      "state_after": {
+        "owner": "therapy_dbt",
+        "crisis": false,
+        "risk_level": "MEDIUM_RISK",
+        "therapy": {
+          "name": "DBT",
+          "start_seq": 3,
+          "rounds": 6,
+          "step_index": 1,
+          "branch": null,
+          "basic_flow_complete": false
+        },
+        "last_therapy_check_seq": 1,
+        "pending_user_tokens": 0
+      },
+      "orchestration_after": {
+        "updated_seq": 6,
+        "therapy": "DBT",
+        "current_step": "distress_tolerance",
+        "next_step": "distress_tolerance",
+        "step_judgment": {
+          "action": "stay",
+          "target_step": null,
+          "achieved": false,
+          "reason": "用户正在尝试正念接纳技巧，初步体验到情绪强度有所缓解，但仍在探索和巩固阶段。当前正在引导用户进行身体层面的安抚（如感受温度、触感），需要继续观察用户是否能稳定地运用这些技巧，确保 distress_tolerance 的核心技能（如接纳、不评判、身体安抚）被充分掌握后，再进入下一步。"
+        },
+        "assessment": null,
+        "skill_output": {
+          "technique": {
+            "name": "self_soothe",
+            "description": "引导用户通过激活五种感官（视觉、听觉、嗅觉、味觉、触觉）来安抚自己，提供即时的安慰和接地感，帮助神经系统在急性痛苦中平静下来，而不试图解决引发痛苦的根本问题。",
+            "steps": [
+              "引导用户选择一种或多种安全、舒适的感官体验（如双手捧着温水感受温度、用柔软的毯子包裹自己、闻熟悉的香气）。",
+              "鼓励用户将全部注意力集中在当前的感官体验上，体会身体被照顾和安抚的感觉，让身体慢慢确认此刻的安全性，暂时不去理会脑海中的声音。"
+            ]
+          },
+          "conversation_goal": "帮助用户通过感官安抚降低生理唤醒水平，安全度过当前的急性焦虑时刻，防止在冲动下做出使情况恶化的行为。",
+          "adaptation": {
+            "interaction_style": "supportive",
+            "tone_adjustment": "温和、稳定、充满安抚感。接纳用户对‘是否真的缓解’的疑虑，不评判、不急于证明，用平稳的语气引导他们关注身体感受。",
+            "pace_adjustment": "缓慢、平稳。给用户充足的时间去体验和感受，不催促他们立刻‘好起来’或得出‘我已经没事了’的结论。",
+            "culture_note": "使用 culturally familiar 的感官体验，如温热的茶水、熟悉的柔软织物（如厚外套或毯子）。在中国文化语境中，‘温暖’和‘被包裹’常与安全感、被照顾感紧密相连，有助于快速建立心理安全感。"
+          },
+          "contraindications": [
+            {
+              "condition": "用户处于极度解离或严重的精神病性发作状态，完全无法将注意力集中在感官上。",
+              "reason": "此时强求感官接地可能无效甚至增加挫败感，需要优先进行现实导向（grounding）或寻求紧急医疗干预。"
+            },
+            {
+              "condition": "用户有进食障碍或自我伤害倾向，且提供的感官安抚物可能触发危险行为（如过烫的水导致烫伤，或可能吞咽的小物件）。",
+              "reason": "必须确保提供的感官安抚选项是绝对物理安全的，避免在痛苦中引发继发性身体伤害。"
+            }
+          ],
+          "_skill_name": "dbt_distress_tolerance"
+        },
+        "products": {},
+        "continue_eval": null
+      },
+      "error": null,
+      "wall_seconds": 134.555,
+      "agent_text": "不管是真的缓解了，还是稍微分散了一点，能让你觉得“没那么猛了”，这就是身体在慢慢平复的信号。你刚才没有去和那些念头较劲，这份“允许它存在”的尝试，真的帮到了你。\n\n既然现在最猛的那阵浪头稍微过去了一点，我们要不要试着给身体一点更直接的安慰？比如，去倒一杯温热的水，用双手捧着，感受一下温度传到手心里的感觉；或者找一条柔软的毯子、一件厚实的外套，把自己轻轻裹起来。\n\n不用去想别的，就只是把注意力放在手心的温度，或者织物柔软的触感上，让自己在这个舒服的感觉里多待一会儿。让身体慢慢知道，此刻它是安全的、被照顾着的。去试试看，好吗？"
+    },
+    {
+      "turn": 8,
+      "trace_id": "caf08425a1cc46a4",
+      "user_text": "我下次发作可以再试。",
+      "agent_text_parts": [
+        "没关系的，",
+        "现在不想试就",
+        "完全可以先放着。",
+        "\n\n你刚才已经",
+        "靠自己让最猛",
+        "的那阵浪头",
+        "过去了，这就已经",
+        "很好了。我们就",
+        "把“捧温水",
+        "”或者“裹",
+        "毯子”当成",
+        "一个小工具，先",
+        "装进口袋里",
+        "，等下次觉得",
+        "需要的时候，随时",
+        "拿出来用就好。",
+        "\n\n现在，",
+        "我们就先这样安安",
+        "静静地待一会儿，",
+        "不用勉强自己去做",
+        "什么。我就在这里",
+        "陪着你。"
+      ],
+      "events": [
+        {
+          "event": "token",
+          "data": "没关系的，"
+        },
+        {
+          "event": "token",
+          "data": "现在不想试就"
+        },
+        {
+          "event": "token",
+          "data": "完全可以先放着。"
+        },
+        {
+          "event": "token",
+          "data": "\n\n你刚才已经"
+        },
+        {
+          "event": "token",
+          "data": "靠自己让最猛"
+        },
+        {
+          "event": "token",
+          "data": "的那阵浪头"
+        },
+        {
+          "event": "token",
+          "data": "过去了，这就已经"
+        },
+        {
+          "event": "token",
+          "data": "很好了。我们就"
+        },
+        {
+          "event": "token",
+          "data": "把“捧温水"
+        },
+        {
+          "event": "token",
+          "data": "”或者“裹"
+        },
+        {
+          "event": "token",
+          "data": "毯子”当成"
+        },
+        {
+          "event": "token",
+          "data": "一个小工具，先"
+        },
+        {
+          "event": "token",
+          "data": "装进口袋里"
+        },
+        {
+          "event": "token",
+          "data": "，等下次觉得"
+        },
+        {
+          "event": "token",
+          "data": "需要的时候，随时"
+        },
+        {
+          "event": "token",
+          "data": "拿出来用就好。"
+        },
+        {
+          "event": "token",
+          "data": "\n\n现在，"
+        },
+        {
+          "event": "token",
+          "data": "我们就先这样安安"
+        },
+        {
+          "event": "token",
+          "data": "静静地待一会儿，"
+        },
+        {
+          "event": "token",
+          "data": "不用勉强自己去做"
+        },
+        {
+          "event": "token",
+          "data": "什么。我就在这里"
+        },
+        {
+          "event": "token",
+          "data": "陪着你。"
+        },
+        {
+          "event": "dialogue_done",
+          "data": {
+            "trace_id": "caf08425a1cc46a4",
+            "owner": "therapy_dbt"
+          }
+        },
+        {
+          "event": "final",
+          "data": {
+            "message": "我下次发作可以再试。",
+            "risk_state": "SAFE",
+            "crisis": false
+          }
+        }
+      ],
+      "final": {
+        "message": "我下次发作可以再试。",
+        "risk_state": "SAFE",
+        "crisis": false
+      },
+      "state_after": {
+        "owner": "therapy_dbt",
+        "crisis": false,
+        "risk_level": "SAFE",
+        "therapy": {
+          "name": "DBT",
+          "start_seq": 3,
+          "rounds": 7,
+          "step_index": 0,
+          "branch": null,
+          "basic_flow_complete": false,
+          "visited": [
+            "distress_tolerance"
+          ]
+        },
+        "last_therapy_check_seq": 1,
+        "pending_user_tokens": 0
+      },
+      "orchestration_after": {
+        "updated_seq": 7,
+        "therapy": "DBT",
+        "current_step": "distress_tolerance",
+        "next_step": "mindfulness",
+        "step_judgment": {
+          "action": "advance",
+          "target_step": null,
+          "achieved": true,
+          "reason": "用户情绪失调指数降至0.1（well_regulated），痛苦水平降至0.1（low），冲动性为0（controlled）。用户表示'下次发作可以再试'，表明已接纳并内化了当前痛苦耐受技巧（感官安抚/grounding），且当前危机已平稳度过。distress_tolerance步骤目标已达成，可进入下一步emotion_regulation。"
+        },
+        "assessment": {
+          "emotion_dysregulation": {
+            "index": 0.1,
+            "state": "well_regulated",
+            "confidence": 0.9,
+            "evidence": [
+              "User states '我下次发作可以再试' (I can try it again next time I have an episode), indicating the current emotional surge has passed and they are thinking rationally about future coping strategies."
+            ]
+          },
+          "distress_level": {
+            "index": 0.1,
+            "state": "low",
+            "confidence": 0.9,
+            "evidence": [
+              "The phrase '下次发作' (next time I have an episode) implies the user is not currently in an acute episode and their subjective distress has significantly decreased from the earlier peak."
+            ]
+          },
+          "impulsivity": {
+            "index": 0.0,
+            "state": "controlled",
+            "confidence": 0.9,
+            "evidence": [
+              "User is calmly reflecting on the intervention and planning for the future, showing no immediate urges to act out, escape, or self-harm."
+            ]
+          },
+          "interpersonal_conflict": {
+            "index": 0.0,
+            "state": "low",
+            "confidence": 1.0,
+            "evidence": [
+              "The conversation is entirely focused on internal emotional regulation, somatic sensations, and coping strategies, with no mention of interpersonal issues or conflicts."
+            ]
+          },
+          "mindfulness_awareness": {
+            "index": 0.7,
+            "state": "high",
+            "confidence": 0.85,
+            "evidence": [
+              "User successfully practiced naming sensations and thoughts earlier ('心跳很快', '脑子里有声音'), noticed the reduction in intensity ('没那么猛了'), and is now integrating this awareness as a future tool ('下次...再试')."
+            ]
+          },
+          "dbt_intervention_priority": 0.11,
+          "overall_trend": "improving",
+          "primary_concern": "Consolidating mindfulness and distress tolerance skills for future episodes",
+          "should_intervene": false,
+          "recommended_processes": [
+            {
+              "process": "mindfulness",
+              "priority": 1,
+              "rationale": "User has shown initial success and willingness to use mindfulness (naming/defusion). Continuing to build this foundation is crucial for recognizing and riding out future episodes without getting swept away."
+            },
+            {
+              "process": "distress_tolerance",
+              "priority": 2,
+              "rationale": "Since the user anticipates 'next time I have an episode', building a broader toolkit for distress tolerance (like the grounding and sensory techniques suggested) is essential for surviving future crises."
+            },
+            {
+              "process": "emotion_regulation",
+              "priority": 3,
+              "rationale": "Once distress tolerance and mindfulness are solidified, emotion regulation can help the user understand, process, and manage the underlying triggers and vulnerabilities of these episodes."
+            }
+          ]
+        },
+        "skill_output": {
+          "technique": {
+            "name": "radical_acceptance",
+            "description": "帮助用户接纳'情绪或症状会有反复、未来可能还会发作'这一客观现实。停止与'为什么还会发作'或'必须彻底好起来'的内心对抗，承认'事情已经这样了'，从而在平静期真正休息，而不是为未来的可能性而焦虑。",
+            "steps": [
+              "承认现实：温和地确认'下次可能还会发作'是一个客观存在的事实（事情已经这样了），情绪和状态的起伏是现实的一部分，而不是个人的失败。",
+              "停止对抗：引导用户放下对'下次发作'的恐惧或抗拒，不再与这个可能性较劲。把注意力收回到当下安全的时刻，允许自己在此刻平静地休息。"
+            ]
+          },
+          "conversation_goal": "帮助用户在危机平息后，接纳情绪或症状可能反复的客观现实，减少对'下次发作'的潜在焦虑和对抗，巩固当下的平静与安全感。",
+          "adaptation": {
+            "interaction_style": "supportive",
+            "tone_adjustment": "温和、肯定、不施压。肯定用户当下的平静，以平常心探讨未来的可能性，避免说教。",
+            "pace_adjustment": "缓慢、从容。用户当前痛苦水平低，节奏应舒缓，给予充分的空间去体会和消化。",
+            "culture_note": "将接纳框架为'事情已经这样了，发作是身体或情绪的一种客观规律'，强调'不再对抗'这种可能性。使用'允许它发生'、'顺其自然'等符合中文语境的表达，避免使用生硬的'接纳'一词。"
+          },
+          "contraindications": [
+            {
+              "condition": "用户对'下次发作'表现出极度的急性恐惧，甚至引发恐慌或解离症状。",
+              "reason": "在急性恐慌状态下，认知层面的接纳难以起效，应优先使用 grounding 或 self_soothe 技术稳定生理和情绪状态。"
+            },
+            {
+              "condition": "用户处于强烈的病耻感中，认为'再次发作'意味着自己彻底没救了。",
+              "reason": "此时直接讨论接纳发作可能会加重自我批判，需先处理病耻感，建立更多的自我慈悲和安全感。"
+            }
+          ],
+          "_skill_name": "dbt_distress_tolerance"
+        },
+        "products": {},
+        "continue_eval": null
+      },
+      "error": null,
+      "wall_seconds": 140.671,
+      "agent_text": "没关系的，现在不想试就完全可以先放着。\n\n你刚才已经靠自己让最猛的那阵浪头过去了，这就已经很好了。我们就把“捧温水”或者“裹毯子”当成一个小工具，先装进口袋里，等下次觉得需要的时候，随时拿出来用就好。\n\n现在，我们就先这样安安静静地待一会儿，不用勉强自己去做什么。我就在这里陪着你。"
+    }
+  ]
+}

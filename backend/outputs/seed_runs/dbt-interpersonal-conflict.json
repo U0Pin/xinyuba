@@ -1,0 +1,911 @@
+{
+  "seed_id": "dbt-interpersonal-conflict",
+  "target_family": "DBT",
+  "scenario_label": "人际关系-好友爽约",
+  "scenario_description": "好友因自己临时爽约生气，自己不知如何开口道歉",
+  "user_id": "seed-dbt-interpersonal-confli",
+  "session_id": "c13c219ffdcc4da3",
+  "turns_total": 8,
+  "switched_to_therapy_at_turn": null,
+  "actual_therapy": null,
+  "therapy_rounds": 0,
+  "orch_step_changes": 0,
+  "is_complete": false,
+  "final_risk_level": "SAFE",
+  "final_crisis": false,
+  "turns": [
+    {
+      "turn": 1,
+      "trace_id": "57c9410a522f41c4",
+      "user_text": "我跟一个好朋友因为我临时爽约闹僵了。",
+      "agent_text_parts": [
+        "和",
+        "好朋友因为临时爽",
+        "约闹僵了",
+        "，心里肯定挺",
+        "不好受的。本来",
+        "可能就有自己的无奈",
+        "，现在这样僵",
+        "着，是不是觉得",
+        "挺有压力的？",
+        "愿意跟我聊聊当时",
+        "是怎么回事，或者现在",
+        "心里的感觉吗？"
+      ],
+      "events": [
+        {
+          "event": "token",
+          "data": "和"
+        },
+        {
+          "event": "token",
+          "data": "好朋友因为临时爽"
+        },
+        {
+          "event": "token",
+          "data": "约闹僵了"
+        },
+        {
+          "event": "token",
+          "data": "，心里肯定挺"
+        },
+        {
+          "event": "token",
+          "data": "不好受的。本来"
+        },
+        {
+          "event": "token",
+          "data": "可能就有自己的无奈"
+        },
+        {
+          "event": "token",
+          "data": "，现在这样僵"
+        },
+        {
+          "event": "token",
+          "data": "着，是不是觉得"
+        },
+        {
+          "event": "token",
+          "data": "挺有压力的？"
+        },
+        {
+          "event": "token",
+          "data": "愿意跟我聊聊当时"
+        },
+        {
+          "event": "token",
+          "data": "是怎么回事，或者现在"
+        },
+        {
+          "event": "token",
+          "data": "心里的感觉吗？"
+        },
+        {
+          "event": "dialogue_done",
+          "data": {
+            "trace_id": "57c9410a522f41c4",
+            "owner": "daily"
+          }
+        },
+        {
+          "event": "final",
+          "data": {
+            "message": "我跟一个好朋友因为我临时爽约闹僵了。",
+            "risk_state": "LOW_RISK",
+            "crisis": false
+          }
+        }
+      ],
+      "final": {
+        "message": "我跟一个好朋友因为我临时爽约闹僵了。",
+        "risk_state": "LOW_RISK",
+        "crisis": false
+      },
+      "state_after": {
+        "owner": "daily",
+        "crisis": false,
+        "risk_level": "LOW_RISK",
+        "therapy": null,
+        "last_therapy_check_seq": 1,
+        "pending_user_tokens": 0
+      },
+      "orchestration_after": {},
+      "error": null,
+      "wall_seconds": 37.497,
+      "agent_text": "和好朋友因为临时爽约闹僵了，心里肯定挺不好受的。本来可能就有自己的无奈，现在这样僵着，是不是觉得挺有压力的？愿意跟我聊聊当时是怎么回事，或者现在心里的感觉吗？"
+    },
+    {
+      "turn": 2,
+      "trace_id": "7bac49df31984134",
+      "user_text": "我想道歉，但不知道该说什么。",
+      "agent_text_parts": [
+        "想道歉却",
+        "不知道该说什么，确实",
+        "挺让人为难的",
+        "。毕竟刚闹",
+        "僵，可能会担心",
+        "一开口反而让",
+        "情况更糟，",
+        "或者怕没表达",
+        "清楚又被误解",
+        "。其实你有想",
+        "道歉的心，本身",
+        "就已经很用心了",
+        "。不用急着马上",
+        "想出完美的话，",
+        "咱们先慢慢理",
+        "一理，你现在",
+        "最顾虑的是什么呢",
+        "？"
+      ],
+      "events": [
+        {
+          "event": "token",
+          "data": "想道歉却"
+        },
+        {
+          "event": "token",
+          "data": "不知道该说什么，确实"
+        },
+        {
+          "event": "token",
+          "data": "挺让人为难的"
+        },
+        {
+          "event": "token",
+          "data": "。毕竟刚闹"
+        },
+        {
+          "event": "token",
+          "data": "僵，可能会担心"
+        },
+        {
+          "event": "token",
+          "data": "一开口反而让"
+        },
+        {
+          "event": "token",
+          "data": "情况更糟，"
+        },
+        {
+          "event": "token",
+          "data": "或者怕没表达"
+        },
+        {
+          "event": "token",
+          "data": "清楚又被误解"
+        },
+        {
+          "event": "token",
+          "data": "。其实你有想"
+        },
+        {
+          "event": "token",
+          "data": "道歉的心，本身"
+        },
+        {
+          "event": "token",
+          "data": "就已经很用心了"
+        },
+        {
+          "event": "token",
+          "data": "。不用急着马上"
+        },
+        {
+          "event": "token",
+          "data": "想出完美的话，"
+        },
+        {
+          "event": "token",
+          "data": "咱们先慢慢理"
+        },
+        {
+          "event": "token",
+          "data": "一理，你现在"
+        },
+        {
+          "event": "token",
+          "data": "最顾虑的是什么呢"
+        },
+        {
+          "event": "token",
+          "data": "？"
+        },
+        {
+          "event": "dialogue_done",
+          "data": {
+            "trace_id": "7bac49df31984134",
+            "owner": "daily"
+          }
+        },
+        {
+          "event": "final",
+          "data": {
+            "message": "我想道歉，但不知道该说什么。",
+            "risk_state": "SAFE",
+            "crisis": false
+          }
+        }
+      ],
+      "final": {
+        "message": "我想道歉，但不知道该说什么。",
+        "risk_state": "SAFE",
+        "crisis": false
+      },
+      "state_after": {
+        "owner": "daily",
+        "crisis": false,
+        "risk_level": "SAFE",
+        "therapy": null,
+        "last_therapy_check_seq": 3,
+        "pending_user_tokens": 0
+      },
+      "orchestration_after": {},
+      "error": null,
+      "wall_seconds": 71.809,
+      "agent_text": "想道歉却不知道该说什么，确实挺让人为难的。毕竟刚闹僵，可能会担心一开口反而让情况更糟，或者怕没表达清楚又被误解。其实你有想道歉的心，本身就已经很用心了。不用急着马上想出完美的话，咱们先慢慢理一理，你现在最顾虑的是什么呢？"
+    },
+    {
+      "turn": 3,
+      "trace_id": "677c4bf70b5c40dc",
+      "user_text": "我一说她就更生气，干脆就沉默了。",
+      "agent_text_parts": [
+        "试着",
+        "开口，结果她",
+        "反而更生气了，",
+        "确实挺让人挫",
+        "败的。最后",
+        "干脆沉默，其实",
+        "也是怕再说下去",
+        "情况变得更糟吧",
+        "。现在这样僵",
+        "着，心里肯定",
+        "挺不是滋",
+        "味的。"
+      ],
+      "events": [
+        {
+          "event": "token",
+          "data": "试着"
+        },
+        {
+          "event": "token",
+          "data": "开口，结果她"
+        },
+        {
+          "event": "token",
+          "data": "反而更生气了，"
+        },
+        {
+          "event": "token",
+          "data": "确实挺让人挫"
+        },
+        {
+          "event": "token",
+          "data": "败的。最后"
+        },
+        {
+          "event": "token",
+          "data": "干脆沉默，其实"
+        },
+        {
+          "event": "token",
+          "data": "也是怕再说下去"
+        },
+        {
+          "event": "token",
+          "data": "情况变得更糟吧"
+        },
+        {
+          "event": "token",
+          "data": "。现在这样僵"
+        },
+        {
+          "event": "token",
+          "data": "着，心里肯定"
+        },
+        {
+          "event": "token",
+          "data": "挺不是滋"
+        },
+        {
+          "event": "token",
+          "data": "味的。"
+        },
+        {
+          "event": "dialogue_done",
+          "data": {
+            "trace_id": "677c4bf70b5c40dc",
+            "owner": "daily"
+          }
+        },
+        {
+          "event": "final",
+          "data": {
+            "message": "我一说她就更生气，干脆就沉默了。",
+            "risk_state": "LOW_RISK",
+            "crisis": false
+          }
+        }
+      ],
+      "final": {
+        "message": "我一说她就更生气，干脆就沉默了。",
+        "risk_state": "LOW_RISK",
+        "crisis": false
+      },
+      "state_after": {
+        "owner": "daily",
+        "crisis": false,
+        "risk_level": "LOW_RISK",
+        "therapy": null,
+        "last_therapy_check_seq": 5,
+        "pending_user_tokens": 0
+      },
+      "orchestration_after": {},
+      "error": null,
+      "wall_seconds": 74.328,
+      "agent_text": "试着开口，结果她反而更生气了，确实挺让人挫败的。最后干脆沉默，其实也是怕再说下去情况变得更糟吧。现在这样僵着，心里肯定挺不是滋味的。"
+    },
+    {
+      "turn": 4,
+      "trace_id": "66e0404fd66a49f4",
+      "user_text": "其实那天我是因为临时有事，但她觉得我是故意的。",
+      "agent_text_parts": [
+        "明明",
+        "只是临时有事，",
+        "却被觉得是故意的",
+        "，这种被误解",
+        "的感觉确实挺让人",
+        "委屈的。也",
+        "难怪你之前一",
+        "解释她反而更",
+        "生气，可能当时",
+        "她正处在情绪",
+        "里，没能理解",
+        "你的真实情况。",
+        "现在僵",
+        "在这里，你心里",
+        "肯定觉得挺憋",
+        "屈、挺无奈的",
+        "。"
+      ],
+      "events": [
+        {
+          "event": "token",
+          "data": "明明"
+        },
+        {
+          "event": "token",
+          "data": "只是临时有事，"
+        },
+        {
+          "event": "token",
+          "data": "却被觉得是故意的"
+        },
+        {
+          "event": "token",
+          "data": "，这种被误解"
+        },
+        {
+          "event": "token",
+          "data": "的感觉确实挺让人"
+        },
+        {
+          "event": "token",
+          "data": "委屈的。也"
+        },
+        {
+          "event": "token",
+          "data": "难怪你之前一"
+        },
+        {
+          "event": "token",
+          "data": "解释她反而更"
+        },
+        {
+          "event": "token",
+          "data": "生气，可能当时"
+        },
+        {
+          "event": "token",
+          "data": "她正处在情绪"
+        },
+        {
+          "event": "token",
+          "data": "里，没能理解"
+        },
+        {
+          "event": "token",
+          "data": "你的真实情况。"
+        },
+        {
+          "event": "token",
+          "data": "现在僵"
+        },
+        {
+          "event": "token",
+          "data": "在这里，你心里"
+        },
+        {
+          "event": "token",
+          "data": "肯定觉得挺憋"
+        },
+        {
+          "event": "token",
+          "data": "屈、挺无奈的"
+        },
+        {
+          "event": "token",
+          "data": "。"
+        },
+        {
+          "event": "dialogue_done",
+          "data": {
+            "trace_id": "66e0404fd66a49f4",
+            "owner": "daily"
+          }
+        },
+        {
+          "event": "final",
+          "data": {
+            "message": "其实那天我是因为临时有事，但她觉得我是故意的。",
+            "risk_state": "LOW_RISK",
+            "crisis": false
+          }
+        }
+      ],
+      "final": {
+        "message": "其实那天我是因为临时有事，但她觉得我是故意的。",
+        "risk_state": "LOW_RISK",
+        "crisis": false
+      },
+      "state_after": {
+        "owner": "daily",
+        "crisis": false,
+        "risk_level": "LOW_RISK",
+        "therapy": null,
+        "last_therapy_check_seq": 7,
+        "pending_user_tokens": 0
+      },
+      "orchestration_after": {},
+      "error": null,
+      "wall_seconds": 32.999,
+      "agent_text": "明明只是临时有事，却被觉得是故意的，这种被误解的感觉确实挺让人委屈的。也难怪你之前一解释她反而更生气，可能当时她正处在情绪里，没能理解你的真实情况。现在僵在这里，你心里肯定觉得挺憋屈、挺无奈的。"
+    },
+    {
+      "turn": 5,
+      "trace_id": "e54628b48f6e4e48",
+      "user_text": "我不是故意的，但我说不出来。",
+      "agent_text_parts": [
+        "心里",
+        "明明清楚自己不是",
+        "故意的，但话",
+        "到嘴边就是卡",
+        "住了，说不出来",
+        "，这种感觉一定很",
+        "让人无力吧。",
+        "越怕情况变",
+        "糟，越",
+        "不知道该怎么开口。",
+        "没关系的，现在",
+        "说不出来也没事",
+        "，我就在这里陪",
+        "着你。"
+      ],
+      "events": [
+        {
+          "event": "token",
+          "data": "心里"
+        },
+        {
+          "event": "token",
+          "data": "明明清楚自己不是"
+        },
+        {
+          "event": "token",
+          "data": "故意的，但话"
+        },
+        {
+          "event": "token",
+          "data": "到嘴边就是卡"
+        },
+        {
+          "event": "token",
+          "data": "住了，说不出来"
+        },
+        {
+          "event": "token",
+          "data": "，这种感觉一定很"
+        },
+        {
+          "event": "token",
+          "data": "让人无力吧。"
+        },
+        {
+          "event": "token",
+          "data": "越怕情况变"
+        },
+        {
+          "event": "token",
+          "data": "糟，越"
+        },
+        {
+          "event": "token",
+          "data": "不知道该怎么开口。"
+        },
+        {
+          "event": "token",
+          "data": "没关系的，现在"
+        },
+        {
+          "event": "token",
+          "data": "说不出来也没事"
+        },
+        {
+          "event": "token",
+          "data": "，我就在这里陪"
+        },
+        {
+          "event": "token",
+          "data": "着你。"
+        },
+        {
+          "event": "dialogue_done",
+          "data": {
+            "trace_id": "e54628b48f6e4e48",
+            "owner": "daily"
+          }
+        },
+        {
+          "event": "final",
+          "data": {
+            "message": "我不是故意的，但我说不出来。",
+            "risk_state": "LOW_RISK",
+            "crisis": false
+          }
+        }
+      ],
+      "final": {
+        "message": "我不是故意的，但我说不出来。",
+        "risk_state": "LOW_RISK",
+        "crisis": false
+      },
+      "state_after": {
+        "owner": "daily",
+        "crisis": false,
+        "risk_level": "LOW_RISK",
+        "therapy": null,
+        "last_therapy_check_seq": 9,
+        "pending_user_tokens": 0
+      },
+      "orchestration_after": {},
+      "error": null,
+      "wall_seconds": 43.758,
+      "agent_text": "心里明明清楚自己不是故意的，但话到嘴边就是卡住了，说不出来，这种感觉一定很让人无力吧。越怕情况变糟，越不知道该怎么开口。没关系的，现在说不出来也没事，我就在这里陪着你。"
+    },
+    {
+      "turn": 6,
+      "trace_id": "7409af6ad25341c0",
+      "user_text": "你说的「描述事实 + 表达感受 + 说明意图 + 提出请求」是哪几个？",
+      "agent_text_parts": [
+        "哎",
+        "？我好像没",
+        "说过这些词呢",
+        "。你是不是太想把",
+        "事情解释清楚，",
+        "一直在琢磨怎么才能好好",
+        "表达，所以觉得",
+        "我可能会教你这些",
+        "套路呀？\n\n",
+        "其实不用管那些",
+        "复杂的条条框框",
+        "。你现在心里乱",
+        "，说不出来就不",
+        "说。咱们先",
+        "不急着找词",
+        "儿，就按",
+        "你现在的节奏来",
+        "，我陪着你",
+        "。"
+      ],
+      "events": [
+        {
+          "event": "token",
+          "data": "哎"
+        },
+        {
+          "event": "token",
+          "data": "？我好像没"
+        },
+        {
+          "event": "token",
+          "data": "说过这些词呢"
+        },
+        {
+          "event": "token",
+          "data": "。你是不是太想把"
+        },
+        {
+          "event": "token",
+          "data": "事情解释清楚，"
+        },
+        {
+          "event": "token",
+          "data": "一直在琢磨怎么才能好好"
+        },
+        {
+          "event": "token",
+          "data": "表达，所以觉得"
+        },
+        {
+          "event": "token",
+          "data": "我可能会教你这些"
+        },
+        {
+          "event": "token",
+          "data": "套路呀？\n\n"
+        },
+        {
+          "event": "token",
+          "data": "其实不用管那些"
+        },
+        {
+          "event": "token",
+          "data": "复杂的条条框框"
+        },
+        {
+          "event": "token",
+          "data": "。你现在心里乱"
+        },
+        {
+          "event": "token",
+          "data": "，说不出来就不"
+        },
+        {
+          "event": "token",
+          "data": "说。咱们先"
+        },
+        {
+          "event": "token",
+          "data": "不急着找词"
+        },
+        {
+          "event": "token",
+          "data": "儿，就按"
+        },
+        {
+          "event": "token",
+          "data": "你现在的节奏来"
+        },
+        {
+          "event": "token",
+          "data": "，我陪着你"
+        },
+        {
+          "event": "token",
+          "data": "。"
+        },
+        {
+          "event": "dialogue_done",
+          "data": {
+            "trace_id": "7409af6ad25341c0",
+            "owner": "daily"
+          }
+        },
+        {
+          "event": "final",
+          "data": {
+            "message": "你说的「描述事实 + 表达感受 + 说明意图 + 提出请求」是哪几个？",
+            "risk_state": "SAFE",
+            "crisis": false
+          }
+        }
+      ],
+      "final": {
+        "message": "你说的「描述事实 + 表达感受 + 说明意图 + 提出请求」是哪几个？",
+        "risk_state": "SAFE",
+        "crisis": false
+      },
+      "state_after": {
+        "owner": "daily",
+        "crisis": false,
+        "risk_level": "SAFE",
+        "therapy": null,
+        "last_therapy_check_seq": 11,
+        "pending_user_tokens": 0
+      },
+      "orchestration_after": {},
+      "error": null,
+      "wall_seconds": 46.207,
+      "agent_text": "哎？我好像没说过这些词呢。你是不是太想把事情解释清楚，一直在琢磨怎么才能好好表达，所以觉得我可能会教你这些套路呀？\n\n其实不用管那些复杂的条条框框。你现在心里乱，说不出来就不说。咱们先不急着找词儿，就按你现在的节奏来，我陪着你。"
+    },
+    {
+      "turn": 7,
+      "trace_id": "e052f2e0516f491d",
+      "user_text": "我心里过一遍……好像我可以试试。",
+      "agent_text_parts": [
+        "嗯，愿意在心里",
+        "过一遍，试一试",
+        "，感觉你稍微",
+        "找到了一点自己的节奏",
+        "呢。你慢慢",
+        "来，不用有",
+        "压力。要是过",
+        "的时候觉得哪里卡",
+        "住了，或者还是",
+        "觉得有负担，",
+        "随时跟我说，我就",
+        "在这里陪着你。"
+      ],
+      "events": [
+        {
+          "event": "token",
+          "data": "嗯，愿意在心里"
+        },
+        {
+          "event": "token",
+          "data": "过一遍，试一试"
+        },
+        {
+          "event": "token",
+          "data": "，感觉你稍微"
+        },
+        {
+          "event": "token",
+          "data": "找到了一点自己的节奏"
+        },
+        {
+          "event": "token",
+          "data": "呢。你慢慢"
+        },
+        {
+          "event": "token",
+          "data": "来，不用有"
+        },
+        {
+          "event": "token",
+          "data": "压力。要是过"
+        },
+        {
+          "event": "token",
+          "data": "的时候觉得哪里卡"
+        },
+        {
+          "event": "token",
+          "data": "住了，或者还是"
+        },
+        {
+          "event": "token",
+          "data": "觉得有负担，"
+        },
+        {
+          "event": "token",
+          "data": "随时跟我说，我就"
+        },
+        {
+          "event": "token",
+          "data": "在这里陪着你。"
+        },
+        {
+          "event": "dialogue_done",
+          "data": {
+            "trace_id": "e052f2e0516f491d",
+            "owner": "daily"
+          }
+        },
+        {
+          "event": "final",
+          "data": {
+            "message": "我心里过一遍……好像我可以试试。",
+            "risk_state": "SAFE",
+            "crisis": false
+          }
+        }
+      ],
+      "final": {
+        "message": "我心里过一遍……好像我可以试试。",
+        "risk_state": "SAFE",
+        "crisis": false
+      },
+      "state_after": {
+        "owner": "daily",
+        "crisis": false,
+        "risk_level": "SAFE",
+        "therapy": null,
+        "last_therapy_check_seq": 13,
+        "pending_user_tokens": 0
+      },
+      "orchestration_after": {},
+      "error": null,
+      "wall_seconds": 75.263,
+      "agent_text": "嗯，愿意在心里过一遍，试一试，感觉你稍微找到了一点自己的节奏呢。你慢慢来，不用有压力。要是过的时候觉得哪里卡住了，或者还是觉得有负担，随时跟我说，我就在这里陪着你。"
+    },
+    {
+      "turn": 8,
+      "trace_id": "e8643afcb08c499f",
+      "user_text": "好，我先发个消息试试看。",
+      "agent_text_parts": [
+        "好，去",
+        "试试看吧。按",
+        "你觉得舒服的节奏来",
+        "就好。发完",
+        "要是有什么感觉，",
+        "或者只是想找人说",
+        "说话，随时回来",
+        "，我一直在这儿陪你",
+        "。"
+      ],
+      "events": [
+        {
+          "event": "token",
+          "data": "好，去"
+        },
+        {
+          "event": "token",
+          "data": "试试看吧。按"
+        },
+        {
+          "event": "token",
+          "data": "你觉得舒服的节奏来"
+        },
+        {
+          "event": "token",
+          "data": "就好。发完"
+        },
+        {
+          "event": "token",
+          "data": "要是有什么感觉，"
+        },
+        {
+          "event": "token",
+          "data": "或者只是想找人说"
+        },
+        {
+          "event": "token",
+          "data": "说话，随时回来"
+        },
+        {
+          "event": "token",
+          "data": "，我一直在这儿陪你"
+        },
+        {
+          "event": "token",
+          "data": "。"
+        },
+        {
+          "event": "dialogue_done",
+          "data": {
+            "trace_id": "e8643afcb08c499f",
+            "owner": "daily"
+          }
+        },
+        {
+          "event": "final",
+          "data": {
+            "message": "好，我先发个消息试试看。",
+            "risk_state": "SAFE",
+            "crisis": false
+          }
+        }
+      ],
+      "final": {
+        "message": "好，我先发个消息试试看。",
+        "risk_state": "SAFE",
+        "crisis": false
+      },
+      "state_after": {
+        "owner": "daily",
+        "crisis": false,
+        "risk_level": "SAFE",
+        "therapy": null,
+        "last_therapy_check_seq": 15,
+        "pending_user_tokens": 0
+      },
+      "orchestration_after": {},
+      "error": null,
+      "wall_seconds": 38.102,
+      "agent_text": "好，去试试看吧。按你觉得舒服的节奏来就好。发完要是有什么感觉，或者只是想找人说说话，随时回来，我一直在这儿陪你。"
+    }
+  ]
+}

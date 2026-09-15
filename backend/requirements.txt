@@ -1,0 +1,8 @@
+# 运行时依赖（容器安装这一份；开发/测试见 requirements-dev.txt）
+# 注：langchain/langchain-openai/aiohttp/requests 为旧架构遗留，全仓无引用，已移除；
+#     openai 此前靠 langchain-openai 传递安装，现显式声明。
+openai>=1.0.0
+python-dotenv>=1.0.0
+pydantic>=2.0.0
+fastapi>=0.115.0
+uvicorn>=0.32.0

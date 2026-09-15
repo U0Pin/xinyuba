@@ -1,0 +1,1410 @@
+{
+  "seed_id": "act-self-compassion-mistake",
+  "target_family": "ACT",
+  "scenario_label": "自我同情-汇报讲错数据",
+  "scenario_description": "工作汇报中讲错数据被指出，反复自责",
+  "user_id": "seed-act-self-compassion-mist",
+  "session_id": "4dc1b5de16e04fbf",
+  "turns_total": 8,
+  "switched_to_therapy_at_turn": 2,
+  "actual_therapy": "CBT",
+  "therapy_rounds": 7,
+  "orch_step_changes": 2,
+  "is_complete": true,
+  "final_risk_level": "SAFE",
+  "final_crisis": false,
+  "turns": [
+    {
+      "turn": 1,
+      "trace_id": "fc4b1f4ec979414e",
+      "user_text": "上周汇报的时候我讲错了一个数据，当场被 leader 指出来。",
+      "agent_text_parts": [
+        "哎呀，汇报",
+        "的时候讲错了一个",
+        "数据，还当场",
+        "被 leader 指",
+        "出来，那种感觉",
+        "真的太尴尬、太",
+        "让人下不来台",
+        "了。当时一定",
+        "觉得特别难受吧",
+        "？"
+      ],
+      "events": [
+        {
+          "event": "token",
+          "data": "哎呀，汇报"
+        },
+        {
+          "event": "token",
+          "data": "的时候讲错了一个"
+        },
+        {
+          "event": "token",
+          "data": "数据，还当场"
+        },
+        {
+          "event": "token",
+          "data": "被 leader 指"
+        },
+        {
+          "event": "token",
+          "data": "出来，那种感觉"
+        },
+        {
+          "event": "token",
+          "data": "真的太尴尬、太"
+        },
+        {
+          "event": "token",
+          "data": "让人下不来台"
+        },
+        {
+          "event": "token",
+          "data": "了。当时一定"
+        },
+        {
+          "event": "token",
+          "data": "觉得特别难受吧"
+        },
+        {
+          "event": "token",
+          "data": "？"
+        },
+        {
+          "event": "dialogue_done",
+          "data": {
+            "trace_id": "fc4b1f4ec979414e",
+            "owner": "daily"
+          }
+        },
+        {
+          "event": "final",
+          "data": {
+            "message": "上周汇报的时候我讲错了一个数据，当场被 leader 指出来。",
+            "risk_state": "SAFE",
+            "crisis": false
+          }
+        }
+      ],
+      "final": {
+        "message": "上周汇报的时候我讲错了一个数据，当场被 leader 指出来。",
+        "risk_state": "SAFE",
+        "crisis": false
+      },
+      "state_after": {
+        "owner": "daily",
+        "crisis": false,
+        "risk_level": "SAFE",
+        "therapy": null,
+        "last_therapy_check_seq": 1,
+        "pending_user_tokens": 0
+      },
+      "orchestration_after": {},
+      "error": null,
+      "wall_seconds": 40.439,
+      "agent_text": "哎呀，汇报的时候讲错了一个数据，还当场被 leader 指出来，那种感觉真的太尴尬、太让人下不来台了。当时一定觉得特别难受吧？"
+    },
+    {
+      "turn": 2,
+      "trace_id": "823df36e6ae64114",
+      "user_text": "从那以后我一直在想这件事，觉得自己特别不专业。",
+      "agent_text_parts": [
+        "被当场指",
+        "出来之后，脑子里",
+        "确实很容易反复回放",
+        "那个画面，甚至",
+        "开始怀疑自己是不是",
+        "不够专业。这种",
+        "一直在想、不断",
+        "自我怀疑的感觉太",
+        "折磨人了。其实",
+        "偶尔一次小失误",
+        "，真的不能说明",
+        "你就不专业了",
+        "，别太苛",
+        "责自己了好吗",
+        "？"
+      ],
+      "events": [
+        {
+          "event": "token",
+          "data": "被当场指"
+        },
+        {
+          "event": "token",
+          "data": "出来之后，脑子里"
+        },
+        {
+          "event": "token",
+          "data": "确实很容易反复回放"
+        },
+        {
+          "event": "token",
+          "data": "那个画面，甚至"
+        },
+        {
+          "event": "token",
+          "data": "开始怀疑自己是不是"
+        },
+        {
+          "event": "token",
+          "data": "不够专业。这种"
+        },
+        {
+          "event": "token",
+          "data": "一直在想、不断"
+        },
+        {
+          "event": "token",
+          "data": "自我怀疑的感觉太"
+        },
+        {
+          "event": "token",
+          "data": "折磨人了。其实"
+        },
+        {
+          "event": "token",
+          "data": "偶尔一次小失误"
+        },
+        {
+          "event": "token",
+          "data": "，真的不能说明"
+        },
+        {
+          "event": "token",
+          "data": "你就不专业了"
+        },
+        {
+          "event": "token",
+          "data": "，别太苛"
+        },
+        {
+          "event": "token",
+          "data": "责自己了好吗"
+        },
+        {
+          "event": "token",
+          "data": "？"
+        },
+        {
+          "event": "dialogue_done",
+          "data": {
+            "trace_id": "823df36e6ae64114",
+            "owner": "daily"
+          }
+        },
+        {
+          "event": "final",
+          "data": {
+            "message": "从那以后我一直在想这件事，觉得自己特别不专业。",
+            "risk_state": "LOW_RISK",
+            "crisis": false
+          }
+        }
+      ],
+      "final": {
+        "message": "从那以后我一直在想这件事，觉得自己特别不专业。",
+        "risk_state": "LOW_RISK",
+        "crisis": false
+      },
+      "state_after": {
+        "owner": "therapy_cbt",
+        "crisis": false,
+        "risk_level": "LOW_RISK",
+        "therapy": {
+          "name": "CBT",
+          "start_seq": 5,
+          "rounds": 0,
+          "step_index": -1,
+          "branch": null,
+          "basic_flow_complete": false
+        },
+        "last_therapy_check_seq": 3,
+        "pending_user_tokens": 0
+      },
+      "orchestration_after": {},
+      "error": null,
+      "wall_seconds": 44.287,
+      "agent_text": "被当场指出来之后，脑子里确实很容易反复回放那个画面，甚至开始怀疑自己是不是不够专业。这种一直在想、不断自我怀疑的感觉太折磨人了。其实偶尔一次小失误，真的不能说明你就不专业了，别太苛责自己了好吗？"
+    },
+    {
+      "turn": 3,
+      "trace_id": "2969e7d5eafc4f21",
+      "user_text": "我跟自己说大家都会犯错，但那个自责就是停不下来。",
+      "agent_text_parts": [
+        "听得出来，",
+        "虽然理智上你知道",
+        "“大家都会犯错",
+        "”，但心里的那",
+        "份自责感还是很",
+        "沉重，一时半",
+        "会儿停不下来，",
+        "这种感觉挺让人疲惫",
+        "的。我们聊",
+        "了这几轮，",
+        "你觉得现在面对这种",
+        "“停不下来”",
+        "的自责时，",
+        "和刚开始相比，",
+        "心里有没有什么不一样的",
+        "感受，或者一点点",
+        "微小的变化呢？"
+      ],
+      "events": [
+        {
+          "event": "token",
+          "data": "听得出来，"
+        },
+        {
+          "event": "token",
+          "data": "虽然理智上你知道"
+        },
+        {
+          "event": "token",
+          "data": "“大家都会犯错"
+        },
+        {
+          "event": "token",
+          "data": "”，但心里的那"
+        },
+        {
+          "event": "token",
+          "data": "份自责感还是很"
+        },
+        {
+          "event": "token",
+          "data": "沉重，一时半"
+        },
+        {
+          "event": "token",
+          "data": "会儿停不下来，"
+        },
+        {
+          "event": "token",
+          "data": "这种感觉挺让人疲惫"
+        },
+        {
+          "event": "token",
+          "data": "的。我们聊"
+        },
+        {
+          "event": "token",
+          "data": "了这几轮，"
+        },
+        {
+          "event": "token",
+          "data": "你觉得现在面对这种"
+        },
+        {
+          "event": "token",
+          "data": "“停不下来”"
+        },
+        {
+          "event": "token",
+          "data": "的自责时，"
+        },
+        {
+          "event": "token",
+          "data": "和刚开始相比，"
+        },
+        {
+          "event": "token",
+          "data": "心里有没有什么不一样的"
+        },
+        {
+          "event": "token",
+          "data": "感受，或者一点点"
+        },
+        {
+          "event": "token",
+          "data": "微小的变化呢？"
+        },
+        {
+          "event": "dialogue_done",
+          "data": {
+            "trace_id": "2969e7d5eafc4f21",
+            "owner": "therapy_cbt"
+          }
+        },
+        {
+          "event": "final",
+          "data": {
+            "message": "我跟自己说大家都会犯错，但那个自责就是停不下来。",
+            "risk_state": "SAFE",
+            "crisis": false
+          }
+        }
+      ],
+      "final": {
+        "message": "我跟自己说大家都会犯错，但那个自责就是停不下来。",
+        "risk_state": "SAFE",
+        "crisis": false
+      },
+      "state_after": {
+        "owner": "therapy_cbt",
+        "crisis": false,
+        "risk_level": "SAFE",
+        "therapy": {
+          "name": "CBT",
+          "start_seq": 5,
+          "rounds": 1,
+          "step_index": 0,
+          "branch": null,
+          "basic_flow_complete": false
+        },
+        "last_therapy_check_seq": 3,
+        "pending_user_tokens": 0
+      },
+      "orchestration_after": {
+        "updated_seq": 1,
+        "therapy": "CBT",
+        "current_step": "identify_thought",
+        "next_step": "identify_thought",
+        "step_judgment": {
+          "action": "stay",
+          "target_step": null,
+          "achieved": false,
+          "reason": "用户表达了自责情绪难以停止，但尚未明确识别出具体的自动思维内容，需要进一步引导以完成identify_thought步骤。"
+        },
+        "assessment": null,
+        "skill_output": null,
+        "products": {
+          "no_automatic_thought_detected": false
+        },
+        "continue_eval": null
+      },
+      "error": null,
+      "wall_seconds": 67.947,
+      "agent_text": "听得出来，虽然理智上你知道“大家都会犯错”，但心里的那份自责感还是很沉重，一时半会儿停不下来，这种感觉挺让人疲惫的。我们聊了这几轮，你觉得现在面对这种“停不下来”的自责时，和刚开始相比，心里有没有什么不一样的感受，或者一点点微小的变化呢？"
+    },
+    {
+      "turn": 4,
+      "trace_id": "1cfebac5281b4e05",
+      "user_text": "今天还梦见自己又讲错了，醒来心情很差。",
+      "agent_text_parts": [
+        "做",
+        "这样的梦，醒来",
+        "时那种“讲",
+        "错了”的糟糕",
+        "心情一定很真实",
+        "、很沉重吧",
+        "。看来那个担忧",
+        "真的很顽固，连",
+        "梦里都在反复提醒",
+        "着自己。\n\n带着",
+        "这么强烈的心情，",
+        "你觉得咱们这几轮",
+        "聊下来，有",
+        "让这份沉重感",
+        "稍微松动一点点吗",
+        "？还是说，",
+        "醒来面对这些，",
+        "依然觉得挺无",
+        "力的？"
+      ],
+      "events": [
+        {
+          "event": "token",
+          "data": "做"
+        },
+        {
+          "event": "token",
+          "data": "这样的梦，醒来"
+        },
+        {
+          "event": "token",
+          "data": "时那种“讲"
+        },
+        {
+          "event": "token",
+          "data": "错了”的糟糕"
+        },
+        {
+          "event": "token",
+          "data": "心情一定很真实"
+        },
+        {
+          "event": "token",
+          "data": "、很沉重吧"
+        },
+        {
+          "event": "token",
+          "data": "。看来那个担忧"
+        },
+        {
+          "event": "token",
+          "data": "真的很顽固，连"
+        },
+        {
+          "event": "token",
+          "data": "梦里都在反复提醒"
+        },
+        {
+          "event": "token",
+          "data": "着自己。\n\n带着"
+        },
+        {
+          "event": "token",
+          "data": "这么强烈的心情，"
+        },
+        {
+          "event": "token",
+          "data": "你觉得咱们这几轮"
+        },
+        {
+          "event": "token",
+          "data": "聊下来，有"
+        },
+        {
+          "event": "token",
+          "data": "让这份沉重感"
+        },
+        {
+          "event": "token",
+          "data": "稍微松动一点点吗"
+        },
+        {
+          "event": "token",
+          "data": "？还是说，"
+        },
+        {
+          "event": "token",
+          "data": "醒来面对这些，"
+        },
+        {
+          "event": "token",
+          "data": "依然觉得挺无"
+        },
+        {
+          "event": "token",
+          "data": "力的？"
+        },
+        {
+          "event": "dialogue_done",
+          "data": {
+            "trace_id": "1cfebac5281b4e05",
+            "owner": "therapy_cbt"
+          }
+        },
+        {
+          "event": "final",
+          "data": {
+            "message": "今天还梦见自己又讲错了，醒来心情很差。",
+            "risk_state": "SAFE",
+            "crisis": false
+          }
+        }
+      ],
+      "final": {
+        "message": "今天还梦见自己又讲错了，醒来心情很差。",
+        "risk_state": "SAFE",
+        "crisis": false
+      },
+      "state_after": {
+        "owner": "therapy_cbt",
+        "crisis": false,
+        "risk_level": "SAFE",
+        "therapy": {
+          "name": "CBT",
+          "start_seq": 5,
+          "rounds": 2,
+          "step_index": 0,
+          "branch": null,
+          "basic_flow_complete": false
+        },
+        "last_therapy_check_seq": 3,
+        "pending_user_tokens": 0
+      },
+      "orchestration_after": {
+        "updated_seq": 2,
+        "therapy": "CBT",
+        "current_step": "identify_thought",
+        "next_step": "identify_thought",
+        "step_judgment": {
+          "action": "stay",
+          "target_step": null,
+          "achieved": false,
+          "reason": "用户仍在描述自责情绪的持续影响（梦见讲错、醒来心情差），尚未清晰识别出具体的自动思维内容。当前步骤identify_thought尚未达成，需要继续帮助用户探索和识别具体的自动思维。"
+        },
+        "assessment": null,
+        "skill_output": {
+          "automatic_thoughts": [
+            {
+              "thought": "我总是讲错话，我真的很糟糕。",
+              "confidence": 0.88,
+              "span": "梦见自己又讲错了",
+              "target": "self"
+            },
+            {
+              "thought": "我连做梦都在犯错，现实中肯定也做不好。",
+              "confidence": 0.75,
+              "span": "今天还梦见自己又讲错了",
+              "target": "future"
+            }
+          ],
+          "primary_thought": "我总是讲错话，我真的很糟糕。",
+          "no_automatic_thought_detected": false,
+          "_skill_name": "extract_automatic_thought"
+        },
+        "products": {
+          "no_automatic_thought_detected": false,
+          "automatic_thoughts": [
+            {
+              "thought": "我总是讲错话，我真的很糟糕。",
+              "confidence": 0.88,
+              "span": "梦见自己又讲错了",
+              "target": "self"
+            },
+            {
+              "thought": "我连做梦都在犯错，现实中肯定也做不好。",
+              "confidence": 0.75,
+              "span": "今天还梦见自己又讲错了",
+              "target": "future"
+            }
+          ],
+          "primary_thought": "我总是讲错话，我真的很糟糕。"
+        },
+        "continue_eval": null
+      },
+      "error": null,
+      "wall_seconds": 71.777,
+      "agent_text": "做这样的梦，醒来时那种“讲错了”的糟糕心情一定很真实、很沉重吧。看来那个担忧真的很顽固，连梦里都在反复提醒着自己。\n\n带着这么强烈的心情，你觉得咱们这几轮聊下来，有让这份沉重感稍微松动一点点吗？还是说，醒来面对这些，依然觉得挺无力的？"
+    },
+    {
+      "turn": 5,
+      "trace_id": "f6e16748b99844e4",
+      "user_text": "你说我是不是在用「我不专业」这个标签来定义我自己？",
+      "agent_text_parts": [
+        "你提到了“",
+        "我不专业”这个",
+        "标签，这似乎",
+        "是你心里一直背着",
+        "的一个很沉重的东西",
+        "。当你梦见讲",
+        "错，或者自责",
+        "停不下来的时候",
+        "，脑海里是不是常常",
+        "闪过“我不专业",
+        "”这个想法呢",
+        "？当这个想法",
+        "冒出来的时候，",
+        "会让你有什么样的感觉",
+        "？"
+      ],
+      "events": [
+        {
+          "event": "token",
+          "data": "你提到了“"
+        },
+        {
+          "event": "token",
+          "data": "我不专业”这个"
+        },
+        {
+          "event": "token",
+          "data": "标签，这似乎"
+        },
+        {
+          "event": "token",
+          "data": "是你心里一直背着"
+        },
+        {
+          "event": "token",
+          "data": "的一个很沉重的东西"
+        },
+        {
+          "event": "token",
+          "data": "。当你梦见讲"
+        },
+        {
+          "event": "token",
+          "data": "错，或者自责"
+        },
+        {
+          "event": "token",
+          "data": "停不下来的时候"
+        },
+        {
+          "event": "token",
+          "data": "，脑海里是不是常常"
+        },
+        {
+          "event": "token",
+          "data": "闪过“我不专业"
+        },
+        {
+          "event": "token",
+          "data": "”这个想法呢"
+        },
+        {
+          "event": "token",
+          "data": "？当这个想法"
+        },
+        {
+          "event": "token",
+          "data": "冒出来的时候，"
+        },
+        {
+          "event": "token",
+          "data": "会让你有什么样的感觉"
+        },
+        {
+          "event": "token",
+          "data": "？"
+        },
+        {
+          "event": "dialogue_done",
+          "data": {
+            "trace_id": "f6e16748b99844e4",
+            "owner": "therapy_cbt"
+          }
+        },
+        {
+          "event": "final",
+          "data": {
+            "message": "你说我是不是在用「我不专业」这个标签来定义我自己？",
+            "risk_state": "LOW_RISK",
+            "crisis": false
+          }
+        }
+      ],
+      "final": {
+        "message": "你说我是不是在用「我不专业」这个标签来定义我自己？",
+        "risk_state": "LOW_RISK",
+        "crisis": false
+      },
+      "state_after": {
+        "owner": "therapy_cbt",
+        "crisis": false,
+        "risk_level": "LOW_RISK",
+        "therapy": {
+          "name": "CBT",
+          "start_seq": 5,
+          "rounds": 3,
+          "step_index": 0,
+          "branch": null,
+          "basic_flow_complete": false
+        },
+        "last_therapy_check_seq": 3,
+        "pending_user_tokens": 0
+      },
+      "orchestration_after": {
+        "updated_seq": 3,
+        "therapy": "CBT",
+        "current_step": "identify_thought",
+        "next_step": "identify_thought",
+        "step_judgment": {
+          "action": "stay",
+          "target_step": null,
+          "achieved": false,
+          "reason": "用户在最新回复中提出了一个自我探索性问题（'你说我是不是在用「我不专业」这个标签来定义我自己？'），这表明用户正在对自动思维进行反思，但尚未完成identify_thought步骤的完整闭环。疗程产品已识别出自动思维，但用户仍在进一步探索这些思维的本质，需要继续在当前步骤中引导用户完成对自动思维的识别和澄清。"
+        },
+        "assessment": null,
+        "skill_output": {
+          "automatic_thoughts": [
+            {
+              "thought": "我不专业",
+              "confidence": 0.95,
+              "span": "「我不专业」",
+              "target": "self"
+            }
+          ],
+          "primary_thought": "我不专业",
+          "no_automatic_thought_detected": false,
+          "_skill_name": "extract_automatic_thought"
+        },
+        "products": {
+          "no_automatic_thought_detected": false,
+          "automatic_thoughts": [
+            {
+              "thought": "我总是讲错话，我真的很糟糕。",
+              "confidence": 0.88,
+              "span": "梦见自己又讲错了",
+              "target": "self"
+            },
+            {
+              "thought": "我连做梦都在犯错，现实中肯定也做不好。",
+              "confidence": 0.75,
+              "span": "今天还梦见自己又讲错了",
+              "target": "future"
+            },
+            {
+              "thought": "我不专业",
+              "confidence": 0.95,
+              "span": "「我不专业」",
+              "target": "self"
+            }
+          ],
+          "primary_thought": "我不专业"
+        },
+        "continue_eval": null
+      },
+      "error": null,
+      "wall_seconds": 72.718,
+      "agent_text": "你提到了“我不专业”这个标签，这似乎是你心里一直背着的一个很沉重的东西。当你梦见讲错，或者自责停不下来的时候，脑海里是不是常常闪过“我不专业”这个想法呢？当这个想法冒出来的时候，会让你有什么样的感觉？"
+    },
+    {
+      "turn": 6,
+      "trace_id": "dd9091741c1b49cb",
+      "user_text": "可能吧，但我确实搞砸了，怎么能假装没事。",
+      "agent_text_parts": [
+        "你说得",
+        "对",
+        "，搞砸了",
+        "就是搞砸了",
+        "，咱们绝对不需要",
+        "假装没事，也不用",
+        "去否认这个事实",
+        "。承认它确实",
+        "发生了，本身就很",
+        "不容易。\n\n只是",
+        "我想和你一起看看",
+        "，“搞砸了",
+        "这件事",
+        "”和“我不",
+        "专业”是一回事",
+        "吗？“搞",
+        "砸了”是",
+        "咱们看到的事实，",
+        "而“我不专业",
+        "”是不是我们在事实",
+        "之上，给自己贴",
+        "上的一个更沉重的",
+        "标签呢？"
+      ],
+      "events": [
+        {
+          "event": "token",
+          "data": "你说得"
+        },
+        {
+          "event": "token",
+          "data": "对"
+        },
+        {
+          "event": "token",
+          "data": "，搞砸了"
+        },
+        {
+          "event": "token",
+          "data": "就是搞砸了"
+        },
+        {
+          "event": "token",
+          "data": "，咱们绝对不需要"
+        },
+        {
+          "event": "token",
+          "data": "假装没事，也不用"
+        },
+        {
+          "event": "token",
+          "data": "去否认这个事实"
+        },
+        {
+          "event": "token",
+          "data": "。承认它确实"
+        },
+        {
+          "event": "token",
+          "data": "发生了，本身就很"
+        },
+        {
+          "event": "token",
+          "data": "不容易。\n\n只是"
+        },
+        {
+          "event": "token",
+          "data": "我想和你一起看看"
+        },
+        {
+          "event": "token",
+          "data": "，“搞砸了"
+        },
+        {
+          "event": "token",
+          "data": "这件事"
+        },
+        {
+          "event": "token",
+          "data": "”和“我不"
+        },
+        {
+          "event": "token",
+          "data": "专业”是一回事"
+        },
+        {
+          "event": "token",
+          "data": "吗？“搞"
+        },
+        {
+          "event": "token",
+          "data": "砸了”是"
+        },
+        {
+          "event": "token",
+          "data": "咱们看到的事实，"
+        },
+        {
+          "event": "token",
+          "data": "而“我不专业"
+        },
+        {
+          "event": "token",
+          "data": "”是不是我们在事实"
+        },
+        {
+          "event": "token",
+          "data": "之上，给自己贴"
+        },
+        {
+          "event": "token",
+          "data": "上的一个更沉重的"
+        },
+        {
+          "event": "token",
+          "data": "标签呢？"
+        },
+        {
+          "event": "dialogue_done",
+          "data": {
+            "trace_id": "dd9091741c1b49cb",
+            "owner": "therapy_cbt"
+          }
+        },
+        {
+          "event": "final",
+          "data": {
+            "message": "可能吧，但我确实搞砸了，怎么能假装没事。",
+            "risk_state": "LOW_RISK",
+            "crisis": false
+          }
+        }
+      ],
+      "final": {
+        "message": "可能吧，但我确实搞砸了，怎么能假装没事。",
+        "risk_state": "LOW_RISK",
+        "crisis": false
+      },
+      "state_after": {
+        "owner": "therapy_cbt",
+        "crisis": false,
+        "risk_level": "LOW_RISK",
+        "therapy": {
+          "name": "CBT",
+          "start_seq": 5,
+          "rounds": 4,
+          "step_index": 0,
+          "branch": null,
+          "basic_flow_complete": false
+        },
+        "last_therapy_check_seq": 3,
+        "pending_user_tokens": 0
+      },
+      "orchestration_after": {
+        "updated_seq": 4,
+        "therapy": "CBT",
+        "current_step": "identify_thought",
+        "next_step": "identify_thought",
+        "step_judgment": {
+          "action": "stay",
+          "target_step": null,
+          "achieved": false,
+          "reason": "用户虽然识别出'我不专业'这个自动思维，但仍表示'确实搞砸了，怎么能假装没事'，说明对自动思维的识别和觉察尚未充分完成，需要继续在当前步骤深化对自动思维的识别和具体化。"
+        },
+        "assessment": null,
+        "skill_output": null,
+        "products": {
+          "no_automatic_thought_detected": false,
+          "automatic_thoughts": [
+            {
+              "thought": "我总是讲错话，我真的很糟糕。",
+              "confidence": 0.88,
+              "span": "梦见自己又讲错了",
+              "target": "self"
+            },
+            {
+              "thought": "我连做梦都在犯错，现实中肯定也做不好。",
+              "confidence": 0.75,
+              "span": "今天还梦见自己又讲错了",
+              "target": "future"
+            },
+            {
+              "thought": "我不专业",
+              "confidence": 0.95,
+              "span": "「我不专业」",
+              "target": "self"
+            }
+          ],
+          "primary_thought": "我不专业"
+        },
+        "continue_eval": null
+      },
+      "error": null,
+      "wall_seconds": 68.142,
+      "agent_text": "你说得对，搞砸了就是搞砸了，咱们绝对不需要假装没事，也不用去否认这个事实。承认它确实发生了，本身就很不容易。\n\n只是我想和你一起看看，“搞砸了这件事”和“我不专业”是一回事吗？“搞砸了”是咱们看到的事实，而“我不专业”是不是我们在事实之上，给自己贴上的一个更沉重的标签呢？"
+    },
+    {
+      "turn": 7,
+      "trace_id": "5d599b8b24834ebf",
+      "user_text": "「我犯了错」和「我是个不专业的人」这两件事是一样的吗？好像不太一样。",
+      "agent_text_parts": [
+        "你能感觉到它们",
+        "“不太一样”，",
+        "这是一个很敏锐的",
+        "觉察。\n\n当我们",
+        "试着把“犯了",
+        "错”这件具体的",
+        "事，和“",
+        "不专业”这个",
+        "沉重的标签稍微分开",
+        "一点点来看时，",
+        "你心里的那种自责",
+        "感，有没有跟着",
+        "发生什么微小的变化",
+        "呢？哪怕只是一",
+        "点点松动也好。"
+      ],
+      "events": [
+        {
+          "event": "token",
+          "data": "你能感觉到它们"
+        },
+        {
+          "event": "token",
+          "data": "“不太一样”，"
+        },
+        {
+          "event": "token",
+          "data": "这是一个很敏锐的"
+        },
+        {
+          "event": "token",
+          "data": "觉察。\n\n当我们"
+        },
+        {
+          "event": "token",
+          "data": "试着把“犯了"
+        },
+        {
+          "event": "token",
+          "data": "错”这件具体的"
+        },
+        {
+          "event": "token",
+          "data": "事，和“"
+        },
+        {
+          "event": "token",
+          "data": "不专业”这个"
+        },
+        {
+          "event": "token",
+          "data": "沉重的标签稍微分开"
+        },
+        {
+          "event": "token",
+          "data": "一点点来看时，"
+        },
+        {
+          "event": "token",
+          "data": "你心里的那种自责"
+        },
+        {
+          "event": "token",
+          "data": "感，有没有跟着"
+        },
+        {
+          "event": "token",
+          "data": "发生什么微小的变化"
+        },
+        {
+          "event": "token",
+          "data": "呢？哪怕只是一"
+        },
+        {
+          "event": "token",
+          "data": "点点松动也好。"
+        },
+        {
+          "event": "dialogue_done",
+          "data": {
+            "trace_id": "5d599b8b24834ebf",
+            "owner": "therapy_cbt"
+          }
+        },
+        {
+          "event": "final",
+          "data": {
+            "message": "「我犯了错」和「我是个不专业的人」这两件事是一样的吗？好像不太一样。",
+            "risk_state": "LOW_RISK",
+            "crisis": false
+          }
+        }
+      ],
+      "final": {
+        "message": "「我犯了错」和「我是个不专业的人」这两件事是一样的吗？好像不太一样。",
+        "risk_state": "LOW_RISK",
+        "crisis": false
+      },
+      "state_after": {
+        "owner": "therapy_cbt",
+        "crisis": false,
+        "risk_level": "LOW_RISK",
+        "therapy": {
+          "name": "CBT",
+          "start_seq": 5,
+          "rounds": 5,
+          "step_index": 1,
+          "branch": null,
+          "basic_flow_complete": false,
+          "visited": [
+            "identify_thought"
+          ]
+        },
+        "last_therapy_check_seq": 3,
+        "pending_user_tokens": 0
+      },
+      "orchestration_after": {
+        "updated_seq": 5,
+        "therapy": "CBT",
+        "current_step": "identify_thought",
+        "next_step": "classify_distortion",
+        "step_judgment": {
+          "action": "advance",
+          "target_step": null,
+          "achieved": true,
+          "reason": "用户已经开始区分'我犯了错'（行为事实）和'我是个不专业的人'（自我标签），表明已识别出核心自动思维'我不专业'，并初步意识到这是一种过度概括的认知模式。identify_thought步骤目标已达成，可进入下一步classify_distortion。"
+        },
+        "assessment": null,
+        "skill_output": null,
+        "products": {
+          "no_automatic_thought_detected": false,
+          "automatic_thoughts": [
+            {
+              "thought": "我总是讲错话，我真的很糟糕。",
+              "confidence": 0.88,
+              "span": "梦见自己又讲错了",
+              "target": "self"
+            },
+            {
+              "thought": "我连做梦都在犯错，现实中肯定也做不好。",
+              "confidence": 0.75,
+              "span": "今天还梦见自己又讲错了",
+              "target": "future"
+            },
+            {
+              "thought": "我不专业",
+              "confidence": 0.95,
+              "span": "「我不专业」",
+              "target": "self"
+            }
+          ],
+          "primary_thought": "我不专业"
+        },
+        "continue_eval": null
+      },
+      "error": null,
+      "wall_seconds": 90.72,
+      "agent_text": "你能感觉到它们“不太一样”，这是一个很敏锐的觉察。\n\n当我们试着把“犯了错”这件具体的事，和“不专业”这个沉重的标签稍微分开一点点来看时，你心里的那种自责感，有没有跟着发生什么微小的变化呢？哪怕只是一点点松动也好。"
+    },
+    {
+      "turn": 8,
+      "trace_id": "0a31d267fbf64f44",
+      "user_text": "嗯，那我试试把这两件事分开看——我是做了件不专业的事，但我还可以做专业的事。",
+      "agent_text_parts": [
+        "“我是",
+        "做了件不专业",
+        "的事，但我还可以",
+        "做专业的事。”",
+        "听到你试着这样",
+        "对自己说，感觉",
+        "像是在心里给自己稍微",
+        "松了一点点绑",
+        "。\n\n当你试着",
+        "把这两件事分开",
+        "，在心里对自己说出",
+        "这句话的时候，感觉",
+        "和之前一直用",
+        "“我不专业”",
+        "来责备自己时",
+        "，有什么不一样吗",
+        "？情绪上有没有",
+        "觉得稍微轻松一点点",
+        "，还是说依然",
+        "觉得有些沉重呢",
+        "？"
+      ],
+      "events": [
+        {
+          "event": "token",
+          "data": "“我是"
+        },
+        {
+          "event": "token",
+          "data": "做了件不专业"
+        },
+        {
+          "event": "token",
+          "data": "的事，但我还可以"
+        },
+        {
+          "event": "token",
+          "data": "做专业的事。”"
+        },
+        {
+          "event": "token",
+          "data": "听到你试着这样"
+        },
+        {
+          "event": "token",
+          "data": "对自己说，感觉"
+        },
+        {
+          "event": "token",
+          "data": "像是在心里给自己稍微"
+        },
+        {
+          "event": "token",
+          "data": "松了一点点绑"
+        },
+        {
+          "event": "token",
+          "data": "。\n\n当你试着"
+        },
+        {
+          "event": "token",
+          "data": "把这两件事分开"
+        },
+        {
+          "event": "token",
+          "data": "，在心里对自己说出"
+        },
+        {
+          "event": "token",
+          "data": "这句话的时候，感觉"
+        },
+        {
+          "event": "token",
+          "data": "和之前一直用"
+        },
+        {
+          "event": "token",
+          "data": "“我不专业”"
+        },
+        {
+          "event": "token",
+          "data": "来责备自己时"
+        },
+        {
+          "event": "token",
+          "data": "，有什么不一样吗"
+        },
+        {
+          "event": "token",
+          "data": "？情绪上有没有"
+        },
+        {
+          "event": "token",
+          "data": "觉得稍微轻松一点点"
+        },
+        {
+          "event": "token",
+          "data": "，还是说依然"
+        },
+        {
+          "event": "token",
+          "data": "觉得有些沉重呢"
+        },
+        {
+          "event": "token",
+          "data": "？"
+        },
+        {
+          "event": "dialogue_done",
+          "data": {
+            "trace_id": "0a31d267fbf64f44",
+            "owner": "therapy_cbt"
+          }
+        },
+        {
+          "event": "final",
+          "data": {
+            "message": "嗯，那我试试把这两件事分开看——我是做了件不专业的事，但我还可以做专业的事。",
+            "risk_state": "SAFE",
+            "crisis": false
+          }
+        }
+      ],
+      "final": {
+        "message": "嗯，那我试试把这两件事分开看——我是做了件不专业的事，但我还可以做专业的事。",
+        "risk_state": "SAFE",
+        "crisis": false
+      },
+      "state_after": {
+        "owner": "therapy_cbt",
+        "crisis": false,
+        "risk_level": "SAFE",
+        "therapy": {
+          "name": "CBT",
+          "start_seq": 5,
+          "rounds": 6,
+          "step_index": 2,
+          "branch": null,
+          "basic_flow_complete": false,
+          "visited": [
+            "identify_thought",
+            "classify_distortion"
+          ]
+        },
+        "last_therapy_check_seq": 3,
+        "pending_user_tokens": 0
+      },
+      "orchestration_after": {
+        "updated_seq": 6,
+        "therapy": "CBT",
+        "current_step": "classify_distortion",
+        "next_step": "challenge",
+        "step_judgment": {
+          "action": "advance",
+          "target_step": null,
+          "achieved": true,
+          "reason": "用户已经识别出'我犯了错'和'我是个不专业的人'之间的区别，并主动重构为'我是做了件不专业的事，但我还可以做专业的事'，表明已完成对认知扭曲（过度概括/贴标签）的识别与初步挑战。当前步骤classify_distortion已达成效果，可进入下一步challenge深入挑战核心信念。"
+        },
+        "assessment": null,
+        "skill_output": {
+          "classifications": [
+            {
+              "thought": "我总是讲错话，我真的很糟糕。",
+              "distortions": [
+                {
+                  "type": "overgeneralization",
+                  "confidence": 0.9,
+                  "rationale": "使用了'总是'这样的绝对化词汇，将偶尔的失误概括为必然的普遍规律。"
+                },
+                {
+                  "type": "labeling",
+                  "confidence": 0.95,
+                  "rationale": "用'很糟糕'这种全局性的负面标签来定义自己，而不是客观描述具体的行为。"
+                }
+              ],
+              "primary_distortion": "labeling"
+            },
+            {
+              "thought": "我连做梦都在犯错，现实中肯定也做不好。",
+              "distortions": [
+                {
+                  "type": "fortune_telling",
+                  "confidence": 0.9,
+                  "rationale": "在没有客观证据的情况下，消极地预测未来在现实中'肯定也做不好'。"
+                },
+                {
+                  "type": "overgeneralization",
+                  "confidence": 0.8,
+                  "rationale": "将梦境中的单一失误过度泛化，推断现实中的所有表现都会失败。"
+                }
+              ],
+              "primary_distortion": "fortune_telling"
+            },
+            {
+              "thought": "我不专业",
+              "distortions": [
+                {
+                  "type": "labeling",
+                  "confidence": 0.95,
+                  "rationale": "直接给自己贴上了'不专业'的负面标签，以偏概全地否定了自己的整体职业能力。"
+                }
+              ],
+              "primary_distortion": "labeling"
+            }
+          ],
+          "distortion_summary": {
+            "dominant_pattern": "labeling",
+            "distortion_count": 5,
+            "severity": "moderate"
+          },
+          "_skill_name": "detect_cognitive_distortion"
+        },
+        "products": {
+          "no_automatic_thought_detected": false,
+          "automatic_thoughts": [
+            {
+              "thought": "我总是讲错话，我真的很糟糕。",
+              "confidence": 0.88,
+              "span": "梦见自己又讲错了",
+              "target": "self"
+            },
+            {
+              "thought": "我连做梦都在犯错，现实中肯定也做不好。",
+              "confidence": 0.75,
+              "span": "今天还梦见自己又讲错了",
+              "target": "future"
+            },
+            {
+              "thought": "我不专业",
+              "confidence": 0.95,
+              "span": "「我不专业」",
+              "target": "self"
+            }
+          ],
+          "primary_thought": "我不专业",
+          "distortions": [
+            {
+              "thought": "我总是讲错话，我真的很糟糕。",
+              "distortions": [
+                {
+                  "type": "overgeneralization",
+                  "confidence": 0.9,
+                  "rationale": "使用了'总是'这样的绝对化词汇，将偶尔的失误概括为必然的普遍规律。"
+                },
+                {
+                  "type": "labeling",
+                  "confidence": 0.95,
+                  "rationale": "用'很糟糕'这种全局性的负面标签来定义自己，而不是客观描述具体的行为。"
+                }
+              ],
+              "primary_distortion": "labeling"
+            },
+            {
+              "thought": "我连做梦都在犯错，现实中肯定也做不好。",
+              "distortions": [
+                {
+                  "type": "fortune_telling",
+                  "confidence": 0.9,
+                  "rationale": "在没有客观证据的情况下，消极地预测未来在现实中'肯定也做不好'。"
+                },
+                {
+                  "type": "overgeneralization",
+                  "confidence": 0.8,
+                  "rationale": "将梦境中的单一失误过度泛化，推断现实中的所有表现都会失败。"
+                }
+              ],
+              "primary_distortion": "fortune_telling"
+            },
+            {
+              "thought": "我不专业",
+              "distortions": [
+                {
+                  "type": "labeling",
+                  "confidence": 0.95,
+                  "rationale": "直接给自己贴上了'不专业'的负面标签，以偏概全地否定了自己的整体职业能力。"
+                }
+              ],
+              "primary_distortion": "labeling"
+            }
+          ],
+          "distortion_summary": {
+            "dominant_pattern": "labeling",
+            "distortion_count": 5,
+            "severity": "moderate"
+          }
+        },
+        "continue_eval": null
+      },
+      "error": null,
+      "wall_seconds": 117.416,
+      "agent_text": "“我是做了件不专业的事，但我还可以做专业的事。”听到你试着这样对自己说，感觉像是在心里给自己稍微松了一点点绑。\n\n当你试着把这两件事分开，在心里对自己说出这句话的时候，感觉和之前一直用“我不专业”来责备自己时，有什么不一样吗？情绪上有没有觉得稍微轻松一点点，还是说依然觉得有些沉重呢？"
+    }
+  ]
+}

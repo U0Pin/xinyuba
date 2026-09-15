@@ -1,0 +1,1640 @@
+{
+  "seed_id": "sfbt-scaling-confidence",
+  "target_family": "SFBT",
+  "scenario_label": "刻度化-社交勇气",
+  "scenario_description": "对表白缺乏信心，想象过但不敢迈出",
+  "user_id": "seed-sfbt-scaling-confidence",
+  "session_id": "a1947bf041a047ab",
+  "turns_total": 8,
+  "switched_to_therapy_at_turn": 2,
+  "actual_therapy": "MI",
+  "therapy_rounds": 6,
+  "orch_step_changes": 5,
+  "is_complete": true,
+  "final_risk_level": "SAFE",
+  "final_crisis": false,
+  "turns": [
+    {
+      "turn": 1,
+      "trace_id": "319abc01a26b40e2",
+      "user_text": "我喜欢一个人很久了，一直没敢开口。",
+      "agent_text_parts": [
+        "喜欢一个人很久",
+        "却一直没敢开口",
+        "，心里一定挺",
+        "煎熬的吧。把",
+        "这份心意藏在心里",
+        "这么久，真的很",
+        "不容易。"
+      ],
+      "events": [
+        {
+          "event": "token",
+          "data": "喜欢一个人很久"
+        },
+        {
+          "event": "token",
+          "data": "却一直没敢开口"
+        },
+        {
+          "event": "token",
+          "data": "，心里一定挺"
+        },
+        {
+          "event": "token",
+          "data": "煎熬的吧。把"
+        },
+        {
+          "event": "token",
+          "data": "这份心意藏在心里"
+        },
+        {
+          "event": "token",
+          "data": "这么久，真的很"
+        },
+        {
+          "event": "token",
+          "data": "不容易。"
+        },
+        {
+          "event": "dialogue_done",
+          "data": {
+            "trace_id": "319abc01a26b40e2",
+            "owner": "daily"
+          }
+        },
+        {
+          "event": "final",
+          "data": {
+            "message": "我喜欢一个人很久了，一直没敢开口。",
+            "risk_state": "SAFE",
+            "crisis": false
+          }
+        }
+      ],
+      "final": {
+        "message": "我喜欢一个人很久了，一直没敢开口。",
+        "risk_state": "SAFE",
+        "crisis": false
+      },
+      "state_after": {
+        "owner": "daily",
+        "crisis": false,
+        "risk_level": "SAFE",
+        "therapy": null,
+        "last_therapy_check_seq": 1,
+        "pending_user_tokens": 0
+      },
+      "orchestration_after": {},
+      "error": null,
+      "wall_seconds": 39.886,
+      "agent_text": "喜欢一个人很久却一直没敢开口，心里一定挺煎熬的吧。把这份心意藏在心里这么久，真的很不容易。"
+    },
+    {
+      "turn": 2,
+      "trace_id": "43ed0ad61d4f4454",
+      "user_text": "你让我打分，从 0 到 10，我对表白的信心……大概 3 分。",
+      "agent_text_parts": [
+        "3分啊",
+        "，听起来你对表白",
+        "这事儿心里还是挺没",
+        "底的。毕竟要",
+        "迈出这一步真的挺",
+        "让人发怵",
+        "的。不过，",
+        "哪怕信心只有3",
+        "分，也是你",
+        "当下最真实的感受",
+        "，咱们不用逼",
+        "着自己一下子变成1",
+        "0分。"
+      ],
+      "events": [
+        {
+          "event": "token",
+          "data": "3分啊"
+        },
+        {
+          "event": "token",
+          "data": "，听起来你对表白"
+        },
+        {
+          "event": "token",
+          "data": "这事儿心里还是挺没"
+        },
+        {
+          "event": "token",
+          "data": "底的。毕竟要"
+        },
+        {
+          "event": "token",
+          "data": "迈出这一步真的挺"
+        },
+        {
+          "event": "token",
+          "data": "让人发怵"
+        },
+        {
+          "event": "token",
+          "data": "的。不过，"
+        },
+        {
+          "event": "token",
+          "data": "哪怕信心只有3"
+        },
+        {
+          "event": "token",
+          "data": "分，也是你"
+        },
+        {
+          "event": "token",
+          "data": "当下最真实的感受"
+        },
+        {
+          "event": "token",
+          "data": "，咱们不用逼"
+        },
+        {
+          "event": "token",
+          "data": "着自己一下子变成1"
+        },
+        {
+          "event": "token",
+          "data": "0分。"
+        },
+        {
+          "event": "dialogue_done",
+          "data": {
+            "trace_id": "43ed0ad61d4f4454",
+            "owner": "daily"
+          }
+        },
+        {
+          "event": "final",
+          "data": {
+            "message": "你让我打分，从 0 到 10，我对表白的信心……大概 3 分。",
+            "risk_state": "SAFE",
+            "crisis": false
+          }
+        }
+      ],
+      "final": {
+        "message": "你让我打分，从 0 到 10，我对表白的信心……大概 3 分。",
+        "risk_state": "SAFE",
+        "crisis": false
+      },
+      "state_after": {
+        "owner": "therapy_mi",
+        "crisis": false,
+        "risk_level": "SAFE",
+        "therapy": {
+          "name": "MI",
+          "start_seq": 4,
+          "rounds": 0,
+          "step_index": -1,
+          "branch": null,
+          "basic_flow_complete": false
+        },
+        "last_therapy_check_seq": 3,
+        "pending_user_tokens": 0
+      },
+      "orchestration_after": {},
+      "error": null,
+      "wall_seconds": 35.004,
+      "agent_text": "3分啊，听起来你对表白这事儿心里还是挺没底的。毕竟要迈出这一步真的挺让人发怵的。不过，哪怕信心只有3分，也是你当下最真实的感受，咱们不用逼着自己一下子变成10分。"
+    },
+    {
+      "turn": 3,
+      "trace_id": "51b42edeef6244e6",
+      "user_text": "已经做到的是——我跟他聊天的频率比其他人高。",
+      "agent_text_parts": [
+        "能觉察到自己",
+        "和他的聊天频率比",
+        "其他人高，这",
+        "其实是一个很棒的发现",
+        "呢。当你看到",
+        "自己已经默默做到了",
+        "这些，回顾咱们",
+        "这几轮的聊天，",
+        "你心里是什么感觉",
+        "呀？"
+      ],
+      "events": [
+        {
+          "event": "token",
+          "data": "能觉察到自己"
+        },
+        {
+          "event": "token",
+          "data": "和他的聊天频率比"
+        },
+        {
+          "event": "token",
+          "data": "其他人高，这"
+        },
+        {
+          "event": "token",
+          "data": "其实是一个很棒的发现"
+        },
+        {
+          "event": "token",
+          "data": "呢。当你看到"
+        },
+        {
+          "event": "token",
+          "data": "自己已经默默做到了"
+        },
+        {
+          "event": "token",
+          "data": "这些，回顾咱们"
+        },
+        {
+          "event": "token",
+          "data": "这几轮的聊天，"
+        },
+        {
+          "event": "token",
+          "data": "你心里是什么感觉"
+        },
+        {
+          "event": "token",
+          "data": "呀？"
+        },
+        {
+          "event": "dialogue_done",
+          "data": {
+            "trace_id": "51b42edeef6244e6",
+            "owner": "therapy_mi"
+          }
+        },
+        {
+          "event": "final",
+          "data": {
+            "message": "已经做到的是——我跟他聊天的频率比其他人高。",
+            "risk_state": "SAFE",
+            "crisis": false
+          }
+        }
+      ],
+      "final": {
+        "message": "已经做到的是——我跟他聊天的频率比其他人高。",
+        "risk_state": "SAFE",
+        "crisis": false
+      },
+      "state_after": {
+        "owner": "therapy_mi",
+        "crisis": false,
+        "risk_level": "SAFE",
+        "therapy": {
+          "name": "MI",
+          "start_seq": 4,
+          "rounds": 1,
+          "step_index": 0,
+          "branch": null,
+          "basic_flow_complete": false
+        },
+        "last_therapy_check_seq": 3,
+        "pending_user_tokens": 0
+      },
+      "orchestration_after": {
+        "updated_seq": 1,
+        "therapy": "MI",
+        "current_step": "explore",
+        "next_step": "explore",
+        "step_judgment": {
+          "action": "stay",
+          "target_step": null,
+          "achieved": false,
+          "reason": "用户仍处于precontemplation阶段，change_readiness仅为0.2，change_talk为0，尚未表达任何改变意愿或方向。当前explore步骤仍在进行中，需要继续探索高频聊天背后的动机、感受和意义，帮助用户澄清内在需求，尚未达到可推进到evocation阶段的条件。"
+        },
+        "assessment": {
+          "change_readiness": {
+            "index": 0.2,
+            "state": "precontemplation",
+            "confidence": 0.6,
+            "evidence": [
+              "用户正在盘点自己的行为（'已经做到的是'），显示出初步的自我觉察与反思，但尚未表达出明确的改变意愿。"
+            ]
+          },
+          "ambivalence": {
+            "index": 0.1,
+            "state": "none",
+            "confidence": 0.7,
+            "evidence": [
+              "当前消息仅陈述了客观的行为事实，未表现出明显的矛盾心理或内心的拉扯感。"
+            ]
+          },
+          "self_efficacy": {
+            "index": 0.6,
+            "state": "moderate",
+            "confidence": 0.7,
+            "evidence": [
+              "用户提到'已经做到的是'，表明对其在关系中付出的行动有一定的认可，展现出一定的自我效能感。"
+            ]
+          },
+          "change_talk": {
+            "index": 0.0,
+            "state": "absent",
+            "confidence": 0.9,
+            "evidence": [
+              "用户仅描述了当前的行为状态（聊天频率高），未表达任何想要改变现状的欲望、能力、原因或需求（无DARN/CAT信号）。"
+            ]
+          },
+          "sustain_talk": {
+            "index": 0.0,
+            "state": "absent",
+            "confidence": 0.9,
+            "evidence": [
+              "用户未表达维持现状的理由，也没有抗拒改变的话语。"
+            ]
+          },
+          "mi_intervention_need": 0.315,
+          "overall_trend": "stable",
+          "primary_concern": "lack of clear change direction",
+          "should_intervene": true,
+          "recommended_processes": [
+            {
+              "process": "explore",
+              "priority": 1,
+              "rationale": "用户正在梳理自己在关系中的具体行为，此时应优先使用explore过程，探索其高频聊天背后的动机、感受以及这对他们意味着什么，帮助其进一步澄清内在需求和目标。"
+            }
+          ]
+        },
+        "skill_output": {
+          "technique": {
+            "name": "oars",
+            "description": "用户正在盘点自己‘已经做到的’事实，这是展现其内在资源和努力的契机。此时最适合使用OARS中的Affirmation（具体肯定）来认可其行动，并结合Reflection（反思）和Open question（开放式提问）来探索这一进展对用户的意义，从而深化治疗关系和自我觉察。",
+            "steps": [
+              "1. 具体肯定（Affirmation）：认可用户增加聊天频率的行动和觉察力，肯定其为此付出的努力，避免空洞赞美。",
+              "2. 意义反思（Reflection）：反映这一行为背后的积极面或潜在意图，例如‘这说明你在很用心地经营这段关系/增加互动’。",
+              "3. 开放探索（Open Question）：邀请用户探索这个‘已经做到’的事实给自己带来了怎样的感受或意义，使用MI核心问句引导内在觉察。"
+            ]
+          },
+          "conversation_goal": "通过具体肯定用户的已有进展来强化其自我效能感，并引导其探索该行为背后的个人意义和内在感受，进一步深化治疗联盟。",
+          "adaptation": {
+            "interaction_style": "exploratory",
+            "tone_adjustment": "温暖、真诚、充满好奇。肯定必须落地到具体行为，避免泛泛的夸奖，让用户感受到被真正看见和理解。",
+            "pace_adjustment": "舒缓、跟随。给予用户充分的空间去体会‘已经做到’的成就感，不急于推进到下一步或探讨未解决的议题。",
+            "culture_note": "中文语境下，肯定需具体到行动和心思（如‘你确实花了不少心思在增加互动上’）。提问时自然融入MI核心问句‘你自己觉得呢？’来激发内在动机，尊重用户的主体性。"
+          },
+          "contraindications": [
+            {
+              "condition": "直接转向探讨‘还没做到的’或‘需要改进的’方面",
+              "reason": "会削弱用户刚刚建立的效能感，破坏治疗关系，违背MI中‘肯定优势与努力’的原则，容易引发防御或sustain talk。"
+            },
+            {
+              "condition": "使用空洞的赞美（如‘你太厉害了’、‘你很棒’）",
+              "reason": "在中国文化语境中可能显得不够真诚或敷衍。MI强调肯定具体的行为、努力和觉察，而非泛泛的人格赞美。"
+            }
+          ],
+          "_skill_name": "mi_explore"
+        },
+        "products": {},
+        "continue_eval": null
+      },
+      "error": null,
+      "wall_seconds": 122.504,
+      "agent_text": "能觉察到自己和他的聊天频率比其他人高，这其实是一个很棒的发现呢。当你看到自己已经默默做到了这些，回顾咱们这几轮的聊天，你心里是什么感觉呀？"
+    },
+    {
+      "turn": 4,
+      "trace_id": "bd9236df9ea84027",
+      "user_text": "如果从 3 分变 4 分，我会做什么？……可能先约一次单独吃饭。",
+      "agent_text_parts": [
+        "你能想到用",
+        "“约一次单独",
+        "吃饭”来作为",
+        "提高1分的具体",
+        "行动，这步",
+        "想得很具体，",
+        "也很用心。感觉",
+        "“单独吃饭”",
+        "对你来说是一个挺",
+        "特别、也很看",
+        "重的互动方式。",
+        "当你在心里试着",
+        "描绘这个约他",
+        "单独吃饭的画面时",
+        "，你心里是什么",
+        "感觉呢？"
+      ],
+      "events": [
+        {
+          "event": "token",
+          "data": "你能想到用"
+        },
+        {
+          "event": "token",
+          "data": "“约一次单独"
+        },
+        {
+          "event": "token",
+          "data": "吃饭”来作为"
+        },
+        {
+          "event": "token",
+          "data": "提高1分的具体"
+        },
+        {
+          "event": "token",
+          "data": "行动，这步"
+        },
+        {
+          "event": "token",
+          "data": "想得很具体，"
+        },
+        {
+          "event": "token",
+          "data": "也很用心。感觉"
+        },
+        {
+          "event": "token",
+          "data": "“单独吃饭”"
+        },
+        {
+          "event": "token",
+          "data": "对你来说是一个挺"
+        },
+        {
+          "event": "token",
+          "data": "特别、也很看"
+        },
+        {
+          "event": "token",
+          "data": "重的互动方式。"
+        },
+        {
+          "event": "token",
+          "data": "当你在心里试着"
+        },
+        {
+          "event": "token",
+          "data": "描绘这个约他"
+        },
+        {
+          "event": "token",
+          "data": "单独吃饭的画面时"
+        },
+        {
+          "event": "token",
+          "data": "，你心里是什么"
+        },
+        {
+          "event": "token",
+          "data": "感觉呢？"
+        },
+        {
+          "event": "dialogue_done",
+          "data": {
+            "trace_id": "bd9236df9ea84027",
+            "owner": "therapy_mi"
+          }
+        },
+        {
+          "event": "final",
+          "data": {
+            "message": "如果从 3 分变 4 分，我会做什么？……可能先约一次单独吃饭。",
+            "risk_state": "SAFE",
+            "crisis": false
+          }
+        }
+      ],
+      "final": {
+        "message": "如果从 3 分变 4 分，我会做什么？……可能先约一次单独吃饭。",
+        "risk_state": "SAFE",
+        "crisis": false
+      },
+      "state_after": {
+        "owner": "therapy_mi",
+        "crisis": false,
+        "risk_level": "SAFE",
+        "therapy": {
+          "name": "MI",
+          "start_seq": 4,
+          "rounds": 2,
+          "step_index": 1,
+          "branch": null,
+          "basic_flow_complete": false,
+          "visited": [
+            "explore"
+          ]
+        },
+        "last_therapy_check_seq": 3,
+        "pending_user_tokens": 0
+      },
+      "orchestration_after": {
+        "updated_seq": 2,
+        "therapy": "MI",
+        "current_step": "explore",
+        "next_step": "evocation",
+        "step_judgment": {
+          "action": "advance",
+          "target_step": null,
+          "achieved": true,
+          "reason": "用户已从探索阶段进入准备阶段，change_readiness达0.65（preparation），ambivalence降至0.15（none），change_talk强烈（0.8），且已提出具体行动计划（约单独吃饭）。explore步骤目标已达成，应进入evocation步骤，深入探索该行动对用户的意义以强化内在动机。"
+        },
+        "assessment": {
+          "change_readiness": {
+            "index": 0.65,
+            "state": "preparation",
+            "confidence": 0.85,
+            "evidence": [
+              "用户主动思考如何从3分提升到4分，并提出了具体的行动计划（'先约一次单独吃饭'），显示出明显的改变意愿和初步准备。"
+            ]
+          },
+          "ambivalence": {
+            "index": 0.15,
+            "state": "none",
+            "confidence": 0.8,
+            "evidence": [
+              "用户直接给出了具体的下一步行动设想，没有表现出对改变的犹豫、纠结或内心拉扯。"
+            ]
+          },
+          "self_efficacy": {
+            "index": 0.7,
+            "state": "moderate",
+            "confidence": 0.8,
+            "evidence": [
+              "用户能够提出具体且可行的微小改变步骤（约单独吃饭），表明其对自己能够采取这一行动抱有信心。"
+            ]
+          },
+          "change_talk": {
+            "index": 0.8,
+            "state": "strong",
+            "confidence": 0.9,
+            "evidence": [
+              "用户表达了明确的行动意图和初步计划（'我会做什么？……可能先约一次单独吃饭'），属于强烈的CAT（Taking steps/Activation）信号。"
+            ]
+          },
+          "sustain_talk": {
+            "index": 0.0,
+            "state": "absent",
+            "confidence": 0.95,
+            "evidence": [
+              "用户未表达任何维持现状的理由或抗拒改变的话语。"
+            ]
+          },
+          "mi_intervention_need": 0.28,
+          "overall_trend": "improving",
+          "primary_concern": "consolidating change talk and exploring the meaning behind the proposed action",
+          "should_intervene": false,
+          "recommended_processes": [
+            {
+              "process": "evocation",
+              "priority": 1,
+              "rationale": "用户提出了初步的改变计划，此时应优先使用evocation过程，探索'单独吃饭'对用户的意义以及为什么这一步能带来改变，从而深化和强化其内在动机与改变语。"
+            },
+            {
+              "process": "commitment",
+              "priority": 2,
+              "rationale": "在探索意义并确认意愿后，可引入commitment过程，帮助用户将'约吃饭'的想法转化为更具体的行动计划，巩固其改变准备度。"
+            }
+          ]
+        },
+        "skill_output": {
+          "technique": {
+            "name": "oars",
+            "description": "用户已经提出了具体的行动计划（约单独吃饭），且没有表现出矛盾心理。使用OARS技术（特别是反映和开放式提问）来肯定他们的思考，并引导他们进一步探索这个计划的具体细节和内心感受。",
+            "steps": [
+              "使用复杂反映（Complex Reflection）肯定用户将'约单独吃饭'作为提升1分的具体行动，反映其用心和明确的目标感。",
+              "使用开放式问题（Open Question）邀请用户进一步探索这个计划，例如询问他们设想中的这顿饭是什么样的，或者为了促成这次约会他们觉得还需要做些什么准备。"
+            ]
+          },
+          "conversation_goal": "陪伴用户深入探索'约单独吃饭'这一具体行动计划，了解其背后的期待、感受或具体设想，巩固其向目标迈进的动力。",
+          "adaptation": {
+            "interaction_style": "exploratory",
+            "tone_adjustment": "温暖、好奇、支持性，保持对用户自身节奏的尊重。",
+            "pace_adjustment": "放慢节奏，停留在用户提出的'约吃饭'这个具体点上，不急于跳到更远的未来。",
+            "culture_note": "肯定用户的具体行动设想时，关注其内在的用心。在中文语境下，'单独吃饭'是拉近关系的重要社交方式，可以温和地探索这个举动对用户的特殊意义。"
+          },
+          "contraindications": [
+            {
+              "condition": "直接给出如何邀约的具体建议或话术",
+              "reason": "违背MI原则，剥夺了用户作为自己生活专家的主体性，可能引发抗拒。"
+            },
+            {
+              "condition": "忽视用户可能存在的对邀约的担忧或焦虑",
+              "reason": "如果用户其实对约饭感到紧张，强行推进会破坏治疗关系，应先处理情绪和矛盾心理。"
+            }
+          ],
+          "_skill_name": "mi_explore"
+        },
+        "products": {},
+        "continue_eval": null
+      },
+      "error": null,
+      "wall_seconds": 135.046,
+      "agent_text": "你能想到用“约一次单独吃饭”来作为提高1分的具体行动，这步想得很具体，也很用心。感觉“单独吃饭”对你来说是一个挺特别、也很看重的互动方式。当你在心里试着描绘这个约他单独吃饭的画面时，你心里是什么感觉呢？"
+    },
+    {
+      "turn": 5,
+      "trace_id": "10e545117e25454d",
+      "user_text": "为什么是 4 分不是 5 分？因为约吃饭不会直接面对拒绝。",
+      "agent_text_parts": [
+        "听到你说“",
+        "因为约吃饭不会",
+        "直接面对拒绝”，",
+        "感觉你在这个计划",
+        "里非常用心地",
+        "保护着自己。选择",
+        "4分而不是直接",
+        "冲到5分，",
+        "其实是给自己留了一个",
+        "安全的缓冲地带，",
+        "让自己可以在不承受",
+        "太大压力的情况下去",
+        "尝试靠近。\n\n",
+        "在这个让你觉得安全",
+        "、不用直接面对",
+        "拒绝的空间里，",
+        "你期待这顿饭",
+        "能为你带来些什么",
+        "样的体验呢？"
+      ],
+      "events": [
+        {
+          "event": "token",
+          "data": "听到你说“"
+        },
+        {
+          "event": "token",
+          "data": "因为约吃饭不会"
+        },
+        {
+          "event": "token",
+          "data": "直接面对拒绝”，"
+        },
+        {
+          "event": "token",
+          "data": "感觉你在这个计划"
+        },
+        {
+          "event": "token",
+          "data": "里非常用心地"
+        },
+        {
+          "event": "token",
+          "data": "保护着自己。选择"
+        },
+        {
+          "event": "token",
+          "data": "4分而不是直接"
+        },
+        {
+          "event": "token",
+          "data": "冲到5分，"
+        },
+        {
+          "event": "token",
+          "data": "其实是给自己留了一个"
+        },
+        {
+          "event": "token",
+          "data": "安全的缓冲地带，"
+        },
+        {
+          "event": "token",
+          "data": "让自己可以在不承受"
+        },
+        {
+          "event": "token",
+          "data": "太大压力的情况下去"
+        },
+        {
+          "event": "token",
+          "data": "尝试靠近。\n\n"
+        },
+        {
+          "event": "token",
+          "data": "在这个让你觉得安全"
+        },
+        {
+          "event": "token",
+          "data": "、不用直接面对"
+        },
+        {
+          "event": "token",
+          "data": "拒绝的空间里，"
+        },
+        {
+          "event": "token",
+          "data": "你期待这顿饭"
+        },
+        {
+          "event": "token",
+          "data": "能为你带来些什么"
+        },
+        {
+          "event": "token",
+          "data": "样的体验呢？"
+        },
+        {
+          "event": "dialogue_done",
+          "data": {
+            "trace_id": "10e545117e25454d",
+            "owner": "therapy_mi"
+          }
+        },
+        {
+          "event": "final",
+          "data": {
+            "message": "为什么是 4 分不是 5 分？因为约吃饭不会直接面对拒绝。",
+            "risk_state": "SAFE",
+            "crisis": false
+          }
+        }
+      ],
+      "final": {
+        "message": "为什么是 4 分不是 5 分？因为约吃饭不会直接面对拒绝。",
+        "risk_state": "SAFE",
+        "crisis": false
+      },
+      "state_after": {
+        "owner": "therapy_mi",
+        "crisis": false,
+        "risk_level": "SAFE",
+        "therapy": {
+          "name": "MI",
+          "start_seq": 4,
+          "rounds": 3,
+          "step_index": 0,
+          "branch": null,
+          "basic_flow_complete": false,
+          "visited": [
+            "explore"
+          ]
+        },
+        "last_therapy_check_seq": 3,
+        "pending_user_tokens": 0
+      },
+      "orchestration_after": {
+        "updated_seq": 3,
+        "therapy": "MI",
+        "current_step": "evocation",
+        "next_step": "explore",
+        "step_judgment": {
+          "action": "go_to",
+          "target_step": "explore",
+          "achieved": false,
+          "reason": "用户展现了明显的趋避冲突（想靠近但怕被拒绝），ambivalence指数较高(0.65)，且推荐流程中explore优先级为1。当前应回到explore步骤，温和探索用户对'被拒绝'的恐惧以及4分与5分之间的心理界限，处理浮现的ambivalence后再继续evocation。"
+        },
+        "assessment": {
+          "change_readiness": {
+            "index": 0.6,
+            "state": "preparation",
+            "confidence": 0.85,
+            "evidence": [
+              "用户依然在思考具体的行动计划，解释为什么选择4分而不是5分，表明仍处于准备阶段，但行动步伐变得更加谨慎和务实。"
+            ]
+          },
+          "ambivalence": {
+            "index": 0.65,
+            "state": "moderate",
+            "confidence": 0.9,
+            "evidence": [
+              "用户明确表达了想靠近（约吃饭）与害怕受伤（怕被拒绝）之间的内心拉扯，解释了为什么只设定为4分而不是更进一步的5分，展现了明显的趋避冲突。"
+            ]
+          },
+          "self_efficacy": {
+            "index": 0.55,
+            "state": "moderate",
+            "confidence": 0.8,
+            "evidence": [
+              "用户对执行4分的行动（约吃饭）有一定信心，但提到5分会'直接面对拒绝'，显示出对应对更高阶改变及潜在负面结果的自我效能感有所保留和下降。"
+            ]
+          },
+          "change_talk": {
+            "index": 0.7,
+            "state": "strong",
+            "confidence": 0.85,
+            "evidence": [
+              "用户仍在积极规划改变步骤，并为自己的选择（4分）提供理由（'因为约吃饭不会直接面对拒绝'），属于Reasons和Activation的结合。"
+            ]
+          },
+          "sustain_talk": {
+            "index": 0.35,
+            "state": "weak",
+            "confidence": 0.8,
+            "evidence": [
+              "用户提到5分会'直接面对拒绝'，这成为了维持当前安全距离（不跨入5分）的理由，体现了对更大改变的担忧和自我保护。"
+            ]
+          },
+          "mi_intervention_need": 0.522,
+          "overall_trend": "stable",
+          "primary_concern": "处理浮现的 ambivalence，探索对'被拒绝'的恐惧以及 4 分与 5 分之间的心理界限。",
+          "should_intervene": true,
+          "recommended_processes": [
+            {
+              "process": "explore",
+              "priority": 1,
+              "rationale": "用户展现了明显的趋避冲突（想靠近但怕拒绝），此时应优先使用 explore 过程，温和地探索'被拒绝'的担忧以及 4 分和 5 分的具体差异，接纳并命名其 ambivalence。"
+            },
+            {
+              "process": "evocation",
+              "priority": 2,
+              "rationale": "在探索恐惧之后，可以 evoke 用户对'约吃饭'（4分）这一安全步骤的积极感受和内在动力，巩固其自我效能感。"
+            }
+          ]
+        },
+        "skill_output": {
+          "technique": {
+            "name": "importance_confidence_ruler",
+            "description": "Elicit and strengthen the user's own reasons for change",
+            "steps": [
+              "邀请用户分享改变对自己意味着什么",
+              "用评分或探索性问题引出用户的改变语句",
+              "反射和强化用户说出的改变理由"
+            ]
+          },
+          "conversation_goal": "用量尺评分帮助用户量化改变的决心和能力感，强化已有的改变意愿",
+          "adaptation": {
+            "interaction_style": "exploratory",
+            "tone_adjustment": "好奇、温和地引导，不打鸡血不施压",
+            "pace_adjustment": "normal",
+            "culture_note": "用'你自己想改变的原因是什么'替代'你应该改变'；'为什么不是0分'比'为什么不是10分'更能引出改变理由"
+          },
+          "contraindications": [
+            {
+              "condition": "no_change_talk_present",
+              "reason": "用户完全没有表达改变意愿时，先回到 mi_explore 建立关系"
+            },
+            {
+              "condition": "crisis",
+              "reason": "危机状态下不适合做动机探索"
+            }
+          ],
+          "_skill_name": "mi_evocation"
+        },
+        "products": {},
+        "continue_eval": null
+      },
+      "error": null,
+      "wall_seconds": 152.37,
+      "agent_text": "听到你说“因为约吃饭不会直接面对拒绝”，感觉你在这个计划里非常用心地保护着自己。选择4分而不是直接冲到5分，其实是给自己留了一个安全的缓冲地带，让自己可以在不承受太大压力的情况下去尝试靠近。\n\n在这个让你觉得安全、不用直接面对拒绝的空间里，你期待这顿饭能为你带来些什么样的体验呢？"
+    },
+    {
+      "turn": 6,
+      "trace_id": "6fa823801cfd47a8",
+      "user_text": "听起来我是从小步开始，而不是一步到位？",
+      "agent_text_parts": [
+        "是的，你",
+        "给自己选了一个很",
+        "温柔、也很稳妥",
+        "的节奏。“从小步",
+        "开始”，",
+        "既照顾到了你想",
+        "靠近他的心意，",
+        "又保护了自己不用",
+        "直接去面对拒绝的压力",
+        "。\n\n当你用",
+        "这种小步的方式",
+        "去尝试时，",
+        "你觉得自己能迈出",
+        "这一步的把握有多大",
+        "呢？如果1",
+        "分是觉得心里",
+        "挺没底的，",
+        "10分是",
+        "觉得很有信心，",
+        "你会给现在的自己",
+        "打几分？"
+      ],
+      "events": [
+        {
+          "event": "token",
+          "data": "是的，你"
+        },
+        {
+          "event": "token",
+          "data": "给自己选了一个很"
+        },
+        {
+          "event": "token",
+          "data": "温柔、也很稳妥"
+        },
+        {
+          "event": "token",
+          "data": "的节奏。“从小步"
+        },
+        {
+          "event": "token",
+          "data": "开始”，"
+        },
+        {
+          "event": "token",
+          "data": "既照顾到了你想"
+        },
+        {
+          "event": "token",
+          "data": "靠近他的心意，"
+        },
+        {
+          "event": "token",
+          "data": "又保护了自己不用"
+        },
+        {
+          "event": "token",
+          "data": "直接去面对拒绝的压力"
+        },
+        {
+          "event": "token",
+          "data": "。\n\n当你用"
+        },
+        {
+          "event": "token",
+          "data": "这种小步的方式"
+        },
+        {
+          "event": "token",
+          "data": "去尝试时，"
+        },
+        {
+          "event": "token",
+          "data": "你觉得自己能迈出"
+        },
+        {
+          "event": "token",
+          "data": "这一步的把握有多大"
+        },
+        {
+          "event": "token",
+          "data": "呢？如果1"
+        },
+        {
+          "event": "token",
+          "data": "分是觉得心里"
+        },
+        {
+          "event": "token",
+          "data": "挺没底的，"
+        },
+        {
+          "event": "token",
+          "data": "10分是"
+        },
+        {
+          "event": "token",
+          "data": "觉得很有信心，"
+        },
+        {
+          "event": "token",
+          "data": "你会给现在的自己"
+        },
+        {
+          "event": "token",
+          "data": "打几分？"
+        },
+        {
+          "event": "dialogue_done",
+          "data": {
+            "trace_id": "6fa823801cfd47a8",
+            "owner": "therapy_mi"
+          }
+        },
+        {
+          "event": "final",
+          "data": {
+            "message": "听起来我是从小步开始，而不是一步到位？",
+            "risk_state": "SAFE",
+            "crisis": false
+          }
+        }
+      ],
+      "final": {
+        "message": "听起来我是从小步开始，而不是一步到位？",
+        "risk_state": "SAFE",
+        "crisis": false
+      },
+      "state_after": {
+        "owner": "therapy_mi",
+        "crisis": false,
+        "risk_level": "SAFE",
+        "therapy": {
+          "name": "MI",
+          "start_seq": 4,
+          "rounds": 4,
+          "step_index": 1,
+          "branch": null,
+          "basic_flow_complete": false,
+          "visited": [
+            "explore"
+          ]
+        },
+        "last_therapy_check_seq": 3,
+        "pending_user_tokens": 0
+      },
+      "orchestration_after": {
+        "updated_seq": 4,
+        "therapy": "MI",
+        "current_step": "explore",
+        "next_step": "evocation",
+        "step_judgment": {
+          "action": "advance",
+          "target_step": "evocation",
+          "achieved": true,
+          "reason": "用户已在explore阶段完成对改变策略的自我总结（'从小步开始'），change_talk较强（0.7），ambivalence被建设性整合，self_efficacy提升。探索阶段目标已达成，应进入evocation阶段，进一步唤起和强化用户内在智慧与积极自我觉察。"
+        },
+        "assessment": {
+          "change_readiness": {
+            "index": 0.65,
+            "state": "preparation",
+            "confidence": 0.85,
+            "evidence": [
+              "用户总结自己的计划为'从小步开始'，表明其仍在积极规划并准备采取具体的、安全的行动步骤（约吃饭）。"
+            ]
+          },
+          "ambivalence": {
+            "index": 0.55,
+            "state": "moderate",
+            "confidence": 0.85,
+            "evidence": [
+              "用户将之前对'直接面对拒绝'的担忧（4分与5分的冲突）转化为'小步开始'的策略，表明 ambivalence 依然存在，但正在被建设性地整合和接纳。"
+            ]
+          },
+          "self_efficacy": {
+            "index": 0.65,
+            "state": "moderate",
+            "confidence": 0.85,
+            "evidence": [
+              "用户通过自我反思，找到了适合自己的节奏（'小步开始'），显示出对自己能够以安全方式推进改变的自信心有所提升。"
+            ]
+          },
+          "change_talk": {
+            "index": 0.7,
+            "state": "strong",
+            "confidence": 0.9,
+            "evidence": [
+              "用户积极总结并确认自己的行动策略（'从小步开始'），属于 Activation 和 Reasons 的结合，表明其正在为改变寻找合理且可行的路径。"
+            ]
+          },
+          "sustain_talk": {
+            "index": 0.2,
+            "state": "weak",
+            "confidence": 0.85,
+            "evidence": [
+              "用户没有表达拒绝改变，而是将'不一步到位'合理化为一种保护性的策略，sustain talk 显著降低并转化为积极的行动规划。"
+            ]
+          },
+          "mi_intervention_need": 0.44,
+          "overall_trend": "improving",
+          "primary_concern": "巩固用户的自我觉察，肯定其'小步开始'的智慧，并探索这一安全策略带来的积极体验。",
+          "should_intervene": true,
+          "recommended_processes": [
+            {
+              "process": "evocation",
+              "priority": 1,
+              "rationale": "用户正在产生积极的自我总结（'从小步开始'），此时应优先使用 evocation，强化这种建设性的自我觉察，肯定其保护自己并向前迈进的内在智慧。"
+            },
+            {
+              "process": "explore",
+              "priority": 2,
+              "rationale": "在肯定其策略后，可以 explore 这个'小步'的具体细节，以及在这个安全节奏下用户的内心感受和期待。"
+            }
+          ]
+        },
+        "skill_output": {
+          "technique": {
+            "name": "oars",
+            "description": "用户正在确认和消化自己‘小步开始’的策略，甚至重复了这句话，说明她正在咀嚼这个概念。此时使用OARS（特别是反映、肯定和开放式提问）可以巩固这种积极的自我觉察，帮助她进一步探索这种温和节奏带来的内在感受。",
+            "steps": [
+              "Reflect and Affirm: 温和且明确地确认她的觉察，肯定她选择‘小步开始’是对自己的一种保护和温柔，让她感觉到被深深理解。",
+              "Open Question: 邀请她探索这种‘不一步到位’的节奏带给她的具体感受，或者问问她觉得这种策略对她接下来的尝试意味着什么。"
+            ]
+          },
+          "conversation_goal": "巩固用户对‘小步开始’策略的积极认同，探索这种温和、稳妥的节奏带给她的内在感受与意义，深化自我觉察。",
+          "adaptation": {
+            "interaction_style": "exploratory",
+            "tone_adjustment": "温和、接纳、充满肯定，像一面温暖的镜子映照出她的自我觉察，不带有丝毫催促。",
+            "pace_adjustment": "缓慢且跟随，给予用户充分的空间去消化和确认自己的状态，允许停顿，不急于推进到具体的行动计划。",
+            "culture_note": "肯定要具体：肯定她‘能觉察到自己选择了更稳妥的节奏’这一行为本身，而不是空泛地夸奖。尊重她‘不一步到位’的选择，将其正常化为一种自我保护的智慧（‘给自己留空间’）。"
+          },
+          "contraindications": [
+            {
+              "condition": "用户表现出对当前节奏的焦虑或自我怀疑",
+              "reason": "此时不应继续强调‘小步’的好处或推动行动，而应退回探索她内心的担忧，避免让她觉得自己的犹豫被否定。"
+            },
+            {
+              "condition": "用户似乎在机械重复或陷入思维停滞",
+              "reason": "避免过度解读或长篇大论，应使用简短的简单反映（Simple Reflection）接住话语，并留白等待她自然表达，避免压迫感。"
+            }
+          ],
+          "_skill_name": "mi_explore"
+        },
+        "products": {},
+        "continue_eval": null
+      },
+      "error": null,
+      "wall_seconds": 119.979,
+      "agent_text": "是的，你给自己选了一个很温柔、也很稳妥的节奏。“从小步开始”，既照顾到了你想靠近他的心意，又保护了自己不用直接去面对拒绝的压力。\n\n当你用这种小步的方式去尝试时，你觉得自己能迈出这一步的把握有多大呢？如果1分是觉得心里挺没底的，10分是觉得很有信心，你会给现在的自己打几分？"
+    },
+    {
+      "turn": 7,
+      "trace_id": "6bcff84e8f134bc5",
+      "user_text": "好，那我这周试试约他。",
+      "agent_text_parts": [
+        "听到你说",
+        "“这周试试",
+        "约他”，感觉",
+        "你真的带着“小",
+        "步开始”的",
+        "温柔，准备迈出",
+        "这一步了。尽管",
+        "心里对拒绝还有些",
+        "顾虑，但你依然",
+        "愿意去尝试，",
+        "这真的很不容易，",
+        "也特别勇敢。",
+        "\n\n在准备去",
+        "约他的时候，",
+        "你希望这周的",
+        "尝试，能给自己",
+        "带来怎样的一种感觉",
+        "或者体验呢？"
+      ],
+      "events": [
+        {
+          "event": "token",
+          "data": "听到你说"
+        },
+        {
+          "event": "token",
+          "data": "“这周试试"
+        },
+        {
+          "event": "token",
+          "data": "约他”，感觉"
+        },
+        {
+          "event": "token",
+          "data": "你真的带着“小"
+        },
+        {
+          "event": "token",
+          "data": "步开始”的"
+        },
+        {
+          "event": "token",
+          "data": "温柔，准备迈出"
+        },
+        {
+          "event": "token",
+          "data": "这一步了。尽管"
+        },
+        {
+          "event": "token",
+          "data": "心里对拒绝还有些"
+        },
+        {
+          "event": "token",
+          "data": "顾虑，但你依然"
+        },
+        {
+          "event": "token",
+          "data": "愿意去尝试，"
+        },
+        {
+          "event": "token",
+          "data": "这真的很不容易，"
+        },
+        {
+          "event": "token",
+          "data": "也特别勇敢。"
+        },
+        {
+          "event": "token",
+          "data": "\n\n在准备去"
+        },
+        {
+          "event": "token",
+          "data": "约他的时候，"
+        },
+        {
+          "event": "token",
+          "data": "你希望这周的"
+        },
+        {
+          "event": "token",
+          "data": "尝试，能给自己"
+        },
+        {
+          "event": "token",
+          "data": "带来怎样的一种感觉"
+        },
+        {
+          "event": "token",
+          "data": "或者体验呢？"
+        },
+        {
+          "event": "dialogue_done",
+          "data": {
+            "trace_id": "6bcff84e8f134bc5",
+            "owner": "therapy_mi"
+          }
+        },
+        {
+          "event": "final",
+          "data": {
+            "message": "好，那我这周试试约他。",
+            "risk_state": "SAFE",
+            "crisis": false
+          }
+        }
+      ],
+      "final": {
+        "message": "好，那我这周试试约他。",
+        "risk_state": "SAFE",
+        "crisis": false
+      },
+      "state_after": {
+        "owner": "therapy_mi",
+        "crisis": false,
+        "risk_level": "SAFE",
+        "therapy": {
+          "name": "MI",
+          "start_seq": 4,
+          "rounds": 5,
+          "step_index": 2,
+          "branch": null,
+          "basic_flow_complete": false,
+          "visited": [
+            "explore",
+            "evocation"
+          ]
+        },
+        "last_therapy_check_seq": 3,
+        "pending_user_tokens": 0
+      },
+      "orchestration_after": {
+        "updated_seq": 5,
+        "therapy": "MI",
+        "current_step": "evocation",
+        "next_step": "commitment",
+        "step_judgment": {
+          "action": "advance",
+          "target_step": null,
+          "achieved": true,
+          "reason": "用户已表达明确的行动承诺（'这周试试约他'），change_readiness进入action阶段（0.95），ambivalence极低（0.15），change_talk强烈（0.95），sustain_talk消失。evocation步骤已成功唤起用户内在动力并促成了行动承诺，符合进入commitment步骤的条件。"
+        },
+        "assessment": {
+          "change_readiness": {
+            "index": 0.95,
+            "state": "action",
+            "confidence": 0.95,
+            "evidence": [
+              "用户明确表示“我这周试试约他”，从之前的规划阶段直接迈入了具体的行动承诺阶段，表现出极高的改变准备度。"
+            ]
+          },
+          "ambivalence": {
+            "index": 0.15,
+            "state": "none",
+            "confidence": 0.9,
+            "evidence": [
+              "用户跳过了对信心打分的犹豫，直接做出了行动承诺，表明在行为层面上已经暂时搁置或克服了之前对拒绝的担忧，矛盾心理显著降低。"
+            ]
+          },
+          "self_efficacy": {
+            "index": 0.85,
+            "state": "high",
+            "confidence": 0.9,
+            "evidence": [
+              "用户果断地决定“这周试试”，没有表现出畏难情绪，显示出对自己能够以“小步”方式迈出这一步的自信心和掌控感。"
+            ]
+          },
+          "change_talk": {
+            "index": 0.95,
+            "state": "strong",
+            "confidence": 0.95,
+            "evidence": [
+              "“好，那我这周试试约他”是典型的 Commitment (CAT) 和 Taking steps，表达了极其强烈的改变意愿和明确的行动承诺。"
+            ]
+          },
+          "sustain_talk": {
+            "index": 0.0,
+            "state": "absent",
+            "confidence": 1.0,
+            "evidence": [
+              "用户完全没有表达维持现状、退缩或担忧的意愿，当前的话语全部集中在推进改变和落实行动上。"
+            ]
+          },
+          "mi_intervention_need": 0.19,
+          "overall_trend": "improving",
+          "primary_concern": "用户已经产生了强烈的改变语（承诺行动），当前的重点是巩固这一承诺，协助其将意图转化为具体的行动计划，并探索行动背后的内在动力。",
+          "should_intervene": false,
+          "recommended_processes": [
+            {
+              "process": "commitment",
+              "priority": 1,
+              "rationale": "用户已经表达了明确的行动承诺（Taking steps/Commitment），此时应优先使用 commitment 过程，帮助其细化计划（如具体怎么约、什么时候约），巩固这一积极的行动意图。"
+            },
+            {
+              "process": "evocation",
+              "priority": 2,
+              "rationale": "在巩固承诺的同时，可以通过 evocation 唤起用户做出这个决定时的内在力量、期待或勇气，进一步强化其自我效能感，为接下来的行动储备心理能量。"
+            }
+          ]
+        },
+        "skill_output": {
+          "technique": {
+            "name": "darn_cat",
+            "description": "Systematically explore the user's change talk along the DARN-CAT continuum. Since the user has already expressed strong Commitment and Taking steps (CAT), this technique will be used to gently explore the underlying Desires and Reasons (DARN) that fuel this commitment, and to further concretize their action plan.",
+            "steps": [
+              "Reflect and affirm the user's strong commitment (CAT) to take a small step this week, validating their courage and autonomy.",
+              "Elicit the underlying 'Reasons' or 'Desire' (DARN) by asking what makes this specific step meaningful or important to them personally right now.",
+              "Clarify the 'Taking steps' (CAT) by asking them to visualize or describe what the very first, smallest action of reaching out will look like, keeping it manageable."
+            ]
+          },
+          "conversation_goal": "To deepen the user's intrinsic motivation by exploring the personal reasons and desires behind their commitment, and to concretize their 'taking steps' plan for the week in a way that feels safe and empowering.",
+          "adaptation": {
+            "interaction_style": "exploratory",
+            "tone_adjustment": "Warm, validating, and gently curious. Acknowledge their bravery while maintaining a stance of 'your own decision' (你自己决定).",
+            "pace_adjustment": "Steady and unhurried, giving the user ample space to articulate their internal motivations without feeling rushed to execute the plan.",
+            "culture_note": "Chinese users often appreciate the pragmatic and modest approach of 'taking small steps' (小步). Frame the exploration around their personal agency ('你自己想这么做的原因是什么') and avoid any language that sounds like external pressure or telling them what they 'should' do."
+          },
+          "contraindications": [
+            {
+              "condition": "If the user begins to express anxiety, overthinking, or overwhelm when asked to detail the plan.",
+              "reason": "Pushing for too many logistical details might trigger sustain talk or decrease their high self-efficacy. The focus should pivot back to the emotional 'why' and reassuring them that the step can be even smaller if needed."
+            }
+          ],
+          "_skill_name": "mi_evocation"
+        },
+        "products": {},
+        "continue_eval": null
+      },
+      "error": null,
+      "wall_seconds": 108.782,
+      "agent_text": "听到你说“这周试试约他”，感觉你真的带着“小步开始”的温柔，准备迈出这一步了。尽管心里对拒绝还有些顾虑，但你依然愿意去尝试，这真的很不容易，也特别勇敢。\n\n在准备去约他的时候，你希望这周的尝试，能给自己带来怎样的一种感觉或者体验呢？"
+    },
+    {
+      "turn": 8,
+      "trace_id": "d6ff1610f14241a0",
+      "user_text": "无论结果怎样，至少我迈出这一步了。",
+      "agent_text_parts": [
+        "听到你说“无论",
+        "结果怎样，至少",
+        "我迈出这一步了",
+        "”，感觉你把重心",
+        "放在了自己的勇敢上",
+        "，而不是去死",
+        "磕那个结果。",
+        "能为了自己的心意",
+        "去行动，这",
+        "本身就已经非常了",
+        "不起了。\n\n",
+        "对你来说，能够",
+        "“为自己勇敢一次",
+        "”，是不是比什么都",
+        "重要呢？\n\n",
+        "为了让这第一步感觉",
+        "更踏实、更",
+        "在你可控的范围内",
+        "，你想象中“",
+        "约他”的最",
+        "小的一个动作会",
+        "是什么样的呢？比如",
+        "，是聊天时",
+        "顺口提一句，",
+        "还是发个简单的",
+        "消息？"
+      ],
+      "events": [
+        {
+          "event": "token",
+          "data": "听到你说“无论"
+        },
+        {
+          "event": "token",
+          "data": "结果怎样，至少"
+        },
+        {
+          "event": "token",
+          "data": "我迈出这一步了"
+        },
+        {
+          "event": "token",
+          "data": "”，感觉你把重心"
+        },
+        {
+          "event": "token",
+          "data": "放在了自己的勇敢上"
+        },
+        {
+          "event": "token",
+          "data": "，而不是去死"
+        },
+        {
+          "event": "token",
+          "data": "磕那个结果。"
+        },
+        {
+          "event": "token",
+          "data": "能为了自己的心意"
+        },
+        {
+          "event": "token",
+          "data": "去行动，这"
+        },
+        {
+          "event": "token",
+          "data": "本身就已经非常了"
+        },
+        {
+          "event": "token",
+          "data": "不起了。\n\n"
+        },
+        {
+          "event": "token",
+          "data": "对你来说，能够"
+        },
+        {
+          "event": "token",
+          "data": "“为自己勇敢一次"
+        },
+        {
+          "event": "token",
+          "data": "”，是不是比什么都"
+        },
+        {
+          "event": "token",
+          "data": "重要呢？\n\n"
+        },
+        {
+          "event": "token",
+          "data": "为了让这第一步感觉"
+        },
+        {
+          "event": "token",
+          "data": "更踏实、更"
+        },
+        {
+          "event": "token",
+          "data": "在你可控的范围内"
+        },
+        {
+          "event": "token",
+          "data": "，你想象中“"
+        },
+        {
+          "event": "token",
+          "data": "约他”的最"
+        },
+        {
+          "event": "token",
+          "data": "小的一个动作会"
+        },
+        {
+          "event": "token",
+          "data": "是什么样的呢？比如"
+        },
+        {
+          "event": "token",
+          "data": "，是聊天时"
+        },
+        {
+          "event": "token",
+          "data": "顺口提一句，"
+        },
+        {
+          "event": "token",
+          "data": "还是发个简单的"
+        },
+        {
+          "event": "token",
+          "data": "消息？"
+        },
+        {
+          "event": "dialogue_done",
+          "data": {
+            "trace_id": "d6ff1610f14241a0",
+            "owner": "therapy_mi"
+          }
+        },
+        {
+          "event": "final",
+          "data": {
+            "message": "无论结果怎样，至少我迈出这一步了。",
+            "risk_state": "SAFE",
+            "crisis": false
+          }
+        }
+      ],
+      "final": {
+        "message": "无论结果怎样，至少我迈出这一步了。",
+        "risk_state": "SAFE",
+        "crisis": false
+      },
+      "state_after": {
+        "owner": "daily",
+        "crisis": false,
+        "risk_level": "SAFE",
+        "therapy": null,
+        "last_therapy_check_seq": 3,
+        "pending_user_tokens": 0
+      },
+      "orchestration_after": {
+        "updated_seq": 6,
+        "therapy": "MI",
+        "current_step": "commitment",
+        "next_step": "commitment",
+        "step_judgment": {
+          "action": "advance",
+          "target_step": null,
+          "achieved": true,
+          "reason": "用户已表达强烈的行动承诺（'无论结果怎样，至少我迈出这一步了'），change_readiness达0.95进入action阶段，ambivalence基本消除（0.05），self_efficacy极高（0.95），commitment talk强烈。commitment步骤目标已达成，用户已明确行动意图并完成认知重构。主流程['explore', 'evocation', 'commitment']全部完成，应进入complete。"
+        },
+        "assessment": {
+          "change_readiness": {
+            "index": 0.95,
+            "state": "action",
+            "confidence": 0.95,
+            "evidence": [
+              "用户明确表示“至少我迈出这一步了”，表明其已经完全进入行动阶段，准备落实之前的计划。"
+            ]
+          },
+          "ambivalence": {
+            "index": 0.05,
+            "state": "none",
+            "confidence": 0.95,
+            "evidence": [
+              "用户通过“无论结果怎样”表达了对潜在负面结果（如被拒绝）的完全接纳，不再纠结，矛盾心理基本消除。"
+            ]
+          },
+          "self_efficacy": {
+            "index": 0.95,
+            "state": "high",
+            "confidence": 0.95,
+            "evidence": [
+              "用户将成功的标准从“对方是否答应”转变为“自己是否勇敢迈出这一步”，展现出极高的自我掌控感、内在力量和自信。"
+            ]
+          },
+          "change_talk": {
+            "index": 0.95,
+            "state": "strong",
+            "confidence": 0.95,
+            "evidence": [
+              "“至少我迈出这一步了”是强烈的 Commitment (CAT) 表达，不仅表达了改变意愿，还赋予了行动本身极高的内在价值。"
+            ]
+          },
+          "sustain_talk": {
+            "index": 0.0,
+            "state": "absent",
+            "confidence": 1.0,
+            "evidence": [
+              "用户完全没有表达退缩、担忧或维持现状的意愿，话语中充满了对行动的肯定。"
+            ]
+          },
+          "mi_intervention_need": 0.135,
+          "overall_trend": "improving",
+          "primary_concern": "用户已经成功完成了认知重构，将行动本身视为成功，当前的重点是巩固这一积极的心理建设，并支持其将计划落实。",
+          "should_intervene": false,
+          "recommended_processes": [
+            {
+              "process": "commitment",
+              "priority": 1,
+              "rationale": "用户已表达强烈的行动承诺并完成了认知重构，应优先使用 commitment 过程，协助其落实“这周约他”的具体细节，巩固行动意图。"
+            },
+            {
+              "process": "evocation",
+              "priority": 2,
+              "rationale": "通过 evocation 过程，进一步唤起和强化用户“无论结果怎样”的内在力量，肯定其看重行动本身的勇气，为接下来的行动储备心理能量。"
+            }
+          ]
+        },
+        "skill_output": {
+          "technique": {
+            "name": "change_plan",
+            "description": "帮助用户将强烈的行动意愿（'迈出这一步'）转化为具体、可执行的微小行动计划，探索具体的时间、方式和应对策略，确保计划现实且完全由用户主导。",
+            "steps": [
+              "强烈反映并肯定用户的承诺语言（'无论结果怎样，至少我迈出这一步了'），确认其将重心放在自我行动上的内在力量。",
+              "引导用户将'这一步'具体化：询问这周具体打算在什么时间、用什么最轻松的方式（如发个简单的消息或顺口提一句）来执行。",
+              "确认计划的可行性，并探讨支持性策略：询问'如果到时候觉得有些紧张，你会用什么方式提醒自己今天的这份勇敢？'以巩固承诺。"
+            ]
+          },
+          "conversation_goal": "将用户'迈出这一步'的强烈意愿转化为本周内具体、可操作的微小行动计划（如具体的时间和沟通方式），并确保计划完全由用户主导且感觉轻松可控。",
+          "adaptation": {
+            "interaction_style": "supportive",
+            "tone_adjustment": "温和、坚定、充满赋能感。肯定其勇气，同时保持轻松，不给用户增加额外的心理负担。",
+            "pace_adjustment": "跟随用户的节奏，在肯定其决心后，平稳地过渡到具体细节的探讨，允许用户慢慢构思具体的行动细节。",
+            "culture_note": "在中国文化语境下，行动往往伴随着对人际关系和面子的顾虑。强调'迈出这一步'本身的价值，降低对结果的期待，有助于减轻用户的心理负担。计划要足够微小，符合'小步快跑'的务实心态，尊重用户自己的节奏。"
+          },
+          "contraindications": [
+            {
+              "condition": "用户在探讨具体细节时表现出焦虑、犹豫或抗拒",
+              "reason": "如果细化计划让用户感到压力，应停止追问细节，退回到肯定其意愿和探索感受的阶段，避免过度推动导致退缩。"
+            }
+          ],
+          "_skill_name": "mi_commitment"
+        },
+        "products": {},
+        "continue_eval": {
+          "continue": false,
+          "marginal_utility_note": "用户已达到行动阶段（change_readiness=0.95），矛盾心理消除（ambivalence=0.05），自我效能感极高（self_efficacy=0.95），承诺话语强烈（change_talk=0.95）。认知重构已完成，将行动本身视为成功。继续干预的边际收益极低，且可能干扰用户即将落实的行动节奏。",
+          "reason": "疗程目标已达成，用户完成了从犹豫到行动承诺的完整转变。当前应结束疗法，避免过度干预导致边际效用递减或引发不必要的反思动摇。用户已具备足够的心理能量和自我掌控感去执行计划，此时退出是最优策略。"
+        }
+      },
+      "error": null,
+      "wall_seconds": 167.873,
+      "agent_text": "听到你说“无论结果怎样，至少我迈出这一步了”，感觉你把重心放在了自己的勇敢上，而不是去死磕那个结果。能为了自己的心意去行动，这本身就已经非常了不起了。\n\n对你来说，能够“为自己勇敢一次”，是不是比什么都重要呢？\n\n为了让这第一步感觉更踏实、更在你可控的范围内，你想象中“约他”的最小的一个动作会是什么样的呢？比如，是聊天时顺口提一句，还是发个简单的消息？"
+    }
+  ]
+}

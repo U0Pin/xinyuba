@@ -1,0 +1,1858 @@
+{
+  "seed_id": "dbt-impulsive-shopping",
+  "target_family": "DBT",
+  "scenario_label": "冲动消费-情绪性购物与暴食",
+  "scenario_description": "情绪低落时冲动消费与暴食，事后后悔循环",
+  "user_id": "seed-dbt-impulsive-shopping",
+  "session_id": "68510f1ef2ac43db",
+  "turns_total": 8,
+  "switched_to_therapy_at_turn": 1,
+  "actual_therapy": "MI",
+  "therapy_rounds": 8,
+  "orch_step_changes": 1,
+  "is_complete": false,
+  "final_risk_level": "SAFE",
+  "final_crisis": false,
+  "turns": [
+    {
+      "turn": 1,
+      "trace_id": "8a6fdee363c346a3",
+      "user_text": "我最近又开始乱花钱了，尤其是心情不好的时候。",
+      "agent_text_parts": [
+        "心情不好的时候",
+        "，确实",
+        "很容易忍不住乱花钱",
+        "。你说“又开始",
+        "”，是不是现在心里",
+        "觉得有些懊恼",
+        "和无奈呢？"
+      ],
+      "events": [
+        {
+          "event": "token",
+          "data": "心情不好的时候"
+        },
+        {
+          "event": "token",
+          "data": "，确实"
+        },
+        {
+          "event": "token",
+          "data": "很容易忍不住乱花钱"
+        },
+        {
+          "event": "token",
+          "data": "。你说“又开始"
+        },
+        {
+          "event": "token",
+          "data": "”，是不是现在心里"
+        },
+        {
+          "event": "token",
+          "data": "觉得有些懊恼"
+        },
+        {
+          "event": "token",
+          "data": "和无奈呢？"
+        },
+        {
+          "event": "dialogue_done",
+          "data": {
+            "trace_id": "8a6fdee363c346a3",
+            "owner": "daily"
+          }
+        },
+        {
+          "event": "final",
+          "data": {
+            "message": "我最近又开始乱花钱了，尤其是心情不好的时候。",
+            "risk_state": "LOW_RISK",
+            "crisis": false
+          }
+        }
+      ],
+      "final": {
+        "message": "我最近又开始乱花钱了，尤其是心情不好的时候。",
+        "risk_state": "LOW_RISK",
+        "crisis": false
+      },
+      "state_after": {
+        "owner": "therapy_mi",
+        "crisis": false,
+        "risk_level": "LOW_RISK",
+        "therapy": {
+          "name": "MI",
+          "start_seq": 3,
+          "rounds": 0,
+          "step_index": -1,
+          "branch": null,
+          "basic_flow_complete": false
+        },
+        "last_therapy_check_seq": 1,
+        "pending_user_tokens": 0
+      },
+      "orchestration_after": {},
+      "error": null,
+      "wall_seconds": 42.486,
+      "agent_text": "心情不好的时候，确实很容易忍不住乱花钱。你说“又开始”，是不是现在心里觉得有些懊恼和无奈呢？"
+    },
+    {
+      "turn": 2,
+      "trace_id": "dfcd788ef2494271",
+      "user_text": "上周情绪低落，我在网上一口气买了三千块的东西。",
+      "agent_text_parts": [
+        "听起来上周你",
+        "情绪挺低落的",
+        "，就一口气买了",
+        "三千块的东西。",
+        "现在回过头来看这件事",
+        "，你自己心里是什么",
+        "感觉呢？"
+      ],
+      "events": [
+        {
+          "event": "token",
+          "data": "听起来上周你"
+        },
+        {
+          "event": "token",
+          "data": "情绪挺低落的"
+        },
+        {
+          "event": "token",
+          "data": "，就一口气买了"
+        },
+        {
+          "event": "token",
+          "data": "三千块的东西。"
+        },
+        {
+          "event": "token",
+          "data": "现在回过头来看这件事"
+        },
+        {
+          "event": "token",
+          "data": "，你自己心里是什么"
+        },
+        {
+          "event": "token",
+          "data": "感觉呢？"
+        },
+        {
+          "event": "dialogue_done",
+          "data": {
+            "trace_id": "dfcd788ef2494271",
+            "owner": "therapy_mi"
+          }
+        },
+        {
+          "event": "final",
+          "data": {
+            "message": "上周情绪低落，我在网上一口气买了三千块的东西。",
+            "risk_state": "SAFE",
+            "crisis": false
+          }
+        }
+      ],
+      "final": {
+        "message": "上周情绪低落，我在网上一口气买了三千块的东西。",
+        "risk_state": "SAFE",
+        "crisis": false
+      },
+      "state_after": {
+        "owner": "therapy_mi",
+        "crisis": false,
+        "risk_level": "SAFE",
+        "therapy": {
+          "name": "MI",
+          "start_seq": 3,
+          "rounds": 1,
+          "step_index": 0,
+          "branch": null,
+          "basic_flow_complete": false
+        },
+        "last_therapy_check_seq": 1,
+        "pending_user_tokens": 0
+      },
+      "orchestration_after": {
+        "updated_seq": 1,
+        "therapy": "MI",
+        "current_step": "explore",
+        "next_step": "explore",
+        "step_judgment": {
+          "action": "stay",
+          "target_step": null,
+          "achieved": false,
+          "reason": "User is in precontemplation with no change talk. The explore step has just begun (Round 1). AI's last response appropriately opened exploration by reflecting and asking about the user's feelings. Need more dialogue to fully explore the emotional context and consequences before advancing."
+        },
+        "assessment": {
+          "change_readiness": {
+            "index": 0.2,
+            "state": "precontemplation",
+            "confidence": 0.85,
+            "evidence": [
+              "User reports an impulsive spending episode triggered by low mood, but makes no statements indicating a desire, need, or plan to change this behavior."
+            ]
+          },
+          "ambivalence": {
+            "index": 0.3,
+            "state": "mild",
+            "confidence": 0.7,
+            "evidence": [
+              "The user connects low mood to impulsive spending, which may imply a problem, but does not explicitly express conflicting feelings about changing the behavior."
+            ]
+          },
+          "self_efficacy": {
+            "index": 0.4,
+            "state": "low",
+            "confidence": 0.6,
+            "evidence": [
+              "The phrase '一口气' (in one go) suggests a lack of impulse control during the episode, though no direct statements about future ability to change are made."
+            ]
+          },
+          "change_talk": {
+            "index": 0.0,
+            "state": "absent",
+            "confidence": 0.95,
+            "evidence": [
+              "No DARN (Desire, Ability, Reasons, Need) or CAT (Commitment, Activation, Taking steps) statements are present."
+            ]
+          },
+          "sustain_talk": {
+            "index": 0.0,
+            "state": "absent",
+            "confidence": 0.95,
+            "evidence": [
+              "No statements defending the spending behavior or expressing reasons to continue it."
+            ]
+          },
+          "mi_intervention_need": 0.425,
+          "overall_trend": "stable",
+          "primary_concern": "User is presenting a problem behavior (impulsive spending due to low mood) but lacks change readiness and change talk.",
+          "should_intervene": true,
+          "recommended_processes": [
+            {
+              "process": "explore",
+              "priority": 1,
+              "rationale": "User is sharing a behavior linked to emotional distress but shows no explicit change talk. Exploring the context, emotions, and consequences without pushing for change is the best first step to build rapport and gently evoke ambivalence."
+            }
+          ]
+        },
+        "skill_output": {
+          "technique": {
+            "name": "oars",
+            "description": "用户陈述了情绪低落与冲动消费的联系，存在轻微的矛盾心理（mild ambivalence）。此时使用OARS技术（特别是反映性倾听和开放式提问）有助于建立治疗关系，接纳用户的情绪，并温和地探索他们对此事的内在感受，而不急于推动改变。",
+            "steps": [
+              "1. 运用反映性倾听（Reflective listening），接纳并反映用户情绪低落以及冲动购物后的状态，表达深层的共情与理解。",
+              "2. 给予具体的肯定（Affirmation），认可用户在情绪低谷时仍能觉察并表达自己行为的努力。",
+              "3. 提出开放式问题（Open question），例如使用‘你自己觉得呢？’或‘这件事让你心里有什么样的感受？’，邀请用户进一步探索内心的真实想法。"
+            ]
+          },
+          "conversation_goal": "建立安全、合作的治疗关系，接纳用户的情绪低落，并温和地探索冲动消费行为背后的心理感受及轻微的矛盾感，不施加任何改变的压力。",
+          "adaptation": {
+            "interaction_style": "exploratory",
+            "tone_adjustment": "温和、包容、不带评判。像一个耐心的倾听者，让用户感到被完全接纳和理解。",
+            "pace_adjustment": "缓慢、从容。给用户留出足够的空间去体会和表达情绪，不急于推进到解决问题或行为矫正阶段。",
+            "culture_note": "在中国文化语境下，避免直接评判其消费行为。使用‘你自己觉得呢？’来引导自我反思。若用户表达纠结，可用‘心里有不同的声音在打架’来正常化矛盾。肯定需具体化，如‘在情绪这么低落时，你还能把这件事梳理出来，这很不容易’。"
+          },
+          "contraindications": [
+            {
+              "condition": "直接给出财务建议或评判其消费行为",
+              "reason": "违背MI的合作与非评判原则，会破坏治疗关系，引发用户的防御心理。"
+            },
+            {
+              "condition": "急于推动用户制定控制消费的计划",
+              "reason": "用户目前仅有轻微矛盾，过早推动改变会忽略其情绪需求，容易导致抗拒。"
+            },
+            {
+              "condition": "忽视‘情绪低落’的核心感受，仅聚焦于‘买东西’的行为",
+              "reason": "情绪是行为的触发点，忽略情绪会显得缺乏共情，无法建立深层的信任关系。"
+            }
+          ],
+          "_skill_name": "mi_explore"
+        },
+        "products": {},
+        "continue_eval": null
+      },
+      "error": null,
+      "wall_seconds": 135.17,
+      "agent_text": "听起来上周你情绪挺低落的，就一口气买了三千块的东西。现在回过头来看这件事，你自己心里是什么感觉呢？"
+    },
+    {
+      "turn": 3,
+      "trace_id": "c2646fc531654ce8",
+      "user_text": "第二天醒来看到账单就后悔了，退了一部分，但还是留了不少。",
+      "agent_text_parts": [
+        "看到账单",
+        "时的后悔，一定",
+        "让你心里挺不好",
+        "受的。不过，",
+        "能去退掉",
+        "一部分，说明你",
+        "即使在情绪低落的时候",
+        "，也还在努力",
+        "帮自己止损，",
+        "这挺不容易",
+        "的。现在看着",
+        "留下来的那些东西，",
+        "你心里是什么感觉",
+        "呢？"
+      ],
+      "events": [
+        {
+          "event": "token",
+          "data": "看到账单"
+        },
+        {
+          "event": "token",
+          "data": "时的后悔，一定"
+        },
+        {
+          "event": "token",
+          "data": "让你心里挺不好"
+        },
+        {
+          "event": "token",
+          "data": "受的。不过，"
+        },
+        {
+          "event": "token",
+          "data": "能去退掉"
+        },
+        {
+          "event": "token",
+          "data": "一部分，说明你"
+        },
+        {
+          "event": "token",
+          "data": "即使在情绪低落的时候"
+        },
+        {
+          "event": "token",
+          "data": "，也还在努力"
+        },
+        {
+          "event": "token",
+          "data": "帮自己止损，"
+        },
+        {
+          "event": "token",
+          "data": "这挺不容易"
+        },
+        {
+          "event": "token",
+          "data": "的。现在看着"
+        },
+        {
+          "event": "token",
+          "data": "留下来的那些东西，"
+        },
+        {
+          "event": "token",
+          "data": "你心里是什么感觉"
+        },
+        {
+          "event": "token",
+          "data": "呢？"
+        },
+        {
+          "event": "dialogue_done",
+          "data": {
+            "trace_id": "c2646fc531654ce8",
+            "owner": "therapy_mi"
+          }
+        },
+        {
+          "event": "final",
+          "data": {
+            "message": "第二天醒来看到账单就后悔了，退了一部分，但还是留了不少。",
+            "risk_state": "SAFE",
+            "crisis": false
+          }
+        }
+      ],
+      "final": {
+        "message": "第二天醒来看到账单就后悔了，退了一部分，但还是留了不少。",
+        "risk_state": "SAFE",
+        "crisis": false
+      },
+      "state_after": {
+        "owner": "therapy_mi",
+        "crisis": false,
+        "risk_level": "SAFE",
+        "therapy": {
+          "name": "MI",
+          "start_seq": 3,
+          "rounds": 2,
+          "step_index": 0,
+          "branch": null,
+          "basic_flow_complete": false
+        },
+        "last_therapy_check_seq": 1,
+        "pending_user_tokens": 0
+      },
+      "orchestration_after": {
+        "updated_seq": 2,
+        "therapy": "MI",
+        "current_step": "explore",
+        "next_step": "explore",
+        "step_judgment": {
+          "action": "stay",
+          "target_step": null,
+          "achieved": false,
+          "reason": "用户正处于explore阶段，表现出明显的矛盾心理（退了一部分但留了不少）。当前状态评估显示ambivalence指数为0.65，推荐的最高优先级处理过程仍是explore。AI的最后一个问题正在引导用户探索留下物品时的感受，这是深入探索矛盾心理的关键环节，尚未完成。需要继续留在explore步骤，帮助用户充分探索保留物品背后的情感需求和矛盾感受。"
+        },
+        "assessment": {
+          "change_readiness": {
+            "index": 0.6,
+            "state": "preparation",
+            "confidence": 0.9,
+            "evidence": [
+              "User expresses regret ('后悔了') and has taken partial action ('退了一部分'), indicating a shift from precontemplation to contemplation."
+            ]
+          },
+          "ambivalence": {
+            "index": 0.65,
+            "state": "moderate",
+            "confidence": 0.85,
+            "evidence": [
+              "User shows clear mixed feelings: regretting the purchase and returning some items ('退了一部分'), but also keeping a significant amount ('但还是留了不少')."
+            ]
+          },
+          "self_efficacy": {
+            "index": 0.5,
+            "state": "low",
+            "confidence": 0.7,
+            "evidence": [
+              "User was able to take corrective action by returning some items ('退了一部分'), showing some ability to change, though keeping many items ('留了不少') suggests an ongoing struggle with impulse control."
+            ]
+          },
+          "change_talk": {
+            "index": 0.7,
+            "state": "strong",
+            "confidence": 0.95,
+            "evidence": [
+              "User expresses regret ('后悔了') which implies reasons for change, and explicitly states taking steps by returning some items ('退了一部分')."
+            ]
+          },
+          "sustain_talk": {
+            "index": 0.3,
+            "state": "weak",
+            "confidence": 0.7,
+            "evidence": [
+              "The phrase '但还是留了不少' (but still kept a lot) indicates a partial retention of the problematic behavior, showing mild sustain talk or lingering attachment to the purchased items."
+            ]
+          },
+          "mi_intervention_need": 0.527,
+          "overall_trend": "improving",
+          "primary_concern": "User is showing emerging change talk and taking partial steps to change, but significant ambivalence remains as they kept many items despite regretting the impulsive purchase.",
+          "should_intervene": true,
+          "recommended_processes": [
+            {
+              "process": "explore",
+              "priority": 1,
+              "rationale": "User is experiencing clear ambivalence (returned some but kept a lot). Exploring both sides of this ambivalence gently will help them resolve it and understand the underlying emotional needs that triggered the spending."
+            },
+            {
+              "process": "evocation",
+              "priority": 2,
+              "rationale": "User has expressed regret and taken initial steps. Evoking their own reasons for regret and highlighting their ability to take corrective action will further strengthen change talk and self-efficacy."
+            }
+          ]
+        },
+        "skill_output": {
+          "technique": {
+            "name": "oars",
+            "description": "User is experiencing moderate ambivalence (regret vs. keeping items) and expressing negative emotions (regret). OARS is ideal to build rapport, affirm their effort to mitigate the situation, and gently explore the mixed feelings without pushing for change.",
+            "steps": [
+              "Affirm the user's proactive step of returning some items to minimize loss, validating their effort despite being in a low mood.",
+              "Use complex reflection to normalize the ambivalence, acknowledging the internal conflict between regretting the purchase and the pull to keep some items.",
+              "Ask an open question to explore the user's feelings, thoughts, or reasons regarding the items they decided to keep."
+            ]
+          },
+          "conversation_goal": "To validate the user's emotional experience and effort, normalize their ambivalence, and gently explore the feelings associated with keeping the remaining items.",
+          "adaptation": {
+            "interaction_style": "exploratory",
+            "tone_adjustment": "Warm, empathetic, and non-judgmental, acknowledging the difficulty of the situation.",
+            "pace_adjustment": "Slow and patient, allowing the user time to process and articulate their mixed feelings.",
+            "culture_note": "Use specific affirmations (e.g., acknowledging the effort to stop the loss despite feeling down). Normalize the internal conflict using phrases like '心里有不同的声音在打架' (different voices fighting inside). Avoid moralizing the shopping behavior."
+          },
+          "contraindications": [
+            {
+              "condition": "Giving direct advice to return the rest of the items",
+              "reason": "This would violate the MI spirit of collaboration and autonomy, potentially triggering resistance or defensiveness."
+            },
+            {
+              "condition": "Judging or criticizing the impulsive shopping behavior",
+              "reason": "This would damage the therapeutic alliance and make the user feel ashamed, hindering open exploration."
+            }
+          ],
+          "_skill_name": "mi_explore"
+        },
+        "products": {},
+        "continue_eval": null
+      },
+      "error": null,
+      "wall_seconds": 131.482,
+      "agent_text": "看到账单时的后悔，一定让你心里挺不好受的。不过，能去退掉一部分，说明你即使在情绪低落的时候，也还在努力帮自己止损，这挺不容易的。现在看着留下来的那些东西，你心里是什么感觉呢？"
+    },
+    {
+      "turn": 4,
+      "trace_id": "6df1bd63cabd49a6",
+      "user_text": "我知道这样不好，但每次情绪一上来我就想买点什么。",
+      "agent_text_parts": [
+        "听到你说“知道",
+        "这样不好”，能",
+        "感觉到你心里其实",
+        "一直有个声音在",
+        "提醒着自己。理智",
+        "上觉得不该买",
+        "，但情绪涌",
+        "上来的时候，那种",
+        "想要通过“买",
+        "点什么”来缓解",
+        "的冲动又特别",
+        "强烈，这种拉扯",
+        "一定让你挺无奈的",
+        "。当情绪一",
+        "上来，那种特别",
+        "想买点什么的冲动",
+        "出现时，你",
+        "通常是在经历着",
+        "怎样的感受呢？"
+      ],
+      "events": [
+        {
+          "event": "token",
+          "data": "听到你说“知道"
+        },
+        {
+          "event": "token",
+          "data": "这样不好”，能"
+        },
+        {
+          "event": "token",
+          "data": "感觉到你心里其实"
+        },
+        {
+          "event": "token",
+          "data": "一直有个声音在"
+        },
+        {
+          "event": "token",
+          "data": "提醒着自己。理智"
+        },
+        {
+          "event": "token",
+          "data": "上觉得不该买"
+        },
+        {
+          "event": "token",
+          "data": "，但情绪涌"
+        },
+        {
+          "event": "token",
+          "data": "上来的时候，那种"
+        },
+        {
+          "event": "token",
+          "data": "想要通过“买"
+        },
+        {
+          "event": "token",
+          "data": "点什么”来缓解"
+        },
+        {
+          "event": "token",
+          "data": "的冲动又特别"
+        },
+        {
+          "event": "token",
+          "data": "强烈，这种拉扯"
+        },
+        {
+          "event": "token",
+          "data": "一定让你挺无奈的"
+        },
+        {
+          "event": "token",
+          "data": "。当情绪一"
+        },
+        {
+          "event": "token",
+          "data": "上来，那种特别"
+        },
+        {
+          "event": "token",
+          "data": "想买点什么的冲动"
+        },
+        {
+          "event": "token",
+          "data": "出现时，你"
+        },
+        {
+          "event": "token",
+          "data": "通常是在经历着"
+        },
+        {
+          "event": "token",
+          "data": "怎样的感受呢？"
+        },
+        {
+          "event": "dialogue_done",
+          "data": {
+            "trace_id": "6df1bd63cabd49a6",
+            "owner": "therapy_mi"
+          }
+        },
+        {
+          "event": "final",
+          "data": {
+            "message": "我知道这样不好，但每次情绪一上来我就想买点什么。",
+            "risk_state": "SAFE",
+            "crisis": false
+          }
+        }
+      ],
+      "final": {
+        "message": "我知道这样不好，但每次情绪一上来我就想买点什么。",
+        "risk_state": "SAFE",
+        "crisis": false
+      },
+      "state_after": {
+        "owner": "therapy_mi",
+        "crisis": false,
+        "risk_level": "SAFE",
+        "therapy": {
+          "name": "MI",
+          "start_seq": 3,
+          "rounds": 3,
+          "step_index": 0,
+          "branch": null,
+          "basic_flow_complete": false
+        },
+        "last_therapy_check_seq": 1,
+        "pending_user_tokens": 0
+      },
+      "orchestration_after": {
+        "updated_seq": 3,
+        "therapy": "MI",
+        "current_step": "explore",
+        "next_step": "explore",
+        "step_judgment": {
+          "action": "stay",
+          "target_step": null,
+          "achieved": false,
+          "reason": "用户仍处于高矛盾心理（ambivalence=0.85）和低自我效能（self_efficacy=0.3）状态。用户表达了'知道不好但控制不住'的强烈内心冲突，当前explore步骤尚未充分探索情绪触发点和冲动背后的感受。AI最后一轮提问正在引导用户深入探索情绪触发时的具体感受，需要继续停留在explore步骤，帮助用户充分表达和理解自己的情绪模式，为后续evocation和commitment步骤奠定基础。"
+        },
+        "assessment": {
+          "change_readiness": {
+            "index": 0.65,
+            "state": "preparation",
+            "confidence": 0.9,
+            "evidence": [
+              "User explicitly states '我知道这样不好' (I know this is not good), showing awareness of the problem and contemplation of change."
+            ]
+          },
+          "ambivalence": {
+            "index": 0.85,
+            "state": "strong",
+            "confidence": 0.95,
+            "evidence": [
+              "Clear contrast between '我知道这样不好' (reason for change) and '但每次情绪一上来我就想买点什么' (barrier to change), indicating strong internal conflict."
+            ]
+          },
+          "self_efficacy": {
+            "index": 0.3,
+            "state": "low",
+            "confidence": 0.85,
+            "evidence": [
+              "The phrase '每次情绪一上来我就想买点什么' (every time my emotions flare up I want to buy something) indicates a perceived lack of control over impulses when emotionally triggered."
+            ]
+          },
+          "change_talk": {
+            "index": 0.4,
+            "state": "moderate",
+            "confidence": 0.8,
+            "evidence": [
+              "'我知道这样不好' reflects recognition of the negative consequences, serving as a reason (R) for change."
+            ]
+          },
+          "sustain_talk": {
+            "index": 0.75,
+            "state": "strong",
+            "confidence": 0.9,
+            "evidence": [
+              "'但每次情绪一上来我就想买点什么' strongly expresses the compulsion and the perceived inability to resist the urge when emotionally triggered."
+            ]
+          },
+          "mi_intervention_need": 0.64,
+          "overall_trend": "stable",
+          "primary_concern": "High ambivalence and low self-efficacy. The user recognizes the problem but feels powerless to control their impulses when emotionally triggered.",
+          "should_intervene": true,
+          "recommended_processes": [
+            {
+              "process": "explore",
+              "priority": 1,
+              "rationale": "User exhibits high ambivalence ('I know it's bad, but...'). Exploring both the emotional triggers and the desire to change will help resolve this conflict without pushing."
+            },
+            {
+              "process": "evocation",
+              "priority": 2,
+              "rationale": "User shows low self-efficacy regarding emotional triggers. Evoking past successes in managing emotions or exploring alternative coping mechanisms can build confidence and strengthen change talk."
+            }
+          ]
+        },
+        "skill_output": {
+          "technique": {
+            "name": "oars",
+            "description": "用户表达了强烈的矛盾心理（ambivalence 0.85）和维持现状的谈话（sustain talk 0.75）。此时使用 OARS（特别是复杂反映和肯定）可以接纳他们的内心冲突，正常化这种状态，并引导他们安全地探索情绪冲动背后的感受，而不是急于推动改变。",
+            "steps": [
+              "1. 复杂反映 (Complex Reflection)：反映用户理智（知道不好）与情绪（冲动强烈）之间的拉扯，使用‘心里有不同的声音在打架’来正常化这种矛盾。",
+              "2. 肯定 (Affirmation)：具体肯定用户在情绪涌上来时，依然能保持‘知道这样不好’的自我觉察能力，以及愿意坦诚表达这种无奈的努力。",
+              "3. 开放式提问 (Open Question)：邀请用户进一步探索‘情绪一上来’时，内心具体在经历怎样的感受，或者那种‘想买点什么’的冲动试图帮他们满足什么需求。"
+            ]
+          },
+          "conversation_goal": "通过深度反映和具体肯定，接纳用户在理智与情绪间的强烈拉扯，正常化其矛盾心理，并引导其安全地探索情绪冲动背后的深层感受与内在需求。",
+          "adaptation": {
+            "interaction_style": "exploratory",
+            "tone_adjustment": "温和、接纳、充满共情。传达出‘这种拉扯是很正常的，我完全理解你的无奈’的态度，绝不评判或说教。",
+            "pace_adjustment": "舒缓、留白。给用户充足的时间去体会和表达内心的矛盾，不催促他们立刻找到解决办法或做出改变。",
+            "culture_note": "用‘心里有不同的声音在打架’来正常化矛盾。肯定必须具体，例如肯定其‘在情绪涌上来时还能觉察到这样不好’的内在力量，而不是空泛的表扬。探索时多用‘你自己觉得呢？’来引导用户自己寻找答案。"
+          },
+          "contraindications": [
+            {
+              "condition": "直接提供控制情绪或限制购物的具体建议（如‘下次想买东西时试试深呼吸’或‘把手机放下’）。",
+              "reason": "在强烈的矛盾和 sustain talk 阶段，过早给建议会被视为说教和控制，破坏合作联盟，引发用户的抗拒心理，违背 MI 中不劝诫、不给未经请求建议的核心原则。"
+            }
+          ],
+          "_skill_name": "mi_explore"
+        },
+        "products": {},
+        "continue_eval": null
+      },
+      "error": null,
+      "wall_seconds": 121.16,
+      "agent_text": "听到你说“知道这样不好”，能感觉到你心里其实一直有个声音在提醒着自己。理智上觉得不该买，但情绪涌上来的时候，那种想要通过“买点什么”来缓解的冲动又特别强烈，这种拉扯一定让你挺无奈的。当情绪一上来，那种特别想买点什么的冲动出现时，你通常是在经历着怎样的感受呢？"
+    },
+    {
+      "turn": 5,
+      "trace_id": "0564e3a445fc4372",
+      "user_text": "吃也是，心情差的时候我能吃一整袋薯片再加一桶冰淇淋。",
+      "agent_text_parts": [
+        "听起来，不管是",
+        "买东西还是吃下",
+        "那么多薯片和冰淇淋",
+        "，其实都是你在",
+        "“心情差”",
+        "的时候，试图给自己",
+        "找的一种安慰。",
+        "你能这么坦诚地",
+        "把这些说出来，并且",
+        "察觉到它们都和心情",
+        "不好有关，",
+        "这真的很不容易。",
+        "当那种心情差",
+        "的感觉袭来，让你",
+        "忍不住想吃下那么多",
+        "东西的时候，那一刻",
+        "你心里最强烈的",
+        "感受是什么呢？或者说",
+        "，那些食物在那",
+        "一刻，试图帮你",
+        "“填补”些什么",
+        "呢？"
+      ],
+      "events": [
+        {
+          "event": "token",
+          "data": "听起来，不管是"
+        },
+        {
+          "event": "token",
+          "data": "买东西还是吃下"
+        },
+        {
+          "event": "token",
+          "data": "那么多薯片和冰淇淋"
+        },
+        {
+          "event": "token",
+          "data": "，其实都是你在"
+        },
+        {
+          "event": "token",
+          "data": "“心情差”"
+        },
+        {
+          "event": "token",
+          "data": "的时候，试图给自己"
+        },
+        {
+          "event": "token",
+          "data": "找的一种安慰。"
+        },
+        {
+          "event": "token",
+          "data": "你能这么坦诚地"
+        },
+        {
+          "event": "token",
+          "data": "把这些说出来，并且"
+        },
+        {
+          "event": "token",
+          "data": "察觉到它们都和心情"
+        },
+        {
+          "event": "token",
+          "data": "不好有关，"
+        },
+        {
+          "event": "token",
+          "data": "这真的很不容易。"
+        },
+        {
+          "event": "token",
+          "data": "当那种心情差"
+        },
+        {
+          "event": "token",
+          "data": "的感觉袭来，让你"
+        },
+        {
+          "event": "token",
+          "data": "忍不住想吃下那么多"
+        },
+        {
+          "event": "token",
+          "data": "东西的时候，那一刻"
+        },
+        {
+          "event": "token",
+          "data": "你心里最强烈的"
+        },
+        {
+          "event": "token",
+          "data": "感受是什么呢？或者说"
+        },
+        {
+          "event": "token",
+          "data": "，那些食物在那"
+        },
+        {
+          "event": "token",
+          "data": "一刻，试图帮你"
+        },
+        {
+          "event": "token",
+          "data": "“填补”些什么"
+        },
+        {
+          "event": "token",
+          "data": "呢？"
+        },
+        {
+          "event": "dialogue_done",
+          "data": {
+            "trace_id": "0564e3a445fc4372",
+            "owner": "therapy_mi"
+          }
+        },
+        {
+          "event": "final",
+          "data": {
+            "message": "吃也是，心情差的时候我能吃一整袋薯片再加一桶冰淇淋。",
+            "risk_state": "LOW_RISK",
+            "crisis": false
+          }
+        }
+      ],
+      "final": {
+        "message": "吃也是，心情差的时候我能吃一整袋薯片再加一桶冰淇淋。",
+        "risk_state": "LOW_RISK",
+        "crisis": false
+      },
+      "state_after": {
+        "owner": "therapy_mi",
+        "crisis": false,
+        "risk_level": "LOW_RISK",
+        "therapy": {
+          "name": "MI",
+          "start_seq": 3,
+          "rounds": 4,
+          "step_index": 0,
+          "branch": null,
+          "basic_flow_complete": false
+        },
+        "last_therapy_check_seq": 1,
+        "pending_user_tokens": 0
+      },
+      "orchestration_after": {
+        "updated_seq": 4,
+        "therapy": "MI",
+        "current_step": "explore",
+        "next_step": "explore",
+        "step_judgment": {
+          "action": "stay",
+          "target_step": null,
+          "achieved": false,
+          "reason": "用户正在逐步揭示其情绪应对机制（从冲动购物到暴食），当前仍处于explore阶段，需要继续深入探索触发这些行为的具体情绪和内在需求。change_readiness处于contemplation阶段，change_talk微弱，self_efficacy极低，尚未准备好进入evocation阶段。AI的最新回应正在引导用户探索暴食行为背后的情绪填补需求，应继续当前步骤以建立更深层的情绪觉察。"
+        },
+        "assessment": {
+          "change_readiness": {
+            "index": 0.5,
+            "state": "contemplation",
+            "confidence": 0.85,
+            "evidence": [
+              "User is describing their coping mechanisms ('吃也是，心情差的时候我能吃...') without expressing a direct intention or plan to change, indicating they are still in the process of recognizing and weighing the pattern."
+            ]
+          },
+          "ambivalence": {
+            "index": 0.75,
+            "state": "moderate",
+            "confidence": 0.9,
+            "evidence": [
+              "The continuation of describing impulsive behaviors (expanding from shopping to binge eating) alongside the previous admission of '我知道这样不好' shows a persistent conflict between recognizing the negative impact and the overwhelming urge to cope with negative emotions."
+            ]
+          },
+          "self_efficacy": {
+            "index": 0.25,
+            "state": "very_low",
+            "confidence": 0.85,
+            "evidence": [
+              "The phrase '我能吃一整袋薯片再加一桶冰淇淋' implies a lack of control over impulses when experiencing negative emotions, highlighting low confidence in their ability to resist these urges."
+            ]
+          },
+          "change_talk": {
+            "index": 0.15,
+            "state": "weak",
+            "confidence": 0.8,
+            "evidence": [
+              "The current message is purely descriptive of the problem behavior (binge eating when feeling down) and contains no explicit desire, ability, reasons, or need for change."
+            ]
+          },
+          "sustain_talk": {
+            "index": 0.5,
+            "state": "moderate",
+            "confidence": 0.8,
+            "evidence": [
+              "Describing the intensity and inevitability of the behavior ('我能吃一整袋...') when triggered by bad moods acts as a barrier to change, reinforcing the status quo of using food to cope."
+            ]
+          },
+          "mi_intervention_need": 0.603,
+          "overall_trend": "stable",
+          "primary_concern": "Low self-efficacy and lack of alternative coping mechanisms. The user relies heavily on impulsive behaviors (shopping, binge eating) to manage emotional distress, feeling powerless to stop when triggered.",
+          "should_intervene": true,
+          "recommended_processes": [
+            {
+              "process": "explore",
+              "priority": 1,
+              "rationale": "User is revealing more about their emotional coping mechanisms (binge eating). Exploring the specific emotions and triggers behind this behavior will help build awareness without pushing for premature change."
+            },
+            {
+              "process": "evocation",
+              "priority": 2,
+              "rationale": "Since self-efficacy is low and change talk is minimal, evoking any past instances where the user successfully managed negative emotions without resorting to impulsive behaviors can help build confidence and elicit change talk."
+            }
+          ]
+        },
+        "skill_output": {
+          "technique": {
+            "name": "oars",
+            "description": "The user is expanding on their impulsive coping mechanisms by revealing binge eating triggered by negative emotions. OARS is ideal here to provide a safe, non-judgmental space, use complex reflections to connect the behavior to underlying emotional pain, and use open questions to further explore the specific feelings of '心情差' (feeling down).",
+            "steps": [
+              "Use a complex reflection to connect the binge eating to the emotional distress, validating the food as a search for comfort without judging the behavior.",
+              "Provide a specific affirmation for their self-awareness and courage in sharing this vulnerable behavior and recognizing its link to their mood.",
+              "Ask an open question to explore the specific emotional void, unmet need, or feeling that the food is trying to soothe in that exact moment."
+            ]
+          },
+          "conversation_goal": "To deepen the exploration of the emotional triggers behind impulsive behaviors (shopping and eating) and strengthen the therapeutic alliance through empathetic reflection, normalization, and validation.",
+          "adaptation": {
+            "interaction_style": "exploratory",
+            "tone_adjustment": "Warm, non-judgmental, and deeply empathetic. Acknowledging the potential shame that might accompany binge eating by responding with pure acceptance and curiosity.",
+            "pace_adjustment": "Slow and steady. Allowing the user space to sit with their feelings and not rushing to analyze, label, or fix the eating behavior.",
+            "culture_note": "肯定用户的自我觉察要具体（如：'能坦诚面对这些，并察觉到它们和情绪的关系，这需要很大的勇气'）。用'心里有两个声音'来正常化矛盾，避免让用户因为暴食行为产生额外的病耻感。"
+          },
+          "contraindications": [
+            {
+              "condition": "Giving dietary advice, suggesting portion control, or recommending strict eating rules.",
+              "reason": "This violates MI principles, shifts the dynamic to an authoritarian expert-patient relationship, and will likely trigger resistance or sustain talk."
+            },
+            {
+              "condition": "Expressing shock, concern, or judgment about the quantity of food consumed.",
+              "reason": "Can induce shame, break the collaborative and non-judgmental atmosphere, and cause the user to shut down or hide further behaviors."
+            },
+            {
+              "condition": "Focusing solely on the physical act of overeating rather than the emotional trigger.",
+              "reason": "Misses the opportunity to explore the underlying emotional needs (the 'why'), which is crucial for understanding and resolving the user's ambivalence."
+            }
+          ],
+          "_skill_name": "mi_explore"
+        },
+        "products": {},
+        "continue_eval": null
+      },
+      "error": null,
+      "wall_seconds": 111.092,
+      "agent_text": "听起来，不管是买东西还是吃下那么多薯片和冰淇淋，其实都是你在“心情差”的时候，试图给自己找的一种安慰。你能这么坦诚地把这些说出来，并且察觉到它们都和心情不好有关，这真的很不容易。当那种心情差的感觉袭来，让你忍不住想吃下那么多东西的时候，那一刻你心里最强烈的感受是什么呢？或者说，那些食物在那一刻，试图帮你“填补”些什么呢？"
+    },
+    {
+      "turn": 6,
+      "trace_id": "b8c7b8ec471d4cfd",
+      "user_text": "吃完了又恶心自己，又后悔。",
+      "agent_text_parts": [
+        "听到你说“",
+        "恶心自己，又",
+        "后悔”，我能感觉到",
+        "那种吃完之后，",
+        "原本想要的安慰并没有",
+        "真正到来，反而",
+        "被深深的自责和",
+        "痛苦淹没的滋味",
+        "。面对这么难受",
+        "的感受，你还能",
+        "这么坦诚地跟我",
+        "分享，真的需要",
+        "很大的勇气。当",
+        "这种“恶心和",
+        "后悔”的感觉紧紧",
+        "抓住你的时候，",
+        "如果那一刻你的心里",
+        "有一个声音在呼喊",
+        "，你觉得它最",
+        "渴望得到的是什么呢",
+        "？"
+      ],
+      "events": [
+        {
+          "event": "token",
+          "data": "听到你说“"
+        },
+        {
+          "event": "token",
+          "data": "恶心自己，又"
+        },
+        {
+          "event": "token",
+          "data": "后悔”，我能感觉到"
+        },
+        {
+          "event": "token",
+          "data": "那种吃完之后，"
+        },
+        {
+          "event": "token",
+          "data": "原本想要的安慰并没有"
+        },
+        {
+          "event": "token",
+          "data": "真正到来，反而"
+        },
+        {
+          "event": "token",
+          "data": "被深深的自责和"
+        },
+        {
+          "event": "token",
+          "data": "痛苦淹没的滋味"
+        },
+        {
+          "event": "token",
+          "data": "。面对这么难受"
+        },
+        {
+          "event": "token",
+          "data": "的感受，你还能"
+        },
+        {
+          "event": "token",
+          "data": "这么坦诚地跟我"
+        },
+        {
+          "event": "token",
+          "data": "分享，真的需要"
+        },
+        {
+          "event": "token",
+          "data": "很大的勇气。当"
+        },
+        {
+          "event": "token",
+          "data": "这种“恶心和"
+        },
+        {
+          "event": "token",
+          "data": "后悔”的感觉紧紧"
+        },
+        {
+          "event": "token",
+          "data": "抓住你的时候，"
+        },
+        {
+          "event": "token",
+          "data": "如果那一刻你的心里"
+        },
+        {
+          "event": "token",
+          "data": "有一个声音在呼喊"
+        },
+        {
+          "event": "token",
+          "data": "，你觉得它最"
+        },
+        {
+          "event": "token",
+          "data": "渴望得到的是什么呢"
+        },
+        {
+          "event": "token",
+          "data": "？"
+        },
+        {
+          "event": "dialogue_done",
+          "data": {
+            "trace_id": "b8c7b8ec471d4cfd",
+            "owner": "therapy_mi"
+          }
+        },
+        {
+          "event": "final",
+          "data": {
+            "message": "吃完了又恶心自己，又后悔。",
+            "risk_state": "MEDIUM_RISK",
+            "crisis": false
+          }
+        }
+      ],
+      "final": {
+        "message": "吃完了又恶心自己，又后悔。",
+        "risk_state": "MEDIUM_RISK",
+        "crisis": false
+      },
+      "state_after": {
+        "owner": "therapy_mi",
+        "crisis": false,
+        "risk_level": "MEDIUM_RISK",
+        "therapy": {
+          "name": "MI",
+          "start_seq": 3,
+          "rounds": 5,
+          "step_index": 0,
+          "branch": null,
+          "basic_flow_complete": false
+        },
+        "last_therapy_check_seq": 1,
+        "pending_user_tokens": 0
+      },
+      "orchestration_after": {
+        "updated_seq": 5,
+        "therapy": "MI",
+        "current_step": "explore",
+        "next_step": "explore",
+        "step_judgment": {
+          "action": "stay",
+          "target_step": null,
+          "achieved": false,
+          "reason": "用户正处于强烈的羞耻和后悔情绪中（'恶心自己，又后悔'），自我效能感极低（0.2），矛盾心理极强（0.85）。当前explore步骤仍在深入探索这些负面情绪背后的需求和渴望，状态评估也建议优先继续explore以共情地承接这些情绪，防止进一步情绪崩溃触发更多应对行为。尚未达到可以推进到evocation的条件。"
+        },
+        "assessment": {
+          "change_readiness": {
+            "index": 0.55,
+            "state": "preparation",
+            "confidence": 0.85,
+            "evidence": [
+              "User expresses strong negative feelings ('恶心自己，又后悔') after the behavior, indicating they are recognizing the negative consequences and weighing them, but haven't yet moved to planning or action."
+            ]
+          },
+          "ambivalence": {
+            "index": 0.85,
+            "state": "strong",
+            "confidence": 0.9,
+            "evidence": [
+              "The conflict between the urge to cope with bad moods through eating (from previous turns) and the intense post-behavior regret and self-disgust ('吃完了又恶心自己，又后悔') shows a very high level of internal struggle."
+            ]
+          },
+          "self_efficacy": {
+            "index": 0.2,
+            "state": "very_low",
+            "confidence": 0.85,
+            "evidence": [
+              "The phrase '恶心自己' (disgusted with myself) reflects a deep sense of powerlessness and self-criticism regarding their inability to control the impulse, indicating very low confidence in their ability to change."
+            ]
+          },
+          "change_talk": {
+            "index": 0.35,
+            "state": "weak",
+            "confidence": 0.85,
+            "evidence": [
+              "Expressing regret ('后悔') and self-disgust ('恶心自己') serves as mild 'Desire' and 'Reasons' change talk, as the user is clearly articulating the negative aspects of the current behavior and wishing it were different."
+            ]
+          },
+          "sustain_talk": {
+            "index": 0.15,
+            "state": "weak",
+            "confidence": 0.8,
+            "evidence": [
+              "There is no explicit defense of the behavior in this turn; instead, the user is focusing entirely on the negative aftermath, which reduces sustain talk compared to previous turns."
+            ]
+          },
+          "mi_intervention_need": 0.62,
+          "overall_trend": "improving",
+          "primary_concern": "The user is experiencing intense shame and regret ('恶心自己，又后悔') following the behavior. While this indicates growing awareness, the accompanying low self-efficacy means they feel trapped in the cycle, needing compassionate exploration rather than immediate problem-solving.",
+          "should_intervene": true,
+          "recommended_processes": [
+            {
+              "process": "explore",
+              "priority": 1,
+              "rationale": "The user is expressing deep shame and regret. It is crucial to explore these feelings with empathy and without judgment to prevent them from spiraling into further emotional distress, which could trigger more coping behaviors."
+            },
+            {
+              "process": "evocation",
+              "priority": 2,
+              "rationale": "Since change talk is emerging through expressions of regret, evoking the user's underlying values or what they truly wish for themselves can help transform this negative affect into constructive motivation for change."
+            }
+          ]
+        },
+        "skill_output": {
+          "technique": {
+            "name": "oars",
+            "description": "用户正经历强烈的内心冲突和暴食后的痛苦（恶心、后悔），此时需要使用OARS（特别是反思性倾听和肯定）来深度共情、接纳情绪，并正常化这种矛盾心理，而不是急于推动改变。",
+            "steps": [
+              "使用复杂反思（Complex Reflection）深度反映用户暴食后渴望安慰却陷入自责的痛苦循环，让用户感到被深深理解。",
+              "运用肯定（Affirmation）具体赞赏用户在极度难受和自责中依然愿意坦诚分享的勇气。",
+              "提出开放式问题（Open Question），邀请用户探索这种矛盾感受，或者探讨在这种循环中他们内心真正的渴望。"
+            ]
+          },
+          "conversation_goal": "深化治疗联盟，接纳并反映用户的痛苦与矛盾，帮助用户探索暴食后的复杂情绪，而不施加任何改变的压力。",
+          "adaptation": {
+            "interaction_style": "exploratory",
+            "tone_adjustment": "温和、极度接纳、充满共情，绝不评判。",
+            "pace_adjustment": "缓慢、留白，给用户充足的空间去体会被理解的感受。",
+            "culture_note": "用“心里有不同的声音在打架”来正常化这种“想靠食物安慰自己，事后又极度自责”的矛盾；肯定必须具体，强调“在这么恶心和难受的时候，你依然愿意面对并说出来，这非常不容易”。"
+          },
+          "contraindications": [
+            {
+              "condition": "直接提供停止暴食或情绪管理的建议",
+              "reason": "会破坏治疗联盟，让用户感到被评判，且违背MI不急于推动改变的原则。"
+            },
+            {
+              "condition": "轻视或否定用户的“恶心和后悔”感受",
+              "reason": "会阻碍情感探索，让用户觉得自己的痛苦不被理解。"
+            },
+            {
+              "condition": "急于引导用户走向“改变”的承诺",
+              "reason": "用户目前处于强烈的矛盾和痛苦中，此时需要的是情感抱持而非行动指导。"
+            }
+          ],
+          "_skill_name": "mi_explore"
+        },
+        "products": {},
+        "continue_eval": null
+      },
+      "error": null,
+      "wall_seconds": 121.202,
+      "agent_text": "听到你说“恶心自己，又后悔”，我能感觉到那种吃完之后，原本想要的安慰并没有真正到来，反而被深深的自责和痛苦淹没的滋味。面对这么难受的感受，你还能这么坦诚地跟我分享，真的需要很大的勇气。当这种“恶心和后悔”的感觉紧紧抓住你的时候，如果那一刻你的心里有一个声音在呼喊，你觉得它最渴望得到的是什么呢？"
+    },
+    {
+      "turn": 7,
+      "trace_id": "0ab9b8e39dd84c25",
+      "user_text": "我试过记账，但每次记到一半情绪一来就又破功。",
+      "agent_text_parts": [
+        "听到你说试过",
+        "记账，但情绪",
+        "一来就破功",
+        "，能感觉到那种",
+        "努力过却没能",
+        "抵挡住情绪冲击",
+        "的挫败感",
+        "。其实，你",
+        "曾经尝试过用",
+        "记账来帮自己",
+        "，这本身就是一种",
+        "很不容易的努力。",
+        "只是当情绪真的",
+        "涌上来的时候，",
+        "它似乎有着比",
+        "理智更强大的力量",
+        "，让记账很难",
+        "继续下去。当",
+        "那种情绪彻底占据",
+        "上风，让你觉得",
+        "“破功”",
+        "的那一刻，你心里",
+        "是一种怎样的感觉呢",
+        "？"
+      ],
+      "events": [
+        {
+          "event": "token",
+          "data": "听到你说试过"
+        },
+        {
+          "event": "token",
+          "data": "记账，但情绪"
+        },
+        {
+          "event": "token",
+          "data": "一来就破功"
+        },
+        {
+          "event": "token",
+          "data": "，能感觉到那种"
+        },
+        {
+          "event": "token",
+          "data": "努力过却没能"
+        },
+        {
+          "event": "token",
+          "data": "抵挡住情绪冲击"
+        },
+        {
+          "event": "token",
+          "data": "的挫败感"
+        },
+        {
+          "event": "token",
+          "data": "。其实，你"
+        },
+        {
+          "event": "token",
+          "data": "曾经尝试过用"
+        },
+        {
+          "event": "token",
+          "data": "记账来帮自己"
+        },
+        {
+          "event": "token",
+          "data": "，这本身就是一种"
+        },
+        {
+          "event": "token",
+          "data": "很不容易的努力。"
+        },
+        {
+          "event": "token",
+          "data": "只是当情绪真的"
+        },
+        {
+          "event": "token",
+          "data": "涌上来的时候，"
+        },
+        {
+          "event": "token",
+          "data": "它似乎有着比"
+        },
+        {
+          "event": "token",
+          "data": "理智更强大的力量"
+        },
+        {
+          "event": "token",
+          "data": "，让记账很难"
+        },
+        {
+          "event": "token",
+          "data": "继续下去。当"
+        },
+        {
+          "event": "token",
+          "data": "那种情绪彻底占据"
+        },
+        {
+          "event": "token",
+          "data": "上风，让你觉得"
+        },
+        {
+          "event": "token",
+          "data": "“破功”"
+        },
+        {
+          "event": "token",
+          "data": "的那一刻，你心里"
+        },
+        {
+          "event": "token",
+          "data": "是一种怎样的感觉呢"
+        },
+        {
+          "event": "token",
+          "data": "？"
+        },
+        {
+          "event": "dialogue_done",
+          "data": {
+            "trace_id": "0ab9b8e39dd84c25",
+            "owner": "therapy_mi"
+          }
+        },
+        {
+          "event": "final",
+          "data": {
+            "message": "我试过记账，但每次记到一半情绪一来就又破功。",
+            "risk_state": "MEDIUM_RISK",
+            "crisis": false
+          }
+        }
+      ],
+      "final": {
+        "message": "我试过记账，但每次记到一半情绪一来就又破功。",
+        "risk_state": "MEDIUM_RISK",
+        "crisis": false
+      },
+      "state_after": {
+        "owner": "therapy_mi",
+        "crisis": false,
+        "risk_level": "MEDIUM_RISK",
+        "therapy": {
+          "name": "MI",
+          "start_seq": 3,
+          "rounds": 6,
+          "step_index": 0,
+          "branch": null,
+          "basic_flow_complete": false
+        },
+        "last_therapy_check_seq": 1,
+        "pending_user_tokens": 0
+      },
+      "orchestration_after": {
+        "updated_seq": 6,
+        "therapy": "MI",
+        "current_step": "explore",
+        "next_step": "explore",
+        "step_judgment": {
+          "action": "stay",
+          "target_step": null,
+          "achieved": false,
+          "reason": "用户自我效能极低（0.2），矛盾心理强烈（0.85），仍处于探索阶段。AI正在深入探索'破功'时刻的情绪体验，需要继续在此步骤帮助用户理解情绪触发点，减少自责，重建信心。尚未达成explore阶段的目标。"
+        },
+        "assessment": {
+          "change_readiness": {
+            "index": 0.55,
+            "state": "preparation",
+            "confidence": 0.9,
+            "evidence": [
+              "User explicitly states '我试过记账' (I tried keeping accounts), indicating they have moved into the preparation/action stage by attempting a specific strategy, despite experiencing setbacks."
+            ]
+          },
+          "ambivalence": {
+            "index": 0.85,
+            "state": "strong",
+            "confidence": 0.9,
+            "evidence": [
+              "The conflict between the conscious effort to change ('试过记账') and the overwhelming emotional impulse that derails it ('情绪一来就又破功') highlights a strong internal struggle between wanting to change and feeling powerless against the urge."
+            ]
+          },
+          "self_efficacy": {
+            "index": 0.2,
+            "state": "very_low",
+            "confidence": 0.9,
+            "evidence": [
+              "The phrase '每次...就又破功' (every time... I fail again) reflects a deep sense of defeat, learned helplessness, and low confidence in their ability to overcome emotional triggers."
+            ]
+          },
+          "change_talk": {
+            "index": 0.55,
+            "state": "moderate",
+            "confidence": 0.85,
+            "evidence": [
+              "'我试过记账' represents 'Taking steps' change talk, showing a concrete attempt to change behavior. The frustration with '破功' also implies a strong underlying desire to succeed in the change."
+            ]
+          },
+          "sustain_talk": {
+            "index": 0.15,
+            "state": "weak",
+            "confidence": 0.85,
+            "evidence": [
+              "The user is not defending the behavior or arguing to stay the same; rather, they are expressing frustration with their failed attempts to change, indicating low sustain talk."
+            ]
+          },
+          "mi_intervention_need": 0.64,
+          "overall_trend": "improving",
+          "primary_concern": "The user's self-efficacy is critically low due to repeated perceived failures ('破功'). The focus needs to shift from the failure of the strategy to exploring the emotional triggers and validating their effort, rebuilding confidence.",
+          "should_intervene": true,
+          "recommended_processes": [
+            {
+              "process": "explore",
+              "priority": 1,
+              "rationale": "High ambivalence and very low self-efficacy require exploring the emotional triggers ('情绪一来') without judgment. Normalizing the struggle and exploring what the emotion needs can reduce shame and build a foundation for change."
+            },
+            {
+              "process": "evocation",
+              "priority": 2,
+              "rationale": "To address the low self-efficacy, evoke the user's underlying values that motivated them to try keeping accounts in the first place, or explore any small successes, to strengthen their belief in their ability to change."
+            }
+          ]
+        },
+        "skill_output": {
+          "technique": {
+            "name": "oars",
+            "description": "The user is expressing strong ambivalence between their conscious effort to change (tracking/budgeting) and the overwhelming emotional impulses that derail them. OARS is ideal here to affirm their specific efforts, reflect the deep frustration of the emotional override, and explore both sides of this internal conflict without pushing for immediate solutions or problem-solving.",
+            "steps": [
+              "Affirm: Specifically acknowledge the courage and effort it takes to try tracking despite knowing the emotional hurdles (e.g., '尽管这么难，你还在想办法尝试，这本身就需要很大的毅力').",
+              "Reflect: Use complex reflection to capture the ambivalence and the feeling of being hijacked by emotions, normalizing the internal conflict (e.g., '听起来，理智上你想掌控局面，但情绪一上来，冲动似乎瞬间淹没了理智，这种心里有不同声音在打架的感觉一定很消耗你').",
+              "Open Question: Invite exploration of the emotion or the ambivalence using MI core phrasing to empower the user (e.g., '当情绪来袭让你觉得破功的那一刻，你自己觉得，那个情绪到底在向你传递什么信号呢？')."
+            ]
+          },
+          "conversation_goal": "To build the therapeutic alliance by validating the user's difficult struggle, normalizing their ambivalence (the fight between rational tracking and emotional impulses), and gently exploring the function of the emotions that derail their efforts, without pressuring them to 'fix' the tracking issue right now.",
+          "adaptation": {
+            "interaction_style": "exploratory",
+            "tone_adjustment": "Empathetic, validating, and gently curious. Avoid sounding clinical or overly optimistic; match the user's frustration with deep understanding and warmth.",
+            "pace_adjustment": "Slow and reflective. Allow space for the user to sit with their frustration and the complexity of their emotions without rushing to problem-solve the tracking or emotional regulation.",
+            "culture_note": "Use specific affirmation for their effort ('尽管这么难，你还在想办法，这很不容易'). Normalize the internal conflict using the metaphor of voices fighting ('心里有不同的声音在打架'). Incorporate the core MI question '你自己觉得呢？' to empower them as the expert of their own emotional experience."
+          },
+          "contraindications": [
+            {
+              "condition": "Offering direct advice on how to manage emotions or better tracking methods",
+              "reason": "This would violate the principle of collaboration and roll with resistance. The user needs to feel heard and understood in their frustration before they can explore solutions. Unsolicited advice will likely increase their sense of failure and self-disgust."
+            },
+            {
+              "condition": "Focusing only on the 'failure' (破功) without acknowledging the effort to change",
+              "reason": "This would reinforce their negative self-image. MI requires highlighting the 'change talk' (the effort to track/try) alongside the struggle, ensuring the user feels their hard work is seen and valued."
+            }
+          ],
+          "_skill_name": "mi_explore"
+        },
+        "products": {},
+        "continue_eval": null
+      },
+      "error": null,
+      "wall_seconds": 145.319,
+      "agent_text": "听到你说试过记账，但情绪一来就破功，能感觉到那种努力过却没能抵挡住情绪冲击的挫败感。其实，你曾经尝试过用记账来帮自己，这本身就是一种很不容易的努力。只是当情绪真的涌上来的时候，它似乎有着比理智更强大的力量，让记账很难继续下去。当那种情绪彻底占据上风，让你觉得“破功”的那一刻，你心里是一种怎样的感觉呢？"
+    },
+    {
+      "turn": 8,
+      "trace_id": "e314b44e3d924a84",
+      "user_text": "我想知道怎么在情绪上来的时候不让自己乱来。",
+      "agent_text_parts": [
+        "听到你这么直接地说",
+        "出“想知道怎么",
+        "不让自己乱来",
+        "”，我能感觉到你",
+        "真的很想打破这个",
+        "循环，不想再",
+        "被那种失控和",
+        "事后的自责折磨",
+        "了。你之前",
+        "尝试记账，哪怕",
+        "破功了也",
+        "还在想办法，这份",
+        "想要改变的心意",
+        "特别珍贵。\n\n",
+        "听起来，理智上",
+        "你非常渴望能",
+        "掌控局面，但",
+        "情绪一上来，",
+        "冲动似乎瞬间就",
+        "淹没了理智。",
+        "这种心里有不同的声音",
+        "在打架、感觉",
+        "被情绪劫持",
+        "的滋味，一定",
+        "让你特别消耗。",
+        "\n\n在我们一起去寻找",
+        "应对的方法之前，",
+        "我想先听听你的",
+        "感受。当情绪",
+        "汹涌而来、让你",
+        "觉得快要“破",
+        "功”的那一刻，",
+        "你自己觉得，那个",
+        "情绪到底在向你",
+        "传递什么信号呢",
+        "？"
+      ],
+      "events": [
+        {
+          "event": "token",
+          "data": "听到你这么直接地说"
+        },
+        {
+          "event": "token",
+          "data": "出“想知道怎么"
+        },
+        {
+          "event": "token",
+          "data": "不让自己乱来"
+        },
+        {
+          "event": "token",
+          "data": "”，我能感觉到你"
+        },
+        {
+          "event": "token",
+          "data": "真的很想打破这个"
+        },
+        {
+          "event": "token",
+          "data": "循环，不想再"
+        },
+        {
+          "event": "token",
+          "data": "被那种失控和"
+        },
+        {
+          "event": "token",
+          "data": "事后的自责折磨"
+        },
+        {
+          "event": "token",
+          "data": "了。你之前"
+        },
+        {
+          "event": "token",
+          "data": "尝试记账，哪怕"
+        },
+        {
+          "event": "token",
+          "data": "破功了也"
+        },
+        {
+          "event": "token",
+          "data": "还在想办法，这份"
+        },
+        {
+          "event": "token",
+          "data": "想要改变的心意"
+        },
+        {
+          "event": "token",
+          "data": "特别珍贵。\n\n"
+        },
+        {
+          "event": "token",
+          "data": "听起来，理智上"
+        },
+        {
+          "event": "token",
+          "data": "你非常渴望能"
+        },
+        {
+          "event": "token",
+          "data": "掌控局面，但"
+        },
+        {
+          "event": "token",
+          "data": "情绪一上来，"
+        },
+        {
+          "event": "token",
+          "data": "冲动似乎瞬间就"
+        },
+        {
+          "event": "token",
+          "data": "淹没了理智。"
+        },
+        {
+          "event": "token",
+          "data": "这种心里有不同的声音"
+        },
+        {
+          "event": "token",
+          "data": "在打架、感觉"
+        },
+        {
+          "event": "token",
+          "data": "被情绪劫持"
+        },
+        {
+          "event": "token",
+          "data": "的滋味，一定"
+        },
+        {
+          "event": "token",
+          "data": "让你特别消耗。"
+        },
+        {
+          "event": "token",
+          "data": "\n\n在我们一起去寻找"
+        },
+        {
+          "event": "token",
+          "data": "应对的方法之前，"
+        },
+        {
+          "event": "token",
+          "data": "我想先听听你的"
+        },
+        {
+          "event": "token",
+          "data": "感受。当情绪"
+        },
+        {
+          "event": "token",
+          "data": "汹涌而来、让你"
+        },
+        {
+          "event": "token",
+          "data": "觉得快要“破"
+        },
+        {
+          "event": "token",
+          "data": "功”的那一刻，"
+        },
+        {
+          "event": "token",
+          "data": "你自己觉得，那个"
+        },
+        {
+          "event": "token",
+          "data": "情绪到底在向你"
+        },
+        {
+          "event": "token",
+          "data": "传递什么信号呢"
+        },
+        {
+          "event": "token",
+          "data": "？"
+        },
+        {
+          "event": "dialogue_done",
+          "data": {
+            "trace_id": "e314b44e3d924a84",
+            "owner": "therapy_mi"
+          }
+        },
+        {
+          "event": "final",
+          "data": {
+            "message": "我想知道怎么在情绪上来的时候不让自己乱来。",
+            "risk_state": "SAFE",
+            "crisis": false
+          }
+        }
+      ],
+      "final": {
+        "message": "我想知道怎么在情绪上来的时候不让自己乱来。",
+        "risk_state": "SAFE",
+        "crisis": false
+      },
+      "state_after": {
+        "owner": "therapy_mi",
+        "crisis": false,
+        "risk_level": "SAFE",
+        "therapy": {
+          "name": "MI",
+          "start_seq": 3,
+          "rounds": 7,
+          "step_index": 1,
+          "branch": null,
+          "basic_flow_complete": false,
+          "visited": [
+            "explore"
+          ]
+        },
+        "last_therapy_check_seq": 1,
+        "pending_user_tokens": 0
+      },
+      "orchestration_after": {
+        "updated_seq": 7,
+        "therapy": "MI",
+        "current_step": "explore",
+        "next_step": "evocation",
+        "step_judgment": {
+          "action": "advance",
+          "target_step": "commitment",
+          "achieved": true,
+          "reason": "用户的改变准备度（0.85）和改变语词（0.85）均处于高水平，明确表达了'我想知道怎么在情绪上来的时候不让自己乱来'，显示出强烈的行动意愿。当前explore步骤已充分探索了情绪触发点和过往尝试（如记账破功），矛盾心理已降至轻度（0.3），维持语词为零。状态评估明确建议优先进入commitment步骤，帮助用户制定具体可行的应对策略。继续停留在explore阶段可能导致用户感到被拖延，错失其高动机窗口期。"
+        },
+        "assessment": {
+          "change_readiness": {
+            "index": 0.85,
+            "state": "action",
+            "confidence": 0.95,
+            "evidence": [
+              "'我想知道怎么在情绪上来的时候不让自己乱来' explicitly shows the user is in the preparation stage, actively seeking strategies and ready to take action."
+            ]
+          },
+          "ambivalence": {
+            "index": 0.3,
+            "state": "mild",
+            "confidence": 0.85,
+            "evidence": [
+              "While the current message is a direct request for help, the underlying context of '情绪一来' implies the ongoing internal struggle between emotional impulses and rational control, though the focus is now on resolving it."
+            ]
+          },
+          "self_efficacy": {
+            "index": 0.35,
+            "state": "low",
+            "confidence": 0.9,
+            "evidence": [
+              "Asking '怎么...' indicates that the user currently lacks the confidence or internal tools to handle the emotional surge independently and is seeking external guidance to build this capacity."
+            ]
+          },
+          "change_talk": {
+            "index": 0.85,
+            "state": "strong",
+            "confidence": 0.95,
+            "evidence": [
+              "'我想知道怎么...不让自己乱来' reflects strong Desire and Need for change, as well as Activation (seeking concrete steps to change)."
+            ]
+          },
+          "sustain_talk": {
+            "index": 0.0,
+            "state": "absent",
+            "confidence": 0.95,
+            "evidence": [
+              "There is no justification for the behavior or argument to stay the same; the user is fully focused on finding a way to stop the unwanted behavior."
+            ]
+          },
+          "mi_intervention_need": 0.358,
+          "overall_trend": "improving",
+          "primary_concern": "The user's self-efficacy in managing emotional triggers remains low, but their high change readiness and strong change talk indicate they are ready for action. The focus must shift to collaborative planning and building concrete coping strategies.",
+          "should_intervene": true,
+          "recommended_processes": [
+            {
+              "process": "commitment",
+              "priority": 1,
+              "rationale": "High change readiness and strong change talk ('我想知道怎么...') indicate the user is ready for planning. Prioritize commitment to help them formulate and commit to specific, manageable coping strategies for emotional triggers."
+            },
+            {
+              "process": "explore",
+              "priority": 2,
+              "rationale": "Explore the specific nature of the emotional triggers and brainstorm potential small steps or alternative coping mechanisms to gradually build their self-efficacy."
+            }
+          ]
+        },
+        "skill_output": {
+          "technique": {
+            "name": "oars",
+            "description": "The user is directly asking for a solution to stop impulsive behavior during emotional surges and has repeated this practical request, indicating they want a concrete 'how-to'. OARS is chosen to reflect their urgency, affirm their proactive desire for change, and use open questions to elicit their own ideas and wisdom about what might work, adhering to the MI principle of not giving unsolicited advice.",
+            "steps": [
+              "Reflect the user's clear desire and urgency to find a concrete, practical way to handle the emotional trigger.",
+              "Affirm their persistent effort to break this cycle and their strong motivation to regain control.",
+              "Ask an open question to explore their own ideas about what a 'brake' or coping strategy might look like for them in that specific moment, keeping them as the expert."
+            ]
+          },
+          "conversation_goal": "Validate the user's urgent need for a practical solution while gently guiding them to explore their own internal resources and ideas for managing the emotional trigger, maintaining the MI spirit of collaboration and autonomy.",
+          "adaptation": {
+            "interaction_style": "exploratory",
+            "tone_adjustment": "Empathetic, validating, and gently inquisitive. Acknowledging the urgency and practical need without rushing to provide a direct 'fix' or sounding dismissive of their request.",
+            "pace_adjustment": "Slightly slowing down the user's rush for a quick fix by pausing to explore what that 'fix' means to them and what they already know might work, bridging their practical goal with MI exploration.",
+            "culture_note": "Use '你自己觉得呢？' to empower the user to find their own answers. Validate their specific effort ('你一直在努力寻找不让自己失控的方法，这非常不容易'). Normalize the internal conflict as '心里有不同的声音在拉扯'."
+          },
+          "contraindications": [
+            {
+              "condition": "Providing direct behavioral advice or coping techniques (e.g., suggesting deep breathing, counting, or distraction).",
+              "reason": "Violates the MI principle of not giving unsolicited advice and undermines the user's autonomy and self-efficacy as the expert on their own life."
+            },
+            {
+              "condition": "Ignoring the user's practical request to force deep emotional exploration of the 'meaning' of the emotion.",
+              "reason": "The user repeated their practical need, indicating they might feel unheard or frustrated by abstract questions. We must validate the practical goal first before gently guiding them to explore their own solutions."
+            }
+          ],
+          "_skill_name": "mi_explore"
+        },
+        "products": {},
+        "continue_eval": null
+      },
+      "error": null,
+      "wall_seconds": 152.669,
+      "agent_text": "听到你这么直接地说出“想知道怎么不让自己乱来”，我能感觉到你真的很想打破这个循环，不想再被那种失控和事后的自责折磨了。你之前尝试记账，哪怕破功了也还在想办法，这份想要改变的心意特别珍贵。\n\n听起来，理智上你非常渴望能掌控局面，但情绪一上来，冲动似乎瞬间就淹没了理智。这种心里有不同的声音在打架、感觉被情绪劫持的滋味，一定让你特别消耗。\n\n在我们一起去寻找应对的方法之前，我想先听听你的感受。当情绪汹涌而来、让你觉得快要“破功”的那一刻，你自己觉得，那个情绪到底在向你传递什么信号呢？"
+    }
+  ]
+}

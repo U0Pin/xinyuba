@@ -1,0 +1,40 @@
+[project]
+name = "ea-core"
+version = "0.2.0"
+description = "Emotion Support Agent：多 Agent 心理支持后端（三线并行架构）"
+requires-python = ">=3.10"
+dependencies = [
+    "python-dotenv>=1.0.0",
+    "pydantic>=2.0.0",
+    "fastapi>=0.115.0",
+    "uvicorn>=0.32.0",
+    "openai>=1.0.0",
+]
+
+[project.optional-dependencies]
+dev = [
+    "pytest>=8.0.0",
+    "httpx>=0.27.0",
+    "ruff>=0.6.0",
+]
+
+[tool.ruff]
+line-length = 110
+target-version = "py310"
+
+[tool.ruff.lint]
+# 先宽后严：只启用「正确性向」规则集（未用导入/未定义名/裸异常/危险默认值等）。
+# 风格类（E501 行长等）暂不启用——prompt 模板行普遍超 300 字符，属内容而非代码。
+select = ["E4", "E7", "E9", "F", "B"]
+ignore = ["E731", "B008"]
+
+[tool.ruff.lint.per-file-ignores]
+# 副作用注册 import（skill_registry）与黄金快照脚本
+"src/skills/__init__.py" = ["F401"]
+"src/bootstrap.py" = ["F401"]
+"main.py" = ["F401"]
+"evals/*.py" = ["E402"]
+"tests/eval/support/run_routing_eval.py" = ["E402"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]

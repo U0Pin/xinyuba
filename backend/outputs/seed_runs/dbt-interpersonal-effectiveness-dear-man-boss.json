@@ -1,0 +1,1561 @@
+{
+  "seed_id": "dbt-interpersonal-effectiveness-dear-man-boss",
+  "target_family": "DBT",
+  "scenario_label": "人际效能-DEAR MAN-拒绝加班",
+  "scenario_description": "领导反复要求加班但口头说看自己",
+  "user_id": "seed-dbt-interpersonal-effect",
+  "session_id": "43ed92a2c40346b8",
+  "turns_total": 8,
+  "switched_to_therapy_at_turn": 3,
+  "actual_therapy": "MI",
+  "therapy_rounds": 5,
+  "orch_step_changes": 3,
+  "is_complete": true,
+  "final_risk_level": "SAFE",
+  "final_crisis": false,
+  "turns": [
+    {
+      "turn": 1,
+      "trace_id": "8e0370e563194085",
+      "user_text": "我老板最近反复让我加班到 11 点，但他嘴上说「看自己安排」。",
+      "agent_text_parts": [
+        "这种“",
+        "看自己安排”",
+        "听着其实就是一种隐性",
+        "要求吧，真的",
+        "挺让人憋屈",
+        "的。明明心里",
+        "希望你加班，嘴上",
+        "还要装作给你自由",
+        "，这种话听着",
+        "最无奈了。",
+        "最近天天熬到",
+        "11点，",
+        "身体吃得消吗",
+        "？"
+      ],
+      "events": [
+        {
+          "event": "token",
+          "data": "这种“"
+        },
+        {
+          "event": "token",
+          "data": "看自己安排”"
+        },
+        {
+          "event": "token",
+          "data": "听着其实就是一种隐性"
+        },
+        {
+          "event": "token",
+          "data": "要求吧，真的"
+        },
+        {
+          "event": "token",
+          "data": "挺让人憋屈"
+        },
+        {
+          "event": "token",
+          "data": "的。明明心里"
+        },
+        {
+          "event": "token",
+          "data": "希望你加班，嘴上"
+        },
+        {
+          "event": "token",
+          "data": "还要装作给你自由"
+        },
+        {
+          "event": "token",
+          "data": "，这种话听着"
+        },
+        {
+          "event": "token",
+          "data": "最无奈了。"
+        },
+        {
+          "event": "token",
+          "data": "最近天天熬到"
+        },
+        {
+          "event": "token",
+          "data": "11点，"
+        },
+        {
+          "event": "token",
+          "data": "身体吃得消吗"
+        },
+        {
+          "event": "token",
+          "data": "？"
+        },
+        {
+          "event": "dialogue_done",
+          "data": {
+            "trace_id": "8e0370e563194085",
+            "owner": "daily"
+          }
+        },
+        {
+          "event": "final",
+          "data": {
+            "message": "我老板最近反复让我加班到 11 点，但他嘴上说「看自己安排」。",
+            "risk_state": "LOW_RISK",
+            "crisis": false
+          }
+        }
+      ],
+      "final": {
+        "message": "我老板最近反复让我加班到 11 点，但他嘴上说「看自己安排」。",
+        "risk_state": "LOW_RISK",
+        "crisis": false
+      },
+      "state_after": {
+        "owner": "daily",
+        "crisis": false,
+        "risk_level": "LOW_RISK",
+        "therapy": null,
+        "last_therapy_check_seq": 1,
+        "pending_user_tokens": 0
+      },
+      "orchestration_after": {},
+      "error": null,
+      "wall_seconds": 32.864,
+      "agent_text": "这种“看自己安排”听着其实就是一种隐性要求吧，真的挺让人憋屈的。明明心里希望你加班，嘴上还要装作给你自由，这种话听着最无奈了。最近天天熬到11点，身体吃得消吗？"
+    },
+    {
+      "turn": 2,
+      "trace_id": "238837e513154f36",
+      "user_text": "我不敢拒绝，又不敢直接说我不想加。",
+      "agent_text_parts": [
+        "他",
+        "话说得那么“",
+        "委婉”，直接说",
+        "“不想加”",
+        "好像显得自己不识",
+        "好歹，所以才会",
+        "觉得“不敢",
+        "拒绝”，也“",
+        "不敢直接说”",
+        "吧。这种只能",
+        "把委屈憋在心里",
+        "、自己默默扛",
+        "着的感觉，真的太",
+        "让人窒息了。"
+      ],
+      "events": [
+        {
+          "event": "token",
+          "data": "他"
+        },
+        {
+          "event": "token",
+          "data": "话说得那么“"
+        },
+        {
+          "event": "token",
+          "data": "委婉”，直接说"
+        },
+        {
+          "event": "token",
+          "data": "“不想加”"
+        },
+        {
+          "event": "token",
+          "data": "好像显得自己不识"
+        },
+        {
+          "event": "token",
+          "data": "好歹，所以才会"
+        },
+        {
+          "event": "token",
+          "data": "觉得“不敢"
+        },
+        {
+          "event": "token",
+          "data": "拒绝”，也“"
+        },
+        {
+          "event": "token",
+          "data": "不敢直接说”"
+        },
+        {
+          "event": "token",
+          "data": "吧。这种只能"
+        },
+        {
+          "event": "token",
+          "data": "把委屈憋在心里"
+        },
+        {
+          "event": "token",
+          "data": "、自己默默扛"
+        },
+        {
+          "event": "token",
+          "data": "着的感觉，真的太"
+        },
+        {
+          "event": "token",
+          "data": "让人窒息了。"
+        },
+        {
+          "event": "dialogue_done",
+          "data": {
+            "trace_id": "238837e513154f36",
+            "owner": "daily"
+          }
+        },
+        {
+          "event": "final",
+          "data": {
+            "message": "我不敢拒绝，又不敢直接说我不想加。",
+            "risk_state": "LOW_RISK",
+            "crisis": false
+          }
+        }
+      ],
+      "final": {
+        "message": "我不敢拒绝，又不敢直接说我不想加。",
+        "risk_state": "LOW_RISK",
+        "crisis": false
+      },
+      "state_after": {
+        "owner": "daily",
+        "crisis": false,
+        "risk_level": "LOW_RISK",
+        "therapy": null,
+        "last_therapy_check_seq": 3,
+        "pending_user_tokens": 0
+      },
+      "orchestration_after": {},
+      "error": null,
+      "wall_seconds": 52.304,
+      "agent_text": "他话说得那么“委婉”，直接说“不想加”好像显得自己不识好歹，所以才会觉得“不敢拒绝”，也“不敢直接说”吧。这种只能把委屈憋在心里、自己默默扛着的感觉，真的太让人窒息了。"
+    },
+    {
+      "turn": 3,
+      "trace_id": "bd4d2b8220fb43c4",
+      "user_text": "我答应之后回家又后悔，下次又不敢拒绝。",
+      "agent_text_parts": [
+        "当时答应",
+        "完，回家越想",
+        "越后悔，可",
+        "一想到下次，又",
+        "觉得自己还是不敢拒绝",
+        "。这种陷入",
+        "死循环的感觉，",
+        "真的让人特别无力",
+        "，心里肯定也",
+        "挺生自己气的",
+        "吧。"
+      ],
+      "events": [
+        {
+          "event": "token",
+          "data": "当时答应"
+        },
+        {
+          "event": "token",
+          "data": "完，回家越想"
+        },
+        {
+          "event": "token",
+          "data": "越后悔，可"
+        },
+        {
+          "event": "token",
+          "data": "一想到下次，又"
+        },
+        {
+          "event": "token",
+          "data": "觉得自己还是不敢拒绝"
+        },
+        {
+          "event": "token",
+          "data": "。这种陷入"
+        },
+        {
+          "event": "token",
+          "data": "死循环的感觉，"
+        },
+        {
+          "event": "token",
+          "data": "真的让人特别无力"
+        },
+        {
+          "event": "token",
+          "data": "，心里肯定也"
+        },
+        {
+          "event": "token",
+          "data": "挺生自己气的"
+        },
+        {
+          "event": "token",
+          "data": "吧。"
+        },
+        {
+          "event": "dialogue_done",
+          "data": {
+            "trace_id": "bd4d2b8220fb43c4",
+            "owner": "daily"
+          }
+        },
+        {
+          "event": "final",
+          "data": {
+            "message": "我答应之后回家又后悔，下次又不敢拒绝。",
+            "risk_state": "LOW_RISK",
+            "crisis": false
+          }
+        }
+      ],
+      "final": {
+        "message": "我答应之后回家又后悔，下次又不敢拒绝。",
+        "risk_state": "LOW_RISK",
+        "crisis": false
+      },
+      "state_after": {
+        "owner": "therapy_mi",
+        "crisis": false,
+        "risk_level": "LOW_RISK",
+        "therapy": {
+          "name": "MI",
+          "start_seq": 7,
+          "rounds": 0,
+          "step_index": -1,
+          "branch": null,
+          "basic_flow_complete": false
+        },
+        "last_therapy_check_seq": 5,
+        "pending_user_tokens": 0
+      },
+      "orchestration_after": {},
+      "error": null,
+      "wall_seconds": 57.985,
+      "agent_text": "当时答应完，回家越想越后悔，可一想到下次，又觉得自己还是不敢拒绝。这种陷入死循环的感觉，真的让人特别无力，心里肯定也挺生自己气的吧。"
+    },
+    {
+      "turn": 4,
+      "trace_id": "6157055fdfc74742",
+      "user_text": "我跟朋友说这事，他们说我应该直接说。",
+      "agent_text_parts": [
+        "朋友们建议你“",
+        "直接说”，听得",
+        "出来他们挺替你",
+        "着想的。不过",
+        "听到这个建议时",
+        "，你自己心里是什么",
+        "感觉呢？会不会",
+        "觉得，虽然知道",
+        "“直接说”",
+        "是个办法，但",
+        "真要自己去开口，",
+        "还是挺有压力的？"
+      ],
+      "events": [
+        {
+          "event": "token",
+          "data": "朋友们建议你“"
+        },
+        {
+          "event": "token",
+          "data": "直接说”，听得"
+        },
+        {
+          "event": "token",
+          "data": "出来他们挺替你"
+        },
+        {
+          "event": "token",
+          "data": "着想的。不过"
+        },
+        {
+          "event": "token",
+          "data": "听到这个建议时"
+        },
+        {
+          "event": "token",
+          "data": "，你自己心里是什么"
+        },
+        {
+          "event": "token",
+          "data": "感觉呢？会不会"
+        },
+        {
+          "event": "token",
+          "data": "觉得，虽然知道"
+        },
+        {
+          "event": "token",
+          "data": "“直接说”"
+        },
+        {
+          "event": "token",
+          "data": "是个办法，但"
+        },
+        {
+          "event": "token",
+          "data": "真要自己去开口，"
+        },
+        {
+          "event": "token",
+          "data": "还是挺有压力的？"
+        },
+        {
+          "event": "dialogue_done",
+          "data": {
+            "trace_id": "6157055fdfc74742",
+            "owner": "therapy_mi"
+          }
+        },
+        {
+          "event": "final",
+          "data": {
+            "message": "我跟朋友说这事，他们说我应该直接说。",
+            "risk_state": "LOW_RISK",
+            "crisis": false
+          }
+        }
+      ],
+      "final": {
+        "message": "我跟朋友说这事，他们说我应该直接说。",
+        "risk_state": "LOW_RISK",
+        "crisis": false
+      },
+      "state_after": {
+        "owner": "therapy_mi",
+        "crisis": false,
+        "risk_level": "LOW_RISK",
+        "therapy": {
+          "name": "MI",
+          "start_seq": 7,
+          "rounds": 1,
+          "step_index": 0,
+          "branch": null,
+          "basic_flow_complete": false
+        },
+        "last_therapy_check_seq": 5,
+        "pending_user_tokens": 0
+      },
+      "orchestration_after": {
+        "updated_seq": 1,
+        "therapy": "MI",
+        "current_step": "explore",
+        "next_step": "explore",
+        "step_judgment": {
+          "action": "stay",
+          "target_step": null,
+          "achieved": false,
+          "reason": "用户仍在复述朋友的建议，尚未表达个人立场或内在感受。当前处于探索阶段，需继续引导用户澄清自身矛盾心理和真实想法，change talk尚未出现，ambivalence需要进一步探索。"
+        },
+        "assessment": {
+          "change_readiness": {
+            "index": 0.4,
+            "state": "contemplation",
+            "confidence": 0.6,
+            "evidence": [
+              "User is discussing a problem and reporting friends' advice, indicating they are thinking about the issue but have not yet committed to personal action."
+            ]
+          },
+          "ambivalence": {
+            "index": 0.5,
+            "state": "mild",
+            "confidence": 0.6,
+            "evidence": [
+              "User is caught between friends' external pressure to act directly and their own implied hesitation, as they are reporting the advice to the agent rather than having taken the action themselves."
+            ]
+          },
+          "self_efficacy": {
+            "index": 0.3,
+            "state": "low",
+            "confidence": 0.4,
+            "evidence": [
+              "No expressions of personal confidence or ability to make the change; user is currently relying on external advice rather than internal belief in their capability."
+            ]
+          },
+          "change_talk": {
+            "index": 0.1,
+            "state": "absent",
+            "confidence": 0.8,
+            "evidence": [
+              "User is quoting external advice from friends rather than expressing personal desire, ability, reasons, or need for change (DARN/CAT)."
+            ]
+          },
+          "sustain_talk": {
+            "index": 0.1,
+            "state": "absent",
+            "confidence": 0.7,
+            "evidence": [
+              "No explicit arguments for maintaining the status quo or resisting change are present in the current message."
+            ]
+          },
+          "mi_intervention_need": 0.485,
+          "overall_trend": "stable",
+          "primary_concern": "ambivalence",
+          "should_intervene": true,
+          "recommended_processes": [
+            {
+              "process": "explore",
+              "priority": 1,
+              "rationale": "User is presenting external advice without clarifying their own stance. Need to explore their personal feelings and the ambivalence between friends' suggestions and their own comfort zone."
+            },
+            {
+              "process": "evocation",
+              "priority": 2,
+              "rationale": "User is currently relying on external motivation. Need to evoke their own intrinsic values and reasons to determine if they genuinely want to make this change."
+            }
+          ]
+        },
+        "skill_output": {
+          "technique": {
+            "name": "oars",
+            "description": "The user is experiencing mild ambivalence between their friends' external advice to act directly and their own internal hesitation. OARS is the most appropriate technique to explore this ambivalence, validate their feelings without taking a side, and use open questions to help them articulate their own perspective.",
+            "steps": [
+              "Reflect the friends' advice and normalize the ambivalence by acknowledging that it is completely normal to feel '心里有不同的声音在打架' (different voices fighting inside) when receiving strong external pressure.",
+              "Ask an open question using the core MI phrasing '你自己觉得呢？' to gently shift the focus from the friends' expectations to the user's own internal experience, exploring what 'saying it directly' would actually mean to them."
+            ]
+          },
+          "conversation_goal": "To explore the user's internal experience and ambivalence regarding their friends' advice, helping them articulate their own feelings and desires about taking direct action without pushing them toward a decision.",
+          "adaptation": {
+            "interaction_style": "exploratory",
+            "tone_adjustment": "Warm, curious, and non-judgmental. Validating the difficulty of the situation while gently shifting focus from external advice to internal experience.",
+            "pace_adjustment": "Slow and exploratory. Allowing the user ample space to process their feelings about the friends' advice without rushing toward a resolution or action.",
+            "culture_note": "Use '你自己觉得呢？' to center the user's own wisdom. Normalize ambivalence as '心里有不同的声音在打架'. Ensure any affirmations are specific to their efforts or the care they show in navigating this difficult situation, rather than generic praise."
+          },
+          "contraindications": [
+            {
+              "condition": "Pushing the user to follow their friends' advice to 'just say it directly'.",
+              "reason": "This violates the MI principle of collaboration and autonomy, potentially increasing resistance or sustain talk."
+            },
+            {
+              "condition": "Giving direct advice or telling the user what they should do.",
+              "reason": "The user is the expert on their own life; giving unsolicited advice bypasses their internal wisdom and can damage the therapeutic alliance."
+            },
+            {
+              "condition": "Invalidating the friends' advice or arguing that the friends are wrong.",
+              "reason": "Taking a side against the friends creates confrontation rather than collaboration, and may make the user feel defensive of their social circle."
+            }
+          ],
+          "_skill_name": "mi_explore"
+        },
+        "products": {},
+        "continue_eval": null
+      },
+      "error": null,
+      "wall_seconds": 140.995,
+      "agent_text": "朋友们建议你“直接说”，听得出来他们挺替你着想的。不过听到这个建议时，你自己心里是什么感觉呢？会不会觉得，虽然知道“直接说”是个办法，但真要自己去开口，还是挺有压力的？"
+    },
+    {
+      "turn": 5,
+      "trace_id": "13ebcb22f4d6482a",
+      "user_text": "但「直接说」具体怎么说？我一开口就觉得是在顶撞他。",
+      "agent_text_parts": [
+        "听得出来，",
+        "朋友觉得“直接",
+        "说”是个干脆",
+        "的办法，但在你",
+        "这里，一开口",
+        "就像是“顶撞",
+        "”，这让你觉得",
+        "很有压力。一边",
+        "是朋友觉得该",
+        "直接表达，另一边",
+        "是你心里很清楚去",
+        "“顶撞”",
+        "有多难，心里",
+        "有不同的声音在打架",
+        "，这太正常",
+        "了。\n\n如果",
+        "先放下朋友说的",
+        "“直接说”，",
+        "就你自己来说，",
+        "想到要去跟他开口",
+        "，你心里最",
+        "担心或者顾虑的是",
+        "什么呢？你自己觉得",
+        "呢？"
+      ],
+      "events": [
+        {
+          "event": "token",
+          "data": "听得出来，"
+        },
+        {
+          "event": "token",
+          "data": "朋友觉得“直接"
+        },
+        {
+          "event": "token",
+          "data": "说”是个干脆"
+        },
+        {
+          "event": "token",
+          "data": "的办法，但在你"
+        },
+        {
+          "event": "token",
+          "data": "这里，一开口"
+        },
+        {
+          "event": "token",
+          "data": "就像是“顶撞"
+        },
+        {
+          "event": "token",
+          "data": "”，这让你觉得"
+        },
+        {
+          "event": "token",
+          "data": "很有压力。一边"
+        },
+        {
+          "event": "token",
+          "data": "是朋友觉得该"
+        },
+        {
+          "event": "token",
+          "data": "直接表达，另一边"
+        },
+        {
+          "event": "token",
+          "data": "是你心里很清楚去"
+        },
+        {
+          "event": "token",
+          "data": "“顶撞”"
+        },
+        {
+          "event": "token",
+          "data": "有多难，心里"
+        },
+        {
+          "event": "token",
+          "data": "有不同的声音在打架"
+        },
+        {
+          "event": "token",
+          "data": "，这太正常"
+        },
+        {
+          "event": "token",
+          "data": "了。\n\n如果"
+        },
+        {
+          "event": "token",
+          "data": "先放下朋友说的"
+        },
+        {
+          "event": "token",
+          "data": "“直接说”，"
+        },
+        {
+          "event": "token",
+          "data": "就你自己来说，"
+        },
+        {
+          "event": "token",
+          "data": "想到要去跟他开口"
+        },
+        {
+          "event": "token",
+          "data": "，你心里最"
+        },
+        {
+          "event": "token",
+          "data": "担心或者顾虑的是"
+        },
+        {
+          "event": "token",
+          "data": "什么呢？你自己觉得"
+        },
+        {
+          "event": "token",
+          "data": "呢？"
+        },
+        {
+          "event": "dialogue_done",
+          "data": {
+            "trace_id": "13ebcb22f4d6482a",
+            "owner": "therapy_mi"
+          }
+        },
+        {
+          "event": "final",
+          "data": {
+            "message": "但「直接说」具体怎么说？我一开口就觉得是在顶撞他。",
+            "risk_state": "LOW_RISK",
+            "crisis": false
+          }
+        }
+      ],
+      "final": {
+        "message": "但「直接说」具体怎么说？我一开口就觉得是在顶撞他。",
+        "risk_state": "LOW_RISK",
+        "crisis": false
+      },
+      "state_after": {
+        "owner": "therapy_mi",
+        "crisis": false,
+        "risk_level": "LOW_RISK",
+        "therapy": {
+          "name": "MI",
+          "start_seq": 7,
+          "rounds": 2,
+          "step_index": 0,
+          "branch": null,
+          "basic_flow_complete": false
+        },
+        "last_therapy_check_seq": 5,
+        "pending_user_tokens": 0
+      },
+      "orchestration_after": {
+        "updated_seq": 2,
+        "therapy": "MI",
+        "current_step": "explore",
+        "next_step": "explore",
+        "step_judgment": {
+          "action": "stay",
+          "target_step": null,
+          "achieved": false,
+          "reason": "用户仍处于高矛盾心理状态（ambivalence index 0.85），对'直接说'等同于'顶撞'的担忧尚未被充分探索。自我效能感极低（0.2），改变意愿薄弱（0.25）。当前explore步骤仍需继续，深入探索'顶撞'对用户的意义及其背后的顾虑，等待用户更多表达后再推进。"
+        },
+        "assessment": {
+          "change_readiness": {
+            "index": 0.4,
+            "state": "contemplation",
+            "confidence": 0.85,
+            "evidence": [
+              "User is asking 'how exactly to say it directly', indicating they are contemplating the mechanics of the action, though they are immediately hindered by their fear of it being perceived as defiance."
+            ]
+          },
+          "ambivalence": {
+            "index": 0.85,
+            "state": "strong",
+            "confidence": 0.95,
+            "evidence": [
+              "User is clearly torn between the desire to communicate directly (as suggested by friends) and the strong fear of being perceived as talking back ('一开口就觉得是在顶撞他'). This shows a classic high ambivalence between wanting to act and fearing the interpersonal consequences."
+            ]
+          },
+          "self_efficacy": {
+            "index": 0.2,
+            "state": "very_low",
+            "confidence": 0.9,
+            "evidence": [
+              "User expresses a lack of confidence in their communication skills, stating 'As soon as I open my mouth, I feel like I'm talking back', indicating a low belief in their ability to execute the change effectively without causing conflict."
+            ]
+          },
+          "change_talk": {
+            "index": 0.25,
+            "state": "weak",
+            "confidence": 0.75,
+            "evidence": [
+              "User asks 'how exactly to say it directly', showing a slight desire and need to figure out the action, but it is mostly framed as a logistical hurdle rather than strong personal motivation (DARN/CAT)."
+            ]
+          },
+          "sustain_talk": {
+            "index": 0.5,
+            "state": "moderate",
+            "confidence": 0.85,
+            "evidence": [
+              "The fear that speaking up will inherently be perceived as 'talking back' ('顶撞他') acts as a strong reason to avoid the change and maintain the current non-confrontational status quo."
+            ]
+          },
+          "mi_intervention_need": 0.683,
+          "overall_trend": "stable",
+          "primary_concern": "ambivalence",
+          "should_intervene": true,
+          "recommended_processes": [
+            {
+              "process": "explore",
+              "priority": 1,
+              "rationale": "User is experiencing high ambivalence and specific fears about the mechanics of change. Need to explore what 'talking back' means to them, validate the difficulty of navigating this interpersonal dynamic, and explore both sides of their hesitation."
+            },
+            {
+              "process": "evocation",
+              "priority": 2,
+              "rationale": "User has low self-efficacy regarding communication skills and fears negative outcomes. Need to evoke their own intrinsic values to see if there is a way to be direct that still aligns with their personal or cultural values of respect, strengthening their internal motivation."
+            }
+          ]
+        },
+        "skill_output": {
+          "technique": {
+            "name": "oars",
+            "description": "Build engagement and explore the user's ambivalence without pushing for change",
+            "steps": [
+              "用开放式提问邀请用户分享更多",
+              "通过反思性倾听回应，让用户感到被理解",
+              "温和地邀请用户觉察自己内心不同的声音"
+            ]
+          },
+          "conversation_goal": "通过开放式提问和反思性倾听，帮助用户探索内心的矛盾，不做评判",
+          "adaptation": {
+            "interaction_style": "exploratory",
+            "tone_adjustment": "温和、好奇、不评判",
+            "pace_adjustment": "slow",
+            "culture_note": "用'你自己觉得呢？'替代'你应该'；肯定要具体而非笼统；矛盾是正常的不是抗拒"
+          },
+          "contraindications": [
+            {
+              "condition": "crisis",
+              "reason": "危机状态下不适合探索矛盾，优先确保安全"
+            }
+          ],
+          "_skill_name": "mi_explore"
+        },
+        "products": {},
+        "continue_eval": null
+      },
+      "error": null,
+      "wall_seconds": 120.955,
+      "agent_text": "听得出来，朋友觉得“直接说”是个干脆的办法，但在你这里，一开口就像是“顶撞”，这让你觉得很有压力。一边是朋友觉得该直接表达，另一边是你心里很清楚去“顶撞”有多难，心里有不同的声音在打架，这太正常了。\n\n如果先放下朋友说的“直接说”，就你自己来说，想到要去跟他开口，你心里最担心或者顾虑的是什么呢？你自己觉得呢？"
+    },
+    {
+      "turn": 6,
+      "trace_id": "132af4768ae34800",
+      "user_text": "如果用「描述事实+表达感受+请求+强化」四步——我先准备一下。",
+      "agent_text_parts": [
+        "听到你",
+        "提出这个四步",
+        "法，并且愿意",
+        "花时间去准备，",
+        "这真的很不容易。",
+        "看得出来，你正在",
+        "努力寻找一种既能",
+        "表达自己，又",
+        "不会让你觉得是在",
+        "“顶撞”",
+        "的方式。\n\n你",
+        "慢慢准备，按照",
+        "自己的节奏来就好",
+        "。在构思这四",
+        "步的时候",
+        "，你心里觉得",
+        "哪一步相对顺畅",
+        "些，哪一步",
+        "又让你觉得",
+        "最需要多斟酌一下",
+        "呢？"
+      ],
+      "events": [
+        {
+          "event": "token",
+          "data": "听到你"
+        },
+        {
+          "event": "token",
+          "data": "提出这个四步"
+        },
+        {
+          "event": "token",
+          "data": "法，并且愿意"
+        },
+        {
+          "event": "token",
+          "data": "花时间去准备，"
+        },
+        {
+          "event": "token",
+          "data": "这真的很不容易。"
+        },
+        {
+          "event": "token",
+          "data": "看得出来，你正在"
+        },
+        {
+          "event": "token",
+          "data": "努力寻找一种既能"
+        },
+        {
+          "event": "token",
+          "data": "表达自己，又"
+        },
+        {
+          "event": "token",
+          "data": "不会让你觉得是在"
+        },
+        {
+          "event": "token",
+          "data": "“顶撞”"
+        },
+        {
+          "event": "token",
+          "data": "的方式。\n\n你"
+        },
+        {
+          "event": "token",
+          "data": "慢慢准备，按照"
+        },
+        {
+          "event": "token",
+          "data": "自己的节奏来就好"
+        },
+        {
+          "event": "token",
+          "data": "。在构思这四"
+        },
+        {
+          "event": "token",
+          "data": "步的时候"
+        },
+        {
+          "event": "token",
+          "data": "，你心里觉得"
+        },
+        {
+          "event": "token",
+          "data": "哪一步相对顺畅"
+        },
+        {
+          "event": "token",
+          "data": "些，哪一步"
+        },
+        {
+          "event": "token",
+          "data": "又让你觉得"
+        },
+        {
+          "event": "token",
+          "data": "最需要多斟酌一下"
+        },
+        {
+          "event": "token",
+          "data": "呢？"
+        },
+        {
+          "event": "dialogue_done",
+          "data": {
+            "trace_id": "132af4768ae34800",
+            "owner": "therapy_mi"
+          }
+        },
+        {
+          "event": "final",
+          "data": {
+            "message": "如果用「描述事实+表达感受+请求+强化」四步——我先准备一下。",
+            "risk_state": "SAFE",
+            "crisis": false
+          }
+        }
+      ],
+      "final": {
+        "message": "如果用「描述事实+表达感受+请求+强化」四步——我先准备一下。",
+        "risk_state": "SAFE",
+        "crisis": false
+      },
+      "state_after": {
+        "owner": "therapy_mi",
+        "crisis": false,
+        "risk_level": "SAFE",
+        "therapy": {
+          "name": "MI",
+          "start_seq": 7,
+          "rounds": 3,
+          "step_index": 1,
+          "branch": null,
+          "basic_flow_complete": false,
+          "visited": [
+            "explore"
+          ]
+        },
+        "last_therapy_check_seq": 5,
+        "pending_user_tokens": 0
+      },
+      "orchestration_after": {
+        "updated_seq": 3,
+        "therapy": "MI",
+        "current_step": "explore",
+        "next_step": "evocation",
+        "step_judgment": {
+          "action": "advance",
+          "target_step": "evocation",
+          "achieved": true,
+          "reason": "用户的改变准备度已达0.9（action阶段），矛盾心理几乎消失（0.15），自我效能感高（0.8），改变语言强烈（0.95），维持语言几乎不存在（0.05）。用户已主动提出具体的四步沟通框架并表示'我先准备一下'，表明explore步骤（探索问题、理解顾虑）已充分完成。系统推荐的下一步是commitment，但按流程顺序应先经过evocation阶段来巩固其自我效能和动机，因此推进到evocation步骤。"
+        },
+        "assessment": {
+          "change_readiness": {
+            "index": 0.9,
+            "state": "action",
+            "confidence": 0.95,
+            "evidence": [
+              "User proposes a specific 4-step communication framework ('描述事实+表达感受+请求+强化') and states '我先准备一下' (I'll prepare first), indicating a clear shift into the preparation stage of change."
+            ]
+          },
+          "ambivalence": {
+            "index": 0.15,
+            "state": "none",
+            "confidence": 0.85,
+            "evidence": [
+              "The user has moved past the previous paralysis of 'speaking up equals talking back' by adopting a structured 4-step approach, significantly reducing their ambivalence about whether to act."
+            ]
+          },
+          "self_efficacy": {
+            "index": 0.8,
+            "state": "high",
+            "confidence": 0.9,
+            "evidence": [
+              "User actively suggests a concrete 4-step communication strategy ('描述事实+表达感受+请求+强化'), demonstrating increased confidence in their ability to execute the change effectively without causing conflict."
+            ]
+          },
+          "change_talk": {
+            "index": 0.95,
+            "state": "strong",
+            "confidence": 0.95,
+            "evidence": [
+              "User exhibits strong 'Taking steps' and 'Activation' change talk (CAT) by outlining a specific plan ('四步') and stating their intention to prepare for it ('我先准备一下')."
+            ]
+          },
+          "sustain_talk": {
+            "index": 0.05,
+            "state": "absent",
+            "confidence": 0.9,
+            "evidence": [
+              "No sustain talk is present in this message; the user is fully focused on how to implement the change rather than reasons to avoid it."
+            ]
+          },
+          "mi_intervention_need": 0.217,
+          "overall_trend": "improving",
+          "primary_concern": "change_readiness",
+          "should_intervene": false,
+          "recommended_processes": [
+            {
+              "process": "commitment",
+              "priority": 1,
+              "rationale": "User has transitioned into the preparation stage with a specific plan. The focus should now be on supporting their commitment, helping them finalize their preparation, and planning the next steps for action."
+            },
+            {
+              "process": "evocation",
+              "priority": 2,
+              "rationale": "To further solidify their self-efficacy and motivation, evoke their confidence in using this 4-step framework and explore how it aligns with their values of respectful communication."
+            }
+          ]
+        },
+        "skill_output": {
+          "technique": {
+            "name": "oars",
+            "description": "The user has moved past ambivalence and is now in the action planning phase, proposing a specific 4-step method and requesting time to prepare. OARS is chosen to affirm their proactive effort, reflect their readiness, and use open questions to support their preparation process at their own pace.",
+            "steps": [
+              "Affirm the user's initiative in adopting a structured 4-step approach and acknowledge their wisdom in taking time to prepare.",
+              "Use an open question to gently explore their thought process or feelings about the steps, while explicitly giving them space and time to prepare without pressure."
+            ]
+          },
+          "conversation_goal": "To affirm the user's proactive shift towards action, validate their need for preparation time, and gently explore their thought process as they structure their approach, maintaining a supportive and collaborative partnership.",
+          "adaptation": {
+            "interaction_style": "exploratory",
+            "tone_adjustment": "Supportive, patient, and encouraging. Conveying respect for their pace and acknowledging the courage it takes to prepare for a difficult conversation.",
+            "pace_adjustment": "Slow and unhurried. Giving the user ample space and time to prepare without feeling pressured to execute the conversation immediately.",
+            "culture_note": "肯定要具体：肯定用户主动寻找‘描述事实+表达感受+请求+强化’这种结构化的方法，这体现了他们为了表达自我所做的深思熟虑。尊重用户‘先准备一下’的节奏，不催促，体现对自主权的尊重。"
+          },
+          "contraindications": [
+            {
+              "condition": "Pushing for immediate action or rushing the preparation.",
+              "reason": "The user explicitly stated they need time to prepare. Rushing them could recreate the feeling of pressure, making the task feel overwhelming and potentially triggering sustain talk or withdrawal."
+            },
+            {
+              "condition": "Giving direct advice or examples on how to fill in the 4 steps.",
+              "reason": "This violates the MI principle of eliciting the user's own ideas. The user is the expert on their relationship and needs to generate the content themselves to feel ownership and confidence."
+            }
+          ],
+          "_skill_name": "mi_explore"
+        },
+        "products": {},
+        "continue_eval": null
+      },
+      "error": null,
+      "wall_seconds": 157.632,
+      "agent_text": "听到你提出这个四步法，并且愿意花时间去准备，这真的很不容易。看得出来，你正在努力寻找一种既能表达自己，又不会让你觉得是在“顶撞”的方式。\n\n你慢慢准备，按照自己的节奏来就好。在构思这四步的时候，你心里觉得哪一步相对顺畅些，哪一步又让你觉得最需要多斟酌一下呢？"
+    },
+    {
+      "turn": 7,
+      "trace_id": "4f7053d8b54940be",
+      "user_text": "那我明天可以试着先说一句「最近连续三周 11 点，我身体有点扛不住」？",
+      "agent_text_parts": [
+        "听起来你已经把",
+        "想法落地成了一句",
+        "很具体的话。“",
+        "连续三周1",
+        "1点”是",
+        "客观事实，“身体",
+        "有点扛不住",
+        "”是你真实的感受",
+        "。这样",
+        "表达既温和，",
+        "又清楚地说明了你的",
+        "状态，完全不是",
+        "“顶撞”。",
+        "\n\n你打算明天",
+        "先试着说这句",
+        "，迈出这一小",
+        "步很踏实。",
+        "当你想象明天对他",
+        "讲出这句话时",
+        "，心里感觉怎么样",
+        "？会觉得轻松一点",
+        "，还是依然有些",
+        "紧张呢？"
+      ],
+      "events": [
+        {
+          "event": "token",
+          "data": "听起来你已经把"
+        },
+        {
+          "event": "token",
+          "data": "想法落地成了一句"
+        },
+        {
+          "event": "token",
+          "data": "很具体的话。“"
+        },
+        {
+          "event": "token",
+          "data": "连续三周1"
+        },
+        {
+          "event": "token",
+          "data": "1点”是"
+        },
+        {
+          "event": "token",
+          "data": "客观事实，“身体"
+        },
+        {
+          "event": "token",
+          "data": "有点扛不住"
+        },
+        {
+          "event": "token",
+          "data": "”是你真实的感受"
+        },
+        {
+          "event": "token",
+          "data": "。这样"
+        },
+        {
+          "event": "token",
+          "data": "表达既温和，"
+        },
+        {
+          "event": "token",
+          "data": "又清楚地说明了你的"
+        },
+        {
+          "event": "token",
+          "data": "状态，完全不是"
+        },
+        {
+          "event": "token",
+          "data": "“顶撞”。"
+        },
+        {
+          "event": "token",
+          "data": "\n\n你打算明天"
+        },
+        {
+          "event": "token",
+          "data": "先试着说这句"
+        },
+        {
+          "event": "token",
+          "data": "，迈出这一小"
+        },
+        {
+          "event": "token",
+          "data": "步很踏实。"
+        },
+        {
+          "event": "token",
+          "data": "当你想象明天对他"
+        },
+        {
+          "event": "token",
+          "data": "讲出这句话时"
+        },
+        {
+          "event": "token",
+          "data": "，心里感觉怎么样"
+        },
+        {
+          "event": "token",
+          "data": "？会觉得轻松一点"
+        },
+        {
+          "event": "token",
+          "data": "，还是依然有些"
+        },
+        {
+          "event": "token",
+          "data": "紧张呢？"
+        },
+        {
+          "event": "dialogue_done",
+          "data": {
+            "trace_id": "4f7053d8b54940be",
+            "owner": "therapy_mi"
+          }
+        },
+        {
+          "event": "final",
+          "data": {
+            "message": "那我明天可以试着先说一句「最近连续三周 11 点，我身体有点扛不住」？",
+            "risk_state": "LOW_RISK",
+            "crisis": false
+          }
+        }
+      ],
+      "final": {
+        "message": "那我明天可以试着先说一句「最近连续三周 11 点，我身体有点扛不住」？",
+        "risk_state": "LOW_RISK",
+        "crisis": false
+      },
+      "state_after": {
+        "owner": "therapy_mi",
+        "crisis": false,
+        "risk_level": "LOW_RISK",
+        "therapy": {
+          "name": "MI",
+          "start_seq": 7,
+          "rounds": 4,
+          "step_index": 2,
+          "branch": null,
+          "basic_flow_complete": false,
+          "visited": [
+            "explore",
+            "evocation"
+          ]
+        },
+        "last_therapy_check_seq": 5,
+        "pending_user_tokens": 0
+      },
+      "orchestration_after": {
+        "updated_seq": 4,
+        "therapy": "MI",
+        "current_step": "evocation",
+        "next_step": "commitment",
+        "step_judgment": {
+          "action": "advance",
+          "target_step": null,
+          "achieved": true,
+          "reason": "用户已从矛盾状态完全过渡到行动阶段：change_readiness=0.95（action），ambivalence=0.1（none），self_efficacy=0.85（high），sustain_talk=0.0（absent）。用户已自主制定了具体的沟通话术（'最近连续三周11点，我身体有点扛不住'），并主动寻求验证，表明evocation阶段的核心目标——激发用户自身改变动机与信心——已充分达成。当前primary_concern已转向commitment，应进入下一步commitment以巩固承诺、细化执行计划。"
+        },
+        "assessment": {
+          "change_readiness": {
+            "index": 0.95,
+            "state": "action",
+            "confidence": 0.95,
+            "evidence": [
+              "User is actively drafting a specific script to use tomorrow ('明天可以试着先说一句'), indicating they are in the action stage and taking concrete steps toward change."
+            ]
+          },
+          "ambivalence": {
+            "index": 0.1,
+            "state": "none",
+            "confidence": 0.9,
+            "evidence": [
+              "The user has moved past previous hesitations about 'talking back' and is now focused purely on the mechanics of how to express their needs, showing minimal ambivalence.",
+              "The slight hesitation is only in the form of seeking validation ('可以...？'), which is normal planning behavior rather than true ambivalence."
+            ]
+          },
+          "self_efficacy": {
+            "index": 0.85,
+            "state": "high",
+            "confidence": 0.9,
+            "evidence": [
+              "User confidently formulates a specific, non-confrontational opening line based on the previously discussed framework, showing strong belief in their ability to execute the change safely."
+            ]
+          },
+          "change_talk": {
+            "index": 0.95,
+            "state": "strong",
+            "confidence": 0.95,
+            "evidence": [
+              "Strong 'Taking steps' (CAT) change talk is evident as the user scripts the exact words they plan to use tomorrow: '最近连续三周 11 点，我身体有点扛不住'."
+            ]
+          },
+          "sustain_talk": {
+            "index": 0.0,
+            "state": "absent",
+            "confidence": 0.95,
+            "evidence": [
+              "No sustain talk is present; the user is fully focused on implementing the change and has abandoned previous reasons to avoid speaking up."
+            ]
+          },
+          "mi_intervention_need": 0.173,
+          "overall_trend": "improving",
+          "primary_concern": "commitment",
+          "should_intervene": false,
+          "recommended_processes": [
+            {
+              "process": "commitment",
+              "priority": 1,
+              "rationale": "User has formulated a specific plan and is asking for validation. The focus should be on solidifying this commitment, helping them finalize the plan, and exploring how they will implement it tomorrow."
+            },
+            {
+              "process": "evocation",
+              "priority": 2,
+              "rationale": "Evoke the user's confidence in this specific phrasing and explore how it aligns with their goal of communicating their needs without feeling like they are 'talking back'."
+            }
+          ]
+        },
+        "skill_output": {
+          "technique": {
+            "name": "darn_cat",
+            "description": "The user is already demonstrating strong 'Taking steps' (CAT) by scripting a specific, actionable phrase. This technique will be used to explore the underlying DARN (Desire, Ability, Reasons, Need) that supports this CAT, deepening their internal motivation and ensuring the action is rooted in their own authentic needs rather than just external pressure.",
+            "steps": [
+              "Affirm and reflect the user's 'Taking steps' by validating the specific phrase they drafted, highlighting its clarity, non-confrontational nature, and authenticity.",
+              "Elicit 'Reasons' and 'Need' by asking what core message or underlying physical/emotional need they most want the other person to truly understand when they say 'my body can't take it anymore'.",
+              "Explore 'Desire' and 'Ability' by asking how they envision feeling after speaking this truth, and what inner strength or preparation they will rely on to stay grounded in their own need during the conversation."
+            ]
+          },
+          "conversation_goal": "To deepen the user's ownership of their planned action by exploring the underlying Reasons and Needs driving their 'Taking steps', ensuring their motivation is internally grounded and resilient before they execute the conversation.",
+          "adaptation": {
+            "interaction_style": "exploratory",
+            "tone_adjustment": "Warm, validating, and gently curious. Act as a supportive sounding board helping them connect with their own internal motivations, rather than an instructor evaluating their script.",
+            "pace_adjustment": "Steady and unhurried. Allow space for the user to connect with the physical and emotional reality of '身体有点扛不住' (body can't take it) before rushing to the next steps of their communication framework.",
+            "culture_note": "In Chinese workplace culture, expressing physical exhaustion to a superior can feel vulnerable or be misinterpreted as complaining. Frame the exploration around self-care and authentic communication, validating that recognizing physical limits is a responsible and necessary form of self-advocacy, emphasizing their own agency in deciding to speak up."
+          },
+          "contraindications": [
+            {
+              "condition": "User feels highly anxious or fearful about the other person's potential negative reaction.",
+              "reason": "Pushing too deep into emotional needs might increase anxiety. If they seem stressed, pivot back to practical preparation (Ability/Taking steps) and focus on how to handle the immediate next steps safely."
+            },
+            {
+              "condition": "User is just looking for a simple 'yes/no' validation of their sentence without wanting to explore deeper.",
+              "reason": "If they just want a quick check, a long exploration might feel burdensome or intrusive. Briefly validate the sentence's effectiveness first, then gently ask only one light open question about their feelings behind it."
+            }
+          ],
+          "_skill_name": "mi_evocation"
+        },
+        "products": {},
+        "continue_eval": null
+      },
+      "error": null,
+      "wall_seconds": 175.531,
+      "agent_text": "听起来你已经把想法落地成了一句很具体的话。“连续三周11点”是客观事实，“身体有点扛不住”是你真实的感受。这样表达既温和，又清楚地说明了你的状态，完全不是“顶撞”。\n\n你打算明天先试着说这句，迈出这一小步很踏实。当你想象明天对他讲出这句话时，心里感觉怎么样？会觉得轻松一点，还是依然有些紧张呢？"
+    },
+    {
+      "turn": 8,
+      "trace_id": "b0ad524c32fa4287",
+      "user_text": "嗯，我先演练一下，看说什么最自然。",
+      "agent_text_parts": [
+        "好啊",
+        "，去演练一下",
+        "，找找“最",
+        "自然”的感觉，",
+        "这个准备特别踏实",
+        "。\n\n在你反复",
+        "琢磨的时候，觉得",
+        "“身体有点扛",
+        "不住”这句话背后",
+        "，你最希望他",
+        "真正听懂的是什么？",
+        "当你想象自己最",
+        "自然地把这句话说",
+        "出来时，心里",
+        "感觉怎么样？"
+      ],
+      "events": [
+        {
+          "event": "token",
+          "data": "好啊"
+        },
+        {
+          "event": "token",
+          "data": "，去演练一下"
+        },
+        {
+          "event": "token",
+          "data": "，找找“最"
+        },
+        {
+          "event": "token",
+          "data": "自然”的感觉，"
+        },
+        {
+          "event": "token",
+          "data": "这个准备特别踏实"
+        },
+        {
+          "event": "token",
+          "data": "。\n\n在你反复"
+        },
+        {
+          "event": "token",
+          "data": "琢磨的时候，觉得"
+        },
+        {
+          "event": "token",
+          "data": "“身体有点扛"
+        },
+        {
+          "event": "token",
+          "data": "不住”这句话背后"
+        },
+        {
+          "event": "token",
+          "data": "，你最希望他"
+        },
+        {
+          "event": "token",
+          "data": "真正听懂的是什么？"
+        },
+        {
+          "event": "token",
+          "data": "当你想象自己最"
+        },
+        {
+          "event": "token",
+          "data": "自然地把这句话说"
+        },
+        {
+          "event": "token",
+          "data": "出来时，心里"
+        },
+        {
+          "event": "token",
+          "data": "感觉怎么样？"
+        },
+        {
+          "event": "dialogue_done",
+          "data": {
+            "trace_id": "b0ad524c32fa4287",
+            "owner": "therapy_mi"
+          }
+        },
+        {
+          "event": "final",
+          "data": {
+            "message": "嗯，我先演练一下，看说什么最自然。",
+            "risk_state": "SAFE",
+            "crisis": false
+          }
+        }
+      ],
+      "final": {
+        "message": "嗯，我先演练一下，看说什么最自然。",
+        "risk_state": "SAFE",
+        "crisis": false
+      },
+      "state_after": {
+        "owner": "daily",
+        "crisis": false,
+        "risk_level": "SAFE",
+        "therapy": null,
+        "last_therapy_check_seq": 5,
+        "pending_user_tokens": 0
+      },
+      "orchestration_after": {
+        "updated_seq": 5,
+        "therapy": "MI",
+        "current_step": "commitment",
+        "next_step": "commitment",
+        "step_judgment": {
+          "action": "advance",
+          "target_step": null,
+          "achieved": true,
+          "reason": "用户已处于行动阶段(change_readiness=0.95)，主动进行演练并制定具体计划，自我效能感高(0.9)，改变意愿强烈且无矛盾心理。commitment步骤的核心目标——形成具体可行的行动计划并展现承诺——已充分达成，可进入流程收尾或完成阶段。"
+        },
+        "assessment": {
+          "change_readiness": {
+            "index": 0.95,
+            "state": "action",
+            "confidence": 0.95,
+            "evidence": [
+              "User is actively preparing to rehearse what to say ('我先演练一下'), demonstrating they are firmly in the action stage and taking concrete, practical steps."
+            ]
+          },
+          "ambivalence": {
+            "index": 0.05,
+            "state": "none",
+            "confidence": 0.95,
+            "evidence": [
+              "The user is fully focused on the mechanics of execution (finding the most natural phrasing) rather than debating whether to change or expressing mixed feelings."
+            ]
+          },
+          "self_efficacy": {
+            "index": 0.9,
+            "state": "high",
+            "confidence": 0.9,
+            "evidence": [
+              "User expresses confidence in their ability to refine their approach through rehearsal ('看说什么最自然'), showing a strong belief in their capacity to execute the change effectively."
+            ]
+          },
+          "change_talk": {
+            "index": 0.9,
+            "state": "strong",
+            "confidence": 0.95,
+            "evidence": [
+              "Strong 'Taking steps' (CAT) change talk is present as the user commits to rehearsing the conversation to prepare for tomorrow ('我先演练一下')."
+            ]
+          },
+          "sustain_talk": {
+            "index": 0.0,
+            "state": "absent",
+            "confidence": 0.95,
+            "evidence": [
+              "No sustain talk is present; the user is entirely focused on implementing and refining their plan to communicate their needs."
+            ]
+          },
+          "mi_intervention_need": 0.14,
+          "overall_trend": "stable",
+          "primary_concern": "commitment",
+          "should_intervene": false,
+          "recommended_processes": [
+            {
+              "process": "commitment",
+              "priority": 1,
+              "rationale": "The user is actively rehearsing their plan. The focus should be on supporting this commitment, encouraging their rehearsal, and helping them solidify their approach for tomorrow without adding pressure."
+            },
+            {
+              "process": "evocation",
+              "priority": 2,
+              "rationale": "Evoke the user's confidence in their ability to find the 'most natural' way to express themselves, reinforcing their self-efficacy and autonomy in the process."
+            }
+          ]
+        },
+        "skill_output": {
+          "technique": {
+            "name": "commitment_language",
+            "description": "Reflect and strengthen the user's commitment to rehearse their conversation, solidifying their 'taking steps' (CAT) language into a firm personal commitment before they execute it tomorrow.",
+            "steps": [
+              "Reflect and validate the user's commitment to take the immediate step of rehearsing to find the most natural phrasing.",
+              "Affirm this 'taking steps' (CAT) language, reinforcing their high self-efficacy and proactive approach to the upcoming conversation.",
+              "Provide a supportive wrap-up or a light, open-ended question that allows them to transition into their rehearsal, such as asking how they will know when they've found the right words."
+            ]
+          },
+          "conversation_goal": "To solidify the user's commitment to their rehearsal and the upcoming conversation, ensuring they feel empowered and clear on their next steps without feeling rushed or burdened by further cognitive load.",
+          "adaptation": {
+            "interaction_style": "supportive",
+            "tone_adjustment": "Encouraging, affirming, and respectful of their autonomous pace. Validating their proactive approach without adding pressure.",
+            "pace_adjustment": "Matching the user's readiness to act. Keeping the response concise and supportive to give them the space to actually go and rehearse, rather than keeping them in a prolonged conversation.",
+            "culture_note": "In Chinese culture, preparing thoroughly before a difficult conversation (especially with a superior) is highly valued to maintain harmony. Affirming their rehearsal shows respect for their need to prepare properly while asserting their boundaries."
+          },
+          "contraindications": [
+            {
+              "condition": "Pushing for a bigger commitment or rushing to the actual conversation.",
+              "reason": "The user is already taking a concrete step (rehearsing). Pushing further might induce anxiety or make them feel unheard, violating the principle of meeting the user where they are."
+            },
+            {
+              "condition": "Prescribing how they should rehearse or what exact words to use.",
+              "reason": "The plan must come from the user. They already know they need to find what feels 'most natural' to them; giving unsolicited advice would undermine their high self-efficacy."
+            }
+          ],
+          "_skill_name": "mi_commitment"
+        },
+        "products": {},
+        "continue_eval": {
+          "continue": false,
+          "marginal_utility_note": "用户已进入行动阶段（演练准备），改变意愿0.95、自我效能0.9、矛盾感0.05，MI干预需求仅0.14。AI最新回复已充分支持其承诺与自主性，继续追问'最希望他听懂什么'属于边际收益极低的追加提问，可能打断用户演练节奏、增加不必要的反思压力。此时果断收尾、让用户安心去演练，效用最大化。",
+          "reason": "用户已明确表达'我先演练一下'，处于高度行动导向状态，继续对话的边际收益趋近于零甚至为负（干扰演练、制造额外思考负担）。在已进行5轮且目标充分达成的情况下，及时结束是对用户时间和自主性的最大尊重。"
+        }
+      },
+      "error": null,
+      "wall_seconds": 159.101,
+      "agent_text": "好啊，去演练一下，找找“最自然”的感觉，这个准备特别踏实。\n\n在你反复琢磨的时候，觉得“身体有点扛不住”这句话背后，你最希望他真正听懂的是什么？当你想象自己最自然地把这句话说出来时，心里感觉怎么样？"
+    }
+  ]
+}

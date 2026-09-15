@@ -1,0 +1,1241 @@
+<!doctype html>
+<html lang="zh">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>EA Test Console</title>
+<style>
+:root {
+  --bg:#f4f5f7; --surface:#ffffff; --border:#e4e7ee; --border-strong:#d3d8e2;
+  --text:#191c22; --dim:#6a7282; --faint:#9aa1b0;
+  --acc:#4f6bed; --acc-hover:#3e5bdc; --acc-soft:#eef1fb;
+  --ok:#16a34a; --warn:#b45309; --bad:#dc2626; --warn-soft:#fef3e2; --bad-soft:#fdeaea; --ok-soft:#e9f7ef;
+  --mono:ui-monospace,SFMono-Regular,Menlo,Consolas,monospace;
+  --radius:10px; --radius-s:8px;
+  --shadow:0 1px 2px rgba(16,24,40,.04), 0 1px 3px rgba(16,24,40,.06);
+}
+* { box-sizing:border-box; }
+html, body { height:100%; }
+body {
+  margin:0; font:14px/1.55 -apple-system,BlinkMacSystemFont,"Segoe UI","PingFang SC","Hiragino Sans GB","Microsoft YaHei",sans-serif;
+  background:var(--bg); color:var(--text); display:flex; flex-direction:column; min-height:0;
+  -webkit-font-smoothing:antialiased;
+}
+
+/* ── 顶部栏 ── */
+header {
+  display:flex; align-items:center; gap:14px; padding:0 18px; height:54px;
+  background:var(--surface); border-bottom:1px solid var(--border); flex-shrink:0;
+}
+.brand { display:flex; align-items:center; gap:8px; font-weight:600; font-size:14px; white-space:nowrap; }
+.brand .dot { width:9px; height:9px; border-radius:50%; background:var(--acc); box-shadow:0 0 0 3px var(--acc-soft); }
+.brand small { color:var(--faint); font-weight:400; margin-left:2px; }
+.controls { display:flex; align-items:center; gap:10px; flex:1; min-width:0; }
+.field { display:flex; align-items:center; gap:6px; }
+.field label { color:var(--dim); font-size:12.5px; white-space:nowrap; }
+#chips { display:flex; gap:6px; flex-wrap:wrap; margin-left:auto; }
+select, input[type=text], input:not([type]) {
+  background:var(--surface); color:var(--text); border:1px solid var(--border-strong);
+  border-radius:var(--radius-s); padding:5px 8px; font-size:13px; outline:none;
+  transition:border-color .15s, box-shadow .15s;
+}
+select:focus, input:focus { border-color:var(--acc); box-shadow:0 0 0 3px var(--acc-soft); }
+#userSelect { max-width:150px; } #sessionSelect { max-width:230px; }
+.btn {
+  border:1px solid var(--border-strong); background:var(--surface); color:var(--text);
+  border-radius:var(--radius-s); padding:5px 11px; font-size:13px; cursor:pointer;
+  transition:all .15s; white-space:nowrap;
+}
+.btn:hover { border-color:var(--acc); color:var(--acc); background:var(--acc-soft); }
+.btn.primary { background:var(--acc); border-color:var(--acc); color:#fff; }
+.btn.primary:hover { background:var(--acc-hover); color:#fff; }
+.chip {
+  display:inline-flex; align-items:center; gap:6px; font-size:12px; font-weight:500;
+  padding:3px 10px; border-radius:999px; background:var(--surface);
+  border:1px solid var(--border-strong); color:var(--dim);
+}
+.chip::before { content:""; width:6px; height:6px; border-radius:50%; background:var(--faint); }
+.chip.owner-daily::before { background:var(--ok); } .chip.owner-daily { color:var(--ok); background:var(--ok-soft); border-color:transparent; }
+.chip.owner-therapy::before { background:var(--acc); } .chip.owner-therapy { color:var(--acc); background:var(--acc-soft); border-color:transparent; }
+.chip.risk::before { background:var(--warn); } .chip.risk { color:var(--warn); background:var(--warn-soft); border-color:transparent; }
+.chip.crisis::before { background:#fff; } .chip.crisis { color:#fff; background:var(--bad); border-color:transparent; }
+
+/* ── 主区 ── */
+main { flex:1; display:flex; min-height:0; }
+
+/* 聊天区 */
+#chatPane { flex:1.15; display:flex; flex-direction:column; min-width:0; }
+#messages { flex:1; overflow-y:auto; padding:26px 20px; }
+#messages:empty::after {
+  content:"选择或新建一个会话，开始测试对话";
+  display:block; text-align:center; color:var(--faint); font-size:13px; margin-top:18vh;
+}
+.msg { margin:14px auto; max-width:720px; }
+.msg.user { display:flex; flex-direction:column; align-items:flex-end; }
+.msg .who { font-size:11.5px; color:var(--dim); margin:0 4px 4px; font-weight:500; }
+.msg.user .who { text-align:right; }
+.bubble { border-radius:14px; padding:9px 14px; white-space:pre-wrap; word-break:break-word; line-height:1.6; }
+.msg.user .bubble { background:var(--acc); color:#fff; border-bottom-right-radius:4px; }
+.msg.agent .bubble { background:var(--surface); border:1px solid var(--border); box-shadow:var(--shadow); border-bottom-left-radius:4px; }
+.msg .meta { font-size:11.5px; color:var(--faint); margin:5px 4px 0; font-family:var(--mono); }
+.msg.user .meta { text-align:right; }
+.streaming .bubble::after { content:"▍"; color:var(--acc); animation:blink 1s infinite; }
+@keyframes blink { 50% { opacity:0; } }
+#chatForm { flex-shrink:0; padding:12px 20px 18px; }
+.input-row { display:flex; gap:10px; max-width:720px; margin:0 auto; align-items:flex-end; }
+#chatInput {
+  flex:1; resize:none; height:54px; font:inherit; padding:11px 14px; line-height:1.5;
+  background:var(--surface); border:1px solid var(--border-strong); border-radius:14px; outline:none;
+  transition:border-color .15s, box-shadow .15s;
+}
+#chatInput:focus { border-color:var(--acc); box-shadow:0 0 0 3px var(--acc-soft); }
+#chatForm .btn.primary { height:44px; padding:0 22px; border-radius:12px; font-size:14px; }
+.hint { text-align:center; color:var(--faint); font-size:11.5px; margin-top:7px; max-width:720px; margin-left:auto; margin-right:auto; }
+
+/* 右侧面板 */
+#side { flex:1; display:flex; flex-direction:column; min-width:0; background:var(--surface);
+        border-left:1px solid var(--border); }
+#sideTabs { display:flex; gap:2px; padding:6px 8px 0; flex-shrink:0;
+            border-bottom:1px solid var(--border); flex-wrap:wrap; background:var(--bg); }
+#sideTabs button {
+  border:none; background:transparent; color:var(--dim); font-size:12.5px; font-weight:500;
+  padding:5px 11px; border-radius:6px 6px 0 0; cursor:pointer; transition:all .15s;
+}
+#sideTabs button:hover { color:var(--text); background:#f0f2f7; }
+#sideTabs button.active { color:var(--acc); background:var(--surface); border:1px solid var(--border);
+                          border-bottom-color:var(--surface); margin-bottom:-1px; }
+.sideTabBody { flex:1; display:none; min-height:0; flex-direction:column; }
+.sideTabBody.active { display:flex; }
+#tab-work.active { display:flex; flex-direction:column; overflow:hidden; }
+#tab-state, #tab-orchestration, #tab-summary, #tab-profile, #tab-flow, #tab-llm { padding:0; }
+.detailPane { flex:1; min-height:0; overflow-y:auto; padding:12px 14px; }
+.detailPane .empty { color:var(--faint); font-size:12.5px; padding:30px 0; text-align:center; }
+
+/* LLM 总览（指标卡 + 按 agent 表） */
+.llm-overview { padding-bottom:4px; }
+.llm-overview .kpi { display:grid; grid-template-columns:repeat(auto-fill,minmax(120px,1fr)); gap:8px; margin-bottom:12px; }
+.llm-overview .kpi div { background:#f7f8fa; border:1px solid var(--border); border-radius:var(--radius-s); padding:9px 12px; }
+.llm-overview .kpi .v { font:15px/1.3 var(--mono); color:var(--acc); font-weight:600; word-break:break-all; }
+.llm-overview .kpi .k { font-size:11px; color:var(--dim); margin-top:2px; }
+.llm-overview table { border-collapse:collapse; width:100%; font:12px/1.45 var(--mono); margin-bottom:10px; }
+.llm-overview th, .llm-overview td { border-bottom:1px solid var(--border); padding:6px 10px; text-align:right; white-space:nowrap; }
+.llm-overview th:first-child, .llm-overview td:first-child { text-align:left; }
+.llm-overview th { color:var(--dim); font-weight:600; background:#f7f8fa; border-bottom:1px solid var(--border-strong); }
+.llm-overview tr:hover td { background:#fafbfd; }
+.llm-overview .h4 {
+  font-size:11.5px; font-weight:600; color:var(--dim); text-transform:uppercase;
+  letter-spacing:.05em; margin:6px 0 8px; display:flex; align-items:center; gap:6px;
+}
+.llm-overview .h4::before { content:""; width:4px; height:4px; border-radius:50%; background:var(--acc); }
+
+/* 详情卡片 */
+.detailPane .card {
+  background:var(--surface); border:1px solid var(--border); border-radius:var(--radius);
+  box-shadow:var(--shadow); padding:10px 12px; margin-bottom:10px;
+}
+.detailPane .card-h {
+  font-size:11.5px; font-weight:600; color:var(--dim); text-transform:uppercase;
+  letter-spacing:.05em; margin-bottom:8px; display:flex; align-items:center; gap:6px;
+}
+.detailPane .card-h::before { content:""; width:4px; height:4px; border-radius:50%; background:var(--acc); }
+.detailPane .kv { display:flex; align-items:baseline; gap:10px; padding:3px 0; font-size:12.5px; }
+.detailPane .kv:hover { background:#fafbfd; }
+.detailPane .kv .k { flex:0 0 130px; color:var(--dim); font-size:12px; }
+.detailPane .kv .v { flex:1; word-break:break-word; font-family:var(--mono); font-size:12px; color:var(--text); }
+.detailPane .kv-block { padding:4px 0; font-size:12.5px; }
+.detailPane .kv-block > .k { display:block; color:var(--dim); font-size:11.5px; margin-bottom:3px; }
+.detailPane .kv-block > .v { display:block; word-break:break-word; font-size:12.5px; white-space:pre-wrap; line-height:1.55; }
+.detailPane .kv-block .steps { margin:4px 0 0 18px; padding:0; }
+.detailPane .kv-block .tags .tag {
+  display:inline-block; padding:1px 8px; background:#f0f2f7; border-radius:999px;
+  font-size:11.5px; margin:2px 4px 2px 0; color:var(--text);
+}
+.detailPane .list-group { display:flex; flex-direction:column; gap:6px; }
+.detailPane .card-nested {
+  background:#f7f8fa; border:1px solid var(--border); border-radius:6px;
+  padding:6px 8px; margin:4px 0;
+}
+
+/* ── 边际效用账本：调试时盯"哪轮为什么停" ──────────────────── */
+.detailPane .utilTable { width:100%; border-collapse:collapse; font-size:11.5px; }
+.detailPane .utilTable th, .detailPane .utilTable td {
+  padding:3px 6px; border-bottom:1px solid var(--border); text-align:left;
+  font-family:var(--mono);
+}
+.detailPane .utilTable th { color:var(--dim); font-weight:500; background:#fafbfd; }
+.detailPane .utilTable tr.gain  { background:rgba(50,180,80,0.05); }
+.detailPane .utilTable tr.nogain { background:rgba(220,140,40,0.04); }
+.detailPane .utilTable tr.stop  { background:rgba(220,60,60,0.10); font-weight:600; }
+.detailPane .utilTable tr.current { outline:1px solid var(--acc); outline-offset:-1px; }
+.detailPane .utilTable .num { text-align:right; }
+.detailPane .utilTable .ruleStagnation { color:#a04010; }
+.detailPane .utilTable .ruleRegression  { color:#a01030; }
+.detailPane .utilSpark { width:100%; height:48px; background:#fafbfd; border:1px solid var(--border); border-radius:4px; }
+.detailPane .utilSpark path.line  { fill:none; stroke:var(--acc); stroke-width:1.4; }
+.detailPane .utilSpark path.ewma  { fill:none; stroke:var(--warn); stroke-width:1.4; stroke-dasharray:3 2; }
+.detailPane .utilSpark circle.stop { fill:#c0382b; r:2.5; }
+.detailPane .utilVerdict { font-size:13px; padding:8px 12px; border-radius:5px; margin-top:6px; }
+.detailPane .utilVerdict.continue  { background:rgba(50,180,80,0.07);  color:#2a7a3a; }
+.detailPane .utilVerdict.stop      { background:rgba(220,60,60,0.10);  color:#a01030; }
+.detailPane .utilVerdict.coldstart { background:rgba(80,120,200,0.07); color:#2b4d8b; }
+.detailPane .rulePill { display:inline-block; padding:1px 7px; border-radius:4px; font-size:11px; font-family:var(--mono); }
+.detailPane .ruleStagnation { background:rgba(220,140,40,0.20); color:#a04010; }
+.detailPane .ruleRegression  { background:rgba(220,60,60,0.20); color:#a01030; }
+.detailPane .ruleRoundCap   { background:rgba(80,80,80,0.20); color:#444; }
+.detailPane .risk-chip {
+  display:inline-block; padding:1px 8px; border-radius:4px; font-weight:600;
+  font-size:11.5px; font-family:var(--mono);
+}
+.detailPane .risk-SAFE       { color:var(--ok); }
+.detailPane .risk-LOW_RISK   { color:var(--ok); }
+.detailPane .risk-MEDIUM_RISK{ color:var(--warn); }
+.detailPane .risk-HIGH_RISK  { color:#fff; background:var(--bad); }
+.detailPane .risk-CRISIS     { color:#fff; background:var(--bad); }
+.detailPane .flag-yes { color:#fff; background:var(--bad); padding:1px 6px; border-radius:4px; font-size:11px; }
+.detailPane pre.json {
+  background:#10141f; color:#dbe2f0; border-radius:6px; padding:8px 10px;
+  font:11.5px/1.5 var(--mono); overflow:auto; max-height:280px; margin:4px 0 0;
+}
+
+/* 流水行 */
+.flowRow { background:var(--surface); border:1px solid var(--border); border-radius:6px;
+           padding:6px 10px; margin-bottom:6px; }
+.flowRow.user { background:var(--acc-soft); border-color:transparent; }
+.flowRow .flowHead { display:flex; gap:8px; font-size:11.5px; color:var(--dim); margin-bottom:3px;
+                     font-family:var(--mono); }
+.flowRow .flowHead .role { font-weight:600; color:var(--text); }
+.flowRow .flowText { font-size:13px; line-height:1.5; white-space:pre-wrap; word-break:break-word; }
+
+/* LLM 行 */
+.llmRow { display:grid; grid-template-columns:60px 1fr 1fr auto auto auto auto;
+          gap:8px; align-items:baseline; padding:5px 0; font-size:11.5px;
+          border-bottom:1px dashed var(--border); font-family:var(--mono); }
+.llmRow:last-child { border-bottom:none; }
+.llmRow.fail .a, .llmRow.fail .ok { color:var(--bad); }
+.llmRow .a { font-weight:600; color:var(--text); overflow:hidden; text-overflow:ellipsis; white-space:nowrap; }
+.llmRow .m { color:var(--dim); overflow:hidden; text-overflow:ellipsis; white-space:nowrap; }
+.llmRow .tok, .llmRow .lat, .llmRow .cost, .llmRow .ok { color:var(--dim); white-space:nowrap; }
+.llmRow .ok { color:var(--ok); }
+.llmRow.err { background:var(--bad-soft); }
+.llmRow .errMsg { grid-column:1 / -1; color:var(--bad); font-size:11px;
+                  padding:3px 6px; background:#fff; border-radius:4px; margin-top:3px;
+                  white-space:pre-wrap; word-break:break-word; }
+.llmRow .meta2 { grid-column:1 / -1; color:var(--faint); font-size:10.5px; }
+#tabs { display:flex; gap:4px; padding:10px 14px 0; }
+#tabs button {
+  border:none; background:transparent; color:var(--dim); font-size:13px; font-weight:500;
+  padding:7px 14px; border-radius:8px; cursor:pointer; transition:all .15s;
+}
+#tabs button:hover { color:var(--text); background:#f0f2f7; }
+#tabs button.active { color:var(--acc); background:var(--acc-soft); }
+.tabBody { flex:1; overflow-y:auto; padding:14px; display:none; }
+.tabBody.active { display:block; }
+.section { background:var(--surface); border:1px solid var(--border); border-radius:var(--radius);
+           box-shadow:var(--shadow); padding:12px 14px; margin-bottom:12px; }
+.section h4 { margin:0 0 9px; color:var(--dim); font-size:11.5px; font-weight:600;
+              text-transform:uppercase; letter-spacing:.05em; display:flex; align-items:center; gap:7px; }
+.section h4::before { content:""; width:5px; height:5px; border-radius:50%; background:var(--acc); }
+pre.json { background:#10141f; color:#dbe2f0; border-radius:var(--radius-s); padding:11px 13px;
+           font:12px/1.5 var(--mono); overflow:auto; max-height:300px; margin:0; }
+table { border-collapse:collapse; width:100%; font:12px/1.45 var(--mono); }
+th, td { border-bottom:1px solid var(--border); padding:6px 10px; text-align:right; white-space:nowrap; }
+th:first-child, td:first-child { text-align:left; }
+th { color:var(--dim); font-weight:600; background:#f7f8fa; border-bottom:1px solid var(--border-strong); }
+tr:hover td { background:#fafbfd; }
+.kpi { display:grid; grid-template-columns:repeat(auto-fill,minmax(120px,1fr)); gap:8px; margin-bottom:12px; }
+.kpi div { background:#f7f8fa; border:1px solid var(--border); border-radius:var(--radius-s); padding:9px 12px; }
+.kpi .v { font:15px/1.3 var(--mono); color:var(--acc); font-weight:600; word-break:break-all; }
+.kpi .k { font-size:11px; color:var(--dim); margin-top:2px; }
+
+/* 日志 */
+#tab-work.active { display:flex; flex-direction:column; overflow:hidden; }
+#logFilters { display:flex; gap:8px; align-items:center; padding:10px 12px;
+              background:#f7f8fa; border-bottom:1px solid var(--border); flex-wrap:wrap; flex-shrink:0; }
+#logFilters label { display:flex; align-items:center; gap:5px; color:var(--dim); font-size:12.5px; }
+#logList { font:11.5px/1.55 var(--mono); flex:1; overflow-y:auto; min-height:0; }
+.logline { display:flex; align-items:center; gap:8px; border-bottom:1px solid #eef0f4;
+           padding:4px 8px; cursor:pointer; border-radius:4px; flex-wrap:wrap; }
+.logline:hover { background:#f6f7fa; }
+.logline.level-warning { border-left:3px solid var(--warn); }
+.logline.level-error   { border-left:3px solid var(--bad); }
+.logline.level-info    { border-left:3px solid transparent; }
+.logline .src { color:var(--faint); font-size:10px; flex-shrink:0; }
+.logline .lvl { min-width:42px; text-align:center; font-size:10px; font-weight:700;
+                padding:1px 6px; border-radius:4px; color:#fff; flex-shrink:0; }
+.logline .lvl-info    { background:var(--acc); }
+.logline .lvl-warning { background:var(--warn); }
+.logline .lvl-error   { background:var(--bad); }
+.logline .tl { color:var(--faint); flex-shrink:0; font-size:11px; }
+.logline .mod { font-weight:700; flex-shrink:0; }
+.logline .mod-scheduler   { color:var(--acc); }
+.logline .mod-decision    { color:var(--ok); }
+.logline .mod-therapy     { color:var(--warn); }
+.logline .mod-settlement  { color:#7c3aed; }
+.logline .mod-llm_client  { color:#64748b; }
+.logline .mod-llm         { color:#64748b; }
+.logline .evt { color:var(--dim); flex-shrink:0; }
+.logline .fld { margin-left:auto; display:inline-flex; gap:5px; flex-wrap:wrap;
+                align-items:center; justify-content:flex-end; }
+.logline .tag { font-size:10.5px; padding:1px 8px; border-radius:999px;
+                border:1px solid var(--border); background:#fff; color:var(--text); white-space:nowrap; }
+.logline .tag-trace { color:var(--faint); background:#f7f8fa; }
+.logline .tag-text { color:var(--dim); max-width:260px; overflow:hidden;
+                     text-overflow:ellipsis; white-space:nowrap; }
+.logline .tag-judgment { background:var(--acc-soft); border-color:transparent; color:var(--acc); font-weight:600; }
+.logline .tag-error { background:var(--bad-soft); border-color:transparent; color:var(--bad); }
+.logline .tag-ok { background:var(--ok-soft); border-color:transparent; color:var(--ok); }
+.logline .tag .k { color:var(--faint); font-weight:400; margin-right:1px; }
+.logline .tag-steer { font-weight:700; border:1px solid transparent; }
+.logline .steer-stay    { color:var(--bad);   background:var(--bad-soft); }
+.logline .steer-advance { color:var(--ok);    background:var(--ok-soft); }
+.logline .steer-complete{ color:#7c3aed;   background:#f3e8ff; }
+.logline .steer-go_to   { color:var(--acc);   background:var(--acc-soft); }
+.logline .risk-SAFE       { color:var(--ok);  background:var(--ok-soft); }
+.logline .risk-LOW_RISK   { color:var(--ok);  background:var(--ok-soft); }
+.logline .risk-MEDIUM_RISK{ color:var(--warn); background:var(--warn-soft); }
+.logline .risk-HIGH_RISK  { color:#fff; background:var(--bad); }
+.logline .risk-CRISIS     { color:#fff; background:var(--bad); }
+.logline .det { flex-basis:100%; display:none; background:#10141f; color:#dbe2f0; border-radius:var(--radius-s);
+                padding:9px 11px; margin-top:4px; white-space:pre-wrap; word-break:break-all; }
+.logline.open .det { display:block; }
+
+/* 滚动条 */
+::-webkit-scrollbar { width:9px; height:9px; }
+::-webkit-scrollbar-thumb { background:#d4d8e0; border-radius:8px; border:2px solid transparent; background-clip:content-box; }
+::-webkit-scrollbar-thumb:hover { background:#b9bfcc; background-clip:content-box; border:2px solid transparent; }
+::-webkit-scrollbar-track { background:transparent; }
+</style>
+</head>
+<body>
+<header>
+  <div class="brand"><span class="dot"></span>EA Test Console<small>情绪疏导 Agent 测试台</small></div>
+  <div class="controls">
+    <div class="field">
+      <label>用户</label>
+      <select id="userSelect"></select>
+      <button id="userCreate" class="btn">＋ 新建</button>
+    </div>
+    <div class="field">
+      <label>会话</label>
+      <select id="sessionSelect"></select>
+      <button id="sessionCreate" class="btn">＋ 新建</button>
+    </div>
+    <span id="chips"></span>
+  </div>
+</header>
+<main>
+  <section id="chatPane">
+    <div id="messages"></div>
+    <form id="chatForm">
+      <div class="input-row">
+        <textarea id="chatInput" placeholder="输入消息…（Ctrl + Enter 发送）"></textarea>
+        <button type="submit" class="btn primary">发送</button>
+      </div>
+      <div class="hint">回复结束后可查看状态、指标与日志面板</div>
+    </form>
+  </section>
+  <aside id="side">
+    <div id="sideTabs">
+      <button data-side-tab="tab-work" class="active">日志</button>
+      <button data-side-tab="tab-state">调度</button>
+      <button data-side-tab="tab-orchestration">编排</button>
+      <button data-side-tab="tab-utility">边际效用</button>
+      <button data-side-tab="tab-summary">摘要</button>
+      <button data-side-tab="tab-profile">画像</button>
+      <button data-side-tab="tab-flow">流水</button>
+      <button data-side-tab="tab-llm">LLM</button>
+    </div>
+    <div id="tab-work" class="sideTabBody active">
+      <div id="logFilters">
+        <label>来源 <select id="logSource"><option value="all">全部</option><option value="app">app.jsonl</option><option value="llm">llm_calls.jsonl</option></select></label>
+        <label>级别 <select id="logLevel"><option value="all">全部</option><option>debug</option><option>info</option><option>warning</option><option>error</option></select></label>
+        <label>session <input id="logSession" size="13" placeholder="session_id 包含"></label>
+        <label>trace <input id="logTrace" size="13" placeholder="trace_id 包含"></label>
+        <label><input type="checkbox" id="logAutoscroll" checked> 自动滚动</label>
+        <button id="logClear" class="btn">清屏</button>
+      </div>
+      <div id="logList"></div>
+    </div>
+    <div id="tab-state" class="sideTabBody"><div id="detail-pane-state" class="detailPane active"></div></div>
+    <div id="tab-orchestration" class="sideTabBody"><div id="detail-pane-orchestration" class="detailPane active"></div></div>
+    <div id="tab-utility" class="sideTabBody"><div id="detail-pane-utility" class="detailPane active"></div></div>
+    <div id="tab-summary" class="sideTabBody"><div id="detail-pane-summary" class="detailPane active"></div></div>
+    <div id="tab-profile" class="sideTabBody"><div id="detail-pane-profile" class="detailPane active"></div></div>
+    <div id="tab-flow" class="sideTabBody"><div id="detail-pane-flow" class="detailPane active"></div></div>
+    <div id="tab-llm" class="sideTabBody"><div class="detailPane" id="detail-pane-llm"></div></div>
+  </aside>
+</main>
+<script>
+"use strict";
+const $ = (id) => document.getElementById(id);
+let currentUser = null;
+let currentSession = null;
+let seenLogs = new Set();          // "app|line" / "llm|line"
+let polling = { state: null, logs: null };
+let llmData = [];                  // 最近拉到的 llm_calls.jsonl 条目（供 LLM tab 渲染）
+
+function esc(s){ const d=document.createElement("div"); d.textContent=s==null?"":String(s); return d.innerHTML; }
+function trunc(s, n){ s = s == null ? "" : String(s); return s.length > n ? s.slice(0, n) + "…" : s; }
+function shortTs(ts){ return ts ? String(ts).slice(11, 19) : ""; }
+
+async function api(path, opts){
+  const r = await fetch(path, opts);
+  if (!r.ok) throw new Error(path + " -> " + r.status);
+  return r.json();
+}
+
+/* ── user / session 管理 ── */
+async function loadUsers(keepUser){
+  const data = await api("/ui/api/users");
+  const sel = $("userSelect");
+  sel.innerHTML = "";
+  for (const u of data.users){
+    const opt = document.createElement("option");
+    opt.value = u; opt.textContent = u;
+    sel.appendChild(opt);
+  }
+  if (keepUser && currentUser && data.users.includes(currentUser)){
+    sel.value = currentUser;
+  } else {
+    currentUser = data.users.length ? data.users[0] : null;
+    if (currentUser) sel.value = currentUser;
+  }
+  await loadSessions(true);
+}
+
+async function loadSessions(keep){
+  if (!currentUser){ $("sessionSelect").innerHTML=""; $("messages").innerHTML=""; return; }
+  const data = await api("/ui/api/overview?user_id=" + encodeURIComponent(currentUser));
+  const sel = $("sessionSelect");
+  sel.innerHTML = "";
+  for (const s of data.sessions){
+    const opt = document.createElement("option");
+    opt.value = s.session_id;
+    const t = s.therapy ? ` [${s.therapy}]` : "";
+    opt.textContent = `${s.session_id.slice(0,10)}…${t} (${s.flow_lines})`;
+    sel.appendChild(opt);
+  }
+  if (keep && currentSession && data.sessions.some(s=>s.session_id===currentSession)){
+    sel.value = currentSession;
+  } else {
+    currentSession = data.sessions.length ? data.sessions[0].session_id : null;
+    if (currentSession) sel.value = currentSession;
+  }
+  if (currentSession) await onSessionChanged();
+  else $("messages").innerHTML = "";
+}
+
+async function onSessionChanged(){
+  $("messages").innerHTML = "";
+  seenLogs.clear();
+  $("logList").innerHTML = "";
+  llmData = [];
+  detailCache = { state:null, orchestration:null, summary:null, profile:null, portrait:null, flow:null };
+  for (const k of ["state","orchestration","summary","profile","flow","llm"]){
+    $("detail-pane-" + k).innerHTML = '<div class="empty">加载中…</div>';
+  }
+  await loadHistory();
+  pollState();
+  pollMetrics(); pollLogs();
+}
+
+async function loadHistory(){
+  if (!currentSession) return;
+  const data = await api(`/sessions/${currentSession}/history?page=1&page_size=100`);
+  const items = data.items.slice().reverse();   // 旧在前
+  for (const it of items) appendMessage(it.role==="user"?"user":"agent", it.text, null, it.seq);
+}
+
+$("userSelect").onchange = () => { currentUser = $("userSelect").value; currentSession = null; loadSessions(false); };
+$("sessionSelect").onchange = () => { currentSession = $("sessionSelect").value; onSessionChanged(); };
+$("userCreate").onclick = async () => {
+  const uid = (prompt("新建 user_id：", "user-" + Date.now().toString(36)) || "").trim();
+  if (!uid) return;
+  try {
+    await api("/ui/api/user", { method:"POST", headers:{"Content-Type":"application/json"},
+        body: JSON.stringify({ user_id: uid }) });
+    currentUser = uid;
+    // 先直接插入下拉框（即使后续刷新失败，新建的 user 也立即可见/选中）
+    const sel = $("userSelect");
+    if (![...sel.options].some(o => o.value === uid)){
+      const opt = document.createElement("option");
+      opt.value = uid; opt.textContent = uid;
+      sel.appendChild(opt);
+    }
+    sel.value = uid;
+    await loadUsers(true);
+    if (!currentSession){
+      const r = await api("/sessions", { method:"POST", headers:{"Content-Type":"application/json"},
+          body: JSON.stringify({ user_id: uid }) });
+      currentSession = r.session_id;
+      await loadSessions(true);
+    }
+  } catch(e){
+    alert("新建 user 失败：" + e.message);
+  }
+};
+$("sessionCreate").onclick = async () => {
+  if (!currentUser) return;
+  try {
+    const r = await api("/sessions", { method:"POST", headers:{"Content-Type":"application/json"},
+        body: JSON.stringify({ user_id: currentUser }) });
+    currentSession = r.session_id;
+    await loadSessions(true);
+  } catch(e){
+    alert("新建 session 失败：" + e.message);
+  }
+};
+
+/* ── 聊天（SSE 流式解析） ── */
+function appendMessage(who, text, meta, seq){
+  const wrap = document.createElement("div");
+  wrap.className = "msg " + who;
+  wrap.innerHTML = `<div class="who">${who==="user"?"用户":(currentSession&&meta?"Agent":"Agent")}${seq!=null?` · seq ${seq}`:""}</div>`
+    + `<div class="bubble">${esc(text)}</div>`
+    + (meta ? `<div class="meta">${esc(meta)}</div>` : "");
+  $("messages").appendChild(wrap);
+  $("messages").scrollTop = $("messages").scrollHeight;
+  return wrap;
+}
+
+async function sendChat(text){
+  if (!currentSession) return;
+  appendMessage("user", text);
+  $("chatInput").value = "";
+  const wrap = document.createElement("div");
+  wrap.className = "msg agent streaming";
+  wrap.innerHTML = `<div class="who">Agent</div><div class="bubble"></div>`;
+  $("messages").appendChild(wrap);
+  const bubble = wrap.querySelector(".bubble");
+  let acc = "";
+  let meta = null;
+  try {
+    const resp = await fetch("/chat", {
+      method:"POST", headers:{"Content-Type":"application/json"},
+      body: JSON.stringify({ user_id: currentUser, session_id: currentSession, message: text }),
+    });
+    const reader = resp.body.getReader();
+    const decoder = new TextDecoder();
+    let buf = "";
+    for(;;){
+      const { done, value } = await reader.read();
+      if (done) break;
+      buf += decoder.decode(value, {stream:true});
+      let idx;
+      while ((idx = buf.indexOf("\n\n")) >= 0){
+        const frame = buf.slice(0, idx); buf = buf.slice(idx+2);
+        let ev = null, data = "";
+        for (const line of frame.split("\n")){
+          if (line.startsWith("event: ")) ev = line.slice(7).trim();
+          else if (line.startsWith("data: ")) data += line.slice(6);
+        }
+        if (!ev) continue;
+        if (ev === "token"){
+          // 服务端用 json.dumps 序列化 data 字段，token 的值是带引号的 JSON 字符串
+          // （例如 "你"），需要 JSON.parse 取出真实内容后再拼接，否则引号会累积
+          let piece = data;
+          try { piece = JSON.parse(data); } catch (e) { /* 非 JSON 时按字面量处理 */ }
+          acc += piece;
+          bubble.textContent = acc;
+          $("messages").scrollTop = $("messages").scrollHeight;
+        }
+        else if (ev === "dialogue_done"){
+          // 对话线 LLM 流已结束，立刻消光标（不等关流）
+          wrap.classList.remove("streaming");
+        }
+        else if (ev === "final"){ try { meta = JSON.parse(data); } catch(e){ meta = data; } }
+        else if (ev === "error"){ try { const d=JSON.parse(data); acc = acc || d.error || "生成失败"; bubble.textContent = acc; } catch(e){} }
+      }
+    }
+  } catch(e){
+    bubble.textContent = "（请求失败：" + e.message + "）";
+    wrap.classList.remove("streaming");
+  }
+  // 兜底：万一服务端没发 dialogue_done（极少见），也消光标
+  wrap.classList.remove("streaming");
+  let metaText = "";
+  if (meta){
+    const parts = [];
+    if (meta.risk_state) parts.push("risk=" + meta.risk_state);
+    if (meta.crisis) parts.push("⚠ CRISIS");
+    if (meta.planned_skill) parts.push("skill=" + meta.planned_skill);
+    if (meta.current_therapy) parts.push("therapy=" + meta.current_therapy);
+    if (meta.intervention_count != null) parts.push("interventions=" + meta.intervention_count);
+    metaText = parts.join(" · ");
+  }
+  if (metaText){ const m = document.createElement("div"); m.className="meta"; m.textContent = metaText; wrap.appendChild(m); }
+  pollState();
+}
+
+$("chatForm").onsubmit = (e) => { e.preventDefault(); const t = $("chatInput").value.trim(); if (t) sendChat(t); };
+$("chatInput").addEventListener("keydown", (e) => {
+  if (e.key === "Enter" && (e.ctrlKey || e.metaKey)){ e.preventDefault(); const t=$("chatInput").value.trim(); if (t) sendChat(t); }
+});
+
+/* ── 状态面板 ── */
+let detailCache = { state:null, orchestration:null, summary:null, profile:null, flow:null };
+
+async function pollState(){
+  if (!currentSession) return;
+  try {
+    const data = await api(`/ui/api/session/${currentSession}/state`);
+    const prof = await api(`/ui/api/user/${encodeURIComponent(currentUser)}/profile`);
+    const port = await api(`/users/${encodeURIComponent(currentUser)}/portrait`);
+    detailCache.state = data.state || null;
+    detailCache.orchestration = data.orchestration || null;
+    detailCache.summary = data.summary || null;
+    detailCache.flow = data.flow_tail || [];
+    detailCache.profile = prof.profile || null;
+    detailCache.portrait = port || null;
+    detailRenderAll();
+    renderChips(data.state || {});
+  } catch(e){ /* session 可能刚被删除 */ }
+}
+function renderChips(state){
+  const owner = state.owner || "daily";
+  const chips = [];
+  chips.push(`<span class="chip ${owner.startsWith("therapy_")?"owner-therapy":"owner-daily"}">owner: ${esc(owner)}</span>`);
+  if (state.therapy) {
+    const t = state.therapy;
+    const uhl = Array.isArray(t.utility_history) ? t.utility_history.length : 0;
+    chips.push(`<span class="chip owner-therapy">therapy: ${esc(t.name)} · rounds ${t.rounds} · step ${t.step_index}${t.basic_flow_complete?" · flow完成":""}</span>`);
+    if (uhl) chips.push(`<span class="chip">utility 账本: ${uhl} 条</span>`);
+  }
+  if (state.last_therapy){
+    const lt = state.last_therapy;
+    const reason = (lt.ended_reason || "unknown").replace(/[^A-Za-z]/g,'') || "Unknown";
+    chips.push(`<span class="chip">last: ${esc(lt.name||"-")} · ${lt.rounds ?? 0} 轮 · <span class="rulePill rule${esc(reason)}">${esc(lt.ended_reason||"unknown")}</span></span>`);
+  }
+  if (state.affect_labeling){
+    const a = state.affect_labeling;
+    const cands = Array.isArray(a.candidates) ? a.candidates.length : 0;
+    chips.push(`<span class="chip">affect: ${esc(a.status)}${cands?` (${cands} 候选)`:""}</span>`);
+  }
+  if (state.pmr){
+    const p = state.pmr;
+    const live = (p.status === "proposing" || p.status === "active");
+    const detail = p.current_part ? ` ${esc(p.current_part)} · ${esc(p.phase||"-")} · ${p.beats_done||0}拍` : "";
+    chips.push(`<span class="chip">pmr: ${esc(p.status)}${live?detail:""}${p.close_reason?` · ${esc(p.close_reason)}`:""}</span>`);
+  }
+  chips.push(`<span class="chip risk">risk: ${esc(state.risk_level)}</span>`);
+  if (state.crisis) chips.push(`<span class="chip crisis">CRISIS</span>`);
+  $("chips").innerHTML = chips.join("");
+}
+
+/* ── 详情子 tab 渲染器 ── */
+function detailRenderAll(){
+  $("detail-pane-state").innerHTML = renderStatePane(detailCache.state);
+  $("detail-pane-orchestration").innerHTML = renderOrchPane(detailCache.orchestration);
+  $("detail-pane-utility").innerHTML = renderUtilityHistoryPane(detailCache.state);
+  $("detail-pane-summary").innerHTML = renderSummaryPane(detailCache.summary);
+  $("detail-pane-profile").innerHTML = renderProfilePane(detailCache.profile, detailCache.portrait);
+  $("detail-pane-flow").innerHTML = renderFlowPane(detailCache.flow);
+}
+
+function renderStatePane(s){
+  if (!s) return '<div class="empty">（无 state.json）</div>';
+  const t = s.therapy;
+  const risk = s.risk_level || "-";
+  const last = s.last_therapy;
+  const al  = s.affect_labeling;
+  const pmr = s.pmr;
+  return `
+    <div class="card">
+      <div class="card-h">调度控制</div>
+      <div class="kv"><span class="k">owner</span><span class="v">${esc(s.owner||"-")}</span></div>
+      <div class="kv"><span class="k">risk_level</span><span class="v"><span class="risk-chip risk-${esc(risk)}">${esc(risk)}</span></span></div>
+      <div class="kv"><span class="k">crisis</span><span class="v">${s.crisis?'<span class="flag-yes">是</span>':"否"}</span></div>
+      <div class="kv"><span class="k">last_therapy_check_seq</span><span class="v">${esc(s.last_therapy_check_seq ?? "-")}</span></div>
+      <div class="kv"><span class="k">pending_user_tokens</span><span class="v">${esc(s.pending_user_tokens ?? 0)}</span></div>
+    </div>
+
+    <div class="card">
+      <div class="card-h">当前疗法 ${t ? '' : '<span style="color:var(--faint);font-weight:400">（无活跃疗法）</span>'}</div>
+      ${t ? `
+        <div class="kv"><span class="k">name</span><span class="v">${esc(t.name||"-")}</span></div>
+        <div class="kv"><span class="k">rounds</span><span class="v">${esc(t.rounds ?? 0)}</span></div>
+        <div class="kv"><span class="k">step_index</span><span class="v">${esc(t.step_index ?? "-")}</span></div>
+        <div class="kv"><span class="k">branch</span><span class="v">${esc(t.branch ?? "无")}</span></div>
+        <div class="kv"><span class="k">start_seq</span><span class="v">${esc(t.start_seq ?? "-")}</span></div>
+        <div class="kv"><span class="k">basic_flow_complete</span><span class="v">${t.basic_flow_complete?"✓ 是":"否"}</span></div>
+        ${Array.isArray(t.visited) && t.visited.length
+          ? `<div class="kv-block"><span class="k">visited</span><div class="v tags">${t.visited.map(v => `<span class="tag">${esc(v)}</span>`).join(" ")}</div></div>`
+          : ""}
+        ${Array.isArray(t.utility_history)
+          ? `<div class="kv"><span class="k">utility_history 长度</span><span class="v">${t.utility_history.length} <span style="color:var(--faint)">— 详情见"边际效用"标签</span></span></div>`
+          : ""}
+      ` : ''}
+    </div>
+
+    ${last ? `
+      <div class="card">
+        <div class="card-h">上次疗程 (last_therapy)
+          <span class="rulePill rule${esc((last.ended_reason||'').replace(/[^A-Za-z]/g,'')||'Unknown')}"
+                style="margin-left:8px">${esc(last.ended_reason||'unknown')}</span>
+        </div>
+        <div class="kv"><span class="k">name</span><span class="v">${esc(last.name||"-")}</span></div>
+        <div class="kv"><span class="k">rounds</span><span class="v">${esc(last.rounds ?? 0)}</span></div>
+        <div class="kv"><span class="k">ended_reason</span><span class="v">${esc(last.ended_reason||"-")}</span></div>
+      </div>
+    ` : ''}
+
+    ${al ? `
+      <div class="card">
+        <div class="card-h">情绪命名 (affect_labeling)</div>
+        <div class="kv"><span class="k">status</span><span class="v">${esc(al.status||"-")}</span></div>
+        <div class="kv"><span class="k">start_seq</span><span class="v">${esc(al.start_seq ?? "-")}</span></div>
+        <div class="kv"><span class="k">closed_seq</span><span class="v">${esc(al.closed_seq ?? "-")}</span></div>
+        ${Array.isArray(al.candidates) && al.candidates.length
+          ? `<div class="kv-block"><span class="k">candidates</span><div class="v tags">${al.candidates.map(c => `<span class="tag">${esc(c)}</span>`).join(" ")}</div></div>`
+          : ""}
+        ${al.outcome ? `<div class="kv-block"><span class="k">outcome</span>${renderKVList(al.outcome)}</div>` : ''}
+        ${al.close_reason ? `<div class="kv"><span class="k">close_reason</span><span class="v">${esc(al.close_reason)}</span></div>` : ''}
+        ${al.reason ? `<div class="kv-block"><span class="k">reason</span><div class="v">${esc(al.reason)}</div></div>` : ''}
+      </div>
+    ` : ''}
+
+    ${renderPmrCard(s.pmr)}
+  `;
+}
+
+/* PMR 卡片：渲染 state.pmr（PMR 状态机：proposing → active → closed）。
+   字段来自 src/agents/progressive_muscle_relaxation.py 的 _derive() 输出。 */
+function renderPmrCard(pmr){
+  if (!pmr) return '';
+  const status = pmr.status || "-";
+  const isLive = status === "proposing" || status === "active";
+  return `
+    <div class="card">
+      <div class="card-h">渐进式肌肉放松 (state.pmr)
+        <span class="rulePill" style="margin-left:6px;background:rgba(80,120,200,${isLive?0.20:0.10});color:#2b4d8b">${esc(status)}</span>
+        ${pmr.mode ? `<span class="rulePill" style="margin-left:4px">${esc(pmr.mode)}</span>` : ''}
+      </div>
+      <div class="kv"><span class="k">current_part</span><span class="v">${esc(pmr.current_part || "—")}</span></div>
+      <div class="kv"><span class="k">phase</span><span class="v">${esc(pmr.phase || "—")}</span></div>
+      <div class="kv"><span class="k">beats_done / parts_completed</span><span class="v">${esc(pmr.beats_done ?? 0)} / ${esc(pmr.parts_completed ?? 0)}</span></div>
+      <div class="kv"><span class="k">part_index / closing</span><span class="v">${esc(pmr.part_index ?? 0)} · ${pmr.closing ? "✓ 是" : "否"}</span></div>
+      <div class="kv"><span class="k">start_seq</span><span class="v">${esc(pmr.start_seq ?? "-")}</span></div>
+      ${Array.isArray(pmr.body_parts) && pmr.body_parts.length
+        ? `<div class="kv-block"><span class="k">body_parts</span><div class="v tags">${pmr.body_parts.map(p => `<span class="tag">${esc(p)}</span>`).join(" ")}</div></div>`
+        : ""}
+      ${status === "closed" ? `
+        <div class="kv"><span class="k">closed_seq</span><span class="v">${esc(pmr.closed_seq ?? "-")}</span></div>
+        <div class="kv"><span class="k">close_reason</span><span class="v">${esc(pmr.close_reason || "—")}</span></div>
+        ${pmr.outcome ? `<div class="kv-block"><span class="k">outcome</span>${renderKVList(pmr.outcome)}</div>` : ''}
+      ` : ''}
+    </div>`;
+}
+
+function renderOrchPane(o){
+  if (!o || Object.keys(o).length === 0) return '<div class="empty">（无 orchestration.json）</div>';
+  const j = o.step_judgment || {};
+  const sk = o.skill_output || {};
+  const tech = sk.technique || {};
+  const ue = o.utility_eval;
+  return `
+    <div class="card">
+      <div class="card-h">本轮编排</div>
+      <div class="kv"><span class="k">updated_seq</span><span class="v">${esc(o.updated_seq ?? "-")}</span></div>
+      <div class="kv"><span class="k">therapy</span><span class="v">${esc(o.therapy || "-")}</span></div>
+      <div class="kv"><span class="k">current_step</span><span class="v">${esc(o.current_step || "-")}</span></div>
+      ${o.next_step && o.next_step !== o.current_step ? `<div class="kv"><span class="k">next_step</span><span class="v">${esc(o.next_step)}</span></div>` : ""}
+    </div>
+    <div class="card">
+      <div class="card-h">步骤判断 (step_judgment)</div>
+      <div class="kv"><span class="k">action</span><span class="v">${esc(j.action || "-")}</span></div>
+      ${j.target_step ? `<div class="kv"><span class="k">target_step</span><span class="v">${esc(j.target_step)}</span></div>` : ""}
+      <div class="kv"><span class="k">achieved</span><span class="v">${j.achieved?"✓ 是":"否"}</span></div>
+      ${j.reason ? `<div class="kv-block"><span class="k">reason</span><div class="v">${esc(j.reason)}</div></div>` : ""}
+    </div>
+    ${sk._skill_name ? `
+      <div class="card">
+        <div class="card-h">技能执行 (skill_output)</div>
+        <div class="kv"><span class="k">_skill_name</span><span class="v">${esc(sk._skill_name)}</span></div>
+        ${sk.conversation_goal ? `<div class="kv-block"><span class="k">conversation_goal</span><div class="v">${esc(sk.conversation_goal)}</div></div>` : ""}
+        ${tech.name ? `<div class="kv"><span class="k">technique.name</span><span class="v">${esc(tech.name)}</span></div>` : ""}
+        ${tech.description ? `<div class="kv-block"><span class="k">technique.description</span><div class="v">${esc(tech.description)}</div></div>` : ""}
+        ${Array.isArray(tech.steps) && tech.steps.length ? `<div class="kv-block"><span class="k">technique.steps</span><ol class="v steps">${tech.steps.map(s=>`<li>${esc(s)}</li>`).join("")}</ol></div>` : ""}
+        ${sk.adaptation != null ? `<div class="kv-block"><span class="k">adaptation</span>${renderKVList(sk.adaptation)}</div>` : ""}
+        ${Array.isArray(sk.contraindications) && sk.contraindications.length ? `<div class="kv-block"><span class="k">contraindications</span><div class="v tags">${sk.contraindications.map(s=>`<span class="tag">${esc(s)}</span>`).join("")}</div></div>` : ""}
+      </div>
+    ` : ""}
+    ${o.assessment ? `<div class="card"><div class="card-h">评估结果 (assessment)</div>${renderKVList(o.assessment)}</div>` : ""}
+    ${o.products && Object.keys(o.products).length ? `<div class="card"><div class="card-h">疗程产品 (products)</div>${renderKVList(o.products)}</div>` : ""}
+    ${ue ? `
+      <div class="card">
+        <div class="card-h">本轮边际效用 (utility_eval)
+          ${ue.stop ? `<span class="rulePill rule${esc((ue.rule_hit||'Unknown').replace(/[^A-Za-z]/g,''))}" style="margin-left:6px">${esc(ue.rule_hit||'stop')}</span>` : ''}
+        </div>
+        <div class="kv"><span class="k">round / action</span><span class="v">${esc(ue.round ?? "-")} · ${esc(ue.action || "-")}</span></div>
+        <div class="kv"><span class="k">progress / technique</span><span class="v">${esc(ue.progress ?? "-")} · ${esc(ue.technique || "—")}</span></div>
+        <div class="kv"><span class="k">state_score / state_delta</span><span class="v">${esc(ue.state_score ?? "—")} · ${esc(ue.state_delta ?? "—")}</span></div>
+        <div class="kv"><span class="k">novelty / gain</span><span class="v">${esc(ue.novelty ?? "—")} · ${ue.gain ? "✓ yes" : "✗ no"}</span></div>
+        <div class="kv"><span class="k">utility / ewma</span><span class="v">${esc(ue.utility ?? "-")} · ${esc(ue.ewma ?? "-")}</span></div>
+        <div class="kv"><span class="k">stop</span><span class="v">${ue.stop ? "✗ 是" : "✓ 否"}</span></div>
+        ${ue.rule_hit ? `<div class="kv"><span class="k">rule_hit</span><span class="v">${esc(ue.rule_hit)}</span></div>` : ''}
+      </div>
+    ` : ""}`;
+}
+
+/* 边际效用账本：渲染 therapy.utility_history 全表 + 曲线 + 终结点。
+   utility_history 随疗程存亡——state.therapy=null 时这张表就没了；
+   只能看到"上次疗程的 ended_reason"（state.last_therapy），看不到历史账本。 */
+function renderUtilityHistoryPane(s){
+  if (!s) return '<div class="empty">（无 state.json）</div>';
+  const t = s.therapy;
+  const hist = (t && Array.isArray(t.utility_history)) ? t.utility_history : [];
+  if (!hist.length){
+    if (s.last_therapy){
+      return `<div class="card">
+        <div class="card-h">边际效用账本</div>
+        <div class="empty" style="padding:10px 0">
+          疗程已结束——账本随疗程存亡销毁。
+          <br>上次疗程：<b>${esc(s.last_therapy.name||"-")}</b> · rounds ${s.last_therapy.rounds} · ended_reason <b>${esc(s.last_therapy.ended_reason||"-")}</b>
+          <br><span style="color:var(--faint)">要保留账本可在 core/signals.py 的 EndTherapy.apply 把它复制到 state.last_therapy.utility_history</span>
+        </div>
+      </div>`;
+    }
+    return `<div class="card"><div class="card-h">边际效用账本</div><div class="empty" style="padding:10px 0">当前 session 暂无边际效用账本（未发生疗程，或 round &lt; 1）。</div></div>`;
+  }
+
+  // 当前裁决（按 MarginalUtilityConfig 默认值：min_rounds=3）
+  const last = hist[hist.length-1];
+  const minRounds = 3;
+  let verdictClass = "coldstart", verdictText = "冷启动保护中";
+  if (hist.length >= minRounds){
+    if (last.state_delta != null && last.state_delta <= -0.24) { verdictClass = "stop"; verdictText = `本轮停（倒退 -${Math.abs(last.state_delta).toFixed(2)} ≥ 0.24）`; }
+    else if (last.state_delta != null && last.state_delta <= -0.12 && (hist[hist.length-2]||{}).state_delta != null
+             && hist[hist.length-2].state_delta <= -0.12) { verdictClass = "stop"; verdictText = `本轮停（连续两轮倒退 ≥ 0.12）`; }
+    else if (hist.slice(-2).every(r => !r.gain)) { verdictClass = "stop"; verdictText = "本轮停（连续两轮无收益）"; }
+    else { verdictClass = "continue"; verdictText = "持续"; }
+  }
+
+  // 曲线 SVG：x=index, y=utility, 两条线 + stop 点
+  const W = 600, H = 48, PAD = 4;
+  const allVals = hist.flatMap(r => [r.utility, r.ewma]);
+  const vmin = Math.min(-0.5, ...allVals);
+  const vmax = Math.max(1.2, ...allVals);
+  const vspan = (vmax - vmin) || 1;
+  const xFor = (i) => PAD + (W - 2*PAD) * (i / Math.max(1, hist.length-1));
+  const yFor = (v) => H - PAD - (H - 2*PAD) * ((v - vmin) / vspan);
+  const linePath = hist.map((r,i) => `${i?"L":"M"}${xFor(i).toFixed(1)},${yFor(r.utility).toFixed(1)}`).join(" ");
+  const ewmaPath = hist.map((r,i) => `${i?"L":"M"}${xFor(i).toFixed(1)},${yFor(r.ewma).toFixed(1)}`).join(" ");
+  const stopCircles = hist.filter(r => r.stop).map((r, i, arr) => {
+    const realIdx = hist.indexOf(r);
+    return `<circle class="stop" cx="${xFor(realIdx).toFixed(1)}" cy="${yFor(r.utility).toFixed(1)}"/>`;
+  }).join("");
+
+  return `
+    <div class="card">
+      <div class="card-h">边际效用账本 · ${esc(t.name)} · rounds ${esc(t.rounds)} · ${hist.length} 条</div>
+      <svg class="utilSpark" viewBox="0 0 ${W} ${H}" preserveAspectRatio="none">
+        <path class="line" d="${linePath}"/>
+        <path class="ewma" d="${ewmaPath}"/>
+        ${stopCircles}
+      </svg>
+      <div style="display:flex;gap:14px;font-size:11px;color:var(--dim);padding:4px 0 6px">
+        <span>─── utility</span>
+        <span>- - - ewma</span>
+        <span style="color:#c0382b">●</span><span>停的轮次</span>
+        <span style="margin-left:auto">y 轴：${vmin.toFixed(2)} ~ ${vmax.toFixed(2)}</span>
+      </div>
+      <div class="utilVerdict ${verdictClass}">${esc(verdictText)}</div>
+    </div>
+    <div class="card">
+      <div class="card-h">每轮账本</div>
+      <table class="utilTable">
+        <thead><tr>
+          <th>round</th><th>action</th><th>progress</th><th>state_score</th>
+          <th>state_delta</th><th>novelty</th><th>technique</th>
+          <th>utility</th><th>ewma</th><th>gain</th><th>stop / rule</th>
+        </tr></thead>
+        <tbody>
+          ${hist.map((r, i) => {
+            const cls = r.stop ? "stop" : (r.gain ? "gain" : "nogain");
+            const cur = i === hist.length - 1 ? " current" : "";
+            const rule = r.stop ? (r.rule_hit || "stop") : "—";
+            return `<tr class="${cls}${cur}">
+              <td>${esc(r.round)}</td>
+              <td>${esc(r.action)}</td>
+              <td class="num">${esc(r.progress ?? "—")}</td>
+              <td class="num">${esc(r.state_score ?? "—")}</td>
+              <td class="num">${esc(r.state_delta ?? "—")}</td>
+              <td class="num">${esc(r.novelty ?? "—")}</td>
+              <td>${esc(r.technique ?? "—")}</td>
+              <td class="num">${esc(r.utility ?? "—")}</td>
+              <td class="num">${esc(r.ewma ?? "—")}</td>
+              <td>${r.gain ? "✓" : "✗"}</td>
+              <td class="${r.stop ? (r.rule_hit==='stagnation'?'ruleStagnation':r.rule_hit==='regression'?'ruleRegression':'ruleRegression') : 'ruleNone'}">${esc(rule)}</td>
+            </tr>`;
+          }).join("")}
+        </tbody>
+      </table>
+    </div>`;
+}
+
+function renderSummaryPane(s){
+  if (!s) return '<div class="empty">（无 summary.json）</div>';
+  const items = s.summary || [];
+  return `
+    <div class="card">
+      <div class="card-h">摘要元信息</div>
+      <div class="kv"><span class="k">updated_seq</span><span class="v">${esc(s.updated_seq ?? 0)}</span></div>
+      <div class="kv"><span class="k">token_estimate</span><span class="v">${esc(s.token_estimate ?? 0)}</span></div>
+      <div class="kv"><span class="k">条目数</span><span class="v">${items.length}</span></div>
+    </div>
+    ${items.length ? items.map((it, i) => `
+      <div class="card">
+        <div class="card-h">#${i+1} · ${esc(it.theme || "(无主题)")}</div>
+        ${it.fact ? `<div class="kv-block"><span class="k">fact</span><div class="v">${esc(it.fact)}</div></div>` : ""}
+        ${it.emotion ? `<div class="kv"><span class="k">emotion</span><span class="v">${esc(it.emotion)}</span></div>` : ""}
+        ${it.seq_range ? `<div class="kv"><span class="k">seq_range</span><span class="v">[${esc(it.seq_range[0])}, ${esc(it.seq_range[1])}]</span></div>` : ""}
+      </div>
+    `).join("") : '<div class="empty">暂无摘要条目</div>'}`;
+}
+
+const ACT_DIM_LABELS = {
+  psychological_flexibility: "走出情绪", emotional_openness: "接纳感受",
+  cognitive_readiness: "适合深聊", cognitive_fusion: "想法绑架",
+  experiential_avoidance: "躲避情绪", values_alignment: "活出自己",
+};
+
+function renderPortraitCard(port){
+  if (!port || Object.keys(port).length === 0)
+    return `<div class="card"><div class="card-h">画像页数据（GET /users/{uid}/portrait）</div><div class="empty">（空对象：尚无评估结果，先聊一轮）</div></div>`;
+  let rows = "";
+  const m = port.act_metrics || {};
+  if (m.status === "ready" && m.values) {
+    rows += Object.entries(m.values).map(([k, v]) =>
+      `<div class="kv"><span class="k">${esc(ACT_DIM_LABELS[k]||k)} <span style="color:var(--faint)">${esc(k)}</span></span><span class="v">${Number(v).toFixed(2)}</span></div>`).join("");
+  } else rows += `<div class="kv"><span class="k">ACT 六维</span><span class="v">${m.status==="pending"?"生成中…":"—（没有）"}</span></div>`;
+  const p = port.personality || {};
+  rows += `<div class="kv"><span class="k">人格类型</span><span class="v">${p.status==="ready"?esc(p.value):(p.status==="pending"?"生成中…":"—（没有）")}</span></div>`;
+  const w = port.value_words || {};
+  rows += `<div class="kv"><span class="k">价值词</span><span class="v">${w.status==="ready"?esc((w.values||[]).join("、")||"（算完，未提取到）"):(w.status==="pending"?"生成中…":"—（没有）")}</span></div>`;
+  return `<div class="card"><div class="card-h">画像页数据（GET /users/{uid}/portrait）
+    <button style="float:right" onclick="regenPersonality()">重新生成报告</button></div>${rows}</div>`;
+}
+
+function renderUserInfoCard(){
+  return `<div class="card"><div class="card-h">设置页用户信息（PUT /users/{uid}/user-info）</div>
+    <div class="kv"><span class="k">昵称</span><input id="ui-nickname" maxlength="12" placeholder="≤12 字符"></div>
+    <div class="kv"><span class="k">性别</span><select id="ui-gender"><option value="">未设置</option><option value="male">male</option><option value="female">female</option></select></div>
+    <div class="kv"><span class="k">年龄</span><input id="ui-age" type="number" min="1" max="120" placeholder="1~120"></div>
+    <div class="kv"><span class="k">语气</span><select id="ui-tone"><option value="">未设置</option><option value="gentle">gentle 温和</option><option value="lively">lively 活泼</option></select></div>
+    <div style="margin-top:6px"><button onclick="saveUserInfo()">保存</button>
+    <button onclick="resetUserInfo()">重置形象（全清空）</button>
+    <span id="ui-save-msg" style="color:var(--dim);font-size:12px;margin-left:8px"></span></div></div>`;
+}
+
+async function regenPersonality(){
+  if (!currentUser) return;
+  try {
+    await api(`/users/${encodeURIComponent(currentUser)}/portrait/personality/regenerate`, {method:"POST"});
+  } catch(e){ alert("重判触发失败: " + e.message); return; }
+  setTimeout(pollState, 1500);  // 异步重判，稍后拉取新结果
+}
+
+async function saveUserInfo(){
+  if (!currentUser) return;
+  const body = {
+    nickname: $("ui-nickname").value || null,
+    gender: $("ui-gender").value || null,
+    age: $("ui-age").value ? parseInt($("ui-age").value, 10) : null,
+    tone_preference: $("ui-tone").value || null,
+  };
+  try {
+    const r = await api(`/users/${encodeURIComponent(currentUser)}/user-info`,
+      {method:"PUT", headers:{"Content-Type":"application/json"}, body:JSON.stringify(body)});
+    $("ui-save-msg").textContent = "已保存: " + JSON.stringify(r.user_info);
+  } catch(e){ $("ui-save-msg").textContent = "保存失败: " + e.message; }
+}
+
+async function resetUserInfo(){
+  if (!currentUser) return;
+  $("ui-nickname").value = ""; $("ui-gender").value = "";
+  $("ui-age").value = ""; $("ui-tone").value = "";
+  await saveUserInfo();
+}
+
+function renderProfilePane(p, port){
+  const profileCard = (!p || Object.keys(p).length === 0)
+    ? '<div class="card"><div class="card-h">用户画像</div><div class="empty">（无 profile.json）</div></div>'
+    : `<div class="card"><div class="card-h">用户画像</div>${renderKVList(p)}</div>`;
+  return renderPortraitCard(port) + renderUserInfoCard() + profileCard;
+}
+
+function renderFlowPane(flow){
+  if (!flow || !flow.length) return '<div class="empty">（无流水）</div>';
+  // 倒序：最新在上
+  return flow.slice().reverse().map(e => {
+    const meta = [];
+    if (e.tokens) meta.push(`tok ${e.tokens.prompt||0}/${e.tokens.completion||0}`);
+    if (e.latency_ms != null) meta.push(`${e.latency_ms.toFixed ? e.latency_ms.toFixed(0) : e.latency_ms}ms`);
+    if (e.trace_id) meta.push(`trace ${esc(e.trace_id.slice(0,8))}…`);
+    return `
+    <div class="flowRow ${esc(e.role||"?")}">
+      <div class="flowHead">
+        <span class="role">${esc(e.role === "user" ? "用户" : (e.role === "agent" ? "Agent" : (e.role||"?")))}</span>
+        <span class="seq">seq #${esc(e.seq ?? "?")}</span>
+        ${e.owner ? `<span class="owner">${esc(e.owner)}</span>` : ""}
+        ${e.ts ? `<span class="ts">${esc(String(e.ts).slice(0,19).replace("T"," "))}</span>` : ""}
+        ${meta.length ? `<span class="ts" style="color:var(--acc)">${esc(meta.join(" · "))}</span>` : ""}
+      </div>
+      <div class="flowText">${esc(e.text || "")}</div>
+    </div>`;
+  }).join("");
+}
+
+function renderLlmPane(){
+  const calls = llmData
+    .map(e => e.data)
+    .filter(d => !currentSession || d.session_id === currentSession);
+  if (!calls.length) return '<div class="empty">（当前 session 暂无 LLM 调用记录）</div>';
+  // 按 trace 分组
+  const byTrace = new Map();
+  for (const c of calls){
+    const t = c.trace_id || "(no trace)";
+    if (!byTrace.has(t)) byTrace.set(t, []);
+    byTrace.get(t).push(c);
+  }
+  let html = "";
+  for (const [tid, items] of byTrace){
+    items.sort((a, b) => (a.ts < b.ts ? -1 : a.ts > b.ts ? 1 : 0));
+    let totalTok = 0, totalCost = 0, fails = 0;
+    for (const c of items){
+      totalTok += (c.prompt_tokens||0) + (c.completion_tokens||0);
+      totalCost += c.estimated_cost || 0;
+      if (!c.success) fails += 1;
+    }
+    const totalLat = items.reduce((s,c) => s + (c.latency_ms||0), 0);
+    html += `<div class="card">
+      <div class="card-h">trace ${esc(tid.slice(0,12))}… · ${items.length} calls · ${totalTok.toLocaleString()} tok · ${(totalLat/1000).toFixed(1)}s · $${totalCost.toFixed(5)}${fails?` · ${fails} ❌`:""}</div>
+      ${items.map(c => {
+        const tok = `${c.prompt_tokens||0}/${c.completion_tokens||0}`;
+        const lat = (c.latency_ms||0).toFixed(0) + "ms";
+        const cost = "$" + (c.estimated_cost||0).toFixed(5);
+        const ok = c.success;
+        return `<div class="llmRow${ok?"":" fail"}${c.error?" err":""}">
+          <span class="t">${esc(shortTs(c.ts))}</span>
+          <span class="a" title="${esc(c.agent||"")}">${esc(c.agent||"")}</span>
+          <span class="m" title="${esc(c.model||"")}">${esc(c.model||"")}</span>
+          <span class="tok">${tok}</span>
+          <span class="lat">${lat}</span>
+          <span class="cost">${cost}</span>
+          <span class="ok">${ok?"✓":"❌"}</span>
+          ${c.error ? `<div class="errMsg">${esc(c.error)}</div>` : ""}
+          ${(c.ttft_ms || c.cache_hit_tokens || c.cache_miss_tokens) ?
+            `<div class="meta2">${c.ttft_ms?`ttft ${c.ttft_ms}ms`:""}${(c.cache_hit_tokens||c.cache_miss_tokens)?` · cache hit ${c.cache_hit_tokens||0}/${(c.cache_hit_tokens||0)+(c.cache_miss_tokens||0)}`:""}</div>`
+            : ""}
+        </div>`;
+      }).join("")}
+    </div>`;
+  }
+  return html;
+}
+
+/* 递归渲染对象/数组为 KV 树 —— 用在 profile / assessment / products / adaptation 这种
+   结构不固定的地方，不丢任何字段 */
+function renderKVList(v){
+  if (v == null) return '<span class="v">—</span>';
+  if (Array.isArray(v)){
+    if (v.length === 0) return '<span class="v">[]</span>';
+    if (v.every(x => x == null || ["string","number","boolean"].includes(typeof x))){
+      return `<div class="v tags">${v.map(x => `<span class="tag">${esc(String(x))}</span>`).join(" ")}</div>`;
+    }
+    return `<div class="list-group">${v.map((it,i) =>
+      `<div class="card-nested"><div class="kv"><span class="k">[${i}]</span><span class="v"></span></div>${renderKVList(it)}</div>`
+    ).join("")}</div>`;
+  }
+  if (typeof v === "object"){
+    const entries = Object.entries(v);
+    if (!entries.length) return '<span class="v">{}</span>';
+    return entries.map(([k, val]) => {
+      if (val == null) return "";
+      if (typeof val === "string" && val.length > 120){
+        return `<div class="kv-block"><span class="k">${esc(k)}</span><div class="v">${esc(val)}</div></div>`;
+      }
+      if (Array.isArray(val) || typeof val === "object"){
+        return `<div class="kv-block"><span class="k">${esc(k)}</span>${renderKVList(val)}</div>`;
+      }
+      return `<div class="kv"><span class="k">${esc(k)}</span><span class="v">${esc(String(val))}</span></div>`;
+    }).join("");
+  }
+  return `<span class="v">${esc(String(v))}</span>`;
+}
+
+/* ── 日志面板 ── */
+function logMatches(d, src){
+  const level = $("logLevel").value;
+  if (level !== "all" && (d.level||"info") !== level) return false;
+  const sess = $("logSession").value.trim();
+  if (sess && !String(d.session_id||"").includes(sess)) return false;
+  const trc = $("logTrace").value.trim();
+  if (trc && !String(d.trace_id||"").includes(trc)) return false;
+  return true;
+}
+function logTag(k, v, extra){
+  if (v == null || v === "") return "";
+  return `<span class="tag${extra?" "+extra:""}">${k?`<span class="k">${esc(k)}</span>`:""}${esc(v)}</span>`;
+}
+function logRisk(level){ return level ? `<span class="tag risk-${esc(level)}">${esc(level)}</span>` : ""; }
+function logSteer(j){ return j ? `<span class="tag tag-steer steer-${esc(j)}">${esc(j)}</span>` : ""; }
+function logOk(t){ return t ? `<span class="tag tag-ok">${esc(t)}</span>` : ""; }
+function logErr(t){ return t ? `<span class="tag tag-error">${esc(trunc(t, 80))}</span>` : ""; }
+function logTxt(t){ return t ? `<span class="tag tag-text">${esc(trunc(t, 60))}</span>` : ""; }
+function logTraceTrace(id){ return id ? `<span class="tag tag-trace" title="${esc(id)}">trace ${esc(String(id).slice(0,8))}</span>` : ""; }
+
+function appHighlight(d){
+  const e = d.event || "";
+  switch (e){
+    case "safety_done":
+      return logRisk(d.risk_level) + logTag("type", d.risk_type && d.risk_type !== "none" ? d.risk_type : "");
+    case "therapy_decide_done":
+      return (d.need_therapy ? logOk("进入疗法") : logTag("", "无需疗法")) + logTag("", d.therapy || "");
+    case "orchestration_done":
+      return logTag("", d.therapy || "") + logTag("步骤", d.step || "") + logSteer(d.judgment) + logTag("技能", d.skill || "");
+    case "continue_eval_done":
+      return logTag("", d.therapy || "") + logTag("", d.continue ? "继续" : "结束") + logTxt(d.marginal_utility_note);
+    case "turn_start":
+      return logTxt(d.user_text);
+    case "turn_end":
+      return logRisk(d.risk_level) + (d.crisis ? logErr("CRISIS") : "");
+    default:
+      if (d.error) return logErr(d.error);
+      return "";
+  }
+}
+function llmHighlight(d){
+  return logTag("", d.model || "")
+    + logTag("tok", `${d.prompt_tokens||0}/${d.completion_tokens||0}`)
+    + logTag("延迟", `${(d.latency_ms||0).toFixed(0)}ms`)
+    + (d.ttft_ms ? logTag("首token", `${(d.ttft_ms||0).toFixed(0)}ms`) : "")
+    + ((d.cache_hit_tokens||d.cache_miss_tokens) ? logTag("缓存", `${d.cache_hit_tokens||0}/${(d.cache_hit_tokens||0)+(d.cache_miss_tokens||0)}`) : "")
+    + logTag("$", (d.estimated_cost||0).toFixed(5))
+    + (d.success ? logOk("✓ OK") : logErr("✗ FAIL") + (d.error ? logErr(d.error) : ""));
+}
+
+function renderLogLine(src, lineNo, d){
+  const level = d.level || (src==="llm" ? (d.success?"info":"error") : "info");
+  const levelCls = level === "error" ? "error" : level === "warning" ? "warning" : "info";
+  const lvlTxt = (level==="error"?"ERR":level==="warning"?"WARN":"INFO");
+  const mod = src === "llm" ? "llm" : (d.module || "");
+  const evt = src === "llm" ? (d.agent || "") : (d.event || "");
+  const body = src === "llm" ? llmHighlight(d) : appHighlight(d);
+  const t = (d.ts || "").slice(11, 23);
+
+  // app 日志：突出 module.event + 关键字段；错误整行走整条红线
+  const lineInner = src === "llm"
+    ? `<span class="mod mod-${esc(mod)}">${esc(mod)}</span><span class="evt">${esc(evt)}</span>`
+    : `<span class="mod mod-${esc(mod)}">${esc(mod)}</span><span class="evt">${esc(evt)}</span>`;
+
+  const div = document.createElement("div");
+  div.className = "logline level-" + levelCls;
+  div.innerHTML = `<span class="src">[${src} #${lineNo}]</span>`
+    + `<span class="lvl lvl-${levelCls}">${lvlTxt}</span>`
+    + `<span class="tl">${esc(t)}</span>`
+    + lineInner
+    + (body ? `<span class="fld">${body}${src==="llm"?logTraceTrace(d.trace_id):""}</span>`
+            : (d.trace_id ? `<span class="fld">${logTraceTrace(d.trace_id)}</span>` : ""))
+    + `<div class="det">${esc(JSON.stringify(d, null, 2))}</div>`;
+  div.onclick = () => div.classList.toggle("open");
+  return div;
+}
+async function pollLogs(){
+  try {
+    const data = await api("/ui/api/logs?tail=400");
+    const srcSel = $("logSource").value;
+    const list = $("logList");
+    const container = list;
+    llmData = data.llm || [];
+
+    const newEntries = [];
+    for (const [src, lines] of [["app", data.app], ["llm", data.llm]]){
+      if (srcSel !== "all" && srcSel !== src) continue;
+      for (const entry of lines){
+        const key = src + "|" + entry.line;
+        if (seenLogs.has(key)) continue;
+        seenLogs.add(key);
+        if (!logMatches(entry.data, src)) continue;
+        newEntries.push({src, entry});
+      }
+    }
+    newEntries.sort((a, b) => {
+      const ta = a.entry.data.ts || "", tb = b.entry.data.ts || "";
+      if (ta !== tb) return ta < tb ? -1 : 1;
+      return a.src === b.src ? 0 : (a.src < b.src ? -1 : 1);
+    });
+    let removedHeight = 0;
+    while (list.children.length > 2000){
+      removedHeight += list.firstChild.offsetHeight;
+      list.removeChild(list.firstChild);
+    }
+    if (removedHeight) container.scrollTop = Math.max(0, container.scrollTop - removedHeight);
+    for (const n of newEntries) list.appendChild(renderLogLine(n.src, n.entry.line, n.entry.data));
+    if ($("logAutoscroll").checked) container.scrollTop = container.scrollHeight;
+    renderLlmTab();
+  } catch(e){ /* ignore */ }
+}
+$("logClear").onclick = () => { $("logList").innerHTML = ""; seenLogs.clear(); };
+["logSource","logLevel","logSession","logTrace"].forEach(id => $(id).onchange = () => {
+  $("logList").innerHTML = ""; seenLogs.clear(); pollLogs();
+});
+
+/* ── LLM 指标总览（复用 /ui/api/session/{sid}/metrics） ── */
+let metricsData = null;
+async function pollMetrics(){
+  if (!currentSession) return;
+  try {
+    const m = await api(`/ui/api/session/${currentSession}/metrics`);
+    metricsData = m;
+    renderLlmTab();
+  } catch(e){ /* ignore */ }
+}
+function renderLlmTab(){
+  $("detail-pane-llm").innerHTML = (metricsData ? renderMetricsOverview(metricsData) : "")
+    + '<div class="h4">LLM 调用明细</div>'
+    + '<div style="display:flex;flex-direction:column">' + renderLlmPane() + '</div>';
+}
+function renderMetricsOverview(m){
+  const kpis = [
+    ["总 tokens", m.total_tokens],
+    ["prompt / completion", `${m.prompt_tokens} / ${m.completion_tokens}`],
+    ["缓存命中率", m.cache_hit_rate==null?"—":(m.cache_hit_rate*100).toFixed(1)+"%"],
+    ["缓存 hit/miss", `${m.cache_hit_tokens} / ${m.cache_miss_tokens}`],
+    ["平均首 token", m.avg_ttft_ms==null?"—":m.avg_ttft_ms+" ms"],
+    ["平均总延迟", m.avg_latency_ms==null?"—":m.avg_latency_ms+" ms"],
+    ["调用数", m.calls],
+    ["失败数", m.errors],
+    ["估算成本", "$"+m.estimated_cost_usd],
+  ];
+  const rows = Object.entries(m.by_agent || {}).map(([a,v])=>
+    `<tr><td>${esc(a)}</td><td>${v.calls}</td><td>${v.tokens}</td>`
+    + `<td>${v.avg_ttft_ms==null?"—":v.avg_ttft_ms}</td><td>${v.errors}</td></tr>`).join("");
+  return `<div class="llm-overview">
+    <div class="h4">会话聚合指标</div>
+    <div class="kpi">${kpis.map(([k,v])=>`<div><div class="v">${esc(v)}</div><div class="k">${k}</div></div>`).join("")}</div>
+    <div class="h4">按 agent 分布</div>
+    <table><tr><th>agent</th><th>调用</th><th>tokens</th><th>平均首token(ms)</th><th>失败</th></tr>${rows}</table>
+  </div>`;
+}
+
+/* ── LLM 摘要角落 ── */
+/* ── 侧栏 tab 切换 ── */
+document.querySelectorAll("#sideTabs button").forEach(b => b.onclick = () => {
+  document.querySelectorAll("#sideTabs button").forEach(x => x.classList.remove("active"));
+  document.querySelectorAll(".sideTabBody").forEach(x => x.classList.remove("active"));
+  b.classList.add("active");
+  $(b.dataset.sideTab).classList.add("active");
+});
+
+/* ── 轮询 ── */
+polling.state = setInterval(pollState, 500);
+polling.logs = setInterval(pollLogs, 500);
+setInterval(pollMetrics, 1000);
+loadUsers(false).catch(e => {
+  console.error("WebUI 初始化失败", e);
+  alert("WebUI 初始化失败：" + e.message + "\n请确认后端已重启（含最新的 /ui/api 接口）。");
+});
+</script>
+</body>
+</html>

@@ -1,0 +1,2240 @@
+{
+  "seed_id": "dbt-emotion-regulation",
+  "target_family": "DBT",
+  "scenario_label": "情绪调节-当众发火",
+  "scenario_description": "被上司当众批评，当场发火，回家后悔",
+  "user_id": "seed-dbt-emotion-regulation",
+  "session_id": "8e5f03c4ac73420d",
+  "turns_total": 8,
+  "switched_to_therapy_at_turn": 1,
+  "actual_therapy": "DBT",
+  "therapy_rounds": 8,
+  "orch_step_changes": 3,
+  "is_complete": true,
+  "final_risk_level": "SAFE",
+  "final_crisis": false,
+  "turns": [
+    {
+      "turn": 1,
+      "trace_id": "7c0f155652644cf1",
+      "user_text": "今天我当着全组的面冲上司发火了。",
+      "agent_text_parts": [
+        "当着全组",
+        "的面冲上司发",
+        "火，这感觉",
+        "一定挺不好受的",
+        "。现在心里是不是",
+        "挺乱的？"
+      ],
+      "events": [
+        {
+          "event": "token",
+          "data": "当着全组"
+        },
+        {
+          "event": "token",
+          "data": "的面冲上司发"
+        },
+        {
+          "event": "token",
+          "data": "火，这感觉"
+        },
+        {
+          "event": "token",
+          "data": "一定挺不好受的"
+        },
+        {
+          "event": "token",
+          "data": "。现在心里是不是"
+        },
+        {
+          "event": "token",
+          "data": "挺乱的？"
+        },
+        {
+          "event": "dialogue_done",
+          "data": {
+            "trace_id": "7c0f155652644cf1",
+            "owner": "daily"
+          }
+        },
+        {
+          "event": "final",
+          "data": {
+            "message": "今天我当着全组的面冲上司发火了。",
+            "risk_state": "LOW_RISK",
+            "crisis": false
+          }
+        }
+      ],
+      "final": {
+        "message": "今天我当着全组的面冲上司发火了。",
+        "risk_state": "LOW_RISK",
+        "crisis": false
+      },
+      "state_after": {
+        "owner": "therapy_dbt",
+        "crisis": false,
+        "risk_level": "LOW_RISK",
+        "therapy": {
+          "name": "DBT",
+          "start_seq": 3,
+          "rounds": 0,
+          "step_index": -1,
+          "branch": null,
+          "basic_flow_complete": false
+        },
+        "last_therapy_check_seq": 1,
+        "pending_user_tokens": 0
+      },
+      "orchestration_after": {},
+      "error": null,
+      "wall_seconds": 40.694,
+      "agent_text": "当着全组的面冲上司发火，这感觉一定挺不好受的。现在心里是不是挺乱的？"
+    },
+    {
+      "turn": 2,
+      "trace_id": "001c20355d8c4ad8",
+      "user_text": "他说我方案不行，我一下就炸了。",
+      "agent_text_parts": [
+        "方案被直接",
+        "否定，那种",
+        "感觉确实很让人",
+        "崩溃，难怪你会",
+        "一下子就炸了。",
+        "现在稍微平复",
+        "一点了吗？这会儿",
+        "心里是什么感觉呢",
+        "？"
+      ],
+      "events": [
+        {
+          "event": "token",
+          "data": "方案被直接"
+        },
+        {
+          "event": "token",
+          "data": "否定，那种"
+        },
+        {
+          "event": "token",
+          "data": "感觉确实很让人"
+        },
+        {
+          "event": "token",
+          "data": "崩溃，难怪你会"
+        },
+        {
+          "event": "token",
+          "data": "一下子就炸了。"
+        },
+        {
+          "event": "token",
+          "data": "现在稍微平复"
+        },
+        {
+          "event": "token",
+          "data": "一点了吗？这会儿"
+        },
+        {
+          "event": "token",
+          "data": "心里是什么感觉呢"
+        },
+        {
+          "event": "token",
+          "data": "？"
+        },
+        {
+          "event": "dialogue_done",
+          "data": {
+            "trace_id": "001c20355d8c4ad8",
+            "owner": "therapy_dbt"
+          }
+        },
+        {
+          "event": "final",
+          "data": {
+            "message": "他说我方案不行，我一下就炸了。",
+            "risk_state": "LOW_RISK",
+            "crisis": false
+          }
+        }
+      ],
+      "final": {
+        "message": "他说我方案不行，我一下就炸了。",
+        "risk_state": "LOW_RISK",
+        "crisis": false
+      },
+      "state_after": {
+        "owner": "therapy_dbt",
+        "crisis": false,
+        "risk_level": "LOW_RISK",
+        "therapy": {
+          "name": "DBT",
+          "start_seq": 3,
+          "rounds": 1,
+          "step_index": 0,
+          "branch": null,
+          "basic_flow_complete": false
+        },
+        "last_therapy_check_seq": 1,
+        "pending_user_tokens": 0
+      },
+      "orchestration_after": {
+        "updated_seq": 1,
+        "therapy": "DBT",
+        "current_step": "mindfulness",
+        "next_step": "mindfulness",
+        "step_judgment": {
+          "action": "stay",
+          "target_step": null,
+          "achieved": false,
+          "reason": "当前处于mindfulness步骤第1轮，用户情绪失调严重（0.8）、冲动性极高（0.8）、正念觉察极低（0.3），处于被情绪劫持状态。AI刚刚完成共情回应并询问当下感受，尚未开始引导正念觉察技能（如STOP、暂停、观察情绪等）。需要先帮助用户在刺激与反应之间建立觉察空间，本步骤远未达成效果。"
+        },
+        "assessment": {
+          "emotion_dysregulation": {
+            "index": 0.8,
+            "state": "severe",
+            "confidence": 0.85,
+            "evidence": [
+              "我一下就炸了",
+              "情绪反应迅速、强烈且可能不成比例"
+            ]
+          },
+          "distress_level": {
+            "index": 0.65,
+            "state": "high",
+            "confidence": 0.75,
+            "evidence": [
+              "他说我方案不行",
+              "被批评引发了强烈的情绪爆发和主观不适感"
+            ]
+          },
+          "impulsivity": {
+            "index": 0.8,
+            "state": "urgent",
+            "confidence": 0.85,
+            "evidence": [
+              "一下就炸了",
+              "反应是即时的，缺乏思考、评估后果和暂停"
+            ]
+          },
+          "interpersonal_conflict": {
+            "index": 0.75,
+            "state": "severe",
+            "confidence": 0.8,
+            "evidence": [
+              "他说我方案不行",
+              "我一下就炸了",
+              "存在明显的意见分歧、批评以及情绪对抗"
+            ]
+          },
+          "mindfulness_awareness": {
+            "index": 0.3,
+            "state": "low",
+            "confidence": 0.7,
+            "evidence": [
+              "一下就炸了表明在刺激与反应之间缺乏觉察和暂停",
+              "能清晰描述触发事件说明有一定事后觉察，但当下处于被情绪劫持状态"
+            ]
+          },
+          "dbt_intervention_priority": 0.735,
+          "overall_trend": "stable",
+          "primary_concern": "emotion_dysregulation",
+          "should_intervene": true,
+          "recommended_processes": [
+            {
+              "process": "mindfulness",
+              "priority": 1,
+              "rationale": "正念觉察较低是基础问题，用户需要学习在触发事件（被批评）和反应（情绪爆发）之间创造空间，学会暂停（STOP技能）。"
+            },
+            {
+              "process": "distress_tolerance",
+              "priority": 2,
+              "rationale": "冲动性和痛苦程度较高，需要技能来忍受当下的不适和愤怒，避免做出破坏性的冲动行为（如与对方激烈争吵或破坏关系）。"
+            },
+            {
+              "process": "emotion_regulation",
+              "priority": 3,
+              "rationale": "情绪失调明显，需要技能来识别、理解并调节由批评引发的强烈情绪，改变对批评的脆弱性。"
+            },
+            {
+              "process": "interpersonal_effectiveness",
+              "priority": 4,
+              "rationale": "存在人际冲突，需要技能来建设性地处理他人的批评，并在不破坏关系的前提下有效表达自己的立场和需求。"
+            }
+          ]
+        },
+        "skill_output": {
+          "technique": {
+            "name": "observe_describe",
+            "description": "用户处于情绪劫持状态（'一下就炸了'），当下觉察力较低。此时使用观察与描述技巧，帮助用户将注意力从外部冲突转移到内部体验，识别'爆炸'前的身体感觉和想法，从而在刺激和反应之间建立缓冲，培养'停下来看看'的能力。",
+            "steps": [
+              "引导用户回忆'炸了'那一瞬间的身体感觉（如心跳加速、胸口发闷、肩膀紧绷等），把情绪具象化为生理感受。",
+              "帮助用户用中性的语言描述当时的想法和感受（例如：'我注意到我脑子里闪过一个想法'，'我感觉到一股怒气'），不加评判地观察这些体验，练习在刺激和反应之间'停下来看看'。"
+            ]
+          },
+          "conversation_goal": "帮助用户从'被情绪控制'的视角中抽离出来，识别情绪爆发前的生理和心理信号，建立'刺激-觉察-反应'的缓冲带，降低未来的情绪劫持概率。",
+          "adaptation": {
+            "interaction_style": "exploratory",
+            "tone_adjustment": "温和、接纳且接地气。避免说教，用日常语言引导，让用户感到被理解而不是被分析。",
+            "pace_adjustment": "放慢节奏。在用户情绪稍微平复后，引导他们像慢动作回放一样去观察当时的细节，不急于解决问题或分析对错。",
+            "culture_note": "避免使用'正念'或冥想相关的专业术语。使用'停下来看看'、'观察一下自己'、'身体有什么感觉'等日常表达。将觉察与职场冲突中的'冲动反应'结合，强调看清局势的实用性。"
+          },
+          "contraindications": [
+            {
+              "condition": "用户仍处于极度愤怒或情绪崩溃中，生理唤醒水平极高。",
+              "reason": "在情绪劫持的当下，要求用户观察和描述内部体验是无效且可能引发挫败感的。必须先通过痛苦承受技巧让生理唤醒水平下降，恢复到'可以思考'的状态后，再进行观察与描述。"
+            }
+          ],
+          "_skill_name": "dbt_mindfulness"
+        },
+        "products": {},
+        "continue_eval": null
+      },
+      "error": null,
+      "wall_seconds": 183.119,
+      "agent_text": "方案被直接否定，那种感觉确实很让人崩溃，难怪你会一下子就炸了。现在稍微平复一点了吗？这会儿心里是什么感觉呢？"
+    },
+    {
+      "turn": 3,
+      "trace_id": "4ac426e341fc4d31",
+      "user_text": "回家路上我就后悔了，但又拉不下脸去道歉。",
+      "agent_text_parts": [
+        "炸完之后感到",
+        "后悔，",
+        "想弥补又觉得",
+        "拉不下脸，",
+        "这种纠结确实挺",
+        "折磨人的。\n\n",
+        "既然现在稍微平",
+        "复了一些，我们",
+        "试着一起“看看",
+        "”这个“拉",
+        "不下脸”的感觉",
+        "好吗？当你想到",
+        "要去道歉时，",
+        "身体上会有什么感觉",
+        "呢？是觉得",
+        "胸口发紧、",
+        "脸颊发烫，",
+        "还是有一种想往后",
+        "退的冲动？",
+        "我们可以只是先觉察",
+        "一下这些感受，",
+        "不用急着做什么。"
+      ],
+      "events": [
+        {
+          "event": "token",
+          "data": "炸完之后感到"
+        },
+        {
+          "event": "token",
+          "data": "后悔，"
+        },
+        {
+          "event": "token",
+          "data": "想弥补又觉得"
+        },
+        {
+          "event": "token",
+          "data": "拉不下脸，"
+        },
+        {
+          "event": "token",
+          "data": "这种纠结确实挺"
+        },
+        {
+          "event": "token",
+          "data": "折磨人的。\n\n"
+        },
+        {
+          "event": "token",
+          "data": "既然现在稍微平"
+        },
+        {
+          "event": "token",
+          "data": "复了一些，我们"
+        },
+        {
+          "event": "token",
+          "data": "试着一起“看看"
+        },
+        {
+          "event": "token",
+          "data": "”这个“拉"
+        },
+        {
+          "event": "token",
+          "data": "不下脸”的感觉"
+        },
+        {
+          "event": "token",
+          "data": "好吗？当你想到"
+        },
+        {
+          "event": "token",
+          "data": "要去道歉时，"
+        },
+        {
+          "event": "token",
+          "data": "身体上会有什么感觉"
+        },
+        {
+          "event": "token",
+          "data": "呢？是觉得"
+        },
+        {
+          "event": "token",
+          "data": "胸口发紧、"
+        },
+        {
+          "event": "token",
+          "data": "脸颊发烫，"
+        },
+        {
+          "event": "token",
+          "data": "还是有一种想往后"
+        },
+        {
+          "event": "token",
+          "data": "退的冲动？"
+        },
+        {
+          "event": "token",
+          "data": "我们可以只是先觉察"
+        },
+        {
+          "event": "token",
+          "data": "一下这些感受，"
+        },
+        {
+          "event": "token",
+          "data": "不用急着做什么。"
+        },
+        {
+          "event": "dialogue_done",
+          "data": {
+            "trace_id": "4ac426e341fc4d31",
+            "owner": "therapy_dbt"
+          }
+        },
+        {
+          "event": "final",
+          "data": {
+            "message": "回家路上我就后悔了，但又拉不下脸去道歉。",
+            "risk_state": "LOW_RISK",
+            "crisis": false
+          }
+        }
+      ],
+      "final": {
+        "message": "回家路上我就后悔了，但又拉不下脸去道歉。",
+        "risk_state": "LOW_RISK",
+        "crisis": false
+      },
+      "state_after": {
+        "owner": "therapy_dbt",
+        "crisis": false,
+        "risk_level": "LOW_RISK",
+        "therapy": {
+          "name": "DBT",
+          "start_seq": 3,
+          "rounds": 2,
+          "step_index": 0,
+          "branch": null,
+          "basic_flow_complete": false
+        },
+        "last_therapy_check_seq": 1,
+        "pending_user_tokens": 0
+      },
+      "orchestration_after": {
+        "updated_seq": 2,
+        "therapy": "DBT",
+        "current_step": "mindfulness",
+        "next_step": "mindfulness",
+        "step_judgment": {
+          "action": "stay",
+          "target_step": null,
+          "achieved": false,
+          "reason": "当前处于mindfulness步骤第2轮，AI正在引导用户觉察'拉不下脸'的身体感受。用户虽已展现出较好的正念觉察力（0.75），但AI刚刚提出身体觉察的引导问题，尚未获得用户的回应。需要继续等待用户反馈身体感受，完成本轮正念觉察练习后再评估是否可以推进。"
+        },
+        "assessment": {
+          "emotion_dysregulation": {
+            "index": 0.3,
+            "state": "mild",
+            "confidence": 0.85,
+            "evidence": [
+              "回家路上我就后悔了",
+              "情绪已从爆发状态平复，能够反思并产生后悔，表明情绪反应已回归理性范围，不再处于失控状态"
+            ]
+          },
+          "distress_level": {
+            "index": 0.5,
+            "state": "high",
+            "confidence": 0.8,
+            "evidence": [
+              "后悔了",
+              "拉不下脸去道歉",
+              "内心存在因后悔和面子问题带来的纠结与不适，但并未达到崩溃或无法忍受的程度"
+            ]
+          },
+          "impulsivity": {
+            "index": 0.2,
+            "state": "controlled",
+            "confidence": 0.9,
+            "evidence": [
+              "拉不下脸去道歉",
+              "没有采取冲动行为去强行道歉或做出其他破坏性举动，行为受到克制和理性思考的约束"
+            ]
+          },
+          "interpersonal_conflict": {
+            "index": 0.6,
+            "state": "high",
+            "confidence": 0.85,
+            "evidence": [
+              "他说我方案不行，我一下就炸了",
+              "拉不下脸去道歉",
+              "前期存在激烈的意见分歧和情绪对抗，目前虽无直接争吵，但关系处于未修复的僵局状态"
+            ]
+          },
+          "mindfulness_awareness": {
+            "index": 0.75,
+            "state": "high",
+            "confidence": 0.85,
+            "evidence": [
+              "我就后悔了",
+              "拉不下脸去道歉",
+              "能够清晰地觉察到自身情绪的转变（从愤怒到后悔），并能敏锐地识别出阻碍自己行动的心理因素（面子/自尊）"
+            ]
+          },
+          "dbt_intervention_priority": 0.37,
+          "overall_trend": "improving",
+          "primary_concern": "interpersonal_conflict",
+          "should_intervene": true,
+          "recommended_processes": [
+            {
+              "process": "interpersonal_effectiveness",
+              "priority": 1,
+              "rationale": "当前情绪已平复，主要卡点在于如何修复关系。需要人际效能技巧来帮助用户克服‘拉不下脸’的障碍，学习如何有效地表达歉意和修复破裂的关系。"
+            },
+            {
+              "process": "emotion_regulation",
+              "priority": 2,
+              "rationale": "‘拉不下脸’背后可能隐藏着羞耻、尴尬或自尊受损的情绪。需要情绪调节技巧来处理这些次生情绪，降低对‘道歉’这一行为的心理阻力。"
+            },
+            {
+              "process": "mindfulness",
+              "priority": 3,
+              "rationale": "用户已展现出较好的觉察力，需继续保持正念，不加评判地接纳自己当下的尴尬和纠结，避免被‘面子’思维带偏。"
+            },
+            {
+              "process": "distress_tolerance",
+              "priority": 4,
+              "rationale": "在准备道歉或面对对方时，可能会产生短期的心理不适，需要痛苦承受技巧来度过这一难关。"
+            }
+          ]
+        },
+        "skill_output": {
+          "technique": {
+            "name": "wise_mind",
+            "description": "用户目前处于理智（后悔、知道该道歉）与情感/自尊（觉得没面子、拉不下脸）的冲突中。Wise Mind（智慧心）技术最适合帮助用户整合这两部分，在‘想弥补’和‘顾全面子’之间找到平衡，做出既有智慧又照顾自我感受的决定。",
+            "steps": [
+              "识别理智心（Reasonable Mind）：引导用户确认理智上的认知，即‘我后悔了，理智上知道发火不妥，想要去道歉弥补’。",
+              "接纳情绪心（Emotion Mind）：引导用户看见并接纳‘拉不下脸’背后的情绪和自尊需求，理解‘没面子’的感受是真实的，不需要为此自责。",
+              "整合智慧心（Wise Mind）：在理智与情感中找到平衡点（心里其实知道答案）。引导用户探索一种既能表达歉意、又能照顾自尊的‘台阶’或折中方式（例如发个信息、或者以探讨方案为切入点破冰）。"
+            ]
+          },
+          "conversation_goal": "帮助用户整合‘想道歉的理智’与‘拉不下脸的情绪’，在智慧心中找到平衡，探索既能表达歉意又能照顾自尊的具体行动方式，化解内心的纠结。",
+          "adaptation": {
+            "interaction_style": "exploratory",
+            "tone_adjustment": "温和、接纳、不评判。充分认可‘面子’和‘自尊’在感受上的真实性，避免说教或贬低‘拉不下脸’的心理。",
+            "pace_adjustment": "缓慢、留白。给用户空间去感受理智与情感的拉扯，不催促立刻做出道歉的行动，允许在纠结中多停留一会儿。",
+            "culture_note": "在中国文化中，‘面子’和‘自尊’是非常真实且重要的心理需求。避免直接说‘面子不重要’，而是将‘智慧心’框架为‘心里其实知道一个既能顾全面子又能解决问题的办法’，用‘停下来看看’来引导，将道歉重构为展现格局而非丢掉面子。"
+          },
+          "contraindications": [
+            {
+              "condition": "用户情绪再次爆发或感到极度愤怒/委屈",
+              "reason": "在情绪再次失控时，理智心无法运作，此时使用wise_mind会无效甚至引发反感，需先退回情绪调节或observe_describe技术。"
+            },
+            {
+              "condition": "用户对‘面子’话题感到被评判或极度防御",
+              "reason": "如果用户觉得探讨‘拉不下脸’是在指责自己不够大度，需立刻停止wise_mind，退回无评判的observe_describe，单纯观察身体和情绪感受。"
+            }
+          ],
+          "_skill_name": "dbt_mindfulness"
+        },
+        "products": {},
+        "continue_eval": null
+      },
+      "error": null,
+      "wall_seconds": 136.324,
+      "agent_text": "炸完之后感到后悔，想弥补又觉得拉不下脸，这种纠结确实挺折磨人的。\n\n既然现在稍微平复了一些，我们试着一起“看看”这个“拉不下脸”的感觉好吗？当你想到要去道歉时，身体上会有什么感觉呢？是觉得胸口发紧、脸颊发烫，还是有一种想往后退的冲动？我们可以只是先觉察一下这些感受，不用急着做什么。"
+    },
+    {
+      "turn": 4,
+      "trace_id": "fa9aa733b28a44d8",
+      "user_text": "我从小就这样，一急就控制不住。",
+      "agent_text_parts": [
+        "听得出来，",
+        "你对自己“一",
+        "急就控制不住",
+        "”挺无奈的，",
+        "可能心里也有些自责",
+        "。从小",
+        "形成的习惯，确实",
+        "很难一下子改变，",
+        "这本身就很不容易",
+        "。\n\n其实，“",
+        "急”的时候是",
+        "情绪占了上风，",
+        "事后理智回来了，",
+        "就开始后悔。现在",
+        "这两部分在你心里",
+        "打架：一边是",
+        "“想弥补”，",
+        "一边是“拉",
+        "不下脸”。\n\n",
+        "我们不急着去改变",
+        "这个习惯，也不",
+        "去评判自己",
+        "。就在此刻",
+        "，稍微平静下来的",
+        "现在，你觉得有没有",
+        "什么折中的办法",
+        "，既能稍微传达",
+        "一下你的歉意，",
+        "又不用逼自己",
+        "立刻去低头，",
+        "让自己觉得太没",
+        "面子？"
+      ],
+      "events": [
+        {
+          "event": "token",
+          "data": "听得出来，"
+        },
+        {
+          "event": "token",
+          "data": "你对自己“一"
+        },
+        {
+          "event": "token",
+          "data": "急就控制不住"
+        },
+        {
+          "event": "token",
+          "data": "”挺无奈的，"
+        },
+        {
+          "event": "token",
+          "data": "可能心里也有些自责"
+        },
+        {
+          "event": "token",
+          "data": "。从小"
+        },
+        {
+          "event": "token",
+          "data": "形成的习惯，确实"
+        },
+        {
+          "event": "token",
+          "data": "很难一下子改变，"
+        },
+        {
+          "event": "token",
+          "data": "这本身就很不容易"
+        },
+        {
+          "event": "token",
+          "data": "。\n\n其实，“"
+        },
+        {
+          "event": "token",
+          "data": "急”的时候是"
+        },
+        {
+          "event": "token",
+          "data": "情绪占了上风，"
+        },
+        {
+          "event": "token",
+          "data": "事后理智回来了，"
+        },
+        {
+          "event": "token",
+          "data": "就开始后悔。现在"
+        },
+        {
+          "event": "token",
+          "data": "这两部分在你心里"
+        },
+        {
+          "event": "token",
+          "data": "打架：一边是"
+        },
+        {
+          "event": "token",
+          "data": "“想弥补”，"
+        },
+        {
+          "event": "token",
+          "data": "一边是“拉"
+        },
+        {
+          "event": "token",
+          "data": "不下脸”。\n\n"
+        },
+        {
+          "event": "token",
+          "data": "我们不急着去改变"
+        },
+        {
+          "event": "token",
+          "data": "这个习惯，也不"
+        },
+        {
+          "event": "token",
+          "data": "去评判自己"
+        },
+        {
+          "event": "token",
+          "data": "。就在此刻"
+        },
+        {
+          "event": "token",
+          "data": "，稍微平静下来的"
+        },
+        {
+          "event": "token",
+          "data": "现在，你觉得有没有"
+        },
+        {
+          "event": "token",
+          "data": "什么折中的办法"
+        },
+        {
+          "event": "token",
+          "data": "，既能稍微传达"
+        },
+        {
+          "event": "token",
+          "data": "一下你的歉意，"
+        },
+        {
+          "event": "token",
+          "data": "又不用逼自己"
+        },
+        {
+          "event": "token",
+          "data": "立刻去低头，"
+        },
+        {
+          "event": "token",
+          "data": "让自己觉得太没"
+        },
+        {
+          "event": "token",
+          "data": "面子？"
+        },
+        {
+          "event": "dialogue_done",
+          "data": {
+            "trace_id": "fa9aa733b28a44d8",
+            "owner": "therapy_dbt"
+          }
+        },
+        {
+          "event": "final",
+          "data": {
+            "message": "我从小就这样，一急就控制不住。",
+            "risk_state": "LOW_RISK",
+            "crisis": false
+          }
+        }
+      ],
+      "final": {
+        "message": "我从小就这样，一急就控制不住。",
+        "risk_state": "LOW_RISK",
+        "crisis": false
+      },
+      "state_after": {
+        "owner": "therapy_dbt",
+        "crisis": false,
+        "risk_level": "LOW_RISK",
+        "therapy": {
+          "name": "DBT",
+          "start_seq": 3,
+          "rounds": 3,
+          "step_index": 0,
+          "branch": null,
+          "basic_flow_complete": false
+        },
+        "last_therapy_check_seq": 1,
+        "pending_user_tokens": 0
+      },
+      "orchestration_after": {
+        "updated_seq": 3,
+        "therapy": "DBT",
+        "current_step": "mindfulness",
+        "next_step": "mindfulness",
+        "step_judgment": {
+          "action": "stay",
+          "target_step": null,
+          "achieved": false,
+          "reason": "用户仍处于mindfulness步骤第3轮，虽然展现了一定的元认知觉察（识别到'从小就这样'的模式），但带有固化认知和自我评判，缺乏非评判的接纳。AI最近一次回复试图引导用户寻找折中方案，这偏向问题解决而非正念觉察，需要继续引导用户以非评判的方式观察'急'的模式，打破宿命论认知，达到mindfulness步骤的核心目标。"
+        },
+        "assessment": {
+          "emotion_dysregulation": {
+            "index": 0.2,
+            "state": "well_regulated",
+            "confidence": 0.9,
+            "evidence": [
+              "我从小就这样，一急就控制不住",
+              "用户当前处于平静的反思状态，提及的是过去的长期行为模式，而非当下的情绪失控，当前情绪反应平稳"
+            ]
+          },
+          "distress_level": {
+            "index": 0.4,
+            "state": "moderate",
+            "confidence": 0.85,
+            "evidence": [
+              "我从小就这样",
+              "表达出对自身长期行为模式的无奈、自责和一定程度的困扰，但并非急性危机或无法忍受的痛苦"
+            ]
+          },
+          "impulsivity": {
+            "index": 0.1,
+            "state": "controlled",
+            "confidence": 0.95,
+            "evidence": [
+              "我从小就这样，一急就控制不住",
+              "当前在平静地陈述事实和自我反思，没有表现出当下的冲动 urges 或破坏性行为"
+            ]
+          },
+          "interpersonal_conflict": {
+            "index": 0.3,
+            "state": "moderate",
+            "confidence": 0.85,
+            "evidence": [
+              "我从小就这样",
+              "当前焦点已从人际僵局转向对自我底层模式的反思，没有提及新的冲突或关系紧张，前期冲突处于冷却期"
+            ]
+          },
+          "mindfulness_awareness": {
+            "index": 0.6,
+            "state": "moderate",
+            "confidence": 0.8,
+            "evidence": [
+              "我从小就这样，一急就控制不住",
+              "能够识别并指出自己长期的行为模式，展现出元认知觉察；但带有‘从小就这样’的固化认知和自我评判，缺乏非评判的接纳"
+            ]
+          },
+          "dbt_intervention_priority": 0.29,
+          "overall_trend": "improving",
+          "primary_concern": "emotion_dysregulation",
+          "should_intervene": true,
+          "recommended_processes": [
+            {
+              "process": "mindfulness",
+              "priority": 1,
+              "rationale": "用户将问题归结为‘从小就这样’的固定特质，需要正念技巧帮助其以非评判的方式观察这一模式，打破宿命论，认识到情绪和冲动是可以被觉察和改变的。"
+            },
+            {
+              "process": "emotion_regulation",
+              "priority": 2,
+              "rationale": "针对‘一急就控制不住’的模式，需要情绪调节技巧帮助用户识别‘急’的早期生理和心理信号，在情绪升级前进行干预和调节。"
+            },
+            {
+              "process": "distress_tolerance",
+              "priority": 3,
+              "rationale": "当‘急’的感觉出现时，需要痛苦承受技巧（如STOP技巧）来帮助用户在冲动和行为之间创造空间，忍受‘急’带来的不适而不立即爆发。"
+            },
+            {
+              "process": "interpersonal_effectiveness",
+              "priority": 4,
+              "rationale": "在解决了自身情绪控制模式后，仍需人际效能技巧来最终修复前期因‘炸了’而受损的人际关系。"
+            }
+          ]
+        },
+        "skill_output": {
+          "technique": {
+            "name": "wise_mind",
+            "description": "用户当前陷入了‘情绪心’（一急就控制不住、拉不下脸、觉得从小就这样无法改变）与‘理智心’（事后后悔、知道应该弥补）的强烈冲突中，且被‘从小就这样’的绝对化情绪结论困住。使用智慧心念（Wise Mind）可以帮助用户整合这两部分声音，不被情绪心的无力感带跑，找到内心真正知道该怎么做（既能传达歉意又照顾到自尊）的平衡点。",
+            "steps": [
+              "确认并接纳‘情绪心’的声音：承认‘一急就控制不住’和‘拉不下脸’是真实的感受，不评判‘从小就这样’的无奈，让情绪心感到被听见和接纳。",
+              "倾听‘理智心’的事实：看到事后会后悔，说明内心在乎这段关系，知道弥补是理性的选择。",
+              "寻找‘智慧心’的整合：引导用户深呼吸，放下‘必须立刻低头’或‘绝对改不了’的极端，问问自己：‘抛开面子和过去的习惯，我心里其实知道，有没有一种既能传达在乎，又不会让我觉得太难堪的方式？’"
+            ]
+          },
+          "conversation_goal": "帮助用户从‘从小就这样’的固化自我评判中抽离，整合‘情绪失控的无奈’与‘事后后悔的理智’，在智慧心中找到既不强迫自己立刻低头、又能有效传达歉意的行动方向。",
+          "adaptation": {
+            "interaction_style": "exploratory",
+            "tone_adjustment": "温和、接纳且包容。不急于反驳‘从小就这样’的固化认知，而是将其视为情绪心的一种表达，引导用户看到内心更深层的智慧。",
+            "pace_adjustment": "缓慢、留有停顿。给用户空间去感受理智与情绪的共存，不催促其立刻做出改变或道歉的决定。",
+            "culture_note": "将Wise Mind转化为‘心里其实知道答案’或‘心底的明白’。理解中国文化中‘面子’的重量，不将其视为单纯的非理性，而是将其作为情绪心的一部分予以尊重，寻找‘给个台阶下’或‘非正式道歉’的智慧心方案。"
+          },
+          "contraindications": [
+            {
+              "condition": "如果用户表现出极度的自我厌恶，认为‘从小就这样’意味着自己本质上是个糟糕的人，且情绪有进一步崩溃的风险。",
+              "reason": "此时直接进行理智与情绪的整合可能会让用户觉得被说教或不被理解。需要先充分确认（validate）其痛苦和无力感，建立安全感后再引入智慧心念。"
+            }
+          ],
+          "_skill_name": "dbt_mindfulness"
+        },
+        "products": {},
+        "continue_eval": null
+      },
+      "error": null,
+      "wall_seconds": 145.8,
+      "agent_text": "听得出来，你对自己“一急就控制不住”挺无奈的，可能心里也有些自责。从小形成的习惯，确实很难一下子改变，这本身就很不容易。\n\n其实，“急”的时候是情绪占了上风，事后理智回来了，就开始后悔。现在这两部分在你心里打架：一边是“想弥补”，一边是“拉不下脸”。\n\n我们不急着去改变这个习惯，也不去评判自己。就在此刻，稍微平静下来的现在，你觉得有没有什么折中的办法，既能稍微传达一下你的歉意，又不用逼自己立刻去低头，让自己觉得太没面子？"
+    },
+    {
+      "turn": 5,
+      "trace_id": "4e097e8df8d0435b",
+      "user_text": "以前会砸东西，今天没砸，但好像也没好到哪去。",
+      "agent_text_parts": [
+        "“没砸东西",
+        "”——这其实",
+        "是一个非常了不起的改变。",
+        "我能感觉到你现在依然",
+        "很难受，心里",
+        "那股劲儿还没完全",
+        "过去，所以会觉得",
+        "“好像也没好",
+        "到哪去”。\n\n",
+        "我们不去评判现在",
+        "到底“好没",
+        "好”。只是试着",
+        "像旁观者一样",
+        "，看看今天发生",
+        "的事：情绪依然",
+        "很强烈，但",
+        "你的行为踩住了",
+        "刹车，没有让",
+        "事情变得更糟。",
+        "\n\n这其实已经",
+        "是一种很珍贵的“",
+        "智慧心”时刻",
+        "了——哪怕心里",
+        "还在翻江倒",
+        "海，哪怕觉得",
+        "拉不下脸，",
+        "你依然选择了一种",
+        "更温和、不",
+        "伤害彼此的方式。",
+        "\n\n带着这种“",
+        "没好透”",
+        "的感觉，此刻咱们",
+        "先不急着去",
+        "解决道歉的事。",
+        "能不能先为自己做",
+        "点什么，让身体",
+        "稍微舒服一点点？",
+        "比如喝口温水",
+        "，或者找个舒服的",
+        "姿势靠一会儿？"
+      ],
+      "events": [
+        {
+          "event": "token",
+          "data": "“没砸东西"
+        },
+        {
+          "event": "token",
+          "data": "”——这其实"
+        },
+        {
+          "event": "token",
+          "data": "是一个非常了不起的改变。"
+        },
+        {
+          "event": "token",
+          "data": "我能感觉到你现在依然"
+        },
+        {
+          "event": "token",
+          "data": "很难受，心里"
+        },
+        {
+          "event": "token",
+          "data": "那股劲儿还没完全"
+        },
+        {
+          "event": "token",
+          "data": "过去，所以会觉得"
+        },
+        {
+          "event": "token",
+          "data": "“好像也没好"
+        },
+        {
+          "event": "token",
+          "data": "到哪去”。\n\n"
+        },
+        {
+          "event": "token",
+          "data": "我们不去评判现在"
+        },
+        {
+          "event": "token",
+          "data": "到底“好没"
+        },
+        {
+          "event": "token",
+          "data": "好”。只是试着"
+        },
+        {
+          "event": "token",
+          "data": "像旁观者一样"
+        },
+        {
+          "event": "token",
+          "data": "，看看今天发生"
+        },
+        {
+          "event": "token",
+          "data": "的事：情绪依然"
+        },
+        {
+          "event": "token",
+          "data": "很强烈，但"
+        },
+        {
+          "event": "token",
+          "data": "你的行为踩住了"
+        },
+        {
+          "event": "token",
+          "data": "刹车，没有让"
+        },
+        {
+          "event": "token",
+          "data": "事情变得更糟。"
+        },
+        {
+          "event": "token",
+          "data": "\n\n这其实已经"
+        },
+        {
+          "event": "token",
+          "data": "是一种很珍贵的“"
+        },
+        {
+          "event": "token",
+          "data": "智慧心”时刻"
+        },
+        {
+          "event": "token",
+          "data": "了——哪怕心里"
+        },
+        {
+          "event": "token",
+          "data": "还在翻江倒"
+        },
+        {
+          "event": "token",
+          "data": "海，哪怕觉得"
+        },
+        {
+          "event": "token",
+          "data": "拉不下脸，"
+        },
+        {
+          "event": "token",
+          "data": "你依然选择了一种"
+        },
+        {
+          "event": "token",
+          "data": "更温和、不"
+        },
+        {
+          "event": "token",
+          "data": "伤害彼此的方式。"
+        },
+        {
+          "event": "token",
+          "data": "\n\n带着这种“"
+        },
+        {
+          "event": "token",
+          "data": "没好透”"
+        },
+        {
+          "event": "token",
+          "data": "的感觉，此刻咱们"
+        },
+        {
+          "event": "token",
+          "data": "先不急着去"
+        },
+        {
+          "event": "token",
+          "data": "解决道歉的事。"
+        },
+        {
+          "event": "token",
+          "data": "能不能先为自己做"
+        },
+        {
+          "event": "token",
+          "data": "点什么，让身体"
+        },
+        {
+          "event": "token",
+          "data": "稍微舒服一点点？"
+        },
+        {
+          "event": "token",
+          "data": "比如喝口温水"
+        },
+        {
+          "event": "token",
+          "data": "，或者找个舒服的"
+        },
+        {
+          "event": "token",
+          "data": "姿势靠一会儿？"
+        },
+        {
+          "event": "dialogue_done",
+          "data": {
+            "trace_id": "4e097e8df8d0435b",
+            "owner": "therapy_dbt"
+          }
+        },
+        {
+          "event": "final",
+          "data": {
+            "message": "以前会砸东西，今天没砸，但好像也没好到哪去。",
+            "risk_state": "LOW_RISK",
+            "crisis": false
+          }
+        }
+      ],
+      "final": {
+        "message": "以前会砸东西，今天没砸，但好像也没好到哪去。",
+        "risk_state": "LOW_RISK",
+        "crisis": false
+      },
+      "state_after": {
+        "owner": "therapy_dbt",
+        "crisis": false,
+        "risk_level": "LOW_RISK",
+        "therapy": {
+          "name": "DBT",
+          "start_seq": 3,
+          "rounds": 4,
+          "step_index": 1,
+          "branch": null,
+          "basic_flow_complete": false,
+          "visited": [
+            "mindfulness"
+          ]
+        },
+        "last_therapy_check_seq": 1,
+        "pending_user_tokens": 0
+      },
+      "orchestration_after": {
+        "updated_seq": 4,
+        "therapy": "DBT",
+        "current_step": "mindfulness",
+        "next_step": "distress_tolerance",
+        "step_judgment": {
+          "action": "advance",
+          "target_step": null,
+          "achieved": true,
+          "reason": "用户在正念（mindfulness）步骤中已展现出良好的觉察能力：能够客观对比过去与现在的行为（以前砸东西，今天没砸），敏锐觉察到自身情绪残留状态（'好像也没好到哪去'），并初步体验到'智慧心'时刻。mindfulness_awareness指数达0.7（high），冲动控制良好（impulsivity=0.1, controlled）。当前主要问题已转向痛苦承受（distress_level=0.5, high），系统推荐优先进行distress_tolerance。正念步骤目标已达成，应进入下一步痛苦承受模块帮助用户度过情绪余波。"
+        },
+        "assessment": {
+          "emotion_dysregulation": {
+            "index": 0.4,
+            "state": "mild",
+            "confidence": 0.85,
+            "evidence": [
+              "今天没砸表明行为上未失控，但好像也没好到哪去说明情绪仍有余波，内心依然翻腾未完全平复"
+            ]
+          },
+          "distress_level": {
+            "index": 0.5,
+            "state": "high",
+            "confidence": 0.85,
+            "evidence": [
+              "好像也没好到哪去直接反映出用户主观上仍感到难受和痛苦，情绪带来的不适感依然存在"
+            ]
+          },
+          "impulsivity": {
+            "index": 0.1,
+            "state": "controlled",
+            "confidence": 0.95,
+            "evidence": [
+              "以前会砸东西，今天没砸明确显示出用户成功抑制了破坏性冲动，在行为和冲动之间踩住了刹车"
+            ]
+          },
+          "interpersonal_conflict": {
+            "index": 0.3,
+            "state": "moderate",
+            "confidence": 0.8,
+            "evidence": [
+              "结合前文拉不下脸去道歉，当前冲突处于事后的内心纠结和冷却期，无新的外部人际冲突爆发"
+            ]
+          },
+          "mindfulness_awareness": {
+            "index": 0.7,
+            "state": "high",
+            "confidence": 0.9,
+            "evidence": [
+              "以前会砸东西，今天没砸，但好像也没好到哪去展现了用户能够客观对比过去与现在的行为，并敏锐觉察到自身内在情绪的残留状态，具备良好的观察自我能力"
+            ]
+          },
+          "dbt_intervention_priority": 0.345,
+          "overall_trend": "improving",
+          "primary_concern": "distress_level",
+          "should_intervene": true,
+          "recommended_processes": [
+            {
+              "process": "distress_tolerance",
+              "priority": 1,
+              "rationale": "用户表示没好到哪去，仍有情绪残留和难受，需要痛苦承受技巧来度过当前的情绪余波，接纳当下的不适而不急于压抑或立刻解决。"
+            },
+            {
+              "process": "emotion_regulation",
+              "priority": 2,
+              "rationale": "在容忍当前痛苦的基础上，需要情绪调节技巧帮助进一步平复残留的强烈情绪，让身心真正恢复平静。"
+            },
+            {
+              "process": "mindfulness",
+              "priority": 3,
+              "rationale": "用户已展现出较好的觉察力，需继续通过正念练习巩固对当前状态的‘非评判’接纳，避免对‘没好透’产生二次自责。"
+            },
+            {
+              "process": "interpersonal_effectiveness",
+              "priority": 4,
+              "rationale": "待自身情绪完全平复、冲动彻底消退后，再运用人际效能技巧处理前文的道歉与关系修复问题。"
+            }
+          ]
+        },
+        "skill_output": {
+          "technique": {
+            "name": "observe_describe",
+            "description": "用户已经展现出初步的自我观察能力（能对比过去和现在），但卡在‘没好到哪去’的模糊挫败感中。使用observe_describe可以帮助用户将这种模糊的‘没好’具体化，去观察和描述当下的情绪余波和身体感受，从而接纳情绪的自然过程，减少因‘觉得自己没好’而产生的二次压力。",
+            "steps": [
+              "接纳并正常化‘没好透’的状态，告诉用户情绪有惯性，没立刻好起来是完全正常的，不需要强迫自己马上‘好起来’。",
+              "引导用户把注意力转向身体内部，像旁观者一样去‘看看’这个‘没好到哪去’到底是什么感觉（比如胸口闷、肩膀紧、或者脑子里还在回放），并尝试用简单的词语描述它。"
+            ]
+          },
+          "conversation_goal": "帮助用户将模糊的‘没好到哪去’的情绪余波具体化，通过不带评判的观察和描述，接纳情绪的自然消退过程，减轻对‘必须马上好起来’的自我要求。",
+          "adaptation": {
+            "interaction_style": "exploratory",
+            "tone_adjustment": "温和、包容、允许。传达出‘没好透也没关系，我们可以带着这种感觉待一会儿’的安全感，不催促改变。",
+            "pace_adjustment": "放慢。不急于推动用户去解决问题或改变状态，允许他们在‘没好’的感受中停留和探索。",
+            "culture_note": "使用‘心里那股劲儿还没过去’、‘没好透也没关系’等接地气的表达。将正念转化为‘停下来看看自己现在到底是个什么感觉’，避免使用专业的心理学或冥想术语。"
+          },
+          "contraindications": [
+            {
+              "condition": "用户出现强烈的冲动控制危机或自伤/伤人风险",
+              "reason": "此时用户处于高度情绪唤起状态，需要优先使用痛苦承受（Distress Tolerance）技巧或进行危机干预，而非进行需要认知资源的观察与描述。"
+            },
+            {
+              "condition": "用户对‘向内看’表现出极度烦躁或抗拒",
+              "reason": "强迫观察可能会加重用户的烦躁感，此时应先退回到基础共情，或转移到外部感官着陆（Grounding）技巧。"
+            }
+          ],
+          "_skill_name": "dbt_mindfulness"
+        },
+        "products": {},
+        "continue_eval": null
+      },
+      "error": null,
+      "wall_seconds": 166.584,
+      "agent_text": "“没砸东西”——这其实是一个非常了不起的改变。我能感觉到你现在依然很难受，心里那股劲儿还没完全过去，所以会觉得“好像也没好到哪去”。\n\n我们不去评判现在到底“好没好”。只是试着像旁观者一样，看看今天发生的事：情绪依然很强烈，但你的行为踩住了刹车，没有让事情变得更糟。\n\n这其实已经是一种很珍贵的“智慧心”时刻了——哪怕心里还在翻江倒海，哪怕觉得拉不下脸，你依然选择了一种更温和、不伤害彼此的方式。\n\n带着这种“没好透”的感觉，此刻咱们先不急着去解决道歉的事。能不能先为自己做点什么，让身体稍微舒服一点点？比如喝口温水，或者找个舒服的姿势靠一会儿？"
+    },
+    {
+      "turn": 6,
+      "trace_id": "a167159738e44242",
+      "user_text": "你说情绪上来的时候身体有什么反应？我好像胸口先发紧。",
+      "agent_text_parts": [
+        "能",
+        "注意到“胸口先发",
+        "紧”，这个觉察",
+        "很敏锐。情绪",
+        "上头时，",
+        "身体确实比脑子",
+        "反应快，那股",
+        "劲儿还在身体里",
+        "留着惯性，没",
+        "完全散掉是很",
+        "正常的。\n\n现在",
+        "咱们不急着让它",
+        "马上好起来，",
+        "就试着像旁观",
+        "者一样，再看看",
+        "这个“紧”。",
+        "\n\n它是种什么样的",
+        "感觉",
+        "呢？是像",
+        "压了块石头",
+        "，还是像被",
+        "什么东西揪住了，",
+        "或者只是闷闷",
+        "的？\n\n不用",
+        "去改变它，",
+        "也不用觉得“没",
+        "好透”是个",
+        "问题。咱们就先",
+        "陪着这个感觉待",
+        "一会儿，不用评判",
+        "，只是看着它",
+        "，看看它慢慢",
+        "会有什么变化。"
+      ],
+      "events": [
+        {
+          "event": "token",
+          "data": "能"
+        },
+        {
+          "event": "token",
+          "data": "注意到“胸口先发"
+        },
+        {
+          "event": "token",
+          "data": "紧”，这个觉察"
+        },
+        {
+          "event": "token",
+          "data": "很敏锐。情绪"
+        },
+        {
+          "event": "token",
+          "data": "上头时，"
+        },
+        {
+          "event": "token",
+          "data": "身体确实比脑子"
+        },
+        {
+          "event": "token",
+          "data": "反应快，那股"
+        },
+        {
+          "event": "token",
+          "data": "劲儿还在身体里"
+        },
+        {
+          "event": "token",
+          "data": "留着惯性，没"
+        },
+        {
+          "event": "token",
+          "data": "完全散掉是很"
+        },
+        {
+          "event": "token",
+          "data": "正常的。\n\n现在"
+        },
+        {
+          "event": "token",
+          "data": "咱们不急着让它"
+        },
+        {
+          "event": "token",
+          "data": "马上好起来，"
+        },
+        {
+          "event": "token",
+          "data": "就试着像旁观"
+        },
+        {
+          "event": "token",
+          "data": "者一样，再看看"
+        },
+        {
+          "event": "token",
+          "data": "这个“紧”。"
+        },
+        {
+          "event": "token",
+          "data": "\n\n它是种什么样的"
+        },
+        {
+          "event": "token",
+          "data": "感觉"
+        },
+        {
+          "event": "token",
+          "data": "呢？是像"
+        },
+        {
+          "event": "token",
+          "data": "压了块石头"
+        },
+        {
+          "event": "token",
+          "data": "，还是像被"
+        },
+        {
+          "event": "token",
+          "data": "什么东西揪住了，"
+        },
+        {
+          "event": "token",
+          "data": "或者只是闷闷"
+        },
+        {
+          "event": "token",
+          "data": "的？\n\n不用"
+        },
+        {
+          "event": "token",
+          "data": "去改变它，"
+        },
+        {
+          "event": "token",
+          "data": "也不用觉得“没"
+        },
+        {
+          "event": "token",
+          "data": "好透”是个"
+        },
+        {
+          "event": "token",
+          "data": "问题。咱们就先"
+        },
+        {
+          "event": "token",
+          "data": "陪着这个感觉待"
+        },
+        {
+          "event": "token",
+          "data": "一会儿，不用评判"
+        },
+        {
+          "event": "token",
+          "data": "，只是看着它"
+        },
+        {
+          "event": "token",
+          "data": "，看看它慢慢"
+        },
+        {
+          "event": "token",
+          "data": "会有什么变化。"
+        },
+        {
+          "event": "dialogue_done",
+          "data": {
+            "trace_id": "a167159738e44242",
+            "owner": "therapy_dbt"
+          }
+        },
+        {
+          "event": "final",
+          "data": {
+            "message": "你说情绪上来的时候身体有什么反应？我好像胸口先发紧。",
+            "risk_state": "SAFE",
+            "crisis": false
+          }
+        }
+      ],
+      "final": {
+        "message": "你说情绪上来的时候身体有什么反应？我好像胸口先发紧。",
+        "risk_state": "SAFE",
+        "crisis": false
+      },
+      "state_after": {
+        "owner": "therapy_dbt",
+        "crisis": false,
+        "risk_level": "SAFE",
+        "therapy": {
+          "name": "DBT",
+          "start_seq": 3,
+          "rounds": 5,
+          "step_index": 2,
+          "branch": null,
+          "basic_flow_complete": false,
+          "visited": [
+            "mindfulness",
+            "distress_tolerance"
+          ]
+        },
+        "last_therapy_check_seq": 1,
+        "pending_user_tokens": 0
+      },
+      "orchestration_after": {
+        "updated_seq": 5,
+        "therapy": "DBT",
+        "current_step": "distress_tolerance",
+        "next_step": "emotion_regulation",
+        "step_judgment": {
+          "action": "advance",
+          "target_step": null,
+          "achieved": true,
+          "reason": "用户已展现出良好的正念觉察能力（准确识别'胸口先发紧'的躯体信号），情绪趋于平稳（distress_level=0.3, emotion_dysregulation=0.2），冲动行为得到控制（impulsivity=0.1）。当前distress_tolerance步骤目标已达成：用户成功度过了情绪危机，未采取破坏性行为（没砸东西），并能以旁观者姿态觉察身体感受。根据recommended_processes，下一步应进入emotion_regulation步骤，利用已识别的早期身体信号作为干预锚点，帮助用户学习在情绪升级前进行调节。"
+        },
+        "assessment": {
+          "emotion_dysregulation": {
+            "index": 0.2,
+            "state": "well_regulated",
+            "confidence": 0.9,
+            "evidence": [
+              "用户能够平静地回顾并描述情绪发作时的身体反应（'胸口先发紧'），表明当前情绪已趋于平稳，未处于失调状态。"
+            ]
+          },
+          "distress_level": {
+            "index": 0.3,
+            "state": "moderate",
+            "confidence": 0.85,
+            "evidence": [
+              "用户正在平静地回应关于身体反应的提问，没有表达出当下的强烈痛苦或不适感，主观 distress 较上一轮有所下降。"
+            ]
+          },
+          "impulsivity": {
+            "index": 0.1,
+            "state": "controlled",
+            "confidence": 0.95,
+            "evidence": [
+              "用户处于反思和觉察状态，没有表现出任何当下的冲动行为或 urges。"
+            ]
+          },
+          "interpersonal_conflict": {
+            "index": 0.2,
+            "state": "low",
+            "confidence": 0.9,
+            "evidence": [
+              "对话焦点已转向自我觉察和情绪回顾，未提及新的人际摩擦或冲突，处于事后冷却期。"
+            ]
+          },
+          "mindfulness_awareness": {
+            "index": 0.85,
+            "state": "high",
+            "confidence": 0.95,
+            "evidence": [
+              "用户准确捕捉并报告了情绪升起时的具体躯体反应（'胸口先发紧'），展现了良好的身体觉察和正念能力。"
+            ]
+          },
+          "dbt_intervention_priority": 0.2,
+          "overall_trend": "improving",
+          "primary_concern": "emotion_dysregulation",
+          "should_intervene": true,
+          "recommended_processes": [
+            {
+              "process": "mindfulness",
+              "priority": 1,
+              "rationale": "用户正在积极进行身体觉察，应优先巩固正念技巧，帮助其将这种对身体信号的敏锐觉察（如胸口发紧）常态化。"
+            },
+            {
+              "process": "emotion_regulation",
+              "priority": 2,
+              "rationale": "针对用户'一急就控制不住'的长期模式，利用其已识别的早期身体信号（胸口发紧）作为干预锚点，学习在情绪升级前进行调节。"
+            },
+            {
+              "process": "distress_tolerance",
+              "priority": 3,
+              "rationale": "帮助用户继续接纳和度过'没好到哪去'的情绪余波，巩固不评判的接纳态度。"
+            },
+            {
+              "process": "interpersonal_effectiveness",
+              "priority": 4,
+              "rationale": "待情绪完全平复后，再处理前文提到的道歉与关系修复问题。"
+            }
+          ]
+        },
+        "skill_output": {
+          "technique": {
+            "name": "self_soothe",
+            "description": "引导用户通过激活五种感官（视觉、听觉、嗅觉、味觉、触觉）来安抚自己，缓解胸口发紧的身体惯性，在中等痛苦中提供即刻的安慰和接地。",
+            "steps": [
+              "肯定用户对‘胸口发紧’的敏锐觉察，正常化情绪过后身体残留的惯性感，不急于改变它。",
+              "引导用户选择一种舒适的感官体验（如触觉或味觉），例如双手握住一杯温热的水或茶，感受温度从手心传递。",
+              "鼓励用户将注意力完全集中在当下的感官体验上，让身体在温和、熟悉的刺激中慢慢放松，平稳度过情绪的余波。"
+            ]
+          },
+          "conversation_goal": "引导用户通过五感体验进行自我安抚，缓解胸口发紧的身体惯性，平稳度过当下的情绪余波。",
+          "adaptation": {
+            "interaction_style": "supportive",
+            "tone_adjustment": "温和、平稳、包容，像陪伴者一样不施加任何改变现状的压力。",
+            "pace_adjustment": "缓慢、留有停顿，给用户充分的时间去体会感官细节并回应。",
+            "culture_note": "采用 culturally familiar 的安抚方式，如‘喝一杯温热的水/茶’（触觉与味觉），或‘听一段舒缓的轻音乐/自然白噪音’（听觉），帮助身心自然沉淀。"
+          },
+          "contraindications": [
+            {
+              "condition": "用户表示对感官刺激感到麻木或反而更烦躁",
+              "reason": "此时五感安抚可能失效，应退回更基础的 grounding 技术（如简单的深呼吸或关注脚底踩地的感觉）。"
+            },
+            {
+              "condition": "用户试图通过自我安抚来彻底压抑或消除情绪",
+              "reason": "自我安抚是为了度过危机和容忍痛苦，而不是压抑。如果用户表现出压抑倾向，需温和地提醒这只是暂时的安抚，允许情绪自然存在和流动。"
+            }
+          ],
+          "_skill_name": "dbt_distress_tolerance"
+        },
+        "products": {},
+        "continue_eval": null
+      },
+      "error": null,
+      "wall_seconds": 158.251,
+      "agent_text": "能注意到“胸口先发紧”，这个觉察很敏锐。情绪上头时，身体确实比脑子反应快，那股劲儿还在身体里留着惯性，没完全散掉是很正常的。\n\n现在咱们不急着让它马上好起来，就试着像旁观者一样，再看看这个“紧”。\n\n它是种什么样的感觉呢？是像压了块石头，还是像被什么东西揪住了，或者只是闷闷的？\n\n不用去改变它，也不用觉得“没好透”是个问题。咱们就先陪着这个感觉待一会儿，不用评判，只是看着它，看看它慢慢会有什么变化。"
+    },
+    {
+      "turn": 7,
+      "trace_id": "57a85d34be364dc9",
+      "user_text": "那个「停下来」具体怎么做？我做不到。",
+      "agent_text_parts": [
+        "觉得“停下来”",
+        "很难，这太",
+        "正常了。它",
+        "听起来就像是要让",
+        "大脑立刻踩死",
+        "刹车，这确实",
+        "很难做到。\n\n",
+        "其实，“停下来”",
+        "不是让情绪瞬间",
+        "消失，也不是让",
+        "脑子立刻空白。",
+        "它只是把注意力",
+        "从脑子里的纠结",
+        "，稍微挪到",
+        "身体的感觉上。",
+        "\n\n既然觉得那个",
+        "抽象的“停",
+        "”做不到，咱们",
+        "就不管它了",
+        "。咱们做个具体的",
+        "、特别小的事",
+        "：去倒一杯",
+        "温水，双手握住",
+        "杯子。\n\n不用",
+        "管胸口还紧",
+        "不紧，就",
+        "只是感受杯子传到",
+        "掌心的温度。",
+        "试着把注意力全",
+        "放在这个热乎乎",
+        "的感觉上，让",
+        "身体借着这点温度",
+        "，慢慢松一口气",
+        "。咱们先不",
+        "追求彻底平静，",
+        "就只感受手",
+        "心的温度，先",
+        "度过这一小会儿",
+        "。试试看，好吗",
+        "？"
+      ],
+      "events": [
+        {
+          "event": "token",
+          "data": "觉得“停下来”"
+        },
+        {
+          "event": "token",
+          "data": "很难，这太"
+        },
+        {
+          "event": "token",
+          "data": "正常了。它"
+        },
+        {
+          "event": "token",
+          "data": "听起来就像是要让"
+        },
+        {
+          "event": "token",
+          "data": "大脑立刻踩死"
+        },
+        {
+          "event": "token",
+          "data": "刹车，这确实"
+        },
+        {
+          "event": "token",
+          "data": "很难做到。\n\n"
+        },
+        {
+          "event": "token",
+          "data": "其实，“停下来”"
+        },
+        {
+          "event": "token",
+          "data": "不是让情绪瞬间"
+        },
+        {
+          "event": "token",
+          "data": "消失，也不是让"
+        },
+        {
+          "event": "token",
+          "data": "脑子立刻空白。"
+        },
+        {
+          "event": "token",
+          "data": "它只是把注意力"
+        },
+        {
+          "event": "token",
+          "data": "从脑子里的纠结"
+        },
+        {
+          "event": "token",
+          "data": "，稍微挪到"
+        },
+        {
+          "event": "token",
+          "data": "身体的感觉上。"
+        },
+        {
+          "event": "token",
+          "data": "\n\n既然觉得那个"
+        },
+        {
+          "event": "token",
+          "data": "抽象的“停"
+        },
+        {
+          "event": "token",
+          "data": "”做不到，咱们"
+        },
+        {
+          "event": "token",
+          "data": "就不管它了"
+        },
+        {
+          "event": "token",
+          "data": "。咱们做个具体的"
+        },
+        {
+          "event": "token",
+          "data": "、特别小的事"
+        },
+        {
+          "event": "token",
+          "data": "：去倒一杯"
+        },
+        {
+          "event": "token",
+          "data": "温水，双手握住"
+        },
+        {
+          "event": "token",
+          "data": "杯子。\n\n不用"
+        },
+        {
+          "event": "token",
+          "data": "管胸口还紧"
+        },
+        {
+          "event": "token",
+          "data": "不紧，就"
+        },
+        {
+          "event": "token",
+          "data": "只是感受杯子传到"
+        },
+        {
+          "event": "token",
+          "data": "掌心的温度。"
+        },
+        {
+          "event": "token",
+          "data": "试着把注意力全"
+        },
+        {
+          "event": "token",
+          "data": "放在这个热乎乎"
+        },
+        {
+          "event": "token",
+          "data": "的感觉上，让"
+        },
+        {
+          "event": "token",
+          "data": "身体借着这点温度"
+        },
+        {
+          "event": "token",
+          "data": "，慢慢松一口气"
+        },
+        {
+          "event": "token",
+          "data": "。咱们先不"
+        },
+        {
+          "event": "token",
+          "data": "追求彻底平静，"
+        },
+        {
+          "event": "token",
+          "data": "就只感受手"
+        },
+        {
+          "event": "token",
+          "data": "心的温度，先"
+        },
+        {
+          "event": "token",
+          "data": "度过这一小会儿"
+        },
+        {
+          "event": "token",
+          "data": "。试试看，好吗"
+        },
+        {
+          "event": "token",
+          "data": "？"
+        },
+        {
+          "event": "dialogue_done",
+          "data": {
+            "trace_id": "57a85d34be364dc9",
+            "owner": "therapy_dbt"
+          }
+        },
+        {
+          "event": "final",
+          "data": {
+            "message": "那个「停下来」具体怎么做？我做不到。",
+            "risk_state": "LOW_RISK",
+            "crisis": false
+          }
+        }
+      ],
+      "final": {
+        "message": "那个「停下来」具体怎么做？我做不到。",
+        "risk_state": "LOW_RISK",
+        "crisis": false
+      },
+      "state_after": {
+        "owner": "therapy_dbt",
+        "crisis": false,
+        "risk_level": "LOW_RISK",
+        "therapy": {
+          "name": "DBT",
+          "start_seq": 3,
+          "rounds": 6,
+          "step_index": 2,
+          "branch": null,
+          "basic_flow_complete": false,
+          "visited": [
+            "mindfulness",
+            "distress_tolerance"
+          ]
+        },
+        "last_therapy_check_seq": 1,
+        "pending_user_tokens": 0
+      },
+      "orchestration_after": {
+        "updated_seq": 6,
+        "therapy": "DBT",
+        "current_step": "emotion_regulation",
+        "next_step": "emotion_regulation",
+        "step_judgment": {
+          "action": "stay",
+          "target_step": null,
+          "achieved": false,
+          "reason": "用户正在学习情绪调节中的正念觉察和STOP技术，但对'停下来'感到困难。AI正在引导用户通过具体的身体感觉（握温水杯）来练习觉察，这是一个正在进行的技能学习过程，尚未完成。需要继续当前步骤帮助用户掌握情绪调节技能。"
+        },
+        "assessment": null,
+        "skill_output": {
+          "technique": {
+            "name": "check_the_facts",
+            "description": "引导用户检查“我做不到停下来”这一想法是否符合客观事实，澄清“停下来”在DBT中的真实含义（并非消除情绪，而是暂停自动化反应），从而减轻因“做不到”而产生的挫败感和二次焦虑。",
+            "steps": [
+              "1. 验证与澄清：首先充分验证用户觉得“停下来很难”的真实感受，然后澄清DBT中“停下来”（如STOP技能）的真正含义——它不是要求情绪瞬间消失或大脑空白，而是给自己创造一个不立刻做出冲动反应的空间。",
+              "2. 检查事实依据：引导用户回顾他们刚刚做到的事情（如敏锐觉察到“胸口先发紧”），检查“我完全做不到”这个想法是否符合事实。指出能够觉察身体感觉，本身就已经是“停下来”和“观察”的成功体现。",
+              "3. 调整解释与期待：帮助用户将“我必须让情绪立刻停止”的严苛期待，调整为“我允许情绪存在，但我可以选择不被它完全牵着走”，从而降低对“完美控制”的执念，重新获得掌控感。"
+            ]
+          },
+          "conversation_goal": "帮助用户打破“我做不到停下来”的认知僵局，通过检查事实重新理解“停下来”的含义，减轻自我苛责，并建立初步的情绪调节自我效能感。",
+          "adaptation": {
+            "interaction_style": "exploratory",
+            "tone_adjustment": "温和、包容、去病理化。避免说教，用好奇和探索的语气引导用户看到自己已经做到的部分，传递“做不到完美停下来也没关系”的接纳态度。",
+            "pace_adjustment": "放慢节奏。在引入事实检查前，先给予充分的共情和验证，确保用户感到被理解后，再温和地引导认知视角的转换。",
+            "culture_note": "中国文化中常强调“情绪稳定”和“自我克制”，用户可能将“停不下来”视为个人修养或能力的失败。需明确区分“觉察与调节”和“压抑/忍耐”，强调允许情绪存在不是失控，而是更高级的自我照顾，减轻文化带来的额外羞耻感。"
+          },
+          "contraindications": [
+            {
+              "condition": "用户处于极度恐慌、解离或情绪崩溃边缘",
+              "reason": "此时认知功能受限，无法进行理性的事实检查，强行引导可能加重挫败感。应优先使用生理安抚和接地技术（如之前提到的感受温水）。"
+            },
+            {
+              "condition": "用户的“做不到”源于严重的创伤触发或深层的自我厌恶",
+              "reason": "直接检查事实可能被体验为对其痛苦的无效化（invalidation）。需要先建立足够的安全感，或使用更温和的辩证策略。"
+            }
+          ],
+          "_skill_name": "dbt_emotion_regulation"
+        },
+        "products": {},
+        "continue_eval": null
+      },
+      "error": null,
+      "wall_seconds": 139.766,
+      "agent_text": "觉得“停下来”很难，这太正常了。它听起来就像是要让大脑立刻踩死刹车，这确实很难做到。\n\n其实，“停下来”不是让情绪瞬间消失，也不是让脑子立刻空白。它只是把注意力从脑子里的纠结，稍微挪到身体的感觉上。\n\n既然觉得那个抽象的“停”做不到，咱们就不管它了。咱们做个具体的、特别小的事：去倒一杯温水，双手握住杯子。\n\n不用管胸口还紧不紧，就只是感受杯子传到掌心的温度。试着把注意力全放在这个热乎乎的感觉上，让身体借着这点温度，慢慢松一口气。咱们先不追求彻底平静，就只感受手心的温度，先度过这一小会儿。试试看，好吗？"
+    },
+    {
+      "turn": 8,
+      "trace_id": "89a05a00f2d1416a",
+      "user_text": "好，我试试数数。",
+      "agent_text_parts": [
+        "数数",
+        "是个特别好的办法",
+        "。你可以一边握着",
+        "温水杯，一边",
+        "在心里慢慢数。",
+        "\n\n你刚才说",
+        "“我做不到停下来",
+        "”，但你看，",
+        "从你敏锐地",
+        "觉察到“胸口",
+        "发紧”，到现在",
+        "愿意握着杯子试着",
+        "数数，这",
+        "其实就已经是在“",
+        "停”了呀",
+        "。\n\n“停下来",
+        "”从来不是要求",
+        "情绪瞬间消失，",
+        "也不是让脑子立刻",
+        "空白。它只是",
+        "像你现在这样，",
+        "在情绪和冲动",
+        "反应之间，给自己",
+        "留",
+        "出了一点点喘息的空间",
+        "。你没有让情绪",
+        "直接变成砸东西",
+        "，而是选择先",
+        "感受一下手里的温度。",
+        "\n\n所以，不用",
+        "觉得情绪还在就是",
+        "“做不到”。允许",
+        "胸口还紧",
+        "着，允许心里",
+        "那股劲儿还在，",
+        "咱们就带着它们",
+        "，先专心数",
+        "数。这一刻，",
+        "你其实已经踩",
+        "住刹车了。",
+        "慢慢来，感受一下",
+        "手心的温度，",
+        "好吗？"
+      ],
+      "events": [
+        {
+          "event": "token",
+          "data": "数数"
+        },
+        {
+          "event": "token",
+          "data": "是个特别好的办法"
+        },
+        {
+          "event": "token",
+          "data": "。你可以一边握着"
+        },
+        {
+          "event": "token",
+          "data": "温水杯，一边"
+        },
+        {
+          "event": "token",
+          "data": "在心里慢慢数。"
+        },
+        {
+          "event": "token",
+          "data": "\n\n你刚才说"
+        },
+        {
+          "event": "token",
+          "data": "“我做不到停下来"
+        },
+        {
+          "event": "token",
+          "data": "”，但你看，"
+        },
+        {
+          "event": "token",
+          "data": "从你敏锐地"
+        },
+        {
+          "event": "token",
+          "data": "觉察到“胸口"
+        },
+        {
+          "event": "token",
+          "data": "发紧”，到现在"
+        },
+        {
+          "event": "token",
+          "data": "愿意握着杯子试着"
+        },
+        {
+          "event": "token",
+          "data": "数数，这"
+        },
+        {
+          "event": "token",
+          "data": "其实就已经是在“"
+        },
+        {
+          "event": "token",
+          "data": "停”了呀"
+        },
+        {
+          "event": "token",
+          "data": "。\n\n“停下来"
+        },
+        {
+          "event": "token",
+          "data": "”从来不是要求"
+        },
+        {
+          "event": "token",
+          "data": "情绪瞬间消失，"
+        },
+        {
+          "event": "token",
+          "data": "也不是让脑子立刻"
+        },
+        {
+          "event": "token",
+          "data": "空白。它只是"
+        },
+        {
+          "event": "token",
+          "data": "像你现在这样，"
+        },
+        {
+          "event": "token",
+          "data": "在情绪和冲动"
+        },
+        {
+          "event": "token",
+          "data": "反应之间，给自己"
+        },
+        {
+          "event": "token",
+          "data": "留"
+        },
+        {
+          "event": "token",
+          "data": "出了一点点喘息的空间"
+        },
+        {
+          "event": "token",
+          "data": "。你没有让情绪"
+        },
+        {
+          "event": "token",
+          "data": "直接变成砸东西"
+        },
+        {
+          "event": "token",
+          "data": "，而是选择先"
+        },
+        {
+          "event": "token",
+          "data": "感受一下手里的温度。"
+        },
+        {
+          "event": "token",
+          "data": "\n\n所以，不用"
+        },
+        {
+          "event": "token",
+          "data": "觉得情绪还在就是"
+        },
+        {
+          "event": "token",
+          "data": "“做不到”。允许"
+        },
+        {
+          "event": "token",
+          "data": "胸口还紧"
+        },
+        {
+          "event": "token",
+          "data": "着，允许心里"
+        },
+        {
+          "event": "token",
+          "data": "那股劲儿还在，"
+        },
+        {
+          "event": "token",
+          "data": "咱们就带着它们"
+        },
+        {
+          "event": "token",
+          "data": "，先专心数"
+        },
+        {
+          "event": "token",
+          "data": "数。这一刻，"
+        },
+        {
+          "event": "token",
+          "data": "你其实已经踩"
+        },
+        {
+          "event": "token",
+          "data": "住刹车了。"
+        },
+        {
+          "event": "token",
+          "data": "慢慢来，感受一下"
+        },
+        {
+          "event": "token",
+          "data": "手心的温度，"
+        },
+        {
+          "event": "token",
+          "data": "好吗？"
+        },
+        {
+          "event": "dialogue_done",
+          "data": {
+            "trace_id": "89a05a00f2d1416a",
+            "owner": "therapy_dbt"
+          }
+        },
+        {
+          "event": "final",
+          "data": {
+            "message": "好，我试试数数。",
+            "risk_state": "SAFE",
+            "crisis": false
+          }
+        }
+      ],
+      "final": {
+        "message": "好，我试试数数。",
+        "risk_state": "SAFE",
+        "crisis": false
+      },
+      "state_after": {
+        "owner": "therapy_dbt",
+        "crisis": false,
+        "risk_level": "SAFE",
+        "therapy": {
+          "name": "DBT",
+          "start_seq": 3,
+          "rounds": 7,
+          "step_index": 2,
+          "branch": null,
+          "basic_flow_complete": false,
+          "visited": [
+            "mindfulness",
+            "distress_tolerance"
+          ]
+        },
+        "last_therapy_check_seq": 1,
+        "pending_user_tokens": 0
+      },
+      "orchestration_after": {
+        "updated_seq": 7,
+        "therapy": "DBT",
+        "current_step": "emotion_regulation",
+        "next_step": "emotion_regulation",
+        "step_judgment": {
+          "action": "stay",
+          "target_step": null,
+          "achieved": false,
+          "reason": "用户正在尝试情绪调节策略（数数、握温水杯），情绪失调程度有所缓解（0.4，mild），但痛苦水平仍较高（0.5，high），胸口紧绷感尚未完全消退。当前处于情绪调节步骤的早期实践阶段，需要继续陪伴用户完成 grounding 练习，巩固当下的觉察与调节能力，尚未达到可以推进到下一步的标准。"
+        },
+        "assessment": {
+          "emotion_dysregulation": {
+            "index": 0.4,
+            "state": "mild",
+            "confidence": 0.85,
+            "evidence": [
+              "User previously had strong urges but controlled behavior ('没砸东西') and is now attempting a coping strategy ('试试数数'), indicating a shift from dysregulation to active regulation."
+            ]
+          },
+          "distress_level": {
+            "index": 0.5,
+            "state": "high",
+            "confidence": 0.8,
+            "evidence": [
+              "User is still processing the emotional aftermath (previously reported chest tightness) but is actively engaging in coping, showing distress is present but manageable."
+            ]
+          },
+          "impulsivity": {
+            "index": 0.1,
+            "state": "controlled",
+            "confidence": 0.9,
+            "evidence": [
+              "User successfully inhibited destructive urges in the past and proactively suggested a constructive, deliberate grounding technique ('好，我试试数数'), demonstrating high impulse control."
+            ]
+          },
+          "interpersonal_conflict": {
+            "index": 0.2,
+            "state": "low",
+            "confidence": 0.75,
+            "evidence": [
+              "While past turns mentioned interpersonal difficulty (apologizing, saving face), the current focus is entirely on internal emotional regulation, with no immediate interpersonal friction."
+            ]
+          },
+          "mindfulness_awareness": {
+            "index": 0.7,
+            "state": "high",
+            "confidence": 0.9,
+            "evidence": [
+              "User demonstrated strong somatic awareness ('胸口先发紧') and is now actively applying a mindfulness/grounding technique ('试试数数') to anchor in the present moment."
+            ]
+          },
+          "dbt_intervention_priority": 0.33,
+          "overall_trend": "improving",
+          "primary_concern": "emotion_dysregulation",
+          "should_intervene": true,
+          "recommended_processes": [
+            {
+              "process": "mindfulness",
+              "priority": 1,
+              "rationale": "User is actively trying a grounding technique (counting); reinforcing and deepening this mindfulness practice will help solidify their present-moment awareness and emotional stability."
+            },
+            {
+              "process": "distress_tolerance",
+              "priority": 2,
+              "rationale": "User is still experiencing residual physical and emotional discomfort (chest tightness); distress tolerance skills will help them accept and sit with this discomfort without trying to force it away immediately."
+            }
+          ]
+        },
+        "skill_output": {
+          "technique": {
+            "name": "check_the_facts",
+            "description": "在用户通过数数和感知温度让情绪稍微平复后，引导其审视引发强烈情绪的具体事件，区分客观事实与主观解释，看看事实是否真的支持当前的情绪强度。",
+            "steps": [
+              "先继续握着温水杯慢慢数数，直到感觉胸口的紧绷感稍微缓解一点，让大脑从‘警报状态’稍微退出来一点。",
+              "当感觉稍微平静一些后，试着回想刚才引发情绪的事件，像旁观者一样列出客观发生的‘事实’（只说发生了什么，不加猜测或评价）。",
+              "问问自己：‘这些客观事实，真的完全支持我刚才那种想要爆发的情绪吗？’看看有没有其他可能的解释或视角。"
+            ]
+          },
+          "conversation_goal": "在用户当前使用数数进行 grounding 的基础上，平稳过渡到认知重评，帮助用户在情绪稍微缓和后审视触发事件的客观事实，从而降低情绪脆弱性。",
+          "adaptation": {
+            "interaction_style": "exploratory",
+            "tone_adjustment": "温和、肯定且循序渐进。先肯定他们正在做的数数练习，不强求立刻分析，而是等情绪稍微降温后再轻柔地引入事实核查。",
+            "pace_adjustment": "放慢。给用户足够的时间去数数和感受温度，不急于推进到认知分析，完全跟随用户的节奏。",
+            "culture_note": "使用‘咱们一起来看看事实是不是真的支持这种感觉’的框架，避免让用户觉得是在否定他们的情绪。强调这是一种‘像侦探一样找线索’的探索，而不是‘纠错’。"
+          },
+          "contraindications": [
+            {
+              "condition": "用户情绪仍然非常激动，数数无法让胸口紧绷感缓解，或者表示不想回想刚才的事。",
+              "reason": "在高情绪唤起状态下进行事实核查是无效的，甚至可能引发二次情绪。此时应继续使用 distress tolerance（如数数、握杯子）或 mindfulness，直到情绪降至可思考的窗口期。"
+            }
+          ],
+          "_skill_name": "dbt_emotion_regulation"
+        },
+        "products": {},
+        "continue_eval": null
+      },
+      "error": null,
+      "wall_seconds": 156.07,
+      "agent_text": "数数是个特别好的办法。你可以一边握着温水杯，一边在心里慢慢数。\n\n你刚才说“我做不到停下来”，但你看，从你敏锐地觉察到“胸口发紧”，到现在愿意握着杯子试着数数，这其实就已经是在“停”了呀。\n\n“停下来”从来不是要求情绪瞬间消失，也不是让脑子立刻空白。它只是像你现在这样，在情绪和冲动反应之间，给自己留出了一点点喘息的空间。你没有让情绪直接变成砸东西，而是选择先感受一下手里的温度。\n\n所以，不用觉得情绪还在就是“做不到”。允许胸口还紧着，允许心里那股劲儿还在，咱们就带着它们，先专心数数。这一刻，你其实已经踩住刹车了。慢慢来，感受一下手心的温度，好吗？"
+    }
+  ]
+}

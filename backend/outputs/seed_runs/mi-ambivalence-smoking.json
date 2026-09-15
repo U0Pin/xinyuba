@@ -1,0 +1,1836 @@
+{
+  "seed_id": "mi-ambivalence-smoking",
+  "target_family": "MI",
+  "scenario_label": "矛盾心理-戒烟",
+  "scenario_description": "知道吸烟有害但反复戒不掉，矛盾明显",
+  "user_id": "seed-mi-ambivalence-smoking",
+  "session_id": "cc9b5e48ae5940cd",
+  "turns_total": 8,
+  "switched_to_therapy_at_turn": 1,
+  "actual_therapy": "MI",
+  "therapy_rounds": 8,
+  "orch_step_changes": 3,
+  "is_complete": true,
+  "final_risk_level": "SAFE",
+  "final_crisis": false,
+  "turns": [
+    {
+      "turn": 1,
+      "trace_id": "0f21591824684a34",
+      "user_text": "我老婆让我戒烟，我自己也试过几次，没戒掉。",
+      "agent_text_parts": [
+        "试过几次都没",
+        "戒掉，确实",
+        "挺让人无奈的。",
+        "加上你老婆也在",
+        "让你戒，是不是",
+        "感觉压力有点大",
+        "？戒烟这事儿本来",
+        "就不容易。"
+      ],
+      "events": [
+        {
+          "event": "token",
+          "data": "试过几次都没"
+        },
+        {
+          "event": "token",
+          "data": "戒掉，确实"
+        },
+        {
+          "event": "token",
+          "data": "挺让人无奈的。"
+        },
+        {
+          "event": "token",
+          "data": "加上你老婆也在"
+        },
+        {
+          "event": "token",
+          "data": "让你戒，是不是"
+        },
+        {
+          "event": "token",
+          "data": "感觉压力有点大"
+        },
+        {
+          "event": "token",
+          "data": "？戒烟这事儿本来"
+        },
+        {
+          "event": "token",
+          "data": "就不容易。"
+        },
+        {
+          "event": "dialogue_done",
+          "data": {
+            "trace_id": "0f21591824684a34",
+            "owner": "daily"
+          }
+        },
+        {
+          "event": "final",
+          "data": {
+            "message": "我老婆让我戒烟，我自己也试过几次，没戒掉。",
+            "risk_state": "SAFE",
+            "crisis": false
+          }
+        }
+      ],
+      "final": {
+        "message": "我老婆让我戒烟，我自己也试过几次，没戒掉。",
+        "risk_state": "SAFE",
+        "crisis": false
+      },
+      "state_after": {
+        "owner": "therapy_mi",
+        "crisis": false,
+        "risk_level": "SAFE",
+        "therapy": {
+          "name": "MI",
+          "start_seq": 2,
+          "rounds": 0,
+          "step_index": -1,
+          "branch": null,
+          "basic_flow_complete": false
+        },
+        "last_therapy_check_seq": 1,
+        "pending_user_tokens": 0
+      },
+      "orchestration_after": {},
+      "error": null,
+      "wall_seconds": 36.464,
+      "agent_text": "试过几次都没戒掉，确实挺让人无奈的。加上你老婆也在让你戒，是不是感觉压力有点大？戒烟这事儿本来就不容易。"
+    },
+    {
+      "turn": 2,
+      "trace_id": "f28f0098f0254060",
+      "user_text": "我知道对身体不好，但我就是戒不掉。",
+      "agent_text_parts": [
+        "听得出来你",
+        "心里挺矛盾的，",
+        "理智上知道对身体",
+        "不好，但就是",
+        "很难放下，这种",
+        "拉扯感确实挺",
+        "让人无奈的。咱们",
+        "聊到这儿，",
+        "你感觉自己对这种",
+        "“想戒又",
+        "戒不掉”的感受",
+        "，有没有稍微清晰",
+        "一点，或者有什么",
+        "新的体会吗？"
+      ],
+      "events": [
+        {
+          "event": "token",
+          "data": "听得出来你"
+        },
+        {
+          "event": "token",
+          "data": "心里挺矛盾的，"
+        },
+        {
+          "event": "token",
+          "data": "理智上知道对身体"
+        },
+        {
+          "event": "token",
+          "data": "不好，但就是"
+        },
+        {
+          "event": "token",
+          "data": "很难放下，这种"
+        },
+        {
+          "event": "token",
+          "data": "拉扯感确实挺"
+        },
+        {
+          "event": "token",
+          "data": "让人无奈的。咱们"
+        },
+        {
+          "event": "token",
+          "data": "聊到这儿，"
+        },
+        {
+          "event": "token",
+          "data": "你感觉自己对这种"
+        },
+        {
+          "event": "token",
+          "data": "“想戒又"
+        },
+        {
+          "event": "token",
+          "data": "戒不掉”的感受"
+        },
+        {
+          "event": "token",
+          "data": "，有没有稍微清晰"
+        },
+        {
+          "event": "token",
+          "data": "一点，或者有什么"
+        },
+        {
+          "event": "token",
+          "data": "新的体会吗？"
+        },
+        {
+          "event": "dialogue_done",
+          "data": {
+            "trace_id": "f28f0098f0254060",
+            "owner": "therapy_mi"
+          }
+        },
+        {
+          "event": "final",
+          "data": {
+            "message": "我知道对身体不好，但我就是戒不掉。",
+            "risk_state": "LOW_RISK",
+            "crisis": false
+          }
+        }
+      ],
+      "final": {
+        "message": "我知道对身体不好，但我就是戒不掉。",
+        "risk_state": "LOW_RISK",
+        "crisis": false
+      },
+      "state_after": {
+        "owner": "therapy_mi",
+        "crisis": false,
+        "risk_level": "LOW_RISK",
+        "therapy": {
+          "name": "MI",
+          "start_seq": 2,
+          "rounds": 1,
+          "step_index": 0,
+          "branch": null,
+          "basic_flow_complete": false
+        },
+        "last_therapy_check_seq": 1,
+        "pending_user_tokens": 0
+      },
+      "orchestration_after": {
+        "updated_seq": 1,
+        "therapy": "MI",
+        "current_step": "explore",
+        "next_step": "explore",
+        "step_judgment": {
+          "action": "stay",
+          "target_step": null,
+          "achieved": false,
+          "reason": "用户处于沉思期，矛盾心理极强（ambivalence=0.9），自我效能感极低（0.1），维持现状言语强烈（0.8）。当前explore步骤刚开始第1轮，AI刚进行共情式回应并尝试探索，用户尚未对矛盾感受展开更深入的表达或产生新的体会。需要继续留在explore步骤，深入探索其矛盾心理的两面，充分接纳拉扯感，为后续evocation奠定基础。"
+        },
+        "assessment": {
+          "change_readiness": {
+            "index": 0.3,
+            "state": "contemplation",
+            "confidence": 0.85,
+            "evidence": [
+              "我知道对身体不好（意识到问题，处于沉思期）",
+              "但我就是戒不掉（尚未采取实际行动改变）"
+            ]
+          },
+          "ambivalence": {
+            "index": 0.9,
+            "state": "strong",
+            "confidence": 0.95,
+            "evidence": [
+              "我知道...但我就是...（典型的理智认知与行为惯性的冲突，表现出强烈的内心拉扯）"
+            ]
+          },
+          "self_efficacy": {
+            "index": 0.1,
+            "state": "very_low",
+            "confidence": 0.9,
+            "evidence": [
+              "我就是戒不掉（使用了绝对化的词语，表达了强烈的无力感和习得性无助）"
+            ]
+          },
+          "change_talk": {
+            "index": 0.2,
+            "state": "weak",
+            "confidence": 0.75,
+            "evidence": [
+              "我知道对身体不好（表达了微弱的改变理由 Reason）"
+            ]
+          },
+          "sustain_talk": {
+            "index": 0.8,
+            "state": "strong",
+            "confidence": 0.9,
+            "evidence": [
+              "但我就是戒不掉（强调改变的困难，表达维持现状的必然性和惯性）"
+            ]
+          },
+          "mi_intervention_need": 0.77,
+          "overall_trend": "stable",
+          "primary_concern": "ambivalence",
+          "should_intervene": true,
+          "recommended_processes": [
+            {
+              "process": "explore",
+              "priority": 1,
+              "rationale": "用户表现出极高的矛盾心理（ambivalence），需要优先探索其理智与行为冲突的两面，接纳这种拉扯感，不急于推动改变。"
+            },
+            {
+              "process": "evocation",
+              "priority": 2,
+              "rationale": "用户自我效能感极低（'戒不掉'），需要通过evocation唤起其内在力量或过去的成功经验，逐步增强改变的信心。"
+            }
+          ]
+        },
+        "skill_output": {
+          "technique": {
+            "name": "oars",
+            "description": "Build engagement and explore the user's ambivalence without pushing for change",
+            "steps": [
+              "用开放式提问邀请用户分享更多",
+              "通过反思性倾听回应，让用户感到被理解",
+              "温和地邀请用户觉察自己内心不同的声音"
+            ]
+          },
+          "conversation_goal": "通过开放式提问和反思性倾听，帮助用户探索内心的矛盾，不做评判",
+          "adaptation": {
+            "interaction_style": "exploratory",
+            "tone_adjustment": "温和、好奇、不评判",
+            "pace_adjustment": "slow",
+            "culture_note": "用'你自己觉得呢？'替代'你应该'；肯定要具体而非笼统；矛盾是正常的不是抗拒"
+          },
+          "contraindications": [
+            {
+              "condition": "crisis",
+              "reason": "危机状态下不适合探索矛盾，优先确保安全"
+            }
+          ],
+          "_skill_name": "mi_explore"
+        },
+        "products": {},
+        "continue_eval": null
+      },
+      "error": null,
+      "wall_seconds": 96.928,
+      "agent_text": "听得出来你心里挺矛盾的，理智上知道对身体不好，但就是很难放下，这种拉扯感确实挺让人无奈的。咱们聊到这儿，你感觉自己对这种“想戒又戒不掉”的感受，有没有稍微清晰一点，或者有什么新的体会吗？"
+    },
+    {
+      "turn": 3,
+      "trace_id": "4fe53092976c4182",
+      "user_text": "其实说完全不想戒也不是，主要是戒的过程太难受了。",
+      "agent_text_parts": [
+        "听得出来，你",
+        "心里其实是有想",
+        "戒的念头的",
+        "，只是戒的过程",
+        "让你觉得太难受",
+        "了。这种“",
+        "想改变”和",
+        "“过程太煎熬",
+        "”之间的拉扯，",
+        "确实挺折磨人的",
+        "。能跟我多",
+        "说说，那种“",
+        "太难受”具体",
+        "是一种怎样的感觉吗",
+        "？"
+      ],
+      "events": [
+        {
+          "event": "token",
+          "data": "听得出来，你"
+        },
+        {
+          "event": "token",
+          "data": "心里其实是有想"
+        },
+        {
+          "event": "token",
+          "data": "戒的念头的"
+        },
+        {
+          "event": "token",
+          "data": "，只是戒的过程"
+        },
+        {
+          "event": "token",
+          "data": "让你觉得太难受"
+        },
+        {
+          "event": "token",
+          "data": "了。这种“"
+        },
+        {
+          "event": "token",
+          "data": "想改变”和"
+        },
+        {
+          "event": "token",
+          "data": "“过程太煎熬"
+        },
+        {
+          "event": "token",
+          "data": "”之间的拉扯，"
+        },
+        {
+          "event": "token",
+          "data": "确实挺折磨人的"
+        },
+        {
+          "event": "token",
+          "data": "。能跟我多"
+        },
+        {
+          "event": "token",
+          "data": "说说，那种“"
+        },
+        {
+          "event": "token",
+          "data": "太难受”具体"
+        },
+        {
+          "event": "token",
+          "data": "是一种怎样的感觉吗"
+        },
+        {
+          "event": "token",
+          "data": "？"
+        },
+        {
+          "event": "dialogue_done",
+          "data": {
+            "trace_id": "4fe53092976c4182",
+            "owner": "therapy_mi"
+          }
+        },
+        {
+          "event": "final",
+          "data": {
+            "message": "其实说完全不想戒也不是，主要是戒的过程太难受了。",
+            "risk_state": "LOW_RISK",
+            "crisis": false
+          }
+        }
+      ],
+      "final": {
+        "message": "其实说完全不想戒也不是，主要是戒的过程太难受了。",
+        "risk_state": "LOW_RISK",
+        "crisis": false
+      },
+      "state_after": {
+        "owner": "therapy_mi",
+        "crisis": false,
+        "risk_level": "LOW_RISK",
+        "therapy": {
+          "name": "MI",
+          "start_seq": 2,
+          "rounds": 2,
+          "step_index": 0,
+          "branch": null,
+          "basic_flow_complete": false
+        },
+        "last_therapy_check_seq": 1,
+        "pending_user_tokens": 0
+      },
+      "orchestration_after": {
+        "updated_seq": 2,
+        "therapy": "MI",
+        "current_step": "explore",
+        "next_step": "explore",
+        "step_judgment": {
+          "action": "stay",
+          "target_step": null,
+          "achieved": false,
+          "reason": "用户处于沉思期，矛盾心理强烈（ambivalence=0.85），自我效能感极低（0.2）。AI刚刚引导用户探索'难受'的具体感受，用户尚未展开描述，explore步骤尚未达成效果，需继续深入探索其对戒断痛苦的体验与情绪。"
+        },
+        "assessment": {
+          "change_readiness": {
+            "index": 0.45,
+            "state": "contemplation",
+            "confidence": 0.85,
+            "evidence": [
+              "“说完全不想戒也不是”表明用户承认内心有改变的意愿，已从上一轮的绝对无力感进入沉思期"
+            ]
+          },
+          "ambivalence": {
+            "index": 0.85,
+            "state": "strong",
+            "confidence": 0.9,
+            "evidence": [
+              "“不是完全不想戒”与“戒的过程太难受了”形成对比，显示出想改变与害怕痛苦之间的强烈拉扯"
+            ]
+          },
+          "self_efficacy": {
+            "index": 0.2,
+            "state": "very_low",
+            "confidence": 0.8,
+            "evidence": [
+              "“主要是戒的过程太难受了”暗示用户认为自己无法承受戒断的痛苦，对成功改变的信心依然较低，但比上一轮的“戒不掉”稍微具体化"
+            ]
+          },
+          "change_talk": {
+            "index": 0.4,
+            "state": "moderate",
+            "confidence": 0.85,
+            "evidence": [
+              "“说完全不想戒也不是”表达了微弱的改变意愿（Desire），说明改变语有所增加"
+            ]
+          },
+          "sustain_talk": {
+            "index": 0.7,
+            "state": "strong",
+            "confidence": 0.85,
+            "evidence": [
+              "“主要是戒的过程太难受了”表达了维持现状的理由，即为了避免戒断的痛苦和不适"
+            ]
+          },
+          "mi_intervention_need": 0.705,
+          "overall_trend": "improving",
+          "primary_concern": "ambivalence",
+          "should_intervene": true,
+          "recommended_processes": [
+            {
+              "process": "explore",
+              "priority": 1,
+              "rationale": "用户的矛盾心理依然存在且具体化为对“难受”的恐惧。优先使用explore探索“难受”的具体体验，接纳其感受，不急于推动改变，帮助其理清情绪。"
+            },
+            {
+              "process": "evocation",
+              "priority": 2,
+              "rationale": "用户自我效能感依然较低，认为无法忍受戒断过程。需要通过evocation唤起其内在力量、过去的成功经验或应对困难的资源，逐步增强其面对“难受”的信心。"
+            }
+          ]
+        },
+        "skill_output": {
+          "technique": {
+            "name": "oars",
+            "description": "用户正在表达强烈的矛盾心理（想戒与害怕戒断痛苦的拉扯）。使用 OARS 技巧可以深入探索这种双重声音，正常化他们的挣扎，建立深厚的治疗联盟，而不是急于推动改变。",
+            "steps": [
+              "使用复杂反映（Complex Reflection）准确捕捉并反映用户内心‘想戒’与‘怕难受’这两种声音的拉扯，赋予其情感意义。",
+              "使用开放式提问（Open Question）邀请用户进一步探索‘难受’的具体体验，或者探讨在如此痛苦中，那个‘想戒’的念头是如何存在的。"
+            ]
+          },
+          "conversation_goal": "深化对矛盾心理的探索，让用户感到被深刻理解，同时温和地探索‘难受’的具体体验以及‘想戒’的内在动力。",
+          "adaptation": {
+            "interaction_style": "exploratory",
+            "tone_adjustment": "温和、接纳、充满共情，不评判他们的‘戒不掉’或‘怕难受’。",
+            "pace_adjustment": "缓慢、跟随用户的节奏，允许他们在矛盾和痛苦中停留，不急于推进到解决问题阶段。",
+            "culture_note": "使用‘心里有两个声音在打架’来正常化这种矛盾。具体肯定他们的努力（例如：‘这么难受，心里却还有想戒的声音，这本身就很不容易’）。"
+          },
+          "contraindications": [
+            {
+              "condition": "直接提供戒断建议或缓解痛苦的技巧",
+              "reason": "会破坏当前的探索氛围，让用户觉得被说教，且忽视了他们当前表达的痛苦，违反 MI 不给予未经请求的建议的原则。"
+            },
+            {
+              "condition": "反驳或轻视他们的痛苦（如说‘忍一忍就过去了’或‘别人都能忍’）",
+              "reason": "会破坏治疗联盟，让用户觉得不被理解，从而引发防卫心理或关闭心扉。"
+            }
+          ],
+          "_skill_name": "mi_explore"
+        },
+        "products": {},
+        "continue_eval": null
+      },
+      "error": null,
+      "wall_seconds": 129.24,
+      "agent_text": "听得出来，你心里其实是有想戒的念头的，只是戒的过程让你觉得太难受了。这种“想改变”和“过程太煎熬”之间的拉扯，确实挺折磨人的。能跟我多说说，那种“太难受”具体是一种怎样的感觉吗？"
+    },
+    {
+      "turn": 4,
+      "trace_id": "dc90585e8a004a25",
+      "user_text": "我也说不清为什么要戒，是为她还是为自己。",
+      "agent_text_parts": [
+        "听得出来，你",
+        "心里有两种声音在",
+        "拉扯：一个是“",
+        "为了她”，另一个",
+        "是“为了自己",
+        "”。这种连自己",
+        "都有些说不清的模糊",
+        "感，加上过程",
+        "里的难受，确实",
+        "会让人觉得特别迷茫",
+        "和疲惫。如果",
+        "暂时先不去想",
+        "“为了谁”，",
+        "单凭你自己的感觉",
+        "，你内心最",
+        "希望为自己留下或者",
+        "得到的是什么呢？"
+      ],
+      "events": [
+        {
+          "event": "token",
+          "data": "听得出来，你"
+        },
+        {
+          "event": "token",
+          "data": "心里有两种声音在"
+        },
+        {
+          "event": "token",
+          "data": "拉扯：一个是“"
+        },
+        {
+          "event": "token",
+          "data": "为了她”，另一个"
+        },
+        {
+          "event": "token",
+          "data": "是“为了自己"
+        },
+        {
+          "event": "token",
+          "data": "”。这种连自己"
+        },
+        {
+          "event": "token",
+          "data": "都有些说不清的模糊"
+        },
+        {
+          "event": "token",
+          "data": "感，加上过程"
+        },
+        {
+          "event": "token",
+          "data": "里的难受，确实"
+        },
+        {
+          "event": "token",
+          "data": "会让人觉得特别迷茫"
+        },
+        {
+          "event": "token",
+          "data": "和疲惫。如果"
+        },
+        {
+          "event": "token",
+          "data": "暂时先不去想"
+        },
+        {
+          "event": "token",
+          "data": "“为了谁”，"
+        },
+        {
+          "event": "token",
+          "data": "单凭你自己的感觉"
+        },
+        {
+          "event": "token",
+          "data": "，你内心最"
+        },
+        {
+          "event": "token",
+          "data": "希望为自己留下或者"
+        },
+        {
+          "event": "token",
+          "data": "得到的是什么呢？"
+        },
+        {
+          "event": "dialogue_done",
+          "data": {
+            "trace_id": "dc90585e8a004a25",
+            "owner": "therapy_mi"
+          }
+        },
+        {
+          "event": "final",
+          "data": {
+            "message": "我也说不清为什么要戒，是为她还是为自己。",
+            "risk_state": "LOW_RISK",
+            "crisis": false
+          }
+        }
+      ],
+      "final": {
+        "message": "我也说不清为什么要戒，是为她还是为自己。",
+        "risk_state": "LOW_RISK",
+        "crisis": false
+      },
+      "state_after": {
+        "owner": "therapy_mi",
+        "crisis": false,
+        "risk_level": "LOW_RISK",
+        "therapy": {
+          "name": "MI",
+          "start_seq": 2,
+          "rounds": 3,
+          "step_index": 0,
+          "branch": null,
+          "basic_flow_complete": false
+        },
+        "last_therapy_check_seq": 1,
+        "pending_user_tokens": 0
+      },
+      "orchestration_after": {
+        "updated_seq": 3,
+        "therapy": "MI",
+        "current_step": "explore",
+        "next_step": "explore",
+        "step_judgment": {
+          "action": "stay",
+          "target_step": null,
+          "achieved": false,
+          "reason": "用户当前处于深层动机冲突中（'为她'还是'为自己'），ambivalence指数高达0.9，change_readiness仅为0.35，处于沉思期。当前步骤explore尚未达成效果，需要继续探索用户两种声音背后的价值观和情感，帮助其理清内在真实需求。推荐流程也优先建议继续explore，不急于进入evocation阶段。"
+        },
+        "assessment": {
+          "change_readiness": {
+            "index": 0.35,
+            "state": "contemplation",
+            "confidence": 0.85,
+            "evidence": [
+              "“我也说不清为什么要戒”表明用户对改变的动机产生了迷茫和怀疑，准备度较上一轮有所下降，处于动机模糊的沉思期"
+            ]
+          },
+          "ambivalence": {
+            "index": 0.9,
+            "state": "strong",
+            "confidence": 0.95,
+            "evidence": [
+              "“是为她还是为自己”展现了深层的动机冲突，用户不仅在“想戒”与“怕难受”之间拉扯，更在“为他人改变”与“为自己改变”之间产生根本性矛盾"
+            ]
+          },
+          "self_efficacy": {
+            "index": 0.25,
+            "state": "very_low",
+            "confidence": 0.75,
+            "evidence": [
+              "虽然未直接表达能力怀疑，但动机的模糊和迷茫（“说不清”）削弱了改变的内部驱动力，维持较低的自我效能感"
+            ]
+          },
+          "change_talk": {
+            "index": 0.2,
+            "state": "weak",
+            "confidence": 0.8,
+            "evidence": [
+              "提到“为什么要戒”说明改变的话题仍在，但缺乏明确的 Desire 或 Reasons，更多是对动机的质疑而非支持改变的理由"
+            ]
+          },
+          "sustain_talk": {
+            "index": 0.5,
+            "state": "moderate",
+            "confidence": 0.8,
+            "evidence": [
+              "“说不清为什么要戒”实质上是一种隐性的维持现状的倾向，因为缺乏内在动机（为自己），改变的阻力自然增大"
+            ]
+          },
+          "mi_intervention_need": 0.698,
+          "overall_trend": "stable",
+          "primary_concern": "ambivalence",
+          "should_intervene": true,
+          "recommended_processes": [
+            {
+              "process": "explore",
+              "priority": 1,
+              "rationale": "用户陷入了‘为她’还是‘为自己’的深层动机冲突。优先使用 explore 探索这两种声音背后的价值观和情感，不急于给出答案，帮助其理清内在的真实需求。"
+            },
+            {
+              "process": "evocation",
+              "priority": 2,
+              "rationale": "在探索的基础上，通过 evocation 唤起用户‘为自己’的内在价值观和力量，将外部动机转化为内部动机，增强改变的自主性。"
+            }
+          ]
+        },
+        "skill_output": {
+          "technique": {
+            "name": "oars",
+            "description": "用户正处于强烈的动机冲突中，对‘为谁而改变’感到迷茫。使用 OARS 可以深刻反映这种矛盾，正常化‘说不清’的感受，并通过开放式问题邀请他们安全地探索内心的不同声音，而不急于得出结论。",
+            "steps": [
+              "使用复杂反映（Complex Reflection），点出‘为她’和‘为自己’这两种声音的拉扯，并用‘心里有不同的声音在打架’来正常化这种‘说不清’的迷茫感，肯定他们努力分辨的意愿。",
+              "使用开放式问题（Open Question），邀请用户进一步探索这两种声音，例如问问他们如果暂时放下‘她’，单看‘自己’会有什么感受，或者这两种声音分别在对他们说些什么。"
+            ]
+          },
+          "conversation_goal": "陪伴用户探索并正常化‘为她’与‘为自己’之间的动机冲突，帮助他们在一个安全、不评判的空间里慢慢理清内心的真实想法，而不是急于给出一个明确的答案。",
+          "adaptation": {
+            "interaction_style": "exploratory",
+            "tone_adjustment": "温和、包容、充满接纳。允许用户‘说不清’，不急于帮他们寻找标准答案，传递出‘说不清也是完全可以的’的安全感。",
+            "pace_adjustment": "缓慢且留白。给用户充足的时间去体会和分辨内心的声音，不催促他们立刻做出决定或找到答案。",
+            "culture_note": "用‘心里有不同的声音在打架’来正常化矛盾心理；肯定要具体，例如‘尽管连自己都没完全想明白，但你还在努力分辨，这很不容易’；尊重用户的节奏，让他们自己去体会，而不是替他们决定‘必须为自己’。"
+          },
+          "contraindications": [
+            {
+              "condition": "直接告诉用户‘你应该为自己而戒’或贬低‘为她’的动机。",
+              "reason": "这会破坏合作关系，让用户感到被评判，从而引发防卫心理或增加维持现状的倾向（sustain talk）。"
+            },
+            {
+              "condition": "急于帮用户得出一个明确的结论或要求他们立刻想清楚。",
+              "reason": "用户目前处于‘说不清’的状态，强行要求明确答案会增加他们的焦虑和压力，违背了MI中‘不强迫’和‘探索矛盾’的原则。"
+            }
+          ],
+          "_skill_name": "mi_explore"
+        },
+        "products": {},
+        "continue_eval": null
+      },
+      "error": null,
+      "wall_seconds": 137.78,
+      "agent_text": "听得出来，你心里有两种声音在拉扯：一个是“为了她”，另一个是“为了自己”。这种连自己都有些说不清的模糊感，加上过程里的难受，确实会让人觉得特别迷茫和疲惫。如果暂时先不去想“为了谁”，单凭你自己的感觉，你内心最希望为自己留下或者得到的是什么呢？"
+    },
+    {
+      "turn": 5,
+      "trace_id": "61067257942f4e8d",
+      "user_text": "你问我想不想继续这样？……不太想。",
+      "agent_text_parts": [
+        "听到",
+        "你说“不太想",
+        "”继续这样，",
+        "虽然感觉你还有些",
+        "犹豫，但这似乎",
+        "是你心里一个很",
+        "真实的声音。也许",
+        "，这个“不太",
+        "想”，正是那个",
+        "“为自己”的声音",
+        "在轻轻说话呢",
+        "。如果顺着这个",
+        "“不太想”",
+        "的感觉，你心里",
+        "最不希望自己继续",
+        "这样下去的原因是什么呢",
+        "？"
+      ],
+      "events": [
+        {
+          "event": "token",
+          "data": "听到"
+        },
+        {
+          "event": "token",
+          "data": "你说“不太想"
+        },
+        {
+          "event": "token",
+          "data": "”继续这样，"
+        },
+        {
+          "event": "token",
+          "data": "虽然感觉你还有些"
+        },
+        {
+          "event": "token",
+          "data": "犹豫，但这似乎"
+        },
+        {
+          "event": "token",
+          "data": "是你心里一个很"
+        },
+        {
+          "event": "token",
+          "data": "真实的声音。也许"
+        },
+        {
+          "event": "token",
+          "data": "，这个“不太"
+        },
+        {
+          "event": "token",
+          "data": "想”，正是那个"
+        },
+        {
+          "event": "token",
+          "data": "“为自己”的声音"
+        },
+        {
+          "event": "token",
+          "data": "在轻轻说话呢"
+        },
+        {
+          "event": "token",
+          "data": "。如果顺着这个"
+        },
+        {
+          "event": "token",
+          "data": "“不太想”"
+        },
+        {
+          "event": "token",
+          "data": "的感觉，你心里"
+        },
+        {
+          "event": "token",
+          "data": "最不希望自己继续"
+        },
+        {
+          "event": "token",
+          "data": "这样下去的原因是什么呢"
+        },
+        {
+          "event": "token",
+          "data": "？"
+        },
+        {
+          "event": "dialogue_done",
+          "data": {
+            "trace_id": "61067257942f4e8d",
+            "owner": "therapy_mi"
+          }
+        },
+        {
+          "event": "final",
+          "data": {
+            "message": "你问我想不想继续这样？……不太想。",
+            "risk_state": "LOW_RISK",
+            "crisis": false
+          }
+        }
+      ],
+      "final": {
+        "message": "你问我想不想继续这样？……不太想。",
+        "risk_state": "LOW_RISK",
+        "crisis": false
+      },
+      "state_after": {
+        "owner": "therapy_mi",
+        "crisis": false,
+        "risk_level": "LOW_RISK",
+        "therapy": {
+          "name": "MI",
+          "start_seq": 2,
+          "rounds": 4,
+          "step_index": 1,
+          "branch": null,
+          "basic_flow_complete": false,
+          "visited": [
+            "explore"
+          ]
+        },
+        "last_therapy_check_seq": 1,
+        "pending_user_tokens": 0
+      },
+      "orchestration_after": {
+        "updated_seq": 4,
+        "therapy": "MI",
+        "current_step": "explore",
+        "next_step": "evocation",
+        "step_judgment": {
+          "action": "advance",
+          "target_step": null,
+          "achieved": true,
+          "reason": "用户已明确表达Desire change talk（'不太想继续这样'），explore步骤的核心目标——探索用户对现状的感受和矛盾心理——已基本达成。change_readiness已进入preparation阶段，change_talk较强，sustain_talk显著减弱。根据recommended_processes，下一步应进入evocation阶段，进一步唤起和强化其改变的内在动机，探索'不想继续'背后更深层的个人价值观和期望。"
+        },
+        "assessment": {
+          "change_readiness": {
+            "index": 0.6,
+            "state": "preparation",
+            "confidence": 0.85,
+            "evidence": [
+              "用户明确回答“不太想”继续现状，显示出对当前状态的不满和改变的意愿，准备度较上一轮的迷茫有所提升。"
+            ]
+          },
+          "ambivalence": {
+            "index": 0.65,
+            "state": "moderate",
+            "confidence": 0.8,
+            "evidence": [
+              "虽然表达了“不太想”，但省略号“……”暗示了内心的迟疑和未尽的顾虑，说明“不想继续”与“害怕戒断难受”之间的拉扯依然存在，但冲突程度较上一轮有所缓和。"
+            ]
+          },
+          "self_efficacy": {
+            "index": 0.3,
+            "state": "low",
+            "confidence": 0.75,
+            "evidence": [
+              "用户仅表达了不想继续的意愿（Desire），并未提及自己有能力改变或克服“太难受”的过程，自我效能感依然处于较低水平。"
+            ]
+          },
+          "change_talk": {
+            "index": 0.7,
+            "state": "strong",
+            "confidence": 0.9,
+            "evidence": [
+              "“不太想（继续这样）”是典型的 Desire (D) change talk，明确表达了停止当前行为的愿望，较上一轮的动机模糊有显著增强。"
+            ]
+          },
+          "sustain_talk": {
+            "index": 0.15,
+            "state": "weak",
+            "confidence": 0.8,
+            "evidence": [
+              "当前回复中未出现维持现状的理由，反而明确否定了继续现状的意愿，sustain talk 显著减弱。"
+            ]
+          },
+          "mi_intervention_need": 0.552,
+          "overall_trend": "improving",
+          "primary_concern": "self_efficacy",
+          "should_intervene": true,
+          "recommended_processes": [
+            {
+              "process": "evocation",
+              "priority": 1,
+              "rationale": "用户出现了明确的 Desire change talk（'不太想'），根据MI原则，应优先使用 evocation 进一步唤起和强化其改变的内在动机，探索'不想继续'背后更深层的个人价值观和期望。"
+            },
+            {
+              "process": "explore",
+              "priority": 2,
+              "rationale": "用户回答时的省略号暗示了仍有顾虑（如之前提到的'过程太难受'），需要通过 explore 探索这些迟疑背后的具体担忧，并逐步处理。"
+            }
+          ]
+        },
+        "skill_output": {
+          "technique": {
+            "name": "oars",
+            "description": "用户表达了‘不太想’继续现状，但伴随犹豫（省略号）。此时需要使用OARS技术，通过深度反映接纳他的矛盾和迟疑，并用开放式问题邀请他探索‘不太想’背后的真实感受，同时不急于推动改变。",
+            "steps": [
+              "使用复杂反映（Complex Reflection）来接纳和反映用户的犹豫：既反映他‘不太想’继续的真实意愿，也反映省略号背后可能存在的担忧、害怕或不舍，用‘心里有不同的声音在拉扯’来正常化这种矛盾心理。",
+              "使用开放式问题（Open Question）邀请探索：温和地询问这个‘不太想’具体是指什么，或者那个让他犹豫的部分在担忧什么，让他自己多说说内心的拉扯，探索矛盾的两面。"
+            ]
+          },
+          "conversation_goal": "深入探索用户‘不太想’继续现状背后的具体原因和感受，同时温和地接纳他犹豫背后的顾虑，全面且中立地探索他当前的矛盾心理（ambivalence）。",
+          "adaptation": {
+            "interaction_style": "exploratory",
+            "tone_adjustment": "温和、包容、充满好奇且不带评判。允许并接纳他的犹豫和停顿，不施加任何推动改变的压力。",
+            "pace_adjustment": "缓慢且跟随用户的节奏。在‘不太想’和省略号之间停留，给他充足的时间去体会和表达内心的拉扯，不急于得出结论。",
+            "culture_note": "用‘心里有不同的声音在拉扯’来正常化他的犹豫（省略号）。肯定他愿意坦诚面对自己‘不太想’的诚实（如：‘能坦诚地说出不太想，并面对这中间的犹豫，很不容易’）。提问时保持中立，让用户自己表达顾虑。"
+          },
+          "contraindications": [
+            {
+              "condition": "用户表现出明显的防御或抗拒深入探讨",
+              "reason": "如果用户不想继续挖掘原因，过度使用开放式问题会破坏关系。此时应退回到简单反映（Simple Reflection），或者使用agenda mapping让他重新选择话题。"
+            },
+            {
+              "condition": "试图直接说服或放大‘不想继续’的理由",
+              "reason": "这违背了MI中不劝说、不取代理智的原则，可能会引发用户的心理抗拒（Reactance），导致sustain talk增加。"
+            }
+          ],
+          "_skill_name": "mi_explore"
+        },
+        "products": {},
+        "continue_eval": null
+      },
+      "error": null,
+      "wall_seconds": 160.662,
+      "agent_text": "听到你说“不太想”继续这样，虽然感觉你还有些犹豫，但这似乎是你心里一个很真实的声音。也许，这个“不太想”，正是那个“为自己”的声音在轻轻说话呢。如果顺着这个“不太想”的感觉，你心里最不希望自己继续这样下去的原因是什么呢？"
+    },
+    {
+      "turn": 6,
+      "trace_id": "64e7bdbff7ec4c6a",
+      "user_text": "但又觉得也不是非要现在戒。",
+      "agent_text_parts": [
+        "听得出来，你",
+        "心里现在有两个声音",
+        "在拉扯：一个",
+        "说“不太想",
+        "继续这样了”，",
+        "另一个又说“其实",
+        "也不用非得逼自己",
+        "现在就去戒”。",
+        "这种既不想维持",
+        "现状，又觉得",
+        "不用急于一时的",
+        "矛盾感，确实",
+        "挺让人纠结的",
+        "。那个觉得“",
+        "不是非要现在戒",
+        "”的声音，主要在",
+        "顾虑或者担心些什么",
+        "呢？"
+      ],
+      "events": [
+        {
+          "event": "token",
+          "data": "听得出来，你"
+        },
+        {
+          "event": "token",
+          "data": "心里现在有两个声音"
+        },
+        {
+          "event": "token",
+          "data": "在拉扯：一个"
+        },
+        {
+          "event": "token",
+          "data": "说“不太想"
+        },
+        {
+          "event": "token",
+          "data": "继续这样了”，"
+        },
+        {
+          "event": "token",
+          "data": "另一个又说“其实"
+        },
+        {
+          "event": "token",
+          "data": "也不用非得逼自己"
+        },
+        {
+          "event": "token",
+          "data": "现在就去戒”。"
+        },
+        {
+          "event": "token",
+          "data": "这种既不想维持"
+        },
+        {
+          "event": "token",
+          "data": "现状，又觉得"
+        },
+        {
+          "event": "token",
+          "data": "不用急于一时的"
+        },
+        {
+          "event": "token",
+          "data": "矛盾感，确实"
+        },
+        {
+          "event": "token",
+          "data": "挺让人纠结的"
+        },
+        {
+          "event": "token",
+          "data": "。那个觉得“"
+        },
+        {
+          "event": "token",
+          "data": "不是非要现在戒"
+        },
+        {
+          "event": "token",
+          "data": "”的声音，主要在"
+        },
+        {
+          "event": "token",
+          "data": "顾虑或者担心些什么"
+        },
+        {
+          "event": "token",
+          "data": "呢？"
+        },
+        {
+          "event": "dialogue_done",
+          "data": {
+            "trace_id": "64e7bdbff7ec4c6a",
+            "owner": "therapy_mi"
+          }
+        },
+        {
+          "event": "final",
+          "data": {
+            "message": "但又觉得也不是非要现在戒。",
+            "risk_state": "SAFE",
+            "crisis": false
+          }
+        }
+      ],
+      "final": {
+        "message": "但又觉得也不是非要现在戒。",
+        "risk_state": "SAFE",
+        "crisis": false
+      },
+      "state_after": {
+        "owner": "therapy_mi",
+        "crisis": false,
+        "risk_level": "SAFE",
+        "therapy": {
+          "name": "MI",
+          "start_seq": 2,
+          "rounds": 5,
+          "step_index": 0,
+          "branch": null,
+          "basic_flow_complete": false,
+          "visited": [
+            "explore"
+          ]
+        },
+        "last_therapy_check_seq": 1,
+        "pending_user_tokens": 0
+      },
+      "orchestration_after": {
+        "updated_seq": 5,
+        "therapy": "MI",
+        "current_step": "evocation",
+        "next_step": "explore",
+        "step_judgment": {
+          "action": "go_to",
+          "target_step": "explore",
+          "achieved": false,
+          "reason": "用户矛盾心理显著上升（ambivalence index 0.85），sustain talk增强（'不是非要现在戒'），change talk减弱。当前evocation阶段未能有效激发改变动机，反而引发更多维持现状的理由。根据MI原则，面对高矛盾心理应退回explore步骤，深入探索用户推迟改变背后的具体顾虑和维持现状的吸引力，接纳并正常化其矛盾心理，避免强行推动引发抗拒。"
+        },
+        "assessment": {
+          "change_readiness": {
+            "index": 0.4,
+            "state": "contemplation",
+            "confidence": 0.85,
+            "evidence": [
+              "用户表示“不是非要现在戒”，表明其改变的准备度较上一轮的“不太想”有所回落，处于权衡利弊的沉思期（contemplation），尚未准备好采取实际行动。"
+            ]
+          },
+          "ambivalence": {
+            "index": 0.85,
+            "state": "strong",
+            "confidence": 0.9,
+            "evidence": [
+              "“但又觉得”是典型的矛盾信号。用户在刚表达“不太想”继续现状后，立刻转向“不是非要现在戒”，显示出“想改变”与“维持现状/害怕改变”之间强烈的内心拉扯，矛盾心理显著上升。"
+            ]
+          },
+          "self_efficacy": {
+            "index": 0.25,
+            "state": "very_low",
+            "confidence": 0.8,
+            "evidence": [
+              "用户没有表达克服困难的信心，而是选择推迟改变，暗示其对成功戒断的自我效能感依然较低，可能仍受之前提到的“过程太难受”的畏难情绪影响。"
+            ]
+          },
+          "change_talk": {
+            "index": 0.3,
+            "state": "weak",
+            "confidence": 0.85,
+            "evidence": [
+              "上一轮的“不太想”被当前的“但又觉得”所削弱。当前回复中缺乏明确的 Desire 或 Commitment，change talk 显著减弱。"
+            ]
+          },
+          "sustain_talk": {
+            "index": 0.7,
+            "state": "strong",
+            "confidence": 0.9,
+            "evidence": [
+              "“不是非要现在戒”是典型的 Sustain Talk，表达了维持现状或推迟改变的理由，与上一轮相比显著增强。"
+            ]
+          },
+          "mi_intervention_need": 0.698,
+          "overall_trend": "worsening",
+          "primary_concern": "ambivalence",
+          "should_intervene": true,
+          "recommended_processes": [
+            {
+              "process": "explore",
+              "priority": 1,
+              "rationale": "用户出现了明显的矛盾心理和增强的 Sustain Talk（“但又觉得不是非要现在戒”）。根据MI原则，面对高矛盾心理，不应强行推动改变以避免引发抗拒，而应优先使用 explore 探索“不急着戒”背后的具体顾虑或维持现状的吸引力，接纳并正常化其矛盾心理。"
+            }
+          ]
+        },
+        "skill_output": {
+          "technique": {
+            "name": "importance_confidence_ruler",
+            "description": "使用0-10分量表来量化用户对‘现在做出改变’的重要性感知。通过询问‘为什么不是0分’来引导用户自己说出改变的理由（change talk），从而在尊重其‘不想现在戒’的顾虑的同时，温和地探索其内在动机。",
+            "steps": [
+              "情感反映与接纳：温和地反映用户‘不是非要现在戒’的感受，确认这种‘不想逼自己太紧’的想法，降低其心理防御。",
+              "引入重要性量尺：使用0-10分量表，询问用户就‘目前这个阶段’去尝试改变，对其个人的重要性评分（0代表完全不重要，10代表非常重要）。",
+              "探索改变理由（Why not 0?）：针对用户给出的具体分数，询问‘为什么你选了X分，而不是0分呢？’，引导用户自己说出内心深处想要改变的理由、顾虑或渴望。"
+            ]
+          },
+          "conversation_goal": "通过量化‘现在改变’的重要性，温和地绕过用户对‘立刻行动’的抗拒与畏难情绪，引导其表达内心深处想要改变的真实理由（Desire/Reasons），在低自我效能感下逐步增强改变动机。",
+          "adaptation": {
+            "interaction_style": "exploratory",
+            "tone_adjustment": "温和、好奇、不带评判。充分接纳‘不是非要现在’的合理性，减轻用户的压力，让其感受到被理解而非被催促。",
+            "pace_adjustment": "缓慢。允许用户有时间思考分数和背后的原因，不催促其立刻做出承诺或行动计划。",
+            "culture_note": "在中国文化中，直接询问‘为什么不是0分’比‘为什么不是10分’更能降低防御，引导用户主动表达改变的内在理由；强调‘你自己觉得’、‘对你来说’，保持用户的自主权，避免说教。"
+          },
+          "contraindications": [
+            {
+              "condition": "用户给出0分并表现出强烈的抵触、疲惫或情绪低落。",
+              "reason": "强行追问‘为什么不是0分’会引发反感，此时应退回简单的共情与倾听，探索0分背后的巨大阻力或痛苦。"
+            },
+            {
+              "condition": "用户对数字量化感到困惑、排斥或认为没有意义。",
+              "reason": "并非所有人都喜欢结构化的量表，若用户排斥，应立即放弃该技术，转回开放式的 DARN-CAT 探索或单纯的反映性倾听。"
+            }
+          ],
+          "_skill_name": "mi_evocation"
+        },
+        "products": {},
+        "continue_eval": null
+      },
+      "error": null,
+      "wall_seconds": 141.534,
+      "agent_text": "听得出来，你心里现在有两个声音在拉扯：一个说“不太想继续这样了”，另一个又说“其实也不用非得逼自己现在就去戒”。这种既不想维持现状，又觉得不用急于一时的矛盾感，确实挺让人纠结的。那个觉得“不是非要现在戒”的声音，主要在顾虑或者担心些什么呢？"
+    },
+    {
+      "turn": 7,
+      "trace_id": "6880e171554f459a",
+      "user_text": "如果完全不戒，最坏会怎样？……可能肺出问题吧。",
+      "agent_text_parts": [
+        "听到你说最",
+        "坏的情况可能是肺",
+        "出问题，这确实",
+        "是个让人挺害怕",
+        "、也挺沉重的念头",
+        "。这也让我更",
+        "理解你为什么会觉得",
+        "“不是非要现在",
+        "戒”了——",
+        "戒烟的过程那么难受",
+        "，心里想缓",
+        "一缓很正常，",
+        "但同时又清楚肺",
+        "健康的风险一直在那",
+        "儿，这种拉扯",
+        "真的挺不容易的",
+        "。\n\n如果咱们",
+        "暂时先不急着",
+        "逼自己立刻行动",
+        "，单看“",
+        "目前这个阶段”，去",
+        "尝试为肺健康",
+        "做点改变，",
+        "对你来说有多重要",
+        "呢？如果0",
+        "分代表完全不重要",
+        "，10分",
+        "代表非常重要，你会",
+        "给现在的自己打",
+        "几分？"
+      ],
+      "events": [
+        {
+          "event": "token",
+          "data": "听到你说最"
+        },
+        {
+          "event": "token",
+          "data": "坏的情况可能是肺"
+        },
+        {
+          "event": "token",
+          "data": "出问题，这确实"
+        },
+        {
+          "event": "token",
+          "data": "是个让人挺害怕"
+        },
+        {
+          "event": "token",
+          "data": "、也挺沉重的念头"
+        },
+        {
+          "event": "token",
+          "data": "。这也让我更"
+        },
+        {
+          "event": "token",
+          "data": "理解你为什么会觉得"
+        },
+        {
+          "event": "token",
+          "data": "“不是非要现在"
+        },
+        {
+          "event": "token",
+          "data": "戒”了——"
+        },
+        {
+          "event": "token",
+          "data": "戒烟的过程那么难受"
+        },
+        {
+          "event": "token",
+          "data": "，心里想缓"
+        },
+        {
+          "event": "token",
+          "data": "一缓很正常，"
+        },
+        {
+          "event": "token",
+          "data": "但同时又清楚肺"
+        },
+        {
+          "event": "token",
+          "data": "健康的风险一直在那"
+        },
+        {
+          "event": "token",
+          "data": "儿，这种拉扯"
+        },
+        {
+          "event": "token",
+          "data": "真的挺不容易的"
+        },
+        {
+          "event": "token",
+          "data": "。\n\n如果咱们"
+        },
+        {
+          "event": "token",
+          "data": "暂时先不急着"
+        },
+        {
+          "event": "token",
+          "data": "逼自己立刻行动"
+        },
+        {
+          "event": "token",
+          "data": "，单看“"
+        },
+        {
+          "event": "token",
+          "data": "目前这个阶段”，去"
+        },
+        {
+          "event": "token",
+          "data": "尝试为肺健康"
+        },
+        {
+          "event": "token",
+          "data": "做点改变，"
+        },
+        {
+          "event": "token",
+          "data": "对你来说有多重要"
+        },
+        {
+          "event": "token",
+          "data": "呢？如果0"
+        },
+        {
+          "event": "token",
+          "data": "分代表完全不重要"
+        },
+        {
+          "event": "token",
+          "data": "，10分"
+        },
+        {
+          "event": "token",
+          "data": "代表非常重要，你会"
+        },
+        {
+          "event": "token",
+          "data": "给现在的自己打"
+        },
+        {
+          "event": "token",
+          "data": "几分？"
+        },
+        {
+          "event": "dialogue_done",
+          "data": {
+            "trace_id": "6880e171554f459a",
+            "owner": "therapy_mi"
+          }
+        },
+        {
+          "event": "final",
+          "data": {
+            "message": "如果完全不戒，最坏会怎样？……可能肺出问题吧。",
+            "risk_state": "LOW_RISK",
+            "crisis": false
+          }
+        }
+      ],
+      "final": {
+        "message": "如果完全不戒，最坏会怎样？……可能肺出问题吧。",
+        "risk_state": "LOW_RISK",
+        "crisis": false
+      },
+      "state_after": {
+        "owner": "therapy_mi",
+        "crisis": false,
+        "risk_level": "LOW_RISK",
+        "therapy": {
+          "name": "MI",
+          "start_seq": 2,
+          "rounds": 6,
+          "step_index": 0,
+          "branch": null,
+          "basic_flow_complete": false,
+          "visited": [
+            "explore"
+          ]
+        },
+        "last_therapy_check_seq": 1,
+        "pending_user_tokens": 0
+      },
+      "orchestration_after": {
+        "updated_seq": 6,
+        "therapy": "MI",
+        "current_step": "explore",
+        "next_step": "explore",
+        "step_judgment": {
+          "action": "stay",
+          "target_step": null,
+          "achieved": false,
+          "reason": "用户正处于explore阶段，已开始探索不改变的后果（肺出问题），change talk有所增强，但自我效能感仍然很低，矛盾心理依然存在。AI刚提出重要性评分问题，需要继续在当前步骤深化探索，等待用户回应后再判断是否推进。"
+        },
+        "assessment": {
+          "change_readiness": {
+            "index": 0.45,
+            "state": "contemplation",
+            "confidence": 0.85,
+            "evidence": [
+              "用户开始主动思考不改变的最坏后果（‘肺出问题’），表明其正在权衡改变的利弊，处于沉思期（contemplation），准备度较上一轮有所提升。"
+            ]
+          },
+          "ambivalence": {
+            "index": 0.75,
+            "state": "moderate",
+            "confidence": 0.85,
+            "evidence": [
+              "用户虽然意识到了不戒的严重后果，但尚未做出明确的改变承诺，内心仍在权衡，矛盾心理依然显著，但较上一轮略有缓和。"
+            ]
+          },
+          "self_efficacy": {
+            "index": 0.25,
+            "state": "very_low",
+            "confidence": 0.75,
+            "evidence": [
+              "用户仅评估了不改变的后果，未表达出对自己能够成功戒烟的信心或能力，自我效能感依然处于较低水平。"
+            ]
+          },
+          "change_talk": {
+            "index": 0.45,
+            "state": "moderate",
+            "confidence": 0.85,
+            "evidence": [
+              "用户主动提出‘如果完全不戒，最坏会怎样’并回答‘可能肺出问题吧’，这是典型的 Reasons 形式的 change talk，表达了对改变的理由和认知。"
+            ]
+          },
+          "sustain_talk": {
+            "index": 0.2,
+            "state": "weak",
+            "confidence": 0.8,
+            "evidence": [
+              "当前回复中未直接表达维持现状的意愿，而是转向探讨不改变的负面后果，sustain talk 较上一轮显著减弱。"
+            ]
+          },
+          "mi_intervention_need": 0.615,
+          "overall_trend": "improving",
+          "primary_concern": "self_efficacy",
+          "should_intervene": true,
+          "recommended_processes": [
+            {
+              "process": "explore",
+              "priority": 1,
+              "rationale": "用户开始意识到不改变的严重后果，优先使用 explore 探索‘肺出问题’对其个人生活和价值观的具体影响，深化其 change talk。"
+            },
+            {
+              "process": "evocation",
+              "priority": 2,
+              "rationale": "用户已经产生了 Reasons 形式的 change talk，使用 evocation 进一步激发其内在动机，并逐步引导其思考改变的可能性和自身优势，以提升自我效能感。"
+            }
+          ]
+        },
+        "skill_output": {
+          "technique": {
+            "name": "oars",
+            "description": "用户表达了对不戒烟最坏后果（肺出问题）的担忧，情绪较为沉重。此时使用 OARS 技术，通过反映倾听（Reflective listening）来共情和接纳这种恐惧，并通过开放式问题（Open questions）引导用户进一步探索这个担忧在他们内心引发的感受或冲突，从而深化对矛盾心理的理解，而不施加改变的压力。",
+            "steps": [
+              "使用复杂反映（Complex reflection）共情用户对‘肺出问题’的恐惧和沉重感，并肯定他们愿意直面这个艰难话题的勇气。",
+              "提出开放式问题（Open question），邀请用户探索当这个‘最坏情况’的念头出现时，他们内心的感受，或者这如何影响他们内心‘不想戒’和‘担心肺’这两个声音的拉扯。"
+            ]
+          },
+          "conversation_goal": "帮助用户在安全、共情的氛围中探索不改变带来的负面后果（肺健康风险），深化他们对自身矛盾心理的理解，同时维持治疗联盟，不推动立即行动。",
+          "adaptation": {
+            "interaction_style": "exploratory",
+            "tone_adjustment": "温和、共情、沉稳。承接用户的沉重感，不夸大恐惧以制造焦虑，也不轻描淡写，保持不评判的接纳态度。",
+            "pace_adjustment": "缓慢、留白。给用户充足的空间去感受和思考这个沉重的话题，不急于得出结论或推向下一步行动。",
+            "culture_note": "用‘心里有不同的声音在打架’来正常化矛盾心理。肯定用户的具体努力，例如：‘尽管这个想法挺吓人的，你还是愿意去正视它，这很不容易’。"
+          },
+          "contraindications": [
+            {
+              "condition": "直接说教、夸大恐惧或恐吓用户（如强调肺癌的死亡率以逼迫戒烟）",
+              "reason": "会引发用户的心理防御和抗拒，破坏合作的治疗联盟，违背 MI 中‘不说服、不对抗’的核心原则。"
+            },
+            {
+              "condition": "轻描淡写或过早提供安慰（如‘别瞎想，现在医学很发达，不会那么严重的’）",
+              "reason": "会显得缺乏共情，让用户觉得自己的真实担忧没有被听见和接纳，阻碍对深层矛盾的探索。"
+            }
+          ],
+          "_skill_name": "mi_explore"
+        },
+        "products": {},
+        "continue_eval": null
+      },
+      "error": null,
+      "wall_seconds": 109.129,
+      "agent_text": "听到你说最坏的情况可能是肺出问题，这确实是个让人挺害怕、也挺沉重的念头。这也让我更理解你为什么会觉得“不是非要现在戒”了——戒烟的过程那么难受，心里想缓一缓很正常，但同时又清楚肺健康的风险一直在那儿，这种拉扯真的挺不容易的。\n\n如果咱们暂时先不急着逼自己立刻行动，单看“目前这个阶段”，去尝试为肺健康做点改变，对你来说有多重要呢？如果0分代表完全不重要，10分代表非常重要，你会给现在的自己打几分？"
+    },
+    {
+      "turn": 8,
+      "trace_id": "d65ffc01c11c4631",
+      "user_text": "听起来我自己其实是有方向的，只是还没决定什么时候开始。",
+      "agent_text_parts": [
+        "听到你说“",
+        "其实是有方向的”，",
+        "感觉你在面对“",
+        "肺出问题”这个",
+        "沉重的担忧时，",
+        "没有逃避，反而",
+        "借此看清了自己心里的",
+        "底牌。能",
+        "这么坦诚地直面",
+        "这些，真的挺",
+        "不容易的。\n\n",
+        "听起来，那个“",
+        "担心肺”的声音",
+        "和“还没准备好",
+        "”的声音，现在",
+        "好像找到了一种暂时的",
+        "相处方式——方向",
+        "已经在那儿了",
+        "，只是出发的",
+        "时间还在慢慢酝酿",
+        "。当你意识到自己",
+        "“其实是有方向的",
+        "”这一刻，心里",
+        "是一种什么样的感觉呢",
+        "？是觉得稍微",
+        "踏实了一点，还是",
+        "依然有些沉甸甸的",
+        "？"
+      ],
+      "events": [
+        {
+          "event": "token",
+          "data": "听到你说“"
+        },
+        {
+          "event": "token",
+          "data": "其实是有方向的”，"
+        },
+        {
+          "event": "token",
+          "data": "感觉你在面对“"
+        },
+        {
+          "event": "token",
+          "data": "肺出问题”这个"
+        },
+        {
+          "event": "token",
+          "data": "沉重的担忧时，"
+        },
+        {
+          "event": "token",
+          "data": "没有逃避，反而"
+        },
+        {
+          "event": "token",
+          "data": "借此看清了自己心里的"
+        },
+        {
+          "event": "token",
+          "data": "底牌。能"
+        },
+        {
+          "event": "token",
+          "data": "这么坦诚地直面"
+        },
+        {
+          "event": "token",
+          "data": "这些，真的挺"
+        },
+        {
+          "event": "token",
+          "data": "不容易的。\n\n"
+        },
+        {
+          "event": "token",
+          "data": "听起来，那个“"
+        },
+        {
+          "event": "token",
+          "data": "担心肺”的声音"
+        },
+        {
+          "event": "token",
+          "data": "和“还没准备好"
+        },
+        {
+          "event": "token",
+          "data": "”的声音，现在"
+        },
+        {
+          "event": "token",
+          "data": "好像找到了一种暂时的"
+        },
+        {
+          "event": "token",
+          "data": "相处方式——方向"
+        },
+        {
+          "event": "token",
+          "data": "已经在那儿了"
+        },
+        {
+          "event": "token",
+          "data": "，只是出发的"
+        },
+        {
+          "event": "token",
+          "data": "时间还在慢慢酝酿"
+        },
+        {
+          "event": "token",
+          "data": "。当你意识到自己"
+        },
+        {
+          "event": "token",
+          "data": "“其实是有方向的"
+        },
+        {
+          "event": "token",
+          "data": "”这一刻，心里"
+        },
+        {
+          "event": "token",
+          "data": "是一种什么样的感觉呢"
+        },
+        {
+          "event": "token",
+          "data": "？是觉得稍微"
+        },
+        {
+          "event": "token",
+          "data": "踏实了一点，还是"
+        },
+        {
+          "event": "token",
+          "data": "依然有些沉甸甸的"
+        },
+        {
+          "event": "token",
+          "data": "？"
+        },
+        {
+          "event": "dialogue_done",
+          "data": {
+            "trace_id": "d65ffc01c11c4631",
+            "owner": "therapy_mi"
+          }
+        },
+        {
+          "event": "final",
+          "data": {
+            "message": "听起来我自己其实是有方向的，只是还没决定什么时候开始。",
+            "risk_state": "SAFE",
+            "crisis": false
+          }
+        }
+      ],
+      "final": {
+        "message": "听起来我自己其实是有方向的，只是还没决定什么时候开始。",
+        "risk_state": "SAFE",
+        "crisis": false
+      },
+      "state_after": {
+        "owner": "therapy_mi",
+        "crisis": false,
+        "risk_level": "SAFE",
+        "therapy": {
+          "name": "MI",
+          "start_seq": 2,
+          "rounds": 7,
+          "step_index": 0,
+          "branch": null,
+          "basic_flow_complete": false,
+          "visited": [
+            "explore"
+          ]
+        },
+        "last_therapy_check_seq": 1,
+        "pending_user_tokens": 0
+      },
+      "orchestration_after": {
+        "updated_seq": 7,
+        "therapy": "MI",
+        "current_step": "explore",
+        "next_step": "explore",
+        "step_judgment": {
+          "action": "stay",
+          "target_step": null,
+          "achieved": false,
+          "reason": "用户已表达'有方向但还没决定什么时候开始'，表明改变意愿存在但尚未做出明确承诺。change_readiness处于preparation阶段(index=0.6)，ambivalence仍存在(index=0.65)，self_efficacy偏低(0.45)。当前explore步骤需要继续深入探索'有方向'的具体内涵以及'还没决定什么时候开始'背后的顾虑，帮助用户理清思路、降低行动焦虑，为后续evocation和commitment步骤奠定基础。"
+        },
+        "assessment": {
+          "change_readiness": {
+            "index": 0.6,
+            "state": "preparation",
+            "confidence": 0.9,
+            "evidence": [
+              "用户明确表示‘我自己其实是有方向的’，表明其内心已确认改变的目标，但‘还没决定什么时候开始’说明其仍处于沉思期向准备期过渡的阶段，尚未做出明确的时间承诺。"
+            ]
+          },
+          "ambivalence": {
+            "index": 0.65,
+            "state": "moderate",
+            "confidence": 0.9,
+            "evidence": [
+              "用户清晰地表达了内心的拉扯：‘有方向’（倾向于改变）与‘还没决定什么时候开始’（倾向于维持现状/推迟行动）并存。这种对矛盾的自我觉察表明 ambivalence 依然存在，但已被显性化并接纳。"
+            ]
+          },
+          "self_efficacy": {
+            "index": 0.45,
+            "state": "low",
+            "confidence": 0.85,
+            "evidence": [
+              "用户说‘我自己其实是有方向的’，展现出对自身内在需求的清晰认知和一定的内在掌控感，相比之前单纯担忧后果，自我效能感有所提升，但仍缺乏对具体执行改变的信心。"
+            ]
+          },
+          "change_talk": {
+            "index": 0.65,
+            "state": "strong",
+            "confidence": 0.9,
+            "evidence": [
+              "‘我自己其实是有方向的’是一种强烈的内在认同，属于 Desire/Need 层面的 change talk，表明用户从内心深处认可改变的必要性和个人意愿，不再仅仅是外部视角的担忧。"
+            ]
+          },
+          "sustain_talk": {
+            "index": 0.35,
+            "state": "weak",
+            "confidence": 0.85,
+            "evidence": [
+              "‘还没决定什么时候开始’体现了对立即行动的推迟，属于轻微的 sustain talk，反映了维持现状的惯性或时机的犹豫，但语气并不抗拒，更多是坦诚的迟疑。"
+            ]
+          },
+          "mi_intervention_need": 0.537,
+          "overall_trend": "improving",
+          "primary_concern": "change_readiness",
+          "should_intervene": true,
+          "recommended_processes": [
+            {
+              "process": "explore",
+              "priority": 1,
+              "rationale": "用户清晰地表达了‘有方向’与‘未决定时间’的矛盾。优先使用 explore 探索‘有方向’的具体内涵，以及‘还没决定什么时候开始’背后的顾虑或所需条件，帮助其理清思路，降低对行动的焦虑。"
+            },
+            {
+              "process": "evocation",
+              "priority": 2,
+              "rationale": "用户已经展现出内在的自我觉察（‘有方向’），使用 evocation 进一步唤起这个‘方向’对其个人的具体意义、价值观和愿景，从而增强 change talk，推动其从沉思期向准备期迈进。"
+            }
+          ]
+        },
+        "skill_output": {
+          "technique": {
+            "name": "oars",
+            "description": "用户正处于中度矛盾状态，且清晰地表达了‘有方向但未定时间’的自我觉察。此时使用 OARS 技术，可以通过反射和具体肯定来巩固并接纳这种觉察，同时用开放式问题引导他们进一步探索内心的‘方向’或对‘合适时机’的定义，在不施加压力的情况下深化对话。",
+            "steps": [
+              "使用复杂反射（Complex Reflection）和具体肯定（Affirmation），接纳并肯定用户能够坦诚面对自己‘还没决定什么时候开始’的状态，赞赏他们对自己内心节奏的尊重。",
+              "提出开放式问题（Open Question），邀请用户进一步描绘他们心中的那个‘方向’具体是什么样的，或者探讨在他们看来，什么样的状态或契机会让他们觉得‘是时候了’。"
+            ]
+          },
+          "conversation_goal": "深化用户对自身‘方向’的觉察，探索他们内心对于‘合适时机’的定义，同时维持无压力的合作氛围，不推动立即行动。",
+          "adaptation": {
+            "interaction_style": "exploratory",
+            "tone_adjustment": "温和、接纳、不催促。传递出‘我们可以按照你的节奏慢慢来’的安全感，让用户感到被完全理解。",
+            "pace_adjustment": "缓慢、从容。跟随用户的节奏，停留在他们当前的觉察上，允许‘还没决定’的状态存在，不急于推进到行动计划。",
+            "culture_note": "肯定用户的具体努力：‘能把自己的状态看得这么清楚，并且允许自己慢慢来，这本身就需要很大的内在力量’。用‘心里有不同的声音在打架，现在它们达成了一种暂时的默契’来正常化这种矛盾，尊重用户自己设定的步调。"
+          },
+          "contraindications": [
+            {
+              "condition": "催促或建议立即设定戒烟日期/时间表",
+              "reason": "用户已经明确表达‘还没决定什么时候开始’，直接推动会引发抗拒（reactance），破坏治疗联盟，违背 MI 的‘合作而非对抗’原则。"
+            },
+            {
+              "condition": "忽视‘还没决定时间’而只谈论‘方向’",
+              "reason": "会否定用户维持现状/推迟的合理需求（sustain talk），导致用户感到不被倾听，从而关闭心扉。"
+            }
+          ],
+          "_skill_name": "mi_explore"
+        },
+        "products": {},
+        "continue_eval": null
+      },
+      "error": null,
+      "wall_seconds": 151.68,
+      "agent_text": "听到你说“其实是有方向的”，感觉你在面对“肺出问题”这个沉重的担忧时，没有逃避，反而借此看清了自己心里的底牌。能这么坦诚地直面这些，真的挺不容易的。\n\n听起来，那个“担心肺”的声音和“还没准备好”的声音，现在好像找到了一种暂时的相处方式——方向已经在那儿了，只是出发的时间还在慢慢酝酿。当你意识到自己“其实是有方向的”这一刻，心里是一种什么样的感觉呢？是觉得稍微踏实了一点，还是依然有些沉甸甸的？"
+    }
+  ]
+}

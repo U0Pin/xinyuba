@@ -1,0 +1,1262 @@
+{
+  "seed_id": "cbt-cognitive-distortion-mind-reading-partner",
+  "target_family": "CBT",
+  "scenario_label": "认知扭曲-读心术-已读不回",
+  "scenario_description": "对方已读不回3小时即认为对方不爱自己了",
+  "user_id": "seed-cbt-cognitive-distortion",
+  "session_id": "db042dc31f9840c9",
+  "turns_total": 8,
+  "switched_to_therapy_at_turn": 2,
+  "actual_therapy": "CBT",
+  "therapy_rounds": 6,
+  "orch_step_changes": 5,
+  "is_complete": true,
+  "final_risk_level": "SAFE",
+  "final_crisis": false,
+  "turns": [
+    {
+      "turn": 1,
+      "trace_id": "70b987ca4b7245b6",
+      "user_text": "我对象已读不回了，三个小时了。",
+      "agent_text_parts": [
+        "三个小时已",
+        "读不回，确实",
+        "挺让人煎熬的",
+        "。看着那个状态",
+        "，心里肯定七",
+        "上八下的，",
+        "挺不好受吧",
+        "。"
+      ],
+      "events": [
+        {
+          "event": "token",
+          "data": "三个小时已"
+        },
+        {
+          "event": "token",
+          "data": "读不回，确实"
+        },
+        {
+          "event": "token",
+          "data": "挺让人煎熬的"
+        },
+        {
+          "event": "token",
+          "data": "。看着那个状态"
+        },
+        {
+          "event": "token",
+          "data": "，心里肯定七"
+        },
+        {
+          "event": "token",
+          "data": "上八下的，"
+        },
+        {
+          "event": "token",
+          "data": "挺不好受吧"
+        },
+        {
+          "event": "token",
+          "data": "。"
+        },
+        {
+          "event": "dialogue_done",
+          "data": {
+            "trace_id": "70b987ca4b7245b6",
+            "owner": "daily"
+          }
+        },
+        {
+          "event": "final",
+          "data": {
+            "message": "我对象已读不回了，三个小时了。",
+            "risk_state": "LOW_RISK",
+            "crisis": false
+          }
+        }
+      ],
+      "final": {
+        "message": "我对象已读不回了，三个小时了。",
+        "risk_state": "LOW_RISK",
+        "crisis": false
+      },
+      "state_after": {
+        "owner": "daily",
+        "crisis": false,
+        "risk_level": "LOW_RISK",
+        "therapy": null,
+        "last_therapy_check_seq": 1,
+        "pending_user_tokens": 0
+      },
+      "orchestration_after": {},
+      "error": null,
+      "wall_seconds": 40.431,
+      "agent_text": "三个小时已读不回，确实挺让人煎熬的。看着那个状态，心里肯定七上八下的，挺不好受吧。"
+    },
+    {
+      "turn": 2,
+      "trace_id": "898f2478ea944963",
+      "user_text": "我越想越觉得——他不爱我了。",
+      "agent_text_parts": [
+        "等不到",
+        "回复的时候，确实",
+        "很容易让人往最",
+        "难受的地方想。",
+        "得出“他不爱",
+        "我了”这个结论",
+        "，心里一定特别",
+        "委屈、特别失落",
+        "吧。"
+      ],
+      "events": [
+        {
+          "event": "token",
+          "data": "等不到"
+        },
+        {
+          "event": "token",
+          "data": "回复的时候，确实"
+        },
+        {
+          "event": "token",
+          "data": "很容易让人往最"
+        },
+        {
+          "event": "token",
+          "data": "难受的地方想。"
+        },
+        {
+          "event": "token",
+          "data": "得出“他不爱"
+        },
+        {
+          "event": "token",
+          "data": "我了”这个结论"
+        },
+        {
+          "event": "token",
+          "data": "，心里一定特别"
+        },
+        {
+          "event": "token",
+          "data": "委屈、特别失落"
+        },
+        {
+          "event": "token",
+          "data": "吧。"
+        },
+        {
+          "event": "dialogue_done",
+          "data": {
+            "trace_id": "898f2478ea944963",
+            "owner": "daily"
+          }
+        },
+        {
+          "event": "final",
+          "data": {
+            "message": "我越想越觉得——他不爱我了。",
+            "risk_state": "LOW_RISK",
+            "crisis": false
+          }
+        }
+      ],
+      "final": {
+        "message": "我越想越觉得——他不爱我了。",
+        "risk_state": "LOW_RISK",
+        "crisis": false
+      },
+      "state_after": {
+        "owner": "therapy_cbt",
+        "crisis": false,
+        "risk_level": "LOW_RISK",
+        "therapy": {
+          "name": "CBT",
+          "start_seq": 5,
+          "rounds": 0,
+          "step_index": -1,
+          "branch": null,
+          "basic_flow_complete": false
+        },
+        "last_therapy_check_seq": 3,
+        "pending_user_tokens": 0
+      },
+      "orchestration_after": {},
+      "error": null,
+      "wall_seconds": 37.853,
+      "agent_text": "等不到回复的时候，确实很容易让人往最难受的地方想。得出“他不爱我了”这个结论，心里一定特别委屈、特别失落吧。"
+    },
+    {
+      "turn": 3,
+      "trace_id": "370ab7595e074626",
+      "user_text": "我以前他也这样过，然后我们就吵了一架。",
+      "agent_text_parts": [
+        "听起来",
+        "这似乎是一个反复",
+        "出现的模式，以前",
+        "他这样的时候，",
+        "你们最后总是以",
+        "吵架收场。",
+        "那现在当我们一起",
+        "聊到这里时，",
+        "你感觉怎么样呢",
+        "？这几轮聊",
+        "下来，你对这件事",
+        "或者自己的感受，",
+        "有没有什么新的体会",
+        "呀？"
+      ],
+      "events": [
+        {
+          "event": "token",
+          "data": "听起来"
+        },
+        {
+          "event": "token",
+          "data": "这似乎是一个反复"
+        },
+        {
+          "event": "token",
+          "data": "出现的模式，以前"
+        },
+        {
+          "event": "token",
+          "data": "他这样的时候，"
+        },
+        {
+          "event": "token",
+          "data": "你们最后总是以"
+        },
+        {
+          "event": "token",
+          "data": "吵架收场。"
+        },
+        {
+          "event": "token",
+          "data": "那现在当我们一起"
+        },
+        {
+          "event": "token",
+          "data": "聊到这里时，"
+        },
+        {
+          "event": "token",
+          "data": "你感觉怎么样呢"
+        },
+        {
+          "event": "token",
+          "data": "？这几轮聊"
+        },
+        {
+          "event": "token",
+          "data": "下来，你对这件事"
+        },
+        {
+          "event": "token",
+          "data": "或者自己的感受，"
+        },
+        {
+          "event": "token",
+          "data": "有没有什么新的体会"
+        },
+        {
+          "event": "token",
+          "data": "呀？"
+        },
+        {
+          "event": "dialogue_done",
+          "data": {
+            "trace_id": "370ab7595e074626",
+            "owner": "therapy_cbt"
+          }
+        },
+        {
+          "event": "final",
+          "data": {
+            "message": "我以前他也这样过，然后我们就吵了一架。",
+            "risk_state": "LOW_RISK",
+            "crisis": false
+          }
+        }
+      ],
+      "final": {
+        "message": "我以前他也这样过，然后我们就吵了一架。",
+        "risk_state": "LOW_RISK",
+        "crisis": false
+      },
+      "state_after": {
+        "owner": "therapy_cbt",
+        "crisis": false,
+        "risk_level": "LOW_RISK",
+        "therapy": {
+          "name": "CBT",
+          "start_seq": 5,
+          "rounds": 1,
+          "step_index": 0,
+          "branch": null,
+          "basic_flow_complete": false
+        },
+        "last_therapy_check_seq": 3,
+        "pending_user_tokens": 0
+      },
+      "orchestration_after": {
+        "updated_seq": 1,
+        "therapy": "CBT",
+        "current_step": "identify_thought",
+        "next_step": "identify_thought",
+        "step_judgment": {
+          "action": "stay",
+          "target_step": null,
+          "achieved": false,
+          "reason": "当前步骤为identify_thought，用户提到了过去的互动模式（吵架），但尚未清晰识别出当前的自动思维。AI正在引导用户觉察感受，需要继续帮助用户明确识别出具体的自动思维。"
+        },
+        "assessment": null,
+        "skill_output": {
+          "automatic_thoughts": [],
+          "primary_thought": "",
+          "no_automatic_thought_detected": true,
+          "_skill_name": "extract_automatic_thought"
+        },
+        "products": {
+          "no_automatic_thought_detected": true
+        },
+        "continue_eval": null
+      },
+      "error": null,
+      "wall_seconds": 68.837,
+      "agent_text": "听起来这似乎是一个反复出现的模式，以前他这样的时候，你们最后总是以吵架收场。那现在当我们一起聊到这里时，你感觉怎么样呢？这几轮聊下来，你对这件事或者自己的感受，有没有什么新的体会呀？"
+    },
+    {
+      "turn": 4,
+      "trace_id": "7faa92227fce42c1",
+      "user_text": "我跟自己说可能他在忙，但我控制不住。",
+      "agent_text_parts": [
+        "理智上告诉自己",
+        "“他可能在忙",
+        "”，但心里还是",
+        "控制不住地会",
+        "去琢磨，这种",
+        "拉扯的感觉挺让人",
+        "难受的。当",
+        "那个“控制不住",
+        "”的念头冒出来的",
+        "时候，你脑海里",
+        "具体闪过了什么",
+        "想法呢？"
+      ],
+      "events": [
+        {
+          "event": "token",
+          "data": "理智上告诉自己"
+        },
+        {
+          "event": "token",
+          "data": "“他可能在忙"
+        },
+        {
+          "event": "token",
+          "data": "”，但心里还是"
+        },
+        {
+          "event": "token",
+          "data": "控制不住地会"
+        },
+        {
+          "event": "token",
+          "data": "去琢磨，这种"
+        },
+        {
+          "event": "token",
+          "data": "拉扯的感觉挺让人"
+        },
+        {
+          "event": "token",
+          "data": "难受的。当"
+        },
+        {
+          "event": "token",
+          "data": "那个“控制不住"
+        },
+        {
+          "event": "token",
+          "data": "”的念头冒出来的"
+        },
+        {
+          "event": "token",
+          "data": "时候，你脑海里"
+        },
+        {
+          "event": "token",
+          "data": "具体闪过了什么"
+        },
+        {
+          "event": "token",
+          "data": "想法呢？"
+        },
+        {
+          "event": "dialogue_done",
+          "data": {
+            "trace_id": "7faa92227fce42c1",
+            "owner": "therapy_cbt"
+          }
+        },
+        {
+          "event": "final",
+          "data": {
+            "message": "我跟自己说可能他在忙，但我控制不住。",
+            "risk_state": "LOW_RISK",
+            "crisis": false
+          }
+        }
+      ],
+      "final": {
+        "message": "我跟自己说可能他在忙，但我控制不住。",
+        "risk_state": "LOW_RISK",
+        "crisis": false
+      },
+      "state_after": {
+        "owner": "therapy_cbt",
+        "crisis": false,
+        "risk_level": "LOW_RISK",
+        "therapy": {
+          "name": "CBT",
+          "start_seq": 5,
+          "rounds": 2,
+          "step_index": 1,
+          "branch": null,
+          "basic_flow_complete": false,
+          "visited": [
+            "identify_thought"
+          ]
+        },
+        "last_therapy_check_seq": 3,
+        "pending_user_tokens": 0
+      },
+      "orchestration_after": {
+        "updated_seq": 2,
+        "therapy": "CBT",
+        "current_step": "identify_thought",
+        "next_step": "classify_distortion",
+        "step_judgment": {
+          "action": "advance",
+          "target_step": null,
+          "achieved": true,
+          "reason": "用户表达了自动思维'我跟自己说可能他在忙，但我控制不住'，虽然之前标记为no_automatic_thought_detected，但在最新对话中用户已经识别并表达了自动思维，identify_thought步骤目标已达成，应进入下一步classify_distortion。"
+        },
+        "assessment": null,
+        "skill_output": null,
+        "products": {
+          "no_automatic_thought_detected": false
+        },
+        "continue_eval": null
+      },
+      "error": null,
+      "wall_seconds": 70.376,
+      "agent_text": "理智上告诉自己“他可能在忙”，但心里还是控制不住地会去琢磨，这种拉扯的感觉挺让人难受的。当那个“控制不住”的念头冒出来的时候，你脑海里具体闪过了什么想法呢？"
+    },
+    {
+      "turn": 5,
+      "trace_id": "88a6a22621cc45cb",
+      "user_text": "你说这听起来像「读心术」？什么意思？",
+      "agent_text_parts": [
+        "在心理学里",
+        "，“",
+        "读心术”",
+        "是指我们常常不自觉",
+        "地去猜别人心里",
+        "在想什么，而且",
+        "往往往坏处想",
+        "，觉得对方是不",
+        "在乎自己或者故意",
+        "冷落自己，但其实",
+        "我们并没有确凿",
+        "的证据。\n\n就像",
+        "你理智上知道",
+        "“他可能在忙",
+        "”，但心里那个",
+        "“控制不住”",
+        "的声音，是不是在",
+        "偷偷猜测他其实",
+        "是不想理你",
+        "，或者觉得他",
+        "不够在乎你呢？",
+        "我们一起来看看，那个",
+        "让你难受的念头，",
+        "是不是在替对方",
+        "“下结论”",
+        "呀？"
+      ],
+      "events": [
+        {
+          "event": "token",
+          "data": "在心理学里"
+        },
+        {
+          "event": "token",
+          "data": "，“"
+        },
+        {
+          "event": "token",
+          "data": "读心术”"
+        },
+        {
+          "event": "token",
+          "data": "是指我们常常不自觉"
+        },
+        {
+          "event": "token",
+          "data": "地去猜别人心里"
+        },
+        {
+          "event": "token",
+          "data": "在想什么，而且"
+        },
+        {
+          "event": "token",
+          "data": "往往往坏处想"
+        },
+        {
+          "event": "token",
+          "data": "，觉得对方是不"
+        },
+        {
+          "event": "token",
+          "data": "在乎自己或者故意"
+        },
+        {
+          "event": "token",
+          "data": "冷落自己，但其实"
+        },
+        {
+          "event": "token",
+          "data": "我们并没有确凿"
+        },
+        {
+          "event": "token",
+          "data": "的证据。\n\n就像"
+        },
+        {
+          "event": "token",
+          "data": "你理智上知道"
+        },
+        {
+          "event": "token",
+          "data": "“他可能在忙"
+        },
+        {
+          "event": "token",
+          "data": "”，但心里那个"
+        },
+        {
+          "event": "token",
+          "data": "“控制不住”"
+        },
+        {
+          "event": "token",
+          "data": "的声音，是不是在"
+        },
+        {
+          "event": "token",
+          "data": "偷偷猜测他其实"
+        },
+        {
+          "event": "token",
+          "data": "是不想理你"
+        },
+        {
+          "event": "token",
+          "data": "，或者觉得他"
+        },
+        {
+          "event": "token",
+          "data": "不够在乎你呢？"
+        },
+        {
+          "event": "token",
+          "data": "我们一起来看看，那个"
+        },
+        {
+          "event": "token",
+          "data": "让你难受的念头，"
+        },
+        {
+          "event": "token",
+          "data": "是不是在替对方"
+        },
+        {
+          "event": "token",
+          "data": "“下结论”"
+        },
+        {
+          "event": "token",
+          "data": "呀？"
+        },
+        {
+          "event": "dialogue_done",
+          "data": {
+            "trace_id": "88a6a22621cc45cb",
+            "owner": "therapy_cbt"
+          }
+        },
+        {
+          "event": "final",
+          "data": {
+            "message": "你说这听起来像「读心术」？什么意思？",
+            "risk_state": "SAFE",
+            "crisis": false
+          }
+        }
+      ],
+      "final": {
+        "message": "你说这听起来像「读心术」？什么意思？",
+        "risk_state": "SAFE",
+        "crisis": false
+      },
+      "state_after": {
+        "owner": "therapy_cbt",
+        "crisis": false,
+        "risk_level": "SAFE",
+        "therapy": {
+          "name": "CBT",
+          "start_seq": 5,
+          "rounds": 3,
+          "step_index": 2,
+          "branch": null,
+          "basic_flow_complete": false,
+          "visited": [
+            "identify_thought",
+            "classify_distortion"
+          ]
+        },
+        "last_therapy_check_seq": 3,
+        "pending_user_tokens": 0
+      },
+      "orchestration_after": {
+        "updated_seq": 3,
+        "therapy": "CBT",
+        "current_step": "classify_distortion",
+        "next_step": "challenge",
+        "step_judgment": {
+          "action": "advance",
+          "target_step": null,
+          "achieved": true,
+          "reason": "用户已经识别出自己的自动思维（'可能他在忙，但我控制不住'），AI引导用户觉察这个思维模式，用户开始质疑并询问'读心术'的含义，说明用户已经意识到自己的认知扭曲类型，classify_distortion步骤已达成效果，可以进入下一步challenge。"
+        },
+        "assessment": null,
+        "skill_output": {
+          "classifications": [],
+          "distortion_summary": {
+            "dominant_pattern": null,
+            "distortion_count": 0,
+            "severity": "none"
+          },
+          "_skill_name": "detect_cognitive_distortion"
+        },
+        "products": {
+          "no_automatic_thought_detected": false
+        },
+        "continue_eval": null
+      },
+      "error": null,
+      "wall_seconds": 43.986,
+      "agent_text": "在心理学里，“读心术”是指我们常常不自觉地去猜别人心里在想什么，而且往往往坏处想，觉得对方是不在乎自己或者故意冷落自己，但其实我们并没有确凿的证据。\n\n就像你理智上知道“他可能在忙”，但心里那个“控制不住”的声音，是不是在偷偷猜测他其实是不想理你，或者觉得他不够在乎你呢？我们一起来看看，那个让你难受的念头，是不是在替对方“下结论”呀？"
+    },
+    {
+      "turn": 6,
+      "trace_id": "4a72e1ddd6604d1b",
+      "user_text": "就是说我以为我在读他的心，但其实我读的是自己的想法？",
+      "agent_text_parts": [
+        "你总结",
+        "得特别精准！",
+        "确实，很多时候我们",
+        "以为自己在“读",
+        "别人的心”，其实",
+        "是在读自己内心的",
+        "担忧。\n\n既然",
+        "我们看清",
+        "了这一点，不如",
+        "我们一起像侦探一样",
+        "来看看：当你脑海里",
+        "冒出那些“控制",
+        "不住”的念头时",
+        "，有什么确凿",
+        "的证据支持它吗",
+        "？还是说，",
+        "这更多是我们心里",
+        "的一种担心呢？"
+      ],
+      "events": [
+        {
+          "event": "token",
+          "data": "你总结"
+        },
+        {
+          "event": "token",
+          "data": "得特别精准！"
+        },
+        {
+          "event": "token",
+          "data": "确实，很多时候我们"
+        },
+        {
+          "event": "token",
+          "data": "以为自己在“读"
+        },
+        {
+          "event": "token",
+          "data": "别人的心”，其实"
+        },
+        {
+          "event": "token",
+          "data": "是在读自己内心的"
+        },
+        {
+          "event": "token",
+          "data": "担忧。\n\n既然"
+        },
+        {
+          "event": "token",
+          "data": "我们看清"
+        },
+        {
+          "event": "token",
+          "data": "了这一点，不如"
+        },
+        {
+          "event": "token",
+          "data": "我们一起像侦探一样"
+        },
+        {
+          "event": "token",
+          "data": "来看看：当你脑海里"
+        },
+        {
+          "event": "token",
+          "data": "冒出那些“控制"
+        },
+        {
+          "event": "token",
+          "data": "不住”的念头时"
+        },
+        {
+          "event": "token",
+          "data": "，有什么确凿"
+        },
+        {
+          "event": "token",
+          "data": "的证据支持它吗"
+        },
+        {
+          "event": "token",
+          "data": "？还是说，"
+        },
+        {
+          "event": "token",
+          "data": "这更多是我们心里"
+        },
+        {
+          "event": "token",
+          "data": "的一种担心呢？"
+        },
+        {
+          "event": "dialogue_done",
+          "data": {
+            "trace_id": "4a72e1ddd6604d1b",
+            "owner": "therapy_cbt"
+          }
+        },
+        {
+          "event": "final",
+          "data": {
+            "message": "就是说我以为我在读他的心，但其实我读的是自己的想法？",
+            "risk_state": "SAFE",
+            "crisis": false
+          }
+        }
+      ],
+      "final": {
+        "message": "就是说我以为我在读他的心，但其实我读的是自己的想法？",
+        "risk_state": "SAFE",
+        "crisis": false
+      },
+      "state_after": {
+        "owner": "therapy_cbt",
+        "crisis": false,
+        "risk_level": "SAFE",
+        "therapy": {
+          "name": "CBT",
+          "start_seq": 5,
+          "rounds": 4,
+          "step_index": 3,
+          "branch": null,
+          "basic_flow_complete": false,
+          "visited": [
+            "identify_thought",
+            "classify_distortion",
+            "challenge"
+          ]
+        },
+        "last_therapy_check_seq": 3,
+        "pending_user_tokens": 0
+      },
+      "orchestration_after": {
+        "updated_seq": 4,
+        "therapy": "CBT",
+        "current_step": "challenge",
+        "next_step": "reframe",
+        "step_judgment": {
+          "action": "advance",
+          "target_step": null,
+          "achieved": true,
+          "reason": "用户在最近一轮对话中已经意识到'我以为我在读他的心，但其实我读的是自己的想法'，说明用户已经识别出'读心术'这一认知扭曲，并理解了其本质。'challenge'步骤的目标是帮助用户识别并挑战认知扭曲，这一效果已经达成。下一步应进入'reframe'步骤，帮助用户建立更合理的替代性想法。"
+        },
+        "assessment": null,
+        "skill_output": {
+          "technique": {
+            "name": "evidence_for_against",
+            "description": "引导用户区分‘发生的事（事实）’和‘大脑的解释（想法）’，通过寻找支持和反对原有自动思维的证据，来检验那些‘读心’的猜测。",
+            "steps": [
+              "肯定用户的深刻觉察：‘没错，你总结得非常精准！我们往往是在读自己的担忧。’",
+              "引导回到具体情境：‘那我们把这件事拆开来看看。当时实际发生的事（事实）是什么？比如他具体做了什么或没做什么？’",
+              "区分解读与事实：‘然后，你大脑给出的解释（想法）是什么？比如你觉得他不在乎你。’",
+              "协作寻找证据：‘现在我们一起像侦探一样，找找看有什么确凿的线索支持你的这个解释？又有什么线索是反对这个解释的呢？’"
+            ]
+          },
+          "conversation_goal": "帮助用户巩固对‘读心术’认知扭曲的觉察，并通过区分客观事实与主观解读，客观评估原有自动思维的证据，从而减轻情绪困扰。",
+          "adaptation": {
+            "interaction_style": "exploratory",
+            "tone_adjustment": "保持温和、好奇和协作的语气。避免使用‘你有什么证据’这样带有审讯感的句式，改用‘我们一起来看看有哪些线索’。",
+            "pace_adjustment": "节奏放缓，在提出区分事实和想法的问题后，给予用户充分的思考和组织语言的时间。",
+            "culture_note": "使用通俗易懂的中文措辞来区分概念，例如用‘这是实际发生的事’代表事实，用‘这是你大脑给出的解释/你的解读’代表想法，避免生硬翻译心理学术语。"
+          },
+          "contraindications": [
+            {
+              "condition": "用户当前情绪处于高度崩溃或激动状态",
+              "reason": "在情绪高涨时进行认知分析（寻找证据）会让用户觉得不被理解或共情，此时应优先进行情绪安抚和倾听。"
+            },
+            {
+              "condition": "用户对‘读自己的想法’感到自责或防御",
+              "reason": "如果用户觉得‘原来都是我自己的问题’而产生内疚，需先处理这种自责情绪，避免技术使用加重心理负担。"
+            }
+          ],
+          "_skill_name": "evaluate_evidence"
+        },
+        "products": {
+          "no_automatic_thought_detected": false
+        },
+        "continue_eval": null
+      },
+      "error": null,
+      "wall_seconds": 71.921,
+      "agent_text": "你总结得特别精准！确实，很多时候我们以为自己在“读别人的心”，其实是在读自己内心的担忧。\n\n既然我们看清了这一点，不如我们一起像侦探一样来看看：当你脑海里冒出那些“控制不住”的念头时，有什么确凿的证据支持它吗？还是说，这更多是我们心里的一种担心呢？"
+    },
+    {
+      "turn": 7,
+      "trace_id": "f3b7d22d52cc4a74",
+      "user_text": "嗯，我读的是「他不爱我了」——这是我加上去的，不是证据。",
+      "agent_text_parts": [
+        "你总结得太透彻",
+        "了。“他不爱",
+        "我了”",
+        "确实是我们心里因为",
+        "担忧而加上去",
+        "的解读，而不是",
+        "摆在眼前的事实。",
+        "\n\n既然我们把“",
+        "想法”和",
+        "“事实”分",
+        "开了，不如我们",
+        "一起来看看事实本身。",
+        "当时他具体做了什么",
+        "，或者没做什么",
+        "，让你有了这个",
+        "感觉呢？\n\n",
+        "在“他不爱",
+        "我了”这个想法",
+        "之外，有没有什么",
+        "实际的线索（比如",
+        "他以前忙完",
+        "会主动找你，",
+        "或者他最近确实",
+        "事情很多），是",
+        "支持或者反对这个",
+        "想法的呢？"
+      ],
+      "events": [
+        {
+          "event": "token",
+          "data": "你总结得太透彻"
+        },
+        {
+          "event": "token",
+          "data": "了。“他不爱"
+        },
+        {
+          "event": "token",
+          "data": "我了”"
+        },
+        {
+          "event": "token",
+          "data": "确实是我们心里因为"
+        },
+        {
+          "event": "token",
+          "data": "担忧而加上去"
+        },
+        {
+          "event": "token",
+          "data": "的解读，而不是"
+        },
+        {
+          "event": "token",
+          "data": "摆在眼前的事实。"
+        },
+        {
+          "event": "token",
+          "data": "\n\n既然我们把“"
+        },
+        {
+          "event": "token",
+          "data": "想法”和"
+        },
+        {
+          "event": "token",
+          "data": "“事实”分"
+        },
+        {
+          "event": "token",
+          "data": "开了，不如我们"
+        },
+        {
+          "event": "token",
+          "data": "一起来看看事实本身。"
+        },
+        {
+          "event": "token",
+          "data": "当时他具体做了什么"
+        },
+        {
+          "event": "token",
+          "data": "，或者没做什么"
+        },
+        {
+          "event": "token",
+          "data": "，让你有了这个"
+        },
+        {
+          "event": "token",
+          "data": "感觉呢？\n\n"
+        },
+        {
+          "event": "token",
+          "data": "在“他不爱"
+        },
+        {
+          "event": "token",
+          "data": "我了”这个想法"
+        },
+        {
+          "event": "token",
+          "data": "之外，有没有什么"
+        },
+        {
+          "event": "token",
+          "data": "实际的线索（比如"
+        },
+        {
+          "event": "token",
+          "data": "他以前忙完"
+        },
+        {
+          "event": "token",
+          "data": "会主动找你，"
+        },
+        {
+          "event": "token",
+          "data": "或者他最近确实"
+        },
+        {
+          "event": "token",
+          "data": "事情很多），是"
+        },
+        {
+          "event": "token",
+          "data": "支持或者反对这个"
+        },
+        {
+          "event": "token",
+          "data": "想法的呢？"
+        },
+        {
+          "event": "dialogue_done",
+          "data": {
+            "trace_id": "f3b7d22d52cc4a74",
+            "owner": "therapy_cbt"
+          }
+        },
+        {
+          "event": "final",
+          "data": {
+            "message": "嗯，我读的是「他不爱我了」——这是我加上去的，不是证据。",
+            "risk_state": "LOW_RISK",
+            "crisis": false
+          }
+        }
+      ],
+      "final": {
+        "message": "嗯，我读的是「他不爱我了」——这是我加上去的，不是证据。",
+        "risk_state": "LOW_RISK",
+        "crisis": false
+      },
+      "state_after": {
+        "owner": "therapy_cbt",
+        "crisis": false,
+        "risk_level": "LOW_RISK",
+        "therapy": {
+          "name": "CBT",
+          "start_seq": 5,
+          "rounds": 5,
+          "step_index": 4,
+          "branch": null,
+          "basic_flow_complete": false,
+          "visited": [
+            "identify_thought",
+            "classify_distortion",
+            "challenge",
+            "reframe"
+          ]
+        },
+        "last_therapy_check_seq": 3,
+        "pending_user_tokens": 0
+      },
+      "orchestration_after": {
+        "updated_seq": 5,
+        "therapy": "CBT",
+        "current_step": "reframe",
+        "next_step": "evaluate_effect",
+        "step_judgment": {
+          "action": "advance",
+          "target_step": null,
+          "achieved": true,
+          "reason": "用户已成功识别自动思维（'他不爱我了'），并认识到这是自己加上去的想法而非证据，完成了'重构'步骤的核心目标——从认知层面重新理解自动思维的本质。下一步应进入'evaluate_effect'步骤，评估重构后的情绪变化。"
+        },
+        "assessment": null,
+        "skill_output": {
+          "technique": {
+            "name": "alternative_causes",
+            "description": "引导用户探索除了'他不爱我了'之外，导致对方当前行为或状态的其他可能原因，打破单一负面归因。",
+            "steps": [
+              "肯定用户的觉察，明确'他不爱我了'只是大脑因为担忧而产生的一个假设，而非唯一事实。",
+              "邀请用户一起头脑风暴，列出其他可能导致对方当前表现的原因（例如：最近工作压力大、身体疲惫、遇到了其他烦心事等）。",
+              "引导用户评估这些替代解释的可能性，看看是否能拓宽对当前情况的视角。"
+            ]
+          },
+          "conversation_goal": "帮助用户从单一的负面解读中跳出来，认识到事物发展的多种可能性，从而减轻因绝对化思维带来的焦虑。",
+          "adaptation": {
+            "interaction_style": "exploratory",
+            "tone_adjustment": "温和、肯定且充满好奇，像侦探一样和用户一起探索其他线索，不急于否定用户的感受。",
+            "pace_adjustment": "循序渐进，在肯定用户觉察的基础上，慢慢引导其思考其他可能性，给予充分的思考空间。",
+            "culture_note": "使用'可能'、'也许'、'不一定'等词汇来软化语气，避免使用绝对化的反驳。认可用户产生'他不爱我了'这种担忧的合理性，强调我们是在扩展视角，而不是指责用户想错了。"
+          },
+          "contraindications": [
+            {
+              "condition": "关系中确实存在明显的冷暴力、背叛或虐待行为",
+              "reason": "在这种情况下，用户的直觉可能是准确的，强行寻找'他不爱我了'之外的替代原因可能会造成无效化（invalidation）或二次伤害。"
+            },
+            {
+              "condition": "用户处于极度情绪崩溃或急性焦虑发作中",
+              "reason": "此时用户的认知带宽受限，难以进行理性的多角度思考，应优先进行情绪安抚和接地技术（grounding），而非认知重构。"
+            }
+          ],
+          "_skill_name": "generate_reframe"
+        },
+        "products": {
+          "no_automatic_thought_detected": false
+        },
+        "continue_eval": null
+      },
+      "error": null,
+      "wall_seconds": 110.681,
+      "agent_text": "你总结得太透彻了。“他不爱我了”确实是我们心里因为担忧而加上去的解读，而不是摆在眼前的事实。\n\n既然我们把“想法”和“事实”分开了，不如我们一起来看看事实本身。当时他具体做了什么，或者没做什么，让你有了这个感觉呢？\n\n在“他不爱我了”这个想法之外，有没有什么实际的线索（比如他以前忙完会主动找你，或者他最近确实事情很多），是支持或者反对这个想法的呢？"
+    },
+    {
+      "turn": 8,
+      "trace_id": "9ab86684f5474926",
+      "user_text": "那我先等他回，不要先下结论。",
+      "agent_text_parts": [
+        "你能对自己说出“",
+        "先等他回，",
+        "不要先下结论",
+        "”，这真的特别",
+        "不容易，就像是给",
+        "心里那个焦虑的",
+        "警报器按下了",
+        "暂停键。\n\n",
+        "既然咱们决定先",
+        "不急着下结论",
+        "，那在等",
+        "他的这段时间里，",
+        "除了“他不爱",
+        "我了”这个让人",
+        "害怕的假设，",
+        "你觉得他现在的状态",
+        "还有没有其他的可能性呢",
+        "？比如会不会是",
+        "最近工作太让人",
+        "头疼，或者身体",
+        "特别疲惫？我们可以",
+        "一起随便猜",
+        "一猜。"
+      ],
+      "events": [
+        {
+          "event": "token",
+          "data": "你能对自己说出“"
+        },
+        {
+          "event": "token",
+          "data": "先等他回，"
+        },
+        {
+          "event": "token",
+          "data": "不要先下结论"
+        },
+        {
+          "event": "token",
+          "data": "”，这真的特别"
+        },
+        {
+          "event": "token",
+          "data": "不容易，就像是给"
+        },
+        {
+          "event": "token",
+          "data": "心里那个焦虑的"
+        },
+        {
+          "event": "token",
+          "data": "警报器按下了"
+        },
+        {
+          "event": "token",
+          "data": "暂停键。\n\n"
+        },
+        {
+          "event": "token",
+          "data": "既然咱们决定先"
+        },
+        {
+          "event": "token",
+          "data": "不急着下结论"
+        },
+        {
+          "event": "token",
+          "data": "，那在等"
+        },
+        {
+          "event": "token",
+          "data": "他的这段时间里，"
+        },
+        {
+          "event": "token",
+          "data": "除了“他不爱"
+        },
+        {
+          "event": "token",
+          "data": "我了”这个让人"
+        },
+        {
+          "event": "token",
+          "data": "害怕的假设，"
+        },
+        {
+          "event": "token",
+          "data": "你觉得他现在的状态"
+        },
+        {
+          "event": "token",
+          "data": "还有没有其他的可能性呢"
+        },
+        {
+          "event": "token",
+          "data": "？比如会不会是"
+        },
+        {
+          "event": "token",
+          "data": "最近工作太让人"
+        },
+        {
+          "event": "token",
+          "data": "头疼，或者身体"
+        },
+        {
+          "event": "token",
+          "data": "特别疲惫？我们可以"
+        },
+        {
+          "event": "token",
+          "data": "一起随便猜"
+        },
+        {
+          "event": "token",
+          "data": "一猜。"
+        },
+        {
+          "event": "dialogue_done",
+          "data": {
+            "trace_id": "9ab86684f5474926",
+            "owner": "therapy_cbt"
+          }
+        },
+        {
+          "event": "final",
+          "data": {
+            "message": "那我先等他回，不要先下结论。",
+            "risk_state": "SAFE",
+            "crisis": false
+          }
+        }
+      ],
+      "final": {
+        "message": "那我先等他回，不要先下结论。",
+        "risk_state": "SAFE",
+        "crisis": false
+      },
+      "state_after": {
+        "owner": "daily",
+        "crisis": false,
+        "risk_level": "SAFE",
+        "therapy": null,
+        "last_therapy_check_seq": 3,
+        "pending_user_tokens": 0
+      },
+      "orchestration_after": {
+        "updated_seq": 6,
+        "therapy": "CBT",
+        "current_step": "evaluate_effect",
+        "next_step": "evaluate_effect",
+        "step_judgment": {
+          "action": "complete",
+          "target_step": null,
+          "achieved": true,
+          "reason": "用户已经完成了整个CBT流程。从最初的识别自动思维（'他不爱我了'），到认知扭曲分类（读心术），再到挑战想法（区分想法和事实），最后到重新建构（'先等他回，不要先下结论'）。用户已经成功将想法和事实分开，并形成了更理性的应对策略。"
+        },
+        "assessment": null,
+        "skill_output": null,
+        "products": {
+          "no_automatic_thought_detected": false
+        },
+        "continue_eval": {
+          "continue": false,
+          "marginal_utility_note": "用户已在第5轮达成核心领悟（区分想法与事实）并自主提出行为策略（先等回复不下结论）。第6轮AI继续引导探索其他可能性，属于巩固性对话，边际收益递减。",
+          "reason": "疗程已完成核心目标：识别认知扭曲（读心术）→区分想法与事实→形成替代行为策略。继续对话的边际效用低，用户已获得可迁移的自助工具，应结束以避免疲劳。"
+        }
+      },
+      "error": null,
+      "wall_seconds": 95.965,
+      "agent_text": "你能对自己说出“先等他回，不要先下结论”，这真的特别不容易，就像是给心里那个焦虑的警报器按下了暂停键。\n\n既然咱们决定先不急着下结论，那在等他的这段时间里，除了“他不爱我了”这个让人害怕的假设，你觉得他现在的状态还有没有其他的可能性呢？比如会不会是最近工作太让人头疼，或者身体特别疲惫？我们可以一起随便猜一猜。"
+    }
+  ]
+}

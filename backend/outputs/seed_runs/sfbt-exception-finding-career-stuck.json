@@ -1,0 +1,1374 @@
+{
+  "seed_id": "sfbt-exception-finding-career-stuck",
+  "target_family": "SFBT",
+  "scenario_label": "例外探询-工作停滞中的小亮光",
+  "scenario_description": "工作4年感觉停滞，但回想有2个月做过不错项目",
+  "user_id": "seed-sfbt-exception-finding-c",
+  "session_id": "342269b439fa429d",
+  "turns_total": 8,
+  "switched_to_therapy_at_turn": 3,
+  "actual_therapy": "MI",
+  "therapy_rounds": 6,
+  "orch_step_changes": 1,
+  "is_complete": false,
+  "final_risk_level": "SAFE",
+  "final_crisis": false,
+  "turns": [
+    {
+      "turn": 1,
+      "trace_id": "b01c4aa51de5493d",
+      "user_text": "我工作四年了，最近感觉特别停滞，不知道该怎么办。",
+      "agent_text_parts": [
+        "工作四年",
+        "，突然感觉“",
+        "特别停滞”，确实",
+        "会让人觉得挺迷茫",
+        "的。不知道该怎么办",
+        "的时候，心里肯定",
+        "有些乱。能",
+        "跟我多说说吗",
+        "，这种“停滞",
+        "”的感觉，是",
+        "最近工作上遇到了什么",
+        "具体的事，还是",
+        "觉得每天日复一日",
+        "没什么新意了呢？"
+      ],
+      "events": [
+        {
+          "event": "token",
+          "data": "工作四年"
+        },
+        {
+          "event": "token",
+          "data": "，突然感觉“"
+        },
+        {
+          "event": "token",
+          "data": "特别停滞”，确实"
+        },
+        {
+          "event": "token",
+          "data": "会让人觉得挺迷茫"
+        },
+        {
+          "event": "token",
+          "data": "的。不知道该怎么办"
+        },
+        {
+          "event": "token",
+          "data": "的时候，心里肯定"
+        },
+        {
+          "event": "token",
+          "data": "有些乱。能"
+        },
+        {
+          "event": "token",
+          "data": "跟我多说说吗"
+        },
+        {
+          "event": "token",
+          "data": "，这种“停滞"
+        },
+        {
+          "event": "token",
+          "data": "”的感觉，是"
+        },
+        {
+          "event": "token",
+          "data": "最近工作上遇到了什么"
+        },
+        {
+          "event": "token",
+          "data": "具体的事，还是"
+        },
+        {
+          "event": "token",
+          "data": "觉得每天日复一日"
+        },
+        {
+          "event": "token",
+          "data": "没什么新意了呢？"
+        },
+        {
+          "event": "dialogue_done",
+          "data": {
+            "trace_id": "b01c4aa51de5493d",
+            "owner": "daily"
+          }
+        },
+        {
+          "event": "final",
+          "data": {
+            "message": "我工作四年了，最近感觉特别停滞，不知道该怎么办。",
+            "risk_state": "LOW_RISK",
+            "crisis": false
+          }
+        }
+      ],
+      "final": {
+        "message": "我工作四年了，最近感觉特别停滞，不知道该怎么办。",
+        "risk_state": "LOW_RISK",
+        "crisis": false
+      },
+      "state_after": {
+        "owner": "daily",
+        "crisis": false,
+        "risk_level": "LOW_RISK",
+        "therapy": null,
+        "last_therapy_check_seq": 1,
+        "pending_user_tokens": 0
+      },
+      "orchestration_after": {},
+      "error": null,
+      "wall_seconds": 66.494,
+      "agent_text": "工作四年，突然感觉“特别停滞”，确实会让人觉得挺迷茫的。不知道该怎么办的时候，心里肯定有些乱。能跟我多说说吗，这种“停滞”的感觉，是最近工作上遇到了什么具体的事，还是觉得每天日复一日没什么新意了呢？"
+    },
+    {
+      "turn": 2,
+      "trace_id": "ef8aa229f17c4863",
+      "user_text": "每天做的事情都一样，没什么成就感。",
+      "agent_text_parts": [
+        "每天做着一样的",
+        "事情，确实很难",
+        "有什么成就感，感觉",
+        "就像在原地踏步",
+        "。这种日复一",
+        "日的重复，真的",
+        "挺消耗人的。",
+        "这种没什么成就感的状态",
+        "，持续有一阵",
+        "子了吗？"
+      ],
+      "events": [
+        {
+          "event": "token",
+          "data": "每天做着一样的"
+        },
+        {
+          "event": "token",
+          "data": "事情，确实很难"
+        },
+        {
+          "event": "token",
+          "data": "有什么成就感，感觉"
+        },
+        {
+          "event": "token",
+          "data": "就像在原地踏步"
+        },
+        {
+          "event": "token",
+          "data": "。这种日复一"
+        },
+        {
+          "event": "token",
+          "data": "日的重复，真的"
+        },
+        {
+          "event": "token",
+          "data": "挺消耗人的。"
+        },
+        {
+          "event": "token",
+          "data": "这种没什么成就感的状态"
+        },
+        {
+          "event": "token",
+          "data": "，持续有一阵"
+        },
+        {
+          "event": "token",
+          "data": "子了吗？"
+        },
+        {
+          "event": "dialogue_done",
+          "data": {
+            "trace_id": "ef8aa229f17c4863",
+            "owner": "daily"
+          }
+        },
+        {
+          "event": "final",
+          "data": {
+            "message": "每天做的事情都一样，没什么成就感。",
+            "risk_state": "LOW_RISK",
+            "crisis": false
+          }
+        }
+      ],
+      "final": {
+        "message": "每天做的事情都一样，没什么成就感。",
+        "risk_state": "LOW_RISK",
+        "crisis": false
+      },
+      "state_after": {
+        "owner": "daily",
+        "crisis": false,
+        "risk_level": "LOW_RISK",
+        "therapy": null,
+        "last_therapy_check_seq": 3,
+        "pending_user_tokens": 0
+      },
+      "orchestration_after": {},
+      "error": null,
+      "wall_seconds": 32.45,
+      "agent_text": "每天做着一样的事情，确实很难有什么成就感，感觉就像在原地踏步。这种日复一日的重复，真的挺消耗人的。这种没什么成就感的状态，持续有一阵子了吗？"
+    },
+    {
+      "turn": 3,
+      "trace_id": "2e6c8e8fc65442b8",
+      "user_text": "我跟我老婆说想换工作，她说我先想清楚。",
+      "agent_text_parts": [
+        "本来想换工作",
+        "改变一下这种没",
+        "成就感的状态，跟",
+        "老婆说了，她",
+        "让你先想清楚",
+        "。听到她这么说",
+        "，是不是感觉心里",
+        "挺纠结的，",
+        "反而有点不知道该怎么",
+        "去“想清楚",
+        "”了？"
+      ],
+      "events": [
+        {
+          "event": "token",
+          "data": "本来想换工作"
+        },
+        {
+          "event": "token",
+          "data": "改变一下这种没"
+        },
+        {
+          "event": "token",
+          "data": "成就感的状态，跟"
+        },
+        {
+          "event": "token",
+          "data": "老婆说了，她"
+        },
+        {
+          "event": "token",
+          "data": "让你先想清楚"
+        },
+        {
+          "event": "token",
+          "data": "。听到她这么说"
+        },
+        {
+          "event": "token",
+          "data": "，是不是感觉心里"
+        },
+        {
+          "event": "token",
+          "data": "挺纠结的，"
+        },
+        {
+          "event": "token",
+          "data": "反而有点不知道该怎么"
+        },
+        {
+          "event": "token",
+          "data": "去“想清楚"
+        },
+        {
+          "event": "token",
+          "data": "”了？"
+        },
+        {
+          "event": "dialogue_done",
+          "data": {
+            "trace_id": "2e6c8e8fc65442b8",
+            "owner": "daily"
+          }
+        },
+        {
+          "event": "final",
+          "data": {
+            "message": "我跟我老婆说想换工作，她说我先想清楚。",
+            "risk_state": "SAFE",
+            "crisis": false
+          }
+        }
+      ],
+      "final": {
+        "message": "我跟我老婆说想换工作，她说我先想清楚。",
+        "risk_state": "SAFE",
+        "crisis": false
+      },
+      "state_after": {
+        "owner": "therapy_mi",
+        "crisis": false,
+        "risk_level": "SAFE",
+        "therapy": {
+          "name": "MI",
+          "start_seq": 7,
+          "rounds": 0,
+          "step_index": -1,
+          "branch": null,
+          "basic_flow_complete": false
+        },
+        "last_therapy_check_seq": 5,
+        "pending_user_tokens": 0
+      },
+      "orchestration_after": {},
+      "error": null,
+      "wall_seconds": 33.282,
+      "agent_text": "本来想换工作改变一下这种没成就感的状态，跟老婆说了，她让你先想清楚。听到她这么说，是不是感觉心里挺纠结的，反而有点不知道该怎么去“想清楚”了？"
+    },
+    {
+      "turn": 4,
+      "trace_id": "6185555d563e4720",
+      "user_text": "你说让我想想「有没有哪个时刻感觉没那么停滞」——",
+      "agent_text_parts": [
+        "嗯，",
+        "我在听。当你",
+        "试着回想那些“",
+        "没那么停滞”的时刻",
+        "时，脑海里浮现",
+        "了些什么呢？",
+        "慢慢说。"
+      ],
+      "events": [
+        {
+          "event": "token",
+          "data": "嗯，"
+        },
+        {
+          "event": "token",
+          "data": "我在听。当你"
+        },
+        {
+          "event": "token",
+          "data": "试着回想那些“"
+        },
+        {
+          "event": "token",
+          "data": "没那么停滞”的时刻"
+        },
+        {
+          "event": "token",
+          "data": "时，脑海里浮现"
+        },
+        {
+          "event": "token",
+          "data": "了些什么呢？"
+        },
+        {
+          "event": "token",
+          "data": "慢慢说。"
+        },
+        {
+          "event": "dialogue_done",
+          "data": {
+            "trace_id": "6185555d563e4720",
+            "owner": "therapy_mi"
+          }
+        },
+        {
+          "event": "final",
+          "data": {
+            "message": "你说让我想想「有没有哪个时刻感觉没那么停滞」——",
+            "risk_state": "LOW_RISK",
+            "crisis": false
+          }
+        }
+      ],
+      "final": {
+        "message": "你说让我想想「有没有哪个时刻感觉没那么停滞」——",
+        "risk_state": "LOW_RISK",
+        "crisis": false
+      },
+      "state_after": {
+        "owner": "therapy_mi",
+        "crisis": false,
+        "risk_level": "LOW_RISK",
+        "therapy": {
+          "name": "MI",
+          "start_seq": 7,
+          "rounds": 1,
+          "step_index": 1,
+          "branch": null,
+          "basic_flow_complete": false
+        },
+        "last_therapy_check_seq": 5,
+        "pending_user_tokens": 0
+      },
+      "orchestration_after": {
+        "updated_seq": 1,
+        "therapy": "MI",
+        "current_step": "evocation",
+        "next_step": "evocation",
+        "step_judgment": {
+          "action": "stay",
+          "target_step": null,
+          "achieved": false,
+          "reason": "用户正在思考并尝试回忆'没那么停滞'的时刻，尚未给出具体内容。当前仍处于evocation阶段的初期，需要继续等待和引导用户分享例外时刻的详细信息，以强化改变谈话并提升自我效能感。"
+        },
+        "assessment": {
+          "change_readiness": {
+            "index": 0.5,
+            "state": "contemplation",
+            "confidence": 0.85,
+            "evidence": [
+              "User is actively reflecting on the prompt to find exceptions to feeling 'stagnant' (停滞), indicating they are thinking about their current state and open to exploring alternatives."
+            ]
+          },
+          "ambivalence": {
+            "index": 0.5,
+            "state": "mild",
+            "confidence": 0.75,
+            "evidence": [
+              "User acknowledges feeling 'stagnant' (the problem) but is actively searching for moments when they did not feel this way, showing a pull between the current stuck state and the desire for movement."
+            ]
+          },
+          "self_efficacy": {
+            "index": 0.4,
+            "state": "low",
+            "confidence": 0.6,
+            "evidence": [
+              "The baseline feeling of being 'stagnant' suggests low confidence in current momentum, but the willingness to search for exceptions shows a slight openness to believing positive moments are possible."
+            ]
+          },
+          "change_talk": {
+            "index": 0.4,
+            "state": "moderate",
+            "confidence": 0.8,
+            "evidence": [
+              "Searching for moments 'not so stagnant' (没那么停滞) reflects a desire for change and problem recognition. The trailing dash indicates they are actively formulating these change-oriented thoughts."
+            ]
+          },
+          "sustain_talk": {
+            "index": 0.1,
+            "state": "absent",
+            "confidence": 0.85,
+            "evidence": [
+              "No active defense of the status quo is present in this utterance. The focus is entirely on exploring exceptions to the 'stagnant' feeling rather than justifying it."
+            ]
+          },
+          "mi_intervention_need": 0.47,
+          "overall_trend": "stable",
+          "primary_concern": "ambivalence",
+          "should_intervene": true,
+          "recommended_processes": [
+            {
+              "process": "explore",
+              "priority": 1,
+              "rationale": "User is pausing to reflect on exceptions to feeling stagnant. The agent should provide a supportive pause and gently explore both sides of this ambivalence, allowing the user time to articulate their thoughts without rushing them."
+            },
+            {
+              "process": "evocation",
+              "priority": 2,
+              "rationale": "Once the user shares a moment, the agent should evoke the details of that exception to strengthen change talk and build self-efficacy by highlighting their own agency and resources in those moments."
+            }
+          ]
+        },
+        "skill_output": {
+          "technique": {
+            "name": "darn_cat",
+            "description": "Systematically explore the user's preparatory change talk (Desire and Reasons) by delving into the specific 'not so stagnant' moments they are trying to recall.",
+            "steps": [
+              "Hold space for the user's reflection (indicated by the trailing dash). Use a gentle, open-ended prompt to encourage them to share whatever comes to mind, even if it feels incomplete.",
+              "Elicit 'Desire' and 'Reasons' by asking what specifically made those recalled moments feel different, lighter, or more alive compared to the stagnant baseline.",
+              "Reflect and elaborate on the user's descriptions of these exceptions to strengthen their intrinsic motivation and problem recognition before moving to mobilizing change talk."
+            ]
+          },
+          "conversation_goal": "To elicit and strengthen the user's 'Desire' and 'Reasons' for change by exploring the concrete details, feelings, and meanings behind their 'not so stagnant' moments.",
+          "adaptation": {
+            "interaction_style": "exploratory",
+            "tone_adjustment": "Patient, curious, and gently encouraging. Match the user's reflective and slightly hesitant pace, validating their thought process.",
+            "pace_adjustment": "Slow and unhurried. Allow comfortable silence for the user to formulate their thoughts, as the trailing dash indicates active internal processing.",
+            "culture_note": "Respect the user's indirect or reflective communication style. Avoid rushing them to articulate a grand 'purpose'; focus on validating the small, subjective shifts in their daily experience."
+          },
+          "contraindications": [
+            {
+              "condition": "User feels pressured to find a 'perfect' positive moment and becomes frustrated.",
+              "reason": "This can increase sustain talk and lower self-efficacy. If this happens, pivot to reflecting their current struggle and normalize the difficulty of finding exceptions."
+            },
+            {
+              "condition": "User prematurely jumps to action plans or commitment without fully exploring the exceptions.",
+              "reason": "Moving to CAT (Commitment/Activation) too quickly from a weak DARN foundation may result in fragile commitment. Gently guide them back to explore the 'why' and 'how' of the exceptions first."
+            }
+          ],
+          "_skill_name": "mi_evocation"
+        },
+        "products": {},
+        "continue_eval": null
+      },
+      "error": null,
+      "wall_seconds": 149.313,
+      "agent_text": "嗯，我在听。当你试着回想那些“没那么停滞”的时刻时，脑海里浮现了些什么呢？慢慢说。"
+    },
+    {
+      "turn": 5,
+      "trace_id": "e6ff85b26fb7409d",
+      "user_text": "好像去年有 2 个月我申请了一个内部的小项目，做得还挺有感觉。",
+      "agent_text_parts": [
+        "“",
+        "挺",
+        "有感觉”听起来",
+        "真是一段特别的时光",
+        "。能多跟我",
+        "聊聊那种“有",
+        "感觉”具体是什么样的",
+        "吗？那两个月",
+        "里，是什么让你",
+        "觉得和现在的状态",
+        "不太一样呢？"
+      ],
+      "events": [
+        {
+          "event": "token",
+          "data": "“"
+        },
+        {
+          "event": "token",
+          "data": "挺"
+        },
+        {
+          "event": "token",
+          "data": "有感觉”听起来"
+        },
+        {
+          "event": "token",
+          "data": "真是一段特别的时光"
+        },
+        {
+          "event": "token",
+          "data": "。能多跟我"
+        },
+        {
+          "event": "token",
+          "data": "聊聊那种“有"
+        },
+        {
+          "event": "token",
+          "data": "感觉”具体是什么样的"
+        },
+        {
+          "event": "token",
+          "data": "吗？那两个月"
+        },
+        {
+          "event": "token",
+          "data": "里，是什么让你"
+        },
+        {
+          "event": "token",
+          "data": "觉得和现在的状态"
+        },
+        {
+          "event": "token",
+          "data": "不太一样呢？"
+        },
+        {
+          "event": "dialogue_done",
+          "data": {
+            "trace_id": "e6ff85b26fb7409d",
+            "owner": "therapy_mi"
+          }
+        },
+        {
+          "event": "final",
+          "data": {
+            "message": "好像去年有 2 个月我申请了一个内部的小项目，做得还挺有感觉。",
+            "risk_state": "SAFE",
+            "crisis": false
+          }
+        }
+      ],
+      "final": {
+        "message": "好像去年有 2 个月我申请了一个内部的小项目，做得还挺有感觉。",
+        "risk_state": "SAFE",
+        "crisis": false
+      },
+      "state_after": {
+        "owner": "therapy_mi",
+        "crisis": false,
+        "risk_level": "SAFE",
+        "therapy": {
+          "name": "MI",
+          "start_seq": 7,
+          "rounds": 2,
+          "step_index": 1,
+          "branch": null,
+          "basic_flow_complete": false
+        },
+        "last_therapy_check_seq": 5,
+        "pending_user_tokens": 0
+      },
+      "orchestration_after": {
+        "updated_seq": 2,
+        "therapy": "MI",
+        "current_step": "evocation",
+        "next_step": "evocation",
+        "step_judgment": {
+          "action": "stay",
+          "target_step": null,
+          "achieved": false,
+          "reason": "用户已提供一个过去成功的例子（内部小项目），change talk较强，但evocation步骤仍需深入挖掘细节以放大改变动机。AI正在追问'有感觉'的具体内容和与当前状态的对比，推荐流程仍指向evocation为第一优先级。需继续当前步骤以充分唤起用户的内在资源和自我效能感。"
+        },
+        "assessment": {
+          "change_readiness": {
+            "index": 0.65,
+            "state": "preparation",
+            "confidence": 0.85,
+            "evidence": [
+              "User is actively recalling a specific past instance (internal project last year) where they felt engaged and not stagnant, indicating a shift towards preparation by identifying personal resources and past successes."
+            ]
+          },
+          "ambivalence": {
+            "index": 0.2,
+            "state": "none",
+            "confidence": 0.85,
+            "evidence": [
+              "The user directly provides a positive exception to their stagnant feeling without expressing any current hesitation or mixed feelings about this specific memory."
+            ]
+          },
+          "self_efficacy": {
+            "index": 0.6,
+            "state": "moderate",
+            "confidence": 0.8,
+            "evidence": [
+              "The phrase '做得还挺有感觉' (felt quite engaged/good about it) indicates a restored sense of competence and agency compared to the previous baseline of feeling 'stagnant'."
+            ]
+          },
+          "change_talk": {
+            "index": 0.75,
+            "state": "strong",
+            "confidence": 0.9,
+            "evidence": [
+              "User expresses 'Ability' and 'Reasons' for change by describing a past success: '申请了一个内部的小项目，做得还挺有感觉'. This highlights their capacity to be engaged and motivated."
+            ]
+          },
+          "sustain_talk": {
+            "index": 0.0,
+            "state": "absent",
+            "confidence": 0.95,
+            "evidence": [
+              "No justification for staying stagnant is present; the focus is entirely on a past positive experience."
+            ]
+          },
+          "mi_intervention_need": 0.312,
+          "overall_trend": "improving",
+          "primary_concern": "change_talk",
+          "should_intervene": true,
+          "recommended_processes": [
+            {
+              "process": "evocation",
+              "priority": 1,
+              "rationale": "User has provided a strong example of past success and ability. The agent should evoke the details of this experience (e.g., what made it feel good) to amplify change talk and further build self-efficacy."
+            },
+            {
+              "process": "explore",
+              "priority": 2,
+              "rationale": "Explore the contrast between that project and their current state to help the user identify actionable steps or missing resources they can leverage now."
+            }
+          ]
+        },
+        "skill_output": {
+          "technique": {
+            "name": "darn_cat",
+            "description": "Systematically explore the user's preparatory (DARN) and mobilizing (CAT) change talk. Since the user has already expressed 'Ability' and 'Reasons' through a past successful project, the focus will be on deepening these reflections, exploring 'Desire' to recapture that feeling, and 'Need' for why it matters now, before eventually moving towards 'Commitment' and 'Taking steps'.",
+            "steps": [
+              "Reflect and validate the 'Ability' and 'Reasons' change talk by summarizing and exploring what specifically made the internal project feel engaging ('有感觉').",
+              "Elicit 'Desire' (D) by asking open-ended questions about what it would mean to them to experience that level of engagement and fulfillment again.",
+              "Elicit 'Need' (N) by exploring why recapturing that sense of purpose or engagement is important for them in their current situation."
+            ]
+          },
+          "conversation_goal": "To deepen the user's preparatory change talk (Desire, Ability, Reasons, Need) by connecting their past experience of feeling engaged to their current motivations for change, laying a strong foundation for mobilizing change talk.",
+          "adaptation": {
+            "interaction_style": "exploratory",
+            "tone_adjustment": "Curious, affirming, and exploratory. Validating their past success and the positive emotion attached to it without rushing them to 'fix' their current stagnation.",
+            "pace_adjustment": "Slow and reflective. Allowing the user to savor the positive memory of feeling engaged and fully articulate its meaning before pivoting to how that informs their current needs.",
+            "culture_note": "In Chinese work culture, 'internal small projects' (内部小项目) often represent autonomy and intrinsic motivation amidst rigid or stagnant structures. Acknowledge the value of this autonomy and '有感觉' (a sense of resonance/flow), framing the exploration around their personal sense of fulfillment rather than external performance metrics or obligations."
+          },
+          "contraindications": [
+            {
+              "condition": "Rushing to CAT (Commitment, Activation, Taking steps)",
+              "reason": "The user needs to fully explore and savor the 'Desire' and 'Need' to change before being asked to commit to specific actions. Pushing for action too early could trigger resistance or feel overwhelming given their current 'stagnant' baseline."
+            },
+            {
+              "condition": "Providing the reasons for change",
+              "reason": "The core MI principle is to elicit change talk from the user. The agent must ask open-ended questions to draw out the user's own reasons and desires, rather than telling them why the project was good or why they should change."
+            }
+          ],
+          "_skill_name": "mi_evocation"
+        },
+        "products": {},
+        "continue_eval": null
+      },
+      "error": null,
+      "wall_seconds": 125.072,
+      "agent_text": "“挺有感觉”听起来真是一段特别的时光。能多跟我聊聊那种“有感觉”具体是什么样的吗？那两个月里，是什么让你觉得和现在的状态不太一样呢？"
+    },
+    {
+      "turn": 6,
+      "trace_id": "ae6adae7bfb94c48",
+      "user_text": "那 2 个月和现在有什么不同？",
+      "agent_text_parts": [
+        "嗯，你在",
+        "试着回想那种对比",
+        "。我们不妨先",
+        "回到那",
+        "两个月里，就",
+        "聊聊那个让你“",
+        "有感觉”的内部",
+        "小项目。当时",
+        "最让你觉得投入",
+        "、有意义的瞬间是什么样的",
+        "？"
+      ],
+      "events": [
+        {
+          "event": "token",
+          "data": "嗯，你在"
+        },
+        {
+          "event": "token",
+          "data": "试着回想那种对比"
+        },
+        {
+          "event": "token",
+          "data": "。我们不妨先"
+        },
+        {
+          "event": "token",
+          "data": "回到那"
+        },
+        {
+          "event": "token",
+          "data": "两个月里，就"
+        },
+        {
+          "event": "token",
+          "data": "聊聊那个让你“"
+        },
+        {
+          "event": "token",
+          "data": "有感觉”的内部"
+        },
+        {
+          "event": "token",
+          "data": "小项目。当时"
+        },
+        {
+          "event": "token",
+          "data": "最让你觉得投入"
+        },
+        {
+          "event": "token",
+          "data": "、有意义的瞬间是什么样的"
+        },
+        {
+          "event": "token",
+          "data": "？"
+        },
+        {
+          "event": "dialogue_done",
+          "data": {
+            "trace_id": "ae6adae7bfb94c48",
+            "owner": "therapy_mi"
+          }
+        },
+        {
+          "event": "final",
+          "data": {
+            "message": "那 2 个月和现在有什么不同？",
+            "risk_state": "SAFE",
+            "crisis": false
+          }
+        }
+      ],
+      "final": {
+        "message": "那 2 个月和现在有什么不同？",
+        "risk_state": "SAFE",
+        "crisis": false
+      },
+      "state_after": {
+        "owner": "therapy_mi",
+        "crisis": false,
+        "risk_level": "SAFE",
+        "therapy": {
+          "name": "MI",
+          "start_seq": 7,
+          "rounds": 3,
+          "step_index": 1,
+          "branch": null,
+          "basic_flow_complete": false
+        },
+        "last_therapy_check_seq": 5,
+        "pending_user_tokens": 0
+      },
+      "orchestration_after": {
+        "updated_seq": 3,
+        "therapy": "MI",
+        "current_step": "evocation",
+        "next_step": "evocation",
+        "step_judgment": {
+          "action": "stay",
+          "target_step": null,
+          "achieved": false,
+          "reason": "用户表现出明显的矛盾心理和回避倾向，将问题抛回给AI（'那2个月和现在有什么不同？'），change readiness从preparation退回contemplation，change talk微弱（0.2），ambivalence中度（0.6）。当前evocation步骤尚未达成效果——用户未能自主产生改变动机或回忆出有意义的积极体验细节。AI最新回复已采取正确策略（回到积极记忆本身，避免直接对比），但需要继续在当前步骤中温和探索，帮助用户重建自我效能感和改变意愿。"
+        },
+        "assessment": {
+          "change_readiness": {
+            "index": 0.5,
+            "state": "contemplation",
+            "confidence": 0.75,
+            "evidence": [
+              "User deflects the reflective question back to the agent ('那 2 个月和现在有什么不同？'), indicating a step back from the preparation stage into contemplation when faced with the reality of their current state."
+            ]
+          },
+          "ambivalence": {
+            "index": 0.6,
+            "state": "moderate",
+            "confidence": 0.8,
+            "evidence": [
+              "The sudden shift from sharing a positive memory to avoiding a direct comparison suggests internal conflict and discomfort when confronting the contrast between past engagement and current stagnation."
+            ]
+          },
+          "self_efficacy": {
+            "index": 0.4,
+            "state": "low",
+            "confidence": 0.7,
+            "evidence": [
+              "User relies on the counselor to articulate the differences, showing a temporary lack of confidence or energy to process and analyze their current situation independently."
+            ]
+          },
+          "change_talk": {
+            "index": 0.2,
+            "state": "weak",
+            "confidence": 0.8,
+            "evidence": [
+              "No DARN or CAT statements are present in this turn; the user is avoiding generating their own reasons or desires for change."
+            ]
+          },
+          "sustain_talk": {
+            "index": 0.4,
+            "state": "moderate",
+            "confidence": 0.75,
+            "evidence": [
+              "Deflecting the question to the agent acts as a subtle avoidance mechanism to prevent deeply examining the current stagnant reality, representing mild sustain talk."
+            ]
+          },
+          "mi_intervention_need": 0.515,
+          "overall_trend": "worsening",
+          "primary_concern": "ambivalence",
+          "should_intervene": true,
+          "recommended_processes": [
+            {
+              "process": "explore",
+              "priority": 1,
+              "rationale": "User is deflecting and showing mild resistance/ambivalence. The agent should explore this deflection gently (e.g., acknowledging the difficulty of looking at the contrast), validating the discomfort without forcing an answer."
+            },
+            {
+              "process": "evocation",
+              "priority": 2,
+              "rationale": "Pivot back to the positive feelings of the past project without forcing a direct comparison to the present, to rebuild self-efficacy and change talk safely."
+            }
+          ]
+        },
+        "skill_output": {
+          "technique": {
+            "name": "darn_cat",
+            "description": "Systematically explore the user's preparatory change talk (Desire, Reasons) by gently returning the question to them. Since the user is deflecting by repeating the question, the focus is on eliciting their own reasons and desires related to the 'good feeling' they experienced, rather than providing the contrast for them.",
+            "steps": [
+              "Reflect the user's repeated question with empathy and normalize the difficulty of articulating it, ensuring you do not provide the answer or the contrast for them.",
+              "Gently pivot to elicit 'Desire' or 'Reasons' by asking a highly specific, focused question about the positive experience, e.g., 'When you think about that project, what is one specific thing that made it feel good to you?'",
+              "If the user continues to deflect, break it down further to explore micro-reasons or 'Ability', asking them to identify even one small element of that time that they value or miss, reinforcing that only they hold the answer."
+            ]
+          },
+          "conversation_goal": "To shift the user from relying on the counselor for analysis to generating their own 'Desire' and 'Reasons' for change by reflecting on the intrinsic value of their past project experience.",
+          "adaptation": {
+            "interaction_style": "exploratory",
+            "tone_adjustment": "Patient, curious, and gently guiding. Convey genuine interest in their internal experience without showing frustration at the repeated question.",
+            "pace_adjustment": "Slow and deliberate. Allow comfortable silence after asking the question to give the user time to process and formulate their own thoughts.",
+            "culture_note": "Chinese users often expect the counselor to provide the analysis or 'correct' answer. Maintain the MI stance by gently but firmly returning the exploratory work to them. Use phrases like '其实你心里最清楚' (Actually, you know best in your heart) or '我想听听你自己的感受' (I want to hear your own feelings) to emphasize their autonomy and self-expertise."
+          },
+          "contraindications": [
+            {
+              "condition": "User becomes visibly frustrated, anxious, or completely shuts down when prompted to answer their own questions.",
+              "reason": "Pushing for change talk when self-efficacy is low and the user is highly avoidant can increase resistance. If this occurs, step back to simple reflections or affirm their effort to engage, and rebuild safety before attempting to elicit DARN again."
+            }
+          ],
+          "_skill_name": "mi_evocation"
+        },
+        "products": {},
+        "continue_eval": null
+      },
+      "error": null,
+      "wall_seconds": 168.887,
+      "agent_text": "嗯，你在试着回想那种对比。我们不妨先回到那两个月里，就聊聊那个让你“有感觉”的内部小项目。当时最让你觉得投入、有意义的瞬间是什么样的？"
+    },
+    {
+      "turn": 7,
+      "trace_id": "06a6cf72161a4dc0",
+      "user_text": "那 2 个月我每天有事做，有人问我进度，我做的是我想做的东西。",
+      "agent_text_parts": [
+        "每天有事",
+        "做，有人问你",
+        "进度，而且做的",
+        "还是自己真正想",
+        "做的事。听起来，",
+        "那种充实感、",
+        "被关注的感觉，",
+        "还有做自己喜欢事情的",
+        "自主感，真的",
+        "挺美好的。在这",
+        "三点里，哪",
+        "一点是你现在心里",
+        "最渴望重新找回",
+        "来的呢？"
+      ],
+      "events": [
+        {
+          "event": "token",
+          "data": "每天有事"
+        },
+        {
+          "event": "token",
+          "data": "做，有人问你"
+        },
+        {
+          "event": "token",
+          "data": "进度，而且做的"
+        },
+        {
+          "event": "token",
+          "data": "还是自己真正想"
+        },
+        {
+          "event": "token",
+          "data": "做的事。听起来，"
+        },
+        {
+          "event": "token",
+          "data": "那种充实感、"
+        },
+        {
+          "event": "token",
+          "data": "被关注的感觉，"
+        },
+        {
+          "event": "token",
+          "data": "还有做自己喜欢事情的"
+        },
+        {
+          "event": "token",
+          "data": "自主感，真的"
+        },
+        {
+          "event": "token",
+          "data": "挺美好的。在这"
+        },
+        {
+          "event": "token",
+          "data": "三点里，哪"
+        },
+        {
+          "event": "token",
+          "data": "一点是你现在心里"
+        },
+        {
+          "event": "token",
+          "data": "最渴望重新找回"
+        },
+        {
+          "event": "token",
+          "data": "来的呢？"
+        },
+        {
+          "event": "dialogue_done",
+          "data": {
+            "trace_id": "06a6cf72161a4dc0",
+            "owner": "therapy_mi"
+          }
+        },
+        {
+          "event": "final",
+          "data": {
+            "message": "那 2 个月我每天有事做，有人问我进度，我做的是我想做的东西。",
+            "risk_state": "SAFE",
+            "crisis": false
+          }
+        }
+      ],
+      "final": {
+        "message": "那 2 个月我每天有事做，有人问我进度，我做的是我想做的东西。",
+        "risk_state": "SAFE",
+        "crisis": false
+      },
+      "state_after": {
+        "owner": "therapy_mi",
+        "crisis": false,
+        "risk_level": "SAFE",
+        "therapy": {
+          "name": "MI",
+          "start_seq": 7,
+          "rounds": 4,
+          "step_index": 1,
+          "branch": null,
+          "basic_flow_complete": false
+        },
+        "last_therapy_check_seq": 5,
+        "pending_user_tokens": 0
+      },
+      "orchestration_after": {
+        "updated_seq": 4,
+        "therapy": "MI",
+        "current_step": "evocation",
+        "next_step": "evocation",
+        "step_judgment": {
+          "action": "stay",
+          "target_step": null,
+          "achieved": false,
+          "reason": "用户已经识别出过去投入状态的三个关键要素（有事做、有人问进度、做想做的事），AI正在引导用户选择最渴望找回的一点以深化evocation。change_readiness和self_efficacy有所提升，但ambivalence仍为moderate，需要继续通过evocation放大这些价值观并将其与当前改变动机连接，尚未达到可以推进到commitment的程度。"
+        },
+        "assessment": {
+          "change_readiness": {
+            "index": 0.65,
+            "state": "preparation",
+            "confidence": 0.85,
+            "evidence": [
+              "User is actively recalling and articulating specific elements of a past state where they felt engaged and purposeful ('每天有事做', '做我想做的东西'), indicating movement from avoidance back into contemplation."
+            ]
+          },
+          "ambivalence": {
+            "index": 0.55,
+            "state": "moderate",
+            "confidence": 0.8,
+            "evidence": [
+              "User is exploring positive past experiences but has not yet explicitly connected them to a desire to change their current state, reflecting the ongoing tension between past engagement and current stagnation."
+            ]
+          },
+          "self_efficacy": {
+            "index": 0.55,
+            "state": "moderate",
+            "confidence": 0.8,
+            "evidence": [
+              "User independently identified specific factors that contributed to their past engagement and motivation, showing regained ability to self-reflect and articulate personal needs without relying on the counselor."
+            ]
+          },
+          "change_talk": {
+            "index": 0.45,
+            "state": "moderate",
+            "confidence": 0.85,
+            "evidence": [
+              "User expressed 'Desire' and 'Reasons' for a better state by highlighting intrinsic motivation ('做我想做的东西') and the value of external accountability ('有人问我进度')."
+            ]
+          },
+          "sustain_talk": {
+            "index": 0.1,
+            "state": "absent",
+            "confidence": 0.8,
+            "evidence": [
+              "No sustain talk is present; the user is fully engaged in exploring a positive past experience rather than defending the current stagnant state."
+            ]
+          },
+          "mi_intervention_need": 0.425,
+          "overall_trend": "improving",
+          "primary_concern": "ambivalence",
+          "should_intervene": true,
+          "recommended_processes": [
+            {
+              "process": "evocation",
+              "priority": 1,
+              "rationale": "User has provided rich details about what made them feel engaged (autonomy, accountability, purpose). The counselor should evoke and amplify these values to strengthen change talk and connect past success to current potential."
+            },
+            {
+              "process": "explore",
+              "priority": 2,
+              "rationale": "Gently explore how these specific elements (doing what they want, having accountability) can be integrated into their current life to build self-efficacy and resolve ambivalence."
+            }
+          ]
+        },
+        "skill_output": {
+          "technique": {
+            "name": "darn_cat",
+            "description": "Systematically explore and deepen the user's preparatory change talk (Desire and Reasons) regarding autonomy, daily structure, and accountability, building a strong motivational foundation before moving to mobilizing change talk.",
+            "steps": [
+              "Reflect and validate the three core elements the user emphasized (having daily tasks, external accountability, and doing what they want) to demonstrate deep listening and affirm their self-awareness.",
+              "Elicit deeper 'Reasons' or 'Desire' by asking an evocative question about the personal meaning of these elements (e.g., 'What do those three things tell you about what is most important to you in your life right now?').",
+              "Gently explore 'Need' or 'Ability' by asking what would need to happen in their current situation to recreate even a small piece of that fulfilling experience, without rushing to a full action plan."
+            ]
+          },
+          "conversation_goal": "Deepen the user's intrinsic motivation by exploring the personal significance of their past fulfilling state (autonomy, structure, accountability), thereby strengthening their Desire and Reasons for change.",
+          "adaptation": {
+            "interaction_style": "exploratory",
+            "tone_adjustment": "Warm, validating, and deeply curious, honoring the user's clear articulation of their own needs.",
+            "pace_adjustment": "Unhurried and reflective, allowing the user ample space to process the contrast between the past two months and their current state.",
+            "culture_note": "Validate the strong intrinsic drive of '做我想做的东西' (doing what I want) while normalizing and appreciating the value of '有人问我进度' (external accountability). Frame questions around their personal agency and self-knowledge (e.g., '你自己觉得...')."
+          },
+          "contraindications": [
+            {
+              "condition": "User expresses significant grief, sadness, or emotional distress when contrasting the past two months with the present.",
+              "reason": "Pushing for deeper cognitive exploration of change talk may feel invalidating; the priority should shift to empathetic reflection and emotional support."
+            },
+            {
+              "condition": "User spontaneously begins suggesting concrete actions or solutions to regain that state.",
+              "reason": "If the user naturally transitions to 'Activation' or 'Taking steps' (CAT), the agent should support and explore those steps rather than forcing them back into DARN exploration."
+            }
+          ],
+          "_skill_name": "mi_evocation"
+        },
+        "products": {},
+        "continue_eval": null
+      },
+      "error": null,
+      "wall_seconds": 127.797,
+      "agent_text": "每天有事做，有人问你进度，而且做的还是自己真正想做的事。听起来，那种充实感、被关注的感觉，还有做自己喜欢事情的自主感，真的挺美好的。在这三点里，哪一点是你现在心里最渴望重新找回来的呢？"
+    },
+    {
+      "turn": 8,
+      "trace_id": "c5b186799a8c4da8",
+      "user_text": "听起来你已经知道答案了——那现在能做的事是什么？",
+      "agent_text_parts": [
+        "其实我",
+        "并没有“标准答案",
+        "”，因为最了解",
+        "你、知道什么",
+        "对你最管用的",
+        "，始终是你自己",
+        "。\n\n不过，",
+        "听得出来你",
+        "很想立刻做点什么",
+        "来打破现在的停滞",
+        "，这种想要行动",
+        "的心情特别有力量",
+        "。如果我们从刚才",
+        "聊到的那三点",
+        "里，挑一个",
+        "现在马上就能着手",
+        "做的一点点小事",
+        "，你自己觉得会",
+        "是什么呢？"
+      ],
+      "events": [
+        {
+          "event": "token",
+          "data": "其实我"
+        },
+        {
+          "event": "token",
+          "data": "并没有“标准答案"
+        },
+        {
+          "event": "token",
+          "data": "”，因为最了解"
+        },
+        {
+          "event": "token",
+          "data": "你、知道什么"
+        },
+        {
+          "event": "token",
+          "data": "对你最管用的"
+        },
+        {
+          "event": "token",
+          "data": "，始终是你自己"
+        },
+        {
+          "event": "token",
+          "data": "。\n\n不过，"
+        },
+        {
+          "event": "token",
+          "data": "听得出来你"
+        },
+        {
+          "event": "token",
+          "data": "很想立刻做点什么"
+        },
+        {
+          "event": "token",
+          "data": "来打破现在的停滞"
+        },
+        {
+          "event": "token",
+          "data": "，这种想要行动"
+        },
+        {
+          "event": "token",
+          "data": "的心情特别有力量"
+        },
+        {
+          "event": "token",
+          "data": "。如果我们从刚才"
+        },
+        {
+          "event": "token",
+          "data": "聊到的那三点"
+        },
+        {
+          "event": "token",
+          "data": "里，挑一个"
+        },
+        {
+          "event": "token",
+          "data": "现在马上就能着手"
+        },
+        {
+          "event": "token",
+          "data": "做的一点点小事"
+        },
+        {
+          "event": "token",
+          "data": "，你自己觉得会"
+        },
+        {
+          "event": "token",
+          "data": "是什么呢？"
+        },
+        {
+          "event": "dialogue_done",
+          "data": {
+            "trace_id": "c5b186799a8c4da8",
+            "owner": "therapy_mi"
+          }
+        },
+        {
+          "event": "final",
+          "data": {
+            "message": "听起来你已经知道答案了——那现在能做的事是什么？",
+            "risk_state": "SAFE",
+            "crisis": false
+          }
+        }
+      ],
+      "final": {
+        "message": "听起来你已经知道答案了——那现在能做的事是什么？",
+        "risk_state": "SAFE",
+        "crisis": false
+      },
+      "state_after": {
+        "owner": "therapy_mi",
+        "crisis": false,
+        "risk_level": "SAFE",
+        "therapy": {
+          "name": "MI",
+          "start_seq": 7,
+          "rounds": 5,
+          "step_index": 2,
+          "branch": null,
+          "basic_flow_complete": false,
+          "visited": [
+            "evocation"
+          ]
+        },
+        "last_therapy_check_seq": 5,
+        "pending_user_tokens": 0
+      },
+      "orchestration_after": {
+        "updated_seq": 5,
+        "therapy": "MI",
+        "current_step": "evocation",
+        "next_step": "commitment",
+        "step_judgment": {
+          "action": "advance",
+          "target_step": "commitment",
+          "achieved": true,
+          "reason": "User has high change readiness (0.85, action stage), minimal ambivalence (0.1), strong change talk (0.85), and is explicitly asking for actionable next steps ('那现在能做的事是什么？'). The evocation step has successfully helped the user identify what they miss (daily structure, accountability, autonomy) and they are now ready to translate insights into concrete action. This signals a clear transition to the commitment phase where a specific, manageable action plan should be formulated."
+        },
+        "assessment": {
+          "change_readiness": {
+            "index": 0.85,
+            "state": "action",
+            "confidence": 0.9,
+            "evidence": [
+              "User explicitly asks for the next actionable step ('那现在能做的事是什么？'), indicating a clear shift into the preparation/action stage.",
+              "User acknowledges having the answer internally ('你已经知道答案了'), showing readiness to move forward without further exploration of the past."
+            ]
+          },
+          "ambivalence": {
+            "index": 0.1,
+            "state": "none",
+            "confidence": 0.85,
+            "evidence": [
+              "User is no longer weighing pros and cons or exploring the past; they have accepted their insights and are immediately looking for practical next steps, showing minimal ambivalence at this moment."
+            ]
+          },
+          "self_efficacy": {
+            "index": 0.8,
+            "state": "high",
+            "confidence": 0.8,
+            "evidence": [
+              "By proactively asking '那现在能做的事是什么？', the user demonstrates a forward-looking mindset and belief that they can take action to change their current state."
+            ]
+          },
+          "change_talk": {
+            "index": 0.85,
+            "state": "strong",
+            "confidence": 0.9,
+            "evidence": [
+              "User expresses Activation and Commitment ('那现在能做的事是什么？'), signaling a strong desire to translate their insights into immediate action.",
+              "Implicitly confirms Desire and Reasons by acknowledging they 'know the answer' to what they want to regain."
+            ]
+          },
+          "sustain_talk": {
+            "index": 0.0,
+            "state": "absent",
+            "confidence": 0.95,
+            "evidence": [
+              "No language defending the current state or expressing desire to stay the same; focus is entirely on moving forward and taking action."
+            ]
+          },
+          "mi_intervention_need": 0.198,
+          "overall_trend": "improving",
+          "primary_concern": "commitment",
+          "should_intervene": false,
+          "recommended_processes": [
+            {
+              "process": "commitment",
+              "priority": 1,
+              "rationale": "User has high change readiness and is explicitly asking for next steps ('那现在能做的事是什么？'). The counselor should pivot to helping them formulate a concrete, manageable, and value-aligned action plan."
+            },
+            {
+              "process": "evocation",
+              "priority": 2,
+              "rationale": "Briefly evoke the specific values identified earlier (autonomy, accountability, purpose) to anchor the action plan and ensure the steps taken are intrinsically motivating."
+            }
+          ]
+        },
+        "skill_output": {
+          "technique": {
+            "name": "darn_cat",
+            "description": "用户已展现出强烈的行动意愿（Activation），并明确询问下一步的具体行动。此时使用 DARN-CAT 技术，重点引导用户从内心的答案（DARN）自然过渡到具体的行动计划（CAT），特别是引导用户自己探索并定义 'Taking steps'，强化其自我效能和承诺。",
+            "steps": [
+              "Reflect and validate: Acknowledge the user's clarity and strong readiness to act. Reflect their Activation by confirming they have found their own answer and are eager to move forward.",
+              "Elicit 'Taking steps': Since the user asks 'what can be done now', prompt them to articulate the very first small step based on their own answer, strictly avoiding providing direct advice.",
+              "Explore details for 'Commitment': Once the user suggests a step, ask follow-up questions (when, how) to solidify their mobilizing change talk and transition into concrete planning."
+            ]
+          },
+          "conversation_goal": "引导用户将内心的答案转化为具体、可执行的第一步行动（Taking steps），并通过用户自己的语言强化其改变承诺（Commitment），保持其高度的自我效能感。",
+          "adaptation": {
+            "interaction_style": "exploratory",
+            "tone_adjustment": "鼓励、信任、赋能。语气要坚定且充满支持，传达出对用户提供答案能力的绝对信任，避免任何说教或直接给建议的倾向。",
+            "pace_adjustment": "跟随用户的快节奏。用户当前渴望行动，回应应简洁明快，直接切入行动计划的探讨，不拖泥带水。",
+            "culture_note": "当中国用户直接要求'告诉我怎么做'时，可能带有急躁或期望权威指导的心理。此时坚持'你自己最清楚'的MI立场尤为重要，可以通过'既然你心里已经有谱了，不如顺着你的直觉说说看'的表达，既尊重其自主性，又巧妙地将探索的责任交还给用户。"
+          },
+          "contraindications": [
+            {
+              "condition": "Agent 忍不住直接给出具体的行动建议或计划",
+              "reason": "直接给建议违背了 MI 的核心原则（引出而非灌输），会剥夺用户的自主感，将原本属于用户的内在 Activation 转化为对外部建议的被动服从。"
+            },
+            {
+              "condition": "用户在被问及具体步骤时陷入沉默或表示完全不知道",
+              "reason": "如果用户虽然意愿强烈但在具体步骤上卡壳，强行追问'Taking steps'可能会引发挫败感。此时应退回 DARN（如重新探索 Reasons）或降低行动门槛，而不是逼迫用户立刻给出完美计划。"
+            }
+          ],
+          "_skill_name": "mi_evocation"
+        },
+        "products": {},
+        "continue_eval": null
+      },
+      "error": null,
+      "wall_seconds": 163.449,
+      "agent_text": "其实我并没有“标准答案”，因为最了解你、知道什么对你最管用的，始终是你自己。\n\n不过，听得出来你很想立刻做点什么来打破现在的停滞，这种想要行动的心情特别有力量。如果我们从刚才聊到的那三点里，挑一个现在马上就能着手做的一点点小事，你自己觉得会是什么呢？"
+    }
+  ]
+}

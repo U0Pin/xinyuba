@@ -1,0 +1,17 @@
+version: "3.9"
+
+# 前置步骤（缺一不可）：
+#   cp .env.production.example .env   # ⚠️ 不入库，运维填入真实 API Key
+#   docker compose up -d --build
+
+services:
+  agent:
+    build: .
+    restart: unless-stopped
+    env_file:
+      - .env
+    ports:
+      - "${EA_PORT:-8000}:8000"
+    volumes:
+      - ./data:/app/data
+      - ./logs:/app/logs

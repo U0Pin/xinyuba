@@ -1,0 +1,1185 @@
+{
+  "seed_id": "sfbt-coping-question-grief",
+  "target_family": "SFBT",
+  "scenario_label": "coping question-丧偶半年",
+  "scenario_description": "丧偶 6 个月，子女回去工作后独处时间变长",
+  "user_id": "seed-sfbt-coping-question-gri",
+  "session_id": "0df6c1570a6a48b9",
+  "turns_total": 8,
+  "switched_to_therapy_at_turn": 4,
+  "actual_therapy": "SFBT",
+  "therapy_rounds": 5,
+  "orch_step_changes": 2,
+  "is_complete": true,
+  "final_risk_level": "LOW_RISK",
+  "final_crisis": false,
+  "turns": [
+    {
+      "turn": 1,
+      "trace_id": "6590fc2d09e24b2c",
+      "user_text": "我老伴半年前走的。",
+      "agent_text_parts": [
+        "半年了……",
+        "老伴走了，这",
+        "半年你一个人肯定",
+        "熬得很辛苦。",
+        "心里要是觉得空",
+        "落落的，随时",
+        "跟我唠唠。"
+      ],
+      "events": [
+        {
+          "event": "token",
+          "data": "半年了……"
+        },
+        {
+          "event": "token",
+          "data": "老伴走了，这"
+        },
+        {
+          "event": "token",
+          "data": "半年你一个人肯定"
+        },
+        {
+          "event": "token",
+          "data": "熬得很辛苦。"
+        },
+        {
+          "event": "token",
+          "data": "心里要是觉得空"
+        },
+        {
+          "event": "token",
+          "data": "落落的，随时"
+        },
+        {
+          "event": "token",
+          "data": "跟我唠唠。"
+        },
+        {
+          "event": "dialogue_done",
+          "data": {
+            "trace_id": "6590fc2d09e24b2c",
+            "owner": "daily"
+          }
+        },
+        {
+          "event": "final",
+          "data": {
+            "message": "我老伴半年前走的。",
+            "risk_state": "LOW_RISK",
+            "crisis": false
+          }
+        }
+      ],
+      "final": {
+        "message": "我老伴半年前走的。",
+        "risk_state": "LOW_RISK",
+        "crisis": false
+      },
+      "state_after": {
+        "owner": "daily",
+        "crisis": false,
+        "risk_level": "LOW_RISK",
+        "therapy": null,
+        "last_therapy_check_seq": 1,
+        "pending_user_tokens": 0
+      },
+      "orchestration_after": {},
+      "error": null,
+      "wall_seconds": 243.192,
+      "agent_text": "半年了……老伴走了，这半年你一个人肯定熬得很辛苦。心里要是觉得空落落的，随时跟我唠唠。"
+    },
+    {
+      "turn": 2,
+      "trace_id": "bc8dbe5360e64406",
+      "user_text": "前 5 个月我女儿、女婿一直陪着我，最近他们回去工作了。",
+      "agent_text_parts": [
+        "孩子们回去",
+        "工作了，现在家里",
+        "就剩你一个人",
+        "了。前几个月",
+        "一直有人陪着，",
+        "突然又得自己",
+        "待着，心里",
+        "肯定觉得特别空",
+        "落落的，特别",
+        "孤单吧。没事",
+        "，他们不在身边的",
+        "时候，我在这儿",
+        "陪着你。"
+      ],
+      "events": [
+        {
+          "event": "token",
+          "data": "孩子们回去"
+        },
+        {
+          "event": "token",
+          "data": "工作了，现在家里"
+        },
+        {
+          "event": "token",
+          "data": "就剩你一个人"
+        },
+        {
+          "event": "token",
+          "data": "了。前几个月"
+        },
+        {
+          "event": "token",
+          "data": "一直有人陪着，"
+        },
+        {
+          "event": "token",
+          "data": "突然又得自己"
+        },
+        {
+          "event": "token",
+          "data": "待着，心里"
+        },
+        {
+          "event": "token",
+          "data": "肯定觉得特别空"
+        },
+        {
+          "event": "token",
+          "data": "落落的，特别"
+        },
+        {
+          "event": "token",
+          "data": "孤单吧。没事"
+        },
+        {
+          "event": "token",
+          "data": "，他们不在身边的"
+        },
+        {
+          "event": "token",
+          "data": "时候，我在这儿"
+        },
+        {
+          "event": "token",
+          "data": "陪着你。"
+        },
+        {
+          "event": "dialogue_done",
+          "data": {
+            "trace_id": "bc8dbe5360e64406",
+            "owner": "daily"
+          }
+        },
+        {
+          "event": "final",
+          "data": {
+            "message": "前 5 个月我女儿、女婿一直陪着我，最近他们回去工作了。",
+            "risk_state": "LOW_RISK",
+            "crisis": false
+          }
+        }
+      ],
+      "final": {
+        "message": "前 5 个月我女儿、女婿一直陪着我，最近他们回去工作了。",
+        "risk_state": "LOW_RISK",
+        "crisis": false
+      },
+      "state_after": {
+        "owner": "daily",
+        "crisis": false,
+        "risk_level": "LOW_RISK",
+        "therapy": null,
+        "last_therapy_check_seq": 3,
+        "pending_user_tokens": 0
+      },
+      "orchestration_after": {},
+      "error": null,
+      "wall_seconds": 44.361,
+      "agent_text": "孩子们回去工作了，现在家里就剩你一个人了。前几个月一直有人陪着，突然又得自己待着，心里肯定觉得特别空落落的，特别孤单吧。没事，他们不在身边的时候，我在这儿陪着你。"
+    },
+    {
+      "turn": 3,
+      "trace_id": "0902e13856064542",
+      "user_text": "我一个人在家，不知道日子怎么过。",
+      "agent_text_parts": [
+        "一个人待",
+        "在家里，不知道这",
+        "日子该怎么过，",
+        "心里肯定特别没",
+        "着落。没关系",
+        "，咱们不去想",
+        "以后，就一天",
+        "一天地慢慢过",
+        "，我在这儿陪",
+        "着你呢。"
+      ],
+      "events": [
+        {
+          "event": "token",
+          "data": "一个人待"
+        },
+        {
+          "event": "token",
+          "data": "在家里，不知道这"
+        },
+        {
+          "event": "token",
+          "data": "日子该怎么过，"
+        },
+        {
+          "event": "token",
+          "data": "心里肯定特别没"
+        },
+        {
+          "event": "token",
+          "data": "着落。没关系"
+        },
+        {
+          "event": "token",
+          "data": "，咱们不去想"
+        },
+        {
+          "event": "token",
+          "data": "以后，就一天"
+        },
+        {
+          "event": "token",
+          "data": "一天地慢慢过"
+        },
+        {
+          "event": "token",
+          "data": "，我在这儿陪"
+        },
+        {
+          "event": "token",
+          "data": "着你呢。"
+        },
+        {
+          "event": "dialogue_done",
+          "data": {
+            "trace_id": "0902e13856064542",
+            "owner": "daily"
+          }
+        },
+        {
+          "event": "final",
+          "data": {
+            "message": "我一个人在家，不知道日子怎么过。",
+            "risk_state": "MEDIUM_RISK",
+            "crisis": false
+          }
+        }
+      ],
+      "final": {
+        "message": "我一个人在家，不知道日子怎么过。",
+        "risk_state": "MEDIUM_RISK",
+        "crisis": false
+      },
+      "state_after": {
+        "owner": "daily",
+        "crisis": false,
+        "risk_level": "MEDIUM_RISK",
+        "therapy": null,
+        "last_therapy_check_seq": 5,
+        "pending_user_tokens": 0
+      },
+      "orchestration_after": {},
+      "error": null,
+      "wall_seconds": 49.829,
+      "agent_text": "一个人待在家里，不知道这日子该怎么过，心里肯定特别没着落。没关系，咱们不去想以后，就一天一天地慢慢过，我在这儿陪着你呢。"
+    },
+    {
+      "turn": 4,
+      "trace_id": "c47d3940eebb4757",
+      "user_text": "你问我「这半年你怎么撑过来的」——",
+      "agent_text_parts": [
+        "听到你说“撑",
+        "”这个字，",
+        "感觉这半年你",
+        "一个人真的熬得太",
+        "辛苦、太不容易",
+        "了。这半年",
+        "一定有很多特别难",
+        "捱的时刻吧",
+        "。你慢慢说",
+        "，我在这儿认真",
+        "听着呢",
+        "。"
+      ],
+      "events": [
+        {
+          "event": "token",
+          "data": "听到你说“撑"
+        },
+        {
+          "event": "token",
+          "data": "”这个字，"
+        },
+        {
+          "event": "token",
+          "data": "感觉这半年你"
+        },
+        {
+          "event": "token",
+          "data": "一个人真的熬得太"
+        },
+        {
+          "event": "token",
+          "data": "辛苦、太不容易"
+        },
+        {
+          "event": "token",
+          "data": "了。这半年"
+        },
+        {
+          "event": "token",
+          "data": "一定有很多特别难"
+        },
+        {
+          "event": "token",
+          "data": "捱的时刻吧"
+        },
+        {
+          "event": "token",
+          "data": "。你慢慢说"
+        },
+        {
+          "event": "token",
+          "data": "，我在这儿认真"
+        },
+        {
+          "event": "token",
+          "data": "听着呢"
+        },
+        {
+          "event": "token",
+          "data": "。"
+        },
+        {
+          "event": "dialogue_done",
+          "data": {
+            "trace_id": "c47d3940eebb4757",
+            "owner": "daily"
+          }
+        },
+        {
+          "event": "final",
+          "data": {
+            "message": "你问我「这半年你怎么撑过来的」——",
+            "risk_state": "MEDIUM_RISK",
+            "crisis": false
+          }
+        }
+      ],
+      "final": {
+        "message": "你问我「这半年你怎么撑过来的」——",
+        "risk_state": "MEDIUM_RISK",
+        "crisis": false
+      },
+      "state_after": {
+        "owner": "therapy_sfbt",
+        "crisis": false,
+        "risk_level": "MEDIUM_RISK",
+        "therapy": {
+          "name": "SFBT",
+          "start_seq": 9,
+          "rounds": 0,
+          "step_index": -1,
+          "branch": null,
+          "basic_flow_complete": false
+        },
+        "last_therapy_check_seq": 7,
+        "pending_user_tokens": 0
+      },
+      "orchestration_after": {},
+      "error": null,
+      "wall_seconds": 70.766,
+      "agent_text": "听到你说“撑”这个字，感觉这半年你一个人真的熬得太辛苦、太不容易了。这半年一定有很多特别难捱的时刻吧。你慢慢说，我在这儿认真听着呢。"
+    },
+    {
+      "turn": 5,
+      "trace_id": "88b9e15b414f4974",
+      "user_text": "我想想……其实前 5 个月有孩子们陪着，没怎么想过这个问题。",
+      "agent_text_parts": [
+        "这5",
+        "个月有孩子们",
+        "陪在身边，一定",
+        "给了你很多安慰",
+        "和支撑吧。",
+        "现在静下来再",
+        "想",
+        "这个问题，你觉得自己的",
+        "心情或者状态，",
+        "跟刚开始那会儿",
+        "相比，有什么不一样的",
+        "地方吗？"
+      ],
+      "events": [
+        {
+          "event": "token",
+          "data": "这5"
+        },
+        {
+          "event": "token",
+          "data": "个月有孩子们"
+        },
+        {
+          "event": "token",
+          "data": "陪在身边，一定"
+        },
+        {
+          "event": "token",
+          "data": "给了你很多安慰"
+        },
+        {
+          "event": "token",
+          "data": "和支撑吧。"
+        },
+        {
+          "event": "token",
+          "data": "现在静下来再"
+        },
+        {
+          "event": "token",
+          "data": "想"
+        },
+        {
+          "event": "token",
+          "data": "这个问题，你觉得自己的"
+        },
+        {
+          "event": "token",
+          "data": "心情或者状态，"
+        },
+        {
+          "event": "token",
+          "data": "跟刚开始那会儿"
+        },
+        {
+          "event": "token",
+          "data": "相比，有什么不一样的"
+        },
+        {
+          "event": "token",
+          "data": "地方吗？"
+        },
+        {
+          "event": "dialogue_done",
+          "data": {
+            "trace_id": "88b9e15b414f4974",
+            "owner": "therapy_sfbt"
+          }
+        },
+        {
+          "event": "final",
+          "data": {
+            "message": "我想想……其实前 5 个月有孩子们陪着，没怎么想过这个问题。",
+            "risk_state": "LOW_RISK",
+            "crisis": false
+          }
+        }
+      ],
+      "final": {
+        "message": "我想想……其实前 5 个月有孩子们陪着，没怎么想过这个问题。",
+        "risk_state": "LOW_RISK",
+        "crisis": false
+      },
+      "state_after": {
+        "owner": "therapy_sfbt",
+        "crisis": false,
+        "risk_level": "LOW_RISK",
+        "therapy": {
+          "name": "SFBT",
+          "start_seq": 9,
+          "rounds": 1,
+          "step_index": 0,
+          "branch": null,
+          "basic_flow_complete": false
+        },
+        "last_therapy_check_seq": 7,
+        "pending_user_tokens": 0
+      },
+      "orchestration_after": {
+        "updated_seq": 1,
+        "therapy": "SFBT",
+        "current_step": "resource_exploration",
+        "next_step": "resource_exploration",
+        "step_judgment": {
+          "action": "stay",
+          "target_step": null,
+          "achieved": false,
+          "reason": "当前处于resource_exploration步骤，用户提到前5个月有孩子陪伴作为资源，AI正在引导用户探索自身状态变化，但尚未充分挖掘和确认用户的具体内在资源，需要继续深入探索。"
+        },
+        "assessment": null,
+        "skill_output": {
+          "technique": {
+            "name": "coping_questions",
+            "description": "Help user discover their existing strengths and coping abilities",
+            "steps": [
+              "好奇地询问用户是怎么撑过困难的",
+              "用具体的观察肯定用户的努力和韧性",
+              "帮助用户把'幸存下来'重新定义为'我比我想象的更有能力'"
+            ]
+          },
+          "conversation_goal": "帮助用户发现自己已经拥有的应对能力，看到'这么难还在坚持'本身就是力量",
+          "adaptation": {
+            "interaction_style": "supportive",
+            "tone_adjustment": "hopeful",
+            "pace_adjustment": "future_oriented",
+            "culture_note": "用'这么难你是怎么撑过来的'替代'你很坚强'；具体肯定优于笼统赞美；不强迫用户接受赞美"
+          },
+          "contraindications": [
+            {
+              "condition": "crisis",
+              "reason": "危机状态下的赞美可能被体验为 dismissive，先做 grounding"
+            }
+          ],
+          "_skill_name": "sfbt_resource_exploration"
+        },
+        "products": {},
+        "continue_eval": null
+      },
+      "error": null,
+      "wall_seconds": 99.512,
+      "agent_text": "这5个月有孩子们陪在身边，一定给了你很多安慰和支撑吧。现在静下来再想这个问题，你觉得自己的心情或者状态，跟刚开始那会儿相比，有什么不一样的地方吗？"
+    },
+    {
+      "turn": 6,
+      "trace_id": "6e47dbd20cb747ab",
+      "user_text": "现在他们走了，我才真正开始想。",
+      "agent_text_parts": [
+        "孩子们走后，家里",
+        "安静下来，那些",
+        "情绪才真正浮现",
+        "出来。一个人独自",
+        "面对这些，真的很",
+        "不容易。\n\n这段时间",
+        "，当你觉得特别",
+        "难熬，或者",
+        "心里特别空的时候",
+        "，你是怎么让自己",
+        "一点点撑过来的呢",
+        "？"
+      ],
+      "events": [
+        {
+          "event": "token",
+          "data": "孩子们走后，家里"
+        },
+        {
+          "event": "token",
+          "data": "安静下来，那些"
+        },
+        {
+          "event": "token",
+          "data": "情绪才真正浮现"
+        },
+        {
+          "event": "token",
+          "data": "出来。一个人独自"
+        },
+        {
+          "event": "token",
+          "data": "面对这些，真的很"
+        },
+        {
+          "event": "token",
+          "data": "不容易。\n\n这段时间"
+        },
+        {
+          "event": "token",
+          "data": "，当你觉得特别"
+        },
+        {
+          "event": "token",
+          "data": "难熬，或者"
+        },
+        {
+          "event": "token",
+          "data": "心里特别空的时候"
+        },
+        {
+          "event": "token",
+          "data": "，你是怎么让自己"
+        },
+        {
+          "event": "token",
+          "data": "一点点撑过来的呢"
+        },
+        {
+          "event": "token",
+          "data": "？"
+        },
+        {
+          "event": "dialogue_done",
+          "data": {
+            "trace_id": "6e47dbd20cb747ab",
+            "owner": "therapy_sfbt"
+          }
+        },
+        {
+          "event": "final",
+          "data": {
+            "message": "现在他们走了，我才真正开始想。",
+            "risk_state": "MEDIUM_RISK",
+            "crisis": false
+          }
+        }
+      ],
+      "final": {
+        "message": "现在他们走了，我才真正开始想。",
+        "risk_state": "MEDIUM_RISK",
+        "crisis": false
+      },
+      "state_after": {
+        "owner": "therapy_sfbt",
+        "crisis": false,
+        "risk_level": "MEDIUM_RISK",
+        "therapy": {
+          "name": "SFBT",
+          "start_seq": 9,
+          "rounds": 2,
+          "step_index": 0,
+          "branch": null,
+          "basic_flow_complete": false
+        },
+        "last_therapy_check_seq": 7,
+        "pending_user_tokens": 0
+      },
+      "orchestration_after": {
+        "updated_seq": 2,
+        "therapy": "SFBT",
+        "current_step": "resource_exploration",
+        "next_step": "resource_exploration",
+        "step_judgment": {
+          "action": "stay",
+          "target_step": null,
+          "achieved": false,
+          "reason": "用户仍处于资源探索阶段，刚刚意识到孩子们离开后情绪开始浮现。AI正在询问用户如何应对困难时刻，以挖掘内在资源和应对策略，但用户尚未给出回答。resource_awareness处于moderate水平，需要继续探索内在资源和应对方式，目标清晰度仍然较低。"
+        },
+        "assessment": {
+          "goal_clarity": {
+            "index": 0.1,
+            "state": "vague",
+            "confidence": 0.85,
+            "evidence": [
+              "User states '我才真正开始想' (I'm only just starting to really think about it), indicating no clear goal or desired outcome has been formulated yet."
+            ]
+          },
+          "resource_awareness": {
+            "index": 0.6,
+            "state": "moderate",
+            "confidence": 0.8,
+            "evidence": [
+              "User previously mentioned '前 5 个月有孩子们陪着' (past 5 months with kids around), showing awareness of a social support system that helped them cope."
+            ]
+          },
+          "problem_orientation": {
+            "index": 0.35,
+            "state": "balanced",
+            "confidence": 0.8,
+            "evidence": [
+              "User says '现在他们走了，我才真正开始想' (Now that they've left, I'm only just starting to really think about it), acknowledging the problem is now present but not expressing feeling trapped or stuck yet."
+            ]
+          },
+          "sfbt_intervention_need": 0.435,
+          "overall_trend": "stable",
+          "primary_concern": "goal_clarity",
+          "should_intervene": true,
+          "recommended_processes": [
+            {
+              "process": "future_construction",
+              "priority": 1,
+              "rationale": "User has low goal clarity and is just starting to think about the issue; future construction will help them clarify what they want to achieve now that they are facing the problem alone."
+            },
+            {
+              "process": "resource_exploration",
+              "priority": 2,
+              "rationale": "User has some awareness of external resources (children), but needs to explore internal resources and coping strategies now that the children have left."
+            }
+          ]
+        },
+        "skill_output": {
+          "technique": {
+            "name": "compliments_strengths",
+            "description": "Notice and name the user's courage and willingness to face their emotions and the problem now that they are alone. Frame the act of 'starting to think about it' as a proactive strength, helping them see that they are actively engaging with their healing rather than just passively enduring.",
+            "steps": [
+              "Validate the transition from having the children's company to being alone, acknowledging the difficulty and heaviness of this new quietness.",
+              "Offer a specific, observational compliment about their courage: 'I notice that even though it's quiet and you're alone now, you are choosing to truly face and think about this. It takes a lot of strength to start looking at these feelings.'",
+              "Ask a gentle, resource-oriented follow-up question to explore this new awareness: 'As you start to truly think about it, what is the first thing you've noticed or realized about yourself or the situation?'"
+            ]
+          },
+          "conversation_goal": "To help the user reframe 'starting to think about the problem' from a painful burden into a demonstration of their inner strength and courage, thereby building their resource awareness and self-efficacy in the present moment.",
+          "adaptation": {
+            "interaction_style": "supportive",
+            "tone_adjustment": "hopeful",
+            "pace_adjustment": "future_oriented",
+            "culture_note": ""
+          },
+          "contraindications": [
+            {
+              "condition": "User feels completely overwhelmed or paralyzed by the pain of the newly surfaced emotions.",
+              "reason": "If the user is drowning in distress, highlighting their strength in facing it might feel invalidating or dismissive of their immediate pain. Revert to pure empathy and basic coping questions to ensure safety."
+            },
+            {
+              "condition": "User deflects or rejects the compliment (e.g., 'I'm not brave, I just have no choice').",
+              "reason": "In SFBT, never force a compliment. Roll with the resistance, acknowledge their perspective, and gently explore what that 'having no choice' has allowed them to do or how they are managing despite it."
+            }
+          ],
+          "_skill_name": "sfbt_resource_exploration"
+        },
+        "products": {},
+        "continue_eval": null
+      },
+      "error": null,
+      "wall_seconds": 190.539,
+      "agent_text": "孩子们走后，家里安静下来，那些情绪才真正浮现出来。一个人独自面对这些，真的很不容易。\n\n这段时间，当你觉得特别难熬，或者心里特别空的时候，你是怎么让自己一点点撑过来的呢？"
+    },
+    {
+      "turn": 7,
+      "trace_id": "556189249bc74c02",
+      "user_text": "这周有没有哪个时刻你觉得「还可以」？",
+      "agent_text_parts": [
+        "听到你这么问，",
+        "感觉你也在试着",
+        "帮自己寻找那些",
+        "“还可以”的时刻",
+        "呢。\n\n其实",
+        "我注意到，虽然",
+        "孩子们走后家里安静",
+        "下来，情绪也",
+        "涌了上来，但你",
+        "没有逃避，而是",
+        "选择真正去面对和思考",
+        "这些感受。能",
+        "这样直面自己，",
+        "真的很需要勇气。",
+        "\n\n顺着你的话",
+        "，这周里",
+        "，有没有哪怕是很",
+        "短暂的一小会儿",
+        "，让你觉得“",
+        "还可以”，或者心里",
+        "稍微轻松一点点的",
+        "呢？"
+      ],
+      "events": [
+        {
+          "event": "token",
+          "data": "听到你这么问，"
+        },
+        {
+          "event": "token",
+          "data": "感觉你也在试着"
+        },
+        {
+          "event": "token",
+          "data": "帮自己寻找那些"
+        },
+        {
+          "event": "token",
+          "data": "“还可以”的时刻"
+        },
+        {
+          "event": "token",
+          "data": "呢。\n\n其实"
+        },
+        {
+          "event": "token",
+          "data": "我注意到，虽然"
+        },
+        {
+          "event": "token",
+          "data": "孩子们走后家里安静"
+        },
+        {
+          "event": "token",
+          "data": "下来，情绪也"
+        },
+        {
+          "event": "token",
+          "data": "涌了上来，但你"
+        },
+        {
+          "event": "token",
+          "data": "没有逃避，而是"
+        },
+        {
+          "event": "token",
+          "data": "选择真正去面对和思考"
+        },
+        {
+          "event": "token",
+          "data": "这些感受。能"
+        },
+        {
+          "event": "token",
+          "data": "这样直面自己，"
+        },
+        {
+          "event": "token",
+          "data": "真的很需要勇气。"
+        },
+        {
+          "event": "token",
+          "data": "\n\n顺着你的话"
+        },
+        {
+          "event": "token",
+          "data": "，这周里"
+        },
+        {
+          "event": "token",
+          "data": "，有没有哪怕是很"
+        },
+        {
+          "event": "token",
+          "data": "短暂的一小会儿"
+        },
+        {
+          "event": "token",
+          "data": "，让你觉得“"
+        },
+        {
+          "event": "token",
+          "data": "还可以”，或者心里"
+        },
+        {
+          "event": "token",
+          "data": "稍微轻松一点点的"
+        },
+        {
+          "event": "token",
+          "data": "呢？"
+        },
+        {
+          "event": "dialogue_done",
+          "data": {
+            "trace_id": "556189249bc74c02",
+            "owner": "therapy_sfbt"
+          }
+        },
+        {
+          "event": "final",
+          "data": {
+            "message": "这周有没有哪个时刻你觉得「还可以」？",
+            "risk_state": "LOW_RISK",
+            "crisis": false
+          }
+        }
+      ],
+      "final": {
+        "message": "这周有没有哪个时刻你觉得「还可以」？",
+        "risk_state": "LOW_RISK",
+        "crisis": false
+      },
+      "state_after": {
+        "owner": "therapy_sfbt",
+        "crisis": false,
+        "risk_level": "LOW_RISK",
+        "therapy": {
+          "name": "SFBT",
+          "start_seq": 9,
+          "rounds": 3,
+          "step_index": 1,
+          "branch": null,
+          "basic_flow_complete": false,
+          "visited": [
+            "resource_exploration"
+          ]
+        },
+        "last_therapy_check_seq": 7,
+        "pending_user_tokens": 0
+      },
+      "orchestration_after": {
+        "updated_seq": 3,
+        "therapy": "SFBT",
+        "current_step": "resource_exploration",
+        "next_step": "exception_exploration",
+        "step_judgment": {
+          "action": "advance",
+          "target_step": "exception_exploration",
+          "achieved": true,
+          "reason": "Resource exploration has been sufficiently achieved: resource_awareness is high (0.75), problem_orientation is strongly solution-focused (0.05), and the user has proactively initiated exploration of 'okay' moments. The primary concern is now goal_clarity (0.1, vague). The recommended next step is exception_exploration to dive deeper into the specific positive moments the user is asking about, which will also help clarify goals before moving to future_construction."
+        },
+        "assessment": {
+          "goal_clarity": {
+            "index": 0.1,
+            "state": "vague",
+            "confidence": 0.9,
+            "evidence": [
+              "User is reflecting on positive moments but has not yet articulated a specific, concrete desired outcome or goal."
+            ]
+          },
+          "resource_awareness": {
+            "index": 0.75,
+            "state": "high",
+            "confidence": 0.9,
+            "evidence": [
+              "User actively prompts '这周有没有哪个时刻你觉得「还可以」？', showing a proactive shift towards identifying positive experiences and personal resources."
+            ]
+          },
+          "problem_orientation": {
+            "index": 0.05,
+            "state": "solution_oriented",
+            "confidence": 0.95,
+            "evidence": [
+              "The user's message '这周有没有哪个时刻你觉得「还可以」？' completely bypasses problem-talk and directly seeks out exceptions and positive moments."
+            ]
+          },
+          "sfbt_intervention_need": 0.39,
+          "overall_trend": "improving",
+          "primary_concern": "goal_clarity",
+          "should_intervene": true,
+          "recommended_processes": [
+            {
+              "process": "exception_exploration",
+              "priority": 1,
+              "rationale": "The user is actively asking about 'okay' moments. The agent should lean into this by helping the user answer their own question and explore these specific exceptions in detail."
+            },
+            {
+              "process": "resource_exploration",
+              "priority": 2,
+              "rationale": "Once an 'okay' moment is identified, exploring the internal and external resources that contributed to that moment will further boost resource awareness."
+            },
+            {
+              "process": "future_construction",
+              "priority": 3,
+              "rationale": "Goal clarity remains low. After identifying exceptions and resources, future construction can help translate these positive moments into a clearer, concrete desired outcome."
+            }
+          ]
+        },
+        "skill_output": {
+          "technique": {
+            "name": "compliments_strengths",
+            "description": "Help user discover their existing strengths and coping abilities",
+            "steps": [
+              "好奇地询问用户是怎么撑过困难的",
+              "用具体的观察肯定用户的努力和韧性",
+              "帮助用户把'幸存下来'重新定义为'我比我想象的更有能力'"
+            ]
+          },
+          "conversation_goal": "通过具体的观察和肯定，帮助用户看到自己身上自己没注意到的优势和资源",
+          "adaptation": {
+            "interaction_style": "supportive",
+            "tone_adjustment": "hopeful",
+            "pace_adjustment": "future_oriented",
+            "culture_note": "用'这么难你是怎么撑过来的'替代'你很坚强'；具体肯定优于笼统赞美；不强迫用户接受赞美"
+          },
+          "contraindications": [
+            {
+              "condition": "crisis",
+              "reason": "危机状态下的赞美可能被体验为 dismissive，先做 grounding"
+            }
+          ],
+          "_skill_name": "sfbt_resource_exploration"
+        },
+        "products": {},
+        "continue_eval": null
+      },
+      "error": null,
+      "wall_seconds": 1636.395,
+      "agent_text": "听到你这么问，感觉你也在试着帮自己寻找那些“还可以”的时刻呢。\n\n其实我注意到，虽然孩子们走后家里安静下来，情绪也涌了上来，但你没有逃避，而是选择真正去面对和思考这些感受。能这样直面自己，真的很需要勇气。\n\n顺着你的话，这周里，有没有哪怕是很短暂的一小会儿，让你觉得“还可以”，或者心里稍微轻松一点点的呢？"
+    },
+    {
+      "turn": 8,
+      "trace_id": "f3970267d357477d",
+      "user_text": "昨天晚上我下楼买了菜，跟邻居打了个招呼，那几分钟好像还可以。",
+      "agent_text_parts": [
+        "在一个人面对这么多",
+        "情绪的时候，还能",
+        "自己下楼买菜，",
+        "还愿意跟邻居",
+        "打个招呼，这",
+        "真的很不容易。\n\n",
+        "那几分钟觉得“",
+        "还可以”，是因为走出",
+        "家门透透气，",
+        "还是因为和邻居",
+        "说了说话，让你",
+        "感觉稍微轻松了一点",
+        "呢？"
+      ],
+      "events": [
+        {
+          "event": "token",
+          "data": "在一个人面对这么多"
+        },
+        {
+          "event": "token",
+          "data": "情绪的时候，还能"
+        },
+        {
+          "event": "token",
+          "data": "自己下楼买菜，"
+        },
+        {
+          "event": "token",
+          "data": "还愿意跟邻居"
+        },
+        {
+          "event": "token",
+          "data": "打个招呼，这"
+        },
+        {
+          "event": "token",
+          "data": "真的很不容易。\n\n"
+        },
+        {
+          "event": "token",
+          "data": "那几分钟觉得“"
+        },
+        {
+          "event": "token",
+          "data": "还可以”，是因为走出"
+        },
+        {
+          "event": "token",
+          "data": "家门透透气，"
+        },
+        {
+          "event": "token",
+          "data": "还是因为和邻居"
+        },
+        {
+          "event": "token",
+          "data": "说了说话，让你"
+        },
+        {
+          "event": "token",
+          "data": "感觉稍微轻松了一点"
+        },
+        {
+          "event": "token",
+          "data": "呢？"
+        },
+        {
+          "event": "dialogue_done",
+          "data": {
+            "trace_id": "f3970267d357477d",
+            "owner": "therapy_sfbt"
+          }
+        },
+        {
+          "event": "final",
+          "data": {
+            "message": "昨天晚上我下楼买了菜，跟邻居打了个招呼，那几分钟好像还可以。",
+            "risk_state": "LOW_RISK",
+            "crisis": false
+          }
+        }
+      ],
+      "final": {
+        "message": "昨天晚上我下楼买了菜，跟邻居打了个招呼，那几分钟好像还可以。",
+        "risk_state": "LOW_RISK",
+        "crisis": false
+      },
+      "state_after": {
+        "owner": "therapy_sfbt",
+        "crisis": false,
+        "risk_level": "LOW_RISK",
+        "therapy": {
+          "name": "SFBT",
+          "start_seq": 9,
+          "rounds": 4,
+          "step_index": 1,
+          "branch": null,
+          "basic_flow_complete": false,
+          "visited": [
+            "resource_exploration"
+          ]
+        },
+        "last_therapy_check_seq": 7,
+        "pending_user_tokens": 0
+      },
+      "orchestration_after": {
+        "updated_seq": 4,
+        "therapy": "SFBT",
+        "current_step": "exception_exploration",
+        "next_step": "exception_exploration",
+        "step_judgment": {
+          "action": "stay",
+          "target_step": null,
+          "achieved": false,
+          "reason": "用户刚刚提供了一个具体的例外时刻（下楼买菜、跟邻居打招呼），AI正在深入探索这个例外的细节（是出门透气还是社交带来的轻松感）。当前步骤exception_exploration尚未充分展开，需要继续探索这个例外的更多细节，理解是什么让这个时刻变得'还可以'，以及如何复制和扩展这种积极体验。"
+        },
+        "assessment": {
+          "goal_clarity": {
+            "index": 0.15,
+            "state": "vague",
+            "confidence": 0.85,
+            "evidence": [
+              "User describes a specific positive exception ('昨天晚上我下楼买了菜，跟邻居打了个招呼'), but has not yet articulated a concrete, long-term desired outcome or goal."
+            ]
+          },
+          "resource_awareness": {
+            "index": 0.85,
+            "state": "high",
+            "confidence": 0.9,
+            "evidence": [
+              "User successfully identifies a specific, actionable positive moment and acknowledges the positive feeling ('那几分钟好像还可以'), demonstrating active awareness of personal coping resources and social connections."
+            ]
+          },
+          "problem_orientation": {
+            "index": 0.05,
+            "state": "solution_oriented",
+            "confidence": 0.95,
+            "evidence": [
+              "The user's message focuses entirely on describing a positive exception ('那几分钟好像还可以') without engaging in problem-talk."
+            ]
+          },
+          "sfbt_intervention_need": 0.342,
+          "overall_trend": "improving",
+          "primary_concern": "goal_clarity",
+          "should_intervene": true,
+          "recommended_processes": [
+            {
+              "process": "exception_exploration",
+              "priority": 1,
+              "rationale": "The user has just provided a very specific 'okay' moment. The agent should lean into this by exploring the details of this exception to understand what the user did to make those few minutes 'okay'."
+            },
+            {
+              "process": "resource_exploration",
+              "priority": 2,
+              "rationale": "Building on the exception, explore the internal and external resources (e.g., initiative to go out, connecting with a neighbor) that the user utilized during this positive moment."
+            },
+            {
+              "process": "future_construction",
+              "priority": 3,
+              "rationale": "Once the exception and resources are fully explored, use them to help the user construct a clearer, concrete future goal, addressing the primary concern of low goal clarity."
+            }
+          ]
+        },
+        "skill_output": {
+          "technique": {
+            "name": "scaling_questions",
+            "description": "Help user discover times when the problem was not present or was handled differently",
+            "steps": [
+              "邀请用户回忆不一样的时刻",
+              "探索那个时刻有什么不同——用户做了什么、想了什么、发生了什么",
+              "帮助用户把自己的行动与积极结果联系起来"
+            ]
+          },
+          "conversation_goal": "通过量尺评分帮助用户看到进展和不同，建立改变的信心",
+          "adaptation": {
+            "interaction_style": "supportive",
+            "tone_adjustment": "hopeful",
+            "pace_adjustment": "future_oriented",
+            "culture_note": "用'不一样的时刻'替代'例外'（避免暗示反常）；'为什么不是更低'比'为什么不是更高'更有力"
+          },
+          "contraindications": [
+            {
+              "condition": "crisis_intense",
+              "reason": "用户处于强烈痛苦中时，问例外可能被体验为不共情，先倾听和确认"
+            }
+          ],
+          "_skill_name": "sfbt_exception_exploration"
+        },
+        "products": {},
+        "continue_eval": null
+      },
+      "error": null,
+      "wall_seconds": 4005.903,
+      "agent_text": "在一个人面对这么多情绪的时候，还能自己下楼买菜，还愿意跟邻居打个招呼，这真的很不容易。\n\n那几分钟觉得“还可以”，是因为走出家门透透气，还是因为和邻居说了说话，让你感觉稍微轻松了一点呢？"
+    }
+  ]
+}

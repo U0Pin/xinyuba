@@ -1,0 +1,1896 @@
+{
+  "seed_id": "cbt-perfectionism-procrastination",
+  "target_family": "CBT",
+  "scenario_label": "完美主义拖延-论文写作",
+  "scenario_description": "研究生论文拖了 3 周没动，担心写不好导致拖延",
+  "user_id": "seed-cbt-perfectionism-procra",
+  "session_id": "01b026ffca2d496a",
+  "turns_total": 8,
+  "switched_to_therapy_at_turn": 1,
+  "actual_therapy": "CBT",
+  "therapy_rounds": 8,
+  "orch_step_changes": 3,
+  "is_complete": true,
+  "final_risk_level": "SAFE",
+  "final_crisis": false,
+  "turns": [
+    {
+      "turn": 1,
+      "trace_id": "b7e188f4ddbd480b",
+      "user_text": "我论文拖了三周了，一行字都没写。",
+      "agent_text_parts": [
+        "拖了三",
+        "周一行字",
+        "都没写，现在",
+        "心里肯定特别焦",
+        "灼和自责吧",
+        "。看着论文就",
+        "在那儿，却",
+        "怎么也下不去手",
+        "，这种感觉真的挺",
+        "折磨人的。"
+      ],
+      "events": [
+        {
+          "event": "token",
+          "data": "拖了三"
+        },
+        {
+          "event": "token",
+          "data": "周一行字"
+        },
+        {
+          "event": "token",
+          "data": "都没写，现在"
+        },
+        {
+          "event": "token",
+          "data": "心里肯定特别焦"
+        },
+        {
+          "event": "token",
+          "data": "灼和自责吧"
+        },
+        {
+          "event": "token",
+          "data": "。看着论文就"
+        },
+        {
+          "event": "token",
+          "data": "在那儿，却"
+        },
+        {
+          "event": "token",
+          "data": "怎么也下不去手"
+        },
+        {
+          "event": "token",
+          "data": "，这种感觉真的挺"
+        },
+        {
+          "event": "token",
+          "data": "折磨人的。"
+        },
+        {
+          "event": "dialogue_done",
+          "data": {
+            "trace_id": "b7e188f4ddbd480b",
+            "owner": "daily"
+          }
+        },
+        {
+          "event": "final",
+          "data": {
+            "message": "我论文拖了三周了，一行字都没写。",
+            "risk_state": "LOW_RISK",
+            "crisis": false
+          }
+        }
+      ],
+      "final": {
+        "message": "我论文拖了三周了，一行字都没写。",
+        "risk_state": "LOW_RISK",
+        "crisis": false
+      },
+      "state_after": {
+        "owner": "therapy_cbt",
+        "crisis": false,
+        "risk_level": "LOW_RISK",
+        "therapy": {
+          "name": "CBT",
+          "start_seq": 3,
+          "rounds": 0,
+          "step_index": -1,
+          "branch": null,
+          "basic_flow_complete": false
+        },
+        "last_therapy_check_seq": 1,
+        "pending_user_tokens": 0
+      },
+      "orchestration_after": {},
+      "error": null,
+      "wall_seconds": 65.991,
+      "agent_text": "拖了三周一行字都没写，现在心里肯定特别焦灼和自责吧。看着论文就在那儿，却怎么也下不去手，这种感觉真的挺折磨人的。"
+    },
+    {
+      "turn": 2,
+      "trace_id": "3ef1cd1537574a48",
+      "user_text": "不是不想写，是我一想到要写就觉得写不好，干脆就不写了。",
+      "agent_text_parts": [
+        "听你这么说",
+        "，我感觉到其实",
+        "你心里是想写的",
+        "。只是“觉得",
+        "写不好”这个",
+        "念头一冒出来",
+        "，压力就太大了",
+        "，好像“干脆",
+        "不写”反而",
+        "成了一种让自己喘",
+        "口气、保护情绪",
+        "的方式。\n\n咱们",
+        "聊到现在，当你",
+        "再去体会这种“",
+        "一想到写就觉得写",
+        "不好”的感觉时",
+        "，心里有没有什么",
+        "不一样的体会？还是",
+        "说，那种想要",
+        "回避的沉重感",
+        "依然很强烈呢",
+        "？"
+      ],
+      "events": [
+        {
+          "event": "token",
+          "data": "听你这么说"
+        },
+        {
+          "event": "token",
+          "data": "，我感觉到其实"
+        },
+        {
+          "event": "token",
+          "data": "你心里是想写的"
+        },
+        {
+          "event": "token",
+          "data": "。只是“觉得"
+        },
+        {
+          "event": "token",
+          "data": "写不好”这个"
+        },
+        {
+          "event": "token",
+          "data": "念头一冒出来"
+        },
+        {
+          "event": "token",
+          "data": "，压力就太大了"
+        },
+        {
+          "event": "token",
+          "data": "，好像“干脆"
+        },
+        {
+          "event": "token",
+          "data": "不写”反而"
+        },
+        {
+          "event": "token",
+          "data": "成了一种让自己喘"
+        },
+        {
+          "event": "token",
+          "data": "口气、保护情绪"
+        },
+        {
+          "event": "token",
+          "data": "的方式。\n\n咱们"
+        },
+        {
+          "event": "token",
+          "data": "聊到现在，当你"
+        },
+        {
+          "event": "token",
+          "data": "再去体会这种“"
+        },
+        {
+          "event": "token",
+          "data": "一想到写就觉得写"
+        },
+        {
+          "event": "token",
+          "data": "不好”的感觉时"
+        },
+        {
+          "event": "token",
+          "data": "，心里有没有什么"
+        },
+        {
+          "event": "token",
+          "data": "不一样的体会？还是"
+        },
+        {
+          "event": "token",
+          "data": "说，那种想要"
+        },
+        {
+          "event": "token",
+          "data": "回避的沉重感"
+        },
+        {
+          "event": "token",
+          "data": "依然很强烈呢"
+        },
+        {
+          "event": "token",
+          "data": "？"
+        },
+        {
+          "event": "dialogue_done",
+          "data": {
+            "trace_id": "3ef1cd1537574a48",
+            "owner": "therapy_cbt"
+          }
+        },
+        {
+          "event": "final",
+          "data": {
+            "message": "不是不想写，是我一想到要写就觉得写不好，干脆就不写了。",
+            "risk_state": "LOW_RISK",
+            "crisis": false
+          }
+        }
+      ],
+      "final": {
+        "message": "不是不想写，是我一想到要写就觉得写不好，干脆就不写了。",
+        "risk_state": "LOW_RISK",
+        "crisis": false
+      },
+      "state_after": {
+        "owner": "therapy_cbt",
+        "crisis": false,
+        "risk_level": "LOW_RISK",
+        "therapy": {
+          "name": "CBT",
+          "start_seq": 3,
+          "rounds": 1,
+          "step_index": 0,
+          "branch": null,
+          "basic_flow_complete": false
+        },
+        "last_therapy_check_seq": 1,
+        "pending_user_tokens": 0
+      },
+      "orchestration_after": {
+        "updated_seq": 1,
+        "therapy": "CBT",
+        "current_step": "identify_thought",
+        "next_step": "identify_thought",
+        "step_judgment": {
+          "action": "stay",
+          "target_step": null,
+          "achieved": false,
+          "reason": "用户表达了自动思维（'一想到要写就觉得写不好'），但尚未完成识别和澄清自动思维的完整过程，需要进一步引导用户明确核心信念和情绪，因此继续当前步骤。"
+        },
+        "assessment": null,
+        "skill_output": {
+          "automatic_thoughts": [
+            {
+              "thought": "我写不好",
+              "confidence": 0.95,
+              "span": "一想到要写就觉得写不好",
+              "target": "self"
+            }
+          ],
+          "primary_thought": "我写不好",
+          "no_automatic_thought_detected": false,
+          "_skill_name": "extract_automatic_thought"
+        },
+        "products": {
+          "automatic_thoughts": [
+            {
+              "thought": "我写不好",
+              "confidence": 0.95,
+              "span": "一想到要写就觉得写不好",
+              "target": "self"
+            }
+          ],
+          "primary_thought": "我写不好",
+          "no_automatic_thought_detected": false
+        },
+        "continue_eval": null
+      },
+      "error": null,
+      "wall_seconds": 59.954,
+      "agent_text": "听你这么说，我感觉到其实你心里是想写的。只是“觉得写不好”这个念头一冒出来，压力就太大了，好像“干脆不写”反而成了一种让自己喘口气、保护情绪的方式。\n\n咱们聊到现在，当你再去体会这种“一想到写就觉得写不好”的感觉时，心里有没有什么不一样的体会？还是说，那种想要回避的沉重感依然很强烈呢？"
+    },
+    {
+      "turn": 3,
+      "trace_id": "b225ca8a42fc4a16",
+      "user_text": "写不好就过不了，过不了就延毕，延毕就找不到好工作。",
+      "agent_text_parts": [
+        "听到你",
+        "这么说，我完全",
+        "能理解你为什么会",
+        "想逃避了。“",
+        "写不好”这个",
+        "念头一出来，",
+        "脑海里瞬间就闪",
+        "过了延毕、",
+        "找不到工作这一连",
+        "串可怕的后果，",
+        "这压力真的太让人",
+        "窒息了。\n\n",
+        "咱们先不急着",
+        "往后看，就",
+        "停在第一步一起来看看好吗",
+        "？你提到",
+        "“写不好就",
+        "过不了”，这",
+        "其实是你脑海里对",
+        "“写不好”",
+        "的一种预测。你觉得",
+        "，“写得不够完美",
+        "”",
+        "和“最终过",
+        "不了”之间，",
+        "真的是完全划等",
+        "号的吗？还是",
+        "说，中间可能",
+        "还有一些其他的空间呢",
+        "？"
+      ],
+      "events": [
+        {
+          "event": "token",
+          "data": "听到你"
+        },
+        {
+          "event": "token",
+          "data": "这么说，我完全"
+        },
+        {
+          "event": "token",
+          "data": "能理解你为什么会"
+        },
+        {
+          "event": "token",
+          "data": "想逃避了。“"
+        },
+        {
+          "event": "token",
+          "data": "写不好”这个"
+        },
+        {
+          "event": "token",
+          "data": "念头一出来，"
+        },
+        {
+          "event": "token",
+          "data": "脑海里瞬间就闪"
+        },
+        {
+          "event": "token",
+          "data": "过了延毕、"
+        },
+        {
+          "event": "token",
+          "data": "找不到工作这一连"
+        },
+        {
+          "event": "token",
+          "data": "串可怕的后果，"
+        },
+        {
+          "event": "token",
+          "data": "这压力真的太让人"
+        },
+        {
+          "event": "token",
+          "data": "窒息了。\n\n"
+        },
+        {
+          "event": "token",
+          "data": "咱们先不急着"
+        },
+        {
+          "event": "token",
+          "data": "往后看，就"
+        },
+        {
+          "event": "token",
+          "data": "停在第一步一起来看看好吗"
+        },
+        {
+          "event": "token",
+          "data": "？你提到"
+        },
+        {
+          "event": "token",
+          "data": "“写不好就"
+        },
+        {
+          "event": "token",
+          "data": "过不了”，这"
+        },
+        {
+          "event": "token",
+          "data": "其实是你脑海里对"
+        },
+        {
+          "event": "token",
+          "data": "“写不好”"
+        },
+        {
+          "event": "token",
+          "data": "的一种预测。你觉得"
+        },
+        {
+          "event": "token",
+          "data": "，“写得不够完美"
+        },
+        {
+          "event": "token",
+          "data": "”"
+        },
+        {
+          "event": "token",
+          "data": "和“最终过"
+        },
+        {
+          "event": "token",
+          "data": "不了”之间，"
+        },
+        {
+          "event": "token",
+          "data": "真的是完全划等"
+        },
+        {
+          "event": "token",
+          "data": "号的吗？还是"
+        },
+        {
+          "event": "token",
+          "data": "说，中间可能"
+        },
+        {
+          "event": "token",
+          "data": "还有一些其他的空间呢"
+        },
+        {
+          "event": "token",
+          "data": "？"
+        },
+        {
+          "event": "dialogue_done",
+          "data": {
+            "trace_id": "b225ca8a42fc4a16",
+            "owner": "therapy_cbt"
+          }
+        },
+        {
+          "event": "final",
+          "data": {
+            "message": "写不好就过不了，过不了就延毕，延毕就找不到好工作。",
+            "risk_state": "LOW_RISK",
+            "crisis": false
+          }
+        }
+      ],
+      "final": {
+        "message": "写不好就过不了，过不了就延毕，延毕就找不到好工作。",
+        "risk_state": "LOW_RISK",
+        "crisis": false
+      },
+      "state_after": {
+        "owner": "therapy_cbt",
+        "crisis": false,
+        "risk_level": "LOW_RISK",
+        "therapy": {
+          "name": "CBT",
+          "start_seq": 3,
+          "rounds": 2,
+          "step_index": 0,
+          "branch": null,
+          "basic_flow_complete": false
+        },
+        "last_therapy_check_seq": 1,
+        "pending_user_tokens": 0
+      },
+      "orchestration_after": {
+        "updated_seq": 2,
+        "therapy": "CBT",
+        "current_step": "identify_thought",
+        "next_step": "identify_thought",
+        "step_judgment": {
+          "action": "stay",
+          "target_step": null,
+          "achieved": false,
+          "reason": "用户在进一步展开自动思维链条（写不好→过不了→延毕→找不到好工作），说明identify_thought步骤尚未充分完成，需要继续引导用户识别和澄清这些自动思维，尚未达到可以进入classify_distortion的程度。"
+        },
+        "assessment": null,
+        "skill_output": null,
+        "products": {
+          "automatic_thoughts": [
+            {
+              "thought": "我写不好",
+              "confidence": 0.95,
+              "span": "一想到要写就觉得写不好",
+              "target": "self"
+            }
+          ],
+          "primary_thought": "我写不好",
+          "no_automatic_thought_detected": false
+        },
+        "continue_eval": null
+      },
+      "error": null,
+      "wall_seconds": 63.137,
+      "agent_text": "听到你这么说，我完全能理解你为什么会想逃避了。“写不好”这个念头一出来，脑海里瞬间就闪过了延毕、找不到工作这一连串可怕的后果，这压力真的太让人窒息了。\n\n咱们先不急着往后看，就停在第一步一起来看看好吗？你提到“写不好就过不了”，这其实是你脑海里对“写不好”的一种预测。你觉得，“写得不够完美”和“最终过不了”之间，真的是完全划等号的吗？还是说，中间可能还有一些其他的空间呢？"
+    },
+    {
+      "turn": 4,
+      "trace_id": "dd9a91a0aac148a1",
+      "user_text": "我知道这是灾难化，但我控制不住。",
+      "agent_text_parts": [
+        "听到你说“知道",
+        "但控制不住”，",
+        "我能感觉到你有些",
+        "挫败和无奈",
+        "。明明理智上",
+        "已经看清了这个链条",
+        "，但情绪上",
+        "还是会被它紧紧",
+        "抓住，这确实",
+        "挺让人无力的",
+        "。\n\n不过，",
+        "你能自己觉察到",
+        "这是“灾难化",
+        "”，本身就已经迈出",
+        "很大一步了。",
+        "咱们顺着这个思路",
+        "聊了几轮，",
+        "当你现在再去体会",
+        "这种“控制不住",
+        "”的感觉时，",
+        "心里有没有什么不一样的",
+        "体会？还是说",
+        "，那种被念头",
+        "裹挟的沉重",
+        "感依然很强烈",
+        "呢？"
+      ],
+      "events": [
+        {
+          "event": "token",
+          "data": "听到你说“知道"
+        },
+        {
+          "event": "token",
+          "data": "但控制不住”，"
+        },
+        {
+          "event": "token",
+          "data": "我能感觉到你有些"
+        },
+        {
+          "event": "token",
+          "data": "挫败和无奈"
+        },
+        {
+          "event": "token",
+          "data": "。明明理智上"
+        },
+        {
+          "event": "token",
+          "data": "已经看清了这个链条"
+        },
+        {
+          "event": "token",
+          "data": "，但情绪上"
+        },
+        {
+          "event": "token",
+          "data": "还是会被它紧紧"
+        },
+        {
+          "event": "token",
+          "data": "抓住，这确实"
+        },
+        {
+          "event": "token",
+          "data": "挺让人无力的"
+        },
+        {
+          "event": "token",
+          "data": "。\n\n不过，"
+        },
+        {
+          "event": "token",
+          "data": "你能自己觉察到"
+        },
+        {
+          "event": "token",
+          "data": "这是“灾难化"
+        },
+        {
+          "event": "token",
+          "data": "”，本身就已经迈出"
+        },
+        {
+          "event": "token",
+          "data": "很大一步了。"
+        },
+        {
+          "event": "token",
+          "data": "咱们顺着这个思路"
+        },
+        {
+          "event": "token",
+          "data": "聊了几轮，"
+        },
+        {
+          "event": "token",
+          "data": "当你现在再去体会"
+        },
+        {
+          "event": "token",
+          "data": "这种“控制不住"
+        },
+        {
+          "event": "token",
+          "data": "”的感觉时，"
+        },
+        {
+          "event": "token",
+          "data": "心里有没有什么不一样的"
+        },
+        {
+          "event": "token",
+          "data": "体会？还是说"
+        },
+        {
+          "event": "token",
+          "data": "，那种被念头"
+        },
+        {
+          "event": "token",
+          "data": "裹挟的沉重"
+        },
+        {
+          "event": "token",
+          "data": "感依然很强烈"
+        },
+        {
+          "event": "token",
+          "data": "呢？"
+        },
+        {
+          "event": "dialogue_done",
+          "data": {
+            "trace_id": "dd9a91a0aac148a1",
+            "owner": "therapy_cbt"
+          }
+        },
+        {
+          "event": "final",
+          "data": {
+            "message": "我知道这是灾难化，但我控制不住。",
+            "risk_state": "LOW_RISK",
+            "crisis": false
+          }
+        }
+      ],
+      "final": {
+        "message": "我知道这是灾难化，但我控制不住。",
+        "risk_state": "LOW_RISK",
+        "crisis": false
+      },
+      "state_after": {
+        "owner": "therapy_cbt",
+        "crisis": false,
+        "risk_level": "LOW_RISK",
+        "therapy": {
+          "name": "CBT",
+          "start_seq": 3,
+          "rounds": 3,
+          "step_index": 1,
+          "branch": null,
+          "basic_flow_complete": false,
+          "visited": [
+            "identify_thought"
+          ]
+        },
+        "last_therapy_check_seq": 1,
+        "pending_user_tokens": 0
+      },
+      "orchestration_after": {
+        "updated_seq": 3,
+        "therapy": "CBT",
+        "current_step": "identify_thought",
+        "next_step": "classify_distortion",
+        "step_judgment": {
+          "action": "advance",
+          "target_step": null,
+          "achieved": true,
+          "reason": "用户已识别出自动思维'我写不好'及其灾难化链条（写不好→过不了→延毕→找不到工作），并且用户自己已经能命名'灾难化'这一认知歪曲，说明identify_thought步骤已完成，应推进到classify_distortion步骤进一步系统化地识别和分类认知歪曲。"
+        },
+        "assessment": null,
+        "skill_output": {
+          "automatic_thoughts": [
+            {
+              "thought": "我控制不住自己。",
+              "confidence": 0.92,
+              "span": "但我控制不住",
+              "target": "self"
+            }
+          ],
+          "primary_thought": "我控制不住自己。",
+          "no_automatic_thought_detected": false,
+          "_skill_name": "extract_automatic_thought"
+        },
+        "products": {
+          "automatic_thoughts": [
+            {
+              "thought": "我写不好",
+              "confidence": 0.95,
+              "span": "一想到要写就觉得写不好",
+              "target": "self"
+            },
+            {
+              "thought": "我控制不住自己。",
+              "confidence": 0.92,
+              "span": "但我控制不住",
+              "target": "self"
+            }
+          ],
+          "primary_thought": "我控制不住自己。",
+          "no_automatic_thought_detected": false
+        },
+        "continue_eval": null
+      },
+      "error": null,
+      "wall_seconds": 61.76,
+      "agent_text": "听到你说“知道但控制不住”，我能感觉到你有些挫败和无奈。明明理智上已经看清了这个链条，但情绪上还是会被它紧紧抓住，这确实挺让人无力的。\n\n不过，你能自己觉察到这是“灾难化”，本身就已经迈出很大一步了。咱们顺着这个思路聊了几轮，当你现在再去体会这种“控制不住”的感觉时，心里有没有什么不一样的体会？还是说，那种被念头裹挟的沉重感依然很强烈呢？"
+    },
+    {
+      "turn": 5,
+      "trace_id": "25cf8d7ca88d420e",
+      "user_text": "我以前不这样的，最近一个月才变严重。",
+      "agent_text_parts": [
+        "听到你说",
+        "“以前不这样",
+        "”，感觉这一个月",
+        "里你似乎承受",
+        "了比以前更大的压力",
+        "，才让这个念头",
+        "变得这么强烈、",
+        "这么难以控制。",
+        "\n\n这一个月里",
+        "，是发生了什么特别",
+        "的事，还是有什么",
+        "新的压力加到了",
+        "你身上，让你",
+        "感觉和以前不一样",
+        "了呢？我们可以一起",
+        "理一理，",
+        "看看是什么让这个“",
+        "灾难化”的",
+        "开关突然被按",
+        "下了。"
+      ],
+      "events": [
+        {
+          "event": "token",
+          "data": "听到你说"
+        },
+        {
+          "event": "token",
+          "data": "“以前不这样"
+        },
+        {
+          "event": "token",
+          "data": "”，感觉这一个月"
+        },
+        {
+          "event": "token",
+          "data": "里你似乎承受"
+        },
+        {
+          "event": "token",
+          "data": "了比以前更大的压力"
+        },
+        {
+          "event": "token",
+          "data": "，才让这个念头"
+        },
+        {
+          "event": "token",
+          "data": "变得这么强烈、"
+        },
+        {
+          "event": "token",
+          "data": "这么难以控制。"
+        },
+        {
+          "event": "token",
+          "data": "\n\n这一个月里"
+        },
+        {
+          "event": "token",
+          "data": "，是发生了什么特别"
+        },
+        {
+          "event": "token",
+          "data": "的事，还是有什么"
+        },
+        {
+          "event": "token",
+          "data": "新的压力加到了"
+        },
+        {
+          "event": "token",
+          "data": "你身上，让你"
+        },
+        {
+          "event": "token",
+          "data": "感觉和以前不一样"
+        },
+        {
+          "event": "token",
+          "data": "了呢？我们可以一起"
+        },
+        {
+          "event": "token",
+          "data": "理一理，"
+        },
+        {
+          "event": "token",
+          "data": "看看是什么让这个“"
+        },
+        {
+          "event": "token",
+          "data": "灾难化”的"
+        },
+        {
+          "event": "token",
+          "data": "开关突然被按"
+        },
+        {
+          "event": "token",
+          "data": "下了。"
+        },
+        {
+          "event": "dialogue_done",
+          "data": {
+            "trace_id": "25cf8d7ca88d420e",
+            "owner": "therapy_cbt"
+          }
+        },
+        {
+          "event": "final",
+          "data": {
+            "message": "我以前不这样的，最近一个月才变严重。",
+            "risk_state": "MEDIUM_RISK",
+            "crisis": false
+          }
+        }
+      ],
+      "final": {
+        "message": "我以前不这样的，最近一个月才变严重。",
+        "risk_state": "MEDIUM_RISK",
+        "crisis": false
+      },
+      "state_after": {
+        "owner": "therapy_cbt",
+        "crisis": false,
+        "risk_level": "MEDIUM_RISK",
+        "therapy": {
+          "name": "CBT",
+          "start_seq": 3,
+          "rounds": 4,
+          "step_index": 2,
+          "branch": null,
+          "basic_flow_complete": false,
+          "visited": [
+            "identify_thought",
+            "classify_distortion"
+          ]
+        },
+        "last_therapy_check_seq": 1,
+        "pending_user_tokens": 0
+      },
+      "orchestration_after": {
+        "updated_seq": 4,
+        "therapy": "CBT",
+        "current_step": "classify_distortion",
+        "next_step": "challenge",
+        "step_judgment": {
+          "action": "advance",
+          "target_step": null,
+          "achieved": true,
+          "reason": "用户已自主识别出'灾难化'认知扭曲（'我知道这是灾难化'），classify_distortion步骤目标已达成。用户新提供的信息'最近一个月才变严重'属于新的背景信息，可在下一步challenge中进一步探索。"
+        },
+        "assessment": null,
+        "skill_output": {
+          "classifications": [
+            {
+              "thought": "我写不好",
+              "distortions": [
+                {
+                  "type": "fortune_telling",
+                  "confidence": 0.85,
+                  "rationale": "Predicting a negative outcome (failing to write well) before even attempting the task."
+                },
+                {
+                  "type": "emotional_reasoning",
+                  "confidence": 0.8,
+                  "rationale": "Assuming that the anxious feeling about writing means the factual inability to write well."
+                },
+                {
+                  "type": "labeling",
+                  "confidence": 0.7,
+                  "rationale": "Assigning a global, negative label ('can't write') to oneself based on a specific task."
+                }
+              ],
+              "primary_distortion": "fortune_telling"
+            },
+            {
+              "thought": "我控制不住自己。",
+              "distortions": [
+                {
+                  "type": "overgeneralization",
+                  "confidence": 0.85,
+                  "rationale": "Using absolute language ('can't control') to generalize a specific situational difficulty into a permanent, global inability."
+                },
+                {
+                  "type": "emotional_reasoning",
+                  "confidence": 0.8,
+                  "rationale": "Concluding that one is completely out of control simply because of the internal feeling of losing control."
+                },
+                {
+                  "type": "magnification",
+                  "confidence": 0.75,
+                  "rationale": "Exaggerating the extent of the lack of self-control to an absolute extreme."
+                }
+              ],
+              "primary_distortion": "overgeneralization"
+            }
+          ],
+          "distortion_summary": {
+            "dominant_pattern": "emotional_reasoning",
+            "distortion_count": 6,
+            "severity": "moderate"
+          },
+          "_skill_name": "detect_cognitive_distortion"
+        },
+        "products": {
+          "automatic_thoughts": [
+            {
+              "thought": "我写不好",
+              "confidence": 0.95,
+              "span": "一想到要写就觉得写不好",
+              "target": "self"
+            },
+            {
+              "thought": "我控制不住自己。",
+              "confidence": 0.92,
+              "span": "但我控制不住",
+              "target": "self"
+            }
+          ],
+          "primary_thought": "我控制不住自己。",
+          "no_automatic_thought_detected": false,
+          "distortions": [
+            {
+              "thought": "我写不好",
+              "distortions": [
+                {
+                  "type": "fortune_telling",
+                  "confidence": 0.85,
+                  "rationale": "Predicting a negative outcome (failing to write well) before even attempting the task."
+                },
+                {
+                  "type": "emotional_reasoning",
+                  "confidence": 0.8,
+                  "rationale": "Assuming that the anxious feeling about writing means the factual inability to write well."
+                },
+                {
+                  "type": "labeling",
+                  "confidence": 0.7,
+                  "rationale": "Assigning a global, negative label ('can't write') to oneself based on a specific task."
+                }
+              ],
+              "primary_distortion": "fortune_telling"
+            },
+            {
+              "thought": "我控制不住自己。",
+              "distortions": [
+                {
+                  "type": "overgeneralization",
+                  "confidence": 0.85,
+                  "rationale": "Using absolute language ('can't control') to generalize a specific situational difficulty into a permanent, global inability."
+                },
+                {
+                  "type": "emotional_reasoning",
+                  "confidence": 0.8,
+                  "rationale": "Concluding that one is completely out of control simply because of the internal feeling of losing control."
+                },
+                {
+                  "type": "magnification",
+                  "confidence": 0.75,
+                  "rationale": "Exaggerating the extent of the lack of self-control to an absolute extreme."
+                }
+              ],
+              "primary_distortion": "overgeneralization"
+            }
+          ],
+          "distortion_summary": {
+            "dominant_pattern": "emotional_reasoning",
+            "distortion_count": 6,
+            "severity": "moderate"
+          }
+        },
+        "continue_eval": null
+      },
+      "error": null,
+      "wall_seconds": 84.362,
+      "agent_text": "听到你说“以前不这样”，感觉这一个月里你似乎承受了比以前更大的压力，才让这个念头变得这么强烈、这么难以控制。\n\n这一个月里，是发生了什么特别的事，还是有什么新的压力加到了你身上，让你感觉和以前不一样了呢？我们可以一起理一理，看看是什么让这个“灾难化”的开关突然被按下了。"
+    },
+    {
+      "turn": 6,
+      "trace_id": "23744addd219408a",
+      "user_text": "听起来好像我一直在用「必须完美」这个规则卡自己？",
+      "agent_text_parts": [
+        "听到你这么总结",
+        "，感觉你抓",
+        "到了一个很关键的点",
+        "。“必须完美”",
+        "这个规则，听起来",
+        "确实像是一个隐",
+        "形的枷锁。",
+        "\n\n当你用这个",
+        "“必须完美”",
+        "的标准来“卡",
+        "”自己的时候，",
+        "它具体是怎么让你",
+        "感到压力的呢？",
+        "是会让你觉得，",
+        "只要做不到完美，",
+        "就等同于彻底失败",
+        "了吗？"
+      ],
+      "events": [
+        {
+          "event": "token",
+          "data": "听到你这么总结"
+        },
+        {
+          "event": "token",
+          "data": "，感觉你抓"
+        },
+        {
+          "event": "token",
+          "data": "到了一个很关键的点"
+        },
+        {
+          "event": "token",
+          "data": "。“必须完美”"
+        },
+        {
+          "event": "token",
+          "data": "这个规则，听起来"
+        },
+        {
+          "event": "token",
+          "data": "确实像是一个隐"
+        },
+        {
+          "event": "token",
+          "data": "形的枷锁。"
+        },
+        {
+          "event": "token",
+          "data": "\n\n当你用这个"
+        },
+        {
+          "event": "token",
+          "data": "“必须完美”"
+        },
+        {
+          "event": "token",
+          "data": "的标准来“卡"
+        },
+        {
+          "event": "token",
+          "data": "”自己的时候，"
+        },
+        {
+          "event": "token",
+          "data": "它具体是怎么让你"
+        },
+        {
+          "event": "token",
+          "data": "感到压力的呢？"
+        },
+        {
+          "event": "token",
+          "data": "是会让你觉得，"
+        },
+        {
+          "event": "token",
+          "data": "只要做不到完美，"
+        },
+        {
+          "event": "token",
+          "data": "就等同于彻底失败"
+        },
+        {
+          "event": "token",
+          "data": "了吗？"
+        },
+        {
+          "event": "dialogue_done",
+          "data": {
+            "trace_id": "23744addd219408a",
+            "owner": "therapy_cbt"
+          }
+        },
+        {
+          "event": "final",
+          "data": {
+            "message": "听起来好像我一直在用「必须完美」这个规则卡自己？",
+            "risk_state": "SAFE",
+            "crisis": false
+          }
+        }
+      ],
+      "final": {
+        "message": "听起来好像我一直在用「必须完美」这个规则卡自己？",
+        "risk_state": "SAFE",
+        "crisis": false
+      },
+      "state_after": {
+        "owner": "therapy_cbt",
+        "crisis": false,
+        "risk_level": "SAFE",
+        "therapy": {
+          "name": "CBT",
+          "start_seq": 3,
+          "rounds": 5,
+          "step_index": 2,
+          "branch": null,
+          "basic_flow_complete": false,
+          "visited": [
+            "identify_thought",
+            "classify_distortion"
+          ]
+        },
+        "last_therapy_check_seq": 1,
+        "pending_user_tokens": 0
+      },
+      "orchestration_after": {
+        "updated_seq": 5,
+        "therapy": "CBT",
+        "current_step": "challenge",
+        "next_step": "challenge",
+        "step_judgment": {
+          "action": "stay",
+          "target_step": null,
+          "achieved": false,
+          "reason": "用户在最近一轮对话中开始觉察到自己使用'必须完美'的规则在卡自己，显示出对核心信念/规则的初步洞察，但尚未完成对'我控制不住自己'这一主要自动思维的挑战过程。当前仍处于challenge步骤，需要继续引导用户深入探索这一新觉察，巩固对认知扭曲的识别和挑战效果。"
+        },
+        "assessment": null,
+        "skill_output": {
+          "technique": {
+            "name": "chain_analysis",
+            "description": "引导用户拆解'必须完美'背后的灾难化思维链条，识别从'不完美'到'彻底失控或失败'的每一个推论步骤，并寻找替代结果。",
+            "steps": [
+              "1. 明确起点：探讨'必须完美'的具体标准是什么，确认如果不完美，用户脑海中浮现的第一个 feared outcome（恐惧结果）是什么。",
+              "2. 展开链条：使用'如果...那么...'的句式，引导用户一步步写下后续的灾难化预测，直到推演出最坏的结局（如：写不好 -> 被否定 -> 彻底失控 -> 人生完了）。",
+              "3. 检验与重构：针对链条中的每一步，询问'这一定会发生吗？'、'有没有其他可能的结果？'，并将'完了'等绝对化词汇温和地标记为'焦虑时的想法'，寻找更现实的替代结果。"
+            ]
+          },
+          "conversation_goal": "帮助用户将模糊的'必须完美'带来的压力，具象化为一条清晰的灾难化预测链条，并开始温和地检验其中的逻辑跳跃和绝对化推论。",
+          "adaptation": {
+            "interaction_style": "exploratory",
+            "tone_adjustment": "温和、好奇、协作。像合作侦探一样，带着好奇心去探索这个'完美规则'是如何一步步演变成灾难的，避免说教和评判。",
+            "pace_adjustment": "放慢节奏。一次只探讨链条中的一个环节，确保用户不被庞大的灾难感淹没，给予充分的时间去消化和反思每一步。",
+            "culture_note": "注意捕捉中文语境下常见的绝对化词汇（如'完了'、'没救了'、'全毁了'）。温和地将这些词汇重构为'大脑在压力下产生的关于未来的担忧（想法）'，而非'必然发生的客观事实'，帮助用户实现认知解离。"
+          },
+          "contraindications": [
+            {
+              "condition": "用户处于极度情绪崩溃、惊恐发作或严重解离状态",
+              "reason": "此时用户的前额叶认知功能受限，无法进行逻辑链条分析。应先进行情绪安抚和着陆技术（grounding），待情绪平稳后再进行认知工作。"
+            },
+            {
+              "condition": "用户对'这只是个想法'表现出强烈的阻抗或愤怒",
+              "reason": "强行拆解逻辑可能会让用户觉得自己的痛苦感受被否定，从而破坏治疗联盟。此时应退回到情绪共情，确认其感受的真实性，暂缓认知重构。"
+            }
+          ],
+          "_skill_name": "decatastrophize"
+        },
+        "products": {
+          "automatic_thoughts": [
+            {
+              "thought": "我写不好",
+              "confidence": 0.95,
+              "span": "一想到要写就觉得写不好",
+              "target": "self"
+            },
+            {
+              "thought": "我控制不住自己。",
+              "confidence": 0.92,
+              "span": "但我控制不住",
+              "target": "self"
+            }
+          ],
+          "primary_thought": "我控制不住自己。",
+          "no_automatic_thought_detected": false,
+          "distortions": [
+            {
+              "thought": "我写不好",
+              "distortions": [
+                {
+                  "type": "fortune_telling",
+                  "confidence": 0.85,
+                  "rationale": "Predicting a negative outcome (failing to write well) before even attempting the task."
+                },
+                {
+                  "type": "emotional_reasoning",
+                  "confidence": 0.8,
+                  "rationale": "Assuming that the anxious feeling about writing means the factual inability to write well."
+                },
+                {
+                  "type": "labeling",
+                  "confidence": 0.7,
+                  "rationale": "Assigning a global, negative label ('can't write') to oneself based on a specific task."
+                }
+              ],
+              "primary_distortion": "fortune_telling"
+            },
+            {
+              "thought": "我控制不住自己。",
+              "distortions": [
+                {
+                  "type": "overgeneralization",
+                  "confidence": 0.85,
+                  "rationale": "Using absolute language ('can't control') to generalize a specific situational difficulty into a permanent, global inability."
+                },
+                {
+                  "type": "emotional_reasoning",
+                  "confidence": 0.8,
+                  "rationale": "Concluding that one is completely out of control simply because of the internal feeling of losing control."
+                },
+                {
+                  "type": "magnification",
+                  "confidence": 0.75,
+                  "rationale": "Exaggerating the extent of the lack of self-control to an absolute extreme."
+                }
+              ],
+              "primary_distortion": "overgeneralization"
+            }
+          ],
+          "distortion_summary": {
+            "dominant_pattern": "emotional_reasoning",
+            "distortion_count": 6,
+            "severity": "moderate"
+          }
+        },
+        "continue_eval": null
+      },
+      "error": null,
+      "wall_seconds": 82.366,
+      "agent_text": "听到你这么总结，感觉你抓到了一个很关键的点。“必须完美”这个规则，听起来确实像是一个隐形的枷锁。\n\n当你用这个“必须完美”的标准来“卡”自己的时候，它具体是怎么让你感到压力的呢？是会让你觉得，只要做不到完美，就等同于彻底失败了吗？"
+    },
+    {
+      "turn": 7,
+      "trace_id": "2a1fe3599cb74cf6",
+      "user_text": "那怎么破？我没法说服自己「写不好也行」。",
+      "agent_text_parts": [
+        "直接告诉自己“",
+        "写不好也行”",
+        "确实太难了，",
+        "因为在你心里，",
+        "这背后连着很",
+        "可怕的后果，大脑",
+        "根本不听劝。",
+        "\n\n既然直接说服",
+        "自己行不通，",
+        "那我们不如先不",
+        "急着反驳它，",
+        "而是顺着这个“",
+        "必须完美”的想法",
+        "往下走一步看看",
+        "。如果这次真的",
+        "“没写好”，",
+        "你觉得脑海里紧跟着",
+        "出现的第一个让你害怕",
+        "的结果是什么？然后",
+        "这个结果又会带来",
+        "什么呢？\n\n我们可以",
+        "一起把这个“如果",
+        "……那么……”",
+        "的链条一步步理",
+        "出来，看看它",
+        "到底通向哪里，",
+        "好吗？"
+      ],
+      "events": [
+        {
+          "event": "token",
+          "data": "直接告诉自己“"
+        },
+        {
+          "event": "token",
+          "data": "写不好也行”"
+        },
+        {
+          "event": "token",
+          "data": "确实太难了，"
+        },
+        {
+          "event": "token",
+          "data": "因为在你心里，"
+        },
+        {
+          "event": "token",
+          "data": "这背后连着很"
+        },
+        {
+          "event": "token",
+          "data": "可怕的后果，大脑"
+        },
+        {
+          "event": "token",
+          "data": "根本不听劝。"
+        },
+        {
+          "event": "token",
+          "data": "\n\n既然直接说服"
+        },
+        {
+          "event": "token",
+          "data": "自己行不通，"
+        },
+        {
+          "event": "token",
+          "data": "那我们不如先不"
+        },
+        {
+          "event": "token",
+          "data": "急着反驳它，"
+        },
+        {
+          "event": "token",
+          "data": "而是顺着这个“"
+        },
+        {
+          "event": "token",
+          "data": "必须完美”的想法"
+        },
+        {
+          "event": "token",
+          "data": "往下走一步看看"
+        },
+        {
+          "event": "token",
+          "data": "。如果这次真的"
+        },
+        {
+          "event": "token",
+          "data": "“没写好”，"
+        },
+        {
+          "event": "token",
+          "data": "你觉得脑海里紧跟着"
+        },
+        {
+          "event": "token",
+          "data": "出现的第一个让你害怕"
+        },
+        {
+          "event": "token",
+          "data": "的结果是什么？然后"
+        },
+        {
+          "event": "token",
+          "data": "这个结果又会带来"
+        },
+        {
+          "event": "token",
+          "data": "什么呢？\n\n我们可以"
+        },
+        {
+          "event": "token",
+          "data": "一起把这个“如果"
+        },
+        {
+          "event": "token",
+          "data": "……那么……”"
+        },
+        {
+          "event": "token",
+          "data": "的链条一步步理"
+        },
+        {
+          "event": "token",
+          "data": "出来，看看它"
+        },
+        {
+          "event": "token",
+          "data": "到底通向哪里，"
+        },
+        {
+          "event": "token",
+          "data": "好吗？"
+        },
+        {
+          "event": "dialogue_done",
+          "data": {
+            "trace_id": "2a1fe3599cb74cf6",
+            "owner": "therapy_cbt"
+          }
+        },
+        {
+          "event": "final",
+          "data": {
+            "message": "那怎么破？我没法说服自己「写不好也行」。",
+            "risk_state": "SAFE",
+            "crisis": false
+          }
+        }
+      ],
+      "final": {
+        "message": "那怎么破？我没法说服自己「写不好也行」。",
+        "risk_state": "SAFE",
+        "crisis": false
+      },
+      "state_after": {
+        "owner": "therapy_cbt",
+        "crisis": false,
+        "risk_level": "SAFE",
+        "therapy": {
+          "name": "CBT",
+          "start_seq": 3,
+          "rounds": 6,
+          "step_index": 2,
+          "branch": null,
+          "basic_flow_complete": false,
+          "visited": [
+            "identify_thought",
+            "classify_distortion"
+          ]
+        },
+        "last_therapy_check_seq": 1,
+        "pending_user_tokens": 0
+      },
+      "orchestration_after": {
+        "updated_seq": 6,
+        "therapy": "CBT",
+        "current_step": "challenge",
+        "next_step": "challenge",
+        "step_judgment": {
+          "action": "stay",
+          "target_step": null,
+          "achieved": false,
+          "reason": "用户仍卡在'写不好也行'的认知上，AI正在引导用户探索'如果没写好'的灾难化链条（向下箭头技术），这是challenge步骤的核心工作。用户尚未完成对自动思维的充分挑战和证据检验，需要继续当前步骤。"
+        },
+        "assessment": null,
+        "skill_output": {
+          "technique": {
+            "name": "chain_analysis",
+            "description": "Walk through the feared chain and find the weakest links",
+            "steps": [
+              "把'最坏会发生什么'列成一步步的链条",
+              "在每一节点问：这个真的会发生吗？还有什么可能？",
+              "帮助用户看到链条中至少有一个节点并不那么确定"
+            ]
+          },
+          "conversation_goal": "帮助用户看到'最坏'并不是唯一可能，链条上的每个节点都有不确定性",
+          "adaptation": {
+            "interaction_style": "exploratory",
+            "tone_adjustment": "好奇、稳",
+            "pace_adjustment": "normal",
+            "culture_note": "用'接下来会发生什么'一步步问，避免'想太多'等评价"
+          },
+          "contraindications": [
+            {
+              "condition": "panic_level_anxiety",
+              "reason": "惊恐水平下认知重组无效，先 grounding"
+            }
+          ],
+          "_skill_name": "decatastrophize"
+        },
+        "products": {
+          "automatic_thoughts": [
+            {
+              "thought": "我写不好",
+              "confidence": 0.95,
+              "span": "一想到要写就觉得写不好",
+              "target": "self"
+            },
+            {
+              "thought": "我控制不住自己。",
+              "confidence": 0.92,
+              "span": "但我控制不住",
+              "target": "self"
+            }
+          ],
+          "primary_thought": "我控制不住自己。",
+          "no_automatic_thought_detected": false,
+          "distortions": [
+            {
+              "thought": "我写不好",
+              "distortions": [
+                {
+                  "type": "fortune_telling",
+                  "confidence": 0.85,
+                  "rationale": "Predicting a negative outcome (failing to write well) before even attempting the task."
+                },
+                {
+                  "type": "emotional_reasoning",
+                  "confidence": 0.8,
+                  "rationale": "Assuming that the anxious feeling about writing means the factual inability to write well."
+                },
+                {
+                  "type": "labeling",
+                  "confidence": 0.7,
+                  "rationale": "Assigning a global, negative label ('can't write') to oneself based on a specific task."
+                }
+              ],
+              "primary_distortion": "fortune_telling"
+            },
+            {
+              "thought": "我控制不住自己。",
+              "distortions": [
+                {
+                  "type": "overgeneralization",
+                  "confidence": 0.85,
+                  "rationale": "Using absolute language ('can't control') to generalize a specific situational difficulty into a permanent, global inability."
+                },
+                {
+                  "type": "emotional_reasoning",
+                  "confidence": 0.8,
+                  "rationale": "Concluding that one is completely out of control simply because of the internal feeling of losing control."
+                },
+                {
+                  "type": "magnification",
+                  "confidence": 0.75,
+                  "rationale": "Exaggerating the extent of the lack of self-control to an absolute extreme."
+                }
+              ],
+              "primary_distortion": "overgeneralization"
+            }
+          ],
+          "distortion_summary": {
+            "dominant_pattern": "emotional_reasoning",
+            "distortion_count": 6,
+            "severity": "moderate"
+          }
+        },
+        "continue_eval": null
+      },
+      "error": null,
+      "wall_seconds": 99.744,
+      "agent_text": "直接告诉自己“写不好也行”确实太难了，因为在你心里，这背后连着很可怕的后果，大脑根本不听劝。\n\n既然直接说服自己行不通，那我们不如先不急着反驳它，而是顺着这个“必须完美”的想法往下走一步看看。如果这次真的“没写好”，你觉得脑海里紧跟着出现的第一个让你害怕的结果是什么？然后这个结果又会带来什么呢？\n\n我们可以一起把这个“如果……那么……”的链条一步步理出来，看看它到底通向哪里，好吗？"
+    },
+    {
+      "turn": 8,
+      "trace_id": "87731f5685ba43d2",
+      "user_text": "好，那我先按 60 分标准写一稿试试。",
+      "agent_text_parts": [
+        "听到你决定",
+        "先按 6",
+        "0 分的标准",
+        "写一稿，",
+        "我真的很为你开心",
+        "！愿意放下“",
+        "必须完美”的",
+        "包袱去尝试，",
+        "这本身就需要很大的",
+        "勇气。\n\n既然",
+        "你准备把这 ",
+        "60 分的",
+        "草稿当成一个小实验",
+        "，那我们不妨带着",
+        "一点好奇心去看看：",
+        "当你想象把这 ",
+        "60 分的",
+        "草稿交出去时",
+        "，脑海里那个“",
+        "过不了、延",
+        "毕、找不到工作",
+        "”的声音，现在",
+        "还有多大声呢",
+        "？这 6",
+        "0 分的草稿",
+        "，真的会像",
+        "多米诺骨牌",
+        "一样，严丝",
+        "合缝地触发",
+        "后面那些可怕的后果",
+        "吗？"
+      ],
+      "events": [
+        {
+          "event": "token",
+          "data": "听到你决定"
+        },
+        {
+          "event": "token",
+          "data": "先按 6"
+        },
+        {
+          "event": "token",
+          "data": "0 分的标准"
+        },
+        {
+          "event": "token",
+          "data": "写一稿，"
+        },
+        {
+          "event": "token",
+          "data": "我真的很为你开心"
+        },
+        {
+          "event": "token",
+          "data": "！愿意放下“"
+        },
+        {
+          "event": "token",
+          "data": "必须完美”的"
+        },
+        {
+          "event": "token",
+          "data": "包袱去尝试，"
+        },
+        {
+          "event": "token",
+          "data": "这本身就需要很大的"
+        },
+        {
+          "event": "token",
+          "data": "勇气。\n\n既然"
+        },
+        {
+          "event": "token",
+          "data": "你准备把这 "
+        },
+        {
+          "event": "token",
+          "data": "60 分的"
+        },
+        {
+          "event": "token",
+          "data": "草稿当成一个小实验"
+        },
+        {
+          "event": "token",
+          "data": "，那我们不妨带着"
+        },
+        {
+          "event": "token",
+          "data": "一点好奇心去看看："
+        },
+        {
+          "event": "token",
+          "data": "当你想象把这 "
+        },
+        {
+          "event": "token",
+          "data": "60 分的"
+        },
+        {
+          "event": "token",
+          "data": "草稿交出去时"
+        },
+        {
+          "event": "token",
+          "data": "，脑海里那个“"
+        },
+        {
+          "event": "token",
+          "data": "过不了、延"
+        },
+        {
+          "event": "token",
+          "data": "毕、找不到工作"
+        },
+        {
+          "event": "token",
+          "data": "”的声音，现在"
+        },
+        {
+          "event": "token",
+          "data": "还有多大声呢"
+        },
+        {
+          "event": "token",
+          "data": "？这 6"
+        },
+        {
+          "event": "token",
+          "data": "0 分的草稿"
+        },
+        {
+          "event": "token",
+          "data": "，真的会像"
+        },
+        {
+          "event": "token",
+          "data": "多米诺骨牌"
+        },
+        {
+          "event": "token",
+          "data": "一样，严丝"
+        },
+        {
+          "event": "token",
+          "data": "合缝地触发"
+        },
+        {
+          "event": "token",
+          "data": "后面那些可怕的后果"
+        },
+        {
+          "event": "token",
+          "data": "吗？"
+        },
+        {
+          "event": "dialogue_done",
+          "data": {
+            "trace_id": "87731f5685ba43d2",
+            "owner": "therapy_cbt"
+          }
+        },
+        {
+          "event": "final",
+          "data": {
+            "message": "好，那我先按 60 分标准写一稿试试。",
+            "risk_state": "SAFE",
+            "crisis": false
+          }
+        }
+      ],
+      "final": {
+        "message": "好，那我先按 60 分标准写一稿试试。",
+        "risk_state": "SAFE",
+        "crisis": false
+      },
+      "state_after": {
+        "owner": "therapy_cbt",
+        "crisis": false,
+        "risk_level": "SAFE",
+        "therapy": {
+          "name": "CBT",
+          "start_seq": 3,
+          "rounds": 7,
+          "step_index": 3,
+          "branch": null,
+          "basic_flow_complete": false,
+          "visited": [
+            "identify_thought",
+            "classify_distortion",
+            "challenge"
+          ]
+        },
+        "last_therapy_check_seq": 1,
+        "pending_user_tokens": 0
+      },
+      "orchestration_after": {
+        "updated_seq": 7,
+        "therapy": "CBT",
+        "current_step": "challenge",
+        "next_step": "reframe",
+        "step_judgment": {
+          "action": "advance",
+          "target_step": null,
+          "achieved": true,
+          "reason": "用户已经识别出'必须完美'的核心规则，并主动提出'按60分标准写一稿试试'，表明已成功挑战了灾难化思维并形成了替代性的、更灵活的认知。这标志着'challenge'步骤的目标已达成，应进入下一步'reframe'来进一步巩固和重构认知。"
+        },
+        "assessment": null,
+        "skill_output": {
+          "technique": {
+            "name": "chain_analysis",
+            "description": "引导用户以'写出60分草稿'为起点，将脑海中模糊且可怕的灾难化后果（如过不了、延毕、找不到工作）拆解为具体的中间步骤。在每个环节检验其发生的必然性，寻找替代结果，从而打破'一旦写出60分就会全盘崩溃'的多米诺骨牌错觉。",
+            "steps": [
+              "第一步：锚定起点与第一张骨牌。请用户写下'交出60分草稿'后，脑海里出现的第一个具体负面结果（例如：导师批评我态度不端正或要求重写）。",
+              "第二步：逐环检验与寻找替代。针对这个第一结果，询问'这真的100%会发生吗？'并引导用户想出至少一个替代结果（例如：导师可能只是指出几个需要修改的具体问题，而不是全盘否定或大发雷霆）。",
+              "第三步：识别断裂点。继续推演后续链条（如修改->延毕->找不到工作），在每一步问自己'从A真的必然导致B吗？'，找出链条中概率极低或逻辑跳跃的'断裂点'，打破绝对化思维。"
+            ]
+          },
+          "conversation_goal": "帮助用户将压倒性的灾难化预测拆解为现实、可控的具体步骤，识别出链条中的不合理跳跃和绝对化思维，从而降低对'写出60分草稿'的恐惧，巩固其尝试新行为的信心。",
+          "adaptation": {
+            "interaction_style": "exploratory",
+            "tone_adjustment": "温和、鼓励且充满好奇。高度肯定用户决定尝试'60分草稿'的勇气，同时像侦探一样邀请用户一起审视那个吓人的后果链条，不带任何评判，让用户感到安全。",
+            "pace_adjustment": "缓慢且循序渐进。不急于一次性打破整个长链条，而是让用户一次只关注链条中的一个环节（第一张骨牌），确保他们感到可控，避免因链条过长而产生新的焦虑。",
+            "culture_note": "敏锐识别用户表达中可能出现的'完了''没救了''肯定过不了'等绝对化词汇，温和地将其标记为'大脑发出的担忧信号'而非'既定事实'。理解在东亚文化语境下对'完美'和'延毕'的深层耻感与压力，将'接受60分'框架化为一种对'必须完美'文化压力的勇敢且健康的反叛。"
+          },
+          "contraindications": [
+            {
+              "condition": "用户处于极度焦虑、恐慌发作或情绪完全崩溃状态",
+              "reason": "在情绪高度唤起时，认知层面的逻辑分析和链条拆解往往无效，甚至可能因为反复思考灾难化场景而加重焦虑。此时应暂停认知重构，优先进行情绪安抚和接地练习（grounding）。"
+            }
+          ],
+          "_skill_name": "decatastrophize"
+        },
+        "products": {
+          "automatic_thoughts": [
+            {
+              "thought": "我写不好",
+              "confidence": 0.95,
+              "span": "一想到要写就觉得写不好",
+              "target": "self"
+            },
+            {
+              "thought": "我控制不住自己。",
+              "confidence": 0.92,
+              "span": "但我控制不住",
+              "target": "self"
+            }
+          ],
+          "primary_thought": "我控制不住自己。",
+          "no_automatic_thought_detected": false,
+          "distortions": [
+            {
+              "thought": "我写不好",
+              "distortions": [
+                {
+                  "type": "fortune_telling",
+                  "confidence": 0.85,
+                  "rationale": "Predicting a negative outcome (failing to write well) before even attempting the task."
+                },
+                {
+                  "type": "emotional_reasoning",
+                  "confidence": 0.8,
+                  "rationale": "Assuming that the anxious feeling about writing means the factual inability to write well."
+                },
+                {
+                  "type": "labeling",
+                  "confidence": 0.7,
+                  "rationale": "Assigning a global, negative label ('can't write') to oneself based on a specific task."
+                }
+              ],
+              "primary_distortion": "fortune_telling"
+            },
+            {
+              "thought": "我控制不住自己。",
+              "distortions": [
+                {
+                  "type": "overgeneralization",
+                  "confidence": 0.85,
+                  "rationale": "Using absolute language ('can't control') to generalize a specific situational difficulty into a permanent, global inability."
+                },
+                {
+                  "type": "emotional_reasoning",
+                  "confidence": 0.8,
+                  "rationale": "Concluding that one is completely out of control simply because of the internal feeling of losing control."
+                },
+                {
+                  "type": "magnification",
+                  "confidence": 0.75,
+                  "rationale": "Exaggerating the extent of the lack of self-control to an absolute extreme."
+                }
+              ],
+              "primary_distortion": "overgeneralization"
+            }
+          ],
+          "distortion_summary": {
+            "dominant_pattern": "emotional_reasoning",
+            "distortion_count": 6,
+            "severity": "moderate"
+          }
+        },
+        "continue_eval": null
+      },
+      "error": null,
+      "wall_seconds": 108.697,
+      "agent_text": "听到你决定先按 60 分的标准写一稿，我真的很为你开心！愿意放下“必须完美”的包袱去尝试，这本身就需要很大的勇气。\n\n既然你准备把这 60 分的草稿当成一个小实验，那我们不妨带着一点好奇心去看看：当你想象把这 60 分的草稿交出去时，脑海里那个“过不了、延毕、找不到工作”的声音，现在还有多大声呢？这 60 分的草稿，真的会像多米诺骨牌一样，严丝合缝地触发后面那些可怕的后果吗？"
+    }
+  ]
+}

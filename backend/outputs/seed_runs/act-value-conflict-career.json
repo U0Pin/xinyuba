@@ -1,0 +1,1935 @@
+{
+  "seed_id": "act-value-conflict-career",
+  "target_family": "ACT",
+  "scenario_label": "价值澄清-职业选择",
+  "scenario_description": "高薪无意义工作和有意义低收入工作之间的价值冲突",
+  "user_id": "seed-act-value-conflict-caree",
+  "session_id": "cab9855693c0459a",
+  "turns_total": 8,
+  "switched_to_therapy_at_turn": 1,
+  "actual_therapy": "MI",
+  "therapy_rounds": 8,
+  "orch_step_changes": 2,
+  "is_complete": true,
+  "final_risk_level": "SAFE",
+  "final_crisis": false,
+  "turns": [
+    {
+      "turn": 1,
+      "trace_id": "435f29fecf53449d",
+      "user_text": "我有个 offer，年薪高 50%，但做的事情我觉得没价值。",
+      "agent_text_parts": [
+        "这确实挺",
+        "让人纠结的。",
+        "一边是实打",
+        "实高出50",
+        "%的年薪，",
+        "能缓解不少经济",
+        "上的压力；另一边",
+        "又是自己觉得“",
+        "没价值”的事情",
+        "。感觉你现在心里",
+        "挺拉扯的，",
+        "既不想错过这笔",
+        "钱，又觉得",
+        "做没价值的工作",
+        "心里过不去，对吧",
+        "？"
+      ],
+      "events": [
+        {
+          "event": "token",
+          "data": "这确实挺"
+        },
+        {
+          "event": "token",
+          "data": "让人纠结的。"
+        },
+        {
+          "event": "token",
+          "data": "一边是实打"
+        },
+        {
+          "event": "token",
+          "data": "实高出50"
+        },
+        {
+          "event": "token",
+          "data": "%的年薪，"
+        },
+        {
+          "event": "token",
+          "data": "能缓解不少经济"
+        },
+        {
+          "event": "token",
+          "data": "上的压力；另一边"
+        },
+        {
+          "event": "token",
+          "data": "又是自己觉得“"
+        },
+        {
+          "event": "token",
+          "data": "没价值”的事情"
+        },
+        {
+          "event": "token",
+          "data": "。感觉你现在心里"
+        },
+        {
+          "event": "token",
+          "data": "挺拉扯的，"
+        },
+        {
+          "event": "token",
+          "data": "既不想错过这笔"
+        },
+        {
+          "event": "token",
+          "data": "钱，又觉得"
+        },
+        {
+          "event": "token",
+          "data": "做没价值的工作"
+        },
+        {
+          "event": "token",
+          "data": "心里过不去，对吧"
+        },
+        {
+          "event": "token",
+          "data": "？"
+        },
+        {
+          "event": "dialogue_done",
+          "data": {
+            "trace_id": "435f29fecf53449d",
+            "owner": "daily"
+          }
+        },
+        {
+          "event": "final",
+          "data": {
+            "message": "我有个 offer，年薪高 50%，但做的事情我觉得没价值。",
+            "risk_state": "SAFE",
+            "crisis": false
+          }
+        }
+      ],
+      "final": {
+        "message": "我有个 offer，年薪高 50%，但做的事情我觉得没价值。",
+        "risk_state": "SAFE",
+        "crisis": false
+      },
+      "state_after": {
+        "owner": "therapy_mi",
+        "crisis": false,
+        "risk_level": "SAFE",
+        "therapy": {
+          "name": "MI",
+          "start_seq": 3,
+          "rounds": 0,
+          "step_index": -1,
+          "branch": null,
+          "basic_flow_complete": false
+        },
+        "last_therapy_check_seq": 1,
+        "pending_user_tokens": 0
+      },
+      "orchestration_after": {},
+      "error": null,
+      "wall_seconds": 34.888,
+      "agent_text": "这确实挺让人纠结的。一边是实打实高出50%的年薪，能缓解不少经济上的压力；另一边又是自己觉得“没价值”的事情。感觉你现在心里挺拉扯的，既不想错过这笔钱，又觉得做没价值的工作心里过不去，对吧？"
+    },
+    {
+      "turn": 2,
+      "trace_id": "349bce0a59274715",
+      "user_text": "现在的公司做的是我真的相信的事，但钱少很多。",
+      "agent_text_parts": [
+        "能做自己",
+        "真正相信的事特别",
+        "珍贵，但现实",
+        "里钱少了很多",
+        "，确实会让人感到",
+        "压力。听起来你",
+        "心里“意义”",
+        "和“现实”",
+        "这两个声音一直在拉扯",
+        "，这挺不容易",
+        "的。我们聊",
+        "了这么多，现在",
+        "回过头来看看这几轮的",
+        "交流，你自己感觉",
+        "怎么样？心里有没有",
+        "什么新的体会呢",
+        "？"
+      ],
+      "events": [
+        {
+          "event": "token",
+          "data": "能做自己"
+        },
+        {
+          "event": "token",
+          "data": "真正相信的事特别"
+        },
+        {
+          "event": "token",
+          "data": "珍贵，但现实"
+        },
+        {
+          "event": "token",
+          "data": "里钱少了很多"
+        },
+        {
+          "event": "token",
+          "data": "，确实会让人感到"
+        },
+        {
+          "event": "token",
+          "data": "压力。听起来你"
+        },
+        {
+          "event": "token",
+          "data": "心里“意义”"
+        },
+        {
+          "event": "token",
+          "data": "和“现实”"
+        },
+        {
+          "event": "token",
+          "data": "这两个声音一直在拉扯"
+        },
+        {
+          "event": "token",
+          "data": "，这挺不容易"
+        },
+        {
+          "event": "token",
+          "data": "的。我们聊"
+        },
+        {
+          "event": "token",
+          "data": "了这么多，现在"
+        },
+        {
+          "event": "token",
+          "data": "回过头来看看这几轮的"
+        },
+        {
+          "event": "token",
+          "data": "交流，你自己感觉"
+        },
+        {
+          "event": "token",
+          "data": "怎么样？心里有没有"
+        },
+        {
+          "event": "token",
+          "data": "什么新的体会呢"
+        },
+        {
+          "event": "token",
+          "data": "？"
+        },
+        {
+          "event": "dialogue_done",
+          "data": {
+            "trace_id": "349bce0a59274715",
+            "owner": "therapy_mi"
+          }
+        },
+        {
+          "event": "final",
+          "data": {
+            "message": "现在的公司做的是我真的相信的事，但钱少很多。",
+            "risk_state": "SAFE",
+            "crisis": false
+          }
+        }
+      ],
+      "final": {
+        "message": "现在的公司做的是我真的相信的事，但钱少很多。",
+        "risk_state": "SAFE",
+        "crisis": false
+      },
+      "state_after": {
+        "owner": "therapy_mi",
+        "crisis": false,
+        "risk_level": "SAFE",
+        "therapy": {
+          "name": "MI",
+          "start_seq": 3,
+          "rounds": 1,
+          "step_index": 0,
+          "branch": null,
+          "basic_flow_complete": false
+        },
+        "last_therapy_check_seq": 1,
+        "pending_user_tokens": 0
+      },
+      "orchestration_after": {
+        "updated_seq": 1,
+        "therapy": "MI",
+        "current_step": "explore",
+        "next_step": "explore",
+        "step_judgment": {
+          "action": "stay",
+          "target_step": null,
+          "achieved": false,
+          "reason": "用户仍处于矛盾心理（ambivalence index 0.85），在工作的意义感与低薪之间挣扎。当前步骤explore尚未充分探索矛盾的两面，需要继续深入探索用户的矛盾心理，帮助其更清晰地理解自己的价值观和内在动机，不宜过早推进到evocation或commitment阶段。"
+        },
+        "assessment": {
+          "change_readiness": {
+            "index": 0.4,
+            "state": "contemplation",
+            "confidence": 0.7,
+            "evidence": [
+              "User is weighing the pros and cons of their current job, noting the meaningful work versus the low pay, indicating they are in the contemplation stage of evaluating their career and financial situation."
+            ]
+          },
+          "ambivalence": {
+            "index": 0.85,
+            "state": "strong",
+            "confidence": 0.9,
+            "evidence": [
+              "The statement '现在的公司做的是我真的相信的事，但钱少很多' is a classic expression of ambivalence, explicitly contrasting the intrinsic value of the work with the extrinsic drawback of low compensation."
+            ]
+          },
+          "self_efficacy": {
+            "index": 0.5,
+            "state": "low",
+            "confidence": 0.4,
+            "evidence": [
+              "The user has not expressed any beliefs about their ability to change jobs, negotiate a raise, or manage their finances differently. Their focus is purely on the current trade-offs, leaving self-efficacy neutral."
+            ]
+          },
+          "change_talk": {
+            "index": 0.3,
+            "state": "weak",
+            "confidence": 0.6,
+            "evidence": [
+              "The phrase '但钱少很多' (but the pay is much less) indicates a mild desire or reason for change (seeking better financial compensation), but lacks strong commitment or activation language."
+            ]
+          },
+          "sustain_talk": {
+            "index": 0.5,
+            "state": "moderate",
+            "confidence": 0.7,
+            "evidence": [
+              "The phrase '现在的公司做的是我真的相信的事' (The current company does work I truly believe in) serves as strong sustain talk, providing a compelling reason to stay in the current role despite the financial drawbacks."
+            ]
+          },
+          "mi_intervention_need": 0.628,
+          "overall_trend": "stable",
+          "primary_concern": "ambivalence",
+          "should_intervene": true,
+          "recommended_processes": [
+            {
+              "process": "explore",
+              "priority": 1,
+              "rationale": "The user is experiencing high ambivalence between the meaningfulness of their work and their financial needs. The priority is to explore both sides of this ambivalence gently without pushing them toward a decision."
+            },
+            {
+              "process": "evocation",
+              "priority": 2,
+              "rationale": "Once ambivalence is explored, evocation can help the user clarify their own values and what financial security means to them, drawing out their own motivations rather than advising them."
+            }
+          ]
+        },
+        "skill_output": {
+          "technique": {
+            "name": "oars",
+            "description": "用户重复了核心的矛盾陈述，表明‘理想与现实’的拉扯是当前最核心且未解的议题。上一轮的提问可能让用户觉得节奏稍快，此时需要退回使用 OARS 技术，通过深度反映接纳其重复，肯定其坚持的不易，并用更具体的开放式问题引导其探索‘相信的事’的内涵，深化对矛盾双方的理解。",
+            "steps": [
+              "使用复杂反映（Complex Reflection）和肯定（Affirmation）接纳用户的重复，点出这个矛盾对他的重要性。具体肯定其在现实压力下依然清楚自己信念的不易，正常化这种内心的拉扯感。",
+              "使用开放式问题（Open Question）邀请用户探索其中一端的具体细节。例如切入‘相信的事’：‘在这份你相信的工作里，最让你觉得有使命感、最舍不得的是什么？’，让探索更聚焦、更具象。"
+            ]
+          },
+          "conversation_goal": "深化对用户核心矛盾的理解，探索‘相信的事’的具体内涵及其个人意义，同时充分接纳‘钱少’带来的现实压力，帮助其在安全、不评判的氛围中梳理内在价值观。",
+          "adaptation": {
+            "interaction_style": "exploratory",
+            "tone_adjustment": "温和、包容、充满好奇且沉稳。因为用户重复了原话，语气需要传达出‘我们不急着解决它，先好好看看它’的接纳感，避免让用户觉得被催促。",
+            "pace_adjustment": "放慢节奏。停留在用户当前的感受和陈述中，不急于推进到决策或寻找解决方案，允许用户在矛盾中多停留一会儿。",
+            "culture_note": "在中国文化语境下，‘理想与面包’的冲突非常普遍且伴随现实焦虑。具体肯定用户坚持信念的不易（如：‘在现实压力下依然清楚自己相信什么，这很不容易’），同时绝对不贬低对金钱的合理需求，将‘意义’和‘现实’视为平等的内心声音。"
+          },
+          "contraindications": [
+            {
+              "condition": "直接给出职业建议（如建议跳槽或接受降薪）。",
+              "reason": "违背 MI 合作原则，剥夺用户的自主权，容易引发心理抗拒，破坏刚刚建立的信任关系。"
+            },
+            {
+              "condition": "过度拔高‘理想’而轻视‘金钱’的压力。",
+              "reason": "会让用户觉得现实困难被无视，产生不被理解的感受，从而关闭心扉，增强维持现状的防御心理。"
+            }
+          ],
+          "_skill_name": "mi_explore"
+        },
+        "products": {},
+        "continue_eval": null
+      },
+      "error": null,
+      "wall_seconds": 146.199,
+      "agent_text": "能做自己真正相信的事特别珍贵，但现实里钱少了很多，确实会让人感到压力。听起来你心里“意义”和“现实”这两个声音一直在拉扯，这挺不容易的。我们聊了这么多，现在回过头来看看这几轮的交流，你自己感觉怎么样？心里有没有什么新的体会呢？"
+    },
+    {
+      "turn": 3,
+      "trace_id": "11c916801eb54486",
+      "user_text": "我不知道该怎么选。",
+      "agent_text_parts": [
+        "不知道该怎么",
+        "选，真的太",
+        "正常了。一边",
+        "是自己真心相信的事",
+        "，另一边是实实在在",
+        "的现实压力，这两个",
+        "声音在打架，",
+        "换谁都会觉得",
+        "难以抉择。尽管",
+        "这么纠结，你",
+        "依然没有放弃去",
+        "弄清楚自己到底看重",
+        "什么，这挺",
+        "不容易的。\n\n",
+        "如果我们先稍微停",
+        "一下，不去管",
+        "那个让人头疼的现实",
+        "问题，单看",
+        "这份你“相信",
+        "的工作”，里面最",
+        "让你觉得",
+        "有使命感、最",
+        "舍不得的部分是什么呢？"
+      ],
+      "events": [
+        {
+          "event": "token",
+          "data": "不知道该怎么"
+        },
+        {
+          "event": "token",
+          "data": "选，真的太"
+        },
+        {
+          "event": "token",
+          "data": "正常了。一边"
+        },
+        {
+          "event": "token",
+          "data": "是自己真心相信的事"
+        },
+        {
+          "event": "token",
+          "data": "，另一边是实实在在"
+        },
+        {
+          "event": "token",
+          "data": "的现实压力，这两个"
+        },
+        {
+          "event": "token",
+          "data": "声音在打架，"
+        },
+        {
+          "event": "token",
+          "data": "换谁都会觉得"
+        },
+        {
+          "event": "token",
+          "data": "难以抉择。尽管"
+        },
+        {
+          "event": "token",
+          "data": "这么纠结，你"
+        },
+        {
+          "event": "token",
+          "data": "依然没有放弃去"
+        },
+        {
+          "event": "token",
+          "data": "弄清楚自己到底看重"
+        },
+        {
+          "event": "token",
+          "data": "什么，这挺"
+        },
+        {
+          "event": "token",
+          "data": "不容易的。\n\n"
+        },
+        {
+          "event": "token",
+          "data": "如果我们先稍微停"
+        },
+        {
+          "event": "token",
+          "data": "一下，不去管"
+        },
+        {
+          "event": "token",
+          "data": "那个让人头疼的现实"
+        },
+        {
+          "event": "token",
+          "data": "问题，单看"
+        },
+        {
+          "event": "token",
+          "data": "这份你“相信"
+        },
+        {
+          "event": "token",
+          "data": "的工作”，里面最"
+        },
+        {
+          "event": "token",
+          "data": "让你觉得"
+        },
+        {
+          "event": "token",
+          "data": "有使命感、最"
+        },
+        {
+          "event": "token",
+          "data": "舍不得的部分是什么呢？"
+        },
+        {
+          "event": "dialogue_done",
+          "data": {
+            "trace_id": "11c916801eb54486",
+            "owner": "therapy_mi"
+          }
+        },
+        {
+          "event": "final",
+          "data": {
+            "message": "我不知道该怎么选。",
+            "risk_state": "LOW_RISK",
+            "crisis": false
+          }
+        }
+      ],
+      "final": {
+        "message": "我不知道该怎么选。",
+        "risk_state": "LOW_RISK",
+        "crisis": false
+      },
+      "state_after": {
+        "owner": "therapy_mi",
+        "crisis": false,
+        "risk_level": "LOW_RISK",
+        "therapy": {
+          "name": "MI",
+          "start_seq": 3,
+          "rounds": 2,
+          "step_index": 0,
+          "branch": null,
+          "basic_flow_complete": false
+        },
+        "last_therapy_check_seq": 1,
+        "pending_user_tokens": 0
+      },
+      "orchestration_after": {
+        "updated_seq": 2,
+        "therapy": "MI",
+        "current_step": "explore",
+        "next_step": "explore",
+        "step_judgment": {
+          "action": "stay",
+          "target_step": null,
+          "achieved": false,
+          "reason": "用户仍处于强矛盾心理状态（ambivalence index 0.9），自我效能感低（0.3），且明确表示'不知道该怎么选'。当前仍在explore阶段，需要继续温和探索矛盾双方，帮助用户梳理内心冲突，尚未达到可推进到evocation或commitment的条件。"
+        },
+        "assessment": {
+          "change_readiness": {
+            "index": 0.4,
+            "state": "contemplation",
+            "confidence": 0.85,
+            "evidence": [
+              "User states '我不知道该怎么选' (I don't know how to choose), indicating they are actively weighing the options but are stuck in the contemplation stage, unable to move toward preparation or action."
+            ]
+          },
+          "ambivalence": {
+            "index": 0.9,
+            "state": "strong",
+            "confidence": 0.95,
+            "evidence": [
+              "The explicit statement '我不知道该怎么选' (I don't know how to choose) is a direct expression of high ambivalence, showing the user is completely torn and paralyzed by the conflict between meaningful work and financial reality."
+            ]
+          },
+          "self_efficacy": {
+            "index": 0.3,
+            "state": "low",
+            "confidence": 0.8,
+            "evidence": [
+              "Saying '我不知道该怎么选' (I don't know how to choose) reflects a sense of helplessness or lack of confidence in their ability to navigate this complex decision and find a viable path forward."
+            ]
+          },
+          "change_talk": {
+            "index": 0.1,
+            "state": "absent",
+            "confidence": 0.7,
+            "evidence": [
+              "The current message contains no explicit desire, ability, reasons, or need for change (DARN/CAT). The user is merely expressing confusion and a feeling of being stuck."
+            ]
+          },
+          "sustain_talk": {
+            "index": 0.3,
+            "state": "weak",
+            "confidence": 0.6,
+            "evidence": [
+              "While not explicitly arguing to stay in this specific message, the inability to choose implies that the sustain talk (the intrinsic value of the meaningful work) is strong enough to block change talk and paralyze decision-making."
+            ]
+          },
+          "mi_intervention_need": 0.645,
+          "overall_trend": "stable",
+          "primary_concern": "ambivalence",
+          "should_intervene": true,
+          "recommended_processes": [
+            {
+              "process": "explore",
+              "priority": 1,
+              "rationale": "The user is experiencing strong ambivalence and feels stuck ('I don't know how to choose'). The priority is to explore this stuckness and both sides of the ambivalence gently, normalizing the difficulty without pressuring them to make an immediate decision."
+            },
+            {
+              "process": "evocation",
+              "priority": 2,
+              "rationale": "Since self-efficacy is low and the user feels overwhelmed by the binary choice, evocation can help them reconnect with their core values and find small, manageable insights, drawing out their own wisdom rather than focusing on the daunting final decision."
+            }
+          ]
+        },
+        "skill_output": {
+          "technique": {
+            "name": "oars",
+            "description": "Build engagement and explore the user's ambivalence without pushing for change",
+            "steps": [
+              "用开放式提问邀请用户分享更多",
+              "通过反思性倾听回应，让用户感到被理解",
+              "温和地邀请用户觉察自己内心不同的声音"
+            ]
+          },
+          "conversation_goal": "通过开放式提问和反思性倾听，帮助用户探索内心的矛盾，不做评判",
+          "adaptation": {
+            "interaction_style": "exploratory",
+            "tone_adjustment": "温和、好奇、不评判",
+            "pace_adjustment": "slow",
+            "culture_note": "用'你自己觉得呢？'替代'你应该'；肯定要具体而非笼统；矛盾是正常的不是抗拒"
+          },
+          "contraindications": [
+            {
+              "condition": "crisis",
+              "reason": "危机状态下不适合探索矛盾，优先确保安全"
+            }
+          ],
+          "_skill_name": "mi_explore"
+        },
+        "products": {},
+        "continue_eval": null
+      },
+      "error": null,
+      "wall_seconds": 137.671,
+      "agent_text": "不知道该怎么选，真的太正常了。一边是自己真心相信的事，另一边是实实在在的现实压力，这两个声音在打架，换谁都会觉得难以抉择。尽管这么纠结，你依然没有放弃去弄清楚自己到底看重什么，这挺不容易的。\n\n如果我们先稍微停一下，不去管那个让人头疼的现实问题，单看这份你“相信的工作”，里面最让你觉得有使命感、最舍不得的部分是什么呢？"
+    },
+    {
+      "turn": 4,
+      "trace_id": "086ae0396f634389",
+      "user_text": "我想过选钱，但又怕以后会后悔；选意义，又怕以后生活压力太大。",
+      "agent_text_parts": [
+        "听得出来",
+        "，",
+        "你现在真的挺煎熬",
+        "的。选钱",
+        "，怕辜负了自己",
+        "真正相信的东西，",
+        "以后会后悔；",
+        "选意义，又",
+        "担心实实在在的生活压力",
+        "会让自己喘不过",
+        "气。无论往",
+        "哪边走，心里",
+        "都装着对未来的",
+        "担忧，这确实",
+        "让人很难抉择。",
+        "\n\n这两种害怕都",
+        "特别真实。如果",
+        "不去管对错，",
+        "单感受这两种“",
+        "怕”，哪一种担忧",
+        "让你觉得更沉重",
+        "，或者更让你",
+        "觉得难以承受呢",
+        "？"
+      ],
+      "events": [
+        {
+          "event": "token",
+          "data": "听得出来"
+        },
+        {
+          "event": "token",
+          "data": "，"
+        },
+        {
+          "event": "token",
+          "data": "你现在真的挺煎熬"
+        },
+        {
+          "event": "token",
+          "data": "的。选钱"
+        },
+        {
+          "event": "token",
+          "data": "，怕辜负了自己"
+        },
+        {
+          "event": "token",
+          "data": "真正相信的东西，"
+        },
+        {
+          "event": "token",
+          "data": "以后会后悔；"
+        },
+        {
+          "event": "token",
+          "data": "选意义，又"
+        },
+        {
+          "event": "token",
+          "data": "担心实实在在的生活压力"
+        },
+        {
+          "event": "token",
+          "data": "会让自己喘不过"
+        },
+        {
+          "event": "token",
+          "data": "气。无论往"
+        },
+        {
+          "event": "token",
+          "data": "哪边走，心里"
+        },
+        {
+          "event": "token",
+          "data": "都装着对未来的"
+        },
+        {
+          "event": "token",
+          "data": "担忧，这确实"
+        },
+        {
+          "event": "token",
+          "data": "让人很难抉择。"
+        },
+        {
+          "event": "token",
+          "data": "\n\n这两种害怕都"
+        },
+        {
+          "event": "token",
+          "data": "特别真实。如果"
+        },
+        {
+          "event": "token",
+          "data": "不去管对错，"
+        },
+        {
+          "event": "token",
+          "data": "单感受这两种“"
+        },
+        {
+          "event": "token",
+          "data": "怕”，哪一种担忧"
+        },
+        {
+          "event": "token",
+          "data": "让你觉得更沉重"
+        },
+        {
+          "event": "token",
+          "data": "，或者更让你"
+        },
+        {
+          "event": "token",
+          "data": "觉得难以承受呢"
+        },
+        {
+          "event": "token",
+          "data": "？"
+        },
+        {
+          "event": "dialogue_done",
+          "data": {
+            "trace_id": "086ae0396f634389",
+            "owner": "therapy_mi"
+          }
+        },
+        {
+          "event": "final",
+          "data": {
+            "message": "我想过选钱，但又怕以后会后悔；选意义，又怕以后生活压力太大。",
+            "risk_state": "LOW_RISK",
+            "crisis": false
+          }
+        }
+      ],
+      "final": {
+        "message": "我想过选钱，但又怕以后会后悔；选意义，又怕以后生活压力太大。",
+        "risk_state": "LOW_RISK",
+        "crisis": false
+      },
+      "state_after": {
+        "owner": "therapy_mi",
+        "crisis": false,
+        "risk_level": "LOW_RISK",
+        "therapy": {
+          "name": "MI",
+          "start_seq": 3,
+          "rounds": 3,
+          "step_index": 0,
+          "branch": null,
+          "basic_flow_complete": false
+        },
+        "last_therapy_check_seq": 1,
+        "pending_user_tokens": 0
+      },
+      "orchestration_after": {
+        "updated_seq": 3,
+        "therapy": "MI",
+        "current_step": "explore",
+        "next_step": "explore",
+        "step_judgment": {
+          "action": "stay",
+          "target_step": null,
+          "achieved": false,
+          "reason": "用户仍处于高度矛盾状态（ambivalence index 0.95），change_readiness 为 0.45（contemplation 阶段），尚未准备好做出决定。AI 最近一轮提问引导用户比较两种恐惧的沉重程度，这是一个有效的探索性干预，但用户尚未回应。需要继续停留在 explore 步骤，深入探索用户的矛盾心理，帮助其理清两种担忧背后的深层含义，而非急于推进到 evocation 或 commitment 阶段。"
+        },
+        "assessment": {
+          "change_readiness": {
+            "index": 0.45,
+            "state": "contemplation",
+            "confidence": 0.9,
+            "evidence": [
+              "User explicitly weighs the pros and cons of both options ('想过选钱...选意义...'), indicating they are deeply in the contemplation stage, actively thinking about change but not yet ready to commit to a decision."
+            ]
+          },
+          "ambivalence": {
+            "index": 0.95,
+            "state": "strong",
+            "confidence": 0.98,
+            "evidence": [
+              "The message is a textbook expression of high ambivalence, using a parallel structure of fears: '怕以后会后悔' (afraid of regretting losing meaning) vs '怕以后生活压力太大' (afraid of financial pressure). Both sides of the conflict are strongly felt and paralyzing."
+            ]
+          },
+          "self_efficacy": {
+            "index": 0.35,
+            "state": "low",
+            "confidence": 0.85,
+            "evidence": [
+              "The user expresses significant fear and doubt about the future outcomes of either choice ('怕以后...'), indicating a lack of confidence in their ability to handle the potential negative consequences or navigate the transition successfully."
+            ]
+          },
+          "change_talk": {
+            "index": 0.4,
+            "state": "moderate",
+            "confidence": 0.8,
+            "evidence": [
+              "'选意义，又怕以后生活压力太大' implies a reason and need for change (seeking more money to alleviate life pressure and financial stress), though it is currently countered by fear."
+            ]
+          },
+          "sustain_talk": {
+            "index": 0.5,
+            "state": "moderate",
+            "confidence": 0.85,
+            "evidence": [
+              "'我想过选钱，但又怕以后会后悔' reflects a strong reason to sustain the current situation (maintaining the meaningful work to avoid future regret and preserve their sense of mission)."
+            ]
+          },
+          "mi_intervention_need": 0.69,
+          "overall_trend": "stable",
+          "primary_concern": "ambivalence",
+          "should_intervene": true,
+          "recommended_processes": [
+            {
+              "process": "explore",
+              "priority": 1,
+              "rationale": "The user is experiencing peak ambivalence, clearly articulating the specific fears associated with both choices. The priority is to explore these fears gently, perhaps using a decisional balance approach, to help them unpack what 'regret' and 'pressure' truly mean to them without pushing for a premature decision."
+            },
+            {
+              "process": "evocation",
+              "priority": 2,
+              "rationale": "Once the fears are explored, evocation can help the user connect with their deeper values to see which fear they are more willing to live with, drawing on their own wisdom to weigh meaning against financial security."
+            }
+          ]
+        },
+        "skill_output": {
+          "technique": {
+            "name": "oars",
+            "description": "Build engagement and explore the user's ambivalence without pushing for change",
+            "steps": [
+              "用开放式提问邀请用户分享更多",
+              "通过反思性倾听回应，让用户感到被理解",
+              "温和地邀请用户觉察自己内心不同的声音"
+            ]
+          },
+          "conversation_goal": "通过开放式提问和反思性倾听，帮助用户探索内心的矛盾，不做评判",
+          "adaptation": {
+            "interaction_style": "exploratory",
+            "tone_adjustment": "温和、好奇、不评判",
+            "pace_adjustment": "slow",
+            "culture_note": "用'你自己觉得呢？'替代'你应该'；肯定要具体而非笼统；矛盾是正常的不是抗拒"
+          },
+          "contraindications": [
+            {
+              "condition": "crisis",
+              "reason": "危机状态下不适合探索矛盾，优先确保安全"
+            }
+          ],
+          "_skill_name": "mi_explore"
+        },
+        "products": {},
+        "continue_eval": null
+      },
+      "error": null,
+      "wall_seconds": 111.629,
+      "agent_text": "听得出来，你现在真的挺煎熬的。选钱，怕辜负了自己真正相信的东西，以后会后悔；选意义，又担心实实在在的生活压力会让自己喘不过气。无论往哪边走，心里都装着对未来的担忧，这确实让人很难抉择。\n\n这两种害怕都特别真实。如果不去管对错，单感受这两种“怕”，哪一种担忧让你觉得更沉重，或者更让你觉得难以承受呢？"
+    },
+    {
+      "turn": 5,
+      "trace_id": "23f3af021b924960",
+      "user_text": "你说得对，纠结本身也挺消耗的。",
+      "agent_text_parts": [
+        "是啊，",
+        "心里有两个声音一直在",
+        "拔河，光是这种",
+        "“纠结”本身",
+        "，就已经花掉",
+        "你很多力气了",
+        "，真的挺让人",
+        "疲惫的。\n\n",
+        "在这种这么消耗的状态",
+        "下，你还能",
+        "一点点去理清这些",
+        "感受，真的很不容易",
+        "。\n\n既然现在",
+        "觉得这么累，",
+        "我们是不是可以稍微",
+        "让这两个声音先",
+        "放个假？",
+        "或者，在这种消耗",
+        "里，你现在最",
+        "希望能有一点什么样的空间",
+        "，让自己稍微喘",
+        "口气呢？"
+      ],
+      "events": [
+        {
+          "event": "token",
+          "data": "是啊，"
+        },
+        {
+          "event": "token",
+          "data": "心里有两个声音一直在"
+        },
+        {
+          "event": "token",
+          "data": "拔河，光是这种"
+        },
+        {
+          "event": "token",
+          "data": "“纠结”本身"
+        },
+        {
+          "event": "token",
+          "data": "，就已经花掉"
+        },
+        {
+          "event": "token",
+          "data": "你很多力气了"
+        },
+        {
+          "event": "token",
+          "data": "，真的挺让人"
+        },
+        {
+          "event": "token",
+          "data": "疲惫的。\n\n"
+        },
+        {
+          "event": "token",
+          "data": "在这种这么消耗的状态"
+        },
+        {
+          "event": "token",
+          "data": "下，你还能"
+        },
+        {
+          "event": "token",
+          "data": "一点点去理清这些"
+        },
+        {
+          "event": "token",
+          "data": "感受，真的很不容易"
+        },
+        {
+          "event": "token",
+          "data": "。\n\n既然现在"
+        },
+        {
+          "event": "token",
+          "data": "觉得这么累，"
+        },
+        {
+          "event": "token",
+          "data": "我们是不是可以稍微"
+        },
+        {
+          "event": "token",
+          "data": "让这两个声音先"
+        },
+        {
+          "event": "token",
+          "data": "放个假？"
+        },
+        {
+          "event": "token",
+          "data": "或者，在这种消耗"
+        },
+        {
+          "event": "token",
+          "data": "里，你现在最"
+        },
+        {
+          "event": "token",
+          "data": "希望能有一点什么样的空间"
+        },
+        {
+          "event": "token",
+          "data": "，让自己稍微喘"
+        },
+        {
+          "event": "token",
+          "data": "口气呢？"
+        },
+        {
+          "event": "dialogue_done",
+          "data": {
+            "trace_id": "23f3af021b924960",
+            "owner": "therapy_mi"
+          }
+        },
+        {
+          "event": "final",
+          "data": {
+            "message": "你说得对，纠结本身也挺消耗的。",
+            "risk_state": "LOW_RISK",
+            "crisis": false
+          }
+        }
+      ],
+      "final": {
+        "message": "你说得对，纠结本身也挺消耗的。",
+        "risk_state": "LOW_RISK",
+        "crisis": false
+      },
+      "state_after": {
+        "owner": "therapy_mi",
+        "crisis": false,
+        "risk_level": "LOW_RISK",
+        "therapy": {
+          "name": "MI",
+          "start_seq": 3,
+          "rounds": 4,
+          "step_index": 0,
+          "branch": null,
+          "basic_flow_complete": false
+        },
+        "last_therapy_check_seq": 1,
+        "pending_user_tokens": 0
+      },
+      "orchestration_after": {
+        "updated_seq": 4,
+        "therapy": "MI",
+        "current_step": "explore",
+        "next_step": "explore",
+        "step_judgment": {
+          "action": "stay",
+          "target_step": null,
+          "achieved": false,
+          "reason": "用户仍处于contemplation阶段，矛盾心理极强（ambivalence index 0.9），自我效能感低（0.3），且没有change talk出现。用户刚表达了对纠结消耗的疲惫感，AI已进行了共情和验证，但尚未充分探索这种疲惫背后的深层需求和价值观。根据recommended_processes，当前应继续explore过程，优先验证用户的疲惫感，帮助其在情感上得到充分支持后再进行evocation。尚未达到进入evocation阶段的条件。"
+        },
+        "assessment": {
+          "change_readiness": {
+            "index": 0.4,
+            "state": "contemplation",
+            "confidence": 0.85,
+            "evidence": [
+              "User remains stuck in the contemplation stage, stating '纠结本身也挺消耗的' (the entanglement itself is draining), indicating they are still weighing options but feeling paralyzed by the process rather than moving towards action."
+            ]
+          },
+          "ambivalence": {
+            "index": 0.9,
+            "state": "strong",
+            "confidence": 0.95,
+            "evidence": [
+              "The phrase '纠结本身' (the entanglement/conflict itself) directly refers to the intense ambivalence discussed in previous turns. Acknowledging it as '消耗的' (draining) highlights the severe psychological toll of this unresolved internal conflict."
+            ]
+          },
+          "self_efficacy": {
+            "index": 0.3,
+            "state": "low",
+            "confidence": 0.85,
+            "evidence": [
+              "Describing the decision-making process as '消耗的' (draining) suggests a depletion of psychological resources, indicating low confidence or energy to successfully navigate and resolve the dilemma."
+            ]
+          },
+          "change_talk": {
+            "index": 0.1,
+            "state": "absent",
+            "confidence": 0.9,
+            "evidence": [
+              "The user is not expressing desire, ability, reasons, or need for change. They are merely observing and validating the emotional toll of their current indecision."
+            ]
+          },
+          "sustain_talk": {
+            "index": 0.1,
+            "state": "absent",
+            "confidence": 0.9,
+            "evidence": [
+              "There is no explicit argument for maintaining the current situation. The user's focus is entirely on the fatigue caused by the indecision, not on the benefits of staying the same."
+            ]
+          },
+          "mi_intervention_need": 0.625,
+          "overall_trend": "stable",
+          "primary_concern": "ambivalence",
+          "should_intervene": true,
+          "recommended_processes": [
+            {
+              "process": "explore",
+              "priority": 1,
+              "rationale": "The user is expressing significant fatigue and emotional drain from their high ambivalence ('纠结本身也挺消耗的'). The priority is to explore and validate this exhaustion without pushing for a premature decision, which helps reduce pressure and builds the therapeutic alliance."
+            },
+            {
+              "process": "evocation",
+              "priority": 2,
+              "rationale": "Once the user's exhaustion is fully validated, evocation can be used gently to help them reconnect with their deeper values and inner wisdom when they feel more emotionally resourced, rather than forcing a cognitive weighing of pros and cons."
+            }
+          ]
+        },
+        "skill_output": {
+          "technique": {
+            "name": "oars",
+            "description": "Build engagement and explore the user's ambivalence without pushing for change",
+            "steps": [
+              "用开放式提问邀请用户分享更多",
+              "通过反思性倾听回应，让用户感到被理解",
+              "温和地邀请用户觉察自己内心不同的声音"
+            ]
+          },
+          "conversation_goal": "通过开放式提问和反思性倾听，帮助用户探索内心的矛盾，不做评判",
+          "adaptation": {
+            "interaction_style": "exploratory",
+            "tone_adjustment": "温和、好奇、不评判",
+            "pace_adjustment": "slow",
+            "culture_note": "用'你自己觉得呢？'替代'你应该'；肯定要具体而非笼统；矛盾是正常的不是抗拒"
+          },
+          "contraindications": [
+            {
+              "condition": "crisis",
+              "reason": "危机状态下不适合探索矛盾，优先确保安全"
+            }
+          ],
+          "_skill_name": "mi_explore"
+        },
+        "products": {},
+        "continue_eval": null
+      },
+      "error": null,
+      "wall_seconds": 107.187,
+      "agent_text": "是啊，心里有两个声音一直在拔河，光是这种“纠结”本身，就已经花掉你很多力气了，真的挺让人疲惫的。\n\n在这种这么消耗的状态下，你还能一点点去理清这些感受，真的很不容易。\n\n既然现在觉得这么累，我们是不是可以稍微让这两个声音先放个假？或者，在这种消耗里，你现在最希望能有一点什么样的空间，让自己稍微喘口气呢？"
+    },
+    {
+      "turn": 6,
+      "trace_id": "c1c443fe87a14b92",
+      "user_text": "如果一定要我描述一下我在乎什么……我好像最在乎能不能帮到具体的人。",
+      "agent_text_parts": [
+        "“帮到",
+        "具体的人”……",
+        "这听起来真的特别",
+        "温暖，也特别",
+        "有力量。\n\n",
+        "能感觉到，这",
+        "不仅仅是关于工作，",
+        "更是你心里非常",
+        "看重的一份真实的连接",
+        "。\n\n当你把",
+        "这份“在乎”",
+        "慢慢理清，说",
+        "出来的这一刻，心里",
+        "是什么感觉呢？"
+      ],
+      "events": [
+        {
+          "event": "token",
+          "data": "“帮到"
+        },
+        {
+          "event": "token",
+          "data": "具体的人”……"
+        },
+        {
+          "event": "token",
+          "data": "这听起来真的特别"
+        },
+        {
+          "event": "token",
+          "data": "温暖，也特别"
+        },
+        {
+          "event": "token",
+          "data": "有力量。\n\n"
+        },
+        {
+          "event": "token",
+          "data": "能感觉到，这"
+        },
+        {
+          "event": "token",
+          "data": "不仅仅是关于工作，"
+        },
+        {
+          "event": "token",
+          "data": "更是你心里非常"
+        },
+        {
+          "event": "token",
+          "data": "看重的一份真实的连接"
+        },
+        {
+          "event": "token",
+          "data": "。\n\n当你把"
+        },
+        {
+          "event": "token",
+          "data": "这份“在乎”"
+        },
+        {
+          "event": "token",
+          "data": "慢慢理清，说"
+        },
+        {
+          "event": "token",
+          "data": "出来的这一刻，心里"
+        },
+        {
+          "event": "token",
+          "data": "是什么感觉呢？"
+        },
+        {
+          "event": "dialogue_done",
+          "data": {
+            "trace_id": "c1c443fe87a14b92",
+            "owner": "therapy_mi"
+          }
+        },
+        {
+          "event": "final",
+          "data": {
+            "message": "如果一定要我描述一下我在乎什么……我好像最在乎能不能帮到具体的人。",
+            "risk_state": "SAFE",
+            "crisis": false
+          }
+        }
+      ],
+      "final": {
+        "message": "如果一定要我描述一下我在乎什么……我好像最在乎能不能帮到具体的人。",
+        "risk_state": "SAFE",
+        "crisis": false
+      },
+      "state_after": {
+        "owner": "therapy_mi",
+        "crisis": false,
+        "risk_level": "SAFE",
+        "therapy": {
+          "name": "MI",
+          "start_seq": 3,
+          "rounds": 5,
+          "step_index": 1,
+          "branch": null,
+          "basic_flow_complete": false,
+          "visited": [
+            "explore"
+          ]
+        },
+        "last_therapy_check_seq": 1,
+        "pending_user_tokens": 0
+      },
+      "orchestration_after": {
+        "updated_seq": 5,
+        "therapy": "MI",
+        "current_step": "explore",
+        "next_step": "evocation",
+        "step_judgment": {
+          "action": "advance",
+          "target_step": null,
+          "achieved": true,
+          "reason": "用户已成功从纠结和矛盾中提炼出核心价值观（'帮到具体的人'），change_talk强烈（0.75），sustain_talk几乎消失（0.05），change_readiness已进入preparation阶段（0.55）。explore步骤的核心目标——帮助用户探索内在矛盾并识别真实关切——已基本达成。下一步应进入evocation步骤，进一步唤起和深化这一核心价值观，强化改变动机。"
+        },
+        "assessment": {
+          "change_readiness": {
+            "index": 0.55,
+            "state": "preparation",
+            "confidence": 0.85,
+            "evidence": [
+              "User is shifting from feeling paralyzed by the dilemma to actively exploring their core values, stating '我好像最在乎能不能帮到具体的人', indicating movement within the contemplation stage."
+            ]
+          },
+          "ambivalence": {
+            "index": 0.6,
+            "state": "moderate",
+            "confidence": 0.8,
+            "evidence": [
+              "While the underlying dilemma between money and meaning persists in the broader context, the user has temporarily bypassed the immediate conflict to identify a core value, showing a slight reduction in acute ambivalence."
+            ]
+          },
+          "self_efficacy": {
+            "index": 0.55,
+            "state": "moderate",
+            "confidence": 0.8,
+            "evidence": [
+              "The user successfully navigated the agent's prompt to identify a specific value ('如果一定要我描述一下...我好像最在乎...'), showing increased confidence in their ability to introspect compared to the previous feeling of being 'drained'."
+            ]
+          },
+          "change_talk": {
+            "index": 0.75,
+            "state": "strong",
+            "confidence": 0.9,
+            "evidence": [
+              "Strong expression of 'Reasons' and 'Desire' for the meaningful path: '我好像最在乎能不能帮到具体的人'. The user is actively articulating their intrinsic motivation."
+            ]
+          },
+          "sustain_talk": {
+            "index": 0.05,
+            "state": "absent",
+            "confidence": 0.9,
+            "evidence": [
+              "No arguments for maintaining the status quo or choosing the 'money' side are present in this specific message; the focus is entirely on intrinsic values."
+            ]
+          },
+          "mi_intervention_need": 0.492,
+          "overall_trend": "improving",
+          "primary_concern": "change_talk",
+          "should_intervene": true,
+          "recommended_processes": [
+            {
+              "process": "evocation",
+              "priority": 1,
+              "rationale": "The user has just produced a clear and meaningful piece of change talk ('帮到具体的人'). The priority is to evoke and explore this value further to strengthen their connection to it and build momentum."
+            },
+            {
+              "process": "explore",
+              "priority": 2,
+              "rationale": "After strengthening the change talk, explore how this core value of helping specific people can be integrated with their practical concerns, helping to resolve the underlying ambivalence."
+            }
+          ]
+        },
+        "skill_output": {
+          "technique": {
+            "name": "oars",
+            "description": "Build engagement and explore the user's ambivalence without pushing for change",
+            "steps": [
+              "用开放式提问邀请用户分享更多",
+              "通过反思性倾听回应，让用户感到被理解",
+              "温和地邀请用户觉察自己内心不同的声音"
+            ]
+          },
+          "conversation_goal": "通过开放式提问和反思性倾听，帮助用户探索内心的矛盾，不做评判",
+          "adaptation": {
+            "interaction_style": "exploratory",
+            "tone_adjustment": "温和、好奇、不评判",
+            "pace_adjustment": "slow",
+            "culture_note": "用'你自己觉得呢？'替代'你应该'；肯定要具体而非笼统；矛盾是正常的不是抗拒"
+          },
+          "contraindications": [
+            {
+              "condition": "crisis",
+              "reason": "危机状态下不适合探索矛盾，优先确保安全"
+            }
+          ],
+          "_skill_name": "mi_explore"
+        },
+        "products": {},
+        "continue_eval": null
+      },
+      "error": null,
+      "wall_seconds": 123.603,
+      "agent_text": "“帮到具体的人”……这听起来真的特别温暖，也特别有力量。\n\n能感觉到，这不仅仅是关于工作，更是你心里非常看重的一份真实的连接。\n\n当你把这份“在乎”慢慢理清，说出来的这一刻，心里是什么感觉呢？"
+    },
+    {
+      "turn": 7,
+      "trace_id": "8a0c386d3a5e4abe",
+      "user_text": "那按这个看，新 offer 是不是一开始就偏了？",
+      "agent_text_parts": [
+        "听到你这么问",
+        "，感觉你心里",
+        "好像“咯",
+        "噔”了一下。",
+        "当你用“能不能",
+        "帮到具体的人",
+        "”去衡量新",
+        " offer 时，",
+        "发现它似乎不太",
+        "契合，这让你",
+        "怀疑自己一开始的方向",
+        "是不是走偏了",
+        "，对吗？",
+        "\n\n能拿自己",
+        "心里最看重的",
+        "东西去重新审视",
+        "选择，这本身",
+        "就是一个很了不起的",
+        "觉察。\n\n顺着",
+        "这个感觉，当你",
+        "觉得它“偏",
+        "了”的时候，",
+        "心里涌上来的是什么",
+        "感觉呢？是",
+        "觉得有些遗憾、",
+        "失落，还是反而",
+        "有一种“原来如此",
+        "”的轻松？"
+      ],
+      "events": [
+        {
+          "event": "token",
+          "data": "听到你这么问"
+        },
+        {
+          "event": "token",
+          "data": "，感觉你心里"
+        },
+        {
+          "event": "token",
+          "data": "好像“咯"
+        },
+        {
+          "event": "token",
+          "data": "噔”了一下。"
+        },
+        {
+          "event": "token",
+          "data": "当你用“能不能"
+        },
+        {
+          "event": "token",
+          "data": "帮到具体的人"
+        },
+        {
+          "event": "token",
+          "data": "”去衡量新"
+        },
+        {
+          "event": "token",
+          "data": " offer 时，"
+        },
+        {
+          "event": "token",
+          "data": "发现它似乎不太"
+        },
+        {
+          "event": "token",
+          "data": "契合，这让你"
+        },
+        {
+          "event": "token",
+          "data": "怀疑自己一开始的方向"
+        },
+        {
+          "event": "token",
+          "data": "是不是走偏了"
+        },
+        {
+          "event": "token",
+          "data": "，对吗？"
+        },
+        {
+          "event": "token",
+          "data": "\n\n能拿自己"
+        },
+        {
+          "event": "token",
+          "data": "心里最看重的"
+        },
+        {
+          "event": "token",
+          "data": "东西去重新审视"
+        },
+        {
+          "event": "token",
+          "data": "选择，这本身"
+        },
+        {
+          "event": "token",
+          "data": "就是一个很了不起的"
+        },
+        {
+          "event": "token",
+          "data": "觉察。\n\n顺着"
+        },
+        {
+          "event": "token",
+          "data": "这个感觉，当你"
+        },
+        {
+          "event": "token",
+          "data": "觉得它“偏"
+        },
+        {
+          "event": "token",
+          "data": "了”的时候，"
+        },
+        {
+          "event": "token",
+          "data": "心里涌上来的是什么"
+        },
+        {
+          "event": "token",
+          "data": "感觉呢？是"
+        },
+        {
+          "event": "token",
+          "data": "觉得有些遗憾、"
+        },
+        {
+          "event": "token",
+          "data": "失落，还是反而"
+        },
+        {
+          "event": "token",
+          "data": "有一种“原来如此"
+        },
+        {
+          "event": "token",
+          "data": "”的轻松？"
+        },
+        {
+          "event": "dialogue_done",
+          "data": {
+            "trace_id": "8a0c386d3a5e4abe",
+            "owner": "therapy_mi"
+          }
+        },
+        {
+          "event": "final",
+          "data": {
+            "message": "那按这个看，新 offer 是不是一开始就偏了？",
+            "risk_state": "SAFE",
+            "crisis": false
+          }
+        }
+      ],
+      "final": {
+        "message": "那按这个看，新 offer 是不是一开始就偏了？",
+        "risk_state": "SAFE",
+        "crisis": false
+      },
+      "state_after": {
+        "owner": "therapy_mi",
+        "crisis": false,
+        "risk_level": "SAFE",
+        "therapy": {
+          "name": "MI",
+          "start_seq": 3,
+          "rounds": 6,
+          "step_index": 1,
+          "branch": null,
+          "basic_flow_complete": false,
+          "visited": [
+            "explore"
+          ]
+        },
+        "last_therapy_check_seq": 1,
+        "pending_user_tokens": 0
+      },
+      "orchestration_after": {
+        "updated_seq": 6,
+        "therapy": "MI",
+        "current_step": "evocation",
+        "next_step": "evocation",
+        "step_judgment": {
+          "action": "stay",
+          "target_step": null,
+          "achieved": false,
+          "reason": "用户已产生重要觉察（新offer与核心价值观'帮到具体的人'不符），change_talk强烈（0.85），且正处于evocation阶段。AI刚刚提出探索性问题引导用户进一步表达对'偏了'的感受，但用户尚未回应。当前evocation流程仍在进行中，需要继续深化用户对价值观对齐路径的探索，巩固这一关键洞察，因此应留在evocation步骤。"
+        },
+        "assessment": {
+          "change_readiness": {
+            "index": 0.75,
+            "state": "preparation",
+            "confidence": 0.85,
+            "evidence": [
+              "User is actively evaluating their current path ('新 offer') against their newly clarified core value ('帮到具体的人'), asking '是不是一开始就偏了？', indicating strong movement towards preparation and readiness to change direction."
+            ]
+          },
+          "ambivalence": {
+            "index": 0.45,
+            "state": "mild",
+            "confidence": 0.8,
+            "evidence": [
+              "While the user is questioning the new offer, the phrasing '是不是一开始就偏了？' shows they are still seeking confirmation and weighing the implications of this realization, though the acute conflict and paralysis from previous turns have significantly lessened."
+            ]
+          },
+          "self_efficacy": {
+            "index": 0.7,
+            "state": "moderate",
+            "confidence": 0.85,
+            "evidence": [
+              "The user is independently applying their introspective insight to critically assess their situation, showing growing confidence in their own judgment and ability to navigate this decision without needing the agent to tell them what to do."
+            ]
+          },
+          "change_talk": {
+            "index": 0.85,
+            "state": "strong",
+            "confidence": 0.9,
+            "evidence": [
+              "Strong expression of 'Reasons' for change: questioning if the new offer is 'off-track' ('偏了') based on their core value of helping specific people. They are actively arguing against the current path and aligning with their intrinsic motivation."
+            ]
+          },
+          "sustain_talk": {
+            "index": 0.1,
+            "state": "absent",
+            "confidence": 0.85,
+            "evidence": [
+              "No direct arguments for keeping the new offer or maintaining the status quo are present; the focus is entirely on re-evaluating the offer against their core values."
+            ]
+          },
+          "mi_intervention_need": 0.375,
+          "overall_trend": "improving",
+          "primary_concern": "change_talk",
+          "should_intervene": true,
+          "recommended_processes": [
+            {
+              "process": "evocation",
+              "priority": 1,
+              "rationale": "The user has had a significant insight and is questioning the alignment of the new offer. Evoking further on what a value-aligned path looks like, or what 'not being off-track' would mean, will strengthen this change talk and solidify their new direction."
+            },
+            {
+              "process": "explore",
+              "priority": 2,
+              "rationale": "Explore the practical and emotional implications of this realization. Help the user process the potential shift away from the new offer and how to balance their core value of helping others with their practical life concerns."
+            }
+          ]
+        },
+        "skill_output": {
+          "technique": {
+            "name": "darn_cat",
+            "description": "The user has expressed strong 'Reasons' change talk by questioning if the new offer is 'off-track' based on their core value of helping specific people. The technique will continue exploring the DARN continuum by deepening the 'Reasons' and exploring 'Need' (the cost of staying on this path) or 'Desire' (what they truly want instead), without rushing to mobilizing change talk (CAT).",
+            "steps": [
+              "Reflect and validate the user's strong 'Reasons' change talk, acknowledging their realization that the new offer might not align with their core value of helping specific people.",
+              "Explore 'Need' or 'Desire' by asking open-ended questions about the implications of staying on this 'off-track' path (e.g., 'If you were to go down this path knowing it feels off-track to your core values, what would that mean for you?') or what being on the 'right' track would look like.",
+              "Listen for and reflect any emerging change talk, allowing the user to fully articulate their own motivations, the personal cost of the misalignment, and their conclusions without agent interference."
+            ]
+          },
+          "conversation_goal": "To deepen the user's preparatory change talk (DARN) by exploring the personal implications of the new offer being 'off-track', specifically eliciting their 'Need' to change or 'Desire' for a path that aligns with their intrinsic values, before moving to action-oriented talk.",
+          "adaptation": {
+            "interaction_style": "exploratory",
+            "tone_adjustment": "Empathetic, reflective, and gently curious. Validating their self-awareness while creating a safe space to explore the potential disappointment, clarity, or weight of realizing the offer is misaligned.",
+            "pace_adjustment": "Slow and deliberate. Giving the user ample time and space to process the realization that the offer might be 'off-track' and to formulate their own thoughts on what this means for their future.",
+            "culture_note": "Realizing a choice is 'off-track' (偏了) in Chinese culture can sometimes trigger feelings of regret, loss of face, or fear of having wasted effort. The agent must frame this realization as a positive, courageous act of self-alignment and course correction, emphasizing their autonomy and intrinsic motivation rather than focusing on the 'mistake'."
+          },
+          "contraindications": [
+            {
+              "condition": "Jumping directly to mobilizing change talk (CAT) such as asking 'So, are you going to reject the offer?' or 'What is your next step?'",
+              "reason": "The user is still solidifying their preparatory change talk (Reasons/Need). Moving to CAT too quickly can induce resistance, anxiety, or superficial compliance without full internal motivation."
+            },
+            {
+              "condition": "Providing the agent's own assessment or advice on whether the offer is actually 'off-track'.",
+              "reason": "Violates the core MI principle of evocation. The agent must not provide reasons for change or validate the objective truth of the offer being 'off-track', but rather explore and reflect the user's subjective experience and conclusions."
+            }
+          ],
+          "_skill_name": "mi_evocation"
+        },
+        "products": {},
+        "continue_eval": null
+      },
+      "error": null,
+      "wall_seconds": 130.686,
+      "agent_text": "听到你这么问，感觉你心里好像“咯噔”了一下。当你用“能不能帮到具体的人”去衡量新 offer 时，发现它似乎不太契合，这让你怀疑自己一开始的方向是不是走偏了，对吗？\n\n能拿自己心里最看重的东西去重新审视选择，这本身就是一个很了不起的觉察。\n\n顺着这个感觉，当你觉得它“偏了”的时候，心里涌上来的是什么感觉呢？是觉得有些遗憾、失落，还是反而有一种“原来如此”的轻松？"
+    },
+    {
+      "turn": 8,
+      "trace_id": "3c71bbb5918f477f",
+      "user_text": "我懂了，价值不是「完美的结果」，是「行动的方向」。",
+      "agent_text_parts": [
+        "“价值不是完美的",
+        "结果，是行动",
+        "的方向。”听到你",
+        "总结出这句话，感觉",
+        "你心里好像突然",
+        "拨开云雾，",
+        "清晰了很多。\n\n",
+        "当你不再强求",
+        "一个“完美的结果",
+        "”，而是把目光",
+        "放回“行动的方向",
+        "”是不是在帮",
+        "到具体的人时",
+        "，这种视角的",
+        "转换真的很了不起。",
+        "\n\n顺着这个很",
+        "棒的觉察，如果",
+        "带着这个“行动",
+        "的方向”再",
+        "去看那个新 offer",
+        "，或者再看你",
+        "接下来的路，你",
+        "心里的感觉有什么不一样",
+        "了吗？"
+      ],
+      "events": [
+        {
+          "event": "token",
+          "data": "“价值不是完美的"
+        },
+        {
+          "event": "token",
+          "data": "结果，是行动"
+        },
+        {
+          "event": "token",
+          "data": "的方向。”听到你"
+        },
+        {
+          "event": "token",
+          "data": "总结出这句话，感觉"
+        },
+        {
+          "event": "token",
+          "data": "你心里好像突然"
+        },
+        {
+          "event": "token",
+          "data": "拨开云雾，"
+        },
+        {
+          "event": "token",
+          "data": "清晰了很多。\n\n"
+        },
+        {
+          "event": "token",
+          "data": "当你不再强求"
+        },
+        {
+          "event": "token",
+          "data": "一个“完美的结果"
+        },
+        {
+          "event": "token",
+          "data": "”，而是把目光"
+        },
+        {
+          "event": "token",
+          "data": "放回“行动的方向"
+        },
+        {
+          "event": "token",
+          "data": "”是不是在帮"
+        },
+        {
+          "event": "token",
+          "data": "到具体的人时"
+        },
+        {
+          "event": "token",
+          "data": "，这种视角的"
+        },
+        {
+          "event": "token",
+          "data": "转换真的很了不起。"
+        },
+        {
+          "event": "token",
+          "data": "\n\n顺着这个很"
+        },
+        {
+          "event": "token",
+          "data": "棒的觉察，如果"
+        },
+        {
+          "event": "token",
+          "data": "带着这个“行动"
+        },
+        {
+          "event": "token",
+          "data": "的方向”再"
+        },
+        {
+          "event": "token",
+          "data": "去看那个新 offer"
+        },
+        {
+          "event": "token",
+          "data": "，或者再看你"
+        },
+        {
+          "event": "token",
+          "data": "接下来的路，你"
+        },
+        {
+          "event": "token",
+          "data": "心里的感觉有什么不一样"
+        },
+        {
+          "event": "token",
+          "data": "了吗？"
+        },
+        {
+          "event": "dialogue_done",
+          "data": {
+            "trace_id": "3c71bbb5918f477f",
+            "owner": "therapy_mi"
+          }
+        },
+        {
+          "event": "final",
+          "data": {
+            "message": "我懂了，价值不是「完美的结果」，是「行动的方向」。",
+            "risk_state": "SAFE",
+            "crisis": false
+          }
+        }
+      ],
+      "final": {
+        "message": "我懂了，价值不是「完美的结果」，是「行动的方向」。",
+        "risk_state": "SAFE",
+        "crisis": false
+      },
+      "state_after": {
+        "owner": "therapy_mi",
+        "crisis": false,
+        "risk_level": "SAFE",
+        "therapy": {
+          "name": "MI",
+          "start_seq": 3,
+          "rounds": 7,
+          "step_index": 2,
+          "branch": null,
+          "basic_flow_complete": false,
+          "visited": [
+            "explore",
+            "evocation"
+          ]
+        },
+        "last_therapy_check_seq": 1,
+        "pending_user_tokens": 0
+      },
+      "orchestration_after": {
+        "updated_seq": 7,
+        "therapy": "MI",
+        "current_step": "evocation",
+        "next_step": "commitment",
+        "step_judgment": {
+          "action": "advance",
+          "target_step": null,
+          "achieved": true,
+          "reason": "用户已达到高度改变准备度（0.9），矛盾心理几乎消失（0.1），自我效能感高（0.9），改变语言强烈（0.95）。用户明确总结出'价值不是完美的结果，是行动的方向'这一深刻洞察，evocation步骤的核心目标——引出用户对自身价值观的清晰认知和改变动机——已充分达成。recommended_processes也将commitment列为第一优先级，应进入commitment步骤，帮助用户将洞察转化为具体可行的行动计划。"
+        },
+        "assessment": {
+          "change_readiness": {
+            "index": 0.9,
+            "state": "action",
+            "confidence": 0.95,
+            "evidence": [
+              "User explicitly states '我懂了' (I get it now) and redefines value as '行动的方向' (the direction of action), indicating a clear shift towards taking action based on their core values rather than being paralyzed by the need for a perfect outcome."
+            ]
+          },
+          "ambivalence": {
+            "index": 0.1,
+            "state": "none",
+            "confidence": 0.9,
+            "evidence": [
+              "The previous 'tug-of-war' between two voices has resolved into a clear cognitive insight. The user is no longer weighing pros and cons but has synthesized a new perspective, significantly reducing ambivalence."
+            ]
+          },
+          "self_efficacy": {
+            "index": 0.9,
+            "state": "high",
+            "confidence": 0.95,
+            "evidence": [
+              "The user independently arrives at a profound realization ('我懂了'), demonstrating strong self-efficacy and confidence in their own ability to reframe their situation and find a meaningful path forward."
+            ]
+          },
+          "change_talk": {
+            "index": 0.95,
+            "state": "strong",
+            "confidence": 0.95,
+            "evidence": [
+              "Strong expression of 'Reasons' and 'Commitment': redefining value as 'the direction of action' shows deep internalization of change motives. The user is fully arguing for aligning their actions with their clarified values."
+            ]
+          },
+          "sustain_talk": {
+            "index": 0.0,
+            "state": "absent",
+            "confidence": 0.95,
+            "evidence": [
+              "No arguments for maintaining the status quo or resisting change. The focus is entirely on embracing a new, value-aligned direction."
+            ]
+          },
+          "mi_intervention_need": 0.175,
+          "overall_trend": "improving",
+          "primary_concern": "change_talk",
+          "should_intervene": false,
+          "recommended_processes": [
+            {
+              "process": "commitment",
+              "priority": 1,
+              "rationale": "The user has reached a high level of change readiness and strong change talk, culminating in a clear insight. The priority is now to solidify this commitment and help them translate the 'direction of action' into concrete, actionable steps."
+            },
+            {
+              "process": "evocation",
+              "priority": 2,
+              "rationale": "Further evoke and explore what this 'direction of action' looks like in practice, reinforcing their insight and ensuring it is deeply integrated before moving to detailed planning."
+            }
+          ]
+        },
+        "skill_output": {
+          "technique": {
+            "name": "darn_cat",
+            "description": "用户已经展现出极强的Change Talk，并自主得出了关于'价值'的深刻洞察。此时使用DARN-CAT框架，在充分反映和巩固其强烈的Reasons与Commitment的基础上，顺势引导其将认知转化为具体的Activation和Taking steps，探索如何将'行动的方向'落实到接下来的实际选择中。",
+            "steps": [
+              "Deep reflection: 强烈反映并确认用户的深刻洞察（'价值是行动的方向'），肯定这种视角转换带来的清晰感和内在力量。",
+              "Elicit Commitment/Activation: 探索这个新视角如何影响他们的承诺和激活状态。例如：'带着这个清晰的方向感，你对那个新offer或者接下来的路，有了怎样不同的打算或决定？'",
+              "Explore Taking steps: 引导用户构想具体的行动步骤。例如：'为了践行这个'行动的方向'，你接下来想要迈出的第一小步是什么？'"
+            ]
+          },
+          "conversation_goal": "巩固用户关于'价值即行动方向'的深刻领悟，将其从认知层面的改变动机（DARN）自然过渡到对未来具体行动（CAT）的承诺与规划，特别是针对当前的新offer或职业路径。",
+          "adaptation": {
+            "interaction_style": "exploratory",
+            "tone_adjustment": "赋能、Reflective（反映性）且具有前瞻性。匹配用户顿悟后的清晰感，语调沉稳、支持，避免过度亢奋或说教，保持'你自己决定'的立场。",
+            "pace_adjustment": "平稳并留有反思空间。用户刚经历'顿悟'时刻，需要给他们一点时间消化这种清晰感，然后再温和地引导向具体的行动步骤，不急于求成。",
+            "culture_note": "中国文化注重'知行合一'与务实。将'行动的方向'视为一种持续、踏实的过程，非常契合中文语境。通过询问'第一小步'，将宏大的价值观落地为具体的、可操作的现实步骤。"
+          },
+          "contraindications": [
+            {
+              "condition": "用户在顿悟后，突然对新offer能否实现'帮到具体的人'产生现实层面的怀疑或无力感。",
+              "reason": "此时如果强行推进'Taking steps'可能会引发阻抗或Sustain talk。需要退回DARN阶段，重新探索其'Ability'（能力）或'Need'（需求），处理现实与理想之间的落差。"
+            },
+            {
+              "condition": "Agent 忍不住开始为用户提供如何在新工作中'帮助具体的人'的具体建议或策略。",
+              "reason": "严重违反MI原则。改变的理由和具体步骤必须由用户自己产生（evocation），Agent提供建议会剥夺用户的自主性，削弱其内在动机。"
+            }
+          ],
+          "_skill_name": "mi_evocation"
+        },
+        "products": {},
+        "continue_eval": null
+      },
+      "error": null,
+      "wall_seconds": 128.503,
+      "agent_text": "“价值不是完美的结果，是行动的方向。”听到你总结出这句话，感觉你心里好像突然拨开云雾，清晰了很多。\n\n当你不再强求一个“完美的结果”，而是把目光放回“行动的方向”是不是在帮到具体的人时，这种视角的转换真的很了不起。\n\n顺着这个很棒的觉察，如果带着这个“行动的方向”再去看那个新 offer，或者再看你接下来的路，你心里的感觉有什么不一样了吗？"
+    }
+  ]
+}

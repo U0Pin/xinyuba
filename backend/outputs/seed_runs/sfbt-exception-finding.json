@@ -1,0 +1,1005 @@
+{
+  "seed_id": "sfbt-exception-finding",
+  "target_family": "SFBT",
+  "scenario_label": "例外探询-失眠",
+  "scenario_description": "长期失眠但偶尔有一两天睡得不错",
+  "user_id": "seed-sfbt-exception-finding",
+  "session_id": "117c31c8712d4ae2",
+  "turns_total": 8,
+  "switched_to_therapy_at_turn": 6,
+  "actual_therapy": "SFBT",
+  "therapy_rounds": 3,
+  "orch_step_changes": 1,
+  "is_complete": false,
+  "final_risk_level": "SAFE",
+  "final_crisis": false,
+  "turns": [
+    {
+      "turn": 1,
+      "trace_id": "8d665299510a47b7",
+      "user_text": "我最近一直失眠，基本每天只能睡四五个小时。",
+      "agent_text_parts": [
+        "每天只能睡",
+        "四五个小时，感觉",
+        "你最近一定特别",
+        "累吧。一直",
+        "失眠确实挺折磨",
+        "人的，晚上翻",
+        "来覆去",
+        "睡不着的感觉太难受",
+        "了。最近是",
+        "心里装着什么事，",
+        "还是身体就是单纯",
+        "地睡不着呢？"
+      ],
+      "events": [
+        {
+          "event": "token",
+          "data": "每天只能睡"
+        },
+        {
+          "event": "token",
+          "data": "四五个小时，感觉"
+        },
+        {
+          "event": "token",
+          "data": "你最近一定特别"
+        },
+        {
+          "event": "token",
+          "data": "累吧。一直"
+        },
+        {
+          "event": "token",
+          "data": "失眠确实挺折磨"
+        },
+        {
+          "event": "token",
+          "data": "人的，晚上翻"
+        },
+        {
+          "event": "token",
+          "data": "来覆去"
+        },
+        {
+          "event": "token",
+          "data": "睡不着的感觉太难受"
+        },
+        {
+          "event": "token",
+          "data": "了。最近是"
+        },
+        {
+          "event": "token",
+          "data": "心里装着什么事，"
+        },
+        {
+          "event": "token",
+          "data": "还是身体就是单纯"
+        },
+        {
+          "event": "token",
+          "data": "地睡不着呢？"
+        },
+        {
+          "event": "dialogue_done",
+          "data": {
+            "trace_id": "8d665299510a47b7",
+            "owner": "daily"
+          }
+        },
+        {
+          "event": "final",
+          "data": {
+            "message": "我最近一直失眠，基本每天只能睡四五个小时。",
+            "risk_state": "SAFE",
+            "crisis": false
+          }
+        }
+      ],
+      "final": {
+        "message": "我最近一直失眠，基本每天只能睡四五个小时。",
+        "risk_state": "SAFE",
+        "crisis": false
+      },
+      "state_after": {
+        "owner": "daily",
+        "crisis": false,
+        "risk_level": "SAFE",
+        "therapy": null,
+        "last_therapy_check_seq": 1,
+        "pending_user_tokens": 0
+      },
+      "orchestration_after": {},
+      "error": null,
+      "wall_seconds": 19.137,
+      "agent_text": "每天只能睡四五个小时，感觉你最近一定特别累吧。一直失眠确实挺折磨人的，晚上翻来覆去睡不着的感觉太难受了。最近是心里装着什么事，还是身体就是单纯地睡不着呢？"
+    },
+    {
+      "turn": 2,
+      "trace_id": "6a08057f30254184",
+      "user_text": "但偶尔有一两天会睡得好一点，能睡七个小时。",
+      "agent_text_parts": [
+        "那能睡",
+        "七个小时的时候，",
+        "第二天感觉会不会稍微",
+        "松口气？那一",
+        "两天有没有什么不太",
+        "一样的地方呀，",
+        "比如睡前没怎么",
+        "碰手机，或者",
+        "心里比较放松？"
+      ],
+      "events": [
+        {
+          "event": "token",
+          "data": "那能睡"
+        },
+        {
+          "event": "token",
+          "data": "七个小时的时候，"
+        },
+        {
+          "event": "token",
+          "data": "第二天感觉会不会稍微"
+        },
+        {
+          "event": "token",
+          "data": "松口气？那一"
+        },
+        {
+          "event": "token",
+          "data": "两天有没有什么不太"
+        },
+        {
+          "event": "token",
+          "data": "一样的地方呀，"
+        },
+        {
+          "event": "token",
+          "data": "比如睡前没怎么"
+        },
+        {
+          "event": "token",
+          "data": "碰手机，或者"
+        },
+        {
+          "event": "token",
+          "data": "心里比较放松？"
+        },
+        {
+          "event": "dialogue_done",
+          "data": {
+            "trace_id": "6a08057f30254184",
+            "owner": "daily"
+          }
+        },
+        {
+          "event": "final",
+          "data": {
+            "message": "但偶尔有一两天会睡得好一点，能睡七个小时。",
+            "risk_state": "SAFE",
+            "crisis": false
+          }
+        }
+      ],
+      "final": {
+        "message": "但偶尔有一两天会睡得好一点，能睡七个小时。",
+        "risk_state": "SAFE",
+        "crisis": false
+      },
+      "state_after": {
+        "owner": "daily",
+        "crisis": false,
+        "risk_level": "SAFE",
+        "therapy": null,
+        "last_therapy_check_seq": 3,
+        "pending_user_tokens": 0
+      },
+      "orchestration_after": {},
+      "error": null,
+      "wall_seconds": 122.159,
+      "agent_text": "那能睡七个小时的时候，第二天感觉会不会稍微松口气？那一两天有没有什么不太一样的地方呀，比如睡前没怎么碰手机，或者心里比较放松？"
+    },
+    {
+      "turn": 3,
+      "trace_id": "2c71a2187fec4abd",
+      "user_text": "我也搞不清那几天和平时有什么不同。",
+      "agent_text_parts": [
+        "搞不清也没",
+        "关系，有时候就是",
+        "莫名其妙睡得香，",
+        "不用非得找出个",
+        "不同。那能",
+        "睡七个小时的",
+        "第二天，白天感觉",
+        "会不会稍微有劲儿",
+        "一点？"
+      ],
+      "events": [
+        {
+          "event": "token",
+          "data": "搞不清也没"
+        },
+        {
+          "event": "token",
+          "data": "关系，有时候就是"
+        },
+        {
+          "event": "token",
+          "data": "莫名其妙睡得香，"
+        },
+        {
+          "event": "token",
+          "data": "不用非得找出个"
+        },
+        {
+          "event": "token",
+          "data": "不同。那能"
+        },
+        {
+          "event": "token",
+          "data": "睡七个小时的"
+        },
+        {
+          "event": "token",
+          "data": "第二天，白天感觉"
+        },
+        {
+          "event": "token",
+          "data": "会不会稍微有劲儿"
+        },
+        {
+          "event": "token",
+          "data": "一点？"
+        },
+        {
+          "event": "dialogue_done",
+          "data": {
+            "trace_id": "2c71a2187fec4abd",
+            "owner": "daily"
+          }
+        },
+        {
+          "event": "final",
+          "data": {
+            "message": "我也搞不清那几天和平时有什么不同。",
+            "risk_state": "SAFE",
+            "crisis": false
+          }
+        }
+      ],
+      "final": {
+        "message": "我也搞不清那几天和平时有什么不同。",
+        "risk_state": "SAFE",
+        "crisis": false
+      },
+      "state_after": {
+        "owner": "daily",
+        "crisis": false,
+        "risk_level": "SAFE",
+        "therapy": null,
+        "last_therapy_check_seq": 5,
+        "pending_user_tokens": 0
+      },
+      "orchestration_after": {},
+      "error": null,
+      "wall_seconds": 185.813,
+      "agent_text": "搞不清也没关系，有时候就是莫名其妙睡得香，不用非得找出个不同。那能睡七个小时的第二天，白天感觉会不会稍微有劲儿一点？"
+    },
+    {
+      "turn": 4,
+      "trace_id": "31636fcfc1dc4fa6",
+      "user_text": "你让我想想那几天做了什么……好像前一天没看手机。",
+      "agent_text_parts": [
+        "哎，你这么",
+        "一回想还真是。",
+        "前一天没看手机",
+        "，脑子里可能就没",
+        "塞那么多东西，",
+        "躺下时感觉",
+        "清净了不少，睡得",
+        "也就踏实些。",
+        "你当时躺下",
+        "准备睡的时候，",
+        "是不是感觉心里挺",
+        "放松的？"
+      ],
+      "events": [
+        {
+          "event": "token",
+          "data": "哎，你这么"
+        },
+        {
+          "event": "token",
+          "data": "一回想还真是。"
+        },
+        {
+          "event": "token",
+          "data": "前一天没看手机"
+        },
+        {
+          "event": "token",
+          "data": "，脑子里可能就没"
+        },
+        {
+          "event": "token",
+          "data": "塞那么多东西，"
+        },
+        {
+          "event": "token",
+          "data": "躺下时感觉"
+        },
+        {
+          "event": "token",
+          "data": "清净了不少，睡得"
+        },
+        {
+          "event": "token",
+          "data": "也就踏实些。"
+        },
+        {
+          "event": "token",
+          "data": "你当时躺下"
+        },
+        {
+          "event": "token",
+          "data": "准备睡的时候，"
+        },
+        {
+          "event": "token",
+          "data": "是不是感觉心里挺"
+        },
+        {
+          "event": "token",
+          "data": "放松的？"
+        },
+        {
+          "event": "dialogue_done",
+          "data": {
+            "trace_id": "31636fcfc1dc4fa6",
+            "owner": "daily"
+          }
+        },
+        {
+          "event": "final",
+          "data": {
+            "message": "你让我想想那几天做了什么……好像前一天没看手机。",
+            "risk_state": "SAFE",
+            "crisis": false
+          }
+        }
+      ],
+      "final": {
+        "message": "你让我想想那几天做了什么……好像前一天没看手机。",
+        "risk_state": "SAFE",
+        "crisis": false
+      },
+      "state_after": {
+        "owner": "daily",
+        "crisis": false,
+        "risk_level": "SAFE",
+        "therapy": null,
+        "last_therapy_check_seq": 7,
+        "pending_user_tokens": 0
+      },
+      "orchestration_after": {},
+      "error": null,
+      "wall_seconds": 21.802,
+      "agent_text": "哎，你这么一回想还真是。前一天没看手机，脑子里可能就没塞那么多东西，躺下时感觉清净了不少，睡得也就踏实些。你当时躺下准备睡的时候，是不是感觉心里挺放松的？"
+    },
+    {
+      "turn": 5,
+      "trace_id": "9e89301ccab34c38",
+      "user_text": "可能不止是手机，心情也不同，那两天比较放松。",
+      "agent_text_parts": [
+        "嗯",
+        "，确实。没",
+        "看手机是一方面",
+        "，心情放松可能",
+        "更关键。那",
+        "两天比较放松，",
+        "整个人没绷着",
+        "，躺下自然",
+        "就容易睡得香。",
+        "这种放松的感觉挺好的",
+        "。"
+      ],
+      "events": [
+        {
+          "event": "token",
+          "data": "嗯"
+        },
+        {
+          "event": "token",
+          "data": "，确实。没"
+        },
+        {
+          "event": "token",
+          "data": "看手机是一方面"
+        },
+        {
+          "event": "token",
+          "data": "，心情放松可能"
+        },
+        {
+          "event": "token",
+          "data": "更关键。那"
+        },
+        {
+          "event": "token",
+          "data": "两天比较放松，"
+        },
+        {
+          "event": "token",
+          "data": "整个人没绷着"
+        },
+        {
+          "event": "token",
+          "data": "，躺下自然"
+        },
+        {
+          "event": "token",
+          "data": "就容易睡得香。"
+        },
+        {
+          "event": "token",
+          "data": "这种放松的感觉挺好的"
+        },
+        {
+          "event": "token",
+          "data": "。"
+        },
+        {
+          "event": "dialogue_done",
+          "data": {
+            "trace_id": "9e89301ccab34c38",
+            "owner": "daily"
+          }
+        },
+        {
+          "event": "final",
+          "data": {
+            "message": "可能不止是手机，心情也不同，那两天比较放松。",
+            "risk_state": "SAFE",
+            "crisis": false
+          }
+        }
+      ],
+      "final": {
+        "message": "可能不止是手机，心情也不同，那两天比较放松。",
+        "risk_state": "SAFE",
+        "crisis": false
+      },
+      "state_after": {
+        "owner": "daily",
+        "crisis": false,
+        "risk_level": "SAFE",
+        "therapy": null,
+        "last_therapy_check_seq": 9,
+        "pending_user_tokens": 0
+      },
+      "orchestration_after": {},
+      "error": null,
+      "wall_seconds": 41.524,
+      "agent_text": "嗯，确实。没看手机是一方面，心情放松可能更关键。那两天比较放松，整个人没绷着，躺下自然就容易睡得香。这种放松的感觉挺好的。"
+    },
+    {
+      "turn": 6,
+      "trace_id": "d6429b760a31423f",
+      "user_text": "那我能不能让自己多一点那种「放松」的状态？",
+      "agent_text_parts": [
+        "当然可以",
+        "呀。你既然",
+        "体会过那种感觉",
+        "，就说明你是能",
+        "做到的。你觉得除了",
+        "像之前那样睡前",
+        "不碰手机，",
+        "平时还有什么时候或者",
+        "做些什么，能让你多",
+        "找回一点这种“",
+        "放松”的感觉呢",
+        "？"
+      ],
+      "events": [
+        {
+          "event": "token",
+          "data": "当然可以"
+        },
+        {
+          "event": "token",
+          "data": "呀。你既然"
+        },
+        {
+          "event": "token",
+          "data": "体会过那种感觉"
+        },
+        {
+          "event": "token",
+          "data": "，就说明你是能"
+        },
+        {
+          "event": "token",
+          "data": "做到的。你觉得除了"
+        },
+        {
+          "event": "token",
+          "data": "像之前那样睡前"
+        },
+        {
+          "event": "token",
+          "data": "不碰手机，"
+        },
+        {
+          "event": "token",
+          "data": "平时还有什么时候或者"
+        },
+        {
+          "event": "token",
+          "data": "做些什么，能让你多"
+        },
+        {
+          "event": "token",
+          "data": "找回一点这种“"
+        },
+        {
+          "event": "token",
+          "data": "放松”的感觉呢"
+        },
+        {
+          "event": "token",
+          "data": "？"
+        },
+        {
+          "event": "dialogue_done",
+          "data": {
+            "trace_id": "d6429b760a31423f",
+            "owner": "daily"
+          }
+        },
+        {
+          "event": "final",
+          "data": {
+            "message": "那我能不能让自己多一点那种「放松」的状态？",
+            "risk_state": "SAFE",
+            "crisis": false
+          }
+        }
+      ],
+      "final": {
+        "message": "那我能不能让自己多一点那种「放松」的状态？",
+        "risk_state": "SAFE",
+        "crisis": false
+      },
+      "state_after": {
+        "owner": "therapy_sfbt",
+        "crisis": false,
+        "risk_level": "SAFE",
+        "therapy": {
+          "name": "SFBT",
+          "start_seq": 12,
+          "rounds": 0,
+          "step_index": -1,
+          "branch": null,
+          "basic_flow_complete": false
+        },
+        "last_therapy_check_seq": 11,
+        "pending_user_tokens": 0
+      },
+      "orchestration_after": {},
+      "error": null,
+      "wall_seconds": 364.547,
+      "agent_text": "当然可以呀。你既然体会过那种感觉，就说明你是能做到的。你觉得除了像之前那样睡前不碰手机，平时还有什么时候或者做些什么，能让你多找回一点这种“放松”的感觉呢？"
+    },
+    {
+      "turn": 7,
+      "trace_id": "55ffe9f4decf4d50",
+      "user_text": "听起来我想的不是「怎么睡着」，而是「做什么能让我放松」。",
+      "agent_text_parts": [
+        "感觉你",
+        "好像松了一口气。把",
+        "重点从“怎么",
+        "睡着”转到“",
+        "做什么能让我放松",
+        "”，这个视角的转变",
+        "挺重要的。咱们",
+        "聊到现在，你",
+        "感觉自己的状态或者",
+        "想法，和刚开始",
+        "时相比有什么不一样的",
+        "变化吗？"
+      ],
+      "events": [
+        {
+          "event": "token",
+          "data": "感觉你"
+        },
+        {
+          "event": "token",
+          "data": "好像松了一口气。把"
+        },
+        {
+          "event": "token",
+          "data": "重点从“怎么"
+        },
+        {
+          "event": "token",
+          "data": "睡着”转到“"
+        },
+        {
+          "event": "token",
+          "data": "做什么能让我放松"
+        },
+        {
+          "event": "token",
+          "data": "”，这个视角的转变"
+        },
+        {
+          "event": "token",
+          "data": "挺重要的。咱们"
+        },
+        {
+          "event": "token",
+          "data": "聊到现在，你"
+        },
+        {
+          "event": "token",
+          "data": "感觉自己的状态或者"
+        },
+        {
+          "event": "token",
+          "data": "想法，和刚开始"
+        },
+        {
+          "event": "token",
+          "data": "时相比有什么不一样的"
+        },
+        {
+          "event": "token",
+          "data": "变化吗？"
+        },
+        {
+          "event": "dialogue_done",
+          "data": {
+            "trace_id": "55ffe9f4decf4d50",
+            "owner": "therapy_sfbt"
+          }
+        },
+        {
+          "event": "final",
+          "data": {
+            "message": "听起来我想的不是「怎么睡着」，而是「做什么能让我放松」。",
+            "risk_state": "SAFE",
+            "crisis": false
+          }
+        }
+      ],
+      "final": {
+        "message": "听起来我想的不是「怎么睡着」，而是「做什么能让我放松」。",
+        "risk_state": "SAFE",
+        "crisis": false
+      },
+      "state_after": {
+        "owner": "therapy_sfbt",
+        "crisis": false,
+        "risk_level": "SAFE",
+        "therapy": {
+          "name": "SFBT",
+          "start_seq": 12,
+          "rounds": 1,
+          "step_index": 0,
+          "branch": null,
+          "basic_flow_complete": false
+        },
+        "last_therapy_check_seq": 11,
+        "pending_user_tokens": 0
+      },
+      "orchestration_after": {
+        "updated_seq": 1,
+        "therapy": "SFBT",
+        "current_step": "resource_exploration",
+        "next_step": "resource_exploration",
+        "step_judgment": {
+          "action": "stay",
+          "target_step": null,
+          "achieved": false,
+          "reason": "User has shown good progress in goal clarity and solution orientation, but resource_awareness is still at moderate level (0.65). The current step (resource_exploration) is still in round 1 and needs more exploration to identify specific past experiences, hobbies, or activities that have helped the user relax. The AI's last question asks about changes in state/thinking, which is a good check-in but doesn't yet directly explore concrete resources. Should continue resource_exploration to deepen awareness of existing strengths and coping resources before advancing."
+        },
+        "assessment": {
+          "goal_clarity": {
+            "index": 0.75,
+            "state": "clear",
+            "confidence": 0.9,
+            "evidence": [
+              "User explicitly redefined their goal from 'how to fall asleep' to 'what can make me relax', showing a clear shift towards a desired state rather than just symptom removal."
+            ]
+          },
+          "resource_awareness": {
+            "index": 0.65,
+            "state": "moderate",
+            "confidence": 0.8,
+            "evidence": [
+              "User is actively seeking coping strategies by asking 'what can make me relax', indicating an awareness that they have or can find internal/external resources to achieve this state."
+            ]
+          },
+          "problem_orientation": {
+            "index": 0.1,
+            "state": "solution_oriented",
+            "confidence": 0.95,
+            "evidence": [
+              "User explicitly rejected the problem-focused frame ('how to fall asleep') and naturally shifted to a solution-focused frame ('what can make me relax')."
+            ]
+          },
+          "sfbt_intervention_need": 0.193,
+          "overall_trend": "stable",
+          "primary_concern": "none",
+          "should_intervene": false,
+          "recommended_processes": [
+            {
+              "process": "future_construction",
+              "priority": 1,
+              "rationale": "User has clear goals and a strong solution orientation. The next step is to concretize what 'relaxation' looks and feels like to build a detailed vision of the preferred future."
+            },
+            {
+              "process": "resource_exploration",
+              "priority": 2,
+              "rationale": "Explore past experiences, hobbies, or existing activities that have successfully helped the user relax in the past to build on their existing strengths."
+            },
+            {
+              "process": "exception_exploration",
+              "priority": 3,
+              "rationale": "Identify specific times or contexts when the user naturally felt relaxed, which can serve as a practical blueprint for current solutions."
+            }
+          ]
+        },
+        "skill_output": {
+          "technique": {
+            "name": "compliments_strengths",
+            "description": "Highlight the user's self-awareness and cognitive flexibility in reframing their goal from an uncontrollable outcome (sleep) to a controllable process (relaxation). Frame this perspective shift as a significant personal strength and resource.",
+            "steps": [
+              "Acknowledge the user's insight and explicitly name the strength it demonstrates (e.g., flexibility, self-awareness, or focusing on what is within their control).",
+              "Connect this strength to their current goal by asking how they can use this same practical mindset to identify what already helps them relax.",
+              "Listen for any deflection of the compliment and gently reframe it as a practical skill they possess, rather than just a subjective trait."
+            ]
+          },
+          "conversation_goal": "To validate the user's cognitive flexibility in making a solution-focused shift, and to use this recognized strength as a bridge to explore their existing resources and strategies for relaxation.",
+          "adaptation": {
+            "interaction_style": "supportive",
+            "tone_adjustment": "hopeful",
+            "pace_adjustment": "future_oriented",
+            "culture_note": ""
+          },
+          "contraindications": [
+            {
+              "condition": "User deflects or minimizes the compliment (e.g., '这没什么', '大家都这样', '这不算什么优点').",
+              "reason": "Chinese culture often encourages modesty and deflection of praise. Pushing the compliment may cause discomfort or resistance. Instead, roll with the deflection by focusing on the utility of their action: 'Even if it feels like a natural or small change to you, shifting your focus to what you can control is a very practical skill. What is one small thing you've done in the past that brought you a sense of relaxation?'"
+            }
+          ],
+          "_skill_name": "sfbt_resource_exploration"
+        },
+        "products": {},
+        "continue_eval": null
+      },
+      "error": null,
+      "wall_seconds": 137.915,
+      "agent_text": "感觉你好像松了一口气。把重点从“怎么睡着”转到“做什么能让我放松”，这个视角的转变挺重要的。咱们聊到现在，你感觉自己的状态或者想法，和刚开始时相比有什么不一样的变化吗？"
+    },
+    {
+      "turn": 8,
+      "trace_id": "59f161f669a94823",
+      "user_text": "好，我先从小事开始——睡前半小时不碰手机。",
+      "agent_text_parts": [
+        "能这么快",
+        "把注意力放在自己能",
+        "控制的事情上，",
+        "还立刻想到“",
+        "睡前半小时不碰",
+        "手机”这么具体的",
+        "行动，这种务实",
+        "的自我觉察真的很棒",
+        "。\n\n如果这",
+        "半小时不碰手机",
+        "，你通常会做",
+        "点什么，或者只是",
+        "安静地待着",
+        "？这半小时里",
+        "，做些什么会让你觉得",
+        "最放松呢？"
+      ],
+      "events": [
+        {
+          "event": "token",
+          "data": "能这么快"
+        },
+        {
+          "event": "token",
+          "data": "把注意力放在自己能"
+        },
+        {
+          "event": "token",
+          "data": "控制的事情上，"
+        },
+        {
+          "event": "token",
+          "data": "还立刻想到“"
+        },
+        {
+          "event": "token",
+          "data": "睡前半小时不碰"
+        },
+        {
+          "event": "token",
+          "data": "手机”这么具体的"
+        },
+        {
+          "event": "token",
+          "data": "行动，这种务实"
+        },
+        {
+          "event": "token",
+          "data": "的自我觉察真的很棒"
+        },
+        {
+          "event": "token",
+          "data": "。\n\n如果这"
+        },
+        {
+          "event": "token",
+          "data": "半小时不碰手机"
+        },
+        {
+          "event": "token",
+          "data": "，你通常会做"
+        },
+        {
+          "event": "token",
+          "data": "点什么，或者只是"
+        },
+        {
+          "event": "token",
+          "data": "安静地待着"
+        },
+        {
+          "event": "token",
+          "data": "？这半小时里"
+        },
+        {
+          "event": "token",
+          "data": "，做些什么会让你觉得"
+        },
+        {
+          "event": "token",
+          "data": "最放松呢？"
+        },
+        {
+          "event": "dialogue_done",
+          "data": {
+            "trace_id": "59f161f669a94823",
+            "owner": "therapy_sfbt"
+          }
+        },
+        {
+          "event": "final",
+          "data": {
+            "message": "好，我先从小事开始——睡前半小时不碰手机。",
+            "risk_state": "SAFE",
+            "crisis": false
+          }
+        }
+      ],
+      "final": {
+        "message": "好，我先从小事开始——睡前半小时不碰手机。",
+        "risk_state": "SAFE",
+        "crisis": false
+      },
+      "state_after": {
+        "owner": "therapy_sfbt",
+        "crisis": false,
+        "risk_level": "SAFE",
+        "therapy": {
+          "name": "SFBT",
+          "start_seq": 12,
+          "rounds": 2,
+          "step_index": 1,
+          "branch": null,
+          "basic_flow_complete": false,
+          "visited": [
+            "resource_exploration"
+          ]
+        },
+        "last_therapy_check_seq": 11,
+        "pending_user_tokens": 0
+      },
+      "orchestration_after": {
+        "updated_seq": 2,
+        "therapy": "SFBT",
+        "current_step": "resource_exploration",
+        "next_step": "exception_exploration",
+        "step_judgment": {
+          "action": "advance",
+          "target_step": "future_construction",
+          "achieved": true,
+          "reason": "User has achieved high resource awareness (0.85) and concrete goal clarity (0.95), shifting from problem-talk to solution-oriented thinking. The recommended next step is future_construction to translate the 'not-doing' goal (no phone) into a 'doing' goal by exploring what positive, relaxing activities will fill that half-hour."
+        },
+        "assessment": {
+          "goal_clarity": {
+            "index": 0.95,
+            "state": "concrete",
+            "confidence": 0.95,
+            "evidence": [
+              "User proposed a highly specific, measurable, and actionable micro-goal: 'not touching my phone for half an hour before bed', showing a clear shift from abstract desires to concrete, actionable steps."
+            ]
+          },
+          "resource_awareness": {
+            "index": 0.85,
+            "state": "high",
+            "confidence": 0.9,
+            "evidence": [
+              "User independently identified a practical coping strategy and expressed readiness to take action ('I'll start with small things'), demonstrating strong awareness of their own agency and ability to implement self-regulation."
+            ]
+          },
+          "problem_orientation": {
+            "index": 0.0,
+            "state": "solution_oriented",
+            "confidence": 0.95,
+            "evidence": [
+              "The message is entirely focused on a proactive solution and action plan, with zero problem-talk or dwelling on the difficulties of falling asleep."
+            ]
+          },
+          "sfbt_intervention_need": 0.063,
+          "overall_trend": "improving",
+          "primary_concern": "none",
+          "should_intervene": false,
+          "recommended_processes": [
+            {
+              "process": "future_construction",
+              "priority": 1,
+              "rationale": "User has defined a specific 'not-doing' goal (no phone). Future construction can help translate this into a 'doing' goal by exploring what positive, relaxing activities will fill that half-hour to ensure the preferred future is built."
+            },
+            {
+              "process": "resource_exploration",
+              "priority": 2,
+              "rationale": "Explore how the user came up with this specific strategy and validate their insight, reinforcing their confidence in their own ability to generate effective solutions."
+            },
+            {
+              "process": "exception_exploration",
+              "priority": 3,
+              "rationale": "Identify past exceptions where the user naturally didn't use their phone before bed, or times they successfully started with 'small things', to build a practical blueprint for maintaining this new habit."
+            }
+          ]
+        },
+        "skill_output": {
+          "technique": {
+            "name": "compliments_strengths",
+            "description": "Notice and name the user's specific strengths, efforts, and positive qualities embedded in their proactive approach. Frame as observations rather than generic praise to highlight their pragmatism, self-awareness, and agency in shifting focus to actionable solutions.",
+            "steps": [
+              "Acknowledge the user's concrete action plan and explicitly name the strengths it demonstrates, such as pragmatism ('starting small') and self-regulation.",
+              "Frame the compliment as a specific observation (e.g., 'I notice how quickly you shifted to what you can control...') rather than generic praise.",
+              "Build on this recognized strength by asking a future-oriented question that deepens their commitment to the action plan, such as exploring what they will do instead during that half hour."
+            ]
+          },
+          "conversation_goal": "To reinforce the user's self-efficacy and resourcefulness by explicitly naming their pragmatic approach, thereby solidifying their transition from problem-focused to solution-focused thinking and anchoring their new coping strategy.",
+          "adaptation": {
+            "interaction_style": "supportive",
+            "tone_adjustment": "hopeful",
+            "pace_adjustment": "future_oriented",
+            "culture_note": ""
+          },
+          "contraindications": [
+            {
+              "condition": "User dismisses or deflects the compliment (e.g., '这没什么', '这很简单').",
+              "reason": "Chinese culture often encourages modesty and deflection of praise. If the user deflects, do not force the compliment. Instead, roll with it by exploring the personal meaning of the action ('但对你来说，迈出这一步意味着什么？') or smoothly transition to exploring the practical details of their plan."
+            }
+          ],
+          "_skill_name": "sfbt_resource_exploration"
+        },
+        "products": {},
+        "continue_eval": null
+      },
+      "error": null,
+      "wall_seconds": 147.619,
+      "agent_text": "能这么快把注意力放在自己能控制的事情上，还立刻想到“睡前半小时不碰手机”这么具体的行动，这种务实的自我觉察真的很棒。\n\n如果这半小时不碰手机，你通常会做点什么，或者只是安静地待着？这半小时里，做些什么会让你觉得最放松呢？"
+    }
+  ]
+}

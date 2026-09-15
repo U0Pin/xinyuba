@@ -1,0 +1,761 @@
+{
+  "seed_id": "sfbt-relationship-miracle-marriage",
+  "target_family": "SFBT",
+  "scenario_label": "关系问句-婚姻冷暴力奇迹",
+  "scenario_description": "结婚8年陷入「什么都不说」状态",
+  "user_id": "seed-sfbt-relationship-miracl",
+  "session_id": "0bdf89358edb4789",
+  "turns_total": 8,
+  "switched_to_therapy_at_turn": null,
+  "actual_therapy": null,
+  "therapy_rounds": 0,
+  "orch_step_changes": 0,
+  "is_complete": false,
+  "final_risk_level": "SAFE",
+  "final_crisis": false,
+  "turns": [
+    {
+      "turn": 1,
+      "trace_id": "52069e3329294512",
+      "user_text": "我跟我老公结婚 8 年了，最近我们几乎不说话了。",
+      "agent_text_parts": [
+        "结婚",
+        "8年了，最近",
+        "却几乎不说话了",
+        "，这种感觉一定挺",
+        "让人失落和难受",
+        "的。心里是不是",
+        "觉得挺不是滋",
+        "味的？愿意跟我",
+        "多说说吗，",
+        "最近是怎么变成这样的",
+        "？"
+      ],
+      "events": [
+        {
+          "event": "token",
+          "data": "结婚"
+        },
+        {
+          "event": "token",
+          "data": "8年了，最近"
+        },
+        {
+          "event": "token",
+          "data": "却几乎不说话了"
+        },
+        {
+          "event": "token",
+          "data": "，这种感觉一定挺"
+        },
+        {
+          "event": "token",
+          "data": "让人失落和难受"
+        },
+        {
+          "event": "token",
+          "data": "的。心里是不是"
+        },
+        {
+          "event": "token",
+          "data": "觉得挺不是滋"
+        },
+        {
+          "event": "token",
+          "data": "味的？愿意跟我"
+        },
+        {
+          "event": "token",
+          "data": "多说说吗，"
+        },
+        {
+          "event": "token",
+          "data": "最近是怎么变成这样的"
+        },
+        {
+          "event": "token",
+          "data": "？"
+        },
+        {
+          "event": "dialogue_done",
+          "data": {
+            "trace_id": "52069e3329294512",
+            "owner": "daily"
+          }
+        },
+        {
+          "event": "final",
+          "data": {
+            "message": "我跟我老公结婚 8 年了，最近我们几乎不说话了。",
+            "risk_state": "LOW_RISK",
+            "crisis": false
+          }
+        }
+      ],
+      "final": {
+        "message": "我跟我老公结婚 8 年了，最近我们几乎不说话了。",
+        "risk_state": "LOW_RISK",
+        "crisis": false
+      },
+      "state_after": {
+        "owner": "daily",
+        "crisis": false,
+        "risk_level": "LOW_RISK",
+        "therapy": null,
+        "last_therapy_check_seq": 1,
+        "pending_user_tokens": 0
+      },
+      "orchestration_after": {},
+      "error": null,
+      "wall_seconds": 41.31,
+      "agent_text": "结婚8年了，最近却几乎不说话了，这种感觉一定挺让人失落和难受的。心里是不是觉得挺不是滋味的？愿意跟我多说说吗，最近是怎么变成这样的？"
+    },
+    {
+      "turn": 2,
+      "trace_id": "f3f4d2b17b81472c",
+      "user_text": "不是吵架，是那种「什么都不想跟对方说」的状态。",
+      "agent_text_parts": [
+        "原来",
+        "不是吵架。那种",
+        "“什么都不想跟",
+        "对方说”的状态",
+        "，其实比吵架",
+        "更让人心累",
+        "吧。好像连",
+        "开口的力气和",
+        "欲望都没有了。",
+        "心里是不是觉得特别",
+        "疲惫？"
+      ],
+      "events": [
+        {
+          "event": "token",
+          "data": "原来"
+        },
+        {
+          "event": "token",
+          "data": "不是吵架。那种"
+        },
+        {
+          "event": "token",
+          "data": "“什么都不想跟"
+        },
+        {
+          "event": "token",
+          "data": "对方说”的状态"
+        },
+        {
+          "event": "token",
+          "data": "，其实比吵架"
+        },
+        {
+          "event": "token",
+          "data": "更让人心累"
+        },
+        {
+          "event": "token",
+          "data": "吧。好像连"
+        },
+        {
+          "event": "token",
+          "data": "开口的力气和"
+        },
+        {
+          "event": "token",
+          "data": "欲望都没有了。"
+        },
+        {
+          "event": "token",
+          "data": "心里是不是觉得特别"
+        },
+        {
+          "event": "token",
+          "data": "疲惫？"
+        },
+        {
+          "event": "dialogue_done",
+          "data": {
+            "trace_id": "f3f4d2b17b81472c",
+            "owner": "daily"
+          }
+        },
+        {
+          "event": "final",
+          "data": {
+            "message": "不是吵架，是那种「什么都不想跟对方说」的状态。",
+            "risk_state": "LOW_RISK",
+            "crisis": false
+          }
+        }
+      ],
+      "final": {
+        "message": "不是吵架，是那种「什么都不想跟对方说」的状态。",
+        "risk_state": "LOW_RISK",
+        "crisis": false
+      },
+      "state_after": {
+        "owner": "daily",
+        "crisis": false,
+        "risk_level": "LOW_RISK",
+        "therapy": null,
+        "last_therapy_check_seq": 3,
+        "pending_user_tokens": 0
+      },
+      "orchestration_after": {},
+      "error": null,
+      "wall_seconds": 51.107,
+      "agent_text": "原来不是吵架。那种“什么都不想跟对方说”的状态，其实比吵架更让人心累吧。好像连开口的力气和欲望都没有了。心里是不是觉得特别疲惫？"
+    },
+    {
+      "turn": 3,
+      "trace_id": "6259b994905341d9",
+      "user_text": "我有时候想我们之间到底怎么了。",
+      "agent_text_parts": [
+        "想弄清楚“我们",
+        "之间到底怎么了”，",
+        "却好像找不到答案",
+        "，这种感觉一定挺",
+        "让人迷茫和无奈的",
+        "。心里是不是装",
+        "满了问号，却又",
+        "觉得不知道从何说起",
+        "？"
+      ],
+      "events": [
+        {
+          "event": "token",
+          "data": "想弄清楚“我们"
+        },
+        {
+          "event": "token",
+          "data": "之间到底怎么了”，"
+        },
+        {
+          "event": "token",
+          "data": "却好像找不到答案"
+        },
+        {
+          "event": "token",
+          "data": "，这种感觉一定挺"
+        },
+        {
+          "event": "token",
+          "data": "让人迷茫和无奈的"
+        },
+        {
+          "event": "token",
+          "data": "。心里是不是装"
+        },
+        {
+          "event": "token",
+          "data": "满了问号，却又"
+        },
+        {
+          "event": "token",
+          "data": "觉得不知道从何说起"
+        },
+        {
+          "event": "token",
+          "data": "？"
+        },
+        {
+          "event": "dialogue_done",
+          "data": {
+            "trace_id": "6259b994905341d9",
+            "owner": "daily"
+          }
+        },
+        {
+          "event": "final",
+          "data": {
+            "message": "我有时候想我们之间到底怎么了。",
+            "risk_state": "LOW_RISK",
+            "crisis": false
+          }
+        }
+      ],
+      "final": {
+        "message": "我有时候想我们之间到底怎么了。",
+        "risk_state": "LOW_RISK",
+        "crisis": false
+      },
+      "state_after": {
+        "owner": "daily",
+        "crisis": false,
+        "risk_level": "LOW_RISK",
+        "therapy": null,
+        "last_therapy_check_seq": 5,
+        "pending_user_tokens": 0
+      },
+      "orchestration_after": {},
+      "error": null,
+      "wall_seconds": 48.182,
+      "agent_text": "想弄清楚“我们之间到底怎么了”，却好像找不到答案，这种感觉一定挺让人迷茫和无奈的。心里是不是装满了问号，却又觉得不知道从何说起？"
+    },
+    {
+      "turn": 4,
+      "trace_id": "a55017dc29d042e7",
+      "user_text": "你问我「如果今晚奇迹发生，你们又开始说话，第一句话你会听到什么」——",
+      "agent_text_parts": [
+        "嗯，我在",
+        "听。如果今晚",
+        "真的有这个奇迹，",
+        "你觉得第一句话会",
+        "是什么呢？"
+      ],
+      "events": [
+        {
+          "event": "token",
+          "data": "嗯，我在"
+        },
+        {
+          "event": "token",
+          "data": "听。如果今晚"
+        },
+        {
+          "event": "token",
+          "data": "真的有这个奇迹，"
+        },
+        {
+          "event": "token",
+          "data": "你觉得第一句话会"
+        },
+        {
+          "event": "token",
+          "data": "是什么呢？"
+        },
+        {
+          "event": "dialogue_done",
+          "data": {
+            "trace_id": "a55017dc29d042e7",
+            "owner": "daily"
+          }
+        },
+        {
+          "event": "final",
+          "data": {
+            "message": "你问我「如果今晚奇迹发生，你们又开始说话，第一句话你会听到什么」——",
+            "risk_state": "LOW_RISK",
+            "crisis": false
+          }
+        }
+      ],
+      "final": {
+        "message": "你问我「如果今晚奇迹发生，你们又开始说话，第一句话你会听到什么」——",
+        "risk_state": "LOW_RISK",
+        "crisis": false
+      },
+      "state_after": {
+        "owner": "daily",
+        "crisis": false,
+        "risk_level": "LOW_RISK",
+        "therapy": null,
+        "last_therapy_check_seq": 7,
+        "pending_user_tokens": 0
+      },
+      "orchestration_after": {},
+      "error": null,
+      "wall_seconds": 61.355,
+      "agent_text": "嗯，我在听。如果今晚真的有这个奇迹，你觉得第一句话会是什么呢？"
+    },
+    {
+      "turn": 5,
+      "trace_id": "e1c48a96ddeb463e",
+      "user_text": "我可能会听到他说「今天你累不累」。",
+      "agent_text_parts": [
+        "“今天你",
+        "累不累”",
+        "……听到这句话，",
+        "感觉心里一下子就软",
+        "了。其实你",
+        "心里盼着的，",
+        "也就是这种简简单单",
+        "、把你放在心",
+        "上的关心吧。",
+        "不用去纠结那些",
+        "复杂的问题，只是",
+        "先照顾彼此的感受",
+        "。"
+      ],
+      "events": [
+        {
+          "event": "token",
+          "data": "“今天你"
+        },
+        {
+          "event": "token",
+          "data": "累不累”"
+        },
+        {
+          "event": "token",
+          "data": "……听到这句话，"
+        },
+        {
+          "event": "token",
+          "data": "感觉心里一下子就软"
+        },
+        {
+          "event": "token",
+          "data": "了。其实你"
+        },
+        {
+          "event": "token",
+          "data": "心里盼着的，"
+        },
+        {
+          "event": "token",
+          "data": "也就是这种简简单单"
+        },
+        {
+          "event": "token",
+          "data": "、把你放在心"
+        },
+        {
+          "event": "token",
+          "data": "上的关心吧。"
+        },
+        {
+          "event": "token",
+          "data": "不用去纠结那些"
+        },
+        {
+          "event": "token",
+          "data": "复杂的问题，只是"
+        },
+        {
+          "event": "token",
+          "data": "先照顾彼此的感受"
+        },
+        {
+          "event": "token",
+          "data": "。"
+        },
+        {
+          "event": "dialogue_done",
+          "data": {
+            "trace_id": "e1c48a96ddeb463e",
+            "owner": "daily"
+          }
+        },
+        {
+          "event": "final",
+          "data": {
+            "message": "我可能会听到他说「今天你累不累」。",
+            "risk_state": "SAFE",
+            "crisis": false
+          }
+        }
+      ],
+      "final": {
+        "message": "我可能会听到他说「今天你累不累」。",
+        "risk_state": "SAFE",
+        "crisis": false
+      },
+      "state_after": {
+        "owner": "daily",
+        "crisis": false,
+        "risk_level": "SAFE",
+        "therapy": null,
+        "last_therapy_check_seq": 9,
+        "pending_user_tokens": 0
+      },
+      "orchestration_after": {},
+      "error": null,
+      "wall_seconds": 55.541,
+      "agent_text": "“今天你累不累”……听到这句话，感觉心里一下子就软了。其实你心里盼着的，也就是这种简简单单、把你放在心上的关心吧。不用去纠结那些复杂的问题，只是先照顾彼此的感受。"
+    },
+    {
+      "turn": 6,
+      "trace_id": "343df91010474447",
+      "user_text": "就这样？就这一句？",
+      "agent_text_parts": [
+        "是啊，听起来",
+        "真的很简单",
+        "，简单到甚至",
+        "都不像个“奇迹",
+        "”。但有时候，",
+        "咱们心里最渴望",
+        "的，偏偏就是",
+        "这种最不起眼、",
+        "却最实在的一句",
+        "问候。明明要求",
+        "这么低，却",
+        "好像挺难等",
+        "到的，对吧？"
+      ],
+      "events": [
+        {
+          "event": "token",
+          "data": "是啊，听起来"
+        },
+        {
+          "event": "token",
+          "data": "真的很简单"
+        },
+        {
+          "event": "token",
+          "data": "，简单到甚至"
+        },
+        {
+          "event": "token",
+          "data": "都不像个“奇迹"
+        },
+        {
+          "event": "token",
+          "data": "”。但有时候，"
+        },
+        {
+          "event": "token",
+          "data": "咱们心里最渴望"
+        },
+        {
+          "event": "token",
+          "data": "的，偏偏就是"
+        },
+        {
+          "event": "token",
+          "data": "这种最不起眼、"
+        },
+        {
+          "event": "token",
+          "data": "却最实在的一句"
+        },
+        {
+          "event": "token",
+          "data": "问候。明明要求"
+        },
+        {
+          "event": "token",
+          "data": "这么低，却"
+        },
+        {
+          "event": "token",
+          "data": "好像挺难等"
+        },
+        {
+          "event": "token",
+          "data": "到的，对吧？"
+        },
+        {
+          "event": "dialogue_done",
+          "data": {
+            "trace_id": "343df91010474447",
+            "owner": "daily"
+          }
+        },
+        {
+          "event": "final",
+          "data": {
+            "message": "就这样？就这一句？",
+            "risk_state": "LOW_RISK",
+            "crisis": false
+          }
+        }
+      ],
+      "final": {
+        "message": "就这样？就这一句？",
+        "risk_state": "LOW_RISK",
+        "crisis": false
+      },
+      "state_after": {
+        "owner": "daily",
+        "crisis": false,
+        "risk_level": "LOW_RISK",
+        "therapy": null,
+        "last_therapy_check_seq": 11,
+        "pending_user_tokens": 0
+      },
+      "orchestration_after": {},
+      "error": null,
+      "wall_seconds": 59.588,
+      "agent_text": "是啊，听起来真的很简单，简单到甚至都不像个“奇迹”。但有时候，咱们心里最渴望的，偏偏就是这种最不起眼、却最实在的一句问候。明明要求这么低，却好像挺难等到的，对吧？"
+    },
+    {
+      "turn": 7,
+      "trace_id": "7b201a117d044033",
+      "user_text": "对，就这一句。",
+      "agent_text_parts": [
+        "是啊，",
+        "就这一句。",
+        "明明自己想要的已经",
+        "这么少了，却",
+        "好像还是成了奢望",
+        "。听得出来，",
+        "你心里挺不是",
+        "滋味的。"
+      ],
+      "events": [
+        {
+          "event": "token",
+          "data": "是啊，"
+        },
+        {
+          "event": "token",
+          "data": "就这一句。"
+        },
+        {
+          "event": "token",
+          "data": "明明自己想要的已经"
+        },
+        {
+          "event": "token",
+          "data": "这么少了，却"
+        },
+        {
+          "event": "token",
+          "data": "好像还是成了奢望"
+        },
+        {
+          "event": "token",
+          "data": "。听得出来，"
+        },
+        {
+          "event": "token",
+          "data": "你心里挺不是"
+        },
+        {
+          "event": "token",
+          "data": "滋味的。"
+        },
+        {
+          "event": "dialogue_done",
+          "data": {
+            "trace_id": "7b201a117d044033",
+            "owner": "daily"
+          }
+        },
+        {
+          "event": "final",
+          "data": {
+            "message": "对，就这一句。",
+            "risk_state": "LOW_RISK",
+            "crisis": false
+          }
+        }
+      ],
+      "final": {
+        "message": "对，就这一句。",
+        "risk_state": "LOW_RISK",
+        "crisis": false
+      },
+      "state_after": {
+        "owner": "daily",
+        "crisis": false,
+        "risk_level": "LOW_RISK",
+        "therapy": null,
+        "last_therapy_check_seq": 13,
+        "pending_user_tokens": 0
+      },
+      "orchestration_after": {},
+      "error": null,
+      "wall_seconds": 45.204,
+      "agent_text": "是啊，就这一句。明明自己想要的已经这么少了，却好像还是成了奢望。听得出来，你心里挺不是滋味的。"
+    },
+    {
+      "turn": 8,
+      "trace_id": "419e4608b2f84c5f",
+      "user_text": "那你们之间有没有过「就这样一句」的时候？",
+      "agent_text_parts": [
+        "其实很多人都体会",
+        "过那样的瞬间",
+        "。曾经有那么一刻",
+        "，对方随口一句",
+        "简单的问候，就像",
+        "你说的“就这样一句",
+        "”，就能让人心里",
+        "暖半天。但也",
+        "正因为曾经有过，",
+        "现在等不到才",
+        "更让人觉得心里空",
+        "落落的，对吧",
+        "？"
+      ],
+      "events": [
+        {
+          "event": "token",
+          "data": "其实很多人都体会"
+        },
+        {
+          "event": "token",
+          "data": "过那样的瞬间"
+        },
+        {
+          "event": "token",
+          "data": "。曾经有那么一刻"
+        },
+        {
+          "event": "token",
+          "data": "，对方随口一句"
+        },
+        {
+          "event": "token",
+          "data": "简单的问候，就像"
+        },
+        {
+          "event": "token",
+          "data": "你说的“就这样一句"
+        },
+        {
+          "event": "token",
+          "data": "”，就能让人心里"
+        },
+        {
+          "event": "token",
+          "data": "暖半天。但也"
+        },
+        {
+          "event": "token",
+          "data": "正因为曾经有过，"
+        },
+        {
+          "event": "token",
+          "data": "现在等不到才"
+        },
+        {
+          "event": "token",
+          "data": "更让人觉得心里空"
+        },
+        {
+          "event": "token",
+          "data": "落落的，对吧"
+        },
+        {
+          "event": "token",
+          "data": "？"
+        },
+        {
+          "event": "dialogue_done",
+          "data": {
+            "trace_id": "419e4608b2f84c5f",
+            "owner": "daily"
+          }
+        },
+        {
+          "event": "final",
+          "data": {
+            "message": "那你们之间有没有过「就这样一句」的时候？",
+            "risk_state": "SAFE",
+            "crisis": false
+          }
+        }
+      ],
+      "final": {
+        "message": "那你们之间有没有过「就这样一句」的时候？",
+        "risk_state": "SAFE",
+        "crisis": false
+      },
+      "state_after": {
+        "owner": "daily",
+        "crisis": false,
+        "risk_level": "SAFE",
+        "therapy": null,
+        "last_therapy_check_seq": 15,
+        "pending_user_tokens": 0
+      },
+      "orchestration_after": {},
+      "error": null,
+      "wall_seconds": 63.049,
+      "agent_text": "其实很多人都体会过那样的瞬间。曾经有那么一刻，对方随口一句简单的问候，就像你说的“就这样一句”，就能让人心里暖半天。但也正因为曾经有过，现在等不到才更让人觉得心里空落落的，对吧？"
+    }
+  ]
+}

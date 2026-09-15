@@ -1,0 +1,1525 @@
+{
+  "seed_id": "sfbt-miracle-question",
+  "target_family": "SFBT",
+  "scenario_label": "奇迹问题-转专业",
+  "scenario_description": "在原专业和真正想去的专业之间犹豫",
+  "user_id": "seed-sfbt-miracle-question",
+  "session_id": "5606c544dc2a47a6",
+  "turns_total": 8,
+  "switched_to_therapy_at_turn": 2,
+  "actual_therapy": "SFBT",
+  "therapy_rounds": 7,
+  "orch_step_changes": 3,
+  "is_complete": true,
+  "final_risk_level": "SAFE",
+  "final_crisis": false,
+  "turns": [
+    {
+      "turn": 1,
+      "trace_id": "49e95b9bd0ba40e4",
+      "user_text": "我在想要不要转专业，但一直没想清楚。",
+      "agent_text_parts": [
+        "转专业确实",
+        "是个大决定，",
+        "一直“没想",
+        "清楚”挺让人",
+        "纠结的吧。这种事",
+        "本来就不是一下",
+        "子就能理清的",
+        "，不用逼自己",
+        "马上有个答案。",
+        "你现在主要是被什么",
+        "卡住了呢？",
+        "有什么顾虑的话，",
+        "随时跟我随便聊聊",
+        "。"
+      ],
+      "events": [
+        {
+          "event": "token",
+          "data": "转专业确实"
+        },
+        {
+          "event": "token",
+          "data": "是个大决定，"
+        },
+        {
+          "event": "token",
+          "data": "一直“没想"
+        },
+        {
+          "event": "token",
+          "data": "清楚”挺让人"
+        },
+        {
+          "event": "token",
+          "data": "纠结的吧。这种事"
+        },
+        {
+          "event": "token",
+          "data": "本来就不是一下"
+        },
+        {
+          "event": "token",
+          "data": "子就能理清的"
+        },
+        {
+          "event": "token",
+          "data": "，不用逼自己"
+        },
+        {
+          "event": "token",
+          "data": "马上有个答案。"
+        },
+        {
+          "event": "token",
+          "data": "你现在主要是被什么"
+        },
+        {
+          "event": "token",
+          "data": "卡住了呢？"
+        },
+        {
+          "event": "token",
+          "data": "有什么顾虑的话，"
+        },
+        {
+          "event": "token",
+          "data": "随时跟我随便聊聊"
+        },
+        {
+          "event": "token",
+          "data": "。"
+        },
+        {
+          "event": "dialogue_done",
+          "data": {
+            "trace_id": "49e95b9bd0ba40e4",
+            "owner": "daily"
+          }
+        },
+        {
+          "event": "final",
+          "data": {
+            "message": "我在想要不要转专业，但一直没想清楚。",
+            "risk_state": "SAFE",
+            "crisis": false
+          }
+        }
+      ],
+      "final": {
+        "message": "我在想要不要转专业，但一直没想清楚。",
+        "risk_state": "SAFE",
+        "crisis": false
+      },
+      "state_after": {
+        "owner": "daily",
+        "crisis": false,
+        "risk_level": "SAFE",
+        "therapy": null,
+        "last_therapy_check_seq": 1,
+        "pending_user_tokens": 0
+      },
+      "orchestration_after": {},
+      "error": null,
+      "wall_seconds": 27.215,
+      "agent_text": "转专业确实是个大决定，一直“没想清楚”挺让人纠结的吧。这种事本来就不是一下子就能理清的，不用逼自己马上有个答案。你现在主要是被什么卡住了呢？有什么顾虑的话，随时跟我随便聊聊。"
+    },
+    {
+      "turn": 2,
+      "trace_id": "a563d9d24c9c480e",
+      "user_text": "如果明天醒来，问题奇迹般解决了，我会看到什么？",
+      "agent_text_parts": [
+        "这个设想挺",
+        "有意思的",
+        "。如果明天醒来",
+        "，转专业这事儿",
+        "真的奇迹般解决了",
+        "，你睁开眼",
+        "会看到什么不一样的",
+        "画面？或者你",
+        "那天的心情和状态",
+        "会是什么样的？咱们",
+        "一起顺着这个想象",
+        "聊聊看。"
+      ],
+      "events": [
+        {
+          "event": "token",
+          "data": "这个设想挺"
+        },
+        {
+          "event": "token",
+          "data": "有意思的"
+        },
+        {
+          "event": "token",
+          "data": "。如果明天醒来"
+        },
+        {
+          "event": "token",
+          "data": "，转专业这事儿"
+        },
+        {
+          "event": "token",
+          "data": "真的奇迹般解决了"
+        },
+        {
+          "event": "token",
+          "data": "，你睁开眼"
+        },
+        {
+          "event": "token",
+          "data": "会看到什么不一样的"
+        },
+        {
+          "event": "token",
+          "data": "画面？或者你"
+        },
+        {
+          "event": "token",
+          "data": "那天的心情和状态"
+        },
+        {
+          "event": "token",
+          "data": "会是什么样的？咱们"
+        },
+        {
+          "event": "token",
+          "data": "一起顺着这个想象"
+        },
+        {
+          "event": "token",
+          "data": "聊聊看。"
+        },
+        {
+          "event": "dialogue_done",
+          "data": {
+            "trace_id": "a563d9d24c9c480e",
+            "owner": "daily"
+          }
+        },
+        {
+          "event": "final",
+          "data": {
+            "message": "如果明天醒来，问题奇迹般解决了，我会看到什么？",
+            "risk_state": "SAFE",
+            "crisis": false
+          }
+        }
+      ],
+      "final": {
+        "message": "如果明天醒来，问题奇迹般解决了，我会看到什么？",
+        "risk_state": "SAFE",
+        "crisis": false
+      },
+      "state_after": {
+        "owner": "therapy_sfbt",
+        "crisis": false,
+        "risk_level": "SAFE",
+        "therapy": {
+          "name": "SFBT",
+          "start_seq": 5,
+          "rounds": 0,
+          "step_index": -1,
+          "branch": null,
+          "basic_flow_complete": false
+        },
+        "last_therapy_check_seq": 3,
+        "pending_user_tokens": 0
+      },
+      "orchestration_after": {},
+      "error": null,
+      "wall_seconds": 28.441,
+      "agent_text": "这个设想挺有意思的。如果明天醒来，转专业这事儿真的奇迹般解决了，你睁开眼会看到什么不一样的画面？或者你那天的心情和状态会是什么样的？咱们一起顺着这个想象聊聊看。"
+    },
+    {
+      "turn": 3,
+      "trace_id": "ae6dca38fa724c42",
+      "user_text": "……我好像会看到自己在大三下开始上新专业的课。",
+      "agent_text_parts": [
+        "“大三下",
+        "开始上新专业的课",
+        "”，这个画面听起来",
+        "挺清晰的。当你",
+        "看到自己在这个画面",
+        "里的时候，心里",
+        "是什么感觉呢？",
+        "咱们聊到现在，",
+        "你觉得自己的心情或者",
+        "想法，和刚开始",
+        "聊的时候有什么不一样",
+        "吗？"
+      ],
+      "events": [
+        {
+          "event": "token",
+          "data": "“大三下"
+        },
+        {
+          "event": "token",
+          "data": "开始上新专业的课"
+        },
+        {
+          "event": "token",
+          "data": "”，这个画面听起来"
+        },
+        {
+          "event": "token",
+          "data": "挺清晰的。当你"
+        },
+        {
+          "event": "token",
+          "data": "看到自己在这个画面"
+        },
+        {
+          "event": "token",
+          "data": "里的时候，心里"
+        },
+        {
+          "event": "token",
+          "data": "是什么感觉呢？"
+        },
+        {
+          "event": "token",
+          "data": "咱们聊到现在，"
+        },
+        {
+          "event": "token",
+          "data": "你觉得自己的心情或者"
+        },
+        {
+          "event": "token",
+          "data": "想法，和刚开始"
+        },
+        {
+          "event": "token",
+          "data": "聊的时候有什么不一样"
+        },
+        {
+          "event": "token",
+          "data": "吗？"
+        },
+        {
+          "event": "dialogue_done",
+          "data": {
+            "trace_id": "ae6dca38fa724c42",
+            "owner": "therapy_sfbt"
+          }
+        },
+        {
+          "event": "final",
+          "data": {
+            "message": "……我好像会看到自己在大三下开始上新专业的课。",
+            "risk_state": "SAFE",
+            "crisis": false
+          }
+        }
+      ],
+      "final": {
+        "message": "……我好像会看到自己在大三下开始上新专业的课。",
+        "risk_state": "SAFE",
+        "crisis": false
+      },
+      "state_after": {
+        "owner": "therapy_sfbt",
+        "crisis": false,
+        "risk_level": "SAFE",
+        "therapy": {
+          "name": "SFBT",
+          "start_seq": 5,
+          "rounds": 1,
+          "step_index": 0,
+          "branch": null,
+          "basic_flow_complete": false
+        },
+        "last_therapy_check_seq": 3,
+        "pending_user_tokens": 0
+      },
+      "orchestration_after": {
+        "updated_seq": 1,
+        "therapy": "SFBT",
+        "current_step": "resource_exploration",
+        "next_step": "resource_exploration",
+        "step_judgment": {
+          "action": "stay",
+          "target_step": null,
+          "achieved": false,
+          "reason": "Resource awareness index is very low (0.2, state: blind). The user has described a future image but has not yet explored personal strengths, past successes, or support systems related to this goal. Current step (resource_exploration) needs to continue to help the user identify internal and external resources before moving forward."
+        },
+        "assessment": {
+          "goal_clarity": {
+            "index": 0.4,
+            "state": "emerging",
+            "confidence": 0.75,
+            "evidence": [
+              "User visualizes a specific future event: '我好像会看到自己在大三下开始上新专业的课' (I seem to see myself starting new major classes in junior year). It is a concrete image but phrased tentatively as an observation rather than a direct, actionable goal."
+            ]
+          },
+          "resource_awareness": {
+            "index": 0.2,
+            "state": "blind",
+            "confidence": 0.6,
+            "evidence": [
+              "The user does not explicitly mention personal strengths, past successes, or support systems in this brief message, but also does not express a lack of resources or feelings of helplessness."
+            ]
+          },
+          "problem_orientation": {
+            "index": 0.1,
+            "state": "solution_oriented",
+            "confidence": 0.85,
+            "evidence": [
+              "The user's focus is entirely on a future-oriented scenario ('开始上新专业的课') rather than describing current problems, complaining, or feeling stuck in the present."
+            ]
+          },
+          "sfbt_intervention_need": 0.45,
+          "overall_trend": "stable",
+          "primary_concern": "goal_clarity",
+          "should_intervene": true,
+          "recommended_processes": [
+            {
+              "process": "future_construction",
+              "priority": 1,
+              "rationale": "The user has an emerging, concrete image of the future. Future construction techniques can help expand this tentative image ('好像会看到') into a clear, detailed, and actionable therapeutic goal, aligning well with a pragmatic orientation towards solutions."
+            },
+            {
+              "process": "resource_exploration",
+              "priority": 2,
+              "rationale": "To help the user actualize this future state (transitioning to a new major), exploring what internal strengths or external support systems they already possess will build the necessary confidence to move forward."
+            }
+          ]
+        },
+        "skill_output": {
+          "technique": {
+            "name": "compliments_strengths",
+            "description": "Notice and name the user's proactive efforts, courage, and clarity in envisioning their academic transition. Frame observations of their future-orientation as specific strengths rather than generic praise.",
+            "steps": [
+              "Identify the specific strength embedded in the user's vision, such as the courage to change their major or the clarity to visualize their future steps.",
+              "Use an 'I notice...' (我注意到...) statement to frame the compliment as a specific observation of their behavior or mindset, avoiding generic praise.",
+              "Ask a follow-up question to help them internalize and explore this strength, such as 'What does it take for you to have such a clear picture of your next steps?'"
+            ]
+          },
+          "conversation_goal": "Help the user recognize and internalize their proactive nature, courage, and clarity in planning their academic transition, making these invisible resources visible.",
+          "adaptation": {
+            "interaction_style": "supportive",
+            "tone_adjustment": "hopeful",
+            "pace_adjustment": "future_oriented",
+            "culture_note": ""
+          },
+          "contraindications": [
+            {
+              "condition": "User deflects or minimizes the compliment (e.g., saying 'it's nothing' or 'anyone would do this')",
+              "reason": "Do not force the compliment; instead, explore what this specific action or vision means to them personally to deepen their resource awareness without causing discomfort."
+            },
+            {
+              "condition": "User suddenly expresses hidden anxieties or doubts about the new major",
+              "reason": "The pace may be too fast; need to validate their current feelings and fears before highlighting strengths about the future to maintain rapport."
+            }
+          ],
+          "_skill_name": "sfbt_resource_exploration"
+        },
+        "products": {},
+        "continue_eval": null
+      },
+      "error": null,
+      "wall_seconds": 135.123,
+      "agent_text": "“大三下开始上新专业的课”，这个画面听起来挺清晰的。当你看到自己在这个画面里的时候，心里是什么感觉呢？咱们聊到现在，你觉得自己的心情或者想法，和刚开始聊的时候有什么不一样吗？"
+    },
+    {
+      "turn": 4,
+      "trace_id": "41407ec6b1124fa5",
+      "user_text": "那意味着我现在最想做的事是「先去旁听」。",
+      "agent_text_parts": [
+        "我注意到",
+        "，你不仅能在",
+        "脑海里看到未来的画面",
+        "，还能立刻把它",
+        "转化成当下最具体",
+        "的一步——“先去",
+        "旁听”。能",
+        "这么清晰地知道自己现在",
+        "最想做什么，这",
+        "本身就是一种很实在",
+        "的力量。\n\n是什么",
+        "让你想到从“",
+        "先去旁听”",
+        "这个具体的行动",
+        "开始的呢？"
+      ],
+      "events": [
+        {
+          "event": "token",
+          "data": "我注意到"
+        },
+        {
+          "event": "token",
+          "data": "，你不仅能在"
+        },
+        {
+          "event": "token",
+          "data": "脑海里看到未来的画面"
+        },
+        {
+          "event": "token",
+          "data": "，还能立刻把它"
+        },
+        {
+          "event": "token",
+          "data": "转化成当下最具体"
+        },
+        {
+          "event": "token",
+          "data": "的一步——“先去"
+        },
+        {
+          "event": "token",
+          "data": "旁听”。能"
+        },
+        {
+          "event": "token",
+          "data": "这么清晰地知道自己现在"
+        },
+        {
+          "event": "token",
+          "data": "最想做什么，这"
+        },
+        {
+          "event": "token",
+          "data": "本身就是一种很实在"
+        },
+        {
+          "event": "token",
+          "data": "的力量。\n\n是什么"
+        },
+        {
+          "event": "token",
+          "data": "让你想到从“"
+        },
+        {
+          "event": "token",
+          "data": "先去旁听”"
+        },
+        {
+          "event": "token",
+          "data": "这个具体的行动"
+        },
+        {
+          "event": "token",
+          "data": "开始的呢？"
+        },
+        {
+          "event": "dialogue_done",
+          "data": {
+            "trace_id": "41407ec6b1124fa5",
+            "owner": "therapy_sfbt"
+          }
+        },
+        {
+          "event": "final",
+          "data": {
+            "message": "那意味着我现在最想做的事是「先去旁听」。",
+            "risk_state": "SAFE",
+            "crisis": false
+          }
+        }
+      ],
+      "final": {
+        "message": "那意味着我现在最想做的事是「先去旁听」。",
+        "risk_state": "SAFE",
+        "crisis": false
+      },
+      "state_after": {
+        "owner": "therapy_sfbt",
+        "crisis": false,
+        "risk_level": "SAFE",
+        "therapy": {
+          "name": "SFBT",
+          "start_seq": 5,
+          "rounds": 2,
+          "step_index": 0,
+          "branch": null,
+          "basic_flow_complete": false
+        },
+        "last_therapy_check_seq": 3,
+        "pending_user_tokens": 0
+      },
+      "orchestration_after": {
+        "updated_seq": 2,
+        "therapy": "SFBT",
+        "current_step": "resource_exploration",
+        "next_step": "resource_exploration",
+        "step_judgment": {
+          "action": "stay",
+          "target_step": null,
+          "achieved": false,
+          "reason": "当前步骤为resource_exploration（第2轮）。用户已明确具体行动目标（'先去旁听'），goal_clarity高达0.85，但resource_awareness仅为0.3，尚未探索支撑该行动的内在优势或外部资源。AI最新回复正在引导用户探索'是什么让你想到从旁听开始'，属于resource_exploration的合理推进。需继续当前步骤以挖掘用户执行第一步的信心、能力和支持系统。"
+        },
+        "assessment": {
+          "goal_clarity": {
+            "index": 0.85,
+            "state": "concrete",
+            "confidence": 0.95,
+            "evidence": [
+              "User translates a previous tentative visualization into a highly specific, immediate, and actionable behavioral goal: '我现在最想做的事是「先去旁听」' (What I most want to do right now is 'go audit classes first'). This demonstrates a clear, pragmatic understanding of their desired next step."
+            ]
+          },
+          "resource_awareness": {
+            "index": 0.3,
+            "state": "low",
+            "confidence": 0.75,
+            "evidence": [
+              "User shows emerging awareness of their internal drive and agency by identifying their immediate motivation ('我最想做的事'). However, they have not yet explicitly articulated external support systems, past successes, or specific strengths they will use to actually execute this first step."
+            ]
+          },
+          "problem_orientation": {
+            "index": 0.0,
+            "state": "solution_oriented",
+            "confidence": 0.95,
+            "evidence": [
+              "The user's message is entirely focused on a proactive, forward-looking action ('先去旁听'). There is zero problem-talk, complaining, or expression of being stuck in the present."
+            ]
+          },
+          "sfbt_intervention_need": 0.263,
+          "overall_trend": "improving",
+          "primary_concern": "resource_awareness",
+          "should_intervene": false,
+          "recommended_processes": [
+            {
+              "process": "resource_exploration",
+              "priority": 1,
+              "rationale": "The user has successfully clarified a concrete first step ('先去旁听'). Following SFBT routing rules, since goal clarity is now high but resource awareness is still emerging, the priority is to explore existing internal strengths and external support systems to help them successfully take this first step."
+            },
+            {
+              "process": "future_construction",
+              "priority": 2,
+              "rationale": "With a clear immediate goal established, future construction can be used to gently explore what a successful auditing experience looks like, further solidifying motivation and mapping out the broader desired outcome without feeling like 'fortune telling'."
+            }
+          ]
+        },
+        "skill_output": {
+          "technique": {
+            "name": "compliments_strengths",
+            "description": "Deepen the user's awareness of their proactive agency and clarity. Since the user is highly solution-oriented and has identified a concrete first step, the goal is to notice and name the underlying strengths (such as decisiveness, self-awareness, or commitment) that enable them to take this step, making these invisible resources visible.",
+            "steps": [
+              "Acknowledge the user's clear reiteration of their goal, framing it as a sign of strong commitment and clarity of purpose.",
+              "Use a specific 'I notice...' (我注意到...) observation to highlight the strength of their decision-making or their readiness to act, avoiding generic praise.",
+              "Ask a follow-up question that connects this strength to the future action, such as asking what personal qualities or internal resources they will rely on when they actually take this first step ('先去旁听')."
+            ]
+          },
+          "conversation_goal": "To solidify the user's recognition of their own agency and decisiveness as internal resources, bridging the gap between identifying a goal and possessing the internal strengths required to execute it.",
+          "adaptation": {
+            "interaction_style": "supportive",
+            "tone_adjustment": "hopeful",
+            "pace_adjustment": "future_oriented",
+            "culture_note": ""
+          },
+          "contraindications": [
+            {
+              "condition": "If the user deflects the observation or minimizes their own agency.",
+              "reason": "In Chinese culture, deflecting praise or downplaying one's own efforts is common. If the user minimizes it, do not force the compliment. Instead, roll with it by grounding the observation in their concrete actions or shifting to practical planning for the next step."
+            }
+          ],
+          "_skill_name": "sfbt_resource_exploration"
+        },
+        "products": {},
+        "continue_eval": null
+      },
+      "error": null,
+      "wall_seconds": 142.279,
+      "agent_text": "我注意到，你不仅能在脑海里看到未来的画面，还能立刻把它转化成当下最具体的一步——“先去旁听”。能这么清晰地知道自己现在最想做什么，这本身就是一种很实在的力量。\n\n是什么让你想到从“先去旁听”这个具体的行动开始的呢？"
+    },
+    {
+      "turn": 5,
+      "trace_id": "0ddb3d1a510e4a2a",
+      "user_text": "你说「例外」——其实上学期我就旁听过两次，每次都觉得特别投入。",
+      "agent_text_parts": [
+        "“特别投入",
+        "”，听起来那两",
+        "次的体验真的很棒",
+        "。我注意到，",
+        "你其实早就开始",
+        "行动了，而且",
+        "很清楚什么样的状态能",
+        "让自己感到投入，",
+        "这可是非常实在的经验",
+        "。\n\n回想一下",
+        "上学期那两次旁",
+        "听，你觉得当时",
+        "是怎样的状态，或者",
+        "做了什么，让自己能",
+        "那么投入的呢？"
+      ],
+      "events": [
+        {
+          "event": "token",
+          "data": "“特别投入"
+        },
+        {
+          "event": "token",
+          "data": "”，听起来那两"
+        },
+        {
+          "event": "token",
+          "data": "次的体验真的很棒"
+        },
+        {
+          "event": "token",
+          "data": "。我注意到，"
+        },
+        {
+          "event": "token",
+          "data": "你其实早就开始"
+        },
+        {
+          "event": "token",
+          "data": "行动了，而且"
+        },
+        {
+          "event": "token",
+          "data": "很清楚什么样的状态能"
+        },
+        {
+          "event": "token",
+          "data": "让自己感到投入，"
+        },
+        {
+          "event": "token",
+          "data": "这可是非常实在的经验"
+        },
+        {
+          "event": "token",
+          "data": "。\n\n回想一下"
+        },
+        {
+          "event": "token",
+          "data": "上学期那两次旁"
+        },
+        {
+          "event": "token",
+          "data": "听，你觉得当时"
+        },
+        {
+          "event": "token",
+          "data": "是怎样的状态，或者"
+        },
+        {
+          "event": "token",
+          "data": "做了什么，让自己能"
+        },
+        {
+          "event": "token",
+          "data": "那么投入的呢？"
+        },
+        {
+          "event": "dialogue_done",
+          "data": {
+            "trace_id": "0ddb3d1a510e4a2a",
+            "owner": "therapy_sfbt"
+          }
+        },
+        {
+          "event": "final",
+          "data": {
+            "message": "你说「例外」——其实上学期我就旁听过两次，每次都觉得特别投入。",
+            "risk_state": "SAFE",
+            "crisis": false
+          }
+        }
+      ],
+      "final": {
+        "message": "你说「例外」——其实上学期我就旁听过两次，每次都觉得特别投入。",
+        "risk_state": "SAFE",
+        "crisis": false
+      },
+      "state_after": {
+        "owner": "therapy_sfbt",
+        "crisis": false,
+        "risk_level": "SAFE",
+        "therapy": {
+          "name": "SFBT",
+          "start_seq": 5,
+          "rounds": 3,
+          "step_index": 1,
+          "branch": null,
+          "basic_flow_complete": false,
+          "visited": [
+            "resource_exploration"
+          ]
+        },
+        "last_therapy_check_seq": 3,
+        "pending_user_tokens": 0
+      },
+      "orchestration_after": {
+        "updated_seq": 3,
+        "therapy": "SFBT",
+        "current_step": "resource_exploration",
+        "next_step": "exception_exploration",
+        "step_judgment": {
+          "action": "advance",
+          "target_step": "exception_exploration",
+          "achieved": true,
+          "reason": "用户已自发识别出过去两次旁听的成功经验作为资源，resource_awareness达0.85，problem_orientation为0（完全solution-oriented），sfbt_intervention_need仅0.098。resource_exploration步骤目标已达成，推荐流程明确指向exception_exploration，应深入探索这两次例外经历的具体细节以提取可操作策略。"
+        },
+        "assessment": {
+          "goal_clarity": {
+            "index": 0.85,
+            "state": "concrete",
+            "confidence": 0.9,
+            "evidence": [
+              "The user's underlying goal of auditing classes ('先去旁听') remains highly specific and actionable, now further validated by their own past experience."
+            ]
+          },
+          "resource_awareness": {
+            "index": 0.85,
+            "state": "high",
+            "confidence": 0.95,
+            "evidence": [
+              "User explicitly identifies past successes and positive internal states as resources: '上学期我就旁听过两次，每次都觉得特别投入' (I audited classes twice last semester, and felt very engaged both times). This demonstrates a significant leap in recognizing their own capabilities and past achievements."
+            ]
+          },
+          "problem_orientation": {
+            "index": 0.0,
+            "state": "solution_oriented",
+            "confidence": 0.95,
+            "evidence": [
+              "The message is entirely focused on past successes and positive engagement. There is absolutely no problem-talk, complaining, or feeling stuck."
+            ]
+          },
+          "sfbt_intervention_need": 0.098,
+          "overall_trend": "improving",
+          "primary_concern": "none",
+          "should_intervene": false,
+          "recommended_processes": [
+            {
+              "process": "exception_exploration",
+              "priority": 1,
+              "rationale": "The user has spontaneously identified a powerful '不一样的时刻' (exception/successful moment). The immediate priority is to explore the details of these two past auditing experiences to understand what made them feel so engaged and extract actionable strategies for their next step."
+            },
+            {
+              "process": "future_construction",
+              "priority": 2,
+              "rationale": "With high resource awareness and clear goals established, future construction can be used to help the user vividly imagine their next auditing experience, incorporating the successful elements identified from their past exceptions."
+            }
+          ]
+        },
+        "skill_output": {
+          "technique": {
+            "name": "compliments_strengths",
+            "description": "Notice and name the user's strengths, efforts, and positive qualities embedded in their story. Frame as observations, not generic praise. Highlight the user's self-awareness and proactive action in identifying what makes them feel engaged.",
+            "steps": [
+              "Observe and identify the specific strengths in the user's narrative, such as their high self-awareness in recognizing what makes them feel 'engaged' and their proactive approach to applying past successes.",
+              "Deliver a specific, observation-based compliment using phrases like 'I notice that...' (我注意到...) to validate their capability without sounding like generic praise.",
+              "Bridge the compliment to their current goal by asking how they can utilize this identified strength or past successful experience to take the next step."
+            ]
+          },
+          "conversation_goal": "To help the user recognize and internalize their self-awareness and proactive problem-solving skills, transforming their past successful experience of 'auditing classes' into a solid, replicable internal resource for their current goals.",
+          "adaptation": {
+            "interaction_style": "supportive",
+            "tone_adjustment": "hopeful",
+            "pace_adjustment": "future_oriented",
+            "culture_note": ""
+          },
+          "contraindications": [
+            {
+              "condition": "User deflects or minimizes the compliment due to cultural modesty (e.g., '这没什么', '只是运气好')",
+              "reason": "Pushing the compliment may cause discomfort. Instead of insisting, roll with the resistance by grounding the compliment in specific, undeniable facts and reframing it as a personal quality ('But for you, this means...')."
+            },
+            {
+              "condition": "User is in acute distress or crisis",
+              "reason": "Strengths exploration and compliments can feel invalidating or tone-deaf when a user is in immediate emotional pain; crisis stabilization is the priority."
+            }
+          ],
+          "_skill_name": "sfbt_resource_exploration"
+        },
+        "products": {},
+        "continue_eval": null
+      },
+      "error": null,
+      "wall_seconds": 125.714,
+      "agent_text": "“特别投入”，听起来那两次的体验真的很棒。我注意到，你其实早就开始行动了，而且很清楚什么样的状态能让自己感到投入，这可是非常实在的经验。\n\n回想一下上学期那两次旁听，你觉得当时是怎样的状态，或者做了什么，让自己能那么投入的呢？"
+    },
+    {
+      "turn": 6,
+      "trace_id": "c4192132e6cc4034",
+      "user_text": "我之前好像把这件事当成「还没想清楚」而不是「已经知道」。",
+      "agent_text_parts": [
+        "我注意到，",
+        "你刚刚完成了一个",
+        "特别敏锐的觉察",
+        "。从觉得“",
+        "还没想清楚”，",
+        "到意识到自己其实",
+        "“已经知道”",
+        "答案，能看清",
+        "自己思维里的这个",
+        "转弯，说明你对",
+        "自己的状态有着很",
+        "清晰的把握。\n\n",
+        "既然你现在已经清楚地",
+        "“知道”什么",
+        "能让自己特别投入",
+        "，那带着这份",
+        "“已经知道”",
+        "的确定感，",
+        "接下来你打算怎么",
+        "安排这学期的第一次",
+        "旁听呢？"
+      ],
+      "events": [
+        {
+          "event": "token",
+          "data": "我注意到，"
+        },
+        {
+          "event": "token",
+          "data": "你刚刚完成了一个"
+        },
+        {
+          "event": "token",
+          "data": "特别敏锐的觉察"
+        },
+        {
+          "event": "token",
+          "data": "。从觉得“"
+        },
+        {
+          "event": "token",
+          "data": "还没想清楚”，"
+        },
+        {
+          "event": "token",
+          "data": "到意识到自己其实"
+        },
+        {
+          "event": "token",
+          "data": "“已经知道”"
+        },
+        {
+          "event": "token",
+          "data": "答案，能看清"
+        },
+        {
+          "event": "token",
+          "data": "自己思维里的这个"
+        },
+        {
+          "event": "token",
+          "data": "转弯，说明你对"
+        },
+        {
+          "event": "token",
+          "data": "自己的状态有着很"
+        },
+        {
+          "event": "token",
+          "data": "清晰的把握。\n\n"
+        },
+        {
+          "event": "token",
+          "data": "既然你现在已经清楚地"
+        },
+        {
+          "event": "token",
+          "data": "“知道”什么"
+        },
+        {
+          "event": "token",
+          "data": "能让自己特别投入"
+        },
+        {
+          "event": "token",
+          "data": "，那带着这份"
+        },
+        {
+          "event": "token",
+          "data": "“已经知道”"
+        },
+        {
+          "event": "token",
+          "data": "的确定感，"
+        },
+        {
+          "event": "token",
+          "data": "接下来你打算怎么"
+        },
+        {
+          "event": "token",
+          "data": "安排这学期的第一次"
+        },
+        {
+          "event": "token",
+          "data": "旁听呢？"
+        },
+        {
+          "event": "dialogue_done",
+          "data": {
+            "trace_id": "c4192132e6cc4034",
+            "owner": "therapy_sfbt"
+          }
+        },
+        {
+          "event": "final",
+          "data": {
+            "message": "我之前好像把这件事当成「还没想清楚」而不是「已经知道」。",
+            "risk_state": "SAFE",
+            "crisis": false
+          }
+        }
+      ],
+      "final": {
+        "message": "我之前好像把这件事当成「还没想清楚」而不是「已经知道」。",
+        "risk_state": "SAFE",
+        "crisis": false
+      },
+      "state_after": {
+        "owner": "therapy_sfbt",
+        "crisis": false,
+        "risk_level": "SAFE",
+        "therapy": {
+          "name": "SFBT",
+          "start_seq": 5,
+          "rounds": 4,
+          "step_index": 2,
+          "branch": null,
+          "basic_flow_complete": false,
+          "visited": [
+            "resource_exploration",
+            "exception_exploration"
+          ]
+        },
+        "last_therapy_check_seq": 3,
+        "pending_user_tokens": 0
+      },
+      "orchestration_after": {
+        "updated_seq": 4,
+        "therapy": "SFBT",
+        "current_step": "exception_exploration",
+        "next_step": "future_construction",
+        "step_judgment": {
+          "action": "advance",
+          "target_step": "future_construction",
+          "achieved": true,
+          "reason": "用户在例外探索中完成了关键认知转变：从'还没想清楚'到'已经知道'，展现出高度的资源觉察(0.95)和清晰的解决导向(问题取向0.0)。目标具体明确，已识别出'先去旁听'的行动方向，且上学期有两次成功的例外经验。exception_exploration已达成效果，推荐进入future_construction帮助用户将'已经知道'的确定感转化为具体的行动计划。"
+        },
+        "assessment": {
+          "goal_clarity": {
+            "index": 0.9,
+            "state": "concrete",
+            "confidence": 0.95,
+            "evidence": [
+              "User maintains a clear direction, now adding cognitive clarity: '而不是「已经知道」' (instead of 'already knowing'), indicating they realize they already possess the knowledge and direction for their goal of auditing classes."
+            ]
+          },
+          "resource_awareness": {
+            "index": 0.95,
+            "state": "high",
+            "confidence": 0.95,
+            "evidence": [
+              "User demonstrates a profound realization of their own internal resources and past knowledge: '而不是「已经知道」' (instead of 'already knowing'). This shows a strong awareness that the answers and capabilities were already within them, shifting from feeling uncertain to recognizing their own expertise."
+            ]
+          },
+          "problem_orientation": {
+            "index": 0.0,
+            "state": "solution_oriented",
+            "confidence": 0.95,
+            "evidence": [
+              "The user is actively reframing their past perspective from a problem-oriented view ('还没想清楚' / haven't figured it out) to a solution-oriented realization ('已经知道' / already know). There is no problem-talk or feeling stuck."
+            ]
+          },
+          "sfbt_intervention_need": 0.05,
+          "overall_trend": "improving",
+          "primary_concern": "none",
+          "should_intervene": false,
+          "recommended_processes": [
+            {
+              "process": "future_construction",
+              "priority": 1,
+              "rationale": "With the user realizing they 'already know' the answer and having clear goals, future construction is ideal to help them envision how to apply this 'already knowing' to their next steps, solidifying their confidence and moving forward."
+            },
+            {
+              "process": "exception_exploration",
+              "priority": 2,
+              "rationale": "Continue to gently explore the details of the 'already known' past experiences (the two auditing sessions) to extract concrete strategies and reinforce their high resource awareness."
+            }
+          ]
+        },
+        "skill_output": {
+          "technique": {
+            "name": "exception_finding",
+            "description": "Focus on the user's cognitive shift from 'haven't figured it out' to 'already know' as a key 'exception' (不一样) to their previous problem-oriented mindset. Explore how this 'already knowing' state connects to their past 'highly engaged' auditing experiences to build a concrete action plan.",
+            "steps": [
+              "Validate the cognitive shift: Acknowledge the power of realizing they 'already know', framing this realization as a crucial 'different' state that holds the solution.",
+              "Connect past success to present agency: Ask how this 'already knowing' feeling aligns with what they did during those two highly engaged auditing sessions last semester, and what specific small step they can take next carrying this exact mindset."
+            ]
+          },
+          "conversation_goal": "To solidify the user's shift from problem-talk to solution-talk by anchoring their 'already know' realization to their past successful 'engaged' experiences, thereby empowering them to take concrete, confident steps toward auditing classes.",
+          "adaptation": {
+            "interaction_style": "supportive",
+            "tone_adjustment": "hopeful",
+            "pace_adjustment": "future_oriented",
+            "culture_note": ""
+          },
+          "contraindications": [
+            {
+              "condition": "User starts analyzing why they previously thought they 'hadn't figured it out'",
+              "reason": "Digging into the past problem-oriented mindset violates SFBT principles and risks pulling the user back into problem-talk. Gently redirect focus to the current 'already know' state and future actions."
+            },
+            {
+              "condition": "The user feels overwhelmed by the expectation to act immediately",
+              "reason": "If the leap from 'knowing' to 'doing' feels too big, scale back to exploring what 'already knowing' feels like before asking for a concrete behavioral plan."
+            }
+          ],
+          "_skill_name": "sfbt_exception_exploration"
+        },
+        "products": {},
+        "continue_eval": null
+      },
+      "error": null,
+      "wall_seconds": 115.656,
+      "agent_text": "我注意到，你刚刚完成了一个特别敏锐的觉察。从觉得“还没想清楚”，到意识到自己其实“已经知道”答案，能看清自己思维里的这个转弯，说明你对自己的状态有着很清晰的把握。\n\n既然你现在已经清楚地“知道”什么能让自己特别投入，那带着这份“已经知道”的确定感，接下来你打算怎么安排这学期的第一次旁听呢？"
+    },
+    {
+      "turn": 7,
+      "trace_id": "8f47ac9376374598",
+      "user_text": "那我就先去旁听一周看看。",
+      "agent_text_parts": [
+        "“先去旁",
+        "听一周看看”，",
+        "这真是一个特别",
+        "踏实又清晰的一",
+        "小步。\n\n",
+        "带着这种“已经",
+        "知道”的确定",
+        "感去开启这",
+        "第一周，感觉",
+        "会很不一样吧。",
+        "在这一周里，",
+        "你会做些什么，来",
+        "让自己像上学期那样",
+        "继续保持“特别投入",
+        "”",
+        "的状态呢？"
+      ],
+      "events": [
+        {
+          "event": "token",
+          "data": "“先去旁"
+        },
+        {
+          "event": "token",
+          "data": "听一周看看”，"
+        },
+        {
+          "event": "token",
+          "data": "这真是一个特别"
+        },
+        {
+          "event": "token",
+          "data": "踏实又清晰的一"
+        },
+        {
+          "event": "token",
+          "data": "小步。\n\n"
+        },
+        {
+          "event": "token",
+          "data": "带着这种“已经"
+        },
+        {
+          "event": "token",
+          "data": "知道”的确定"
+        },
+        {
+          "event": "token",
+          "data": "感去开启这"
+        },
+        {
+          "event": "token",
+          "data": "第一周，感觉"
+        },
+        {
+          "event": "token",
+          "data": "会很不一样吧。"
+        },
+        {
+          "event": "token",
+          "data": "在这一周里，"
+        },
+        {
+          "event": "token",
+          "data": "你会做些什么，来"
+        },
+        {
+          "event": "token",
+          "data": "让自己像上学期那样"
+        },
+        {
+          "event": "token",
+          "data": "继续保持“特别投入"
+        },
+        {
+          "event": "token",
+          "data": "”"
+        },
+        {
+          "event": "token",
+          "data": "的状态呢？"
+        },
+        {
+          "event": "dialogue_done",
+          "data": {
+            "trace_id": "8f47ac9376374598",
+            "owner": "therapy_sfbt"
+          }
+        },
+        {
+          "event": "final",
+          "data": {
+            "message": "那我就先去旁听一周看看。",
+            "risk_state": "SAFE",
+            "crisis": false
+          }
+        }
+      ],
+      "final": {
+        "message": "那我就先去旁听一周看看。",
+        "risk_state": "SAFE",
+        "crisis": false
+      },
+      "state_after": {
+        "owner": "therapy_sfbt",
+        "crisis": false,
+        "risk_level": "SAFE",
+        "therapy": {
+          "name": "SFBT",
+          "start_seq": 5,
+          "rounds": 5,
+          "step_index": 2,
+          "branch": null,
+          "basic_flow_complete": false,
+          "visited": [
+            "resource_exploration",
+            "exception_exploration"
+          ]
+        },
+        "last_therapy_check_seq": 3,
+        "pending_user_tokens": 0
+      },
+      "orchestration_after": {
+        "updated_seq": 5,
+        "therapy": "SFBT",
+        "current_step": "future_construction",
+        "next_step": "future_construction",
+        "step_judgment": {
+          "action": "stay",
+          "target_step": null,
+          "achieved": false,
+          "reason": "用户已提出具体行动计划（旁听一周），但future_construction尚未充分展开——需要进一步明确'成功的一周'长什么样、具体会做什么来保持投入状态等细节。AI最后一轮提问正在引导用户细化这一周的计划，应继续当前步骤以完成未来建构。"
+        },
+        "assessment": {
+          "goal_clarity": {
+            "index": 0.95,
+            "state": "concrete",
+            "confidence": 0.95,
+            "evidence": [
+              "User states '那我就先去旁听一周看看', setting a highly specific, actionable, and time-bound short-term goal based on their recent realization."
+            ]
+          },
+          "resource_awareness": {
+            "index": 0.95,
+            "state": "high",
+            "confidence": 0.95,
+            "evidence": [
+              "User confidently translates their internal realization ('已经知道') and past successful experiences into a concrete action plan, demonstrating strong trust in their own resources and judgment."
+            ]
+          },
+          "problem_orientation": {
+            "index": 0.0,
+            "state": "solution_oriented",
+            "confidence": 0.95,
+            "evidence": [
+              "The message is entirely focused on the next actionable step with zero problem-talk, hesitation, or dwelling on past uncertainties."
+            ]
+          },
+          "sfbt_intervention_need": 0.033,
+          "overall_trend": "stable",
+          "primary_concern": "none",
+          "should_intervene": false,
+          "recommended_processes": [
+            {
+              "process": "future_construction",
+              "priority": 1,
+              "rationale": "User has committed to a specific action. Future construction can help detail this plan, such as clarifying the logistics of the week and defining what a successful week looks like (e.g., 'How will you know this week was a good one?')."
+            },
+            {
+              "process": "exception_exploration",
+              "priority": 2,
+              "rationale": "Guide the user to map the specific elements of their past 'highly engaged' auditing experiences onto this upcoming week to ensure they can replicate the conditions that led to their past success."
+            }
+          ]
+        },
+        "skill_output": {
+          "technique": {
+            "name": "small_step",
+            "description": "Help the user solidify their commitment to the concrete small step they just identified (auditing for a week), detail the execution, and assess their confidence.",
+            "steps": [
+              "Validate the user's pragmatic and clear small step ('先去旁听一周看看'), reinforcing their agency and clarity.",
+              "Ask a confidence scaling question: '如果0代表完全没把握，10代表非常有把握，你对完成这第一周旁听的信心有几分？' (On a scale of 0-10, how confident are you that you will complete this first week of auditing?)",
+              "Explore the concrete details of execution: '为了让这一周顺利开始，你接下来会做的最小的一件准备工作是什么？' (What is the smallest preparatory step you will take to make this first week happen smoothly?)"
+            ]
+          },
+          "conversation_goal": "Solidify the user's commitment to their self-identified small step (auditing for a week), translate it into immediate actionable details, and build confidence for execution.",
+          "adaptation": {
+            "interaction_style": "supportive",
+            "tone_adjustment": "hopeful",
+            "pace_adjustment": "future_oriented",
+            "culture_note": ""
+          },
+          "contraindications": [
+            {
+              "condition": "User's confidence score is below 7",
+              "reason": "If confidence is low, the step might still be too big or face unseen barriers. Break it down further (e.g., just checking the class schedule or visiting the building) to ensure a 'small is beautiful' approach."
+            },
+            {
+              "condition": "User lacks logistical details",
+              "reason": "If the user doesn't know the exact time, location, or how to get permission to audit, the immediate small step must be resolving that logistical hurdle first."
+            }
+          ],
+          "_skill_name": "sfbt_future_construction"
+        },
+        "products": {},
+        "continue_eval": null
+      },
+      "error": null,
+      "wall_seconds": 127.168,
+      "agent_text": "“先去旁听一周看看”，这真是一个特别踏实又清晰的一小步。\n\n带着这种“已经知道”的确定感去开启这第一周，感觉会很不一样吧。在这一周里，你会做些什么，来让自己像上学期那样继续保持“特别投入”的状态呢？"
+    },
+    {
+      "turn": 8,
+      "trace_id": "3b55dcbfd8fe420f",
+      "user_text": "好，谢谢。",
+      "agent_text_parts": [
+        "不客气",
+        "呀。既然定",
+        "下了“先去旁",
+        "听一周”这个",
+        "踏实的小目标，",
+        "我想好奇一下，",
+        "如果0代表完全",
+        "没把握，1",
+        "0代表非常有把握",
+        "，你对完成这",
+        "第一周旁听的",
+        "信心大概有几分",
+        "呢？\n\n为了让",
+        "这周顺利开始",
+        "，你接下来打算",
+        "做的最小的一件准备工作",
+        "是什么呢？比如查查",
+        "课表，或者",
+        "确认一下教室？"
+      ],
+      "events": [
+        {
+          "event": "token",
+          "data": "不客气"
+        },
+        {
+          "event": "token",
+          "data": "呀。既然定"
+        },
+        {
+          "event": "token",
+          "data": "下了“先去旁"
+        },
+        {
+          "event": "token",
+          "data": "听一周”这个"
+        },
+        {
+          "event": "token",
+          "data": "踏实的小目标，"
+        },
+        {
+          "event": "token",
+          "data": "我想好奇一下，"
+        },
+        {
+          "event": "token",
+          "data": "如果0代表完全"
+        },
+        {
+          "event": "token",
+          "data": "没把握，1"
+        },
+        {
+          "event": "token",
+          "data": "0代表非常有把握"
+        },
+        {
+          "event": "token",
+          "data": "，你对完成这"
+        },
+        {
+          "event": "token",
+          "data": "第一周旁听的"
+        },
+        {
+          "event": "token",
+          "data": "信心大概有几分"
+        },
+        {
+          "event": "token",
+          "data": "呢？\n\n为了让"
+        },
+        {
+          "event": "token",
+          "data": "这周顺利开始"
+        },
+        {
+          "event": "token",
+          "data": "，你接下来打算"
+        },
+        {
+          "event": "token",
+          "data": "做的最小的一件准备工作"
+        },
+        {
+          "event": "token",
+          "data": "是什么呢？比如查查"
+        },
+        {
+          "event": "token",
+          "data": "课表，或者"
+        },
+        {
+          "event": "token",
+          "data": "确认一下教室？"
+        },
+        {
+          "event": "dialogue_done",
+          "data": {
+            "trace_id": "3b55dcbfd8fe420f",
+            "owner": "therapy_sfbt"
+          }
+        },
+        {
+          "event": "final",
+          "data": {
+            "message": "好，谢谢。",
+            "risk_state": "SAFE",
+            "crisis": false
+          }
+        }
+      ],
+      "final": {
+        "message": "好，谢谢。",
+        "risk_state": "SAFE",
+        "crisis": false
+      },
+      "state_after": {
+        "owner": "therapy_sfbt",
+        "crisis": false,
+        "risk_level": "SAFE",
+        "therapy": {
+          "name": "SFBT",
+          "start_seq": 5,
+          "rounds": 6,
+          "step_index": 2,
+          "branch": null,
+          "basic_flow_complete": false,
+          "visited": [
+            "resource_exploration",
+            "exception_exploration"
+          ]
+        },
+        "last_therapy_check_seq": 3,
+        "pending_user_tokens": 0
+      },
+      "orchestration_after": {
+        "updated_seq": 6,
+        "therapy": "SFBT",
+        "current_step": "future_construction",
+        "next_step": "future_construction",
+        "step_judgment": {
+          "action": "stay",
+          "target_step": null,
+          "achieved": false,
+          "reason": "当前处于future_construction步骤，用户已设定'先去旁听一周看看'的目标并表达了感谢，但AI刚提出信心评分和最小准备工作的具体问题，用户尚未回应。需要等待用户回答以完成未来建构的具体化（如定义成功标准、确认准备行动），因此继续当前步骤。"
+        },
+        "assessment": {
+          "goal_clarity": {
+            "index": 0.95,
+            "state": "concrete",
+            "confidence": 0.9,
+            "evidence": [
+              "User's confirmation '好' validates the previously set concrete goal '先去旁听一周看看', maintaining high clarity despite the brief closing remark."
+            ]
+          },
+          "resource_awareness": {
+            "index": 0.95,
+            "state": "high",
+            "confidence": 0.9,
+            "evidence": [
+              "The polite and appreciative closing '好，谢谢。' indicates readiness and acceptance of their own action plan, reflecting sustained trust in their resources and judgment."
+            ]
+          },
+          "problem_orientation": {
+            "index": 0.0,
+            "state": "solution_oriented",
+            "confidence": 0.95,
+            "evidence": [
+              "The message is a simple, positive acknowledgment with zero problem-talk, showing complete alignment with the solution-focused direction."
+            ]
+          },
+          "sfbt_intervention_need": 0.033,
+          "overall_trend": "stable",
+          "primary_concern": "none",
+          "should_intervene": false,
+          "recommended_processes": [
+            {
+              "process": "future_construction",
+              "priority": 1,
+              "rationale": "User is ready to take action and has expressed gratitude. Future construction can help define what a successful first week looks like (e.g., 'How will you know the week went well?') to set up a clear follow-up for the next session."
+            },
+            {
+              "process": "exception_exploration",
+              "priority": 2,
+              "rationale": "Reinforce the connection between their past 'highly engaged' auditing experiences and the upcoming week, ensuring they carry those successful elements forward into their action plan."
+            }
+          ]
+        },
+        "skill_output": {
+          "technique": {
+            "name": "small_step",
+            "description": "帮助用户确认并承诺执行最小、最具体的下一步行动，将清晰的目标转化为实际行动，并温暖收尾。",
+            "steps": [
+              "确认并肯定用户即将采取的最小准备行动（如查课表或确认教室），将其具体化。",
+              "询问用户完成这个最小步骤后，内心或状态上会有什么微小的积极变化。",
+              "给予温暖的鼓励和祝福，保持开放的沟通渠道，让用户带着力量感去执行。"
+            ]
+          },
+          "conversation_goal": "巩固用户‘先去旁听一周’的清晰目标，确认最小准备步骤，并温暖收尾以赋能用户实际行动。",
+          "adaptation": {
+            "interaction_style": "supportive",
+            "tone_adjustment": "hopeful",
+            "pace_adjustment": "future_oriented",
+            "culture_note": ""
+          },
+          "contraindications": [
+            {
+              "condition": "用户表现出明显的抗拒、焦虑或疲惫",
+              "reason": "此时强行推进具体行动步骤可能增加心理负担，应先共情情绪或允许用户休息。"
+            }
+          ],
+          "_skill_name": "sfbt_future_construction"
+        },
+        "products": {},
+        "continue_eval": null
+      },
+      "error": null,
+      "wall_seconds": 104.858,
+      "agent_text": "不客气呀。既然定下了“先去旁听一周”这个踏实的小目标，我想好奇一下，如果0代表完全没把握，10代表非常有把握，你对完成这第一周旁听的信心大概有几分呢？\n\n为了让这周顺利开始，你接下来打算做的最小的一件准备工作是什么呢？比如查查课表，或者确认一下教室？"
+    }
+  ]
+}

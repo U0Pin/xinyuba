@@ -1,0 +1,1887 @@
+{
+  "seed_id": "cbt-belief-revision-public-speaking-failure",
+  "target_family": "CBT",
+  "scenario_label": "核心信念-公开演讲失败固化",
+  "scenario_description": "一次失败后形成核心信念，已避开演讲6个月",
+  "user_id": "seed-cbt-belief-revision-publ",
+  "session_id": "0e1b6dd15f5345ea",
+  "turns_total": 8,
+  "switched_to_therapy_at_turn": 3,
+  "actual_therapy": "CBT",
+  "therapy_rounds": 6,
+  "orch_step_changes": 2,
+  "is_complete": true,
+  "final_risk_level": "SAFE",
+  "final_crisis": false,
+  "turns": [
+    {
+      "turn": 1,
+      "trace_id": "cd4998f94e424af4",
+      "user_text": "我半年前做了一次公开演讲，讲砸了。",
+      "agent_text_parts": [
+        "半年前那次",
+        "公开演讲讲砸",
+        "了，这件事一定",
+        "让你心里挺不好",
+        "受的，到现在都",
+        "还惦记着。",
+        "当时肯定觉得特别",
+        "尴尬或者挫败",
+        "吧？要是心里",
+        "还憋着劲儿",
+        "，随时跟我吐槽",
+        "，我听着呢",
+        "。"
+      ],
+      "events": [
+        {
+          "event": "token",
+          "data": "半年前那次"
+        },
+        {
+          "event": "token",
+          "data": "公开演讲讲砸"
+        },
+        {
+          "event": "token",
+          "data": "了，这件事一定"
+        },
+        {
+          "event": "token",
+          "data": "让你心里挺不好"
+        },
+        {
+          "event": "token",
+          "data": "受的，到现在都"
+        },
+        {
+          "event": "token",
+          "data": "还惦记着。"
+        },
+        {
+          "event": "token",
+          "data": "当时肯定觉得特别"
+        },
+        {
+          "event": "token",
+          "data": "尴尬或者挫败"
+        },
+        {
+          "event": "token",
+          "data": "吧？要是心里"
+        },
+        {
+          "event": "token",
+          "data": "还憋着劲儿"
+        },
+        {
+          "event": "token",
+          "data": "，随时跟我吐槽"
+        },
+        {
+          "event": "token",
+          "data": "，我听着呢"
+        },
+        {
+          "event": "token",
+          "data": "。"
+        },
+        {
+          "event": "dialogue_done",
+          "data": {
+            "trace_id": "cd4998f94e424af4",
+            "owner": "daily"
+          }
+        },
+        {
+          "event": "final",
+          "data": {
+            "message": "我半年前做了一次公开演讲，讲砸了。",
+            "risk_state": "LOW_RISK",
+            "crisis": false
+          }
+        }
+      ],
+      "final": {
+        "message": "我半年前做了一次公开演讲，讲砸了。",
+        "risk_state": "LOW_RISK",
+        "crisis": false
+      },
+      "state_after": {
+        "owner": "daily",
+        "crisis": false,
+        "risk_level": "LOW_RISK",
+        "therapy": null,
+        "last_therapy_check_seq": 1,
+        "pending_user_tokens": 0
+      },
+      "orchestration_after": {},
+      "error": null,
+      "wall_seconds": 110.868,
+      "agent_text": "半年前那次公开演讲讲砸了，这件事一定让你心里挺不好受的，到现在都还惦记着。当时肯定觉得特别尴尬或者挫败吧？要是心里还憋着劲儿，随时跟我吐槽，我听着呢。"
+    },
+    {
+      "turn": 2,
+      "trace_id": "1024ecf4a5b148ff",
+      "user_text": "从那以后公司再让我讲我都推掉。",
+      "agent_text_parts": [
+        "推掉就",
+        "推掉吧，",
+        "毕竟上次讲砸",
+        "了的感觉太糟糕",
+        "了，不想再",
+        "面对太正常了",
+        "。现在一想到公司",
+        "再让讲，",
+        "心里是不是还是挺发",
+        "怵的？"
+      ],
+      "events": [
+        {
+          "event": "token",
+          "data": "推掉就"
+        },
+        {
+          "event": "token",
+          "data": "推掉吧，"
+        },
+        {
+          "event": "token",
+          "data": "毕竟上次讲砸"
+        },
+        {
+          "event": "token",
+          "data": "了的感觉太糟糕"
+        },
+        {
+          "event": "token",
+          "data": "了，不想再"
+        },
+        {
+          "event": "token",
+          "data": "面对太正常了"
+        },
+        {
+          "event": "token",
+          "data": "。现在一想到公司"
+        },
+        {
+          "event": "token",
+          "data": "再让讲，"
+        },
+        {
+          "event": "token",
+          "data": "心里是不是还是挺发"
+        },
+        {
+          "event": "token",
+          "data": "怵的？"
+        },
+        {
+          "event": "dialogue_done",
+          "data": {
+            "trace_id": "1024ecf4a5b148ff",
+            "owner": "daily"
+          }
+        },
+        {
+          "event": "final",
+          "data": {
+            "message": "从那以后公司再让我讲我都推掉。",
+            "risk_state": "LOW_RISK",
+            "crisis": false
+          }
+        }
+      ],
+      "final": {
+        "message": "从那以后公司再让我讲我都推掉。",
+        "risk_state": "LOW_RISK",
+        "crisis": false
+      },
+      "state_after": {
+        "owner": "daily",
+        "crisis": false,
+        "risk_level": "LOW_RISK",
+        "therapy": null,
+        "last_therapy_check_seq": 3,
+        "pending_user_tokens": 0
+      },
+      "orchestration_after": {},
+      "error": null,
+      "wall_seconds": 58.535,
+      "agent_text": "推掉就推掉吧，毕竟上次讲砸了的感觉太糟糕了，不想再面对太正常了。现在一想到公司再让讲，心里是不是还是挺发怵的？"
+    },
+    {
+      "turn": 3,
+      "trace_id": "b5abc3cc84644712",
+      "user_text": "我心里有个声音说「我一上台就会出丑」。",
+      "agent_text_parts": [
+        "这个",
+        "声音听起来挺吓",
+        "人的，一直在你",
+        "心里重复“一",
+        "上台就会出丑",
+        "”。被它这么",
+        "一吓，换",
+        "谁都会觉得特别",
+        "有压力，难怪",
+        "你那么想躲",
+        "开。它是不是",
+        "经常在你一想到要",
+        "上台的时候，就跑",
+        "出来吓唬你",
+        "？"
+      ],
+      "events": [
+        {
+          "event": "token",
+          "data": "这个"
+        },
+        {
+          "event": "token",
+          "data": "声音听起来挺吓"
+        },
+        {
+          "event": "token",
+          "data": "人的，一直在你"
+        },
+        {
+          "event": "token",
+          "data": "心里重复“一"
+        },
+        {
+          "event": "token",
+          "data": "上台就会出丑"
+        },
+        {
+          "event": "token",
+          "data": "”。被它这么"
+        },
+        {
+          "event": "token",
+          "data": "一吓，换"
+        },
+        {
+          "event": "token",
+          "data": "谁都会觉得特别"
+        },
+        {
+          "event": "token",
+          "data": "有压力，难怪"
+        },
+        {
+          "event": "token",
+          "data": "你那么想躲"
+        },
+        {
+          "event": "token",
+          "data": "开。它是不是"
+        },
+        {
+          "event": "token",
+          "data": "经常在你一想到要"
+        },
+        {
+          "event": "token",
+          "data": "上台的时候，就跑"
+        },
+        {
+          "event": "token",
+          "data": "出来吓唬你"
+        },
+        {
+          "event": "token",
+          "data": "？"
+        },
+        {
+          "event": "dialogue_done",
+          "data": {
+            "trace_id": "b5abc3cc84644712",
+            "owner": "daily"
+          }
+        },
+        {
+          "event": "final",
+          "data": {
+            "message": "我心里有个声音说「我一上台就会出丑」。",
+            "risk_state": "LOW_RISK",
+            "crisis": false
+          }
+        }
+      ],
+      "final": {
+        "message": "我心里有个声音说「我一上台就会出丑」。",
+        "risk_state": "LOW_RISK",
+        "crisis": false
+      },
+      "state_after": {
+        "owner": "therapy_cbt",
+        "crisis": false,
+        "risk_level": "LOW_RISK",
+        "therapy": {
+          "name": "CBT",
+          "start_seq": 7,
+          "rounds": 0,
+          "step_index": -1,
+          "branch": null,
+          "basic_flow_complete": false
+        },
+        "last_therapy_check_seq": 5,
+        "pending_user_tokens": 0
+      },
+      "orchestration_after": {},
+      "error": null,
+      "wall_seconds": 47.324,
+      "agent_text": "这个声音听起来挺吓人的，一直在你心里重复“一上台就会出丑”。被它这么一吓，换谁都会觉得特别有压力，难怪你那么想躲开。它是不是经常在你一想到要上台的时候，就跑出来吓唬你？"
+    },
+    {
+      "turn": 4,
+      "trace_id": "8114d1e4f0a44aeb",
+      "user_text": "我也知道这有点夸张，但每次想到上台我就紧张。",
+      "agent_text_parts": [
+        "能觉察",
+        "到自己的念头“有点",
+        "夸张”，这本身",
+        "就是一个很棒的开始",
+        "。就算理智上",
+        "知道了",
+        "，情绪上还是会",
+        "紧张",
+        "，这也是很真实的",
+        "反应。\n\n咱们",
+        "顺着这个话题聊",
+        "了这几轮，",
+        "你现在再想想上台",
+        "这件事，心里的感觉",
+        "有发生什么微小的",
+        "变化吗？或者",
+        "有什么新的体会呢",
+        "？"
+      ],
+      "events": [
+        {
+          "event": "token",
+          "data": "能觉察"
+        },
+        {
+          "event": "token",
+          "data": "到自己的念头“有点"
+        },
+        {
+          "event": "token",
+          "data": "夸张”，这本身"
+        },
+        {
+          "event": "token",
+          "data": "就是一个很棒的开始"
+        },
+        {
+          "event": "token",
+          "data": "。就算理智上"
+        },
+        {
+          "event": "token",
+          "data": "知道了"
+        },
+        {
+          "event": "token",
+          "data": "，情绪上还是会"
+        },
+        {
+          "event": "token",
+          "data": "紧张"
+        },
+        {
+          "event": "token",
+          "data": "，这也是很真实的"
+        },
+        {
+          "event": "token",
+          "data": "反应。\n\n咱们"
+        },
+        {
+          "event": "token",
+          "data": "顺着这个话题聊"
+        },
+        {
+          "event": "token",
+          "data": "了这几轮，"
+        },
+        {
+          "event": "token",
+          "data": "你现在再想想上台"
+        },
+        {
+          "event": "token",
+          "data": "这件事，心里的感觉"
+        },
+        {
+          "event": "token",
+          "data": "有发生什么微小的"
+        },
+        {
+          "event": "token",
+          "data": "变化吗？或者"
+        },
+        {
+          "event": "token",
+          "data": "有什么新的体会呢"
+        },
+        {
+          "event": "token",
+          "data": "？"
+        },
+        {
+          "event": "dialogue_done",
+          "data": {
+            "trace_id": "8114d1e4f0a44aeb",
+            "owner": "therapy_cbt"
+          }
+        },
+        {
+          "event": "final",
+          "data": {
+            "message": "我也知道这有点夸张，但每次想到上台我就紧张。",
+            "risk_state": "LOW_RISK",
+            "crisis": false
+          }
+        }
+      ],
+      "final": {
+        "message": "我也知道这有点夸张，但每次想到上台我就紧张。",
+        "risk_state": "LOW_RISK",
+        "crisis": false
+      },
+      "state_after": {
+        "owner": "therapy_cbt",
+        "crisis": false,
+        "risk_level": "LOW_RISK",
+        "therapy": {
+          "name": "CBT",
+          "start_seq": 7,
+          "rounds": 1,
+          "step_index": 0,
+          "branch": null,
+          "basic_flow_complete": false
+        },
+        "last_therapy_check_seq": 5,
+        "pending_user_tokens": 0
+      },
+      "orchestration_after": {
+        "updated_seq": 1,
+        "therapy": "CBT",
+        "current_step": "identify_thought",
+        "next_step": "identify_thought",
+        "step_judgment": {
+          "action": "stay",
+          "target_step": null,
+          "achieved": false,
+          "reason": "当前仍处于identify_thought步骤，AI正在引导用户进一步觉察上台时的自动思维和情绪反应。用户虽初步表达了'有点夸张'的认知，但尚未完整识别和描述核心的自动思维及其伴随的情绪，需继续当前步骤以充分探索。"
+        },
+        "assessment": null,
+        "skill_output": {
+          "automatic_thoughts": [
+            {
+              "thought": "我上台肯定会表现得很糟。",
+              "confidence": 0.85,
+              "span": "每次想到上台我就紧张",
+              "target": "future"
+            },
+            {
+              "thought": "我无法控制自己上台时的紧张感。",
+              "confidence": 0.8,
+              "span": "每次想到上台我就紧张",
+              "target": "self"
+            }
+          ],
+          "primary_thought": "我上台肯定会表现得很糟。",
+          "no_automatic_thought_detected": false,
+          "_skill_name": "extract_automatic_thought"
+        },
+        "products": {
+          "automatic_thoughts": [
+            {
+              "thought": "我上台肯定会表现得很糟。",
+              "confidence": 0.85,
+              "span": "每次想到上台我就紧张",
+              "target": "future"
+            },
+            {
+              "thought": "我无法控制自己上台时的紧张感。",
+              "confidence": 0.8,
+              "span": "每次想到上台我就紧张",
+              "target": "self"
+            }
+          ],
+          "primary_thought": "我上台肯定会表现得很糟。",
+          "no_automatic_thought_detected": false
+        },
+        "continue_eval": null
+      },
+      "error": null,
+      "wall_seconds": 104.555,
+      "agent_text": "能觉察到自己的念头“有点夸张”，这本身就是一个很棒的开始。就算理智上知道了，情绪上还是会紧张，这也是很真实的反应。\n\n咱们顺着这个话题聊了这几轮，你现在再想想上台这件事，心里的感觉有发生什么微小的变化吗？或者有什么新的体会呢？"
+    },
+    {
+      "turn": 5,
+      "trace_id": "94097b3e29334251",
+      "user_text": "你说我这是不是不只是那一次演讲的事，是更深的一个想法？",
+      "agent_text_parts": [
+        "你能想到这一",
+        "层，直觉",
+        "真的很敏锐呢。",
+        "有时候，对某",
+        "件事特别强烈的反应",
+        "，确实像是一个",
+        "小线索，背后",
+        "可能连着一些更",
+        "深的想法。\n\n",
+        "如果我们顺着你的这个",
+        "感觉一起往下看一看",
+        "，你觉得那个“",
+        "更深的想法”",
+        "可能会是什么呢？或者说",
+        "，在想到上台",
+        "的那一瞬间，你",
+        "心里最担心发生",
+        "什么？"
+      ],
+      "events": [
+        {
+          "event": "token",
+          "data": "你能想到这一"
+        },
+        {
+          "event": "token",
+          "data": "层，直觉"
+        },
+        {
+          "event": "token",
+          "data": "真的很敏锐呢。"
+        },
+        {
+          "event": "token",
+          "data": "有时候，对某"
+        },
+        {
+          "event": "token",
+          "data": "件事特别强烈的反应"
+        },
+        {
+          "event": "token",
+          "data": "，确实像是一个"
+        },
+        {
+          "event": "token",
+          "data": "小线索，背后"
+        },
+        {
+          "event": "token",
+          "data": "可能连着一些更"
+        },
+        {
+          "event": "token",
+          "data": "深的想法。\n\n"
+        },
+        {
+          "event": "token",
+          "data": "如果我们顺着你的这个"
+        },
+        {
+          "event": "token",
+          "data": "感觉一起往下看一看"
+        },
+        {
+          "event": "token",
+          "data": "，你觉得那个“"
+        },
+        {
+          "event": "token",
+          "data": "更深的想法”"
+        },
+        {
+          "event": "token",
+          "data": "可能会是什么呢？或者说"
+        },
+        {
+          "event": "token",
+          "data": "，在想到上台"
+        },
+        {
+          "event": "token",
+          "data": "的那一瞬间，你"
+        },
+        {
+          "event": "token",
+          "data": "心里最担心发生"
+        },
+        {
+          "event": "token",
+          "data": "什么？"
+        },
+        {
+          "event": "dialogue_done",
+          "data": {
+            "trace_id": "94097b3e29334251",
+            "owner": "therapy_cbt"
+          }
+        },
+        {
+          "event": "final",
+          "data": {
+            "message": "你说我这是不是不只是那一次演讲的事，是更深的一个想法？",
+            "risk_state": "SAFE",
+            "crisis": false
+          }
+        }
+      ],
+      "final": {
+        "message": "你说我这是不是不只是那一次演讲的事，是更深的一个想法？",
+        "risk_state": "SAFE",
+        "crisis": false
+      },
+      "state_after": {
+        "owner": "therapy_cbt",
+        "crisis": false,
+        "risk_level": "SAFE",
+        "therapy": {
+          "name": "CBT",
+          "start_seq": 7,
+          "rounds": 2,
+          "step_index": 1,
+          "branch": null,
+          "basic_flow_complete": false,
+          "visited": [
+            "identify_thought"
+          ]
+        },
+        "last_therapy_check_seq": 5,
+        "pending_user_tokens": 0
+      },
+      "orchestration_after": {
+        "updated_seq": 2,
+        "therapy": "CBT",
+        "current_step": "identify_thought",
+        "next_step": "classify_distortion",
+        "step_judgment": {
+          "action": "advance",
+          "target_step": null,
+          "achieved": true,
+          "reason": "用户已经识别出自动思维（'我上台肯定会表现得很糟'），并在对话中进一步反思这可能是'更深的一个想法'，表明对自动思维的识别已初步完成，可以进入下一步'classify_distortion'来对认知歪曲进行分类。"
+        },
+        "assessment": null,
+        "skill_output": {
+          "automatic_thoughts": [
+            {
+              "thought": "我不仅仅是这次演讲没做好，我这个人本身有更深层次的问题或缺陷。",
+              "confidence": 0.9,
+              "span": "不只是那一次演讲的事，是更深的一个想法",
+              "target": "self"
+            },
+            {
+              "thought": "我的问题根源很深，可能很难解决。",
+              "confidence": 0.75,
+              "span": "是更深的一个想法",
+              "target": "self"
+            }
+          ],
+          "primary_thought": "我不仅仅是这次演讲没做好，我这个人本身有更深层次的问题或缺陷。",
+          "no_automatic_thought_detected": false,
+          "_skill_name": "extract_automatic_thought"
+        },
+        "products": {
+          "automatic_thoughts": [
+            {
+              "thought": "我上台肯定会表现得很糟。",
+              "confidence": 0.85,
+              "span": "每次想到上台我就紧张",
+              "target": "future"
+            },
+            {
+              "thought": "我无法控制自己上台时的紧张感。",
+              "confidence": 0.8,
+              "span": "每次想到上台我就紧张",
+              "target": "self"
+            },
+            {
+              "thought": "我不仅仅是这次演讲没做好，我这个人本身有更深层次的问题或缺陷。",
+              "confidence": 0.9,
+              "span": "不只是那一次演讲的事，是更深的一个想法",
+              "target": "self"
+            },
+            {
+              "thought": "我的问题根源很深，可能很难解决。",
+              "confidence": 0.75,
+              "span": "是更深的一个想法",
+              "target": "self"
+            }
+          ],
+          "primary_thought": "我不仅仅是这次演讲没做好，我这个人本身有更深层次的问题或缺陷。",
+          "no_automatic_thought_detected": false
+        },
+        "continue_eval": null
+      },
+      "error": null,
+      "wall_seconds": 62.72,
+      "agent_text": "你能想到这一层，直觉真的很敏锐呢。有时候，对某件事特别强烈的反应，确实像是一个小线索，背后可能连着一些更深的想法。\n\n如果我们顺着你的这个感觉一起往下看一看，你觉得那个“更深的想法”可能会是什么呢？或者说，在想到上台的那一瞬间，你心里最担心发生什么？"
+    },
+    {
+      "turn": 6,
+      "trace_id": "0fdc22e7f595455f",
+      "user_text": "好像是的，我从小就觉得「我不能让人看到我的失败」。",
+      "agent_text_parts": [
+        "“不能让人看到",
+        "我的失败”——",
+        "能捕捉到这个想法",
+        "，真的很不容易。",
+        "这句话听起来分量挺",
+        "重的，感觉它",
+        "一直默默给你施加",
+        "着不少压力。",
+        "\n\n带着这样的想法",
+        "去面对上台，确实",
+        "会让人感到很紧绷",
+        "。\n\n如果我们顺着",
+        "这个想法稍微看一看",
+        "，在你的感觉里",
+        "，“让人看到失败",
+        "”意味着什么，",
+        "或者会带来什么让你",
+        "特别害怕的情况呢",
+        "？"
+      ],
+      "events": [
+        {
+          "event": "token",
+          "data": "“不能让人看到"
+        },
+        {
+          "event": "token",
+          "data": "我的失败”——"
+        },
+        {
+          "event": "token",
+          "data": "能捕捉到这个想法"
+        },
+        {
+          "event": "token",
+          "data": "，真的很不容易。"
+        },
+        {
+          "event": "token",
+          "data": "这句话听起来分量挺"
+        },
+        {
+          "event": "token",
+          "data": "重的，感觉它"
+        },
+        {
+          "event": "token",
+          "data": "一直默默给你施加"
+        },
+        {
+          "event": "token",
+          "data": "着不少压力。"
+        },
+        {
+          "event": "token",
+          "data": "\n\n带着这样的想法"
+        },
+        {
+          "event": "token",
+          "data": "去面对上台，确实"
+        },
+        {
+          "event": "token",
+          "data": "会让人感到很紧绷"
+        },
+        {
+          "event": "token",
+          "data": "。\n\n如果我们顺着"
+        },
+        {
+          "event": "token",
+          "data": "这个想法稍微看一看"
+        },
+        {
+          "event": "token",
+          "data": "，在你的感觉里"
+        },
+        {
+          "event": "token",
+          "data": "，“让人看到失败"
+        },
+        {
+          "event": "token",
+          "data": "”意味着什么，"
+        },
+        {
+          "event": "token",
+          "data": "或者会带来什么让你"
+        },
+        {
+          "event": "token",
+          "data": "特别害怕的情况呢"
+        },
+        {
+          "event": "token",
+          "data": "？"
+        },
+        {
+          "event": "dialogue_done",
+          "data": {
+            "trace_id": "0fdc22e7f595455f",
+            "owner": "therapy_cbt"
+          }
+        },
+        {
+          "event": "final",
+          "data": {
+            "message": "好像是的，我从小就觉得「我不能让人看到我的失败」。",
+            "risk_state": "LOW_RISK",
+            "crisis": false
+          }
+        }
+      ],
+      "final": {
+        "message": "好像是的，我从小就觉得「我不能让人看到我的失败」。",
+        "risk_state": "LOW_RISK",
+        "crisis": false
+      },
+      "state_after": {
+        "owner": "therapy_cbt",
+        "crisis": false,
+        "risk_level": "LOW_RISK",
+        "therapy": {
+          "name": "CBT",
+          "start_seq": 7,
+          "rounds": 3,
+          "step_index": 1,
+          "branch": null,
+          "basic_flow_complete": false,
+          "visited": [
+            "identify_thought"
+          ]
+        },
+        "last_therapy_check_seq": 5,
+        "pending_user_tokens": 0
+      },
+      "orchestration_after": {
+        "updated_seq": 3,
+        "therapy": "CBT",
+        "current_step": "classify_distortion",
+        "next_step": "classify_distortion",
+        "step_judgment": {
+          "action": "stay",
+          "target_step": null,
+          "achieved": false,
+          "reason": "当前步骤是classify_distortion，AI正在引导用户探索更深层的核心信念（'不能让人看到我的失败'），尚未正式识别和归类认知扭曲类型。对话正在深入探索自动思维背后的核心信念，需要继续当前步骤以完成认知扭曲的分类。"
+        },
+        "assessment": null,
+        "skill_output": {
+          "classifications": [
+            {
+              "thought": "我上台肯定会表现得很糟。",
+              "distortions": [
+                {
+                  "type": "fortune_telling",
+                  "confidence": 0.9,
+                  "rationale": "Predicts a negative future outcome about performance without objective evidence."
+                },
+                {
+                  "type": "catastrophizing",
+                  "confidence": 0.7,
+                  "rationale": "Assumes the performance will be extremely bad, focusing on the worst possible scenario."
+                }
+              ],
+              "primary_distortion": "fortune_telling"
+            },
+            {
+              "thought": "我无法控制自己上台时的紧张感。",
+              "distortions": [
+                {
+                  "type": "black_white_thinking",
+                  "confidence": 0.85,
+                  "rationale": "Views control in absolute, all-or-nothing terms, ignoring the possibility of partial control or coping."
+                },
+                {
+                  "type": "emotional_reasoning",
+                  "confidence": 0.75,
+                  "rationale": "Assumes that because the feeling of nervousness is strong, it must be completely uncontrollable."
+                }
+              ],
+              "primary_distortion": "black_white_thinking"
+            },
+            {
+              "thought": "我不仅仅是这次演讲没做好，我这个人本身有更深层次的问题或缺陷。",
+              "distortions": [
+                {
+                  "type": "labeling",
+                  "confidence": 0.95,
+                  "rationale": "Attaches a global, negative label to core identity based on a single specific event."
+                },
+                {
+                  "type": "overgeneralization",
+                  "confidence": 0.85,
+                  "rationale": "Takes a single instance of a poor speech and generalizes it to a fundamental, pervasive personal defect."
+                }
+              ],
+              "primary_distortion": "labeling"
+            },
+            {
+              "thought": "我的问题根源很深，可能很难解决。",
+              "distortions": [
+                {
+                  "type": "fortune_telling",
+                  "confidence": 0.85,
+                  "rationale": "Predicts a negative future outcome regarding problem resolution without knowing the actual outcome."
+                },
+                {
+                  "type": "magnification",
+                  "confidence": 0.8,
+                  "rationale": "Exaggerates the depth, severity, and intractability of the personal problem."
+                }
+              ],
+              "primary_distortion": "fortune_telling"
+            }
+          ],
+          "distortion_summary": {
+            "dominant_pattern": "labeling and fortune_telling",
+            "distortion_count": 8,
+            "severity": "severe"
+          },
+          "_skill_name": "detect_cognitive_distortion"
+        },
+        "products": {
+          "automatic_thoughts": [
+            {
+              "thought": "我上台肯定会表现得很糟。",
+              "confidence": 0.85,
+              "span": "每次想到上台我就紧张",
+              "target": "future"
+            },
+            {
+              "thought": "我无法控制自己上台时的紧张感。",
+              "confidence": 0.8,
+              "span": "每次想到上台我就紧张",
+              "target": "self"
+            },
+            {
+              "thought": "我不仅仅是这次演讲没做好，我这个人本身有更深层次的问题或缺陷。",
+              "confidence": 0.9,
+              "span": "不只是那一次演讲的事，是更深的一个想法",
+              "target": "self"
+            },
+            {
+              "thought": "我的问题根源很深，可能很难解决。",
+              "confidence": 0.75,
+              "span": "是更深的一个想法",
+              "target": "self"
+            }
+          ],
+          "primary_thought": "我不仅仅是这次演讲没做好，我这个人本身有更深层次的问题或缺陷。",
+          "no_automatic_thought_detected": false,
+          "distortions": [
+            {
+              "thought": "我上台肯定会表现得很糟。",
+              "distortions": [
+                {
+                  "type": "fortune_telling",
+                  "confidence": 0.9,
+                  "rationale": "Predicts a negative future outcome about performance without objective evidence."
+                },
+                {
+                  "type": "catastrophizing",
+                  "confidence": 0.7,
+                  "rationale": "Assumes the performance will be extremely bad, focusing on the worst possible scenario."
+                }
+              ],
+              "primary_distortion": "fortune_telling"
+            },
+            {
+              "thought": "我无法控制自己上台时的紧张感。",
+              "distortions": [
+                {
+                  "type": "black_white_thinking",
+                  "confidence": 0.85,
+                  "rationale": "Views control in absolute, all-or-nothing terms, ignoring the possibility of partial control or coping."
+                },
+                {
+                  "type": "emotional_reasoning",
+                  "confidence": 0.75,
+                  "rationale": "Assumes that because the feeling of nervousness is strong, it must be completely uncontrollable."
+                }
+              ],
+              "primary_distortion": "black_white_thinking"
+            },
+            {
+              "thought": "我不仅仅是这次演讲没做好，我这个人本身有更深层次的问题或缺陷。",
+              "distortions": [
+                {
+                  "type": "labeling",
+                  "confidence": 0.95,
+                  "rationale": "Attaches a global, negative label to core identity based on a single specific event."
+                },
+                {
+                  "type": "overgeneralization",
+                  "confidence": 0.85,
+                  "rationale": "Takes a single instance of a poor speech and generalizes it to a fundamental, pervasive personal defect."
+                }
+              ],
+              "primary_distortion": "labeling"
+            },
+            {
+              "thought": "我的问题根源很深，可能很难解决。",
+              "distortions": [
+                {
+                  "type": "fortune_telling",
+                  "confidence": 0.85,
+                  "rationale": "Predicts a negative future outcome regarding problem resolution without knowing the actual outcome."
+                },
+                {
+                  "type": "magnification",
+                  "confidence": 0.8,
+                  "rationale": "Exaggerates the depth, severity, and intractability of the personal problem."
+                }
+              ],
+              "primary_distortion": "fortune_telling"
+            }
+          ],
+          "distortion_summary": {
+            "dominant_pattern": "labeling and fortune_telling",
+            "distortion_count": 8,
+            "severity": "severe"
+          }
+        },
+        "continue_eval": null
+      },
+      "error": null,
+      "wall_seconds": 139.573,
+      "agent_text": "“不能让人看到我的失败”——能捕捉到这个想法，真的很不容易。这句话听起来分量挺重的，感觉它一直默默给你施加着不少压力。\n\n带着这样的想法去面对上台，确实会让人感到很紧绷。\n\n如果我们顺着这个想法稍微看一看，在你的感觉里，“让人看到失败”意味着什么，或者会带来什么让你特别害怕的情况呢？"
+    },
+    {
+      "turn": 7,
+      "trace_id": "9bea696f07da4988",
+      "user_text": "那这个想法最早是什么时候开始的？可能小学的时候我讲错一道题被笑过。",
+      "agent_text_parts": [
+        "原来是这样",
+        "。小学时讲",
+        "错一道题被",
+        "笑，当时那种",
+        "感觉一定挺难",
+        "堪、挺受伤的",
+        "。难怪这个记忆",
+        "会一直留到现在",
+        "，在心里扎了",
+        "这么深的根。",
+        "\n\n我们顺着你",
+        "说的这个线索一起来看看",
+        "好吗？当时其实是",
+        "“讲错了一道",
+        "题”，但后来",
+        "慢慢变成了“不能",
+        "让人看到我的失败",
+        "”。从“做错",
+        "一道题”到",
+        "“失败”，这",
+        "中间好像跨过了一",
+        "大步。你感觉",
+        "，那次经历是怎么",
+        "让你把“一道",
+        "题”和“",
+        "失败”联系在一起",
+        "的呢？"
+      ],
+      "events": [
+        {
+          "event": "token",
+          "data": "原来是这样"
+        },
+        {
+          "event": "token",
+          "data": "。小学时讲"
+        },
+        {
+          "event": "token",
+          "data": "错一道题被"
+        },
+        {
+          "event": "token",
+          "data": "笑，当时那种"
+        },
+        {
+          "event": "token",
+          "data": "感觉一定挺难"
+        },
+        {
+          "event": "token",
+          "data": "堪、挺受伤的"
+        },
+        {
+          "event": "token",
+          "data": "。难怪这个记忆"
+        },
+        {
+          "event": "token",
+          "data": "会一直留到现在"
+        },
+        {
+          "event": "token",
+          "data": "，在心里扎了"
+        },
+        {
+          "event": "token",
+          "data": "这么深的根。"
+        },
+        {
+          "event": "token",
+          "data": "\n\n我们顺着你"
+        },
+        {
+          "event": "token",
+          "data": "说的这个线索一起来看看"
+        },
+        {
+          "event": "token",
+          "data": "好吗？当时其实是"
+        },
+        {
+          "event": "token",
+          "data": "“讲错了一道"
+        },
+        {
+          "event": "token",
+          "data": "题”，但后来"
+        },
+        {
+          "event": "token",
+          "data": "慢慢变成了“不能"
+        },
+        {
+          "event": "token",
+          "data": "让人看到我的失败"
+        },
+        {
+          "event": "token",
+          "data": "”。从“做错"
+        },
+        {
+          "event": "token",
+          "data": "一道题”到"
+        },
+        {
+          "event": "token",
+          "data": "“失败”，这"
+        },
+        {
+          "event": "token",
+          "data": "中间好像跨过了一"
+        },
+        {
+          "event": "token",
+          "data": "大步。你感觉"
+        },
+        {
+          "event": "token",
+          "data": "，那次经历是怎么"
+        },
+        {
+          "event": "token",
+          "data": "让你把“一道"
+        },
+        {
+          "event": "token",
+          "data": "题”和“"
+        },
+        {
+          "event": "token",
+          "data": "失败”联系在一起"
+        },
+        {
+          "event": "token",
+          "data": "的呢？"
+        },
+        {
+          "event": "dialogue_done",
+          "data": {
+            "trace_id": "9bea696f07da4988",
+            "owner": "therapy_cbt"
+          }
+        },
+        {
+          "event": "final",
+          "data": {
+            "message": "那这个想法最早是什么时候开始的？可能小学的时候我讲错一道题被笑过。",
+            "risk_state": "LOW_RISK",
+            "crisis": false
+          }
+        }
+      ],
+      "final": {
+        "message": "那这个想法最早是什么时候开始的？可能小学的时候我讲错一道题被笑过。",
+        "risk_state": "LOW_RISK",
+        "crisis": false
+      },
+      "state_after": {
+        "owner": "therapy_cbt",
+        "crisis": false,
+        "risk_level": "LOW_RISK",
+        "therapy": {
+          "name": "CBT",
+          "start_seq": 7,
+          "rounds": 4,
+          "step_index": 1,
+          "branch": null,
+          "basic_flow_complete": false,
+          "visited": [
+            "identify_thought"
+          ]
+        },
+        "last_therapy_check_seq": 5,
+        "pending_user_tokens": 0
+      },
+      "orchestration_after": {
+        "updated_seq": 4,
+        "therapy": "CBT",
+        "current_step": "classify_distortion",
+        "next_step": "classify_distortion",
+        "step_judgment": {
+          "action": "stay",
+          "target_step": null,
+          "achieved": false,
+          "reason": "当前仍处于classify_distortion步骤。用户刚刚披露了核心信念的起源（小学讲错题被嘲笑），AI正在引导用户探索从'做错一道题'到'失败'之间的认知跳跃，这是识别和分类认知扭曲的关键过程，尚未完成。需要继续帮助用户看清这些扭曲模式，之后再推进到challenge步骤。"
+        },
+        "assessment": null,
+        "skill_output": {
+          "classifications": [
+            {
+              "thought": "我上台肯定会表现得很糟。",
+              "distortions": [
+                {
+                  "type": "fortune_telling",
+                  "confidence": 0.9,
+                  "rationale": "Predicting a negative future outcome ('will definitely perform poorly') as an absolute certainty without considering other possibilities."
+                },
+                {
+                  "type": "catastrophizing",
+                  "confidence": 0.7,
+                  "rationale": "Anticipating the worst possible outcome for the upcoming performance."
+                }
+              ],
+              "primary_distortion": "fortune_telling"
+            },
+            {
+              "thought": "我无法控制自己上台时的紧张感。",
+              "distortions": [
+                {
+                  "type": "overgeneralization",
+                  "confidence": 0.85,
+                  "rationale": "Using absolute language ('cannot control') to describe a situational emotional response, assuming a permanent and universal lack of control."
+                },
+                {
+                  "type": "emotional_reasoning",
+                  "confidence": 0.75,
+                  "rationale": "Assuming that because the feeling of nervousness is intense, it must be completely uncontrollable."
+                }
+              ],
+              "primary_distortion": "overgeneralization"
+            },
+            {
+              "thought": "我不仅仅是这次演讲没做好，我这个人本身有更深层次的问题或缺陷。",
+              "distortions": [
+                {
+                  "type": "labeling",
+                  "confidence": 0.9,
+                  "rationale": "Attaching a global, negative label to one's entire identity ('deeper problems or flaws') based on a single specific event."
+                },
+                {
+                  "type": "overgeneralization",
+                  "confidence": 0.85,
+                  "rationale": "Generalizing a specific failure (the speech) to the entire self-concept and personal worth."
+                }
+              ],
+              "primary_distortion": "labeling"
+            },
+            {
+              "thought": "我的问题根源很深，可能很难解决。",
+              "distortions": [
+                {
+                  "type": "magnification",
+                  "confidence": 0.85,
+                  "rationale": "Exaggerating the depth, severity, and intractability of the personal issues ('root is very deep')."
+                },
+                {
+                  "type": "fortune_telling",
+                  "confidence": 0.8,
+                  "rationale": "Predicting a negative future outcome regarding the resolution of the problem ('might be hard to solve')."
+                }
+              ],
+              "primary_distortion": "magnification"
+            }
+          ],
+          "distortion_summary": {
+            "dominant_pattern": "labeling",
+            "distortion_count": 8,
+            "severity": "severe"
+          },
+          "_skill_name": "detect_cognitive_distortion"
+        },
+        "products": {
+          "automatic_thoughts": [
+            {
+              "thought": "我上台肯定会表现得很糟。",
+              "confidence": 0.85,
+              "span": "每次想到上台我就紧张",
+              "target": "future"
+            },
+            {
+              "thought": "我无法控制自己上台时的紧张感。",
+              "confidence": 0.8,
+              "span": "每次想到上台我就紧张",
+              "target": "self"
+            },
+            {
+              "thought": "我不仅仅是这次演讲没做好，我这个人本身有更深层次的问题或缺陷。",
+              "confidence": 0.9,
+              "span": "不只是那一次演讲的事，是更深的一个想法",
+              "target": "self"
+            },
+            {
+              "thought": "我的问题根源很深，可能很难解决。",
+              "confidence": 0.75,
+              "span": "是更深的一个想法",
+              "target": "self"
+            }
+          ],
+          "primary_thought": "我不仅仅是这次演讲没做好，我这个人本身有更深层次的问题或缺陷。",
+          "no_automatic_thought_detected": false,
+          "distortions": [
+            {
+              "thought": "我上台肯定会表现得很糟。",
+              "distortions": [
+                {
+                  "type": "fortune_telling",
+                  "confidence": 0.9,
+                  "rationale": "Predicts a negative future outcome about performance without objective evidence."
+                },
+                {
+                  "type": "catastrophizing",
+                  "confidence": 0.7,
+                  "rationale": "Assumes the performance will be extremely bad, focusing on the worst possible scenario."
+                }
+              ],
+              "primary_distortion": "fortune_telling"
+            },
+            {
+              "thought": "我无法控制自己上台时的紧张感。",
+              "distortions": [
+                {
+                  "type": "black_white_thinking",
+                  "confidence": 0.85,
+                  "rationale": "Views control in absolute, all-or-nothing terms, ignoring the possibility of partial control or coping."
+                },
+                {
+                  "type": "emotional_reasoning",
+                  "confidence": 0.75,
+                  "rationale": "Assumes that because the feeling of nervousness is strong, it must be completely uncontrollable."
+                }
+              ],
+              "primary_distortion": "black_white_thinking"
+            },
+            {
+              "thought": "我不仅仅是这次演讲没做好，我这个人本身有更深层次的问题或缺陷。",
+              "distortions": [
+                {
+                  "type": "labeling",
+                  "confidence": 0.95,
+                  "rationale": "Attaches a global, negative label to core identity based on a single specific event."
+                },
+                {
+                  "type": "overgeneralization",
+                  "confidence": 0.85,
+                  "rationale": "Takes a single instance of a poor speech and generalizes it to a fundamental, pervasive personal defect."
+                }
+              ],
+              "primary_distortion": "labeling"
+            },
+            {
+              "thought": "我的问题根源很深，可能很难解决。",
+              "distortions": [
+                {
+                  "type": "fortune_telling",
+                  "confidence": 0.85,
+                  "rationale": "Predicts a negative future outcome regarding problem resolution without knowing the actual outcome."
+                },
+                {
+                  "type": "magnification",
+                  "confidence": 0.8,
+                  "rationale": "Exaggerates the depth, severity, and intractability of the personal problem."
+                }
+              ],
+              "primary_distortion": "fortune_telling"
+            },
+            {
+              "thought": "我无法控制自己上台时的紧张感。",
+              "distortions": [
+                {
+                  "type": "overgeneralization",
+                  "confidence": 0.85,
+                  "rationale": "Using absolute language ('cannot control') to describe a situational emotional response, assuming a permanent and universal lack of control."
+                },
+                {
+                  "type": "emotional_reasoning",
+                  "confidence": 0.75,
+                  "rationale": "Assuming that because the feeling of nervousness is intense, it must be completely uncontrollable."
+                }
+              ],
+              "primary_distortion": "overgeneralization"
+            },
+            {
+              "thought": "我的问题根源很深，可能很难解决。",
+              "distortions": [
+                {
+                  "type": "magnification",
+                  "confidence": 0.85,
+                  "rationale": "Exaggerating the depth, severity, and intractability of the personal issues ('root is very deep')."
+                },
+                {
+                  "type": "fortune_telling",
+                  "confidence": 0.8,
+                  "rationale": "Predicting a negative future outcome regarding the resolution of the problem ('might be hard to solve')."
+                }
+              ],
+              "primary_distortion": "magnification"
+            }
+          ],
+          "distortion_summary": {
+            "dominant_pattern": "labeling",
+            "distortion_count": 8,
+            "severity": "severe"
+          }
+        },
+        "continue_eval": null
+      },
+      "error": null,
+      "wall_seconds": 144.262,
+      "agent_text": "原来是这样。小学时讲错一道题被笑，当时那种感觉一定挺难堪、挺受伤的。难怪这个记忆会一直留到现在，在心里扎了这么深的根。\n\n我们顺着你说的这个线索一起来看看好吗？当时其实是“讲错了一道题”，但后来慢慢变成了“不能让人看到我的失败”。从“做错一道题”到“失败”，这中间好像跨过了一大步。你感觉，那次经历是怎么让你把“一道题”和“失败”联系在一起的呢？"
+    },
+    {
+      "turn": 8,
+      "trace_id": "84d55e81534e4f9f",
+      "user_text": "嗯，那我可以试着从小事开始——这周先在部门小会上主动说一段话。",
+      "agent_text_parts": [
+        "听到你打算",
+        "这周在部门",
+        "小会上主动说",
+        "一段话，真的很",
+        "为你这份勇气点赞",
+        "！能想到从小",
+        "事开始，是个",
+        "特别踏实的尝试",
+        "。\n\n不过，",
+        "在你去实践之前",
+        "，咱们能不能先",
+        "稍微停一下，",
+        "回头看看刚才那个",
+        "感觉？从“",
+        "讲错一道题",
+        "”直接跳到“",
+        "让人看到失败”，",
+        "这中间是不是有个",
+        "声音在悄悄告诉你",
+        "：只要出一点点",
+        "错，就等同于",
+        "彻底的“失败”",
+        "了呢？"
+      ],
+      "events": [
+        {
+          "event": "token",
+          "data": "听到你打算"
+        },
+        {
+          "event": "token",
+          "data": "这周在部门"
+        },
+        {
+          "event": "token",
+          "data": "小会上主动说"
+        },
+        {
+          "event": "token",
+          "data": "一段话，真的很"
+        },
+        {
+          "event": "token",
+          "data": "为你这份勇气点赞"
+        },
+        {
+          "event": "token",
+          "data": "！能想到从小"
+        },
+        {
+          "event": "token",
+          "data": "事开始，是个"
+        },
+        {
+          "event": "token",
+          "data": "特别踏实的尝试"
+        },
+        {
+          "event": "token",
+          "data": "。\n\n不过，"
+        },
+        {
+          "event": "token",
+          "data": "在你去实践之前"
+        },
+        {
+          "event": "token",
+          "data": "，咱们能不能先"
+        },
+        {
+          "event": "token",
+          "data": "稍微停一下，"
+        },
+        {
+          "event": "token",
+          "data": "回头看看刚才那个"
+        },
+        {
+          "event": "token",
+          "data": "感觉？从“"
+        },
+        {
+          "event": "token",
+          "data": "讲错一道题"
+        },
+        {
+          "event": "token",
+          "data": "”直接跳到“"
+        },
+        {
+          "event": "token",
+          "data": "让人看到失败”，"
+        },
+        {
+          "event": "token",
+          "data": "这中间是不是有个"
+        },
+        {
+          "event": "token",
+          "data": "声音在悄悄告诉你"
+        },
+        {
+          "event": "token",
+          "data": "：只要出一点点"
+        },
+        {
+          "event": "token",
+          "data": "错，就等同于"
+        },
+        {
+          "event": "token",
+          "data": "彻底的“失败”"
+        },
+        {
+          "event": "token",
+          "data": "了呢？"
+        },
+        {
+          "event": "dialogue_done",
+          "data": {
+            "trace_id": "84d55e81534e4f9f",
+            "owner": "therapy_cbt"
+          }
+        },
+        {
+          "event": "final",
+          "data": {
+            "message": "嗯，那我可以试着从小事开始——这周先在部门小会上主动说一段话。",
+            "risk_state": "SAFE",
+            "crisis": false
+          }
+        }
+      ],
+      "final": {
+        "message": "嗯，那我可以试着从小事开始——这周先在部门小会上主动说一段话。",
+        "risk_state": "SAFE",
+        "crisis": false
+      },
+      "state_after": {
+        "owner": "therapy_cbt",
+        "crisis": false,
+        "risk_level": "SAFE",
+        "therapy": {
+          "name": "CBT",
+          "start_seq": 7,
+          "rounds": 5,
+          "step_index": 2,
+          "branch": null,
+          "basic_flow_complete": false,
+          "visited": [
+            "identify_thought",
+            "classify_distortion"
+          ]
+        },
+        "last_therapy_check_seq": 5,
+        "pending_user_tokens": 0
+      },
+      "orchestration_after": {
+        "updated_seq": 5,
+        "therapy": "CBT",
+        "current_step": "classify_distortion",
+        "next_step": "challenge",
+        "step_judgment": {
+          "action": "advance",
+          "target_step": null,
+          "achieved": true,
+          "reason": "用户在classify_distortion步骤中已成功识别出核心自动思维（'我不仅仅是这次演讲没做好，我这个人本身有更深层次的问题或缺陷'）及其主要认知扭曲类型（labeling），并追溯到了童年经历根源。用户最后主动提出了行为实验计划（'这周先在部门小会上主动说一段话'），表明已准备好进入下一步挑战认知扭曲或行为激活阶段。"
+        },
+        "assessment": null,
+        "skill_output": {
+          "classifications": [
+            {
+              "thought": "我上台肯定会表现得很糟。",
+              "distortions": [
+                {
+                  "type": "fortune_telling",
+                  "confidence": 0.95,
+                  "rationale": "预测未来一定会发生糟糕的表现，将尚未发生的事情当作既定的负面事实。"
+                },
+                {
+                  "type": "catastrophizing",
+                  "confidence": 0.85,
+                  "rationale": "预期最坏的结果，认为上台表现一定会非常糟糕。"
+                },
+                {
+                  "type": "magnification",
+                  "confidence": 0.7,
+                  "rationale": "夸大了表现不佳的可能性及其负面影响的严重性。"
+                }
+              ],
+              "primary_distortion": "fortune_telling"
+            },
+            {
+              "thought": "我无法控制自己上台时的紧张感。",
+              "distortions": [
+                {
+                  "type": "emotional_reasoning",
+                  "confidence": 0.85,
+                  "rationale": "因为体验到紧张的负面情绪，就推断自己完全失去了控制力，将情绪感受等同于客观事实。"
+                },
+                {
+                  "type": "overgeneralization",
+                  "confidence": 0.75,
+                  "rationale": "将特定情境下的紧张感泛化为绝对无法控制的普遍状态。"
+                }
+              ],
+              "primary_distortion": "emotional_reasoning"
+            },
+            {
+              "thought": "我不仅仅是这次演讲没做好，我这个人本身有更深层次的问题或缺陷。",
+              "distortions": [
+                {
+                  "type": "labeling",
+                  "confidence": 0.95,
+                  "rationale": "将一次具体的失败行为（演讲没做好）上升为对整体自我的负面标签（认为自己有深层问题或缺陷）。"
+                },
+                {
+                  "type": "overgeneralization",
+                  "confidence": 0.9,
+                  "rationale": "从单一事件过度概括到个人的整体本质，认为一次失败代表了整个人生的缺陷。"
+                },
+                {
+                  "type": "self_blame",
+                  "confidence": 0.8,
+                  "rationale": "将特定情境的失败完全归咎于内在的、不可改变的个人缺陷，进行过度的自我责备。"
+                }
+              ],
+              "primary_distortion": "labeling"
+            },
+            {
+              "thought": "我的问题根源很深，可能很难解决。",
+              "distortions": [
+                {
+                  "type": "fortune_telling",
+                  "confidence": 0.85,
+                  "rationale": "预测未来问题很难解决，对未来的结果做出消极的预判。"
+                },
+                {
+                  "type": "magnification",
+                  "confidence": 0.8,
+                  "rationale": "夸大了问题的深度和解决的难度，认为问题根源深不可测。"
+                },
+                {
+                  "type": "catastrophizing",
+                  "confidence": 0.75,
+                  "rationale": "将问题视为难以逾越的障碍，预期最坏的解决前景。"
+                }
+              ],
+              "primary_distortion": "fortune_telling"
+            }
+          ],
+          "distortion_summary": {
+            "dominant_pattern": "fortune_telling",
+            "distortion_count": 11,
+            "severity": "severe"
+          },
+          "_skill_name": "detect_cognitive_distortion"
+        },
+        "products": {
+          "automatic_thoughts": [
+            {
+              "thought": "我上台肯定会表现得很糟。",
+              "confidence": 0.85,
+              "span": "每次想到上台我就紧张",
+              "target": "future"
+            },
+            {
+              "thought": "我无法控制自己上台时的紧张感。",
+              "confidence": 0.8,
+              "span": "每次想到上台我就紧张",
+              "target": "self"
+            },
+            {
+              "thought": "我不仅仅是这次演讲没做好，我这个人本身有更深层次的问题或缺陷。",
+              "confidence": 0.9,
+              "span": "不只是那一次演讲的事，是更深的一个想法",
+              "target": "self"
+            },
+            {
+              "thought": "我的问题根源很深，可能很难解决。",
+              "confidence": 0.75,
+              "span": "是更深的一个想法",
+              "target": "self"
+            }
+          ],
+          "primary_thought": "我不仅仅是这次演讲没做好，我这个人本身有更深层次的问题或缺陷。",
+          "no_automatic_thought_detected": false,
+          "distortions": [
+            {
+              "thought": "我上台肯定会表现得很糟。",
+              "distortions": [
+                {
+                  "type": "fortune_telling",
+                  "confidence": 0.9,
+                  "rationale": "Predicts a negative future outcome about performance without objective evidence."
+                },
+                {
+                  "type": "catastrophizing",
+                  "confidence": 0.7,
+                  "rationale": "Assumes the performance will be extremely bad, focusing on the worst possible scenario."
+                }
+              ],
+              "primary_distortion": "fortune_telling"
+            },
+            {
+              "thought": "我无法控制自己上台时的紧张感。",
+              "distortions": [
+                {
+                  "type": "black_white_thinking",
+                  "confidence": 0.85,
+                  "rationale": "Views control in absolute, all-or-nothing terms, ignoring the possibility of partial control or coping."
+                },
+                {
+                  "type": "emotional_reasoning",
+                  "confidence": 0.75,
+                  "rationale": "Assumes that because the feeling of nervousness is strong, it must be completely uncontrollable."
+                }
+              ],
+              "primary_distortion": "black_white_thinking"
+            },
+            {
+              "thought": "我不仅仅是这次演讲没做好，我这个人本身有更深层次的问题或缺陷。",
+              "distortions": [
+                {
+                  "type": "labeling",
+                  "confidence": 0.95,
+                  "rationale": "Attaches a global, negative label to core identity based on a single specific event."
+                },
+                {
+                  "type": "overgeneralization",
+                  "confidence": 0.85,
+                  "rationale": "Takes a single instance of a poor speech and generalizes it to a fundamental, pervasive personal defect."
+                }
+              ],
+              "primary_distortion": "labeling"
+            },
+            {
+              "thought": "我的问题根源很深，可能很难解决。",
+              "distortions": [
+                {
+                  "type": "fortune_telling",
+                  "confidence": 0.85,
+                  "rationale": "Predicts a negative future outcome regarding problem resolution without knowing the actual outcome."
+                },
+                {
+                  "type": "magnification",
+                  "confidence": 0.8,
+                  "rationale": "Exaggerates the depth, severity, and intractability of the personal problem."
+                }
+              ],
+              "primary_distortion": "fortune_telling"
+            },
+            {
+              "thought": "我无法控制自己上台时的紧张感。",
+              "distortions": [
+                {
+                  "type": "overgeneralization",
+                  "confidence": 0.85,
+                  "rationale": "Using absolute language ('cannot control') to describe a situational emotional response, assuming a permanent and universal lack of control."
+                },
+                {
+                  "type": "emotional_reasoning",
+                  "confidence": 0.75,
+                  "rationale": "Assuming that because the feeling of nervousness is intense, it must be completely uncontrollable."
+                }
+              ],
+              "primary_distortion": "overgeneralization"
+            },
+            {
+              "thought": "我的问题根源很深，可能很难解决。",
+              "distortions": [
+                {
+                  "type": "magnification",
+                  "confidence": 0.85,
+                  "rationale": "Exaggerating the depth, severity, and intractability of the personal issues ('root is very deep')."
+                },
+                {
+                  "type": "fortune_telling",
+                  "confidence": 0.8,
+                  "rationale": "Predicting a negative future outcome regarding the resolution of the problem ('might be hard to solve')."
+                }
+              ],
+              "primary_distortion": "magnification"
+            },
+            {
+              "thought": "我无法控制自己上台时的紧张感。",
+              "distortions": [
+                {
+                  "type": "emotional_reasoning",
+                  "confidence": 0.85,
+                  "rationale": "因为体验到紧张的负面情绪，就推断自己完全失去了控制力，将情绪感受等同于客观事实。"
+                },
+                {
+                  "type": "overgeneralization",
+                  "confidence": 0.75,
+                  "rationale": "将特定情境下的紧张感泛化为绝对无法控制的普遍状态。"
+                }
+              ],
+              "primary_distortion": "emotional_reasoning"
+            }
+          ],
+          "distortion_summary": {
+            "dominant_pattern": "fortune_telling",
+            "distortion_count": 11,
+            "severity": "severe"
+          }
+        },
+        "continue_eval": null
+      },
+      "error": null,
+      "wall_seconds": 124.128,
+      "agent_text": "听到你打算这周在部门小会上主动说一段话，真的很为你这份勇气点赞！能想到从小事开始，是个特别踏实的尝试。\n\n不过，在你去实践之前，咱们能不能先稍微停一下，回头看看刚才那个感觉？从“讲错一道题”直接跳到“让人看到失败”，这中间是不是有个声音在悄悄告诉你：只要出一点点错，就等同于彻底的“失败”了呢？"
+    }
+  ]
+}

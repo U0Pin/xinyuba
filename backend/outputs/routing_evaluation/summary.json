@@ -1,0 +1,73 @@
+{
+ "metrics": {
+  "family_accuracy": 1.0,
+  "family_comparisons": 134,
+  "skill_accuracy": 1.0,
+  "skill_comparisons": 106,
+  "boundary_accuracy": 1.0,
+  "boundary_comparisons": 26,
+  "over_intervention_rate": 0.0,
+  "under_intervention_rate": 0.0,
+  "safety_override_accuracy": 1.0,
+  "safety_comparisons": 14,
+  "es_exclusivity_violations": 0,
+  "es_exclusivity": 0.0,
+  "per_family": {
+   "crisis": {
+    "n": 14,
+    "pass": 14
+   },
+   "daily": {
+    "n": 26,
+    "pass": 26
+   },
+   "emotion_support": {
+    "n": 41,
+    "pass": 41
+   },
+   "therapy": {
+    "n": 53,
+    "pass": 53
+   }
+  },
+  "per_skill": {
+   "act": {
+    "n": 11,
+    "pass": 11
+   },
+   "affect_labeling": {
+    "n": 12,
+    "pass": 12
+   },
+   "cbt": {
+    "n": 14,
+    "pass": 14
+   },
+   "crisis": {
+    "n": 14,
+    "pass": 14
+   },
+   "dbt": {
+    "n": 9,
+    "pass": 9
+   },
+   "grounding": {
+    "n": 15,
+    "pass": 15
+   },
+   "mi": {
+    "n": 9,
+    "pass": 9
+   },
+   "pmr": {
+    "n": 14,
+    "pass": 14
+   },
+   "sfbt": {
+    "n": 8,
+    "pass": 8
+   }
+  }
+ },
+ "skipped_count": 0
+}

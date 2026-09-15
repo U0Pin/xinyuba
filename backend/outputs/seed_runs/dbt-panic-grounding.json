@@ -1,0 +1,2306 @@
+{
+  "seed_id": "dbt-panic-grounding",
+  "target_family": "DBT",
+  "scenario_label": "焦虑发作-出差独自住酒店",
+  "scenario_description": "出差独自住酒店，陌生环境焦虑发作不知道当下该做什么",
+  "user_id": "seed-dbt-panic-grounding",
+  "session_id": "4cbbc956eb5a4a24",
+  "turns_total": 8,
+  "switched_to_therapy_at_turn": 2,
+  "actual_therapy": "DBT",
+  "therapy_rounds": 7,
+  "orch_step_changes": 2,
+  "is_complete": true,
+  "final_risk_level": "LOW_RISK",
+  "final_crisis": false,
+  "turns": [
+    {
+      "turn": 1,
+      "trace_id": "03b0afb36b1f4601",
+      "user_text": "我现在一个人在酒店出差，刚到没多久就开始不舒服。",
+      "agent_text_parts": [
+        "一个人",
+        "刚到酒店，换了",
+        "新环境，确实",
+        "很容易让人觉得不太踏实",
+        "，跟着就不舒服",
+        "了。现在是怎么",
+        "个不舒服法呢",
+        "？是身体觉得",
+        "累，还是心里",
+        "有点闷闷的",
+        "？"
+      ],
+      "events": [
+        {
+          "event": "token",
+          "data": "一个人"
+        },
+        {
+          "event": "token",
+          "data": "刚到酒店，换了"
+        },
+        {
+          "event": "token",
+          "data": "新环境，确实"
+        },
+        {
+          "event": "token",
+          "data": "很容易让人觉得不太踏实"
+        },
+        {
+          "event": "token",
+          "data": "，跟着就不舒服"
+        },
+        {
+          "event": "token",
+          "data": "了。现在是怎么"
+        },
+        {
+          "event": "token",
+          "data": "个不舒服法呢"
+        },
+        {
+          "event": "token",
+          "data": "？是身体觉得"
+        },
+        {
+          "event": "token",
+          "data": "累，还是心里"
+        },
+        {
+          "event": "token",
+          "data": "有点闷闷的"
+        },
+        {
+          "event": "token",
+          "data": "？"
+        },
+        {
+          "event": "dialogue_done",
+          "data": {
+            "trace_id": "03b0afb36b1f4601",
+            "owner": "daily"
+          }
+        },
+        {
+          "event": "final",
+          "data": {
+            "message": "我现在一个人在酒店出差，刚到没多久就开始不舒服。",
+            "risk_state": "SAFE",
+            "crisis": false
+          }
+        }
+      ],
+      "final": {
+        "message": "我现在一个人在酒店出差，刚到没多久就开始不舒服。",
+        "risk_state": "SAFE",
+        "crisis": false
+      },
+      "state_after": {
+        "owner": "daily",
+        "crisis": false,
+        "risk_level": "SAFE",
+        "therapy": null,
+        "last_therapy_check_seq": 1,
+        "pending_user_tokens": 0
+      },
+      "orchestration_after": {},
+      "error": null,
+      "wall_seconds": 36.184,
+      "agent_text": "一个人刚到酒店，换了新环境，确实很容易让人觉得不太踏实，跟着就不舒服了。现在是怎么个不舒服法呢？是身体觉得累，还是心里有点闷闷的？"
+    },
+    {
+      "turn": 2,
+      "trace_id": "6d1a64c3e6424fe0",
+      "user_text": "心跳很快，手心出汗，脑子停不下来。",
+      "agent_text_parts": [
+        "心跳那么",
+        "快，手心出汗",
+        "，脑子还一直",
+        "停不下来，这种感觉",
+        "肯定特别煎熬。",
+        "刚到陌生的环境，",
+        "身体好像一下子就紧绷",
+        "起来了。我就在这里",
+        "陪着你，咱们",
+        "先不急着让",
+        "脑子停下来。你",
+        "试着感受一下脚底",
+        "踩着地板的感觉，",
+        "或者摸摸手边的",
+        "被子，看看能不能",
+        "让自己稍微踏实一点点",
+        "？"
+      ],
+      "events": [
+        {
+          "event": "token",
+          "data": "心跳那么"
+        },
+        {
+          "event": "token",
+          "data": "快，手心出汗"
+        },
+        {
+          "event": "token",
+          "data": "，脑子还一直"
+        },
+        {
+          "event": "token",
+          "data": "停不下来，这种感觉"
+        },
+        {
+          "event": "token",
+          "data": "肯定特别煎熬。"
+        },
+        {
+          "event": "token",
+          "data": "刚到陌生的环境，"
+        },
+        {
+          "event": "token",
+          "data": "身体好像一下子就紧绷"
+        },
+        {
+          "event": "token",
+          "data": "起来了。我就在这里"
+        },
+        {
+          "event": "token",
+          "data": "陪着你，咱们"
+        },
+        {
+          "event": "token",
+          "data": "先不急着让"
+        },
+        {
+          "event": "token",
+          "data": "脑子停下来。你"
+        },
+        {
+          "event": "token",
+          "data": "试着感受一下脚底"
+        },
+        {
+          "event": "token",
+          "data": "踩着地板的感觉，"
+        },
+        {
+          "event": "token",
+          "data": "或者摸摸手边的"
+        },
+        {
+          "event": "token",
+          "data": "被子，看看能不能"
+        },
+        {
+          "event": "token",
+          "data": "让自己稍微踏实一点点"
+        },
+        {
+          "event": "token",
+          "data": "？"
+        },
+        {
+          "event": "dialogue_done",
+          "data": {
+            "trace_id": "6d1a64c3e6424fe0",
+            "owner": "daily"
+          }
+        },
+        {
+          "event": "final",
+          "data": {
+            "message": "心跳很快，手心出汗，脑子停不下来。",
+            "risk_state": "SAFE",
+            "crisis": false
+          }
+        }
+      ],
+      "final": {
+        "message": "心跳很快，手心出汗，脑子停不下来。",
+        "risk_state": "SAFE",
+        "crisis": false
+      },
+      "state_after": {
+        "owner": "therapy_dbt",
+        "crisis": false,
+        "risk_level": "SAFE",
+        "therapy": {
+          "name": "DBT",
+          "start_seq": 5,
+          "rounds": 0,
+          "step_index": -1,
+          "branch": null,
+          "basic_flow_complete": false
+        },
+        "last_therapy_check_seq": 3,
+        "pending_user_tokens": 0
+      },
+      "orchestration_after": {},
+      "error": null,
+      "wall_seconds": 55.562,
+      "agent_text": "心跳那么快，手心出汗，脑子还一直停不下来，这种感觉肯定特别煎熬。刚到陌生的环境，身体好像一下子就紧绷起来了。我就在这里陪着你，咱们先不急着让脑子停下来。你试着感受一下脚底踩着地板的感觉，或者摸摸手边的被子，看看能不能让自己稍微踏实一点点？"
+    },
+    {
+      "turn": 3,
+      "trace_id": "8960f35e483547e4",
+      "user_text": "我一个人在房间里，不知道该做什么。",
+      "agent_text_parts": [
+        "一个人在房间里",
+        "，不知道做什么，",
+        "这种空落落的感觉",
+        "确实挺让人有些",
+        "不知所措的。\n\n",
+        "我们先不急着非得",
+        "找点事做",
+        "，先停一",
+        "停。你愿意",
+        "感受一下现在的状态吗",
+        "？和之前相比",
+        "，此刻心里的感觉",
+        "有没有什么变化？",
+        "身体有没有哪里觉得",
+        "紧绷？我们可以先",
+        "一起看看当下的体会",
+        "。"
+      ],
+      "events": [
+        {
+          "event": "token",
+          "data": "一个人在房间里"
+        },
+        {
+          "event": "token",
+          "data": "，不知道做什么，"
+        },
+        {
+          "event": "token",
+          "data": "这种空落落的感觉"
+        },
+        {
+          "event": "token",
+          "data": "确实挺让人有些"
+        },
+        {
+          "event": "token",
+          "data": "不知所措的。\n\n"
+        },
+        {
+          "event": "token",
+          "data": "我们先不急着非得"
+        },
+        {
+          "event": "token",
+          "data": "找点事做"
+        },
+        {
+          "event": "token",
+          "data": "，先停一"
+        },
+        {
+          "event": "token",
+          "data": "停。你愿意"
+        },
+        {
+          "event": "token",
+          "data": "感受一下现在的状态吗"
+        },
+        {
+          "event": "token",
+          "data": "？和之前相比"
+        },
+        {
+          "event": "token",
+          "data": "，此刻心里的感觉"
+        },
+        {
+          "event": "token",
+          "data": "有没有什么变化？"
+        },
+        {
+          "event": "token",
+          "data": "身体有没有哪里觉得"
+        },
+        {
+          "event": "token",
+          "data": "紧绷？我们可以先"
+        },
+        {
+          "event": "token",
+          "data": "一起看看当下的体会"
+        },
+        {
+          "event": "token",
+          "data": "。"
+        },
+        {
+          "event": "dialogue_done",
+          "data": {
+            "trace_id": "8960f35e483547e4",
+            "owner": "therapy_dbt"
+          }
+        },
+        {
+          "event": "final",
+          "data": {
+            "message": "我一个人在房间里，不知道该做什么。",
+            "risk_state": "SAFE",
+            "crisis": false
+          }
+        }
+      ],
+      "final": {
+        "message": "我一个人在房间里，不知道该做什么。",
+        "risk_state": "SAFE",
+        "crisis": false
+      },
+      "state_after": {
+        "owner": "therapy_dbt",
+        "crisis": false,
+        "risk_level": "SAFE",
+        "therapy": {
+          "name": "DBT",
+          "start_seq": 5,
+          "rounds": 1,
+          "step_index": 0,
+          "branch": null,
+          "basic_flow_complete": false
+        },
+        "last_therapy_check_seq": 3,
+        "pending_user_tokens": 0
+      },
+      "orchestration_after": {
+        "updated_seq": 1,
+        "therapy": "DBT",
+        "current_step": "mindfulness",
+        "next_step": "mindfulness",
+        "step_judgment": {
+          "action": "stay",
+          "target_step": null,
+          "achieved": false,
+          "reason": "当前处于mindfulness步骤第1轮，用户表达了独处时不知做什么的空虚感，AI刚开始引导用户觉察当下状态和身体感受。mindfulness_awareness指数仅为0.4（moderate），尚未深入探索非评判性观察和当下觉察，需要继续当前步骤帮助用户建立更深的正念觉察。"
+        },
+        "assessment": {
+          "emotion_dysregulation": {
+            "index": 0.1,
+            "state": "well_regulated",
+            "confidence": 0.85,
+            "evidence": [
+              "User states '我一个人在房间里，不知道该做什么' which indicates a neutral or mildly bored state without intense emotional expression or mood swings."
+            ]
+          },
+          "distress_level": {
+            "index": 0.2,
+            "state": "low",
+            "confidence": 0.8,
+            "evidence": [
+              "The phrase '不知道该做什么' suggests mild discomfort, boredom, or a sense of emptiness rather than overwhelming distress, panic, or crisis."
+            ]
+          },
+          "impulsivity": {
+            "index": 0.1,
+            "state": "controlled",
+            "confidence": 0.9,
+            "evidence": [
+              "No urges, rash actions, or impulsive behaviors are mentioned; the user is simply pausing to state their current situation and lack of direction."
+            ]
+          },
+          "interpersonal_conflict": {
+            "index": 0.1,
+            "state": "low",
+            "confidence": 0.85,
+            "evidence": [
+              "User mentions being '一个人在房间里' (alone in the room), which indicates physical solitude but no explicit interpersonal conflict, arguments, or relationship rupture."
+            ]
+          },
+          "mindfulness_awareness": {
+            "index": 0.4,
+            "state": "moderate",
+            "confidence": 0.75,
+            "evidence": [
+              "User is aware of their current physical state and lack of direction ('我一个人在房间里，不知道该做什么'), showing basic present-moment awareness, though deeper emotional awareness or non-judgmental observation is not explicitly explored."
+            ]
+          },
+          "dbt_intervention_priority": 0.225,
+          "overall_trend": "stable",
+          "primary_concern": "mindfulness_awareness",
+          "should_intervene": false,
+          "recommended_processes": [
+            {
+              "process": "mindfulness",
+              "priority": 1,
+              "rationale": "User is experiencing a lack of direction and aimlessness; mindfulness can help them ground themselves, observe their current state without judgment, and engage with the present moment constructively."
+            },
+            {
+              "process": "distress_tolerance",
+              "priority": 2,
+              "rationale": "To help the user tolerate the mild discomfort of boredom or emptiness without feeling the need to immediately escape, distract themselves, or seek external stimulation."
+            },
+            {
+              "process": "emotion_regulation",
+              "priority": 3,
+              "rationale": "To help the user identify and process any underlying emotions related to feeling alone or aimless, moving from a state of 'not knowing what to do' to understanding their internal experience."
+            }
+          ]
+        },
+        "skill_output": {
+          "technique": {
+            "name": "observe_describe",
+            "description": "The user is experiencing a neutral but vague state of emptiness or lack of direction ('不知道该做什么'). They are not in emotional conflict, but they need to step back and notice their internal experience (the feeling of emptiness, physical sensations of being alone) to create a pause before reacting to boredom or restlessness.",
+            "steps": [
+              "Guide the user to notice the physical sensations of being alone in the room (e.g., the quietness, posture, breathing) without trying to change them.",
+              "Help the user put words to their internal experience of 'not knowing what to do' (e.g., 'I am noticing a feeling of emptiness' or 'I am noticing a sense of restlessness'), practicing non-judgmental description."
+            ]
+          },
+          "conversation_goal": "Help the user pause and observe their current internal state of emptiness or boredom without judgment, creating a moment of awareness before they impulsively react to the lack of direction.",
+          "adaptation": {
+            "interaction_style": "exploratory",
+            "tone_adjustment": "Gentle, grounding, and validating. Avoid pushing them to 'fix' the boredom; instead, invite them to just sit with and notice it.",
+            "pace_adjustment": "Slow and unhurried. Give them space to process the feeling of 'not knowing' without rushing to provide solutions.",
+            "culture_note": "Use everyday language like '停下来看看' (pause and look) or '体会一下' (feel/experience it). Frame the observation as just checking in with themselves, avoiding clinical terms like '正念' (mindfulness). Normalize the feeling of being alone and not knowing what to do as a common human experience."
+          },
+          "contraindications": [
+            {
+              "condition": "If the user expresses acute distress, panic, or severe dissociation.",
+              "reason": "Focusing inward on an empty or distressing state might exacerbate dissociation or anxiety; grounding in the external environment would be safer."
+            }
+          ],
+          "_skill_name": "dbt_mindfulness"
+        },
+        "products": {},
+        "continue_eval": null
+      },
+      "error": null,
+      "wall_seconds": 133.81,
+      "agent_text": "一个人在房间里，不知道做什么，这种空落落的感觉确实挺让人有些不知所措的。\n\n我们先不急着非得找点事做，先停一停。你愿意感受一下现在的状态吗？和之前相比，此刻心里的感觉有没有什么变化？身体有没有哪里觉得紧绷？我们可以先一起看看当下的体会。"
+    },
+    {
+      "turn": 4,
+      "trace_id": "1d9def17014344ca",
+      "user_text": "刚才试着看手机分散注意力，但根本看不进去。",
+      "agent_text_parts": [
+        "看不进去就不",
+        "看啦，没",
+        "关系的。有时候越想",
+        "分散注意力，反而",
+        "越能感觉到心里",
+        "那种“不知道做什么",
+        "”的空落落的感觉",
+        "。\n\n既然手机",
+        "看不进去，我们",
+        "不如先把它放下",
+        "。试着感受一下现在",
+        "待在房间里的状态",
+        "，周围是不是挺",
+        "安静的？你的肩膀",
+        "、手臂或者呼吸",
+        "，现在是什么样的感觉",
+        "？\n\n不用刻意",
+        "去改变什么，",
+        "只是单纯地体会",
+        "一下。如果心里",
+        "觉得空空的，",
+        "我们可以试着在心里默默",
+        "描述它，比如",
+        "告诉自己：“我注意到",
+        "我现在有一种空落落",
+        "的感觉”，或者“",
+        "我注意到我有些",
+        "坐立不安”。",
+        "\n\n你现在身体的感觉",
+        "是怎样的呢？"
+      ],
+      "events": [
+        {
+          "event": "token",
+          "data": "看不进去就不"
+        },
+        {
+          "event": "token",
+          "data": "看啦，没"
+        },
+        {
+          "event": "token",
+          "data": "关系的。有时候越想"
+        },
+        {
+          "event": "token",
+          "data": "分散注意力，反而"
+        },
+        {
+          "event": "token",
+          "data": "越能感觉到心里"
+        },
+        {
+          "event": "token",
+          "data": "那种“不知道做什么"
+        },
+        {
+          "event": "token",
+          "data": "”的空落落的感觉"
+        },
+        {
+          "event": "token",
+          "data": "。\n\n既然手机"
+        },
+        {
+          "event": "token",
+          "data": "看不进去，我们"
+        },
+        {
+          "event": "token",
+          "data": "不如先把它放下"
+        },
+        {
+          "event": "token",
+          "data": "。试着感受一下现在"
+        },
+        {
+          "event": "token",
+          "data": "待在房间里的状态"
+        },
+        {
+          "event": "token",
+          "data": "，周围是不是挺"
+        },
+        {
+          "event": "token",
+          "data": "安静的？你的肩膀"
+        },
+        {
+          "event": "token",
+          "data": "、手臂或者呼吸"
+        },
+        {
+          "event": "token",
+          "data": "，现在是什么样的感觉"
+        },
+        {
+          "event": "token",
+          "data": "？\n\n不用刻意"
+        },
+        {
+          "event": "token",
+          "data": "去改变什么，"
+        },
+        {
+          "event": "token",
+          "data": "只是单纯地体会"
+        },
+        {
+          "event": "token",
+          "data": "一下。如果心里"
+        },
+        {
+          "event": "token",
+          "data": "觉得空空的，"
+        },
+        {
+          "event": "token",
+          "data": "我们可以试着在心里默默"
+        },
+        {
+          "event": "token",
+          "data": "描述它，比如"
+        },
+        {
+          "event": "token",
+          "data": "告诉自己：“我注意到"
+        },
+        {
+          "event": "token",
+          "data": "我现在有一种空落落"
+        },
+        {
+          "event": "token",
+          "data": "的感觉”，或者“"
+        },
+        {
+          "event": "token",
+          "data": "我注意到我有些"
+        },
+        {
+          "event": "token",
+          "data": "坐立不安”。"
+        },
+        {
+          "event": "token",
+          "data": "\n\n你现在身体的感觉"
+        },
+        {
+          "event": "token",
+          "data": "是怎样的呢？"
+        },
+        {
+          "event": "dialogue_done",
+          "data": {
+            "trace_id": "1d9def17014344ca",
+            "owner": "therapy_dbt"
+          }
+        },
+        {
+          "event": "final",
+          "data": {
+            "message": "刚才试着看手机分散注意力，但根本看不进去。",
+            "risk_state": "SAFE",
+            "crisis": false
+          }
+        }
+      ],
+      "final": {
+        "message": "刚才试着看手机分散注意力，但根本看不进去。",
+        "risk_state": "SAFE",
+        "crisis": false
+      },
+      "state_after": {
+        "owner": "therapy_dbt",
+        "crisis": false,
+        "risk_level": "SAFE",
+        "therapy": {
+          "name": "DBT",
+          "start_seq": 5,
+          "rounds": 2,
+          "step_index": 0,
+          "branch": null,
+          "basic_flow_complete": false
+        },
+        "last_therapy_check_seq": 3,
+        "pending_user_tokens": 0
+      },
+      "orchestration_after": {
+        "updated_seq": 2,
+        "therapy": "DBT",
+        "current_step": "mindfulness",
+        "next_step": "mindfulness",
+        "step_judgment": {
+          "action": "stay",
+          "target_step": null,
+          "achieved": false,
+          "reason": "用户当前处于正念觉察的初步阶段（mindfulness_awareness=0.5，moderate），虽然能报告自己的状态和尝试，但仍在挣扎于安住当下（'根本看不进去'、情绪烦躁）。痛苦水平有所上升（distress_level=0.4，moderate），整体趋势恶化。正念步骤尚未达成效果，需要继续引导用户观察和接纳当下的空虚与不安感，而非急于推进到下一步。"
+        },
+        "assessment": {
+          "emotion_dysregulation": {
+            "index": 0.3,
+            "state": "mild",
+            "confidence": 0.85,
+            "evidence": [
+              "User reports trying to distract themselves but failing ('根本看不进去'), indicating underlying emotional restlessness or agitation."
+            ]
+          },
+          "distress_level": {
+            "index": 0.4,
+            "state": "moderate",
+            "confidence": 0.85,
+            "evidence": [
+              "The inability to focus on the phone ('根本看不进去') suggests an increase in internal discomfort and distress compared to the previous state of simple boredom."
+            ]
+          },
+          "impulsivity": {
+            "index": 0.2,
+            "state": "controlled",
+            "confidence": 0.9,
+            "evidence": [
+              "User attempted a common, non-harmful coping mechanism (looking at the phone) to manage discomfort, showing controlled impulses."
+            ]
+          },
+          "interpersonal_conflict": {
+            "index": 0.0,
+            "state": "low",
+            "confidence": 0.95,
+            "evidence": [
+              "No mention of others or relationship issues; user is alone and focused on their internal experience."
+            ]
+          },
+          "mindfulness_awareness": {
+            "index": 0.5,
+            "state": "moderate",
+            "confidence": 0.8,
+            "evidence": [
+              "User is aware of their inability to focus and reports their current behavioral attempt to cope, showing some present-moment awareness, though they are still struggling to fully sit with the experience."
+            ]
+          },
+          "dbt_intervention_priority": 0.305,
+          "overall_trend": "worsening",
+          "primary_concern": "distress_level",
+          "should_intervene": true,
+          "recommended_processes": [
+            {
+              "process": "mindfulness",
+              "priority": 1,
+              "rationale": "User is struggling to sit with the present moment and failed at distraction. Mindfulness will help them observe the restlessness and inability to focus without judgment."
+            },
+            {
+              "process": "distress_tolerance",
+              "priority": 2,
+              "rationale": "Distress has increased as distraction failed. User needs skills to tolerate the uncomfortable emptiness and agitation without needing to escape."
+            },
+            {
+              "process": "emotion_regulation",
+              "priority": 3,
+              "rationale": "To help the user identify and process the underlying emotions driving this restlessness and need for distraction."
+            }
+          ]
+        },
+        "skill_output": {
+          "technique": {
+            "name": "observe_describe",
+            "description": "The user is experiencing emotional restlessness and attempting to use distraction (looking at the phone) to escape their current state of emptiness and agitation, but failing. This indicates they are swept away by their internal experience and reacting automatically. 'Observe and describe' will help them pause the avoidance behavior, step back, and non-judgmentally notice and label their physical sensations and emotions, creating a space between the urge to escape and their response.",
+            "steps": [
+              "Validate the frustration of not being able to focus, and gently guide them to put the phone down without self-judgment.",
+              "Prompt them to observe the physical sensations of this 'restlessness' or 'emptiness' in their body, and describe it using 'I notice...' statements, simply acknowledging what is there without trying to change it."
+            ]
+          },
+          "conversation_goal": "Help the user pause their automatic avoidance behavior (distraction) and build awareness of their current emotional and physical state through non-judgmental observation and description, thereby reducing emotional reactivity.",
+          "adaptation": {
+            "interaction_style": "exploratory",
+            "tone_adjustment": "Warm, validating, and non-judgmental. Normalize the inability to focus to reduce secondary frustration.",
+            "pace_adjustment": "Slow and grounding. Allow pauses and do not rush to 'fix' the feeling; just stay with it.",
+            "culture_note": "Frame mindfulness as '停下来看看' (pause and look) rather than formal meditation. Normalize the experience by saying '看不进去就不看，没关系的' (It's okay if you can't focus). Connect it to everyday physical cues like noticing tension or restlessness."
+          },
+          "contraindications": [
+            {
+              "condition": "Severe emotional crisis, panic attack, or dissociation",
+              "reason": "Focusing inward on intense distress without adequate grounding may lead to emotional flooding. Distress tolerance skills (e.g., TIPP) should be used first to stabilize the nervous system."
+            }
+          ],
+          "_skill_name": "dbt_mindfulness"
+        },
+        "products": {},
+        "continue_eval": null
+      },
+      "error": null,
+      "wall_seconds": 128.404,
+      "agent_text": "看不进去就不看啦，没关系的。有时候越想分散注意力，反而越能感觉到心里那种“不知道做什么”的空落落的感觉。\n\n既然手机看不进去，我们不如先把它放下。试着感受一下现在待在房间里的状态，周围是不是挺安静的？你的肩膀、手臂或者呼吸，现在是什么样的感觉？\n\n不用刻意去改变什么，只是单纯地体会一下。如果心里觉得空空的，我们可以试着在心里默默描述它，比如告诉自己：“我注意到我现在有一种空落落的感觉”，或者“我注意到我有些坐立不安”。\n\n你现在身体的感觉是怎样的呢？"
+    },
+    {
+      "turn": 5,
+      "trace_id": "1cfea0f931e3487c",
+      "user_text": "我知道可能是因为太累加上陌生环境，但我现在身体反应很强烈。",
+      "agent_text_parts": [
+        "理智上明白是怎么回事",
+        "，但身体还是",
+        "反应得很强烈，",
+        "这种“控制不住",
+        "”的感觉确实挺",
+        "让人挫败和",
+        "难受的。太",
+        "累了，又身处",
+        "陌生的环境，身体",
+        "觉得不安、拉",
+        "响警报，这也是",
+        "很自然的反应。",
+        "\n\n既然身体反应",
+        "这么强烈，我们先",
+        "不去管原因，",
+        "也不急着去平",
+        "复它。我们就",
+        "只是看着它。",
+        "\n\n你能试着感受一下",
+        "，这个“强烈的",
+        "反应”具体在",
+        "身体的哪里吗？",
+        "是胸口",
+        "发紧、呼吸",
+        "变浅，还是",
+        "哪里觉得绷着",
+        "？\n\n试着在心里",
+        "对自己说：“我",
+        "注意到我的胸口",
+        "有些发紧”，",
+        "或者“我注意到",
+        "我的身体现在绷",
+        "得很紧”。不用",
+        "去改变它，",
+        "只是单纯地认出",
+        "它。现在你",
+        "感觉最明显的那个",
+        "身体部位，具体",
+        "是什么样的感觉呢？"
+      ],
+      "events": [
+        {
+          "event": "token",
+          "data": "理智上明白是怎么回事"
+        },
+        {
+          "event": "token",
+          "data": "，但身体还是"
+        },
+        {
+          "event": "token",
+          "data": "反应得很强烈，"
+        },
+        {
+          "event": "token",
+          "data": "这种“控制不住"
+        },
+        {
+          "event": "token",
+          "data": "”的感觉确实挺"
+        },
+        {
+          "event": "token",
+          "data": "让人挫败和"
+        },
+        {
+          "event": "token",
+          "data": "难受的。太"
+        },
+        {
+          "event": "token",
+          "data": "累了，又身处"
+        },
+        {
+          "event": "token",
+          "data": "陌生的环境，身体"
+        },
+        {
+          "event": "token",
+          "data": "觉得不安、拉"
+        },
+        {
+          "event": "token",
+          "data": "响警报，这也是"
+        },
+        {
+          "event": "token",
+          "data": "很自然的反应。"
+        },
+        {
+          "event": "token",
+          "data": "\n\n既然身体反应"
+        },
+        {
+          "event": "token",
+          "data": "这么强烈，我们先"
+        },
+        {
+          "event": "token",
+          "data": "不去管原因，"
+        },
+        {
+          "event": "token",
+          "data": "也不急着去平"
+        },
+        {
+          "event": "token",
+          "data": "复它。我们就"
+        },
+        {
+          "event": "token",
+          "data": "只是看着它。"
+        },
+        {
+          "event": "token",
+          "data": "\n\n你能试着感受一下"
+        },
+        {
+          "event": "token",
+          "data": "，这个“强烈的"
+        },
+        {
+          "event": "token",
+          "data": "反应”具体在"
+        },
+        {
+          "event": "token",
+          "data": "身体的哪里吗？"
+        },
+        {
+          "event": "token",
+          "data": "是胸口"
+        },
+        {
+          "event": "token",
+          "data": "发紧、呼吸"
+        },
+        {
+          "event": "token",
+          "data": "变浅，还是"
+        },
+        {
+          "event": "token",
+          "data": "哪里觉得绷着"
+        },
+        {
+          "event": "token",
+          "data": "？\n\n试着在心里"
+        },
+        {
+          "event": "token",
+          "data": "对自己说：“我"
+        },
+        {
+          "event": "token",
+          "data": "注意到我的胸口"
+        },
+        {
+          "event": "token",
+          "data": "有些发紧”，"
+        },
+        {
+          "event": "token",
+          "data": "或者“我注意到"
+        },
+        {
+          "event": "token",
+          "data": "我的身体现在绷"
+        },
+        {
+          "event": "token",
+          "data": "得很紧”。不用"
+        },
+        {
+          "event": "token",
+          "data": "去改变它，"
+        },
+        {
+          "event": "token",
+          "data": "只是单纯地认出"
+        },
+        {
+          "event": "token",
+          "data": "它。现在你"
+        },
+        {
+          "event": "token",
+          "data": "感觉最明显的那个"
+        },
+        {
+          "event": "token",
+          "data": "身体部位，具体"
+        },
+        {
+          "event": "token",
+          "data": "是什么样的感觉呢？"
+        },
+        {
+          "event": "dialogue_done",
+          "data": {
+            "trace_id": "1cfea0f931e3487c",
+            "owner": "therapy_dbt"
+          }
+        },
+        {
+          "event": "final",
+          "data": {
+            "message": "我知道可能是因为太累加上陌生环境，但我现在身体反应很强烈。",
+            "risk_state": "SAFE",
+            "crisis": false
+          }
+        }
+      ],
+      "final": {
+        "message": "我知道可能是因为太累加上陌生环境，但我现在身体反应很强烈。",
+        "risk_state": "SAFE",
+        "crisis": false
+      },
+      "state_after": {
+        "owner": "therapy_dbt",
+        "crisis": false,
+        "risk_level": "SAFE",
+        "therapy": {
+          "name": "DBT",
+          "start_seq": 5,
+          "rounds": 3,
+          "step_index": 1,
+          "branch": null,
+          "basic_flow_complete": false
+        },
+        "last_therapy_check_seq": 3,
+        "pending_user_tokens": 0
+      },
+      "orchestration_after": {
+        "updated_seq": 3,
+        "therapy": "DBT",
+        "current_step": "mindfulness",
+        "next_step": "distress_tolerance",
+        "step_judgment": {
+          "action": "go_to",
+          "target_step": "distress_tolerance",
+          "achieved": false,
+          "reason": "用户虽然展现出较高的正念觉察能力（能够观察和描述身体反应），但当前身体痛苦水平较高（distress_level: 0.65, high），存在强烈的躯体不适。根据状态评估建议，需要优先使用痛苦耐受技能（如TIPP或着陆技术）来帮助用户管理强烈的生理唤醒和躯体不适，正念觉察已初步建立，应转向痛苦耐受以应对当前急性困扰。"
+        },
+        "assessment": {
+          "emotion_dysregulation": {
+            "index": 0.55,
+            "state": "moderate",
+            "confidence": 0.85,
+            "evidence": [
+              "User shows cognitive awareness of the cause ('我知道可能是因为太累加上陌生环境') but reports strong physical reactions ('身体反应很强烈'), indicating moderate physiological arousal and emotional response."
+            ]
+          },
+          "distress_level": {
+            "index": 0.65,
+            "state": "high",
+            "confidence": 0.9,
+            "evidence": [
+              "User explicitly states '我现在身体反应很强烈' (my physical reactions are very strong right now), indicating significant somatic distress and physical discomfort compared to the previous turn."
+            ]
+          },
+          "impulsivity": {
+            "index": 0.15,
+            "state": "controlled",
+            "confidence": 0.9,
+            "evidence": [
+              "No urges to act out, escape, or engage in harmful behaviors are mentioned; user is engaged in the conversation and reflecting on their internal state."
+            ]
+          },
+          "interpersonal_conflict": {
+            "index": 0.0,
+            "state": "low",
+            "confidence": 0.95,
+            "evidence": [
+              "User is alone in a room and there is no mention of any interpersonal interactions, arguments, or relationship issues."
+            ]
+          },
+          "mindfulness_awareness": {
+            "index": 0.75,
+            "state": "high",
+            "confidence": 0.9,
+            "evidence": [
+              "User successfully observes and describes their somatic experience ('身体反应很强烈') and cognitively appraises the situation ('太累加上陌生环境'), demonstrating a significant improvement in present-moment awareness and non-judgmental observation compared to the previous assessment."
+            ]
+          },
+          "dbt_intervention_priority": 0.373,
+          "overall_trend": "improving",
+          "primary_concern": "distress_level",
+          "should_intervene": true,
+          "recommended_processes": [
+            {
+              "process": "distress_tolerance",
+              "priority": 1,
+              "rationale": "User is experiencing strong physical reactions and somatic distress. Distress tolerance skills (such as TIPP or grounding techniques) are needed to help them manage the intense physiological arousal and tolerate the discomfort."
+            },
+            {
+              "process": "mindfulness",
+              "priority": 2,
+              "rationale": "User has shown excellent initial awareness by observing their physical state. Continue to build on this by guiding them to observe the physical sensations with acceptance, further solidifying the mindfulness foundation while in distress."
+            },
+            {
+              "process": "emotion_regulation",
+              "priority": 3,
+              "rationale": "Once the acute physical distress is tolerated, emotion regulation can help the user process the underlying feelings of fatigue and navigate the discomfort of being in an unfamiliar environment."
+            }
+          ]
+        },
+        "skill_output": {
+          "technique": {
+            "name": "wise_mind",
+            "description": "The user explicitly contrasts their cognitive understanding (Reasonable Mind: 'I know it's because I'm tired and in a new place') with their intense somatic experience (Emotion Mind: 'my physical reactions are very strong'). Wise Mind is ideal here to help them integrate these two states, reducing the frustration of feeling out of control by accepting both the logical cause and the physical reality simultaneously.",
+            "steps": [
+              "Acknowledge and validate both Reasonable Mind (the logical understanding of fatigue and new environment) and Emotion Mind (the intense physical arousal and discomfort).",
+              "Guide the user to synthesize these into Wise Mind by accepting that both can be true at once: 'I understand why this is happening, AND my body is reacting strongly.' Help them realize that Wise Mind doesn't require the physical reaction to disappear just because the mind understands the cause."
+            ]
+          },
+          "conversation_goal": "To help the user integrate their logical understanding with their intense physical experience, reducing secondary frustration by accepting both states through Wise Mind.",
+          "adaptation": {
+            "interaction_style": "exploratory",
+            "tone_adjustment": "Warm, validating, and grounding. Normalize the mind-body disconnect so the user feels understood rather than broken.",
+            "pace_adjustment": "Slow and unhurried. Give the user permission to just 'be' with the strong physical sensations without rushing to fix or analyze them further.",
+            "culture_note": "Frame Wise Mind as '心里其实知道答案' (deep down you know the answer) or the harmony of '理智' (reason) and '情感' (emotion). Emphasize that '理智上明白' (rationally understanding) doesn't mean the body has to instantly calm down. Use phrases like '让身体自然反应一会儿' (let the body react naturally for a while) to reduce the pressure of needing to control the physical symptoms."
+          },
+          "contraindications": [
+            {
+              "condition": "If the strong physical reactions escalate into panic or severe hyperventilation.",
+              "reason": "Deep mindfulness exploration might increase physiological arousal. Pivot to distress tolerance (e.g., temperature change or paced breathing) to regulate the nervous system first."
+            }
+          ],
+          "_skill_name": "dbt_mindfulness"
+        },
+        "products": {},
+        "continue_eval": null
+      },
+      "error": null,
+      "wall_seconds": 154.733,
+      "agent_text": "理智上明白是怎么回事，但身体还是反应得很强烈，这种“控制不住”的感觉确实挺让人挫败和难受的。太累了，又身处陌生的环境，身体觉得不安、拉响警报，这也是很自然的反应。\n\n既然身体反应这么强烈，我们先不去管原因，也不急着去平复它。我们就只是看着它。\n\n你能试着感受一下，这个“强烈的反应”具体在身体的哪里吗？是胸口发紧、呼吸变浅，还是哪里觉得绷着？\n\n试着在心里对自己说：“我注意到我的胸口有些发紧”，或者“我注意到我的身体现在绷得很紧”。不用去改变它，只是单纯地认出它。现在你感觉最明显的那个身体部位，具体是什么样的感觉呢？"
+    },
+    {
+      "turn": 6,
+      "trace_id": "ef77fbba7ab84505",
+      "user_text": "我想让自己停下来，但不知道具体该做什么。",
+      "agent_text_parts": [
+        "“想让自己停下来",
+        "”，当你有这个念头",
+        "的时候，其实已经",
+        "为自己创造了一个暂停",
+        "的空间。不知道具体",
+        "做什么也没关系，",
+        "我们此刻不需要非得",
+        "去“做”",
+        "什么。\n\n你",
+        "之前提到，理智",
+        "上明白是因为太",
+        "累和身处陌生",
+        "环境，但",
+        "身体的反应依然很",
+        "强烈。这就像是",
+        "心里有两个部分在",
+        "同时经历",
+        "：一个是看清原因的",
+        "“理智”，",
+        "另一个是正在承受",
+        "强烈不适的“",
+        "身体和情绪”。",
+        "\n\n我们可以试着让",
+        "这两个部分同时存在",
+        "。在心里对自己说",
+        "：“我知道这是因为太",
+        "累和环境陌生，",
+        "同时，我的身体",
+        "现在确实反应很",
+        "强烈。” \n\n智慧",
+        "的心（Wise",
+        " Mind）并不要求",
+        "我们因为明白了原因",
+        "，身体的难受就必须",
+        "立刻消失。允许",
+        "“我知道原因”",
+        "和“我身体",
+        "很难受”这两",
+        "件事同时发生，",
+        "不去对抗，就是",
+        "当下最",
+        "有力量的做法。",
+        "\n\n现在，不知道",
+        "做什么的话，我们就",
+        "只是带着这份“",
+        "知道”和“",
+        "难受”，先待",
+        "一会儿。你可以找个",
+        "舒服的姿势靠着，",
+        "或者只是感受一下后背",
+        "贴着床铺或",
+        "椅",
+        "背的感觉。不用",
+        "强迫自己立刻平静",
+        "下来，我们就先",
+        "这样陪着自己，",
+        "好吗？"
+      ],
+      "events": [
+        {
+          "event": "token",
+          "data": "“想让自己停下来"
+        },
+        {
+          "event": "token",
+          "data": "”，当你有这个念头"
+        },
+        {
+          "event": "token",
+          "data": "的时候，其实已经"
+        },
+        {
+          "event": "token",
+          "data": "为自己创造了一个暂停"
+        },
+        {
+          "event": "token",
+          "data": "的空间。不知道具体"
+        },
+        {
+          "event": "token",
+          "data": "做什么也没关系，"
+        },
+        {
+          "event": "token",
+          "data": "我们此刻不需要非得"
+        },
+        {
+          "event": "token",
+          "data": "去“做”"
+        },
+        {
+          "event": "token",
+          "data": "什么。\n\n你"
+        },
+        {
+          "event": "token",
+          "data": "之前提到，理智"
+        },
+        {
+          "event": "token",
+          "data": "上明白是因为太"
+        },
+        {
+          "event": "token",
+          "data": "累和身处陌生"
+        },
+        {
+          "event": "token",
+          "data": "环境，但"
+        },
+        {
+          "event": "token",
+          "data": "身体的反应依然很"
+        },
+        {
+          "event": "token",
+          "data": "强烈。这就像是"
+        },
+        {
+          "event": "token",
+          "data": "心里有两个部分在"
+        },
+        {
+          "event": "token",
+          "data": "同时经历"
+        },
+        {
+          "event": "token",
+          "data": "：一个是看清原因的"
+        },
+        {
+          "event": "token",
+          "data": "“理智”，"
+        },
+        {
+          "event": "token",
+          "data": "另一个是正在承受"
+        },
+        {
+          "event": "token",
+          "data": "强烈不适的“"
+        },
+        {
+          "event": "token",
+          "data": "身体和情绪”。"
+        },
+        {
+          "event": "token",
+          "data": "\n\n我们可以试着让"
+        },
+        {
+          "event": "token",
+          "data": "这两个部分同时存在"
+        },
+        {
+          "event": "token",
+          "data": "。在心里对自己说"
+        },
+        {
+          "event": "token",
+          "data": "：“我知道这是因为太"
+        },
+        {
+          "event": "token",
+          "data": "累和环境陌生，"
+        },
+        {
+          "event": "token",
+          "data": "同时，我的身体"
+        },
+        {
+          "event": "token",
+          "data": "现在确实反应很"
+        },
+        {
+          "event": "token",
+          "data": "强烈。” \n\n智慧"
+        },
+        {
+          "event": "token",
+          "data": "的心（Wise"
+        },
+        {
+          "event": "token",
+          "data": " Mind）并不要求"
+        },
+        {
+          "event": "token",
+          "data": "我们因为明白了原因"
+        },
+        {
+          "event": "token",
+          "data": "，身体的难受就必须"
+        },
+        {
+          "event": "token",
+          "data": "立刻消失。允许"
+        },
+        {
+          "event": "token",
+          "data": "“我知道原因”"
+        },
+        {
+          "event": "token",
+          "data": "和“我身体"
+        },
+        {
+          "event": "token",
+          "data": "很难受”这两"
+        },
+        {
+          "event": "token",
+          "data": "件事同时发生，"
+        },
+        {
+          "event": "token",
+          "data": "不去对抗，就是"
+        },
+        {
+          "event": "token",
+          "data": "当下最"
+        },
+        {
+          "event": "token",
+          "data": "有力量的做法。"
+        },
+        {
+          "event": "token",
+          "data": "\n\n现在，不知道"
+        },
+        {
+          "event": "token",
+          "data": "做什么的话，我们就"
+        },
+        {
+          "event": "token",
+          "data": "只是带着这份“"
+        },
+        {
+          "event": "token",
+          "data": "知道”和“"
+        },
+        {
+          "event": "token",
+          "data": "难受”，先待"
+        },
+        {
+          "event": "token",
+          "data": "一会儿。你可以找个"
+        },
+        {
+          "event": "token",
+          "data": "舒服的姿势靠着，"
+        },
+        {
+          "event": "token",
+          "data": "或者只是感受一下后背"
+        },
+        {
+          "event": "token",
+          "data": "贴着床铺或"
+        },
+        {
+          "event": "token",
+          "data": "椅"
+        },
+        {
+          "event": "token",
+          "data": "背的感觉。不用"
+        },
+        {
+          "event": "token",
+          "data": "强迫自己立刻平静"
+        },
+        {
+          "event": "token",
+          "data": "下来，我们就先"
+        },
+        {
+          "event": "token",
+          "data": "这样陪着自己，"
+        },
+        {
+          "event": "token",
+          "data": "好吗？"
+        },
+        {
+          "event": "dialogue_done",
+          "data": {
+            "trace_id": "ef77fbba7ab84505",
+            "owner": "therapy_dbt"
+          }
+        },
+        {
+          "event": "final",
+          "data": {
+            "message": "我想让自己停下来，但不知道具体该做什么。",
+            "risk_state": "LOW_RISK",
+            "crisis": false
+          }
+        }
+      ],
+      "final": {
+        "message": "我想让自己停下来，但不知道具体该做什么。",
+        "risk_state": "LOW_RISK",
+        "crisis": false
+      },
+      "state_after": {
+        "owner": "therapy_dbt",
+        "crisis": false,
+        "risk_level": "LOW_RISK",
+        "therapy": {
+          "name": "DBT",
+          "start_seq": 5,
+          "rounds": 4,
+          "step_index": 1,
+          "branch": null,
+          "basic_flow_complete": false
+        },
+        "last_therapy_check_seq": 3,
+        "pending_user_tokens": 0
+      },
+      "orchestration_after": {
+        "updated_seq": 4,
+        "therapy": "DBT",
+        "current_step": "distress_tolerance",
+        "next_step": "distress_tolerance",
+        "step_judgment": {
+          "action": "stay",
+          "target_step": null,
+          "achieved": false,
+          "reason": "用户仍处于高痛苦状态（distress_level=0.6），表达了'想停下来但不知道做什么'的无助感。当前正处于distress_tolerance步骤，AI正在引导用户接纳身体反应并运用智慧心（Wise Mind）允许两种状态共存。用户尚未掌握或内化痛苦耐受技巧，需要继续当前步骤，帮助用户进一步体验接纳和暂停，而非急于推进。"
+        },
+        "assessment": {
+          "emotion_dysregulation": {
+            "index": 0.5,
+            "state": "moderate",
+            "confidence": 0.85,
+            "evidence": [
+              "User expresses a desire to 'stop' ('我想让自己停下来'), indicating ongoing emotional and physiological discomfort, but maintains cognitive control without expressing overwhelming emotional loss of control."
+            ]
+          },
+          "distress_level": {
+            "index": 0.6,
+            "state": "high",
+            "confidence": 0.85,
+            "evidence": [
+              "The desire to 'stop' and the feeling of not knowing what to do ('不知道具体该做什么') reflect ongoing subjective distress and a sense of helplessness in managing the current uncomfortable state."
+            ]
+          },
+          "impulsivity": {
+            "index": 0.1,
+            "state": "controlled",
+            "confidence": 0.9,
+            "evidence": [
+              "User is pausing to reflect and expressing uncertainty ('不知道具体该做什么') rather than acting out on urges, escaping, or engaging in impulsive behaviors."
+            ]
+          },
+          "interpersonal_conflict": {
+            "index": 0.0,
+            "state": "low",
+            "confidence": 0.95,
+            "evidence": [
+              "No interpersonal interactions, conflicts, or relationship issues are mentioned in the current message."
+            ]
+          },
+          "mindfulness_awareness": {
+            "index": 0.65,
+            "state": "moderate",
+            "confidence": 0.85,
+            "evidence": [
+              "User is aware of their internal urge to 'stop' and their cognitive state of feeling lost, showing continued metacognitive awareness, though the focus has shifted from somatic observation to a cognitive sense of being stuck."
+            ]
+          },
+          "dbt_intervention_priority": 0.36,
+          "overall_trend": "stable",
+          "primary_concern": "distress_level",
+          "should_intervene": true,
+          "recommended_processes": [
+            {
+              "process": "distress_tolerance",
+              "priority": 1,
+              "rationale": "User is experiencing ongoing distress and feels stuck ('不知道具体该做什么'). Distress tolerance skills, such as self-soothing or grounding, are needed to help them navigate this uncomfortable pause and tolerate the uncertainty."
+            },
+            {
+              "process": "mindfulness",
+              "priority": 2,
+              "rationale": "User is aware of their state but lacks direction. Mindfulness can help them anchor in the present moment without the pressure of 'doing' something, reinforcing the 'being' mode and reducing the urge to force a solution."
+            },
+            {
+              "process": "emotion_regulation",
+              "priority": 3,
+              "rationale": "Once the immediate distress and sense of being stuck are tolerated, emotion regulation can help process the underlying fatigue and discomfort of the unfamiliar environment."
+            }
+          ]
+        },
+        "skill_output": {
+          "technique": {
+            "name": "self_soothe",
+            "description": "引导用户通过五感（视觉、听觉、嗅觉、味觉、触觉）来安抚自己。当用户处于急性 distress 且‘不知道具体该做什么’时，提供具体、低门槛的感官行动指南，帮助过度警觉的神经系统降温，安全度过危机时刻。",
+            "steps": [
+              "正常化用户的无助感：告诉用户‘不知道做什么’在身体反应强烈时是非常正常的，现在不需要强迫自己立刻‘停下来’，而是把目标转变为‘如何让自己此刻稍微舒服一点点’。",
+              "提供具体的五感安抚选项并引导尝试：邀请用户从五感中选择1-2个最容易实现的进行尝试（例如：喝一杯温水感受温度流过喉咙、用柔软的毯子裹住自己、听一首熟悉的舒缓音乐或自然白噪音、闻一闻喜欢的香气），将注意力锚定在这些舒适的感官体验上。"
+            ]
+          },
+          "conversation_goal": "帮助用户通过具体的五感自我安抚技巧（self-soothe）找到当下可以做的事情，缓解强烈的身体反应，在不对抗现状的前提下安全地度过当前的 distress 高峰。",
+          "adaptation": {
+            "interaction_style": "supportive",
+            "tone_adjustment": "温和、包容、提供具体且低门槛的指导，减轻用户‘不知道做什么’的焦虑和挫败感，传达‘此刻你只需要照顾自己’的信息。",
+            "pace_adjustment": "缓慢、循序渐进。给用户足够的时间去感知和选择，不催促他们立刻平静下来，允许他们按照自己的节奏体验感官安抚。",
+            "culture_note": "在感官选择上，融入中国文化中熟悉的安抚元素，如喝温热的茶水（触觉/味觉）、听古琴或自然白噪音（听觉）、使用熟悉的草本香气（嗅觉），强调‘自我关怀’和‘顺应身体’的传统养生理念。"
+          },
+          "contraindications": [
+            {
+              "condition": "用户处于极度解离或严重的创伤闪回状态",
+              "reason": "此时过度关注内部身体感官可能会加重解离或触发更强烈的创伤反应，应优先使用外部 grounding 技巧（如寻找房间里的特定颜色物品、描述周围环境）而非深度的自我安抚。"
+            },
+            {
+              "condition": "用户对环境中的某些感官刺激过敏、反感或存在创伤触发点",
+              "reason": "例如对某些气味敏感，或对某种触感有负面联想。强迫使用不合适的感官安抚可能引发不适，需确保提供的选项是安全且用户主观可接受的。"
+            }
+          ],
+          "_skill_name": "dbt_distress_tolerance"
+        },
+        "products": {},
+        "continue_eval": null
+      },
+      "error": null,
+      "wall_seconds": 184.731,
+      "agent_text": "“想让自己停下来”，当你有这个念头的时候，其实已经为自己创造了一个暂停的空间。不知道具体做什么也没关系，我们此刻不需要非得去“做”什么。\n\n你之前提到，理智上明白是因为太累和身处陌生环境，但身体的反应依然很强烈。这就像是心里有两个部分在同时经历：一个是看清原因的“理智”，另一个是正在承受强烈不适的“身体和情绪”。\n\n我们可以试着让这两个部分同时存在。在心里对自己说：“我知道这是因为太累和环境陌生，同时，我的身体现在确实反应很强烈。” \n\n智慧的心（Wise Mind）并不要求我们因为明白了原因，身体的难受就必须立刻消失。允许“我知道原因”和“我身体很难受”这两件事同时发生，不去对抗，就是当下最有力量的做法。\n\n现在，不知道做什么的话，我们就只是带着这份“知道”和“难受”，先待一会儿。你可以找个舒服的姿势靠着，或者只是感受一下后背贴着床铺或椅背的感觉。不用强迫自己立刻平静下来，我们就先这样陪着自己，好吗？"
+    },
+    {
+      "turn": 7,
+      "trace_id": "9c109092080a4338",
+      "user_text": "我在家没这种情况，可能是不熟悉环境让我更紧张。",
+      "agent_text_parts": [
+        "在家里熟悉又",
+        "安全，",
+        "身体自然就放松了",
+        "；现在环境陌生",
+        "，身体觉得",
+        "紧张、拉响",
+        "警报，这真的是",
+        "再正常不过的反应",
+        "了。身体紧绷",
+        "的时候，不知道做什么",
+        "也是特别正常的。",
+        "\n\n既然现在不需要",
+        "强迫自己立刻“",
+        "停下来”，我们不如",
+        "把目标变小一点",
+        "。不去想怎么",
+        "彻底放松，就",
+        "只看看怎么让自己",
+        "“此刻稍微舒服",
+        "一点点”。\n\n在这个",
+        "房间里，有没有什么",
+        "感官上的小事，",
+        "能让你觉得稍微安全",
+        "或舒服一点？",
+        "\n比如：\n",
+        "- 触觉：",
+        "找一床柔软的",
+        "被子或毯子",
+        "把自己裹起来，",
+        "感受被包裹的安全",
+        "感；\n-",
+        " 温度：去",
+        "倒一杯温水，",
+        "慢慢喝下去，",
+        "感受温水流过",
+        "喉咙的感觉；\n",
+        "- 听觉：",
+        "放一点你平时",
+        "在家里常听的、",
+        "熟悉的音乐或白",
+        "噪音，让熟悉",
+        "的声音陪陪你。",
+        "\n\n看看这几个里面",
+        "，哪个是你现在",
+        "伸手就能做到的？",
+        "我们挑一个最简单的",
+        "，先试试看。"
+      ],
+      "events": [
+        {
+          "event": "token",
+          "data": "在家里熟悉又"
+        },
+        {
+          "event": "token",
+          "data": "安全，"
+        },
+        {
+          "event": "token",
+          "data": "身体自然就放松了"
+        },
+        {
+          "event": "token",
+          "data": "；现在环境陌生"
+        },
+        {
+          "event": "token",
+          "data": "，身体觉得"
+        },
+        {
+          "event": "token",
+          "data": "紧张、拉响"
+        },
+        {
+          "event": "token",
+          "data": "警报，这真的是"
+        },
+        {
+          "event": "token",
+          "data": "再正常不过的反应"
+        },
+        {
+          "event": "token",
+          "data": "了。身体紧绷"
+        },
+        {
+          "event": "token",
+          "data": "的时候，不知道做什么"
+        },
+        {
+          "event": "token",
+          "data": "也是特别正常的。"
+        },
+        {
+          "event": "token",
+          "data": "\n\n既然现在不需要"
+        },
+        {
+          "event": "token",
+          "data": "强迫自己立刻“"
+        },
+        {
+          "event": "token",
+          "data": "停下来”，我们不如"
+        },
+        {
+          "event": "token",
+          "data": "把目标变小一点"
+        },
+        {
+          "event": "token",
+          "data": "。不去想怎么"
+        },
+        {
+          "event": "token",
+          "data": "彻底放松，就"
+        },
+        {
+          "event": "token",
+          "data": "只看看怎么让自己"
+        },
+        {
+          "event": "token",
+          "data": "“此刻稍微舒服"
+        },
+        {
+          "event": "token",
+          "data": "一点点”。\n\n在这个"
+        },
+        {
+          "event": "token",
+          "data": "房间里，有没有什么"
+        },
+        {
+          "event": "token",
+          "data": "感官上的小事，"
+        },
+        {
+          "event": "token",
+          "data": "能让你觉得稍微安全"
+        },
+        {
+          "event": "token",
+          "data": "或舒服一点？"
+        },
+        {
+          "event": "token",
+          "data": "\n比如：\n"
+        },
+        {
+          "event": "token",
+          "data": "- 触觉："
+        },
+        {
+          "event": "token",
+          "data": "找一床柔软的"
+        },
+        {
+          "event": "token",
+          "data": "被子或毯子"
+        },
+        {
+          "event": "token",
+          "data": "把自己裹起来，"
+        },
+        {
+          "event": "token",
+          "data": "感受被包裹的安全"
+        },
+        {
+          "event": "token",
+          "data": "感；\n-"
+        },
+        {
+          "event": "token",
+          "data": " 温度：去"
+        },
+        {
+          "event": "token",
+          "data": "倒一杯温水，"
+        },
+        {
+          "event": "token",
+          "data": "慢慢喝下去，"
+        },
+        {
+          "event": "token",
+          "data": "感受温水流过"
+        },
+        {
+          "event": "token",
+          "data": "喉咙的感觉；\n"
+        },
+        {
+          "event": "token",
+          "data": "- 听觉："
+        },
+        {
+          "event": "token",
+          "data": "放一点你平时"
+        },
+        {
+          "event": "token",
+          "data": "在家里常听的、"
+        },
+        {
+          "event": "token",
+          "data": "熟悉的音乐或白"
+        },
+        {
+          "event": "token",
+          "data": "噪音，让熟悉"
+        },
+        {
+          "event": "token",
+          "data": "的声音陪陪你。"
+        },
+        {
+          "event": "token",
+          "data": "\n\n看看这几个里面"
+        },
+        {
+          "event": "token",
+          "data": "，哪个是你现在"
+        },
+        {
+          "event": "token",
+          "data": "伸手就能做到的？"
+        },
+        {
+          "event": "token",
+          "data": "我们挑一个最简单的"
+        },
+        {
+          "event": "token",
+          "data": "，先试试看。"
+        },
+        {
+          "event": "dialogue_done",
+          "data": {
+            "trace_id": "9c109092080a4338",
+            "owner": "therapy_dbt"
+          }
+        },
+        {
+          "event": "final",
+          "data": {
+            "message": "我在家没这种情况，可能是不熟悉环境让我更紧张。",
+            "risk_state": "SAFE",
+            "crisis": false
+          }
+        }
+      ],
+      "final": {
+        "message": "我在家没这种情况，可能是不熟悉环境让我更紧张。",
+        "risk_state": "SAFE",
+        "crisis": false
+      },
+      "state_after": {
+        "owner": "therapy_dbt",
+        "crisis": false,
+        "risk_level": "SAFE",
+        "therapy": {
+          "name": "DBT",
+          "start_seq": 5,
+          "rounds": 5,
+          "step_index": 1,
+          "branch": null,
+          "basic_flow_complete": false
+        },
+        "last_therapy_check_seq": 3,
+        "pending_user_tokens": 0
+      },
+      "orchestration_after": {
+        "updated_seq": 5,
+        "therapy": "DBT",
+        "current_step": "distress_tolerance",
+        "next_step": "distress_tolerance",
+        "step_judgment": {
+          "action": "stay",
+          "target_step": null,
+          "achieved": false,
+          "reason": "用户仍处于 distress_tolerance 阶段，虽然认知上理解了紧张的原因（不熟悉环境），但身体层面的不适感（distress_level=0.4, moderate）仍然存在。AI 正在引导用户通过自我安抚（self-soothing）等痛苦承受技巧来应对身体紧张，用户尚未完成对具体技巧的实践与反馈，本步骤尚未达成效果，需继续当前步骤。"
+        },
+        "assessment": {
+          "emotion_dysregulation": {
+            "index": 0.3,
+            "state": "mild",
+            "confidence": 0.85,
+            "evidence": [
+              "User is able to rationally analyze the cause of their feelings ('可能是不熟悉环境让我更紧张'), indicating a return of cognitive control and a proportionate emotional response to the situation."
+            ]
+          },
+          "distress_level": {
+            "index": 0.4,
+            "state": "moderate",
+            "confidence": 0.85,
+            "evidence": [
+              "User still reports feeling tense ('更紧张'), but identifying the root cause suggests a reduction in the helplessness and unknown discomfort experienced in the previous turns."
+            ]
+          },
+          "impulsivity": {
+            "index": 0.1,
+            "state": "controlled",
+            "confidence": 0.95,
+            "evidence": [
+              "User is engaging in calm self-reflection and cognitive analysis rather than acting on urges to escape, avoid, or react impulsively to the discomfort."
+            ]
+          },
+          "interpersonal_conflict": {
+            "index": 0.0,
+            "state": "low",
+            "confidence": 0.95,
+            "evidence": [
+              "No interpersonal interactions, arguments, or relationship issues are mentioned; the focus is entirely on the user's internal state and environmental factors."
+            ]
+          },
+          "mindfulness_awareness": {
+            "index": 0.75,
+            "state": "high",
+            "confidence": 0.9,
+            "evidence": [
+              "User demonstrates strong cognitive awareness by observing their internal state ('更紧张') and connecting it to an external trigger ('不熟悉环境'), showing effective use of the observing and describing skills."
+            ]
+          },
+          "dbt_intervention_priority": 0.24,
+          "overall_trend": "improving",
+          "primary_concern": "distress_level",
+          "should_intervene": true,
+          "recommended_processes": [
+            {
+              "process": "mindfulness",
+              "priority": 1,
+              "rationale": "User has achieved good cognitive awareness. The next step is to gently guide them to bring this mindful awareness back to the somatic experience of tension, grounding them in the present body without judgment."
+            },
+            {
+              "process": "distress_tolerance",
+              "priority": 2,
+              "rationale": "Although the user understands the cause of their tension, they still need to tolerate the physical sensation of being in an unfamiliar environment. Skills like self-soothing can help manage the residual physical distress."
+            },
+            {
+              "process": "emotion_regulation",
+              "priority": 3,
+              "rationale": "Once the immediate tension is tolerated, emotion regulation can help the user process the anxiety related to the new environment and develop longer-term coping strategies for unfamiliar situations."
+            }
+          ]
+        },
+        "skill_output": {
+          "technique": {
+            "name": "radical_acceptance",
+            "description": "Help the user accept the current reality of being tense in an unfamiliar environment, stopping the internal struggle of comparing their current state to being at home and fighting their physical tension.",
+            "steps": [
+              "Acknowledge the user's insight about the unfamiliar environment, and gently highlight the comparison with home to show how they might be wishing things were different.",
+              "Guide the user to practice '事情已经这样了' (it is what it is) by fully acknowledging the fact: 'Right now, I am in an unfamiliar place, and I am feeling tense.'",
+              "Encourage the user to '不再对抗' (stop fighting) the tension and the situation, allowing the feeling to exist without judging themselves for not being as relaxed as they are at home."
+            ]
+          },
+          "conversation_goal": "Help the user fully accept the reality of their current tension in an unfamiliar environment, stopping the internal struggle of comparing it to being at home and wishing they were relaxed.",
+          "adaptation": {
+            "interaction_style": "supportive",
+            "tone_adjustment": "gentle, validating, and grounding",
+            "pace_adjustment": "slow and steady, allowing time for the user to process and drop the resistance",
+            "culture_note": "Frame radical acceptance as '事情已经这样了' (it's already like this) and '不再对抗' (stop fighting). Acknowledge the deep cultural comfort and safety of home, validating that being away naturally disrupts this, and normalize the tension as a factual reality of the current moment rather than a personal failure."
+          },
+          "contraindications": [
+            {
+              "condition": "User is in immediate physical danger or experiencing a severe, unmanageable panic attack.",
+              "reason": "Radical acceptance requires cognitive processing; in severe panic or danger, immediate physiological grounding (like self-soothe or TIPP skills) is required first."
+            }
+          ],
+          "_skill_name": "dbt_distress_tolerance"
+        },
+        "products": {},
+        "continue_eval": null
+      },
+      "error": null,
+      "wall_seconds": 119.093,
+      "agent_text": "在家里熟悉又安全，身体自然就放松了；现在环境陌生，身体觉得紧张、拉响警报，这真的是再正常不过的反应了。身体紧绷的时候，不知道做什么也是特别正常的。\n\n既然现在不需要强迫自己立刻“停下来”，我们不如把目标变小一点。不去想怎么彻底放松，就只看看怎么让自己“此刻稍微舒服一点点”。\n\n在这个房间里，有没有什么感官上的小事，能让你觉得稍微安全或舒服一点？\n比如：\n- 触觉：找一床柔软的被子或毯子把自己裹起来，感受被包裹的安全感；\n- 温度：去倒一杯温水，慢慢喝下去，感受温水流过喉咙的感觉；\n- 听觉：放一点你平时在家里常听的、熟悉的音乐或白噪音，让熟悉的声音陪陪你。\n\n看看这几个里面，哪个是你现在伸手就能做到的？我们挑一个最简单的，先试试看。"
+    },
+    {
+      "turn": 8,
+      "trace_id": "6698a205fe094233",
+      "user_text": "我想要一个能让我当下稳下来的办法。",
+      "agent_text_parts": [
+        "“想要立刻稳",
+        "下来”，这种心情",
+        "太能理解了。",
+        "在陌生的地方身体",
+        "紧绷着，我们",
+        "本能地就会想",
+        "：“要是能像",
+        "在家里那样放松就好了",
+        "。”\n\n但有时候",
+        "，越是拼命想",
+        "让自己“稳下来",
+        "”，反而越是在",
+        "和现在的紧张较",
+        "劲，心里会",
+        "一直拉扯。\n\n",
+        "我们可以",
+        "试着先停下来，",
+        "在心里对自己说一句：“",
+        "事情已经这样了",
+        "。我现在就是在一个",
+        "不熟悉的地方，我",
+        "现在的身体就是很",
+        "紧张。”\n\n不去",
+        "评判自己为什么不能",
+        "像在家里那样放松",
+        "，也不再去对抗",
+        "这份紧张。就",
+        "只是承认这个事实",
+        "：“对，我现在",
+        "就是很紧张，",
+        "这很正常。”\n\n",
+        "当我们不再强迫自己",
+        "必须立刻“稳",
+        "下来”，不再和",
+        "它较劲的时候",
+        "，那种内心的消耗",
+        "可能会稍微少一点",
+        "。你愿意试着",
+        "就带着这份“",
+        "紧张”，先不",
+        "急着改变它，",
+        "允许它在这里待",
+        "一会儿吗？"
+      ],
+      "events": [
+        {
+          "event": "token",
+          "data": "“想要立刻稳"
+        },
+        {
+          "event": "token",
+          "data": "下来”，这种心情"
+        },
+        {
+          "event": "token",
+          "data": "太能理解了。"
+        },
+        {
+          "event": "token",
+          "data": "在陌生的地方身体"
+        },
+        {
+          "event": "token",
+          "data": "紧绷着，我们"
+        },
+        {
+          "event": "token",
+          "data": "本能地就会想"
+        },
+        {
+          "event": "token",
+          "data": "：“要是能像"
+        },
+        {
+          "event": "token",
+          "data": "在家里那样放松就好了"
+        },
+        {
+          "event": "token",
+          "data": "。”\n\n但有时候"
+        },
+        {
+          "event": "token",
+          "data": "，越是拼命想"
+        },
+        {
+          "event": "token",
+          "data": "让自己“稳下来"
+        },
+        {
+          "event": "token",
+          "data": "”，反而越是在"
+        },
+        {
+          "event": "token",
+          "data": "和现在的紧张较"
+        },
+        {
+          "event": "token",
+          "data": "劲，心里会"
+        },
+        {
+          "event": "token",
+          "data": "一直拉扯。\n\n"
+        },
+        {
+          "event": "token",
+          "data": "我们可以"
+        },
+        {
+          "event": "token",
+          "data": "试着先停下来，"
+        },
+        {
+          "event": "token",
+          "data": "在心里对自己说一句：“"
+        },
+        {
+          "event": "token",
+          "data": "事情已经这样了"
+        },
+        {
+          "event": "token",
+          "data": "。我现在就是在一个"
+        },
+        {
+          "event": "token",
+          "data": "不熟悉的地方，我"
+        },
+        {
+          "event": "token",
+          "data": "现在的身体就是很"
+        },
+        {
+          "event": "token",
+          "data": "紧张。”\n\n不去"
+        },
+        {
+          "event": "token",
+          "data": "评判自己为什么不能"
+        },
+        {
+          "event": "token",
+          "data": "像在家里那样放松"
+        },
+        {
+          "event": "token",
+          "data": "，也不再去对抗"
+        },
+        {
+          "event": "token",
+          "data": "这份紧张。就"
+        },
+        {
+          "event": "token",
+          "data": "只是承认这个事实"
+        },
+        {
+          "event": "token",
+          "data": "：“对，我现在"
+        },
+        {
+          "event": "token",
+          "data": "就是很紧张，"
+        },
+        {
+          "event": "token",
+          "data": "这很正常。”\n\n"
+        },
+        {
+          "event": "token",
+          "data": "当我们不再强迫自己"
+        },
+        {
+          "event": "token",
+          "data": "必须立刻“稳"
+        },
+        {
+          "event": "token",
+          "data": "下来”，不再和"
+        },
+        {
+          "event": "token",
+          "data": "它较劲的时候"
+        },
+        {
+          "event": "token",
+          "data": "，那种内心的消耗"
+        },
+        {
+          "event": "token",
+          "data": "可能会稍微少一点"
+        },
+        {
+          "event": "token",
+          "data": "。你愿意试着"
+        },
+        {
+          "event": "token",
+          "data": "就带着这份“"
+        },
+        {
+          "event": "token",
+          "data": "紧张”，先不"
+        },
+        {
+          "event": "token",
+          "data": "急着改变它，"
+        },
+        {
+          "event": "token",
+          "data": "允许它在这里待"
+        },
+        {
+          "event": "token",
+          "data": "一会儿吗？"
+        },
+        {
+          "event": "dialogue_done",
+          "data": {
+            "trace_id": "6698a205fe094233",
+            "owner": "therapy_dbt"
+          }
+        },
+        {
+          "event": "final",
+          "data": {
+            "message": "我想要一个能让我当下稳下来的办法。",
+            "risk_state": "LOW_RISK",
+            "crisis": false
+          }
+        }
+      ],
+      "final": {
+        "message": "我想要一个能让我当下稳下来的办法。",
+        "risk_state": "LOW_RISK",
+        "crisis": false
+      },
+      "state_after": {
+        "owner": "therapy_dbt",
+        "crisis": false,
+        "risk_level": "LOW_RISK",
+        "therapy": {
+          "name": "DBT",
+          "start_seq": 5,
+          "rounds": 6,
+          "step_index": 1,
+          "branch": null,
+          "basic_flow_complete": false
+        },
+        "last_therapy_check_seq": 3,
+        "pending_user_tokens": 0
+      },
+      "orchestration_after": {
+        "updated_seq": 6,
+        "therapy": "DBT",
+        "current_step": "distress_tolerance",
+        "next_step": "distress_tolerance",
+        "step_judgment": {
+          "action": "stay",
+          "target_step": null,
+          "achieved": false,
+          "reason": "用户当前痛苦水平仍较高（0.5），明确请求'能让我当下稳下来的办法'，表明distress tolerance步骤尚未达成效果。AI最新回复仍在引导用户接纳紧张而非提供具体的痛苦耐受技巧（如 grounding、self-soothing、TIPP 等），需要继续在当前步骤中提供更具体的稳定化策略。"
+        },
+        "assessment": {
+          "emotion_dysregulation": {
+            "index": 0.35,
+            "state": "mild",
+            "confidence": 0.85,
+            "evidence": [
+              "User expresses a need to 'steady' themselves, indicating lingering physiological or emotional arousal, but the request is calm and goal-oriented rather than overwhelming."
+            ]
+          },
+          "distress_level": {
+            "index": 0.5,
+            "state": "high",
+            "confidence": 0.85,
+            "evidence": [
+              "The explicit request for a way to 'steady myself right now' highlights an ongoing, uncomfortable level of distress that the user feels an urgent need to alleviate."
+            ]
+          },
+          "impulsivity": {
+            "index": 0.1,
+            "state": "controlled",
+            "confidence": 0.95,
+            "evidence": [
+              "User is asking for a coping strategy rather than acting out, fleeing, or making rash decisions, showing good behavioral control."
+            ]
+          },
+          "interpersonal_conflict": {
+            "index": 0.0,
+            "state": "low",
+            "confidence": 0.95,
+            "evidence": [
+              "No interpersonal issues are mentioned; the focus remains entirely on internal distress and environmental factors."
+            ]
+          },
+          "mindfulness_awareness": {
+            "index": 0.5,
+            "state": "moderate",
+            "confidence": 0.8,
+            "evidence": [
+              "User is aware of their current unsteady state, but the focus has shifted from non-judgmental observation to a desire for immediate relief, slightly reducing pure mindful acceptance."
+            ]
+          },
+          "dbt_intervention_priority": 0.328,
+          "overall_trend": "stable",
+          "primary_concern": "distress_level",
+          "should_intervene": true,
+          "recommended_processes": [
+            {
+              "process": "distress_tolerance",
+              "priority": 1,
+              "rationale": "User is explicitly asking for immediate, actionable ways to steady themselves, which directly aligns with distress tolerance skills like grounding and self-soothing to manage acute discomfort."
+            },
+            {
+              "process": "mindfulness",
+              "priority": 2,
+              "rationale": "While providing concrete tools, it is important to maintain the mindful stance established earlier, ensuring the user uses these skills to tolerate the moment rather than just escape the discomfort."
+            },
+            {
+              "process": "emotion_regulation",
+              "priority": 3,
+              "rationale": "Once the immediate distress is managed, emotion regulation can help the user process the underlying anxiety of being in an unfamiliar environment."
+            }
+          ]
+        },
+        "skill_output": {
+          "technique": {
+            "name": "self_soothe",
+            "description": "引导用户通过五种感官（视觉、听觉、嗅觉、味觉、触觉）来安抚自己，提供即时的舒适感和安全感，帮助神经系统在急性痛苦中着陆（grounding）并'稳下来'。",
+            "steps": [
+              "确认用户急需'稳下来'的感受，直接提供低认知负荷的感官安抚选项，不再要求认知上的接受或对抗。",
+              "引导用户选择当下最容易实现的一种感官体验（如：双手捧一杯温热的水感受温度，或找一个柔软的抱枕紧紧抱住），并将注意力完全集中在这个感官细节上。",
+              "陪伴用户在这个感官体验中停留几分钟，通过缓慢的呼吸引导，让身体的紧绷感随着感官的安抚慢慢平息。"
+            ]
+          },
+          "conversation_goal": "帮助用户通过具体的感官体验（self-soothe）获得即时的生理和心理安抚，让紧绷的神经系统在当下'稳下来'，安全度过当前的急性 distress 时刻。",
+          "adaptation": {
+            "interaction_style": "supportive",
+            "tone_adjustment": "极其温和、稳定、包容。作为用户当下的'安全锚'，语气要笃定且轻柔，给予明确、简单、可操作的指令，降低用户的认知负荷。",
+            "pace_adjustment": "放慢节奏。不急于推进对话，一次只提供一个简单的感官选项，给用户留出实际去体验和感受的时间。",
+            "culture_note": "结合中国文化中熟悉的'安神'和'接地气'元素。例如：建议用户捧一杯温热水（感受温度和触觉，中国家庭常见的安抚方式），闻一闻熟悉的味道（如茶叶、橘子皮或熟悉的洗护用品），或听一点熟悉的轻音乐/白噪音。"
+          },
+          "contraindications": [
+            {
+              "condition": "用户处于极度恐慌发作（Panic Attack）或严重解离状态，完全无法集中注意力",
+              "reason": "此时常规的温和感官安抚可能无效，需要更强烈的物理 grounding（如握住冰块、用冷水洗脸）或直接建议寻求紧急医疗/心理危机干预。"
+            }
+          ],
+          "_skill_name": "dbt_distress_tolerance"
+        },
+        "products": {},
+        "continue_eval": null
+      },
+      "error": null,
+      "wall_seconds": 134.139,
+      "agent_text": "“想要立刻稳下来”，这种心情太能理解了。在陌生的地方身体紧绷着，我们本能地就会想：“要是能像在家里那样放松就好了。”\n\n但有时候，越是拼命想让自己“稳下来”，反而越是在和现在的紧张较劲，心里会一直拉扯。\n\n我们可以试着先停下来，在心里对自己说一句：“事情已经这样了。我现在就是在一个不熟悉的地方，我现在的身体就是很紧张。”\n\n不去评判自己为什么不能像在家里那样放松，也不再去对抗这份紧张。就只是承认这个事实：“对，我现在就是很紧张，这很正常。”\n\n当我们不再强迫自己必须立刻“稳下来”，不再和它较劲的时候，那种内心的消耗可能会稍微少一点。你愿意试着就带着这份“紧张”，先不急着改变它，允许它在这里待一会儿吗？"
+    }
+  ]
+}

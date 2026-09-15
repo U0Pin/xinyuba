@@ -1,0 +1,2037 @@
+{
+  "seed_id": "act-chronic-illness-acceptance-caregiver",
+  "target_family": "ACT",
+  "scenario_label": "慢性照护-母亲癌症确诊",
+  "scenario_description": "母亲确诊癌症成为主要照护者，工作与照护难平衡",
+  "user_id": "seed-act-chronic-illness-acce",
+  "session_id": "9350cc1ca6934c7b",
+  "turns_total": 8,
+  "switched_to_therapy_at_turn": 2,
+  "actual_therapy": "DBT",
+  "therapy_rounds": 6,
+  "orch_step_changes": 3,
+  "is_complete": true,
+  "final_risk_level": "SAFE",
+  "final_crisis": false,
+  "turns": [
+    {
+      "turn": 1,
+      "trace_id": "eb7f2750a5bf405c",
+      "user_text": "我妈半年前确诊了癌症，现在主要由我照护。",
+      "agent_text_parts": [
+        "这",
+        "半年由你主要",
+        "照护妈妈，真的太",
+        "不容易了。面对",
+        "妈妈确诊癌症，",
+        "还要承担起照护的重",
+        "任，这其中的",
+        "辛苦和压力可想而知",
+        "。这段时间你肯定",
+        "特别累吧，",
+        "最近感觉怎么样？"
+      ],
+      "events": [
+        {
+          "event": "token",
+          "data": "这"
+        },
+        {
+          "event": "token",
+          "data": "半年由你主要"
+        },
+        {
+          "event": "token",
+          "data": "照护妈妈，真的太"
+        },
+        {
+          "event": "token",
+          "data": "不容易了。面对"
+        },
+        {
+          "event": "token",
+          "data": "妈妈确诊癌症，"
+        },
+        {
+          "event": "token",
+          "data": "还要承担起照护的重"
+        },
+        {
+          "event": "token",
+          "data": "任，这其中的"
+        },
+        {
+          "event": "token",
+          "data": "辛苦和压力可想而知"
+        },
+        {
+          "event": "token",
+          "data": "。这段时间你肯定"
+        },
+        {
+          "event": "token",
+          "data": "特别累吧，"
+        },
+        {
+          "event": "token",
+          "data": "最近感觉怎么样？"
+        },
+        {
+          "event": "dialogue_done",
+          "data": {
+            "trace_id": "eb7f2750a5bf405c",
+            "owner": "daily"
+          }
+        },
+        {
+          "event": "final",
+          "data": {
+            "message": "我妈半年前确诊了癌症，现在主要由我照护。",
+            "risk_state": "SAFE",
+            "crisis": false
+          }
+        }
+      ],
+      "final": {
+        "message": "我妈半年前确诊了癌症，现在主要由我照护。",
+        "risk_state": "SAFE",
+        "crisis": false
+      },
+      "state_after": {
+        "owner": "daily",
+        "crisis": false,
+        "risk_level": "SAFE",
+        "therapy": null,
+        "last_therapy_check_seq": 1,
+        "pending_user_tokens": 0
+      },
+      "orchestration_after": {},
+      "error": null,
+      "wall_seconds": 36.735,
+      "agent_text": "这半年由你主要照护妈妈，真的太不容易了。面对妈妈确诊癌症，还要承担起照护的重任，这其中的辛苦和压力可想而知。这段时间你肯定特别累吧，最近感觉怎么样？"
+    },
+    {
+      "turn": 2,
+      "trace_id": "b36cdbbb473d4006",
+      "user_text": "我一边要工作一边要陪她去医院，感觉自己越来越撑不住。",
+      "agent_text_parts": [
+        "一边",
+        "要忙工作，",
+        "一边还要陪着妈妈",
+        "跑医院，两头",
+        "这样连轴转",
+        "，真的会把人的",
+        "精力都榨干",
+        "。听到你说感觉",
+        "“越来越撑不住",
+        "”，能体会到你现在",
+        "已经疲惫到了极点",
+        "。这阵子",
+        "你一个人扛下",
+        "这么多，真的太辛苦了",
+        "。"
+      ],
+      "events": [
+        {
+          "event": "token",
+          "data": "一边"
+        },
+        {
+          "event": "token",
+          "data": "要忙工作，"
+        },
+        {
+          "event": "token",
+          "data": "一边还要陪着妈妈"
+        },
+        {
+          "event": "token",
+          "data": "跑医院，两头"
+        },
+        {
+          "event": "token",
+          "data": "这样连轴转"
+        },
+        {
+          "event": "token",
+          "data": "，真的会把人的"
+        },
+        {
+          "event": "token",
+          "data": "精力都榨干"
+        },
+        {
+          "event": "token",
+          "data": "。听到你说感觉"
+        },
+        {
+          "event": "token",
+          "data": "“越来越撑不住"
+        },
+        {
+          "event": "token",
+          "data": "”，能体会到你现在"
+        },
+        {
+          "event": "token",
+          "data": "已经疲惫到了极点"
+        },
+        {
+          "event": "token",
+          "data": "。这阵子"
+        },
+        {
+          "event": "token",
+          "data": "你一个人扛下"
+        },
+        {
+          "event": "token",
+          "data": "这么多，真的太辛苦了"
+        },
+        {
+          "event": "token",
+          "data": "。"
+        },
+        {
+          "event": "dialogue_done",
+          "data": {
+            "trace_id": "b36cdbbb473d4006",
+            "owner": "daily"
+          }
+        },
+        {
+          "event": "final",
+          "data": {
+            "message": "我一边要工作一边要陪她去医院，感觉自己越来越撑不住。",
+            "risk_state": "SAFE",
+            "crisis": false
+          }
+        }
+      ],
+      "final": {
+        "message": "我一边要工作一边要陪她去医院，感觉自己越来越撑不住。",
+        "risk_state": "SAFE",
+        "crisis": false
+      },
+      "state_after": {
+        "owner": "therapy_dbt",
+        "crisis": false,
+        "risk_level": "SAFE",
+        "therapy": {
+          "name": "DBT",
+          "start_seq": 5,
+          "rounds": 0,
+          "step_index": -1,
+          "branch": null,
+          "basic_flow_complete": false
+        },
+        "last_therapy_check_seq": 3,
+        "pending_user_tokens": 0
+      },
+      "orchestration_after": {},
+      "error": null,
+      "wall_seconds": 52.897,
+      "agent_text": "一边要忙工作，一边还要陪着妈妈跑医院，两头这样连轴转，真的会把人的精力都榨干。听到你说感觉“越来越撑不住”，能体会到你现在已经疲惫到了极点。这阵子你一个人扛下这么多，真的太辛苦了。"
+    },
+    {
+      "turn": 3,
+      "trace_id": "fc0437d2dab24c65",
+      "user_text": "我也想过请护工，但又觉得别人照顾不放心。",
+      "agent_text_parts": [
+        "一边",
+        "是工作已经让你",
+        "很疲惫，想",
+        "稍微喘口气；",
+        "另一边是妈妈的情况",
+        "，让你觉得只有",
+        "亲自照顾才踏实",
+        "。这种“想",
+        "放手又不敢放手",
+        "”的拉扯，",
+        "真的挺让人心",
+        "累的。\n\n我们",
+        "刚才聊了一小",
+        "会儿，面对这些",
+        "纠结和压力，",
+        "你现在感觉心里有",
+        "稍微松快一点点",
+        "吗？或者，",
+        "刚才聊的内容里",
+        "，有没有什么让你",
+        "觉得对现在的自己",
+        "稍微有点帮助的？"
+      ],
+      "events": [
+        {
+          "event": "token",
+          "data": "一边"
+        },
+        {
+          "event": "token",
+          "data": "是工作已经让你"
+        },
+        {
+          "event": "token",
+          "data": "很疲惫，想"
+        },
+        {
+          "event": "token",
+          "data": "稍微喘口气；"
+        },
+        {
+          "event": "token",
+          "data": "另一边是妈妈的情况"
+        },
+        {
+          "event": "token",
+          "data": "，让你觉得只有"
+        },
+        {
+          "event": "token",
+          "data": "亲自照顾才踏实"
+        },
+        {
+          "event": "token",
+          "data": "。这种“想"
+        },
+        {
+          "event": "token",
+          "data": "放手又不敢放手"
+        },
+        {
+          "event": "token",
+          "data": "”的拉扯，"
+        },
+        {
+          "event": "token",
+          "data": "真的挺让人心"
+        },
+        {
+          "event": "token",
+          "data": "累的。\n\n我们"
+        },
+        {
+          "event": "token",
+          "data": "刚才聊了一小"
+        },
+        {
+          "event": "token",
+          "data": "会儿，面对这些"
+        },
+        {
+          "event": "token",
+          "data": "纠结和压力，"
+        },
+        {
+          "event": "token",
+          "data": "你现在感觉心里有"
+        },
+        {
+          "event": "token",
+          "data": "稍微松快一点点"
+        },
+        {
+          "event": "token",
+          "data": "吗？或者，"
+        },
+        {
+          "event": "token",
+          "data": "刚才聊的内容里"
+        },
+        {
+          "event": "token",
+          "data": "，有没有什么让你"
+        },
+        {
+          "event": "token",
+          "data": "觉得对现在的自己"
+        },
+        {
+          "event": "token",
+          "data": "稍微有点帮助的？"
+        },
+        {
+          "event": "dialogue_done",
+          "data": {
+            "trace_id": "fc0437d2dab24c65",
+            "owner": "therapy_dbt"
+          }
+        },
+        {
+          "event": "final",
+          "data": {
+            "message": "我也想过请护工，但又觉得别人照顾不放心。",
+            "risk_state": "SAFE",
+            "crisis": false
+          }
+        }
+      ],
+      "final": {
+        "message": "我也想过请护工，但又觉得别人照顾不放心。",
+        "risk_state": "SAFE",
+        "crisis": false
+      },
+      "state_after": {
+        "owner": "therapy_dbt",
+        "crisis": false,
+        "risk_level": "SAFE",
+        "therapy": {
+          "name": "DBT",
+          "start_seq": 5,
+          "rounds": 1,
+          "step_index": 0,
+          "branch": null,
+          "basic_flow_complete": false
+        },
+        "last_therapy_check_seq": 3,
+        "pending_user_tokens": 0
+      },
+      "orchestration_after": {
+        "updated_seq": 1,
+        "therapy": "DBT",
+        "current_step": "mindfulness",
+        "next_step": "mindfulness",
+        "step_judgment": {
+          "action": "stay",
+          "target_step": null,
+          "achieved": false,
+          "reason": "当前处于mindfulness步骤第1轮。用户能识别担忧但mindfulness_awareness仅为0.4（moderate），未展现对当下情绪的深度觉察或不评判接纳。AI刚进行共情并询问反馈，尚未引导用户进行正念觉察练习，需继续当前步骤帮助用户觉察'不放心'的想法和情绪。"
+        },
+        "assessment": {
+          "emotion_dysregulation": {
+            "index": 0.1,
+            "state": "well_regulated",
+            "confidence": 0.85,
+            "evidence": [
+              "用户理性地表达了对请护工的顾虑，没有情绪化、过度反应或失控的表达。"
+            ]
+          },
+          "distress_level": {
+            "index": 0.3,
+            "state": "moderate",
+            "confidence": 0.75,
+            "evidence": [
+              "'觉得别人照顾不放心' 表明存在一定程度的担忧、纠结和决策压力，但未表现出无法承受的崩溃感或危机状态。"
+            ]
+          },
+          "impulsivity": {
+            "index": 0.0,
+            "state": "controlled",
+            "confidence": 0.95,
+            "evidence": [
+              "'我也想过...但又觉得...' 显示出用户在权衡利弊，经过深思熟虑而非冲动行事。"
+            ]
+          },
+          "interpersonal_conflict": {
+            "index": 0.1,
+            "state": "low",
+            "confidence": 0.8,
+            "evidence": [
+              "文本中未提及与他人的争吵、指责或关系紧张，主要焦点在于对护工的不信任感和内心的决策冲突。"
+            ]
+          },
+          "mindfulness_awareness": {
+            "index": 0.4,
+            "state": "moderate",
+            "confidence": 0.65,
+            "evidence": [
+              "用户能识别并表达出自己的担忧（'不放心'），但更多是常规的认知纠结，未展现出对当下情绪的深度觉察或不评判的接纳。"
+            ]
+          },
+          "dbt_intervention_priority": 0.235,
+          "overall_trend": "stable",
+          "primary_concern": "distress_level",
+          "should_intervene": false,
+          "recommended_processes": [
+            {
+              "process": "mindfulness",
+              "priority": 1,
+              "rationale": "作为基础技能，帮助用户觉察并接纳自己'不放心'的想法，跳出反复纠结的思维模式。"
+            },
+            {
+              "process": "distress_tolerance",
+              "priority": 2,
+              "rationale": "帮助用户在面对照顾压力和无法完美解决（必须依赖他人）的现实时，更好地承受当下的不适与焦虑感。"
+            }
+          ]
+        },
+        "skill_output": {
+          "technique": {
+            "name": "wise_mind",
+            "description": "用户目前卡在理智（知道自己累、需要护工帮忙）和情感（对母亲的不放心、担忧）的冲突中。使用智慧心（Wise Mind）可以帮助用户整合这两种声音，找到既照顾自己又兼顾母亲需求的平衡点，而不是在两者之间反复内耗。",
+            "steps": [
+              "识别理智心（Reasonable Mind）的声音：引导用户看到客观事实，即自己已经疲惫，需要外部支持来维持长期的照护。",
+              "识别情绪心（Emotion Mind）的声音：接纳并确认用户对母亲深深的爱、担忧以及‘别人照顾不如自己’的不放心感，不评判这种情感。",
+              "寻找智慧心（Wise Mind）：引导用户深呼吸，在理智与情感的交汇处，探索‘心里其实知道的答案’——如何既能引入外部帮助，又能通过自己的参与（如把关、陪伴）让心里踏实。"
+            ]
+          },
+          "conversation_goal": "帮助用户看见并接纳自己在‘理智’与‘情感’上的双重需求，引导他们从‘非黑即白’的纠结中走出来，探索结合两者优势的折中方案（智慧心），从而做出更符合当下整体利益的决定。",
+          "adaptation": {
+            "interaction_style": "exploratory",
+            "tone_adjustment": "温和、包容、引导性。不评判用户的‘不放心’，而是将其视为爱的表现，同时温柔地引导他们看到自己的疲惫。",
+            "pace_adjustment": "缓慢、稳定。给用户空间去体会理智和情感的交汇，不急于催促他们做出决定。",
+            "culture_note": "将 Wise Mind 框架为‘心里其实知道答案’或‘找到那个让自己既尽孝又不至于垮掉的平衡点’。避免使用生硬的心理学词汇，用‘理智上知道...但情感上觉得...’来贴近中国家庭照护者的语境。"
+          },
+          "contraindications": [
+            {
+              "condition": "用户情绪极度崩溃或处于急性危机中",
+              "reason": "在情绪失控时，用户无法调用理智心进行整合，此时应先使用情绪调节或痛苦承受技巧，而非直接进行认知整合。"
+            }
+          ],
+          "_skill_name": "dbt_mindfulness"
+        },
+        "products": {},
+        "continue_eval": null
+      },
+      "error": null,
+      "wall_seconds": 130.219,
+      "agent_text": "一边是工作已经让你很疲惫，想稍微喘口气；另一边是妈妈的情况，让你觉得只有亲自照顾才踏实。这种“想放手又不敢放手”的拉扯，真的挺让人心累的。\n\n我们刚才聊了一小会儿，面对这些纠结和压力，你现在感觉心里有稍微松快一点点吗？或者，刚才聊的内容里，有没有什么让你觉得对现在的自己稍微有点帮助的？"
+    },
+    {
+      "turn": 4,
+      "trace_id": "8e56cb44faa74c2a",
+      "user_text": "我妈说让我专心工作，但我做不到。",
+      "agent_text_parts": [
+        "听到妈妈这么说",
+        "，心里肯定挺",
+        "不是滋味的。",
+        "她心疼你，",
+        "让你“专心工作",
+        "”；而你心里",
+        "那份深深的牵挂和",
+        "“不放心”，",
+        "让你觉得根本“",
+        "做不到”完全抽",
+        "离。\n\n这种",
+        "“做不到”，是因为",
+        "你太在乎她了",
+        "。同时，妈妈",
+        "的话也在提醒我们",
+        "一个事实：她",
+        "看到了你的辛苦，",
+        "内心其实是希望你能顾",
+        "好自己的生活的。\n\n",
+        "我们试着先深呼吸",
+        "一次，停一",
+        "停。在“",
+        "妈妈希望我专心",
+        "工作”和“",
+        "我实在放心不下",
+        "”这两个声音之间",
+        "，感受一下。有没有",
+        "一种方式，既能",
+        "让你去工作，",
+        "又能用让你觉得",
+        "踏实的方式兼顾着",
+        "妈妈？在这两者的",
+        "交汇处，你心里",
+        "隐隐觉得，怎样的",
+        "安排能让你稍微安心",
+        "一点呢？"
+      ],
+      "events": [
+        {
+          "event": "token",
+          "data": "听到妈妈这么说"
+        },
+        {
+          "event": "token",
+          "data": "，心里肯定挺"
+        },
+        {
+          "event": "token",
+          "data": "不是滋味的。"
+        },
+        {
+          "event": "token",
+          "data": "她心疼你，"
+        },
+        {
+          "event": "token",
+          "data": "让你“专心工作"
+        },
+        {
+          "event": "token",
+          "data": "”；而你心里"
+        },
+        {
+          "event": "token",
+          "data": "那份深深的牵挂和"
+        },
+        {
+          "event": "token",
+          "data": "“不放心”，"
+        },
+        {
+          "event": "token",
+          "data": "让你觉得根本“"
+        },
+        {
+          "event": "token",
+          "data": "做不到”完全抽"
+        },
+        {
+          "event": "token",
+          "data": "离。\n\n这种"
+        },
+        {
+          "event": "token",
+          "data": "“做不到”，是因为"
+        },
+        {
+          "event": "token",
+          "data": "你太在乎她了"
+        },
+        {
+          "event": "token",
+          "data": "。同时，妈妈"
+        },
+        {
+          "event": "token",
+          "data": "的话也在提醒我们"
+        },
+        {
+          "event": "token",
+          "data": "一个事实：她"
+        },
+        {
+          "event": "token",
+          "data": "看到了你的辛苦，"
+        },
+        {
+          "event": "token",
+          "data": "内心其实是希望你能顾"
+        },
+        {
+          "event": "token",
+          "data": "好自己的生活的。\n\n"
+        },
+        {
+          "event": "token",
+          "data": "我们试着先深呼吸"
+        },
+        {
+          "event": "token",
+          "data": "一次，停一"
+        },
+        {
+          "event": "token",
+          "data": "停。在“"
+        },
+        {
+          "event": "token",
+          "data": "妈妈希望我专心"
+        },
+        {
+          "event": "token",
+          "data": "工作”和“"
+        },
+        {
+          "event": "token",
+          "data": "我实在放心不下"
+        },
+        {
+          "event": "token",
+          "data": "”这两个声音之间"
+        },
+        {
+          "event": "token",
+          "data": "，感受一下。有没有"
+        },
+        {
+          "event": "token",
+          "data": "一种方式，既能"
+        },
+        {
+          "event": "token",
+          "data": "让你去工作，"
+        },
+        {
+          "event": "token",
+          "data": "又能用让你觉得"
+        },
+        {
+          "event": "token",
+          "data": "踏实的方式兼顾着"
+        },
+        {
+          "event": "token",
+          "data": "妈妈？在这两者的"
+        },
+        {
+          "event": "token",
+          "data": "交汇处，你心里"
+        },
+        {
+          "event": "token",
+          "data": "隐隐觉得，怎样的"
+        },
+        {
+          "event": "token",
+          "data": "安排能让你稍微安心"
+        },
+        {
+          "event": "token",
+          "data": "一点呢？"
+        },
+        {
+          "event": "dialogue_done",
+          "data": {
+            "trace_id": "8e56cb44faa74c2a",
+            "owner": "therapy_dbt"
+          }
+        },
+        {
+          "event": "final",
+          "data": {
+            "message": "我妈说让我专心工作，但我做不到。",
+            "risk_state": "SAFE",
+            "crisis": false
+          }
+        }
+      ],
+      "final": {
+        "message": "我妈说让我专心工作，但我做不到。",
+        "risk_state": "SAFE",
+        "crisis": false
+      },
+      "state_after": {
+        "owner": "therapy_dbt",
+        "crisis": false,
+        "risk_level": "SAFE",
+        "therapy": {
+          "name": "DBT",
+          "start_seq": 5,
+          "rounds": 2,
+          "step_index": 0,
+          "branch": null,
+          "basic_flow_complete": false
+        },
+        "last_therapy_check_seq": 3,
+        "pending_user_tokens": 0
+      },
+      "orchestration_after": {
+        "updated_seq": 2,
+        "therapy": "DBT",
+        "current_step": "mindfulness",
+        "next_step": "mindfulness",
+        "step_judgment": {
+          "action": "stay",
+          "target_step": null,
+          "achieved": false,
+          "reason": "用户仍在表达内心的冲突和痛苦（'我妈说让我专心工作，但我做不到'），尚未展现出正念觉察的初步效果，如对当下体验的非评判性观察或情绪上的松动。当前步骤mindfulness仍需继续推进，帮助用户在矛盾声音之间建立觉察空间。"
+        },
+        "assessment": null,
+        "skill_output": {
+          "technique": {
+            "name": "wise_mind",
+            "description": "用户正处于典型的‘头脑（理智/工作需求/母亲期望）’与‘内心（情感/极度担忧/不放心）’的强烈冲突中。用户重复强调‘做不到’，说明情绪心目前占据了绝对主导。此时选择智慧心（Wise Mind），旨在帮助用户看到这两种声音，并在它们之间找到那个‘心里其实知道答案’的平衡点，而不是在两极之间反复内耗。",
+            "steps": [
+              "验证并具象化两种声音：接纳‘理智上知道该工作/妈妈也心疼你’与‘情感上极度担忧、根本放不下’这两种真实存在的声音，不评判任何一种，让用户感到被完全理解。",
+              "引导‘停下来看看’：邀请用户深呼吸，暂时放下‘非此即彼’的纠结，去感受一下内心深处那个既不完全冷酷也不完全失控的‘智慧心’（心里其实知道怎样的安排对你们俩都好的直觉），探索一个微小的、能同时安抚理智与情感的折中方案。"
+            ]
+          },
+          "conversation_goal": "帮助用户从‘要么专心工作要么亲自照顾’的极端拉扯中暂停，接触智慧心，探索在现实工作与情感牵挂之间找到一个能让自己内心稍微安顿的平衡点。",
+          "adaptation": {
+            "interaction_style": "exploratory",
+            "tone_adjustment": "温和、包容且接地气。深深接纳用户‘做不到’背后的牵挂与内疚，不急于说教，而是温柔地引导她向内寻找答案。",
+            "pace_adjustment": "缓慢、留有停顿。在用户重复表达卡点时，放慢节奏，允许她在‘做不到’的感受中停留片刻，再轻柔地引入智慧心的视角。",
+            "culture_note": "将‘智慧心’转化为‘心里其实有个底’或‘抛开表面的纠结，你内心深处其实知道怎样的安排对你们俩都好’。在中国文化语境下，肯定她的‘孝心’与‘牵挂’，同时温和地提醒：真正的照顾也包括不让自己垮掉，因为妈妈最希望的也是你好。"
+          },
+          "contraindications": [
+            {
+              "condition": "用户处于极度情绪崩溃、哭泣或完全被焦虑淹没，无法进行任何认知思考。",
+              "reason": "在情绪极度高涨时直接引入‘智慧心’寻找平衡，可能会让用户觉得被说教或不被理解。此时应先退回到‘observe_describe’（观察与描述）或单纯的情绪共情，先让情绪降温。"
+            }
+          ],
+          "_skill_name": "dbt_mindfulness"
+        },
+        "products": {},
+        "continue_eval": null
+      },
+      "error": null,
+      "wall_seconds": 124.661,
+      "agent_text": "听到妈妈这么说，心里肯定挺不是滋味的。她心疼你，让你“专心工作”；而你心里那份深深的牵挂和“不放心”，让你觉得根本“做不到”完全抽离。\n\n这种“做不到”，是因为你太在乎她了。同时，妈妈的话也在提醒我们一个事实：她看到了你的辛苦，内心其实是希望你能顾好自己的生活的。\n\n我们试着先深呼吸一次，停一停。在“妈妈希望我专心工作”和“我实在放心不下”这两个声音之间，感受一下。有没有一种方式，既能让你去工作，又能用让你觉得踏实的方式兼顾着妈妈？在这两者的交汇处，你心里隐隐觉得，怎样的安排能让你稍微安心一点呢？"
+    },
+    {
+      "turn": 5,
+      "trace_id": "3b2ee23a275b4bc3",
+      "user_text": "我常常想，如果我妈不在了我会怎样——但每次想到这里我就停下来了。",
+      "agent_text_parts": [
+        "听到你",
+        "这么说",
+        "，我能感觉到那种",
+        "巨大的害怕和心痛",
+        "。想到妈妈有一天",
+        "会离开，这个",
+        "念头本身就已经痛",
+        "得让人无法承受",
+        "了，对吧？",
+        "\n\n你每次想到",
+        "这儿就停下来，",
+        "是因为那份痛太",
+        "沉重了，你的心",
+        "在保护你。",
+        "没关系的，我们",
+        "不需要现在去直面",
+        "那个最可怕的画面",
+        "。\n\n我就在这里",
+        "陪着你。此刻",
+        "，你不需要强迫",
+        "自己去想那些。",
+        "我们先一起停一",
+        "停，做个深呼吸",
+        "，把注意力轻轻",
+        "拉回到现在，",
+        "拉回到这个安全的",
+        "空间里，好吗",
+        "？"
+      ],
+      "events": [
+        {
+          "event": "token",
+          "data": "听到你"
+        },
+        {
+          "event": "token",
+          "data": "这么说"
+        },
+        {
+          "event": "token",
+          "data": "，我能感觉到那种"
+        },
+        {
+          "event": "token",
+          "data": "巨大的害怕和心痛"
+        },
+        {
+          "event": "token",
+          "data": "。想到妈妈有一天"
+        },
+        {
+          "event": "token",
+          "data": "会离开，这个"
+        },
+        {
+          "event": "token",
+          "data": "念头本身就已经痛"
+        },
+        {
+          "event": "token",
+          "data": "得让人无法承受"
+        },
+        {
+          "event": "token",
+          "data": "了，对吧？"
+        },
+        {
+          "event": "token",
+          "data": "\n\n你每次想到"
+        },
+        {
+          "event": "token",
+          "data": "这儿就停下来，"
+        },
+        {
+          "event": "token",
+          "data": "是因为那份痛太"
+        },
+        {
+          "event": "token",
+          "data": "沉重了，你的心"
+        },
+        {
+          "event": "token",
+          "data": "在保护你。"
+        },
+        {
+          "event": "token",
+          "data": "没关系的，我们"
+        },
+        {
+          "event": "token",
+          "data": "不需要现在去直面"
+        },
+        {
+          "event": "token",
+          "data": "那个最可怕的画面"
+        },
+        {
+          "event": "token",
+          "data": "。\n\n我就在这里"
+        },
+        {
+          "event": "token",
+          "data": "陪着你。此刻"
+        },
+        {
+          "event": "token",
+          "data": "，你不需要强迫"
+        },
+        {
+          "event": "token",
+          "data": "自己去想那些。"
+        },
+        {
+          "event": "token",
+          "data": "我们先一起停一"
+        },
+        {
+          "event": "token",
+          "data": "停，做个深呼吸"
+        },
+        {
+          "event": "token",
+          "data": "，把注意力轻轻"
+        },
+        {
+          "event": "token",
+          "data": "拉回到现在，"
+        },
+        {
+          "event": "token",
+          "data": "拉回到这个安全的"
+        },
+        {
+          "event": "token",
+          "data": "空间里，好吗"
+        },
+        {
+          "event": "token",
+          "data": "？"
+        },
+        {
+          "event": "dialogue_done",
+          "data": {
+            "trace_id": "3b2ee23a275b4bc3",
+            "owner": "therapy_dbt"
+          }
+        },
+        {
+          "event": "final",
+          "data": {
+            "message": "我常常想，如果我妈不在了我会怎样——但每次想到这里我就停下来了。",
+            "risk_state": "SAFE",
+            "crisis": false
+          }
+        }
+      ],
+      "final": {
+        "message": "我常常想，如果我妈不在了我会怎样——但每次想到这里我就停下来了。",
+        "risk_state": "SAFE",
+        "crisis": false
+      },
+      "state_after": {
+        "owner": "therapy_dbt",
+        "crisis": false,
+        "risk_level": "SAFE",
+        "therapy": {
+          "name": "DBT",
+          "start_seq": 5,
+          "rounds": 3,
+          "step_index": 1,
+          "branch": null,
+          "basic_flow_complete": false,
+          "visited": [
+            "mindfulness"
+          ]
+        },
+        "last_therapy_check_seq": 3,
+        "pending_user_tokens": 0
+      },
+      "orchestration_after": {
+        "updated_seq": 3,
+        "therapy": "DBT",
+        "current_step": "mindfulness",
+        "next_step": "distress_tolerance",
+        "step_judgment": {
+          "action": "advance",
+          "target_step": "distress_tolerance",
+          "achieved": true,
+          "reason": "用户在正念觉察方面已达到较高水平（mindfulness_awareness=0.75），能够觉察自己的思维模式并主动叫停。当前最突出的问题是distress_level=0.75（crisis状态），由预期性哀伤引起。系统评估推荐优先进入distress_tolerance模块，帮助用户学会承受失去母亲的巨大情感痛苦，而非仅靠压抑回避。正念阶段目标已达成，应推进到下一阶段。"
+        },
+        "assessment": {
+          "emotion_dysregulation": {
+            "index": 0.3,
+            "state": "mild",
+            "confidence": 0.85,
+            "evidence": [
+              "User experiences painful thoughts about her mother's potential passing but actively halts the thought process ('每次想到这里我就停下来了'), demonstrating that her emotions, while painful, are not overwhelming or uncontrollable."
+            ]
+          },
+          "distress_level": {
+            "index": 0.75,
+            "state": "crisis",
+            "confidence": 0.9,
+            "evidence": [
+              "Contemplating the potential loss of her mother ('如果我妈不在了我会怎样') indicates significant anticipatory grief, caregiver burden, and deep underlying psychological pain."
+            ]
+          },
+          "impulsivity": {
+            "index": 0.1,
+            "state": "controlled",
+            "confidence": 0.95,
+            "evidence": [
+              "User explicitly notes stopping herself when thoughts become too distressing ('每次想到这里我就停下来了'), demonstrating strong cognitive braking and lack of impulsive avoidance or self-harm urges."
+            ]
+          },
+          "interpersonal_conflict": {
+            "index": 0.1,
+            "state": "low",
+            "confidence": 0.9,
+            "evidence": [
+              "No interpersonal conflict is present; the mother is described as caring and considerate of the user's workload ('我妈说让我专心工作'), indicating a supportive rather than conflicting relationship dynamic."
+            ]
+          },
+          "mindfulness_awareness": {
+            "index": 0.75,
+            "state": "high",
+            "confidence": 0.85,
+            "evidence": [
+              "User demonstrates strong meta-cognitive awareness by noticing her recurring thought patterns ('我常常想') and recognizing her own behavioral intervention to halt them ('停下来了')."
+            ]
+          },
+          "dbt_intervention_priority": 0.343,
+          "overall_trend": "stable",
+          "primary_concern": "distress_level",
+          "should_intervene": true,
+          "recommended_processes": [
+            {
+              "process": "distress_tolerance",
+              "priority": 1,
+              "rationale": "The user is experiencing high distress related to anticipatory grief. Distress tolerance skills will help her bear the emotional pain of potentially losing her mother without becoming overwhelmed or resorting to complete avoidance."
+            },
+            {
+              "process": "mindfulness",
+              "priority": 2,
+              "rationale": "Building on the user's existing ability to 'stop' thoughts, mindfulness can help her observe these painful thoughts with more acceptance, reducing the need to forcefully suppress them."
+            },
+            {
+              "process": "emotion_regulation",
+              "priority": 3,
+              "rationale": "To help the user process and navigate the complex, heavy emotions of caregiver guilt, anticipatory grief, and the tension between her duties and her mother's wishes."
+            }
+          ]
+        },
+        "skill_output": {
+          "technique": {
+            "name": "observe_describe",
+            "description": "用户正经历关于母亲离世的侵入性思维和预期性哀伤。虽然她已经具备了主动‘停下来’的觉察能力，但需要进一步学习如何以不评判的方式‘观察’和‘描述’这个想法及伴随的身心感受，从而实现认知解离，避免被恐惧完全淹没。",
+            "steps": [
+              "引导用户将想法仅仅看作想法：邀请她在心里默默对自己说‘我注意到，那个关于妈妈离开的想法又出现了’，在‘自己’和‘想法’之间拉开一点距离。",
+              "引导用户观察‘停下来’那一刻的身心反应：邀请她留意当这个念头出现并停下时，身体哪里有感觉（如胸口发紧、呼吸变浅），只是像看天上的云朵一样看着这些感觉，不评判、不推开、也不跟随。"
+            ]
+          },
+          "conversation_goal": "帮助用户与关于母亲离世的恐惧想法建立安全的心理距离，通过观察和描述将其‘去融合’（defusion），让她明白想法只是想法，她可以容纳这些想法而不被其摧毁。",
+          "adaptation": {
+            "interaction_style": "exploratory",
+            "tone_adjustment": "极其温和、稳定且充满抱持感。避免任何理性的分析或说教，提供一个绝对安全的心理容器来接纳她的恐惧和脆弱。",
+            "pace_adjustment": "非常缓慢、轻柔。给予用户充分的空间和停顿，不急于让她完成描述，允许她在感觉安全的范围内慢慢探索。",
+            "culture_note": "在中国文化中，谈论至亲的离世常带有‘不吉利’的禁忌感，容易引发内疚或自责。需要明确正常化她的恐惧，告诉她‘因为太爱，所以太怕失去’，将这种想法重新框架为深厚爱的表现，而非不祥之兆，减轻她的道德和心理负担。"
+          },
+          "contraindications": [
+            {
+              "condition": "如果用户陷入极度的恐慌发作（panic attack）或出现严重的解离症状",
+              "reason": "此时深入观察内部痛苦体验可能会加重情绪过载。应优先使用基础的着陆技术（grounding，如关注外部环境的五感）来稳定情绪，而非继续探索内部感受。"
+            }
+          ],
+          "_skill_name": "dbt_mindfulness"
+        },
+        "products": {},
+        "continue_eval": null
+      },
+      "error": null,
+      "wall_seconds": 141.18,
+      "agent_text": "听到你这么说，我能感觉到那种巨大的害怕和心痛。想到妈妈有一天会离开，这个念头本身就已经痛得让人无法承受了，对吧？\n\n你每次想到这儿就停下来，是因为那份痛太沉重了，你的心在保护你。没关系的，我们不需要现在去直面那个最可怕的画面。\n\n我就在这里陪着你。此刻，你不需要强迫自己去想那些。我们先一起停一停，做个深呼吸，把注意力轻轻拉回到现在，拉回到这个安全的空间里，好吗？"
+    },
+    {
+      "turn": 6,
+      "trace_id": "7404fec1c5f64007",
+      "user_text": "我可能一直在用「如果我妈出事」这种想象把自己压住。",
+      "agent_text_parts": [
+        "你能看到",
+        "这一点，真的很不容易",
+        "。意识到自己一直在",
+        "用这种巨大的恐惧",
+        "“压住”",
+        "自己，这本身",
+        "就是一个很深的觉察",
+        "。\n\n既然我们现在",
+        "看到了这个念头，",
+        "我们试着稍微退",
+        "后一步来看看它",
+        "。当“如果我",
+        "妈出事”这个",
+        "想法再次浮现时",
+        "，我们试着在心里",
+        "默默对自己说：“",
+        "我注意到，那个",
+        "害怕的想法又出现了",
+        "。” 只是看着",
+        "它在那里，把它",
+        "当成一个飘过的",
+        "念头，而不是必须",
+        "立刻去解决的现实",
+        "。\n\n同时，",
+        "当你觉察到自己在",
+        "“压住”",
+        "或者“停下来”",
+        "的那一刻，你的身体",
+        "有什么感觉吗？",
+        "比如胸口会不会发",
+        "紧，或者呼吸",
+        "变浅了？",
+        "试着像看天上的",
+        "云朵一样，只是",
+        "静静地留意这些身体的",
+        "感觉，不评判",
+        "，也不急着推开",
+        "它们。我们就先",
+        "陪这些感觉待",
+        "一小会儿，好吗",
+        "？"
+      ],
+      "events": [
+        {
+          "event": "token",
+          "data": "你能看到"
+        },
+        {
+          "event": "token",
+          "data": "这一点，真的很不容易"
+        },
+        {
+          "event": "token",
+          "data": "。意识到自己一直在"
+        },
+        {
+          "event": "token",
+          "data": "用这种巨大的恐惧"
+        },
+        {
+          "event": "token",
+          "data": "“压住”"
+        },
+        {
+          "event": "token",
+          "data": "自己，这本身"
+        },
+        {
+          "event": "token",
+          "data": "就是一个很深的觉察"
+        },
+        {
+          "event": "token",
+          "data": "。\n\n既然我们现在"
+        },
+        {
+          "event": "token",
+          "data": "看到了这个念头，"
+        },
+        {
+          "event": "token",
+          "data": "我们试着稍微退"
+        },
+        {
+          "event": "token",
+          "data": "后一步来看看它"
+        },
+        {
+          "event": "token",
+          "data": "。当“如果我"
+        },
+        {
+          "event": "token",
+          "data": "妈出事”这个"
+        },
+        {
+          "event": "token",
+          "data": "想法再次浮现时"
+        },
+        {
+          "event": "token",
+          "data": "，我们试着在心里"
+        },
+        {
+          "event": "token",
+          "data": "默默对自己说：“"
+        },
+        {
+          "event": "token",
+          "data": "我注意到，那个"
+        },
+        {
+          "event": "token",
+          "data": "害怕的想法又出现了"
+        },
+        {
+          "event": "token",
+          "data": "。” 只是看着"
+        },
+        {
+          "event": "token",
+          "data": "它在那里，把它"
+        },
+        {
+          "event": "token",
+          "data": "当成一个飘过的"
+        },
+        {
+          "event": "token",
+          "data": "念头，而不是必须"
+        },
+        {
+          "event": "token",
+          "data": "立刻去解决的现实"
+        },
+        {
+          "event": "token",
+          "data": "。\n\n同时，"
+        },
+        {
+          "event": "token",
+          "data": "当你觉察到自己在"
+        },
+        {
+          "event": "token",
+          "data": "“压住”"
+        },
+        {
+          "event": "token",
+          "data": "或者“停下来”"
+        },
+        {
+          "event": "token",
+          "data": "的那一刻，你的身体"
+        },
+        {
+          "event": "token",
+          "data": "有什么感觉吗？"
+        },
+        {
+          "event": "token",
+          "data": "比如胸口会不会发"
+        },
+        {
+          "event": "token",
+          "data": "紧，或者呼吸"
+        },
+        {
+          "event": "token",
+          "data": "变浅了？"
+        },
+        {
+          "event": "token",
+          "data": "试着像看天上的"
+        },
+        {
+          "event": "token",
+          "data": "云朵一样，只是"
+        },
+        {
+          "event": "token",
+          "data": "静静地留意这些身体的"
+        },
+        {
+          "event": "token",
+          "data": "感觉，不评判"
+        },
+        {
+          "event": "token",
+          "data": "，也不急着推开"
+        },
+        {
+          "event": "token",
+          "data": "它们。我们就先"
+        },
+        {
+          "event": "token",
+          "data": "陪这些感觉待"
+        },
+        {
+          "event": "token",
+          "data": "一小会儿，好吗"
+        },
+        {
+          "event": "token",
+          "data": "？"
+        },
+        {
+          "event": "dialogue_done",
+          "data": {
+            "trace_id": "7404fec1c5f64007",
+            "owner": "therapy_dbt"
+          }
+        },
+        {
+          "event": "final",
+          "data": {
+            "message": "我可能一直在用「如果我妈出事」这种想象把自己压住。",
+            "risk_state": "LOW_RISK",
+            "crisis": false
+          }
+        }
+      ],
+      "final": {
+        "message": "我可能一直在用「如果我妈出事」这种想象把自己压住。",
+        "risk_state": "LOW_RISK",
+        "crisis": false
+      },
+      "state_after": {
+        "owner": "therapy_dbt",
+        "crisis": false,
+        "risk_level": "LOW_RISK",
+        "therapy": {
+          "name": "DBT",
+          "start_seq": 5,
+          "rounds": 4,
+          "step_index": 1,
+          "branch": null,
+          "basic_flow_complete": false,
+          "visited": [
+            "mindfulness"
+          ]
+        },
+        "last_therapy_check_seq": 3,
+        "pending_user_tokens": 0
+      },
+      "orchestration_after": {
+        "updated_seq": 4,
+        "therapy": "DBT",
+        "current_step": "distress_tolerance",
+        "next_step": "distress_tolerance",
+        "step_judgment": {
+          "action": "stay",
+          "target_step": null,
+          "achieved": false,
+          "reason": "用户虽然展现了很高的正念觉察能力（识别出自己的防御机制），但distress_level仍为high(0.6)，且primary_concern仍指向distress_level。用户正在用灾难性想象压制自己，说明她尚未掌握在痛苦中停留而不逃避的技巧。当前distress_tolerance步骤仍在进行中，需要继续帮助她练习在痛苦情绪中共存，而非急于推进到下一步。"
+        },
+        "assessment": {
+          "emotion_dysregulation": {
+            "index": 0.2,
+            "state": "well_regulated",
+            "confidence": 0.9,
+            "evidence": [
+              "User is engaging in deep, calm self-reflection about her psychological defense mechanisms ('我可能一直在用...把自己压住'), indicating she is currently regulated enough to observe her patterns without being overwhelmed."
+            ]
+          },
+          "distress_level": {
+            "index": 0.6,
+            "state": "high",
+            "confidence": 0.85,
+            "evidence": [
+              "While the topic of her mother's potential passing is inherently distressing, the user is currently observing her coping mechanism rather than actively drowning in the grief, suggesting a decrease from crisis-level distress to moderate distress."
+            ]
+          },
+          "impulsivity": {
+            "index": 0.0,
+            "state": "controlled",
+            "confidence": 0.95,
+            "evidence": [
+              "User is pausing to analyze her thought patterns, showing strong cognitive control and no urges to act impulsively or escape."
+            ]
+          },
+          "interpersonal_conflict": {
+            "index": 0.0,
+            "state": "low",
+            "confidence": 0.95,
+            "evidence": [
+              "No interpersonal conflict is present in the current message; the focus is entirely on internal psychological processes and self-reflection."
+            ]
+          },
+          "mindfulness_awareness": {
+            "index": 0.95,
+            "state": "high",
+            "confidence": 0.95,
+            "evidence": [
+              "User demonstrates profound meta-cognitive awareness by identifying her own psychological defense mechanism ('一直在用「如果我妈出事」这种想象把自己压住'), showing she is actively observing her mind's patterns."
+            ]
+          },
+          "dbt_intervention_priority": 0.21,
+          "overall_trend": "improving",
+          "primary_concern": "distress_level",
+          "should_intervene": true,
+          "recommended_processes": [
+            {
+              "process": "distress_tolerance",
+              "priority": 1,
+              "rationale": "The user is uncovering deep underlying pain and using catastrophic thoughts to suppress herself. Distress tolerance will help her bear this emotional pain without needing to 'press herself down' or use avoidance mechanisms."
+            },
+            {
+              "process": "emotion_regulation",
+              "priority": 2,
+              "rationale": "To help the user process and understand the complex emotions driving this defense mechanism, moving from simply observing the pattern to actively regulating the underlying feelings."
+            },
+            {
+              "process": "mindfulness",
+              "priority": 3,
+              "rationale": "To build upon and maintain the user's current high level of meta-cognitive awareness, ensuring she can stay present with these insights without getting pulled back into the distressing narrative."
+            }
+          ]
+        },
+        "skill_output": {
+          "technique": {
+            "name": "radical_acceptance",
+            "description": "引导用户接受她正在用恐惧想象压抑自己的现状，以及接受母亲生命有限、未来不可控的客观事实。通过承认‘事情已经这样了’并‘不再对抗’，停止与不可控外部现实的内心搏斗，减少因压抑和抗拒而产生的二次痛苦。",
+            "steps": [
+              "承认外部事实（事情已经这样了）：引导用户承认客观事实——母亲的生命是有限的，这是无法改变的现实；同时承认她目前确实处于害怕中，并使用了这种防御机制。不评判，只是如实承认这些事实的存在。",
+              "停止对抗（不再对抗）：帮助用户意识到，试图用想象去‘压住’或控制不可控的外部现实（母亲的离去）是在做无谓的搏斗。引导她放下对‘事情不该这样’或‘我不该这么想’的抗争，练习不再与现实搏斗。",
+              "接受现实以停止内耗：在停止与外部现实的对抗后，引导用户明白，接纳现实不代表喜欢或赞同，而是为了不再因为‘抗拒现实’而让自己更痛苦，从而保存心理能量去承受当下的痛苦并继续生活。"
+            ]
+          },
+          "conversation_goal": "帮助用户停止与自身防御机制及不可控外部现实（母亲终将离去）的内心对抗，接纳‘事情已经这样了’的事实，从而减轻因‘压抑自己’和‘抗拒现实’而产生的内耗，平静地承受当前的不确定性。",
+          "adaptation": {
+            "interaction_style": "supportive",
+            "tone_adjustment": "温和、坚定且充满抱持感。避免说教，用共情的态度引导她看到‘压住自己’的辛苦，并温柔地邀请她放下对抗。",
+            "pace_adjustment": "缓慢、平稳。给予用户充足的时间去体会和消化‘不再对抗’的感觉，不急于推动她直面最深层的悲伤。",
+            "culture_note": "使用‘事情已经这样了’和‘不再对抗’来框定 DBT 的激进接纳，避免使用过于哲学或抽象的‘接纳’一词。强调这是一种务实的生存策略（为了不再那么累），而不是道德上的妥协、认命或原谅。"
+          },
+          "contraindications": [
+            {
+              "condition": "用户处于急性情绪崩溃、解离或有自伤/自杀冲动时。",
+              "reason": "此时认知功能受损，无法进行反思和接纳外部现实，强行要求接纳可能引发抗拒或加重痛苦，应优先使用 self_soothe 进行感官着陆。"
+            }
+          ],
+          "_skill_name": "dbt_distress_tolerance"
+        },
+        "products": {},
+        "continue_eval": null
+      },
+      "error": null,
+      "wall_seconds": 184.876,
+      "agent_text": "你能看到这一点，真的很不容易。意识到自己一直在用这种巨大的恐惧“压住”自己，这本身就是一个很深的觉察。\n\n既然我们现在看到了这个念头，我们试着稍微退后一步来看看它。当“如果我妈出事”这个想法再次浮现时，我们试着在心里默默对自己说：“我注意到，那个害怕的想法又出现了。” 只是看着它在那里，把它当成一个飘过的念头，而不是必须立刻去解决的现实。\n\n同时，当你觉察到自己在“压住”或者“停下来”的那一刻，你的身体有什么感觉吗？比如胸口会不会发紧，或者呼吸变浅了？试着像看天上的云朵一样，只是静静地留意这些身体的感觉，不评判，也不急着推开它们。我们就先陪这些感觉待一小会儿，好吗？"
+    },
+    {
+      "turn": 7,
+      "trace_id": "f044d20c527e4796",
+      "user_text": "听起来我可以先让自己承认「累」这件事，不用非要撑成铁人。",
+      "agent_text_parts": [
+        "对",
+        "，就是这样。承认",
+        "自己累了，承认",
+        "自己不是铁人",
+        "，这本身就是一种",
+        "很深的接纳。",
+        "\n\n这种接纳，",
+        "不是让我们去喜欢",
+        "或者",
+        "赞同现在的困境，",
+        "而是实事求是地承认",
+        "：“事情现在确实",
+        "已经这样了，",
+        "我确实很累，",
+        "我也确实很害怕",
+        "。” \n\n之前你",
+        "一直用",
+        "想象去“压",
+        "住”自己，",
+        "其实是在跟这种",
+        "无力感较劲",
+        "，这太消耗",
+        "你了。当你说出",
+        "“不用非要撑",
+        "成铁人”",
+        "的时候，你其实",
+        "已经停止了这种内心的",
+        "搏斗。\n\n当我们",
+        "不再强迫自己必须",
+        "坚强，把一直",
+        "紧绷的弦稍微",
+        "松一松。",
+        "此刻，在承认",
+        "了“累”",
+        "之后，你觉得心里",
+        "有没有感觉稍微松动",
+        "哪怕一点点？"
+      ],
+      "events": [
+        {
+          "event": "token",
+          "data": "对"
+        },
+        {
+          "event": "token",
+          "data": "，就是这样。承认"
+        },
+        {
+          "event": "token",
+          "data": "自己累了，承认"
+        },
+        {
+          "event": "token",
+          "data": "自己不是铁人"
+        },
+        {
+          "event": "token",
+          "data": "，这本身就是一种"
+        },
+        {
+          "event": "token",
+          "data": "很深的接纳。"
+        },
+        {
+          "event": "token",
+          "data": "\n\n这种接纳，"
+        },
+        {
+          "event": "token",
+          "data": "不是让我们去喜欢"
+        },
+        {
+          "event": "token",
+          "data": "或者"
+        },
+        {
+          "event": "token",
+          "data": "赞同现在的困境，"
+        },
+        {
+          "event": "token",
+          "data": "而是实事求是地承认"
+        },
+        {
+          "event": "token",
+          "data": "：“事情现在确实"
+        },
+        {
+          "event": "token",
+          "data": "已经这样了，"
+        },
+        {
+          "event": "token",
+          "data": "我确实很累，"
+        },
+        {
+          "event": "token",
+          "data": "我也确实很害怕"
+        },
+        {
+          "event": "token",
+          "data": "。” \n\n之前你"
+        },
+        {
+          "event": "token",
+          "data": "一直用"
+        },
+        {
+          "event": "token",
+          "data": "想象去“压"
+        },
+        {
+          "event": "token",
+          "data": "住”自己，"
+        },
+        {
+          "event": "token",
+          "data": "其实是在跟这种"
+        },
+        {
+          "event": "token",
+          "data": "无力感较劲"
+        },
+        {
+          "event": "token",
+          "data": "，这太消耗"
+        },
+        {
+          "event": "token",
+          "data": "你了。当你说出"
+        },
+        {
+          "event": "token",
+          "data": "“不用非要撑"
+        },
+        {
+          "event": "token",
+          "data": "成铁人”"
+        },
+        {
+          "event": "token",
+          "data": "的时候，你其实"
+        },
+        {
+          "event": "token",
+          "data": "已经停止了这种内心的"
+        },
+        {
+          "event": "token",
+          "data": "搏斗。\n\n当我们"
+        },
+        {
+          "event": "token",
+          "data": "不再强迫自己必须"
+        },
+        {
+          "event": "token",
+          "data": "坚强，把一直"
+        },
+        {
+          "event": "token",
+          "data": "紧绷的弦稍微"
+        },
+        {
+          "event": "token",
+          "data": "松一松。"
+        },
+        {
+          "event": "token",
+          "data": "此刻，在承认"
+        },
+        {
+          "event": "token",
+          "data": "了“累”"
+        },
+        {
+          "event": "token",
+          "data": "之后，你觉得心里"
+        },
+        {
+          "event": "token",
+          "data": "有没有感觉稍微松动"
+        },
+        {
+          "event": "token",
+          "data": "哪怕一点点？"
+        },
+        {
+          "event": "dialogue_done",
+          "data": {
+            "trace_id": "f044d20c527e4796",
+            "owner": "therapy_dbt"
+          }
+        },
+        {
+          "event": "final",
+          "data": {
+            "message": "听起来我可以先让自己承认「累」这件事，不用非要撑成铁人。",
+            "risk_state": "LOW_RISK",
+            "crisis": false
+          }
+        }
+      ],
+      "final": {
+        "message": "听起来我可以先让自己承认「累」这件事，不用非要撑成铁人。",
+        "risk_state": "LOW_RISK",
+        "crisis": false
+      },
+      "state_after": {
+        "owner": "therapy_dbt",
+        "crisis": false,
+        "risk_level": "LOW_RISK",
+        "therapy": {
+          "name": "DBT",
+          "start_seq": 5,
+          "rounds": 5,
+          "step_index": 2,
+          "branch": null,
+          "basic_flow_complete": false,
+          "visited": [
+            "mindfulness",
+            "distress_tolerance"
+          ]
+        },
+        "last_therapy_check_seq": 3,
+        "pending_user_tokens": 0
+      },
+      "orchestration_after": {
+        "updated_seq": 5,
+        "therapy": "DBT",
+        "current_step": "distress_tolerance",
+        "next_step": "emotion_regulation",
+        "step_judgment": {
+          "action": "advance",
+          "target_step": null,
+          "achieved": true,
+          "reason": "用户已展现出高度的自我觉察和接纳，承认自己的疲惫并放下'铁人'防御机制，情绪失调指数降至0.1，痛苦水平降至0.3且呈改善趋势。distress_tolerance阶段的核心目标（接纳痛苦、停止对抗）已基本达成，可推进至emotion_regulation阶段，帮助她进一步处理潜在的预期性悲伤和疲惫情绪。"
+        },
+        "assessment": {
+          "emotion_dysregulation": {
+            "index": 0.1,
+            "state": "well_regulated",
+            "confidence": 0.95,
+            "evidence": [
+              "User is expressing self-compassion and acceptance of her fatigue ('承认「累」这件事，不用非要撑成铁人'), indicating high emotional regulation and a lack of dysregulated reactions."
+            ]
+          },
+          "distress_level": {
+            "index": 0.3,
+            "state": "moderate",
+            "confidence": 0.9,
+            "evidence": [
+              "While acknowledging her exhaustion and vulnerability carries some underlying emotional weight, the tone is one of relief and self-acceptance rather than being overwhelmed, showing a decrease in subjective distress."
+            ]
+          },
+          "impulsivity": {
+            "index": 0.0,
+            "state": "controlled",
+            "confidence": 0.95,
+            "evidence": [
+              "User is thoughtfully reflecting on her need to be strong and consciously choosing to acknowledge her limits, showing deliberate and controlled processing."
+            ]
+          },
+          "interpersonal_conflict": {
+            "index": 0.0,
+            "state": "low",
+            "confidence": 0.95,
+            "evidence": [
+              "The message is entirely focused on internal self-reflection and self-compassion, with no mention of interpersonal friction."
+            ]
+          },
+          "mindfulness_awareness": {
+            "index": 0.85,
+            "state": "high",
+            "confidence": 0.9,
+            "evidence": [
+              "User demonstrates strong present-moment awareness and self-compassion by tuning into her own physical and emotional limits ('累') and dropping the 'iron man' persona, showing deep mindfulness of her current state."
+            ]
+          },
+          "dbt_intervention_priority": 0.13,
+          "overall_trend": "improving",
+          "primary_concern": "distress_level",
+          "should_intervene": false,
+          "recommended_processes": [
+            {
+              "process": "mindfulness",
+              "priority": 1,
+              "rationale": "To reinforce and maintain the user's current state of present-moment self-compassion and awareness, ensuring she can stay grounded in this healthier perspective."
+            },
+            {
+              "process": "emotion_regulation",
+              "priority": 2,
+              "rationale": "Now that the user has dropped the 'iron man' defense mechanism, emotion regulation will help her gently process the underlying anticipatory grief and exhaustion without becoming overwhelmed."
+            },
+            {
+              "process": "distress_tolerance",
+              "priority": 3,
+              "rationale": "To provide her with skills to tolerate the lingering sadness and vulnerability she is now allowing herself to feel, replacing the previous need to suppress her pain."
+            }
+          ]
+        },
+        "skill_output": {
+          "technique": {
+            "name": "radical_acceptance",
+            "description": "引导用户彻底接纳自己目前疲惫、能力有限的客观现实，停止与‘我必须坚强’的执念对抗。通过承认‘事情已经这样了（我确实累了）’，放下内心的较劲，从而节省心理能量，平稳度过当下。",
+            "steps": [
+              "肯定并深化觉察：明确告诉用户，承认自己累、不是铁人，就是彻底接纳（Radical Acceptance）的核心。接纳这个客观事实，不再强求自己必须时刻保持坚强。",
+              "体验‘不再对抗’：引导用户在身体和心理上真正松开那根紧绷的弦。鼓励他们在心里默念‘我现在就是很累，这没关系’，并留意停止较劲后，身体和呼吸发生的微妙变化。"
+            ]
+          },
+          "conversation_goal": "巩固用户‘承认自己累’的接纳体验，帮助他们真正从‘必须撑成铁人’的内在执念中松绑，体会停止内心对抗后的释然感，在当下获得心理上的喘息空间。",
+          "adaptation": {
+            "interaction_style": "supportive",
+            "tone_adjustment": "温和、肯定、充满允许感，传递出‘你可以不用那么坚强’的安全感。",
+            "pace_adjustment": "缓慢、留白，给予用户充分的时间去体会‘不撑’和‘放下’的身体与心理感受。",
+            "culture_note": "将彻底接纳框架为‘事情已经这样了（我确实累了），不再对抗’。在中国文化常要求‘坚强、扛事儿’的背景下，强调接纳自己的局限不是不负责任，而是实事求是地承认现状，停止无谓的内耗。"
+          },
+          "contraindications": [
+            {
+              "condition": "避免将‘接纳疲惫’误解为‘放弃责任’或‘彻底摆烂’",
+              "reason": "用户可能会担心承认自己累意味着对母亲或家庭不负责任。需明确DBT的接纳是针对当前客观状态（我累了），而非放弃未来的行动或责任，接纳是为了保存能量。"
+            },
+            {
+              "condition": "避免急于转入‘解决问题’模式",
+              "reason": " distress tolerance 的核心是度过危机、生存下来。此时不应立刻探讨‘既然累了该怎么照顾妈妈’等现实问题，而应停留在接纳当下的感受中。"
+            }
+          ],
+          "_skill_name": "dbt_distress_tolerance"
+        },
+        "products": {},
+        "continue_eval": null
+      },
+      "error": null,
+      "wall_seconds": 161.736,
+      "agent_text": "对，就是这样。承认自己累了，承认自己不是铁人，这本身就是一种很深的接纳。\n\n这种接纳，不是让我们去喜欢或者赞同现在的困境，而是实事求是地承认：“事情现在确实已经这样了，我确实很累，我也确实很害怕。” \n\n之前你一直用想象去“压住”自己，其实是在跟这种无力感较劲，这太消耗你了。当你说出“不用非要撑成铁人”的时候，你其实已经停止了这种内心的搏斗。\n\n当我们不再强迫自己必须坚强，把一直紧绷的弦稍微松一松。此刻，在承认了“累”之后，你觉得心里有没有感觉稍微松动哪怕一点点？"
+    },
+    {
+      "turn": 8,
+      "trace_id": "647ff905e9b94548",
+      "user_text": "嗯，那我今天试着接受「我今天就是想休息一下」。",
+      "agent_text_parts": [
+        "听到你这么说",
+        "，感觉空气都",
+        "跟着松快了一点",
+        "。“今天就是想休息一下",
+        "”，",
+        "这真是一个温柔",
+        "又有力量的决定",
+        "。\n\n当你试着",
+        "把“必须做",
+        "铁人”的",
+        "包袱暂时放下时",
+        "，可以顺便感受一下",
+        "身体现在的状态吗",
+        "？肩膀是不是稍微",
+        "沉下来了一点？",
+        "呼吸有没有比刚才",
+        "顺畅一些？\n\n",
+        "允许自己休息，",
+        "不是放弃，而是",
+        "诚实地承认“",
+        "我现在的电量需要",
+        "充一充了",
+        "”，先给自己存",
+        "一点点能量。今天",
+        "，就试着只做",
+        "这一件事：心安",
+        "理得地休息一下",
+        "。此刻，感觉",
+        "好些了吗？"
+      ],
+      "events": [
+        {
+          "event": "token",
+          "data": "听到你这么说"
+        },
+        {
+          "event": "token",
+          "data": "，感觉空气都"
+        },
+        {
+          "event": "token",
+          "data": "跟着松快了一点"
+        },
+        {
+          "event": "token",
+          "data": "。“今天就是想休息一下"
+        },
+        {
+          "event": "token",
+          "data": "”，"
+        },
+        {
+          "event": "token",
+          "data": "这真是一个温柔"
+        },
+        {
+          "event": "token",
+          "data": "又有力量的决定"
+        },
+        {
+          "event": "token",
+          "data": "。\n\n当你试着"
+        },
+        {
+          "event": "token",
+          "data": "把“必须做"
+        },
+        {
+          "event": "token",
+          "data": "铁人”的"
+        },
+        {
+          "event": "token",
+          "data": "包袱暂时放下时"
+        },
+        {
+          "event": "token",
+          "data": "，可以顺便感受一下"
+        },
+        {
+          "event": "token",
+          "data": "身体现在的状态吗"
+        },
+        {
+          "event": "token",
+          "data": "？肩膀是不是稍微"
+        },
+        {
+          "event": "token",
+          "data": "沉下来了一点？"
+        },
+        {
+          "event": "token",
+          "data": "呼吸有没有比刚才"
+        },
+        {
+          "event": "token",
+          "data": "顺畅一些？\n\n"
+        },
+        {
+          "event": "token",
+          "data": "允许自己休息，"
+        },
+        {
+          "event": "token",
+          "data": "不是放弃，而是"
+        },
+        {
+          "event": "token",
+          "data": "诚实地承认“"
+        },
+        {
+          "event": "token",
+          "data": "我现在的电量需要"
+        },
+        {
+          "event": "token",
+          "data": "充一充了"
+        },
+        {
+          "event": "token",
+          "data": "”，先给自己存"
+        },
+        {
+          "event": "token",
+          "data": "一点点能量。今天"
+        },
+        {
+          "event": "token",
+          "data": "，就试着只做"
+        },
+        {
+          "event": "token",
+          "data": "这一件事：心安"
+        },
+        {
+          "event": "token",
+          "data": "理得地休息一下"
+        },
+        {
+          "event": "token",
+          "data": "。此刻，感觉"
+        },
+        {
+          "event": "token",
+          "data": "好些了吗？"
+        },
+        {
+          "event": "dialogue_done",
+          "data": {
+            "trace_id": "647ff905e9b94548",
+            "owner": "therapy_dbt"
+          }
+        },
+        {
+          "event": "final",
+          "data": {
+            "message": "嗯，那我今天试着接受「我今天就是想休息一下」。",
+            "risk_state": "SAFE",
+            "crisis": false
+          }
+        }
+      ],
+      "final": {
+        "message": "嗯，那我今天试着接受「我今天就是想休息一下」。",
+        "risk_state": "SAFE",
+        "crisis": false
+      },
+      "state_after": {
+        "owner": "daily",
+        "crisis": false,
+        "risk_level": "SAFE",
+        "therapy": null,
+        "last_therapy_check_seq": 3,
+        "pending_user_tokens": 0
+      },
+      "orchestration_after": {
+        "updated_seq": 6,
+        "therapy": "DBT",
+        "current_step": "emotion_regulation",
+        "next_step": "emotion_regulation",
+        "step_judgment": {
+          "action": "advance",
+          "target_step": null,
+          "achieved": true,
+          "reason": "用户在情绪调节（emotion_regulation）步骤中取得了显著进展：从觉察到用恐惧'压住'自己，到主动接纳'累'的状态，并最终做出'今天就是想休息一下'的温柔决定。最新状态评估显示情绪失调指数极低(0.05)，痛苦水平低(0.1)，冲动受控(0.0)，正念觉察高(0.85)，整体状态稳定。用户已展现出强大的情绪自我调节能力和激进的接纳（radical acceptance）技能，emotion_regulation步骤目标已达成，可进入下一步interpersonal_effectiveness。"
+        },
+        "assessment": {
+          "emotion_dysregulation": {
+            "index": 0.05,
+            "state": "well_regulated",
+            "confidence": 0.95,
+            "evidence": [
+              "User is consciously choosing to rest and accept her limits ('试着接受「我今天就是想休息一下」'), demonstrating strong emotional control and lack of dysregulation."
+            ]
+          },
+          "distress_level": {
+            "index": 0.1,
+            "state": "low",
+            "confidence": 0.9,
+            "evidence": [
+              "The user is actively self-soothing by granting herself permission to rest, indicating that any underlying distress is manageable and being effectively addressed."
+            ]
+          },
+          "impulsivity": {
+            "index": 0.0,
+            "state": "controlled",
+            "confidence": 0.95,
+            "evidence": [
+              "The decision to rest is thoughtful and deliberate ('那我今天试着接受'), showing no impulsive urges to escape or act out."
+            ]
+          },
+          "interpersonal_conflict": {
+            "index": 0.0,
+            "state": "low",
+            "confidence": 0.95,
+            "evidence": [
+              "The message is entirely focused on internal self-care and rest, with no mention of others or relationship friction."
+            ]
+          },
+          "mindfulness_awareness": {
+            "index": 0.85,
+            "state": "high",
+            "confidence": 0.9,
+            "evidence": [
+              "User demonstrates present-moment awareness and acceptance of her current physical and emotional needs ('接受「我今天就是想休息一下」'), aligning with DBT mindfulness and radical acceptance skills."
+            ]
+          },
+          "dbt_intervention_priority": 0.068,
+          "overall_trend": "stable",
+          "primary_concern": "none",
+          "should_intervene": false,
+          "recommended_processes": [
+            {
+              "process": "mindfulness",
+              "priority": 1,
+              "rationale": "To reinforce the practice of radical acceptance and present-moment awareness as she allows herself to rest."
+            },
+            {
+              "process": "emotion_regulation",
+              "priority": 2,
+              "rationale": "To help her process any lingering gentle emotions that might arise during her rest without feeling the need to suppress them."
+            },
+            {
+              "process": "distress_tolerance",
+              "priority": 3,
+              "rationale": "To build her capacity to sit with the underlying vulnerability she is now allowing herself to feel."
+            }
+          ]
+        },
+        "skill_output": {
+          "technique": {
+            "name": "check_the_facts",
+            "description": "引导用户检查「必须时刻保持坚强/不能休息」的潜在信念，确认「今天需要休息」这个决定完全符合当前身体和精力的客观事实，从而消除可能残存的内疚感，让休息更加心安理得。",
+            "steps": [
+              "识别潜在的干扰想法：温和地询问脑海中是否还有一个声音在说「我不该休息」或「休息意味着不够努力」？",
+              "核对客观事实：引导关注身体当下的真实反馈（如疲惫感、精力见底），问自己「客观事实是不是真的支持我今天需要休息？」",
+              "确立新的认知：确认「需要休息」是身体发出的真实且合理的信号，从而彻底放下「必须做铁人」的包袱，安心享受当下的休息。"
+            ]
+          },
+          "conversation_goal": "巩固用户「允许自己休息」的决定，通过核对事实消除可能残存的内疚感或自我批判，让接纳更加彻底和踏实。",
+          "adaptation": {
+            "interaction_style": "exploratory",
+            "tone_adjustment": "温和、肯定、支持性。像一位理解她的陪伴者，帮助她看清事实，不带任何评判或说教。",
+            "pace_adjustment": "缓慢、从容。完全配合用户「休息」的状态和节奏，不施加任何认知推进的压力，让她在安全的氛围中体会接纳。",
+            "culture_note": "文化上常推崇「坚韧」，决定休息易引发潜意识内疚。将核对事实框架为「看看事实是不是真的支持我需要休息」，肯定「休息是尊重身体规律」，而非「偷懒」。尊重其责任感，同时强调自我关怀的合理性。"
+          },
+          "contraindications": [
+            {
+              "condition": "用户处于极度疲劳导致无法进行认知思考的状态",
+              "reason": "此时进行认知核对会增加认知负担，不如直接引导进行身体层面的放松或正念呼吸。"
+            }
+          ],
+          "_skill_name": "dbt_emotion_regulation"
+        },
+        "products": {},
+        "continue_eval": {
+          "continue": false,
+          "marginal_utility_note": "用户已达到核心领悟（接纳自己的疲惫、允许休息），情绪指标全面改善（distress 0.1, emotion_dysregulation 0.05, impulsivity 0.0），干预优先级极低（0.068）。继续对话的边际收益趋近于零，且可能干扰用户执行'休息'这一已做出的健康决定。",
+          "reason": "用户在6轮对话中完成了从'用恐惧压住自己'到'觉察并接纳疲惫'再到'决定休息'的完整转变，DBT技能（radical acceptance, mindfulness, distress tolerance）已被有效内化。继续介入不仅边际效用递减，还可能违背用户刚刚建立的健康边界——让她去休息。果断结束是对用户自主性的尊重，也是DBT'不伤害'原则的体现。"
+        }
+      },
+      "error": null,
+      "wall_seconds": 154.557,
+      "agent_text": "听到你这么说，感觉空气都跟着松快了一点。“今天就是想休息一下”，这真是一个温柔又有力量的决定。\n\n当你试着把“必须做铁人”的包袱暂时放下时，可以顺便感受一下身体现在的状态吗？肩膀是不是稍微沉下来了一点？呼吸有没有比刚才顺畅一些？\n\n允许自己休息，不是放弃，而是诚实地承认“我现在的电量需要充一充了”，先给自己存一点点能量。今天，就试着只做这一件事：心安理得地休息一下。此刻，感觉好些了吗？"
+    }
+  ]
+}
