@@ -177,7 +177,7 @@ class ChatViewModel(application: Application) : AndroidViewModel(application) {
                         list.add(ChatMessage(ChatMessage.Role.AGENT, replyBuilder.toString(), ts))
                         _messages.value = list
                         agentTs = ts
-                        _pendingStatus.value = null
+                        if (activeTurnSeq == myTurn) _pendingStatus.value = null
                         list.lastIndex
                     }
                 }
@@ -188,8 +188,12 @@ class ChatViewModel(application: Application) : AndroidViewModel(application) {
                     onToken = { delta ->
                         replyBuilder.append(delta)
                         val idx = upsertAgentMessage()
-                        _latestAgentReply.value = replyBuilder.toString()
-                        _scrollEvent.tryEmit(ScrollTarget.ToIndex(idx))
+                        // 本轮自己的气泡无条件更新（上面），但折叠态气泡与自动滚动是**共享**状态：
+                        // 只有在仍是本轮时才写，避免迟到的 token 把新一轮的界面拽回去。
+                        if (activeTurnSeq == myTurn) {
+                            _latestAgentReply.value = replyBuilder.toString()
+                            _scrollEvent.tryEmit(ScrollTarget.ToIndex(idx))
+                        }
                     },
                     // 主回复说完即解除「发送中」——此刻连接仍开着，后端还在跑决策线与
                     // 沉淀线（画像/摘要，最慢数十秒），但那不该阻塞用户继续说话。
@@ -214,31 +218,43 @@ class ChatViewModel(application: Application) : AndroidViewModel(application) {
                             idx = _messages.value.lastIndex
                         }
                         _messages.value.getOrNull(idx)?.let { historyStore.append(it) }
-                        _latestAgentReply.value = finalText
-                        _lastTimedOut.value = false
-                        _pendingStatus.value = null
-                        pendingQuestion = null
-                        _scrollEvent.tryEmit(ScrollTarget.ToIndex(idx))
+                        // 共享 UI 状态只在「本轮仍是最新一轮」时写。上一轮的连接可能在新一轮
+                        // 开始后才结束（后端沉淀线期间同 session 的新消息要排队，实测空窗可达十余秒），
+                        // 那时若照写，就会清掉新一轮的「猫猫思索中」、把折叠气泡改回旧文案、
+                        // 并把列表滚回旧消息——这正是「思索中消失 + 跳回上条回复」的成因。
+                        // 落库（上一行）是**本轮自己的内容**，与轮次无关，照写。
+                        if (activeTurnSeq == myTurn) {
+                            _latestAgentReply.value = finalText
+                            _lastTimedOut.value = false
+                            _pendingStatus.value = null
+                            pendingQuestion = null
+                            _scrollEvent.tryEmit(ScrollTarget.ToIndex(idx))
+                        }
                     },
                     onFailure = { e ->
                         Log.e(TAG, "sendMessage error: ${e.javaClass.simpleName} — ${e.message}", e)
-                        if (e is SocketTimeoutException) {
-                            _lastTimedOut.value = true
-                        }
-                        val code = when (e) {
-                            is HttpException -> e.code().toString()
-                            is IOException -> "NETWORK"
-                            else -> "UNKNOWN"
-                        }
                         // 已流出部分回复则保留并落库，不再覆盖为错误占位
                         val known = indexOfAgent()
-                        if (known < 0) {
-                            pendingQuestion = text
-                            _pendingStatus.value = Pending.Error(code)
-                        } else {
+                        if (known >= 0) {
                             _messages.value.getOrNull(known)?.let { historyStore.append(it) }
-                            pendingQuestion = null
-                            _pendingStatus.value = null
+                        }
+                        // 同上：占位/重发线索都是共享状态，只有本轮仍是最新一轮时才动。
+                        if (activeTurnSeq == myTurn) {
+                            if (e is SocketTimeoutException) {
+                                _lastTimedOut.value = true
+                            }
+                            if (known < 0) {
+                                val code = when (e) {
+                                    is HttpException -> e.code().toString()
+                                    is IOException -> "NETWORK"
+                                    else -> "UNKNOWN"
+                                }
+                                pendingQuestion = text
+                                _pendingStatus.value = Pending.Error(code)
+                            } else {
+                                pendingQuestion = null
+                                _pendingStatus.value = null
+                            }
                         }
                     }
                 )
